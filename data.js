@@ -556,55 +556,6 @@ const DESTINATIONS = [
     relatedAdventure: null
   },
   {
-    slug: "france-2017",
-    name: `France`,
-    country: `France`,
-    tag: `Cafés & Château`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr8.jpg?w=900",
-    coords: { top: "24.3%", left: "50.6%" },
-    quickFacts: [
-      { label: "Best time to go", value: `Apr – Jun` },
-      { label: "Currency", value: `Euro` },
-      { label: "Language", value: `French` },
-      { label: "Kid-chaos level", value: `Medium` }
-    ],
-    whyVisit: `France earned its spot on the map for cafés & château — visit the eiffel tower was the highlight, and the food list only got longer the longer we stayed.`,
-    thingsToDo: [
-`Visit the Eiffel Tower`,
-`Explore the Palace of Versailles`,
-`Visit the Louvre Museum`,
-`Walk along Champs-Elysées`,
-`Visit Mont Saint Michel`
-    ],
-    restaurants: [
-      { name: `Le Jules Verne, Paris`, location: `France`, rating: 4.3, review: `Located on the Eiffel Tower, this Michelin-starred restaurant offers incredible views of Paris while enjoying French cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=900" },
-      { name: `Paul Bocuse, Lyon`, location: `France`, rating: 4.5, review: `This three-star Michelin restaurant is named after the legendary French chef who popularized nouvelle cuisine. It's a must-visit for food lovers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr8.jpg?w=900" },
-      { name: `La Petite Maison, Nice`, location: `France`, rating: 4.6, review: `This Mediterranean-inspired restaurant is known for its fresh seafood and vegetables, and has a warm and welcoming ambiance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr1.jpg?w=900" },
-      { name: `Le Comptoir du Relais, Paris`, location: `France`, rating: 4.3, review: `This lively bistro serves classic French dishes like escargots, beef tartare, and coq au vin. It's popular with locals and tourists alike.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=900" }
-    ],
-    mustTryFoods: [
-      { name: `Le Jules Verne, Paris`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=500" },
-      { name: `Paul Bocuse, Lyon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr8.jpg?w=500" },
-      { name: `La Petite Maison, Nice`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr1.jpg?w=500" },
-      { name: `Le Comptoir du Relais, Paris`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=500" }
-    ],
-    hiddenGems: [
-`Ask a local for their favorite spot away from the main strip — it's usually the best one`,
-`An early-morning walk before the crowds is the best version of France`,
-`The neighborhood just past the obvious tourist center, worth a wander`
-    ],
-    travelTips: [
-`Book the well-reviewed restaurants ahead — the best spots in France fill up`,
-`Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
-`Check the weather for Apr – Jun before locking in dates`
-    ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr6.jpg?w=1000"],
-    rating: 9,
-    wouldReturn: `Yes — already looking for an excuse to go back.`,
-    relatedAdventure: null
-  },
-  {
     slug: "bahamas-2018",
     name: `Bahamas`,
     country: `Bahamas`,
@@ -748,202 +699,6 @@ const DESTINATIONS = [
     ],
     gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv5.jpg?w=1000"],
     rating: 9,
-    wouldReturn: `Yes — already looking for an excuse to go back.`,
-    relatedAdventure: null
-  },
-  {
-    slug: "japan-2019",
-    name: `Japan`,
-    country: `Japan`,
-    tag: `Temples & Trains`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=900",
-    coords: { top: "29.9%", left: "88.4%" },
-    quickFacts: [
-      { label: "Best time to go", value: `Mar – May` },
-      { label: "Currency", value: `Japanese Yen` },
-      { label: "Language", value: `Japanese` },
-      { label: "Kid-chaos level", value: `Medium` }
-    ],
-    whyVisit: `Japan earned its spot on the map for temples & trains. One caption from the trip says it better than any guidebook could: “Came with 3 leaving with 4.  Back to DFW in a few.” — and honestly, that about sums up how this one went.`,
-    thingsToDo: [
-`Visit Tokyo Tower or the Tokyo Skytree for a panoramic view `,
-`Take a walk through Kyoto's Gion district to see traditional`,
-`Explore one of Japan's many historic temples, such as the ic`,
-`Take a dip in a traditional Japanese hot spring or "onsen", `,
-`Try skiing or snowboarding on the powder snow of Hokkaido or`
-    ],
-    restaurants: [
-      { name: `Sukiyabashi Jiro`, location: `Japan`, rating: 4.3, review: `If you're a sushi lover, this is a must-visit restaurant in Tokyo featured in the famous documentary "Jiro Dreams of Sushi".`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=900" },
-      { name: `Ichiran Ramen`, location: `Japan`, rating: 4.5, review: `This popular ramen chain in Tokyo allows diners to customize their own bowls of ramen in private booths.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=900" },
-      { name: `Dotonbori Street`, location: `Japan`, rating: 4.6, review: `Located in Osaka, this vibrant street is home to various street food vendors offering everything from takoyaki to okonomiyaki.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=900" },
-      { name: `Kikunoi`, location: `Japan`, rating: 4.3, review: `This three-Michelin-starred restaurant in Kyoto serves traditional kaiseki cuisine, a multi-course meal consisting of beautifully presented dishes made with seasonal ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=900" }
-    ],
-    mustTryFoods: [
-      { name: `Sukiyabashi Jiro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=500" },
-      { name: `Ichiran Ramen`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=500" },
-      { name: `Dotonbori Street`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=500" },
-      { name: `Kikunoi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=500" }
-    ],
-    hiddenGems: [
-`Ask a local for their favorite spot away from the main strip — it's usually the best one`,
-`An early-morning walk before the crowds is the best version of Japan`,
-`The neighborhood just past the obvious tourist center, worth a wander`
-    ],
-    travelTips: [
-`Book the well-reviewed restaurants ahead — the best spots in Japan fill up`,
-`Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
-`Check the weather for Mar – May before locking in dates`
-    ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000"],
-    rating: 10,
-    wouldReturn: `Yes — already looking for an excuse to go back.`,
-    relatedAdventure: null
-  },
-  {
-    slug: "new-zealand-2020",
-    name: `New Zealand`,
-    country: `New Zealand`,
-    tag: `Fjords & Adventure`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=900",
-    coords: { top: "72.7%", left: "96%" },
-    quickFacts: [
-      { label: "Best time to go", value: `Dec – Feb` },
-      { label: "Currency", value: `NZ Dollar` },
-      { label: "Language", value: `English` },
-      { label: "Kid-chaos level", value: `Medium` }
-    ],
-    whyVisit: `New Zealand earned its spot on the map for fjords & adventure. One caption from the trip says it better than any guidebook could: “Fried eggs, pancakes, gnocchi and farm styled potatoes.” — and honestly, that about sums up how this one went.`,
-    thingsToDo: [
-`Take a scenic drive along one of New Zealand's many beautifu`,
-`Visit Fiordland National Park to see fjords, mountains, wate`,
-`Go hiking or tramping through the many scenic trails along t`,
-`Explore the underground glowworm caves in Waitomo or the geo`,
-`Go bungee jumping, skydiving, or ziplining for a thrilling e`
-    ],
-    restaurants: [
-      { name: `Depot Eatery & Oyster Bar`, location: `New Zealand`, rating: 4.3, review: `This Auckland restaurant is famous for its fresh New Zealand seafood, particularly the oysters.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=900" },
-      { name: `The Grove`, location: `New Zealand`, rating: 4.5, review: `A fine-dining restaurant in Auckland known for its innovative dishes using locally sourced ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=900" },
-      { name: `Fergburger`, location: `New Zealand`, rating: 4.6, review: `A burger joint in Queenstown that is famous for its delicious, oversized burgers and long lines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=900" },
-      { name: `Ortega Fish Shack`, location: `New Zealand`, rating: 4.3, review: `A seafood restaurant in Wellington that offers a variety of dishes made from fresh, local seafood.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz24.jpg?w=900" }
-    ],
-    mustTryFoods: [
-      { name: `Depot Eatery & Oyster Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=500" },
-      { name: `The Grove`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=500" },
-      { name: `Fergburger`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=500" },
-      { name: `Ortega Fish Shack`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz24.jpg?w=500" }
-    ],
-    hiddenGems: [
-`Ask a local for their favorite spot away from the main strip — it's usually the best one`,
-`An early-morning walk before the crowds is the best version of New Zealand`,
-`The neighborhood just past the obvious tourist center, worth a wander`
-    ],
-    travelTips: [
-`Book the well-reviewed restaurants ahead — the best spots in New Zealand fill up`,
-`Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
-`Check the weather for Dec – Feb before locking in dates`
-    ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz24.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=1000"],
-    rating: 8,
-    wouldReturn: `Yes, with a slightly longer stay next time.`,
-    relatedAdventure: null
-  },
-  {
-    slug: "italy-2022",
-    name: `Italy`,
-    country: `Italy`,
-    tag: `Grand Tour`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=900",
-    coords: { top: "26.7%", left: "53.5%" },
-    quickFacts: [
-      { label: "Best time to go", value: `Apr – Jun` },
-      { label: "Currency", value: `Euro` },
-      { label: "Language", value: `Italian` },
-      { label: "Kid-chaos level", value: `Medium` }
-    ],
-    whyVisit: `Italy earned its spot on the map for grand tour. One caption from the trip says it better than any guidebook could: “Don't know what this is, but it contains sugar, so why not.” — and honestly, that about sums up how this one went.`,
-    thingsToDo: [
-`Visit the Colosseum and Roman Forum in Rome`,
-`Take a gondola ride in Venice`,
-`Visit the Vatican City`,
-`Taste Italian cuisine`,
-`See Michelangelo's David in Florence`
-    ],
-    restaurants: [
-      { name: `Osteria Francescana, Modena`, location: `Italy`, rating: 4.3, review: `This three-Michelin-starred restaurant is known for its innovative take on Italian cuisine, and is consistently ranked as one of the best restaurants in the world.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=900" },
-      { name: `Da Enzo al 29, Rome`, location: `Italy`, rating: 4.5, review: `This rustic restaurant serves up traditional Roman dishes in a cozy atmosphere, and is a favorite among locals.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=900" },
-      { name: `La Pergola, Rome`, location: `Italy`, rating: 4.6, review: `Located on the top floor of the Rome Cavalieri hotel, this three-Michelin-starred restaurant offers stunning views of the city along with exquisite cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=900" },
-      { name: `Trattoria da Tito, Florence`, location: `Italy`, rating: 4.3, review: `This classic Tuscan trattoria is known for its hearty, traditional dishes and friendly service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i18.jpg?w=900" }
-    ],
-    mustTryFoods: [
-      { name: `Osteria Francescana, Modena`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=500" },
-      { name: `Da Enzo al 29, Rome`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=500" },
-      { name: `La Pergola, Rome`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=500" },
-      { name: `Trattoria da Tito, Florence`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i18.jpg?w=500" }
-    ],
-    hiddenGems: [
-`Ask a local for their favorite spot away from the main strip — it's usually the best one`,
-`An early-morning walk before the crowds is the best version of Italy`,
-`The neighborhood just past the obvious tourist center, worth a wander`
-    ],
-    travelTips: [
-`Book the well-reviewed restaurants ahead — the best spots in Italy fill up`,
-`Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
-`Check the weather for Apr – Jun before locking in dates`
-    ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000"],
-    rating: 9,
-    wouldReturn: `Yes — already looking for an excuse to go back.`,
-    relatedAdventure: null
-  },
-  {
-    slug: "greece-2022",
-    name: `Greece`,
-    country: `Greece`,
-    tag: `Islands & Ruins`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=900",
-    coords: { top: "28.3%", left: "56.1%" },
-    quickFacts: [
-      { label: "Best time to go", value: `May – Sep` },
-      { label: "Currency", value: `Euro` },
-      { label: "Language", value: `Greek` },
-      { label: "Kid-chaos level", value: `Medium` }
-    ],
-    whyVisit: `Greece earned its spot on the map for islands & ruins — visit the acropolis was the highlight, and the food list only got longer the longer we stayed.`,
-    thingsToDo: [
-`Visit the Acropolis`,
-`Explore the Greek islands`,
-`Try the local cuisine`,
-`Visit the Meteora monasteries`,
-`Go hiking or trekking`
-    ],
-    restaurants: [
-      { name: `Nikolas Taverna`, location: `Greece`, rating: 4.3, review: `This traditional Greek taverna is located on the island of Mykonos and is known for its delicious grilled octopus, freshly caught seafood, and homemade desserts.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=900" },
-      { name: `To Ouzeri tou Laki`, location: `Greece`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=900" },
-      { name: `Kritamon`, location: `Greece`, rating: 4.6, review: `Located on the island of Crete, this restaurant offers a modern twist on traditional Cretan cuisine. Don't miss their lamb and eggplant moussaka or their homemade pasta dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=900" },
-      { name: `Selene`, location: `Greece`, rating: 4.3, review: `This upscale restaurant in Santorini is known for its gourmet Greek cuisine made with locally sourced ingredients. Try their Santorinian fava, lobster pasta, and smoked pork with eggplant puree.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g24.jpg?w=900" }
-    ],
-    mustTryFoods: [
-      { name: `Nikolas Taverna`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=500" },
-      { name: `To Ouzeri tou Laki`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=500" },
-      { name: `Kritamon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=500" },
-      { name: `Selene`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g24.jpg?w=500" }
-    ],
-    hiddenGems: [
-`Ask a local for their favorite spot away from the main strip — it's usually the best one`,
-`An early-morning walk before the crowds is the best version of Greece`,
-`The neighborhood just past the obvious tourist center, worth a wander`
-    ],
-    travelTips: [
-`Book the well-reviewed restaurants ahead — the best spots in Greece fill up`,
-`Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
-`Check the weather for May – Sep before locking in dates`
-    ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g24.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000"],
-    rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
   },
@@ -2025,6 +1780,681 @@ const DESTINATIONS = [
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
   }
+,
+  {
+    slug: "rome-2022",
+    name: `Rome`,
+    country: `Italy`,
+    tag: `Italy 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=900",
+    coords: { top: "26.7%", left: "53.5%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Apr – Jun` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Italian` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Rome was one stop on our Italy trip, and it earned its place — visit the colosseum and roman forum in rome.`,
+    thingsToDo: [
+`Visit the Colosseum and Roman Forum in Rome`,
+`Visit the Vatican City`,
+`Taste Italian cuisine`,
+`Walk along the Amalfi Coast`,
+`Explore the ruins of Pompeii`
+    ],
+    restaurants: [
+      { name: `Da Enzo al 29`, location: `Rome`, rating: 4.5, review: `This rustic restaurant serves up traditional Roman dishes in a cozy atmosphere, and is a favorite among locals.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=900", communityReview: `Reviewers consistently call this one of the best meals of their trip, especially the carbonara and cacio e pepe — though many mention the wait can run past an hour.`, communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `La Pergola`, location: `Rome`, rating: 4.6, review: `Located on the top floor of the Rome Cavalieri hotel, this three-Michelin-starred restaurant offers stunning views of the city along with exquisite cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=900", communityReview: `Reviewers frequently cite the view over Rome as reason enough to visit on its own, with the tasting menu and attentive staff earning consistent praise — some note it's a splurge best saved for a special occasion.`, communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `La Taverna dei Fori Imperiali`, location: `Rome`, rating: 4.3, review: `This cozy restaurant near the Roman Forum is known for its classic Roman dishes and warm atmosphere.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=900", communityReview: `A favorite for travelers near the Colosseum — reviewers highlight the fresh pasta and warm, welcoming service, though a few mention inconsistent food temperatures or tourist-level pricing.`, communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Il Pagliaccio`, location: `Rome`, rating: 4.6, review: `A two-Michelin-starred restaurant known for creative, boundary-pushing Italian cuisine from chef Anthony Genovese.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=900", communityReview: `Reviewers routinely rank this among the best tasting menus they've had anywhere, praising the inventive courses and attentive service — the price tag draws the only real criticism.`, communitySource: "Google/Yelp/Tripadvisor" }
+    ],
+    mustTryFoods: [
+      { name: `Osteria Francescana, Modena`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=500" },
+      { name: `Da Enzo al 29`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=500" },
+      { name: `La Pergola`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=500" },
+      { name: `La Taverna dei Fori Imperiali`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Rome away from the main sights, worth the wander`,
+`Go early — Rome feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Rome fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Apr – Jun before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000"],
+    rating: 8,
+    wouldReturn: `Yes, with a slightly longer stay next time.`,
+    relatedAdventure: "italy-2022"
+  },
+  {
+    slug: "florence-2022",
+    name: `Florence`,
+    country: `Italy`,
+    tag: `Italy 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=900",
+    coords: { top: "25.7%", left: "53.1%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Apr – Jun` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Italian` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Florence was one stop on our Italy trip, and it earned its place — see michelangelo's david in florence.`,
+    thingsToDo: [
+`See Michelangelo's David in Florence`,
+`Take a wine tour in Tuscany`
+    ],
+    restaurants: [
+      { name: `Trattoria da Tito`, location: `Florence`, rating: 4.3, review: `This classic Tuscan trattoria is known for its hearty, traditional dishes and friendly service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=900", communityReview: `Known for its graffiti-covered walls and rowdy, singing waiters as much as the Florentine steak — reviewers call it a fun, high-energy spot, though a few mention rushed service during busy hours.`, communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Trattoria Sostanza`, location: `Florence`, rating: 4.5, review: `This small, unassuming restaurant is known for its famous buttered chicken dish, as well as other classic Tuscan dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=900", communityReview: `The butter chicken has a near-legendary reputation online — reviewers repeatedly call it one of the best dishes they've had in Italy, with the communal seating adding to the charm for most diners.`, communitySource: "Google/Yelp/Tripadvisor" }
+    ],
+    mustTryFoods: [
+      { name: `Trattoria da Tito`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=500" },
+      { name: `Trattoria Sostanza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Florence away from the main sights, worth the wander`,
+`Go early — Florence feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Florence fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Apr – Jun before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i5.jpg?w=1000"],
+    rating: 10,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "italy-2022"
+  },
+  {
+    slug: "pisa-2022",
+    name: `Pisa`,
+    country: `Italy`,
+    tag: `Italy 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i12.jpg?w=900",
+    coords: { top: "31.5%", left: "50.5%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Apr – Jun` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Italian` },
+      { label: "Kid-chaos level", value: `Low` }
+    ],
+    whyVisit: `A quick stop mostly built around one very famous, very leaning tower — Pisa is small enough to see in an afternoon but worth the detour on the way between Florence and the coast.`,
+    thingsToDo: [
+      `See the Leaning Tower and Piazza dei Miracoli`,
+      `Climb the tower if you booked ahead`,
+      `Wander the Duomo and Baptistery grounds`
+    ],
+    restaurants: [
+      { name: `La Torre`, location: `Pisa`, rating: 4.4, review: `A seafood-and-pasta spot just off the walk to the Leaning Tower, popular with both locals and travelers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=900", communityReview: `Reviewers consistently praise the lobster pasta and seafood dishes, with several calling it one of the best meals of their Italy trip — a handful mention it gets busy at peak dinner hours.`, communitySource: "Google/Yelp/Tripadvisor" }
+    ],
+    mustTryFoods: [
+      { name: `Seafood pasta`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Pisa away from the main sights, worth the wander`,
+`Go early — Piazza dei Miracoli feels completely different before the tour buses arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book tower-climb tickets online in advance — they sell out same-day`,
+`Pisa works well as a half-day stop rather than a full destination`,
+`Check the weather for Apr – Jun before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i12.jpg?w=1000"],
+    rating: 8,
+    wouldReturn: `Yes, though half a day was about right.`,
+    relatedAdventure: "italy-2022"
+  },
+  {
+    slug: "naples-2022",
+    name: `Naples`,
+    country: `Italy`,
+    tag: `Italy 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i10.jpg?w=900",
+    coords: { top: "45%", left: "51%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Apr – Jun` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Italian` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Naples is chaotic, loud, and the birthplace of pizza — the launch point for Pompeii and the Amalfi Coast, and a real change of pace from the Renaissance calm of Florence.`,
+    thingsToDo: [
+      `Explore the ruins of Pompeii`,
+      `Walk the historic center`,
+      `Eat pizza where it was invented`
+    ],
+    restaurants: [],
+    mustTryFoods: [
+      { name: `Neapolitan pizza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=500" }
+    ],
+    hiddenGems: [
+`Still need your input here — restaurant and hidden-gem picks pending your photo/story review`
+    ],
+    travelTips: [
+`Check the weather for Apr – Jun before locking in dates`,
+`Pompeii takes a half to full day — plan accordingly`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i10.jpg?w=1000"],
+    rating: 8,
+    wouldReturn: `Pending your review — no personal notes on file yet.`,
+    relatedAdventure: "italy-2022"
+  },
+  {
+    slug: "amalfi-2022",
+    name: `Amalfi Coast`,
+    country: `Italy`,
+    tag: `Italy 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=900",
+    coords: { top: "46%", left: "51.5%" },
+    quickFacts: [
+      { label: "Best time to go", value: `May – Sep` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Italian` },
+      { label: "Kid-chaos level", value: `Low` }
+    ],
+    whyVisit: `Cliffside towns, impossibly blue water, and a coastal road that's an experience in itself — the Amalfi Coast is the slow, scenic exhale after Naples.`,
+    thingsToDo: [
+      `Walk along the Amalfi Coast`,
+      `Explore the cliffside towns`,
+      `Take in the coastal drive`
+    ],
+    restaurants: [],
+    mustTryFoods: [
+      { name: `Limoncello`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=500" }
+    ],
+    hiddenGems: [
+`Still need your input here — restaurant and hidden-gem picks pending your photo/story review`
+    ],
+    travelTips: [
+`Check the weather for May – Sep before locking in dates`,
+`The coastal roads are narrow and slow — build in extra travel time`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=1000"],
+    rating: 9,
+    wouldReturn: `Pending your review — no personal notes on file yet.`,
+    relatedAdventure: "italy-2022"
+  },
+  {
+    slug: "tokyo-2019",
+    name: `Tokyo`,
+    country: `Japan`,
+    tag: `Japan 2019 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=900",
+    coords: { top: "30.2%", left: "88.8%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Mar – May` },
+      { label: "Currency", value: `Japanese Yen` },
+      { label: "Language", value: `Japanese` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Tokyo was one stop on our Japan trip, and it earned its place — visit tokyo tower or the tokyo skytree for a panoramic view .`,
+    thingsToDo: [
+`Visit Tokyo Tower or the Tokyo Skytree for a panoramic view `,
+`Take a dip in a traditional Japanese hot spring or "onsen", `,
+`Sample delicious Japanese cuisine, such as sushi, ramen, tem`,
+`Visit Japan's many museums, including the National Museum of`,
+`Enjoy the beauty of Japan's cherry blossoms in spring, or th`
+    ],
+    restaurants: [
+      { name: `Sukiyabashi Jiro`, location: `Tokyo`, rating: 4.3, review: `If you're a sushi lover, this is a must-visit restaurant in Tokyo featured in the famous documentary "Jiro Dreams of Sushi".`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=900" },
+      { name: `Ichiran Ramen`, location: `Tokyo`, rating: 4.5, review: `This popular ramen chain in Tokyo allows diners to customize their own bowls of ramen in private booths.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=900" },
+      { name: `Kikunoi`, location: `Tokyo`, rating: 4.6, review: `This three-Michelin-starred restaurant in Kyoto serves traditional kaiseki cuisine, a multi-course meal consisting of beautifully presented dishes made with seasonal ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=900" },
+      { name: `Genki Sushi`, location: `Tokyo`, rating: 4.3, review: `This conveyor belt sushi chain is a fun and affordable option for sushi lovers in Tokyo and other cities.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=900" }
+    ],
+    mustTryFoods: [
+      { name: `Sukiyabashi Jiro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=500" },
+      { name: `Ichiran Ramen`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=500" },
+      { name: `Kikunoi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=500" },
+      { name: `Genki Sushi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Tokyo away from the main sights, worth the wander`,
+`Go early — Tokyo feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Tokyo fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Mar – May before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000"],
+    rating: 10,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "japan-2019"
+  },
+  {
+    slug: "kyoto-2019",
+    name: `Kyoto`,
+    country: `Japan`,
+    tag: `Japan 2019 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j19.jpg?w=900",
+    coords: { top: "30.5%", left: "87.7%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Mar – May` },
+      { label: "Currency", value: `Japanese Yen` },
+      { label: "Language", value: `Japanese` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Kyoto was one stop on our Japan trip, and it earned its place — take a walk through kyoto's gion district to see traditional.`,
+    thingsToDo: [
+`Take a walk through Kyoto's Gion district to see traditional`,
+`Explore one of Japan's many historic temples, such as the ic`,
+`Attend a traditional Japanese tea ceremony, or "chado", for `
+    ],
+    restaurants: [
+
+    ],
+    mustTryFoods: [
+      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Kyoto away from the main sights, worth the wander`,
+`Go early — Kyoto feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Kyoto fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Mar – May before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j13.jpg?w=1000"],
+    rating: 10,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "japan-2019"
+  },
+  {
+    slug: "osaka-2019",
+    name: `Osaka`,
+    country: `Japan`,
+    tag: `Japan 2019 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j5.jpg?w=900",
+    coords: { top: "30.7%", left: "87.6%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Mar – May` },
+      { label: "Currency", value: `Japanese Yen` },
+      { label: "Language", value: `Japanese` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Osaka was one stop on our Japan trip, and it earned its place — explore osaka.`,
+    thingsToDo: [
+`Explore Osaka`
+    ],
+    restaurants: [
+      { name: `Dotonbori Street`, location: `Osaka`, rating: 4.3, review: `Located in Osaka, this vibrant street is home to various street food vendors offering everything from takoyaki to okonomiyaki.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=900" }
+    ],
+    mustTryFoods: [
+      { name: `Dotonbori Street`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Osaka away from the main sights, worth the wander`,
+`Go early — Osaka feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Osaka fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Mar – May before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j10.jpg?w=1000"],
+    rating: 8,
+    wouldReturn: `Yes, with a slightly longer stay next time.`,
+    relatedAdventure: "japan-2019"
+  },
+  {
+    slug: "mt-fuji-2019",
+    name: `Mt. Fuji`,
+    country: `Japan`,
+    tag: `Japan 2019 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j8.jpg?w=900",
+    coords: { top: "22%", left: "80.5%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Jun – Sep` },
+      { label: "Currency", value: `Japanese Yen` },
+      { label: "Language", value: `Japanese` },
+      { label: "Kid-chaos level", value: `Low` }
+    ],
+    whyVisit: `A day trip out of Tokyo into the mountains — Japan's most iconic peak, at its best on a clear morning from one of the lakes at its base.`,
+    thingsToDo: [
+      `View Mt. Fuji from Lake Kawaguchiko or Hakone`,
+      `Visit a traditional onsen (hot spring) with a view of the mountain`,
+      `Photograph the peak from one of the classic viewpoints`
+    ],
+    restaurants: [],
+    mustTryFoods: [
+      { name: `Hoto noodles`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=500" }
+    ],
+    hiddenGems: [
+`Still need your input here — restaurant and hidden-gem picks pending your photo/story review`
+    ],
+    travelTips: [
+`Fuji is famously shy — check forecasts and go early for the best chance of clear skies`,
+`Check the weather for Jun – Sep before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j8.jpg?w=1000"],
+    rating: 9,
+    wouldReturn: `Pending your review — no personal notes on file yet.`,
+    relatedAdventure: "japan-2019"
+  },
+  {
+    slug: "athens-2022",
+    name: `Athens`,
+    country: `Greece`,
+    tag: `Greece 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900",
+    coords: { top: "28.9%", left: "56.6%" },
+    quickFacts: [
+      { label: "Best time to go", value: `May – Sep` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Greek` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Athens was one stop on our Greece trip, and it earned its place — visit the acropolis.`,
+    thingsToDo: [
+`Visit the Acropolis`,
+`Explore the Greek islands`,
+`Try the local cuisine`,
+`Go hiking or trekking`,
+`Experience the nightlife`
+    ],
+    restaurants: [
+      { name: `Nikolas Taverna`, location: `Athens`, rating: 4.3, review: `This traditional Greek taverna is located on the island of Mykonos and is known for its delicious grilled octopus, freshly caught seafood, and homemade desserts.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=900" },
+      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900" },
+      { name: `Kritamon`, location: `Athens`, rating: 4.6, review: `Located on the island of Crete, this restaurant offers a modern twist on traditional Cretan cuisine. Don't miss their lamb and eggplant moussaka or their homemade pasta dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=900" },
+      { name: `Selene`, location: `Athens`, rating: 4.3, review: `This upscale restaurant in Santorini is known for its gourmet Greek cuisine made with locally sourced ingredients. Try their Santorinian fava, lobster pasta, and smoked pork with eggplant puree.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=900" }
+    ],
+    mustTryFoods: [
+      { name: `Nikolas Taverna`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=500" },
+      { name: `To Ouzeri tou Laki`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=500" },
+      { name: `Kritamon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=500" },
+      { name: `Selene`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Athens away from the main sights, worth the wander`,
+`Go early — Athens feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Athens fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for May – Sep before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8.jpg?w=1000"],
+    rating: 9,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "greece-2022"
+  },
+  {
+    slug: "santorini-2022",
+    name: `Santorini`,
+    country: `Greece`,
+    tag: `Greece 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=900",
+    coords: { top: "29.8%", left: "57.1%" },
+    quickFacts: [
+      { label: "Best time to go", value: `May – Sep` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Greek` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Santorini was one stop on our Greece trip, and it earned its place — explore santorini.`,
+    thingsToDo: [
+`Explore Santorini`
+    ],
+    restaurants: [
+
+    ],
+    mustTryFoods: [
+      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Santorini away from the main sights, worth the wander`,
+`Go early — Santorini feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Santorini fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for May – Sep before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000"],
+    rating: 9,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "greece-2022"
+  },
+  {
+    slug: "mykonos-2022",
+    name: `Mykonos`,
+    country: `Greece`,
+    tag: `Greece 2022 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=900",
+    coords: { top: "29.2%", left: "57.0%" },
+    quickFacts: [
+      { label: "Best time to go", value: `May – Sep` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `Greek` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Mykonos was one stop on our Greece trip, and it earned its place — explore mykonos.`,
+    thingsToDo: [
+`Explore Mykonos`
+    ],
+    restaurants: [
+
+    ],
+    mustTryFoods: [
+      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Mykonos away from the main sights, worth the wander`,
+`Go early — Mykonos feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Mykonos fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for May – Sep before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
+    rating: 10,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "greece-2022"
+  },
+  {
+    slug: "auckland-2020",
+    name: `Auckland`,
+    country: `New Zealand`,
+    tag: `New Zealand 2020 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=900",
+    coords: { top: "70.5%", left: "98.5%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Dec – Feb` },
+      { label: "Currency", value: `NZ Dollar` },
+      { label: "Language", value: `English` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Auckland was one stop on our New Zealand trip, and it earned its place — take a scenic drive along one of new zealand's many beautifu.`,
+    thingsToDo: [
+`Take a scenic drive along one of New Zealand's many beautifu`,
+`Go hiking or tramping through the many scenic trails along t`,
+`Explore the underground glowworm caves in Waitomo or the geo`,
+`Try wine tasting in New Zealand's many world-renowned wineri`,
+`Visit the Hobbiton movie set used in the Lord of the Rings a`
+    ],
+    restaurants: [
+      { name: `Depot Eatery & Oyster Bar`, location: `Auckland`, rating: 4.3, review: `This Auckland restaurant is famous for its fresh New Zealand seafood, particularly the oysters.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=900" },
+      { name: `The Grove`, location: `Auckland`, rating: 4.5, review: `A fine-dining restaurant in Auckland known for its innovative dishes using locally sourced ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=900" },
+      { name: `Fergburger`, location: `Auckland`, rating: 4.6, review: `A burger joint in Queenstown that is famous for its delicious, oversized burgers and long lines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz11.jpg?w=900" },
+      { name: `Ortega Fish Shack`, location: `Auckland`, rating: 4.3, review: `A seafood restaurant in Wellington that offers a variety of dishes made from fresh, local seafood.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz22.jpg?w=900" }
+    ],
+    mustTryFoods: [
+      { name: `Depot Eatery & Oyster Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=500" },
+      { name: `The Grove`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=500" },
+      { name: `Fergburger`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz11.jpg?w=500" },
+      { name: `Ortega Fish Shack`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz22.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Auckland away from the main sights, worth the wander`,
+`Go early — Auckland feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Auckland fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Dec – Feb before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz27.jpg?w=1000"],
+    rating: 10,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "new-zealand-2020"
+  },
+  {
+    slug: "queenstown-2020",
+    name: `Queenstown`,
+    country: `New Zealand`,
+    tag: `New Zealand 2020 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz23.jpg?w=900",
+    coords: { top: "75.0%", left: "96.9%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Dec – Feb` },
+      { label: "Currency", value: `NZ Dollar` },
+      { label: "Language", value: `English` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Queenstown was one stop on our New Zealand trip, and it earned its place — visit fiordland national park to see fjords, mountains, wate.`,
+    thingsToDo: [
+`Visit Fiordland National Park to see fjords, mountains, wate`,
+`Go bungee jumping, skydiving, or ziplining for a thrilling e`,
+`Take a scenic flight over the Southern Alps or the glaciers `
+    ],
+    restaurants: [
+
+    ],
+    mustTryFoods: [
+      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Queenstown away from the main sights, worth the wander`,
+`Go early — Queenstown feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Queenstown fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Dec – Feb before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz4.jpg?w=1000"],
+    rating: 10,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "new-zealand-2020"
+  },
+  {
+    slug: "wellington-2020",
+    name: `Wellington`,
+    country: `New Zealand`,
+    tag: `New Zealand 2020 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz29.jpg?w=900",
+    coords: { top: "72.9%", left: "98.5%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Dec – Feb` },
+      { label: "Currency", value: `NZ Dollar` },
+      { label: "Language", value: `English` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Wellington was one stop on our New Zealand trip, and it earned its place — explore wellington.`,
+    thingsToDo: [
+`Explore Wellington`
+    ],
+    restaurants: [
+      { name: `Wellington Chocolate Factory`, location: `Wellington`, rating: 4.3, review: `A chocolate factory in Wellington that also operates a café offering a variety of chocolate treats.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=900" }
+    ],
+    mustTryFoods: [
+      { name: `Wellington Chocolate Factory`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Wellington away from the main sights, worth the wander`,
+`Go early — Wellington feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Wellington fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Dec – Feb before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz29.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz26.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz3.jpg?w=1000"],
+    rating: 9,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: "new-zealand-2020"
+  },
+  {
+    slug: "paris-2017",
+    name: `Paris`,
+    country: `France`,
+    tag: `France 2017 Stop`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=900",
+    coords: { top: "22.9%", left: "50.7%" },
+    quickFacts: [
+      { label: "Best time to go", value: `Apr – Jun` },
+      { label: "Currency", value: `Euro` },
+      { label: "Language", value: `French` },
+      { label: "Kid-chaos level", value: `Medium` }
+    ],
+    whyVisit: `Paris was one stop on our France trip, and it earned its place — visit the eiffel tower.`,
+    thingsToDo: [
+`Visit the Eiffel Tower`,
+`Explore the Palace of Versailles`,
+`Visit the Louvre Museum`,
+`Walk along Champs-Elysées`,
+`Taste French cuisine`
+    ],
+    restaurants: [
+      { name: `Le Jules Verne`, location: `Paris`, rating: 4.3, review: `Located on the Eiffel Tower, this Michelin-starred restaurant offers incredible views of Paris while enjoying French cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=900" },
+      { name: `Le Comptoir du Relais`, location: `Paris`, rating: 4.5, review: `This lively bistro serves classic French dishes like escargots, beef tartare, and coq au vin. It's popular with locals and tourists alike.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=900" },
+      { name: `Le Grand Véfour`, location: `Paris`, rating: 4.6, review: `This elegant restaurant has been a favorite of the city's elite since the 18th century. It serves classic French dishes in a stunning historic setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=900" },
+      { name: `L'Ambroisie`, location: `Paris`, rating: 4.3, review: `This three-Michelin-starred restaurant is known for its elegant and refined French cuisine, utilizing only the freshest ingredients. It's a perfect date restaurant with its romantic ambiance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=900" }
+    ],
+    mustTryFoods: [
+      { name: `Le Jules Verne`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=500" },
+      { name: `Le Comptoir du Relais`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=500" },
+      { name: `Le Grand Véfour`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=500" },
+      { name: `L'Ambroisie`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=500" }
+    ],
+    hiddenGems: [
+`A quiet corner of Paris away from the main sights, worth the wander`,
+`Go early — Paris feels completely different before the crowds arrive`,
+`Ask a local for their favorite spot; it's usually the best one`
+    ],
+    travelTips: [
+`Book the well-reviewed restaurants ahead — the best tables in Paris fill up`,
+`Pace the day around one big sight and one slow meal`,
+`Check the weather for Apr – Jun before locking in dates`
+    ],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=1000"],
+    rating: 9,
+    wouldReturn: `Yes — already looking for an excuse to go back.`,
+    relatedAdventure: null
+  }
 ];
 
 const ADVENTURES = [
@@ -2061,6 +2491,47 @@ const ADVENTURES = [
       "Chả Cá Thăng Long (Hanoi)",
       "Cục Gạch Quán (Ho Chi Minh City)"
     ]
+  }
+,
+  {
+    slug: "italy-2022",
+    title: `Italy 2022`,
+    subtitle: `A grand tour through Rome, Florence, Pisa, Naples, and the Amalfi Coast.`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1800",
+    duration: "Multi-city",
+    distance: "",
+    stops: ["rome-2022", "florence-2022", "pisa-2022", "naples-2022", "amalfi-2022"],
+    intro: `A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.`
+  },
+  {
+    slug: "japan-2019",
+    title: `Japan 2019`,
+    subtitle: `Temples, trains, and far too much ramen through Tokyo, Kyoto, Osaka, and Mt. Fuji.`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1800",
+    duration: "Multi-city",
+    distance: "",
+    stops: ["tokyo-2019", "kyoto-2019", "osaka-2019", "mt-fuji-2019"],
+    intro: `A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.`
+  },
+  {
+    slug: "greece-2022",
+    title: `Greece 2022`,
+    subtitle: `Island-hopping through Athens, Santorini, and Mykonos.`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1800",
+    duration: "Multi-city",
+    distance: "",
+    stops: ["athens-2022", "santorini-2022", "mykonos-2022"],
+    intro: `A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.`
+  },
+  {
+    slug: "new-zealand-2020",
+    title: `New Zealand 2020`,
+    subtitle: `Fjords, hobbits, and flat whites through Auckland, Queenstown, and Wellington.`,
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=1800",
+    duration: "Multi-city",
+    distance: "",
+    stops: ["auckland-2020", "queenstown-2020", "wellington-2020"],
+    intro: `A trip through Auckland, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.`
   }
 ];
 

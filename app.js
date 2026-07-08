@@ -98,6 +98,70 @@ function lazyImg(src, alt, cls) {
   return `<img class="lazy-img ${cls || ""}" data-src="${src}" alt="${escapeHtml(alt)}" loading="lazy" width="900" height="700">`;
 }
 
+/* ---------------- Lightbox ---------------- */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const lightboxCaption = document.getElementById("lightboxCaption");
+let lightboxGroup = [];
+let lightboxIndex = 0;
+
+function openLightbox(group, index) {
+  lightboxGroup = group;
+  lightboxIndex = index;
+  showLightboxImage();
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+function showLightboxImage() {
+  const item = lightboxGroup[lightboxIndex];
+  lightboxImg.classList.remove("loaded");
+  lightboxImg.src = item.src;
+  lightboxImg.alt = item.label || "";
+  lightboxCaption.textContent = item.label || "";
+  lightboxImg.onload = () => lightboxImg.classList.add("loaded");
+  const multi = lightboxGroup.length > 1;
+  document.getElementById("lightboxPrev").style.display = multi ? "flex" : "none";
+  document.getElementById("lightboxNext").style.display = multi ? "flex" : "none";
+}
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+function lightboxStep(dir) {
+  lightboxIndex = (lightboxIndex + dir + lightboxGroup.length) % lightboxGroup.length;
+  showLightboxImage();
+}
+document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+document.getElementById("lightboxPrev").addEventListener("click", () => lightboxStep(-1));
+document.getElementById("lightboxNext").addEventListener("click", () => lightboxStep(1));
+lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener("keydown", (e) => {
+  if (!lightbox.classList.contains("open")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowLeft") lightboxStep(-1);
+  if (e.key === "ArrowRight") lightboxStep(1);
+});
+
+/* Delegate clicks: any element with data-lightbox-group + data-lightbox-index opens the viewer.
+   Groups are looked up from window.__lightboxGroups, keyed by group name, so the same
+   masonry/gallery markup works for the homepage strip, the full gallery, and a single
+   destination's photo set without extra markup per image. */
+window.__lightboxGroups = {};
+document.addEventListener("click", (e) => {
+  const el = e.target.closest("[data-lightbox-group]");
+  if (!el) return;
+  const groupName = el.getAttribute("data-lightbox-group");
+  const index = parseInt(el.getAttribute("data-lightbox-index"), 10) || 0;
+  const group = window.__lightboxGroups[groupName];
+  if (group && group.length) openLightbox(group, index);
+});
+
+function registerLightboxGroup(name, items) {
+  window.__lightboxGroups[name] = items;
+}
+
 /* ---------------- Newsletter forms ---------------- */
 function bindNewsletterForms() {
   document.querySelectorAll("[data-newsletter-form]").forEach(form => {
@@ -188,7 +252,18 @@ function afterRender(path) {
   initReveal();
   initLazyImages();
   bindNewsletterForms();
-  if (path === "/") initHeroSlider();
+  if (path === "/") {
+    initHeroSlider();
+    registerLightboxGroup("home", GALLERY.slice(0, 8).map(g => ({ src: g.src, label: g.label })));
+  }
+  const destMatch = path.match(/^\/destinations\/([a-z0-9-]+)$/);
+  if (destMatch) {
+    const d = getDestination(destMatch[1]);
+    if (d) registerLightboxGroup(`dest-${d.slug}`, d.gallery.map(src => ({ src, label: d.name })));
+  }
+  if (path === "/gallery") {
+    registerLightboxGroup("full-gallery", GALLERY.map(g => ({ src: g.src, label: g.label })));
+  }
   bindGalleryFilters();
 }
 
@@ -222,6 +297,11 @@ function foodCardHTML(r, delay) {
       <span class="food-card-loc">${escapeHtml(r.location)}${r.destName ? " · " + escapeHtml(r.destName) : ""}</span>
       <h3 class="food-card-name">${escapeHtml(r.name)}</h3>
       <p class="food-card-review">${escapeHtml(r.review)}</p>
+      ${r.communityReview ? `
+      <div class="community-review">
+        <span class="community-review-label">Community says <em>(via ${escapeHtml(r.communitySource || "Google/Yelp")} — visited, not personally reviewed)</em></span>
+        <p>${escapeHtml(r.communityReview)}</p>
+      </div>` : ""}
       <a href="#/destinations/${r.destSlug || ""}" class="food-card-more">Read the full review →</a>
     </div>
   </div>`;
@@ -363,8 +443,8 @@ function renderHome() {
         <a href="#/gallery" class="btn btn-ghost">Open Full Gallery</a>
       </div>
       <div class="masonry">
-        ${GALLERY.slice(0, 8).map(g => `
-          <div class="masonry-item reveal">
+        ${GALLERY.slice(0, 8).map((g, i) => `
+          <div class="masonry-item reveal" data-lightbox-group="home" data-lightbox-index="${i}">
             ${lazyImg(g.src, g.label)}
             <span class="masonry-tag">${escapeHtml(g.label)}</span>
           </div>`).join("")}
@@ -621,7 +701,7 @@ function renderDestinationDetail(d) {
     <div class="container">
       <span class="eyebrow">Photo Gallery</span>
       <div class="masonry mt-lg" style="margin-top:32px;">
-        ${d.gallery.map(src => `<div class="masonry-item reveal">${lazyImg(src, d.name)}</div>`).join("")}
+        ${d.gallery.map((src, i) => `<div class="masonry-item reveal" data-lightbox-group="dest-${d.slug}" data-lightbox-index="${i}">${lazyImg(src, d.name)}</div>`).join("")}
       </div>
     </div>
   </section>
@@ -740,8 +820,8 @@ function renderGallery() {
       </div>
 
       <div class="masonry" id="galleryMasonry">
-        ${GALLERY.map(g => `
-          <div class="masonry-item reveal" data-tag="${g.tag}">
+        ${GALLERY.map((g, i) => `
+          <div class="masonry-item reveal" data-tag="${g.tag}" data-lightbox-group="full-gallery" data-lightbox-index="${i}">
             ${lazyImg(g.src, g.label)}
             <span class="masonry-tag">${escapeHtml(g.label)}</span>
           </div>`).join("")}
