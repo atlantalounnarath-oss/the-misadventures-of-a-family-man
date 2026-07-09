@@ -98,10 +98,10 @@ const DESTINATIONS = [
       "Symphony of Lights from the harbor"
     ],
     restaurants: [
-      { name: "Tim Ho Wan", location: "Hong Kong", rating: 4.6, review: "Michelin-famous dim sum without Michelin prices — the baked BBQ pork buns alone were worth the flight.", img: wpImg(797, 900) },
-      { name: "Mott 32", location: "Hong Kong", rating: 4.7, review: "Modern Cantonese, and one of the city's genuinely signature dining experiences.", img: wpImg(801, 900) },
-      { name: "Yat Lok", location: "Hong Kong", rating: 4.4, review: "Legendary roast goose — the kind of place locals queue for without a second thought.", img: wpImg(799, 900) },
-      { name: "Australia Dairy Company", location: "Hong Kong", rating: 4.2, review: "A classic Hong Kong breakfast institution, brisk service included at no extra charge.", img: wpImg(798, 900) }
+      { name: "Tim Ho Wan", location: "Hong Kong", rating: 4.6, review: "Michelin-famous dim sum without Michelin prices — the baked BBQ pork buns alone were worth the flight.", img: wpImg(797, 900), communityReview: "Known as the world's cheapest Michelin-starred restaurant. Reviewers consistently single out the baked BBQ pork buns as the must-order — some say the rest of the menu doesn't quite match up, and service is efficient but can run brusque during rush.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Mott 32", location: "Hong Kong", rating: 4.7, review: "Modern Cantonese, and one of the city's genuinely signature dining experiences.", img: wpImg(801, 900), communityReview: "Regularly cited as one of Hong Kong's top dining experiences — reviewers rave about the Apple Wood Roasted Peking Duck and the atmosphere (a converted bank vault). Pre-ordering the duck is a common tip; a few reviews find it overpriced for the portions.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Yat Lok", location: "Hong Kong", rating: 4.4, review: "Legendary roast goose — the kind of place locals queue for without a second thought.", img: wpImg(799, 900), communityReview: "A Michelin-starred roast goose institution (and a stop on Anthony Bourdain's Hong Kong episode) — reviews are notably split: many call the goose some of the best in the city, while a recurring complaint is brusque, rushed service.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Australia Dairy Company", location: "Hong Kong", rating: 4.2, review: "A classic Hong Kong breakfast institution, brisk service included at no extra charge.", img: wpImg(798, 900), communityReview: "A no-frills cha chaan teng famous for silky scrambled eggs and steamed milk pudding — reviewers consistently rave about the food while warning about famously brusque, fast-paced service and cash-only, shared-table seating.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: "Dim sum", img: wpImg(805, 500) },
@@ -146,9 +146,9 @@ const DESTINATIONS = [
       "Sunset on Chaweng or Lamai Beach"
     ],
     restaurants: [
-      { name: "Coco Tam's", location: "Koh Samui", rating: 4.7, review: "Beachfront dining with the famous fire show — the kids still bring this up unprompted.", img: wpImg(800, 900) },
-      { name: "The Jungle Club", location: "Koh Samui", rating: 4.5, review: "Incredible hilltop views over the island; go for sunset if you can time it.", img: wpImg(812, 900) },
-      { name: "Tree Tops Signature Dining", location: "Koh Samui", rating: 4.6, review: "A romantic, special-occasion meal worth booking ahead for.", img: wpImg(803, 900) }
+      { name: "Coco Tam's", location: "Koh Samui", rating: 4.7, review: "Beachfront dining with the famous fire show — the kids still bring this up unprompted.", img: wpImg(800, 900), communityReview: "Known island-wide for its beachfront fire shows and sunset views. Reviews are notably split: many call it a must-visit highlight of Samui nightlife, while others find it overpriced and overhyped for the food quality.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "The Jungle Club", location: "Koh Samui", rating: 4.5, review: "Incredible hilltop views over the island; go for sunset if you can time it.", img: wpImg(812, 900), communityReview: "Reviewers consistently rave about the sunset views over Chaweng Bay — widely called one of the most breathtaking spots on the island — though the steep drive up and inconsistent service on busy nights draw occasional complaints.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Tree Tops Signature Dining", location: "Koh Samui", rating: 4.6, review: "A romantic, special-occasion meal worth booking ahead for.", img: wpImg(803, 900), communityReview: "A treehouse fine-dining experience frequently booked for honeymoons and anniversaries — reviewers consistently praise the setting and attentive service; the main criticism is steep pricing for the portion sizes.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: "Mango sticky rice", img: wpImg(820, 500) },
@@ -193,10 +193,10 @@ const DESTINATIONS = [
       "Rooftop drinks at Vertigo"
     ],
     restaurants: [
-      { name: "Jay Fai", location: "Bangkok", rating: 4.6, review: "The iconic crab omelet everyone warns you about the wait for. Worth every minute of it.", img: wpImg(811, 900) },
-      { name: "Thipsamai", location: "Bangkok", rating: 4.5, review: "Famous Pad Thai from a shop that's been perfecting it for decades.", img: wpImg(809, 900) },
-      { name: "Jeh O Chula", location: "Bangkok", rating: 4.4, review: "Tom Yum Mama noodles turned into a full-contact food event.", img: wpImg(813, 900) },
-      { name: "Sorn", location: "Bangkok", rating: 4.8, review: "One of Thailand's premier fine-dining restaurants — southern Thai cuisine done at the highest level.", img: wpImg(804, 900) }
+      { name: "Jay Fai", location: "Bangkok", rating: 4.6, review: "The iconic crab omelet everyone warns you about the wait for. Worth every minute of it.", img: wpImg(811, 900), communityReview: "A Michelin-starred street food legend famous for goggle-wearing chef Jay Fai's crab omelet. Opinion is genuinely split — many call it a bucket-list meal worth the multi-hour wait and steep price, while others find it overhyped for what's still, at its core, street food.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Thipsamai", location: "Bangkok", rating: 4.5, review: "Famous Pad Thai from a shop that's been perfecting it for decades.", img: wpImg(809, 900), communityReview: "Often called Bangkok's best pad Thai, running since 1939 — reviewers consistently praise the signature egg-wrapped noodles and fresh orange juice, though several note it's pricier than street-stall pad Thai and can mean a real wait.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Jeh O Chula", location: "Bangkok", rating: 4.4, review: "Tom Yum Mama noodles turned into a full-contact food event.", img: wpImg(813, 900), communityReview: "A Michelin Bib Gourmand institution famous for its Tom Yum Mama noodles — most reviewers say it's every bit worth the notoriously long queue, though a vocal minority calls it overrated instant noodles riding a social-media wave.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sorn", location: "Bangkok", rating: 4.8, review: "One of Thailand's premier fine-dining restaurants — southern Thai cuisine done at the highest level.", img: wpImg(804, 900), communityReview: "Thailand's first three-Michelin-starred restaurant, celebrated for its bold, intensely spiced tour of Southern Thai cuisine. Reservations are famously difficult to land, and reviewers near-universally call it one of the best meals of their trip.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: "Crab omelet", img: wpImg(811, 500) },
@@ -241,9 +241,9 @@ const DESTINATIONS = [
       "Rooftop drinks overlooking the city"
     ],
     restaurants: [
-      { name: "Pizza 4P's", location: "Ho Chi Minh City", rating: 4.6, review: "A modern Vietnamese favorite — not what you expect to crave in Saigon, but everyone does.", img: wpImg(814, 900) },
-      { name: "Bánh Mì Huỳnh Hoa", location: "Ho Chi Minh City", rating: 4.7, review: "Often called the city's best bánh mì, and stuffed enough to make a believer out of anyone.", img: wpImg(808, 900) },
-      { name: "Cục Gạch Quán", location: "Ho Chi Minh City", rating: 4.5, review: "Traditional southern Vietnamese cuisine in a garden setting that slows the whole meal down.", img: wpImg(819, 900) }
+      { name: "Pizza 4P's", location: "Ho Chi Minh City", rating: 4.6, review: "A modern Vietnamese favorite — not what you expect to crave in Saigon, but everyone does.", img: wpImg(814, 900), communityReview: "A Japanese-run pizza chain beloved across Vietnam for house-made cheese and farm-sourced ingredients from Da Lat. Reviewers near-universally praise the burrata pizzas and attentive service; the main downside noted is inconsistent wait times at busy branches.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Bánh Mì Huỳnh Hoa", location: "Ho Chi Minh City", rating: 4.7, review: "Often called the city's best bánh mì, and stuffed enough to make a believer out of anyone.", img: wpImg(808, 900), communityReview: "Famous for the biggest, priciest bánh mì in Saigon — reviewers are split between calling it the best in the city and finding it overstuffed and overpriced next to cheaper local spots, but the queue rarely lets up either way.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Cục Gạch Quán", location: "Ho Chi Minh City", rating: 4.5, review: "Traditional southern Vietnamese cuisine in a garden setting that slows the whole meal down.", img: wpImg(819, 900), communityReview: "A longtime favorite for home-style southern Vietnamese cooking in a quiet, plant-filled setting — reviewers consistently praise the atmosphere and traditional dishes as a welcome break from Saigon's street-level chaos.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: "Bánh mì", img: wpImg(814, 500) },
@@ -333,10 +333,10 @@ const DESTINATIONS = [
       "Hoa Lo Prison — a powerful historical museum"
     ],
     restaurants: [
-      { name: "Phở Gia Truyền Bát Đàn", location: "Hanoi", rating: 4.7, review: "One of the city's most famous bowls of pho — expect a line and a fast-moving system.", img: wpImg(806, 900) },
-      { name: "Bún Chả Hương Liên", location: "Hanoi", rating: 4.6, review: "The \"Obama Bun Cha\" restaurant that's become a genuine Hanoi institution.", img: wpImg(817, 900) },
-      { name: "Chả Cá Thăng Long", location: "Hanoi", rating: 4.5, review: "Hanoi's iconic turmeric fish with dill, cooked tableside.", img: wpImg(823, 900) },
-      { name: "Cafe Giảng", location: "Hanoi", rating: 4.8, review: "The birthplace of Vietnamese egg coffee — whipped into something between dessert and caffeine delivery system.", img: wpImg(822, 900) }
+      { name: "Phở Gia Truyền Bát Đàn", location: "Hanoi", rating: 4.7, review: "One of the city's most famous bowls of pho — expect a line and a fast-moving system.", img: wpImg(806, 900), communityReview: "Widely called one of Hanoi's best bowls of pho, with a Michelin Bib Gourmand to back it up — reviewers rave about the rich broth, though several mention gruff service and a no-frills, self-service setup as part of the deal.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Bún Chả Hương Liên", location: "Hanoi", rating: 4.6, review: "The \"Obama Bun Cha\" restaurant that's become a genuine Hanoi institution.", img: wpImg(817, 900), communityReview: "Famous as the spot where Obama and Anthony Bourdain shared a meal in 2016 — reviewers say the smoky grilled pork still delivers, though opinions are mixed on whether it's still Hanoi's best bun cha or just its most famous.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Chả Cá Thăng Long", location: "Hanoi", rating: 4.5, review: "Hanoi's iconic turmeric fish with dill, cooked tableside.", img: wpImg(823, 900), communityReview: "A go-to spot for Hanoi's signature turmeric-and-dill fish dish, cooked tableside — reviewers consistently praise the tableside sizzle and flavor as a memorable, distinctly Hanoi experience.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Cafe Giảng", location: "Hanoi", rating: 4.8, review: "The birthplace of Vietnamese egg coffee — whipped into something between dessert and caffeine delivery system.", img: wpImg(822, 900), communityReview: "The original home of Vietnamese egg coffee, now run by the second generation of the family that invented it — reviewers near-universally call it a must-try, tucked down a narrow alley with a distinctly old-Hanoi atmosphere.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: "Pho", img: wpImg(806, 500) },
@@ -384,7 +384,7 @@ const DESTINATIONS = [
       "Squid fishing at night"
     ],
     restaurants: [
-      { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", img: wpImg(825, 900) },
+      { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", img: wpImg(825, 900), communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset.", img: wpImg(826, 900) }
     ],
     mustTryFoods: [
