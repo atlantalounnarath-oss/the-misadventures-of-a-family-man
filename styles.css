@@ -164,10 +164,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .brand-mark {
   color: var(--brass);
-  font-size: 18px;
-  transform: rotate(45deg);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.4s var(--ease);
 }
+.nav-brand:hover .brand-mark { transform: translate(2px, -2px); }
 .brand-text em { font-style: italic; color: var(--text-dim); font-weight: 400; }
 
 .nav-links { display: flex; align-items: center; gap: 30px; }
@@ -638,7 +639,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: relative;
   cursor: pointer;
 }
-.masonry-item img { width: 100%; display: block; transition: transform 0.6s var(--ease); }
+.masonry-item img { width: 100%; height: auto; display: block; transition: transform 0.6s var(--ease); }
 .masonry-item:hover img { transform: scale(1.04); }
 .masonry-tag {
   position: absolute; left: 12px; bottom: 12px;
@@ -711,7 +712,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
   gap: 48px;
 }
-.footer-brand .brand-mark { font-size: 26px; }
+.footer-brand .brand-mark { color: var(--brass); }
 .footer-tagline { margin-top: 18px; color: var(--text-dim); font-size: 14px; max-width: 30ch; line-height: 1.7; }
 .footer-socials { display: flex; gap: 12px; margin-top: 22px; }
 .footer-socials a {

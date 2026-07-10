@@ -95,7 +95,7 @@ function initLazyImages() {
   document.querySelectorAll("img[data-src]").forEach(el => lazyObserver.observe(el));
 }
 function lazyImg(src, alt, cls) {
-  return `<img class="lazy-img ${cls || ""}" data-src="${src}" alt="${escapeHtml(alt)}" loading="lazy" width="900" height="700">`;
+  return `<img class="lazy-img ${cls || ""}" data-src="${src}" alt="${escapeHtml(alt)}" loading="lazy">`;
 }
 
 /* ---------------- Lightbox ---------------- */
@@ -299,10 +299,10 @@ function foodCardHTML(r, delay) {
       <p class="food-card-review">${escapeHtml(r.review)}</p>
       ${r.communityReview ? `
       <div class="community-review">
-        <span class="community-review-label">Community says <em>(via ${escapeHtml(r.communitySource || "Google/Yelp")} — visited, not personally reviewed)</em></span>
+        <span class="community-review-label">Community says <em>(via ${escapeHtml(r.communitySource || "Google/Yelp")} — visited)</em></span>
         <p>${escapeHtml(r.communityReview)}</p>
       </div>` : ""}
-      <a href="#/destinations/${r.destSlug || ""}" class="food-card-more">Read the full review →</a>
+      ${r.destSlug ? `<a href="#/destinations/${r.destSlug}" class="food-card-more">See ${escapeHtml(r.destName || "destination")} →</a>` : ""}
     </div>
   </div>`;
 }
@@ -587,6 +587,17 @@ function renderAdventureDetail(a) {
     </div>
   </section>` : ""}
 
+  ${a.packingTips ? `
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Packing & Practical Tips</span>
+      <h2 class="section-title" style="font-size:28px; margin-top:14px;">What we'd tell ourselves before packing again</h2>
+      <div class="tips-list mt-lg" style="margin-top:28px;">
+        ${a.packingTips.map(t => `<div class="tip-row"><span class="tip-icon">◆</span>${escapeHtml(t)}</div>`).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
   ${worldMapHTML()}
   ${newsletterBlockHTML()}
   `;
@@ -656,6 +667,7 @@ function renderDestinationDetail(d) {
     </div>
   </section>
 
+  ${d.restaurants.length ? `
   <section class="section section-tight">
     <div class="container">
       <span class="eyebrow">Restaurants</span>
@@ -664,7 +676,7 @@ function renderDestinationDetail(d) {
         ${d.restaurants.map((r, i) => foodCardHTML({ ...r }, `reveal-delay-${i + 1}`)).join("")}
       </div>
     </div>
-  </section>
+  </section>` : ""}
 
   <section class="section section-tight section-alt">
     <div class="container">
