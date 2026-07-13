@@ -79,6 +79,7 @@ const DESTINATIONS = [
     slug: "hong-kong",
     name: "Hong Kong",
     country: "China (SAR)",
+    year: 2026,
     tag: "Neon & Dim Sum",
     heroImg: photoSet("hong-kong").hero,
     cardImg: photoSet("hong-kong").card,
@@ -128,6 +129,7 @@ const DESTINATIONS = [
     slug: "koh-samui",
     name: "Koh Samui",
     country: "Thailand",
+    year: 2026,
     tag: "Slow Beach Days",
     heroImg: photoSet("koh-samui").hero,
     cardImg: photoSet("koh-samui").card,
@@ -175,6 +177,7 @@ const DESTINATIONS = [
     slug: "bangkok",
     name: "Bangkok",
     country: "Thailand",
+    year: 2026,
     tag: "Street Food Capital",
     heroImg: photoSet("bangkok").hero,
     cardImg: photoSet("bangkok").card,
@@ -223,6 +226,7 @@ const DESTINATIONS = [
     slug: "ho-chi-minh-city",
     name: "Ho Chi Minh City",
     country: "Vietnam",
+    year: 2026,
     tag: "Motorbikes & Banh Mi",
     heroImg: photoSet("ho-chi-minh-city").hero,
     cardImg: photoSet("ho-chi-minh-city").card,
@@ -270,6 +274,7 @@ const DESTINATIONS = [
     slug: "an-giang",
     name: "An Giang",
     country: "Vietnam",
+    year: 2026,
     tag: "Mekong Delta",
     heroImg: photoSet("an-giang").hero,
     cardImg: photoSet("an-giang").card,
@@ -314,9 +319,10 @@ const DESTINATIONS = [
     slug: "hanoi",
     name: "Hanoi",
     country: "Vietnam",
+    year: 2026,
     tag: "Old Quarter & Egg Coffee",
-    heroImg: photoSet("hanoi").hero,
-    cardImg: photoSet("hanoi").card,
+    heroImg: "assets/uploads/hanoi-1.jpg",
+    cardImg: "assets/uploads/hanoi-2.jpg",
     coords: { top: "30%", left: "58%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
@@ -356,7 +362,7 @@ const DESTINATIONS = [
       "Try the egg coffee once even if it sounds strange; it always wins people over",
       "Book the overnight train in advance during peak season"
     ],
-    gallery: photoSet("hanoi").gallery,
+    gallery: ["assets/uploads/hanoi-1.jpg", "assets/uploads/hanoi-2.jpg", ...photoSet("hanoi").gallery],
     rating: 9,
     wouldReturn: "Every time we're in the region — it's become a tradition, not a stop.",
     relatedAdventure: "southeast-asia-2026"
@@ -365,6 +371,7 @@ const DESTINATIONS = [
     slug: "ha-long-bay",
     name: "Ha Long Bay",
     country: "Vietnam",
+    year: 2026,
     tag: "Limestone Karsts",
     heroImg: photoSet("ha-long-bay").hero,
     cardImg: photoSet("ha-long-bay").card,
@@ -412,6 +419,7 @@ const DESTINATIONS = [
     slug: "puerto-rico-2010",
     name: `Puerto Rico`,
     country: `Puerto Rico, USA`,
+    year: 2010,
     tag: `Island Getaway`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr2010.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr8.jpg?w=900",
@@ -461,6 +469,7 @@ const DESTINATIONS = [
     slug: "belize-2015",
     name: `Belize`,
     country: `Belize`,
+    year: 2015,
     tag: `Central America 2015 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz2.jpg?w=900",
@@ -510,6 +519,7 @@ const DESTINATIONS = [
     slug: "roatan-2015",
     name: `Roatán`,
     country: `Honduras`,
+    year: 2015,
     tag: `Central America 2015 Stop`,
     heroImg: img("roatan-hero", 1600, 1000),
     cardImg: img("roatan-card", 900, 1100),
@@ -548,6 +558,7 @@ const DESTINATIONS = [
     slug: "cancun-2015",
     name: `Cancún`,
     country: `Mexico`,
+    year: 2015,
     tag: `Central America 2015 Stop`,
     heroImg: img("cancun-hero", 1600, 1000),
     cardImg: img("cancun-card", 900, 1100),
@@ -586,6 +597,7 @@ const DESTINATIONS = [
     slug: "england-2017",
     name: `England`,
     country: `United Kingdom`,
+    year: 2017,
     tag: `Castles & Countryside`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=900",
@@ -635,6 +647,7 @@ const DESTINATIONS = [
     slug: "bahamas-2018",
     name: `Bahamas`,
     country: `Bahamas`,
+    year: 2018,
     tag: `Turquoise Water`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs2.jpg?w=900",
@@ -684,6 +697,7 @@ const DESTINATIONS = [
     slug: "iceland-2018",
     name: `Iceland`,
     country: `Iceland`,
+    year: 2018,
     tag: `Fire & Ice`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=900",
@@ -733,6 +747,7 @@ const DESTINATIONS = [
     slug: "puerto-vallarta-2019",
     name: `Puerto Vallarta`,
     country: `Mexico`,
+    year: 2019,
     tag: `Pacific Coast`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=900",
@@ -782,6 +797,7 @@ const DESTINATIONS = [
     slug: "orlando-fl-2010",
     name: `Orlando, Florida (2010)`,
     country: `USA`,
+    year: 2010,
     tag: `Theme Park Marathon`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o5.jpg?w=900",
@@ -831,6 +847,7 @@ const DESTINATIONS = [
     slug: "gulf-shores-al-2012",
     name: `Gulf Shores, Alabama`,
     country: `USA`,
+    year: 2012,
     tag: `Beach Week`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=900",
@@ -880,6 +897,7 @@ const DESTINATIONS = [
     slug: "hill-country-tx-2012",
     name: `Hill Country, Texas`,
     country: `USA`,
+    year: 2012,
     tag: `Lake House Weekends`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h1.jpg?w=900",
@@ -929,6 +947,7 @@ const DESTINATIONS = [
     slug: "atlanta-ga-2013",
     name: `Atlanta, Georgia`,
     country: `USA`,
+    year: 2013,
     tag: `Southern City Break`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a1.jpg?w=900",
@@ -978,6 +997,7 @@ const DESTINATIONS = [
     slug: "steamboat-springs-co-2014",
     name: `Steamboat Springs, Colorado`,
     country: `USA`,
+    year: 2014,
     tag: `Mountain Town`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=900",
@@ -1027,6 +1047,7 @@ const DESTINATIONS = [
     slug: "galveston-tx-2015",
     name: `Galveston, Texas`,
     country: `USA`,
+    year: 2015,
     tag: `Gulf Coast`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g1-1.jpg?w=900",
@@ -1046,10 +1067,10 @@ const DESTINATIONS = [
 `Discover Galveston's History at the Galveston Island Railroa`
     ],
     restaurants: [
-      { name: `Gaido's Seafood Restaurant`, location: `Galveston, Texas`, rating: 4.3, review: `A Galveston institution known for its fresh seafood dishes and Gulf Coast flavors.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=900" },
-      { name: `Rudy & Paco Restaurant & Bar`, location: `Galveston, Texas`, rating: 4.5, review: `Offers a blend of South American and Caribbean cuisines, known for its steaks and seafood.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g1-1.jpg?w=900" },
-      { name: `Shrimp 'N Stuff Downtown`, location: `Galveston, Texas`, rating: 4.6, review: `Casual eatery serving up delicious fried shrimp, oysters, and other seafood specialties.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=900" },
-      { name: `The Sunflower Bakery & Café`, location: `Galveston, Texas`, rating: 4.3, review: `Quaint café offering homemade baked goods, sandwiches, and a cozy atmosphere.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=900" }
+      { name: "Gaido's Seafood Restaurant", location: "Galveston, Texas", rating: 4.3, review: "A Galveston institution known for its fresh seafood dishes and Gulf Coast flavors.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=900", communityReview: "A Galveston Seawall fixture since 1911, still pulling a 4.5-star average across 5,000+ reviews — the pecan pie and grilled oysters get consistent raves. Reviews genuinely split on service, though, with some calling it the best meal of their trip and others reporting slow, disorganized waitstaff on an off night.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Rudy & Paco Restaurant & Bar", location: "Galveston, Texas", rating: 4.7, review: "Offers a blend of South American and Caribbean cuisines, known for its steaks and seafood.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g1-1.jpg?w=900", communityReview: "One of Galveston's most consistently praised upscale restaurants — reviewers repeatedly call it \"first class\" and highlight standout dishes like the Pargo entrees, with attentive service earning near-universal mentions.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Shrimp 'N Stuff Downtown", location: "Galveston, Texas", rating: 4.6, review: "Casual eatery serving up delicious fried shrimp, oysters, and other seafood specialties.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=900", communityReview: "A no-frills local institution since 1976, beloved for generous portions and honest prices — reviewers consistently call it the place they return to on every Galveston trip, with the stuffed shrimp and gumbo as top picks.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "The Sunflower Bakery & Café", location: "Galveston, Texas", rating: 4.3, review: "Quaint café offering homemade baked goods, sandwiches, and a cozy atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=900", communityReview: "A beloved East End neighborhood breakfast spot reviewers call a Galveston tradition — the Grilled Cinnamon Roll and Oysters Benedict come up again and again, with the from-scratch bakery a consistent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Gaido's Seafood Restaurant`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=500" },
@@ -1076,6 +1097,7 @@ const DESTINATIONS = [
     slug: "florida-keys-2017",
     name: `The Florida Keys`,
     country: `USA`,
+    year: 2017,
     tag: `Island Chain`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k2.jpg?w=900",
@@ -1095,10 +1117,10 @@ const DESTINATIONS = [
 `Experience Key Largo's Underwater World`
     ],
     restaurants: [
-      { name: `Blue Heaven (Key West)`, location: `The Florida Keys`, rating: 4.3, review: `Famous for its Key West-style cuisine, this restaurant offers a relaxed atmosphere with outdoor seating and live music.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg?w=900" },
-      { name: `Latitudes (Key West)`, location: `The Florida Keys`, rating: 4.5, review: `Located on Sunset Key, this waterfront restaurant offers stunning views and a diverse menu featuring fresh seafood and tropical flavors.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k2.jpg?w=900" },
-      { name: `Hogfish Bar & Grill (Stock Island)`, location: `The Florida Keys`, rating: 4.6, review: `Known for its casual vibe and fresh seafood, Hogfish is a local favorite. Don't miss their signature hogfish sandwich!`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k3.jpg?w=900" },
-      { name: `Marker 88 (Islamorada)`, location: `The Florida Keys`, rating: 4.3, review: `This waterfront restaurant offers a picturesque dining experience and a menu featuring seafood, steaks, and Caribbean-inspired dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k4.jpg?w=900" }
+      { name: "Blue Heaven (Key West)", location: "The Florida Keys", rating: 4.3, review: "Famous for its Key West-style cuisine, this restaurant offers a relaxed atmosphere with outdoor seating and live music.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg?w=900", communityReview: "A bohemian Key West landmark known for banana pancakes, roosters wandering the patio, and legendary key lime pie — reviewers love the laid-back vibe, though several mention long waits and food that can be inconsistent on a busy day.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Latitudes (Key West)", location: "The Florida Keys", rating: 4.5, review: "Located on Sunset Key, this waterfront restaurant offers stunning views and a diverse menu featuring fresh seafood and tropical flavors.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k2.jpg?w=900", communityReview: "A genuinely unique experience — your reservation includes a private ferry ride to Sunset Key, and reviewers consistently call the trip and the beachfront setting worth it on their own, even before the food arrives.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Hogfish Bar & Grill (Stock Island)", location: "The Florida Keys", rating: 4.6, review: "Known for its casual vibe and fresh seafood, Hogfish is a local favorite. Don't miss their signature hogfish sandwich!", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k3.jpg?w=900", communityReview: "A short drive off the main drag and near-universally loved for it — reviewers consistently call the Killer Hogfish Sandwich and lobster bisque some of the best they've had in the Keys, in a working-harbor setting locals actually recommend over the touristier Key West spots.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Marker 88 (Islamorada)", location: "The Florida Keys", rating: 4.3, review: "This waterfront restaurant offers a picturesque dining experience and a menu featuring seafood, steaks, and Caribbean-inspired dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k4.jpg?w=900", communityReview: "Running since 1967 and famous for sunset views over Florida Bay — reviewers consistently praise the setting and key lime pie, though a recurring complaint is long waits (sometimes over two hours) and food that can be inconsistent for the price.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Blue Heaven (Key West)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg?w=500" },
@@ -1125,6 +1147,7 @@ const DESTINATIONS = [
     slug: "miami-fl-2019",
     name: `Miami, Florida`,
     country: `USA`,
+    year: 2019,
     tag: `Art Deco & Ocean`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=900",
@@ -1144,10 +1167,10 @@ const DESTINATIONS = [
 `Discover Little Havana`
     ],
     restaurants: [
-      { name: `Joe's Stone Crab`, location: `Miami, Florida`, rating: 4.3, review: `A Miami institution known for its fresh seafood and famous stone crab claws.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900" },
-      { name: `Versailles Restaurant`, location: `Miami, Florida`, rating: 4.5, review: `A legendary Cuban eatery serving authentic Cuban cuisine, including delicious Cuban sandwiches and pastries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=900" },
-      { name: `Yardbird Southern Table & Bar`, location: `Miami, Florida`, rating: 4.6, review: `Offers Southern comfort food with a modern twist, including their famous fried chicken and bourbon cocktails.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=900" },
-      { name: `Mandolin Aegean Bistro`, location: `Miami, Florida`, rating: 4.3, review: `A charming Mediterranean restaurant with a cozy courtyard, serving delicious Greek and Turkish dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900" }
+      { name: "Joe's Stone Crab", location: "Miami, Florida", rating: 4.3, review: "A Miami institution known for its fresh seafood and famous stone crab claws.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900", communityReview: "A South Beach fixture since 1913 and still one of the highest-grossing independent restaurants in the country — reviewers consistently praise the stone crab claws, fried chicken, and key lime pie, though long waits (even with reservations) are a near-universal complaint, and a few longtime regulars feel it's coasting on reputation as much as food.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Versailles Restaurant", location: "Miami, Florida", rating: 4.5, review: "A legendary Cuban eatery serving authentic Cuban cuisine, including delicious Cuban sandwiches and pastries.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=900", communityReview: "Little Havana's most famous restaurant and a genuine Miami cultural landmark — reviewers love the ventanita cafecito window and old-school Cuban classics, though some note it's more about the history and people-watching than the most refined Cuban food in the city.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Yardbird Southern Table & Bar", location: "Miami, Florida", rating: 4.6, review: "Offers Southern comfort food with a modern twist, including their famous fried chicken and bourbon cocktails.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=900", communityReview: "The fried chicken and waffles are the clear standout, and reviewers consistently recommend it for brunch — a few note it leans touristy on South Beach's Lincoln Road strip and can feel more polished chain than local secret, but the food itself delivers.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Mandolin Aegean Bistro", location: "Miami, Florida", rating: 4.3, review: "A charming Mediterranean restaurant with a cozy courtyard, serving delicious Greek and Turkish dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900", communityReview: "A Michelin Bib Gourmand pick reviewers consistently praise for the grilled octopus, lamb chops, and one of Miami's most charming courtyard settings — the Design District favorite books out weeks in advance for a reason.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Joe's Stone Crab`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=500" },
@@ -1174,6 +1197,7 @@ const DESTINATIONS = [
     slug: "las-vegas-nv-2020",
     name: `Las Vegas, Nevada`,
     country: `USA`,
+    year: 2020,
     tag: `Neon Desert`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l2.jpg?w=900",
@@ -1193,10 +1217,10 @@ const DESTINATIONS = [
 `Take a Helicopter Tour`
     ],
     restaurants: [
-      { name: `Joel Robuchon`, location: `Las Vegas, Nevada`, rating: 4.3, review: `Located at the MGM Grand, this Michelin three-star restaurant offers an exquisite French dining experience with exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900" },
-      { name: `Guy Savoy`, location: `Las Vegas, Nevada`, rating: 4.5, review: `Situated at Caesars Palace, Guy Savoy is another Michelin three-star restaurant known for its elegant French cuisine, including signature dishes like artichoke and black truffle soup.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l2.jpg?w=900" },
-      { name: `Raku`, location: `Las Vegas, Nevada`, rating: 4.6, review: `This off-Strip Japanese restaurant is beloved by locals and visitors alike. It serves authentic and delicious dishes such as skewered meats, sashimi, and robata-grilled items.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=900" },
-      { name: `Lotus of Siam`, location: `Las Vegas, Nevada`, rating: 4.3, review: `A Las Vegas institution for Thai cuisine, Lotus of Siam features a diverse menu with flavorful dishes like pad Thai, crispy duck, and spicy curries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900" }
+      { name: `Joel Robuchon`, location: `Las Vegas, Nevada`, rating: 4.3, review: `Located at the MGM Grand, this Michelin three-star restaurant offers an exquisite French dining experience with exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "Widely regarded as one of the finest fine-dining experiences in America, with reviewers consistently calling the multi-course tasting menu (bread, cheese, and dessert carts included) some of the best food of their lives. Worth checking before you go: as of mid-2026 the restaurant is listed as temporarily closed.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Guy Savoy`, location: `Las Vegas, Nevada`, rating: 4.5, review: `Situated at Caesars Palace, Guy Savoy is another Michelin three-star restaurant known for its elegant French cuisine, including signature dishes like artichoke and black truffle soup.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l2.jpg?w=900", communityReview: "Frequently compared to Joel Robuchon by regulars who dine at both — reviewers describe Guy Savoy's style as more restrained and minimalist by comparison, with the artichoke and black truffle soup and colors-of-caviar dish drawing consistent praise.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Raku`, location: `Las Vegas, Nevada`, rating: 4.6, review: `This off-Strip Japanese restaurant is beloved by locals and visitors alike. It serves authentic and delicious dishes such as skewered meats, sashimi, and robata-grilled items.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=900", communityReview: "Tucked into an unassuming Chinatown strip mall, Raku is regularly called one of the best Japanese restaurants in the country — reviewers rave about the housemade tofu and robata-grilled skewers, with local chefs and hospitality workers famously eating here late after their own shifts end.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Lotus of Siam`, location: `Las Vegas, Nevada`, rating: 4.3, review: `A Las Vegas institution for Thai cuisine, Lotus of Siam features a diverse menu with flavorful dishes like pad Thai, crispy duck, and spicy curries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "A James Beard Award-winning strip-mall institution that reviewers consistently call a Las Vegas must — the northern Thai dishes and crispy garlic prawns are the most-recommended orders, with the standing local advice being to skip the pad Thai and order what the chef is actually known for.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Joel Robuchon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=500" },
@@ -1223,6 +1247,7 @@ const DESTINATIONS = [
     slug: "winter-park-co-2021",
     name: `Winter Park, Colorado`,
     country: `USA`,
+    year: 2020,
     tag: `Snow Season`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w8.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w2.jpg?w=900",
@@ -1242,10 +1267,10 @@ const DESTINATIONS = [
 `Ice Skating`
     ],
     restaurants: [
-      { name: `Deno's Mountain Bistro`, location: `Winter Park, Colorado`, rating: 4.3, review: `This popular restaurant offers a warm and inviting atmosphere with a diverse menu featuring American and Mediterranean cuisine. Deno's is known for its delicious steaks, seafood, and pasta dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w8.jpg?w=900" },
-      { name: `Hernando's Pizza Pub`, location: `Winter Park, Colorado`, rating: 4.5, review: `A local favorite, Hernando's is famous for its mouthwatering pizza. With a rustic mountain lodge ambiance, this cozy spot is perfect for enjoying a slice or two after a day on the slopes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w2.jpg?w=900" },
-      { name: `Volario's`, location: `Winter Park, Colorado`, rating: 4.6, review: `Located at the Vasquez Creek Inn, Volario's serves up authentic Italian cuisine in a charming setting. The menu features homemade pasta, wood-fired pizza, and a variety of Italian specialties.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w7.jpg?w=900" },
-      { name: `The Ditch on 40`, location: `Winter Park, Colorado`, rating: 4.3, review: `This casual restaurant offers a vibrant atmosphere and an extensive menu of American comfort food. Whether you're in the mood for a juicy burger, hearty sandwich, or flavorful salad, The Ditch on 40 has you covered.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w5.jpg?w=900" }
+      { name: `Deno's Mountain Bistro`, location: `Winter Park, Colorado`, rating: 4.3, review: `This popular restaurant offers a warm and inviting atmosphere with a diverse menu featuring American and Mediterranean cuisine. Deno's is known for its delicious steaks, seafood, and pasta dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w8.jpg?w=900", communityReview: "A Winter Park fixture since 1976 with a loyal local following — reviewers love the Greek-influenced menu, wine list, and happy hour, though a vocal minority reports inconsistent service and food quality on off nights, which longtime regulars say is unusual for the restaurant.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Hernando's Pizza Pub`, location: `Winter Park, Colorado`, rating: 4.5, review: `A local favorite, Hernando's is famous for its mouthwatering pizza. With a rustic mountain lodge ambiance, this cozy spot is perfect for enjoying a slice or two after a day on the slopes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w2.jpg?w=900", communityReview: "A Winter Park institution since 1967, with decades of returning regulars — some longtime customers have noted a dip in consistency and service in recent years, which they attribute to changes in ownership, but most reviewers still call it a required stop for pizza after skiing.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Volario's`, location: `Winter Park, Colorado`, rating: 4.6, review: `Located at the Vasquez Creek Inn, Volario's serves up authentic Italian cuisine in a charming setting. The menu features homemade pasta, wood-fired pizza, and a variety of Italian specialties.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w7.jpg?w=900", communityReview: "Widely considered the most upscale option in Winter Park, with reviewers praising the homemade pasta and creekside patio — reviews are genuinely mixed on consistency, with some visits described as exceptional and others marked by slow service, so it may be worth checking current hours before visiting (it closes seasonally).", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Ditch on 40`, location: `Winter Park, Colorado`, rating: 4.3, review: `This casual restaurant offers a vibrant atmosphere and an extensive menu of American comfort food. Whether you're in the mood for a juicy burger, hearty sandwich, or flavorful salad, The Ditch on 40 has you covered.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w5.jpg?w=900", communityReview: "A self-described locals' dive bar that tolerates ski tourists — reviewers rave about the Ditch Burger and green chile on everything, though service reports are notably inconsistent from visit to visit.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Deno's Mountain Bistro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w8.jpg?w=500" },
@@ -1272,6 +1297,7 @@ const DESTINATIONS = [
     slug: "vail-2023",
     name: "Vail",
     country: "USA",
+    year: 2023,
     tag: "Ski Trip",
     heroImg: img("vail-hero", 1600, 1000),
     cardImg: img("vail-card", 900, 1100),
@@ -1315,6 +1341,7 @@ const DESTINATIONS = [
     slug: "boulder-denver-2023",
     name: "Boulder & Denver",
     country: "USA",
+    year: 2023,
     tag: "Colorado City Break",
     heroImg: img("boulder-hero", 1600, 1000),
     cardImg: img("boulder-card", 900, 1100),
@@ -1357,6 +1384,7 @@ const DESTINATIONS = [
     slug: "maui-hi-2022",
     name: `Maui, Hawaii`,
     country: `USA`,
+    year: 2022,
     tag: `Volcanic Paradise`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=900",
@@ -1376,10 +1404,10 @@ const DESTINATIONS = [
 `Maui Ocean Center`
     ],
     restaurants: [
-      { name: `Mama's Fish House (Paia)`, location: `Maui, Hawaii`, rating: 4.3, review: `A legendary restaurant known for its fresh seafood, stunning ocean views, and Polynesian-inspired cuisine. It's a popular spot, so make sure to make a reservation in advance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=900" },
-      { name: `Lahaina Grill (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `This award-winning restaurant offers a sophisticated dining experience with a menu featuring a fusion of Hawaiian and contemporary flavors. The atmosphere is elegant, and the service is exceptional.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=900" },
-      { name: `Merriman's (Kapalua)`, location: `Maui, Hawaii`, rating: 4.6, review: `Located in the picturesque Kapalua resort area, Merriman's offers farm-to-table cuisine using locally sourced ingredients. The menu highlights the flavors of Hawaii and the Pacific Rim.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=900" },
-      { name: `The Mill House (Waikapu)`, location: `Maui, Hawaii`, rating: 4.3, review: `Situated in a beautiful plantation-era building, The Mill House serves creative dishes crafted with ingredients grown on their own farm. It offers a unique farm-to-table experience with stunning views of the Maui Tropical Plantation.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=900" }
+      { name: `Mama's Fish House (Paia)`, location: `Maui, Hawaii`, rating: 4.3, review: `A legendary restaurant known for its fresh seafood, stunning ocean views, and Polynesian-inspired cuisine. It's a popular spot, so make sure to make a reservation in advance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=900", communityReview: "One of Maui's most debated restaurants — the beachfront setting and daily-changing fresh fish menu draw genuine devotion from many diners, while others (including some longtime residents) call it overpriced tourist theater you can beat elsewhere on the island for less. Book three to six months out either way.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Lahaina Grill (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `This award-winning restaurant offers a sophisticated dining experience with a menu featuring a fusion of Hawaiian and contemporary flavors. The atmosphere is elegant, and the service is exceptional.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=900", communityReview: "Lahaina Grill was lost in the August 2023 wildfire that destroyed most of historic Front Street — it no longer exists. Longtime visitors still remember it fondly as one of the best restaurants on the island; if you're headed to West Maui, consider supporting one of the businesses that reopened as part of the town's ongoing recovery.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Merriman's (Kapalua)`, location: `Maui, Hawaii`, rating: 4.6, review: `Located in the picturesque Kapalua resort area, Merriman's offers farm-to-table cuisine using locally sourced ingredients. The menu highlights the flavors of Hawaii and the Pacific Rim.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=900", communityReview: "Frequently named as the answer in the ongoing \"Merriman's vs. Mama's\" Maui debate — many locals and repeat visitors prefer it for the Kapalua Bay sunset views and consistent farm-to-table cooking, with happy hour on the patio a favorite recommendation.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Mill House (Waikapu)`, location: `Maui, Hawaii`, rating: 4.3, review: `Situated in a beautiful plantation-era building, The Mill House serves creative dishes crafted with ingredients grown on their own farm. It offers a unique farm-to-table experience with stunning views of the Maui Tropical Plantation.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=900", communityReview: "A genuinely farm-to-table spot reviewers appreciate for being a step off the resort circuit — the plantation setting and produce grown on-site get consistent praise, with sunset views over the valley as a frequent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Mama's Fish House (Paia)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=500" },
@@ -1406,6 +1434,7 @@ const DESTINATIONS = [
     slug: "new-york-city-ny-2022",
     name: `New York City`,
     country: `USA`,
+    year: 2022,
     tag: `The Big Apple`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900",
@@ -1425,10 +1454,10 @@ const DESTINATIONS = [
 `Visit the Metropolitan Museum of Art`
     ],
     restaurants: [
-      { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=900" },
-      { name: `Peter Luger Steak House`, location: `New York City`, rating: 4.5, review: `A classic steakhouse in Brooklyn, famous for its dry-aged steaks and old-world charm. Make sure to try their iconic porterhouse steak.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900" },
-      { name: `Momofuku Ssäm Bar`, location: `New York City`, rating: 4.6, review: `This trendy spot in the East Village offers innovative Asian-inspired dishes, such as their famous pork buns and bo ssäm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=900" },
-      { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900" }
+      { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=900", communityReview: "One of the few NYC restaurants that reviewers describe as living up to decades of hype — the seafood-focused tasting menu and dining room service are consistently called flawless, and unlike some legacy institutions, its reputation hasn't slipped.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Peter Luger Steak House`, location: `New York City`, rating: 4.5, review: `A classic steakhouse in Brooklyn, famous for its dry-aged steaks and old-world charm. Make sure to try their iconic porterhouse steak.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900", communityReview: "A genuinely documented decline: Peter Luger lost its Michelin star in 2022 after a famously scathing zero-star New York Times review in 2019 that criticized inconsistent, underwhelming steak and brusque service. It still has passionate defenders who call the burger and the 138-year history worth it regardless — but go in knowing the food no longer has universal acclaim.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Momofuku Ssäm Bar`, location: `New York City`, rating: 4.6, review: `This trendy spot in the East Village offers innovative Asian-inspired dishes, such as their famous pork buns and bo ssäm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=900", communityReview: "Momofuku Ssäm Bar has closed — both its original East Village spot and its 2021 relocation to South Street Seaport now show as permanently closed. David Chang's Momofuku Noodle Bar, the sister restaurant that started it all, is still open and thriving in the East Village if you want the brand experience.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900", communityReview: "New York's most famous deli since 1888, and reviewers overwhelmingly say it earns the hype — the hand-carved pastrami and old-school counter chaos are consistently called a must-do. One fun bit of contrarian history: a 1979 New York Times ranking of the city's best Jewish delis actually rated Katz's pastrami the weakest of the top tier, calling it \"tough\" and \"barely edible\" — a reminder that even legends have critics.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Le Bernardin`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=500" },
@@ -1455,6 +1484,7 @@ const DESTINATIONS = [
     slug: "philadelphia-pa-2022",
     name: `Philadelphia, Pennsylvania`,
     country: `USA`,
+    year: 2022,
     tag: `Brotherly Love`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=900",
@@ -1474,10 +1504,10 @@ const DESTINATIONS = [
 `Take a tour of Eastern State Penitentiary`
     ],
     restaurants: [
-      { name: `Zahav`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `This renowned Israeli restaurant offers a modern take on Middle Eastern cuisine, serving dishes like hummus, lamb shoulder, and grilled duck hearts. Don't miss the salatim and the incredible tasting menu.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=900" },
-      { name: `Vernick Food & Drink`, location: `Philadelphia, Pennsylvania`, rating: 4.5, review: `Chef Greg Vernick's restaurant focuses on seasonal American cuisine with global influences. The menu features beautifully executed dishes like roasted sea bream, wood-grilled duck, and homemade pastas.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=900" },
-      { name: `Vedge`, location: `Philadelphia, Pennsylvania`, rating: 4.6, review: `A popular choice for vegetarians and vegans, Vedge serves inventive plant-based dishes with bold flavors. Try their signature dishes like the rutabaga fondue, eggplant braciole, and the wood-roasted carrot.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=900" },
-      { name: `Talula's Garden`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `Located in Washington Square, this charming farm-to-table restaurant offers a delightful menu highlighting local and sustainable ingredients. The butternut squash ravioli, mushroom toast, and roasted chicken are crowd favorites.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=900" }
+      { name: `Zahav`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `This renowned Israeli restaurant offers a modern take on Middle Eastern cuisine, serving dishes like hummus, lamb shoulder, and grilled duck hearts. Don't miss the salatim and the incredible tasting menu.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=900", communityReview: "A James Beard Award winner for Outstanding Restaurant and widely called the best restaurant in Philadelphia — reviewers consistently rave about the mezze, pomegranate lamb shoulder, and warm laffa bread. Reservations release on the first Tuesday of the month for the following month, so plan ahead.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Vernick Food & Drink`, location: `Philadelphia, Pennsylvania`, rating: 4.5, review: `Chef Greg Vernick's restaurant focuses on seasonal American cuisine with global influences. The menu features beautifully executed dishes like roasted sea bream, wood-grilled duck, and homemade pastas.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=900", communityReview: "Regularly named among Philadelphia's best restaurants, with reviewers praising the signature \"toasts,\" wood-fired whole chicken, and polished-but-unstuffy Rittenhouse Square atmosphere — some travelers rank it above comparable meals they've had in Paris.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Vedge`, location: `Philadelphia, Pennsylvania`, rating: 4.6, review: `A popular choice for vegetarians and vegans, Vedge serves inventive plant-based dishes with bold flavors. Try their signature dishes like the rutabaga fondue, eggplant braciole, and the wood-roasted carrot.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=900", communityReview: "Michelin-recommended and James Beard-nominated, often called one of the best vegan restaurants in the country — reviewers rave about the rutabaga fondue, though a few mention smaller portions and higher prices than expected for a plant-based menu.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Talula's Garden`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `Located in Washington Square, this charming farm-to-table restaurant offers a delightful menu highlighting local and sustainable ingredients. The butternut squash ravioli, mushroom toast, and roasted chicken are crowd favorites.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=900", communityReview: "A garden-patio favorite reviewers consistently call magical for a special occasion, with the lamb bolognese and brunch fried chicken and waffle earning particular praise — Taylor Swift and Travis Kelce were even spotted there for a family Mother's Day brunch.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Zahav`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=500" },
@@ -1504,6 +1534,7 @@ const DESTINATIONS = [
     slug: "washington-dc-2022",
     name: `Washington, D.C.`,
     country: `USA`,
+    year: 2022,
     tag: `Monuments & Museums`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=900",
@@ -1523,10 +1554,10 @@ const DESTINATIONS = [
 `Explore the National Zoo`
     ],
     restaurants: [
-      { name: `Rose's Luxury`, location: `Washington, D.C.`, rating: 4.3, review: `This award-winning restaurant offers a unique and innovative dining experience with a changing menu featuring seasonal dishes. The food is creative, flavorful, and beautifully presented.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=900" },
-      { name: `Little Serow`, location: `Washington, D.C.`, rating: 4.5, review: `If you're a fan of Thai cuisine, Little Serow is a must-visit. This small and intimate restaurant serves up authentic and spicy Northern Thai dishes in a prix-fixe format. Reservations are highly recommended.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=900" },
-      { name: `Fiola`, location: `Washington, D.C.`, rating: 4.6, review: `Fiola is a fine dining establishment that specializes in Italian cuisine. The menu features exquisite dishes made with high-quality ingredients, and the service is impeccable.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=900" },
-      { name: `The Dabney`, location: `Washington, D.C.`, rating: 4.3, review: `Located in a historic row house, The Dabney focuses on showcasing the Mid-Atlantic region's local ingredients. The menu changes frequently to highlight seasonal offerings, and the open kitchen adds to the restaurant's charm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=900" }
+      { name: `Rose's Luxury`, location: `Washington, D.C.`, rating: 4.3, review: `This award-winning restaurant offers a unique and innovative dining experience with a changing menu featuring seasonal dishes. The food is creative, flavorful, and beautifully presented.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=900", communityReview: "Named Bon Appétit's Best New Restaurant in 2014 and now holding a Michelin star, with chef Aaron Silverman a James Beard winner — reviewers consistently rave about the pork and lychee salad and playful \"choose your own adventure\" prix-fixe format. It doesn't take advance reservations, so plan to line up early.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Little Serow`, location: `Washington, D.C.`, rating: 4.5, review: `If you're a fan of Thai cuisine, Little Serow is a must-visit. This small and intimate restaurant serves up authentic and spicy Northern Thai dishes in a prix-fixe format. Reservations are highly recommended.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=900", communityReview: "Frequently mentioned in the same breath as Rose's Luxury and Komi as DC's top tier of no-reservation fine dining — reviewers love the family-style Northern Thai prix fixe and warm, high-energy service, though the no-reservations policy means a real wait during peak hours.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Fiola`, location: `Washington, D.C.`, rating: 4.6, review: `Fiola is a fine dining establishment that specializes in Italian cuisine. The menu features exquisite dishes made with high-quality ingredients, and the service is impeccable.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=900", communityReview: "A Michelin-starred, James Beard-winning Italian tasting menu widely called one of DC's best restaurants — most reviews are glowing, though a notable minority report uneven service and steep pricing (one detailed a $1,000+ tab with service they called disappointing), so it's not universally flawless despite the accolades.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Dabney`, location: `Washington, D.C.`, rating: 4.3, review: `Located in a historic row house, The Dabney focuses on showcasing the Mid-Atlantic region's local ingredients. The menu changes frequently to highlight seasonal offerings, and the open kitchen adds to the restaurant's charm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=900", communityReview: "A Michelin-starred Mid-Atlantic wood-hearth kitchen named Washingtonian's #1 restaurant in 2023 — reviewers consistently call it one of the best meals in the city, with a couple noting the Blagden Alley location is easy to miss on a first visit.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Rose's Luxury`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=500" },
@@ -1553,6 +1584,7 @@ const DESTINATIONS = [
     slug: "florence-italy-2023",
     name: `Florence`,
     country: `Italy`,
+    year: 2023,
     tag: `Renaissance City`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900",
@@ -1572,10 +1604,10 @@ const DESTINATIONS = [
 `Explore the Pitti Palace and Boboli Gardens`
     ],
     restaurants: [
-      { name: `Osteria All'Antico Vinaio`, location: `Florence`, rating: 4.3, review: `This small sandwich shop is a local favorite and serves delicious traditional Tuscan panini. The sandwiches are made with high-quality ingredients, and the flavors are incredible.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=900" },
-      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900" },
-      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=900" },
-      { name: `Il Santo Bevitore`, location: `Florence`, rating: 4.3, review: `This cozy and rustic restaurant focuses on seasonal ingredients and traditional Tuscan flavors. The menu is varied, and the dishes are beautifully presented. Don't miss their handmade pasta and the selection of local wines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=900" }
+      { name: `Osteria All'Antico Vinaio`, location: `Florence`, rating: 4.3, review: `This small sandwich shop is a local favorite and serves delicious traditional Tuscan panini. The sandwiches are made with high-quality ingredients, and the flavors are incredible.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=900", communityReview: "One of Florence's most famous sandwich shops, with reviewers consistently praising the schiacciata bread and fresh fillings — the line is long but efficiently managed, though a few reviewers note occasional inconsistency in how generously they're filled.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900", communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=900", communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Il Santo Bevitore`, location: `Florence`, rating: 4.3, review: `This cozy and rustic restaurant focuses on seasonal ingredients and traditional Tuscan flavors. The menu is varied, and the dishes are beautifully presented. Don't miss their handmade pasta and the selection of local wines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=900", communityReview: "A Michelin-recognized favorite with locals as much as tourists — reviewers consistently praise the seasonal Tuscan menu and lively atmosphere, though portions run smaller than expected and reservations are essential, as it fills up fast even on weeknights.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Osteria All'Antico Vinaio`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=500" },
@@ -1602,6 +1634,7 @@ const DESTINATIONS = [
     slug: "orlando-fl-2023",
     name: `Orlando, Florida (2023)`,
     country: `USA`,
+    year: 2023,
     tag: `Back to the Parks`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=900",
@@ -1621,10 +1654,10 @@ const DESTINATIONS = [
 `Kennedy Space Center Visitor Complex`
     ],
     restaurants: [
-      { name: `Victoria & Albert's`, location: `Orlando, Florida (2023)`, rating: 4.3, review: `Located at Disney's Grand Floridian Resort & Spa, this upscale restaurant offers a fine dining experience with a prix fixe menu. It's renowned for its exquisite cuisine and impeccable service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=900" },
-      { name: `The Ravenous Pig`, location: `Orlando, Florida (2023)`, rating: 4.5, review: `A popular gastropub featuring a creative menu with a focus on locally sourced ingredients. It offers a mix of innovative dishes and classic pub fare.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=900" },
-      { name: `Kadence`, location: `Orlando, Florida (2023)`, rating: 4.6, review: `A unique omakase-style sushi experience where the chefs prepare and serve a curated selection of dishes right in front of you. Reservations are recommended well in advance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=900" },
-      { name: `Yellow Dog Eats`, location: `Orlando, Florida (2023)`, rating: 4.3, review: `A charming spot known for its creative sandwiches, salads, and quirky atmosphere. It's a local favorite for its delicious comfort food.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=900" }
+      { name: `Victoria & Albert's`, location: `Orlando, Florida (2023)`, rating: 4.3, review: `Located at Disney's Grand Floridian Resort & Spa, this upscale restaurant offers a fine dining experience with a prix fixe menu. It's renowned for its exquisite cuisine and impeccable service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=900", communityReview: "A AAA Five-Diamond restaurant reviewers consistently call the best dining experience in all of Walt Disney World — the multi-course tasting menu, formal service, and no-kids-under-10 policy make it a genuine special-occasion splurge, with prices to match.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Ravenous Pig`, location: `Orlando, Florida (2023)`, rating: 4.5, review: `A popular gastropub featuring a creative menu with a focus on locally sourced ingredients. It offers a mix of innovative dishes and classic pub fare.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=900", communityReview: "A Michelin Bib Gourmand gastropub with a devoted local following — reviewers consistently praise the farm-to-table cooking (the Iberian pork and pork belly starter get repeat mentions) and reasonable pricing for the quality.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Kadence`, location: `Orlando, Florida (2023)`, rating: 4.6, review: `A unique omakase-style sushi experience where the chefs prepare and serve a curated selection of dishes right in front of you. Reservations are recommended well in advance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=900", communityReview: "A Michelin-starred, nine-seat omakase counter with many glowing reviews calling it one of Orlando's best meals — but worth knowing before booking: multiple independent reviews describe alarming incidents at the counter, including reports of inappropriate jokes and, in one detailed account, a chef brandishing a knife over a guest's comment. Read recent reviews yourself before committing to the $200+ prepaid seating.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Yellow Dog Eats`, location: `Orlando, Florida (2023)`, rating: 4.3, review: `A charming spot known for its creative sandwiches, salads, and quirky atmosphere. It's a local favorite for its delicious comfort food.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=900", communityReview: "A funky, dog-friendly sandwich shop in a historic 1910 house that reviewers consistently call an Orlando hidden gem — the pulled pork sandwiches and homemade desserts draw praise, with roaming chickens and a laid-back backyard patio as part of the charm.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Victoria & Albert's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=500" },
@@ -1651,6 +1684,7 @@ const DESTINATIONS = [
     slug: "nashville-tn-2023",
     name: `Nashville, Tennessee`,
     country: `USA`,
+    year: 2023,
     tag: `Music City`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394535282_10224807912293330_6820641152032916730_n.jpg?w=900",
@@ -1670,10 +1704,10 @@ const DESTINATIONS = [
 `Visit the Belle Meade Plantation`
     ],
     restaurants: [
-      { name: `Hattie B's Hot Chicken`, location: `Nashville, Tennessee`, rating: 4.3, review: `If you're a fan of spicy fried chicken, Hattie B's is a must-visit. They offer various levels of heat, allowing you to choose your spice level.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=900" },
-      { name: `Prince's Hot Chicken Shack`, location: `Nashville, Tennessee`, rating: 4.5, review: `Another excellent choice for hot chicken lovers, Prince's is one of the pioneers of Nashville hot chicken and offers a unique and flavorful experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394535282_10224807912293330_6820641152032916730_n.jpg?w=900" },
-      { name: `Loveless Cafe`, location: `Nashville, Tennessee`, rating: 4.6, review: `Famous for its Southern comfort food, Loveless Cafe is renowned for its biscuits, country ham, and homemade preserves. A perfect spot for a traditional Southern breakfast or brunch.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394431453_10224811283697613_1664064479663080319_n.jpg?w=900" },
-      { name: `Martin's Bar-B-Que Joint`, location: `Nashville, Tennessee`, rating: 4.3, review: `If you're craving barbecue, Martin's is the place to be. They serve mouthwatering smoked meats, including ribs, brisket, and pulled pork, along with a variety of tasty sauces.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=900" }
+      { name: `Hattie B's Hot Chicken`, location: `Nashville, Tennessee`, rating: 4.3, review: `If you're a fan of spicy fried chicken, Hattie B's is a must-visit. They offer various levels of heat, allowing you to choose your spice level.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=900", communityReview: "Nashville's most tourist-famous hot chicken spot, and genuinely a fun, crowd-pleasing stop — though longtime locals frequently point out it's the newer, more corporate version of what Prince's actually invented, and a fair number rank it below several lesser-known local favorites.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Prince's Hot Chicken Shack`, location: `Nashville, Tennessee`, rating: 4.5, review: `Another excellent choice for hot chicken lovers, Prince's is one of the pioneers of Nashville hot chicken and offers a unique and flavorful experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394535282_10224807912293330_6820641152032916730_n.jpg?w=900", communityReview: "The true original — legend has it hot chicken was invented here as revenge, when a scorned girlfriend overspiced her boyfriend's fried chicken and he loved it anyway. Reviewers and locals overwhelmingly consider it the more authentic choice over Hattie B's, though it's a no-frills counter-service spot, not a sit-down restaurant.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Loveless Cafe`, location: `Nashville, Tennessee`, rating: 4.6, review: `Famous for its Southern comfort food, Loveless Cafe is renowned for its biscuits, country ham, and homemade preserves. A perfect spot for a traditional Southern breakfast or brunch.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394431453_10224811283697613_1664064479663080319_n.jpg?w=900", communityReview: "A Nashville landmark since 1951, and the biscuits still earn near-universal praise — but reviews on the rest of the menu are more mixed, with some longtime visitors feeling the historic reputation now outpaces the food and portions for the price.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Martin's Bar-B-Que Joint`, location: `Nashville, Tennessee`, rating: 4.3, review: `If you're craving barbecue, Martin's is the place to be. They serve mouthwatering smoked meats, including ribs, brisket, and pulled pork, along with a variety of tasty sauces.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=900", communityReview: "A West Tennessee whole-hog BBQ specialist that reviewers consistently praise for the brisket and pulled pork, with live music at some locations a fun bonus — reviews are mostly strong, though a handful mention inconsistent sides or an off night on the sausage.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Hattie B's Hot Chicken`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=500" },
@@ -1700,6 +1734,7 @@ const DESTINATIONS = [
     slug: "austin-san-antonio-2024",
     name: `Austin & San Antonio`,
     country: `USA`,
+    year: 2024,
     tag: `Texas Road Trip`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=900",
@@ -1719,10 +1754,10 @@ const DESTINATIONS = [
 `Lady Bird Johnson Wildflower Center`
     ],
     restaurants: [
-      { name: `Franklin Barbecue`, location: `Austin & San Antonio`, rating: 4.3, review: `Famous for its mouth-watering brisket and long lines, this spot is a must for barbecue lovers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=900" },
-      { name: `Uchi`, location: `Austin & San Antonio`, rating: 4.5, review: `A renowned spot for Japanese cuisine, offering a creative menu of sushi and sashimi in a stylish setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=900" },
-      { name: `Emmer & Rye`, location: `Austin & San Antonio`, rating: 4.6, review: `Known for its focus on seasonal and local ingredients, this restaurant offers a unique dining experience with dim sum-style service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=900" },
-      { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900" }
+      { name: `Franklin Barbecue`, location: `Austin & San Antonio`, rating: 4.3, review: `Famous for its mouth-watering brisket and long lines, this spot is a must for barbecue lovers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=900", communityReview: "Anthony Bourdain called it the finest brisket he'd ever had, and reviewers overwhelmingly agree it's worth the notorious 2-5 hour line — bring a chair, arrive before dawn, and expect them to sell out by early afternoon most days.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Uchi`, location: `Austin & San Antonio`, rating: 4.5, review: `A renowned spot for Japanese cuisine, offering a creative menu of sushi and sashimi in a stylish setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=900", communityReview: "Widely considered Austin's best sushi, from James Beard Award-winning chef Tyson Cole — reviewers consistently praise the inventive small plates and hot dishes alongside the sushi, though it's a splurge and reservations book out well in advance.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Emmer & Rye`, location: `Austin & San Antonio`, rating: 4.6, review: `Known for its focus on seasonal and local ingredients, this restaurant offers a unique dining experience with dim sum-style service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=900", communityReview: "Praised for its dim-sum-cart-style service and hyper-local, seasonal menu that changes constantly — reviewers call the format genuinely fun and different from typical fine dining, with the homemade pastas a recurring highlight.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900", communityReview: "An Austin institution that's since grown into a regional chain — reviewers consistently praise the Trailer Park (fried chicken) taco and queso, with the caveat that service and cleanliness can vary noticeably between locations.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Franklin Barbecue`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=500" },
@@ -1749,6 +1784,7 @@ const DESTINATIONS = [
     slug: "twin-lakes-co-2024",
     name: `Twin Lakes, Colorado`,
     country: `USA`,
+    year: 2024,
     tag: `Alpine Lakes`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454741954_10226247521722666_8320194507133385005_n.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454773247_10226247522282680_6115943612354302074_n.jpg?w=900",
@@ -1768,10 +1804,10 @@ const DESTINATIONS = [
 `Interlaken Historic Resort`
     ],
     restaurants: [
-      { name: `The Twin Lakes Inn & Saloon`, location: `Twin Lakes, Colorado`, rating: 4.3, review: `A historic establishment offering classic American cuisine with a focus on locally sourced ingredients. The atmosphere is cozy and rustic, making it a perfect spot after a day of exploring the area.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454741954_10226247521722666_8320194507133385005_n.jpg?w=900" },
-      { name: `The Twin Lakes General Store`, location: `Twin Lakes, Colorado`, rating: 4.5, review: `While primarily a store, it offers fresh sandwiches, baked goods, and coffee. It’s a great spot to grab a quick bite before heading out to explore the lakes and trails.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454773247_10226247522282680_6115943612354302074_n.jpg?w=900" },
-      { name: `The Dayton Room`, location: `Twin Lakes, Colorado`, rating: 4.6, review: `Located within the Twin Lakes Inn, this restaurant provides a fine dining experience with a menu that features both creative dishes and comforting classics. It's known for its exceptional service and intimate setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454731192_10226247522882695_8438940723759965963_n.jpg?w=900" },
-      { name: `Casa Sanchez`, location: `Twin Lakes, Colorado`, rating: 4.3, review: `Located nearby in Leadville, this Mexican restaurant offers delicious, authentic Mexican cuisine. It’s worth the short drive if you're craving something different.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454839035_10226247524002723_1749134143176923779_n.jpg?w=900" }
+      { name: `The Twin Lakes Inn & Saloon`, location: `Twin Lakes, Colorado`, rating: 4.3, review: `A historic establishment offering classic American cuisine with a focus on locally sourced ingredients. The atmosphere is cozy and rustic, making it a perfect spot after a day of exploring the area.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454741954_10226247521722666_8320194507133385005_n.jpg?w=900", communityReview: "Dating to 1879 and rumored to have once been a brothel, this is essentially the only real restaurant in the tiny town of Twin Lakes — reviewers are consistently surprised by how good the food is given the remote location, with the smoked wings and steak singled out most often.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Twin Lakes General Store`, location: `Twin Lakes, Colorado`, rating: 4.5, review: `While primarily a store, it offers fresh sandwiches, baked goods, and coffee. It's a great spot to grab a quick bite before heading out to explore the lakes and trails.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454773247_10226247522282680_6115943612354302074_n.jpg?w=900", communityReview: "A convenient grab-and-go stop in a town with very few options — reviewers appreciate having fresh coffee and sandwiches available before a day on the trails, without expecting (or getting) a full restaurant experience.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Dayton Room`, location: `Twin Lakes, Colorado`, rating: 4.6, review: `Located within the Twin Lakes Inn, this restaurant provides a fine dining experience with a menu that features both creative dishes and comforting classics. It's known for its exceptional service and intimate setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454731192_10226247522882695_8438940723759965963_n.jpg?w=900", communityReview: "Reviewers repeatedly call this one of the best surprise meals of their whole Colorado trip — unexpectedly gourmet dishes like wild game meatloaf in a warm, intimate dining room, though at least one review mentions an off night with a curt staff member.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Casa Sanchez`, location: `Twin Lakes, Colorado`, rating: 4.3, review: `Located nearby in Leadville, this Mexican restaurant offers delicious, authentic Mexican cuisine. It's worth the short drive if you're craving something different.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454839035_10226247524002723_1749134143176923779_n.jpg?w=900", communityReview: "A Leadville favorite reviewers consistently praise for generous portions, strong margaritas, and a complimentary tequila shot served as \"Mexican dessert\" — a handful of reviews note inconsistent salsa or an occasional off dish, but the overall verdict is overwhelmingly positive.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `The Twin Lakes Inn & Saloon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454741954_10226247521722666_8320194507133385005_n.jpg?w=500" },
@@ -1798,6 +1834,7 @@ const DESTINATIONS = [
     slug: "seattle-wa-2025",
     name: `Seattle, Washington`,
     country: `USA`,
+    year: 2025,
     tag: `Pacific Northwest`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=900",
@@ -1817,10 +1854,10 @@ const DESTINATIONS = [
 `Mount Rainier National Park`
     ],
     restaurants: [
-      { name: `Canlis`, location: `Seattle, Washington`, rating: 4.3, review: `Iconic fine dining with a stunning view and innovative Northwest cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=900" },
-      { name: `The Walrus and the Carpenter`, location: `Seattle, Washington`, rating: 4.5, review: `Famous for oysters and small seafood plates.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=900" },
-      { name: `Din Tai Fung`, location: `Seattle, Washington`, rating: 4.6, review: `Famous for soup dumplings and Taiwanese dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=900" },
-      { name: `Tilikum Place Café`, location: `Seattle, Washington`, rating: 4.3, review: `Known for its amazing Dutch baby pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=900" }
+      { name: `Canlis`, location: `Seattle, Washington`, rating: 4.3, review: `Iconic fine dining with a stunning view and innovative Northwest cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=900", communityReview: "Seattle's fine-dining institution since 1950, and Food & Wine ranked it the #2 best restaurant in America in 2025 — yet a growing chorus of local critics (including the Seattle Times) argue it's lost some of its edge, citing soggy fries and an overpriced, occasionally underwhelming tasting menu relative to newer competitors. Still worth the view at least once.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Walrus and the Carpenter`, location: `Seattle, Washington`, rating: 4.5, review: `Famous for oysters and small seafood plates.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=900", communityReview: "A Ballard institution that's landed on national best-restaurant lists, with reviewers consistently raving about the fresh, sustainably-sourced oysters — no reservations means real waits at peak times, and a handful of recent reviews flag slower, less attentive service than the restaurant's reputation suggests.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Din Tai Fung`, location: `Seattle, Washington`, rating: 4.6, review: `Famous for soup dumplings and Taiwanese dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=900", communityReview: "A globally acclaimed Taiwanese chain, and reviewers consistently say it earns the hype despite being a chain — the xiao long bao (soup dumplings) draw near-universal praise for consistency, with the dim-sum-style ordering sheet making it easy to over-order.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Tilikum Place Café`, location: `Seattle, Washington`, rating: 4.3, review: `Known for its amazing Dutch baby pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=900", communityReview: "A tiny, 12-table neighborhood favorite reviewers call a hidden gem for brunch — the Dutch baby pancakes are the signature order, though the small dining room means real waits and reservations are essential, especially on weekends.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Canlis`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=500" },
@@ -1847,6 +1884,7 @@ const DESTINATIONS = [
     slug: "boston-mv-2025",
     name: `Boston & Martha's Vineyard`,
     country: `USA`,
+    year: 2025,
     tag: `New England`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900",
@@ -1866,10 +1904,10 @@ const DESTINATIONS = [
 `Sunset in Menemsha`
     ],
     restaurants: [
-      { name: `Union Oyster House`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Oldest continuously operating restaurant in the U.S. — go for clam chowder, oysters, baked stuffed lobster.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=900" },
-      { name: `Neptune Oyster`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Tiny, no-reservations spot known for some of the best lobster rolls in the North End.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900" },
-      { name: `Giacomo's`, location: `Boston & Martha's Vineyard`, rating: 4.6, review: `Tiny, loud, cash-only — authentic pasta and seafood; the lobster fra diavolo is legendary.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=900" },
-      { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900" }
+      { name: `Union Oyster House`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Oldest continuously operating restaurant in the U.S. — go for clam chowder, oysters, baked stuffed lobster.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=900", communityReview: "Running since 1826, and the honest local consensus (including a Boston Globe piece literally titled \"Tourist trap or living history?\") is that you're paying for history and atmosphere, not a great meal — sit at the raw bar where oysters are shucked fresh in front of you rather than pre-shucked, and go in for the JFK booth and 200 years of history, not a culinary highlight.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Neptune Oyster`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Tiny, no-reservations spot known for some of the best lobster rolls in the North End.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900", communityReview: "Frequently named the actual best oyster spot in Boston, and locals steer visitors here over Union Oyster House specifically for food quality — no reservations, tiny space, and real waits, but reviewers overwhelmingly say the butter-poached lobster roll is worth it.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Giacomo's`, location: `Boston & Martha's Vineyard`, rating: 4.6, review: `Tiny, loud, cash-only — authentic pasta and seafood; the lobster fra diavolo is legendary.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=900", communityReview: "The original North End location (355 Hanover St) was ranked one of the best Italian restaurants in the U.S. by Tasting Table — reviewers consistently rave about the pumpkin tortellini and seafood, with the line-out-the-door, cash-only, no-reservations routine treated as part of the experience. Note: a separate South End sister location, Casa Giacomo's, has closed — make sure you're headed to the original.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900", communityReview: "An island landmark right by the Vineyard Haven ferry terminal — reviewers openly call it touristy but say it's genuinely fun, with the mussels, chowder, and waterfront fireplace atmosphere earning consistent praise even from visitors who expected a tourist-trap letdown.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Union Oyster House`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=500" },
@@ -1896,6 +1934,7 @@ const DESTINATIONS = [
     slug: "san-francisco-2026",
     name: `San Francisco, California`,
     country: `USA`,
+    year: 2026,
     tag: `Bay Views`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=900",
@@ -1915,10 +1954,10 @@ const DESTINATIONS = [
 `Lombard Street`
     ],
     restaurants: [
-      { name: `Hog Island Oyster Co.`, location: `San Francisco, California`, rating: 4.3, review: `Fresh oysters, clam chowder, and grilled cheese with oysters — very Northern California.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=900" },
-      { name: `Swan Oyster Depot`, location: `San Francisco, California`, rating: 4.5, review: `Legendary tiny seafood counter. Expect a line.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=900" },
-      { name: `Tadich Grill`, location: `San Francisco, California`, rating: 4.6, review: `Classic historic SF restaurant dating back to the Gold Rush era.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=900" },
-      { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900" }
+      { name: `Hog Island Oyster Co.`, location: `San Francisco, California`, rating: 4.3, review: `Fresh oysters, clam chowder, and grilled cheese with oysters — very Northern California.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=900", communityReview: "A Ferry Building fixture that sources its own oysters from Tomales Bay — reviewers consistently call it a rare exception among touristy waterfront spots, saying the seafood and Bay Bridge views both genuinely deliver rather than one propping up the other.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Swan Oyster Depot`, location: `San Francisco, California`, rating: 4.5, review: `Legendary tiny seafood counter. Expect a line.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=900", communityReview: "Family-run since 1912, and genuinely beloved by food-world insiders — Anthony Bourdain filmed here, and Bon Appétit's restaurant editor called it \"maybe my favorite restaurant on the planet.\" Cash only, no reservations, counter seating only, and waits can run over an hour — locals say it's worth timing your visit right at opening.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Tadich Grill`, location: `San Francisco, California`, rating: 4.6, review: `Classic historic SF restaurant dating back to the Gold Rush era.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=900", communityReview: "The oldest restaurant in California, dating to 1849 — reviewers call the old-school charm and old-fashioned menu (think petrale sole and lamb chops with mint jelly) a genuine time capsule. Often debated as the more polished alternative to Swan Oyster Depot's counter-and-a-wait experience.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900", communityReview: "Reviewers overwhelmingly say it lives up to the hype — the croissants and morning buns draw particular praise, and while the line can be long, most say it moves quickly and is worth the wait.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     mustTryFoods: [
       { name: `Hog Island Oyster Co.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=500" },
@@ -1946,6 +1985,7 @@ const DESTINATIONS = [
     slug: "rome-2022",
     name: `Rome`,
     country: `Italy`,
+    year: 2022,
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=900",
@@ -1995,6 +2035,7 @@ const DESTINATIONS = [
     slug: "florence-2022",
     name: `Florence`,
     country: `Italy`,
+    year: 2022,
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=900",
@@ -2037,6 +2078,7 @@ const DESTINATIONS = [
     slug: "pisa-2022",
     name: `Pisa`,
     country: `Italy`,
+    year: 2022,
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i12.jpg?w=900",
@@ -2078,6 +2120,7 @@ const DESTINATIONS = [
     slug: "naples-2022",
     name: `Naples`,
     country: `Italy`,
+    year: 2022,
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i10.jpg?w=900",
@@ -2088,7 +2131,7 @@ const DESTINATIONS = [
       { label: "Language", value: `Italian` },
       { label: "Kid-chaos level", value: `Medium` }
     ],
-    whyVisit: `Naples is chaotic, loud, and the birthplace of pizza — the launch point for Pompeii and the Amalfi Coast, and a real change of pace from the Renaissance calm of Florence.`,
+    whyVisit: `Naples is chaotic, loud, and the birthplace of pizza — the launch point for Pompeii and the Amalfi Coast, and a real change of pace from the Renaissance calm of Florence. The pizza was legit everywhere we tried it — no bad slice in the whole city.`,
     thingsToDo: [
       `Explore the ruins of Pompeii`,
       `Walk the historic center`,
@@ -2115,6 +2158,7 @@ const DESTINATIONS = [
     slug: "amalfi-2022",
     name: `Amalfi Coast`,
     country: `Italy`,
+    year: 2022,
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=900",
@@ -2125,7 +2169,7 @@ const DESTINATIONS = [
       { label: "Language", value: `Italian` },
       { label: "Kid-chaos level", value: `Low` }
     ],
-    whyVisit: `Cliffside towns, impossibly blue water, and a coastal road that's an experience in itself — the Amalfi Coast is the slow, scenic exhale after Naples.`,
+    whyVisit: `Cliffside towns, impossibly blue water, and a coastal road that's an experience in itself — the Amalfi Coast is the slow, scenic exhale after Naples. We mostly grazed here — pastries and limoncello along the coast road — rather than sitting down for full meals.`,
     thingsToDo: [
       `Walk along the Amalfi Coast`,
       `Explore the cliffside towns`,
@@ -2133,7 +2177,8 @@ const DESTINATIONS = [
     ],
     restaurants: [],
     mustTryFoods: [
-      { name: `Limoncello`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=500" }
+      { name: `Limoncello`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=500" },
+      { name: `Coastal pastries`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=500" }
     ],
     hiddenGems: [
 `Path of the Gods, a cliffside hiking trail above the coast with fewer crowds than the beach towns below`,
@@ -2152,6 +2197,7 @@ const DESTINATIONS = [
     slug: "tokyo-2019",
     name: `Tokyo`,
     country: `Japan`,
+    year: 2019,
     tag: `Japan 2019 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=900",
@@ -2200,6 +2246,7 @@ const DESTINATIONS = [
     slug: "kyoto-2019",
     name: `Kyoto`,
     country: `Japan`,
+    year: 2019,
     tag: `Japan 2019 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j19.jpg?w=900",
@@ -2241,6 +2288,7 @@ const DESTINATIONS = [
     slug: "osaka-2019",
     name: `Osaka`,
     country: `Japan`,
+    year: 2019,
     tag: `Japan 2019 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j5.jpg?w=900",
@@ -2280,6 +2328,7 @@ const DESTINATIONS = [
     slug: "mt-fuji-2019",
     name: `Mt. Fuji`,
     country: `Japan`,
+    year: 2019,
     tag: `Japan 2019 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j8.jpg?w=900",
@@ -2290,7 +2339,7 @@ const DESTINATIONS = [
       { label: "Language", value: `Japanese` },
       { label: "Kid-chaos level", value: `Low` }
     ],
-    whyVisit: `A day trip out of Tokyo into the mountains — Japan's most iconic peak, at its best on a clear morning from one of the lakes at its base.`,
+    whyVisit: `A day trip out of Tokyo into the mountains — Japan's most iconic peak, at its best on a clear morning from one of the lakes at its base. We stayed and dined right at the resort spa here, so no outside restaurant picks from this stop.`,
     thingsToDo: [
       `View Mt. Fuji from Lake Kawaguchiko or Hakone`,
       `Visit a traditional onsen (hot spring) with a view of the mountain`,
@@ -2320,6 +2369,7 @@ const DESTINATIONS = [
     slug: "athens-2022",
     name: `Athens`,
     country: `Greece`,
+    year: 2022,
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900",
@@ -2366,6 +2416,7 @@ const DESTINATIONS = [
     slug: "santorini-2022",
     name: `Santorini`,
     country: `Greece`,
+    year: 2022,
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=900",
@@ -2405,6 +2456,7 @@ const DESTINATIONS = [
     slug: "mykonos-2022",
     name: `Mykonos`,
     country: `Greece`,
+    year: 2022,
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=900",
@@ -2444,6 +2496,7 @@ const DESTINATIONS = [
     slug: "auckland-2020",
     name: `Auckland`,
     country: `New Zealand`,
+    year: 2020,
     tag: `New Zealand 2020 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=900",
@@ -2491,6 +2544,7 @@ const DESTINATIONS = [
     slug: "queenstown-2020",
     name: `Queenstown`,
     country: `New Zealand`,
+    year: 2020,
     tag: `New Zealand 2020 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz23.jpg?w=900",
@@ -2532,6 +2586,7 @@ const DESTINATIONS = [
     slug: "wellington-2020",
     name: `Wellington`,
     country: `New Zealand`,
+    year: 2020,
     tag: `New Zealand 2020 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz29.jpg?w=900",
@@ -2572,6 +2627,7 @@ const DESTINATIONS = [
     slug: "taupo-2020",
     name: `Taupo`,
     country: `New Zealand`,
+    year: 2020,
     tag: `New Zealand 2020 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz24.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz9.jpg?w=900",
@@ -2613,6 +2669,7 @@ const DESTINATIONS = [
     slug: "paris-2017",
     name: `Paris`,
     country: `France`,
+    year: 2017,
     tag: `France 2017 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=900",
@@ -2709,7 +2766,10 @@ const ADVENTURES = [
     duration: "Multi-city",
     distance: "",
     stops: ["rome-2022", "florence-2022", "pisa-2022", "naples-2022", "amalfi-2022"],
-    intro: `A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.`
+    intro: `A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.`,
+    packingTips: [
+      "Placeholder — add your real packing and practical tips for Italy here"
+    ]
   },
   {
     slug: "japan-2019",
@@ -2719,7 +2779,10 @@ const ADVENTURES = [
     duration: "Multi-city",
     distance: "",
     stops: ["tokyo-2019", "kyoto-2019", "osaka-2019", "mt-fuji-2019"],
-    intro: `A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.`
+    intro: `A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.`,
+    packingTips: [
+      "Placeholder — add your real packing and practical tips for Japan here"
+    ]
   },
   {
     slug: "greece-2022",
@@ -2729,7 +2792,10 @@ const ADVENTURES = [
     duration: "Multi-city",
     distance: "",
     stops: ["athens-2022", "santorini-2022", "mykonos-2022"],
-    intro: `A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.`
+    intro: `A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.`,
+    packingTips: [
+      "Placeholder — add your real packing and practical tips for Greece here"
+    ]
   },
   {
     slug: "new-zealand-2020",
@@ -2739,7 +2805,10 @@ const ADVENTURES = [
     duration: "Multi-city",
     distance: "",
     stops: ["auckland-2020", "taupo-2020", "queenstown-2020", "wellington-2020"],
-    intro: `A trip through Auckland, Taupo, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.`
+    intro: `A trip through Auckland, Taupo, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.`,
+    packingTips: [
+      "Placeholder — add your real packing and practical tips for New Zealand here"
+    ]
   },
   {
     slug: "central-america-2015",
@@ -2749,7 +2818,10 @@ const ADVENTURES = [
     duration: "Multi-country",
     distance: "",
     stops: ["belize-2015", "roatan-2015", "cancun-2015"],
-    intro: `A trip through Belize, Roatán, and Cancún — Mayan ruins, the Mesoamerican Barrier Reef, and a stretch of turquoise coastline spanning three countries.`
+    intro: `A trip through Belize, Roatán, and Cancún — Mayan ruins, the Mesoamerican Barrier Reef, and a stretch of turquoise coastline spanning three countries.`,
+    packingTips: [
+      "Placeholder — add your real packing and practical tips for Central America here"
+    ]
   }
 ];
 
@@ -2758,25 +2830,31 @@ const MISADVENTURES = [
     icon: "🛵",
     title: "The Great Motorbike Standoff",
     location: "Ho Chi Minh City, Vietnam",
-    body: "We spent our first twenty minutes in the city standing at a curb, frozen, while a river of scooters parted around a very confused family of four. A local grandmother eventually just grabbed our hands and walked us across like it was nothing. It was, apparently, nothing."
+    body: "No stoplights, just a constant river of scooters — our first few times trying to cross the street, we froze at the curb completely unwilling to step out into it. What locals do in seconds took us forever those first few tries."
   },
   {
-    icon: "🦀",
-    title: "The Crab Omelet Wait",
+    icon: "🏍️",
+    title: "The Grab Driver Lottery",
+    location: "Ho Chi Minh City, Vietnam",
+    body: "My daughter and niece called Grab motorbikes constantly to get around the city — and somehow it became a running joke how differently their luck ran. My niece kept getting matched with the same type of driver every time: overweight, sweaty, barely-hold-on-able. My daughter's drivers were consistently fit and clean. Neither of them could explain it, and it never once evened out."
+  },
+  {
+    icon: "🌶️",
+    title: "The First-Day Spice Miscalculation",
     location: "Bangkok, Thailand",
-    body: "We waited well over an hour for a plastic stool outside Jay Fai for the legendary crab omelet, only to discover our youngest had, in that time, quietly decided he only eats 'plain rice.' The rest of us have never recovered from how good it was. He remains unmoved."
+    body: "Day one, big group, nobody could agree on where to eat, so we just walked into the heat and humidity until we hit the first place we saw — outdoor seating, no air conditioning, fans barely moving air. Nobody in our group had registered exactly how hot Thai spice levels run, so \"level 1\" turned out to be too much for most of us, and we had to order chilled or frozen drinks to cope — which melted almost as fast as they arrived in that heat. Turns out a lot of the kids couldn't handle the \"exotic\" dishes the grandparents had picked for the table either. The one saving grace was the beer — cold, refreshing, and cheap. Oh, and the flies and mosquitoes were abundant the entire meal."
   },
   {
-    icon: "🧭",
-    title: "Wrong Boat, Right Village",
+    icon: "🥣",
+    title: "The Van That Got Away",
     location: "An Giang, Vietnam",
-    body: "A miscommunication about which dock was ours led to an accidental detour on a rice-transport boat instead of our planned skiff through the floating villages. We ended up somewhere not on any itinerary, drinking tea with a family who found the whole mix-up hilarious."
+    body: "An Giang is where we met distant relatives for the first time — grandpa wanted to show everyone his hometown and feed us the traditional foods he grew up on, bird's nest soup included. Once people heard how it's actually made, half the table quietly spat their spoonfuls into napkins when no one was looking. Meanwhile, one of our two vans ran out of gas on the way there, stranding half the family at a rest stop for hours. They missed the reunion meal entirely — but also missed the soup, eating whatever the rest stop had instead. To this day nobody's settled which van actually won: the one that made it and had to eat bird's nest soup with the family, or the one that broke down and just got regular food."
   },
   {
-    icon: "🥚",
-    title: "The Egg Coffee Bet",
+    icon: "☕",
+    title: "The Attic Above the Sweaty Cafe",
     location: "Hanoi, Vietnam",
-    body: "One kid bet the other that egg coffee 'sounds disgusting and definitely is.' Both were proven wrong within one sip at Cafe Giảng, and we now owe that shop for permanently changing our breakfast routine at home."
+    body: "Egg coffee was a letdown — we'd hyped ourselves up over how strange it sounded online, paid extra for it, and it just tasted like regular coffee. Social media got us again. The real win of that stop was upstairs: a tiny staircase nobody wanted to climb except me. I went up alone and found a tiny, air-conditioned attic overlooking the whole café. While the rest of the group sat downstairs sweating in front of a fan that barely moved air, I had a cool little balcony entirely to myself."
   },
   {
     icon: "⛴️",

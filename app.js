@@ -265,6 +265,7 @@ function afterRender(path) {
     registerLightboxGroup("full-gallery", GALLERY.map(g => ({ src: g.src, label: g.label })));
   }
   bindGalleryFilters();
+  bindCountryFilters();
 }
 
 window.addEventListener("hashchange", router);
@@ -313,7 +314,7 @@ function newsletterBlockHTML() {
     <div class="container">
       <div class="newsletter-block reveal">
         <span class="eyebrow">Stay in the loop</span>
-        <h2 class="newsletter-title">Get the postcard, once a month.</h2>
+        <h2 class="newsletter-title">Get the postcard, whenever there's one worth sending.</h2>
         <p class="newsletter-desc">New destinations, honest restaurant reviews, and whatever went wrong this time — straight to your inbox.</p>
         <form class="newsletter-form" data-newsletter-form>
           <input type="email" required placeholder="you@somewhere-nice.com" aria-label="Email address">
@@ -323,6 +324,22 @@ function newsletterBlockHTML() {
       </div>
     </div>
   </section>`;
+}
+
+function worldLandmassSVG() {
+  // Simplified continent silhouettes, hand-built on the same equirectangular
+  // percentage math used for pin placement (left = (lon+180)/360*100,
+  // top = (90-lat)/180*100), so shapes and pins always line up regardless
+  // of the container's actual pixel size.
+  return `
+  <svg class="map-landmass" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <polygon points="4.2,10.6 11.1,12.2 15.3,22.8 17.5,32.2 20.8,38.9 23.1,40 25.6,40 27.8,36.1 29.2,30.6 30.6,25 33.3,22.2 34.7,23.3 31.9,16.7 23.6,11.1 13.9,11.1" />
+    <polygon points="30,43.3 27.5,52.8 30.3,66.7 31.1,80.6 32.5,78.9 33.9,69.4 40.3,54.4 37.5,47.2 33.3,44.4" />
+    <polygon points="47.5,26.1 47.5,30 50.8,29.4 54.2,28.9 56.4,30.6 57.8,25 61.1,25 66.7,19.4 66.7,11.1 55.6,10.6 51.4,15.6 49.2,17.8 47.5,22.2" />
+    <polygon points="45.3,38.3 48.3,30.6 52.8,29.4 58.9,32.8 61.9,43.3 64.2,43.3 61.9,50.6 61.1,58.3 59.7,63.9 55.6,69.4 54.2,65.6 53.3,52.8 52.5,47.2 48.6,44.4" />
+    <polygon points="57.8,25 61.1,25 63.3,26.7 66.7,26.7 63.9,33.3 66.7,36.1 69.4,36.1 71.4,45.6 72.2,42.8 75.8,37.8 77.2,45.6 78.9,48.9 79.4,53.3 83.3,54.4 88.9,51.1 89.2,55 88.9,25 89.4,20.6 94.4,15.6 97.2,13.3 100,12.2 97.2,11.1 88.9,9.4 77.8,6.7 66.7,10 63.3,12.2" />
+    <polygon points="81.4,62.2 83.9,59.4 85.8,58.3 87.8,56.7 89.4,56.1 90.3,59.4 92.5,65.6 91.7,70.6 88.9,71.1 86.4,67.8 81.9,69.4" />
+  </svg>`;
 }
 
 function worldMapHTML() {
@@ -337,9 +354,9 @@ function worldMapHTML() {
         <a href="#/destinations" class="btn btn-ghost">View all destinations</a>
       </div>
       <div class="map-block reveal">
-        <div class="map-grid-lines"></div>
+        ${worldLandmassSVG()}
         ${DESTINATIONS.map(d => `<a href="#/destinations/${d.slug}" class="map-pin" data-label="${escapeHtml(d.name)}" style="top:${d.coords.top}; left:${d.coords.left};"></a>`).join("")}
-        <span class="map-caption">7 stamps and counting — tap a pin</span>
+        <span class="map-caption">${DESTINATIONS.length} stamps and counting — tap a pin</span>
       </div>
     </div>
   </section>`;
@@ -608,21 +625,113 @@ function renderAdventureDetail(a) {
    ============================================================ */
 
 function renderDestinationsList() {
+  // Group by country (alphabetical) and by year (most recent first) — two views, one toggle
+  const byCountry = {};
+  const byYear = {};
+  DESTINATIONS.forEach(d => {
+    if (!byCountry[d.country]) byCountry[d.country] = [];
+    byCountry[d.country].push(d);
+    const y = d.year || "Undated";
+    if (!byYear[y]) byYear[y] = [];
+    byYear[y].push(d);
+  });
+  const countries = Object.keys(byCountry).sort((a, b) => a.localeCompare(b));
+  countries.forEach(c => byCountry[c].sort((a, b) => a.name.localeCompare(b.name)));
+  const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+  years.forEach(y => byYear[y].sort((a, b) => a.name.localeCompare(b.name)));
+
+  const countryGroupsHTML = countries.map(c => `
+    <div class="dest-group" data-view="country" data-key="${escapeHtml(c)}">
+      <div class="divider-route"></div>
+      <h2 class="country-heading">${escapeHtml(c)} <span class="country-count">${byCountry[c].length} ${byCountry[c].length === 1 ? "stop" : "stops"}</span></h2>
+      <div class="card-grid mt-lg">
+        ${byCountry[c].map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
+      </div>
+    </div>`).join("");
+
+  const yearGroupsHTML = years.map(y => `
+    <div class="dest-group" data-view="year" data-key="${escapeHtml(y)}" style="display:none;">
+      <div class="divider-route"></div>
+      <h2 class="country-heading">${escapeHtml(y)} <span class="country-count">${byYear[y].length} ${byYear[y].length === 1 ? "stop" : "stops"}</span></h2>
+      <div class="card-grid mt-lg">
+        ${byYear[y].map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
+      </div>
+    </div>`).join("");
+
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
       <span class="eyebrow">Destinations</span>
       <h1 class="section-title" style="margin-top:16px;">Every stop, one passport at a time</h1>
-      <p class="section-desc" style="margin-top:16px;">${DESTINATIONS.length} places we've eaten, wandered, and occasionally gotten lost in — with quick facts, food picks, and the honest verdict on whether we'd go back.</p>
+      <p class="section-desc" style="margin-top:16px;">${DESTINATIONS.length} places we've eaten, wandered, and occasionally gotten lost in, across ${countries.length} countries — with quick facts, food picks, and the honest verdict on whether we'd go back.</p>
 
-      <div class="card-grid mt-lg">
-        ${DESTINATIONS.map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
+      <div class="view-toggle mt-lg" id="viewToggle">
+        <span class="view-toggle-label">Browse by:</span>
+        <button class="view-toggle-btn active" data-mode="country">Country</button>
+        <button class="view-toggle-btn" data-mode="year">Year</button>
+      </div>
+
+      <div class="gallery-filters" id="countryFilters">
+        <button class="gallery-filter active" data-filter="all">All (${DESTINATIONS.length})</button>
+        ${countries.map(c => `<button class="gallery-filter" data-filter="${escapeHtml(c)}">${escapeHtml(c)} (${byCountry[c].length})</button>`).join("")}
+      </div>
+
+      <div id="destGroups">
+        ${countryGroupsHTML}
+        ${yearGroupsHTML}
       </div>
     </div>
   </section>
   ${worldMapHTML()}
   ${newsletterBlockHTML()}
   `;
+}
+
+function bindCountryFilters() {
+  const toggle = document.getElementById("viewToggle");
+  const filterBar = document.getElementById("countryFilters");
+  if (!toggle || !filterBar) return;
+
+  let currentMode = "country";
+
+  function renderFilterPills() {
+    const groups = document.querySelectorAll(`#destGroups .dest-group[data-view="${currentMode}"]`);
+    const pills = [`<button class="gallery-filter active" data-filter="all">All</button>`];
+    groups.forEach(g => {
+      const key = g.getAttribute("data-key");
+      const count = g.querySelectorAll(".dest-card").length;
+      pills.push(`<button class="gallery-filter" data-filter="${key}">${key} (${count})</button>`);
+    });
+    filterBar.innerHTML = pills.join("");
+  }
+
+  function applyMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll("#destGroups .dest-group").forEach(g => {
+      g.style.display = g.getAttribute("data-view") === mode ? "" : "none";
+    });
+    renderFilterPills();
+  }
+
+  toggle.addEventListener("click", (e) => {
+    const btn = e.target.closest(".view-toggle-btn");
+    if (!btn) return;
+    toggle.querySelectorAll(".view-toggle-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    applyMode(btn.getAttribute("data-mode"));
+  });
+
+  filterBar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".gallery-filter");
+    if (!btn) return;
+    filterBar.querySelectorAll(".gallery-filter").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const key = btn.getAttribute("data-filter");
+    document.querySelectorAll(`#destGroups .dest-group[data-view="${currentMode}"]`).forEach(g => {
+      const match = key === "all" || g.getAttribute("data-key") === key;
+      g.style.display = match ? "" : "none";
+    });
+  });
 }
 
 function renderDestinationDetail(d) {
@@ -722,7 +831,7 @@ function renderDestinationDetail(d) {
     <div class="container">
       <span class="eyebrow">On the Map</span>
       <div class="map-block reveal mt-lg" style="margin-top:24px;">
-        <div class="map-grid-lines"></div>
+        ${worldLandmassSVG()}
         <span class="map-pin" data-label="${escapeHtml(d.name)}" style="top:${d.coords.top}; left:${d.coords.left};"></span>
         <span class="map-caption">${escapeHtml(d.name)}, ${escapeHtml(d.country)}</span>
       </div>
@@ -912,6 +1021,15 @@ function renderAbout() {
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section text-center">
+    <div class="container">
+      <div class="badge-frame reveal">
+        ${lazyImg("assets/logo-badge.png", "The Misadventures of a Family Man badge", "badge-img")}
+      </div>
+      <p class="section-desc" style="margin: 24px auto 0; text-align:center;">The paper airplane that started it all.</p>
     </div>
   </section>
 
