@@ -83,7 +83,7 @@ const DESTINATIONS = [
     tag: "Neon & Dim Sum",
     heroImg: photoSet("hong-kong").hero,
     cardImg: photoSet("hong-kong").card,
-    coords: { top: "34%", left: "78%" },
+    coords: { top: "37.6%", left: "81.7%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
       { label: "Currency", value: "HK Dollar" },
@@ -133,7 +133,7 @@ const DESTINATIONS = [
     tag: "Slow Beach Days",
     heroImg: photoSet("koh-samui").hero,
     cardImg: photoSet("koh-samui").card,
-    coords: { top: "58%", left: "70%" },
+    coords: { top: "44.7%", left: "77.8%" },
     quickFacts: [
       { label: "Best time to go", value: "Dec – Apr" },
       { label: "Currency", value: "Thai Baht" },
@@ -181,7 +181,7 @@ const DESTINATIONS = [
     tag: "Street Food Capital",
     heroImg: photoSet("bangkok").hero,
     cardImg: photoSet("bangkok").card,
-    coords: { top: "50%", left: "66%" },
+    coords: { top: "42.4%", left: "77.9%" },
     quickFacts: [
       { label: "Best time to go", value: "Nov – Feb" },
       { label: "Currency", value: "Thai Baht" },
@@ -230,7 +230,7 @@ const DESTINATIONS = [
     tag: "Motorbikes & Banh Mi",
     heroImg: photoSet("ho-chi-minh-city").hero,
     cardImg: photoSet("ho-chi-minh-city").card,
-    coords: { top: "56%", left: "60%" },
+    coords: { top: "44.0%", left: "79.6%" },
     quickFacts: [
       { label: "Best time to go", value: "Dec – Mar" },
       { label: "Currency", value: "Vietnamese Dong" },
@@ -278,7 +278,7 @@ const DESTINATIONS = [
     tag: "Mekong Delta",
     heroImg: photoSet("an-giang").hero,
     cardImg: photoSet("an-giang").card,
-    coords: { top: "62%", left: "55%" },
+    coords: { top: "44.2%", left: "79.2%" },
     quickFacts: [
       { label: "Best time to go", value: "Nov – Jan" },
       { label: "Currency", value: "Vietnamese Dong" },
@@ -323,7 +323,7 @@ const DESTINATIONS = [
     tag: "Old Quarter & Egg Coffee",
     heroImg: "assets/uploads/hanoi-1.jpg",
     cardImg: "assets/uploads/hanoi-2.jpg",
-    coords: { top: "30%", left: "58%" },
+    coords: { top: "38.3%", left: "79.4%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
       { label: "Currency", value: "Vietnamese Dong" },
@@ -375,7 +375,7 @@ const DESTINATIONS = [
     tag: "Limestone Karsts",
     heroImg: photoSet("ha-long-bay").hero,
     cardImg: photoSet("ha-long-bay").card,
-    coords: { top: "26%", left: "62%" },
+    coords: { top: "38.4%", left: "79.8%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
       { label: "Currency", value: "Vietnamese Dong" },
@@ -1299,9 +1299,9 @@ const DESTINATIONS = [
     country: "USA",
     year: 2023,
     tag: "Ski Trip",
-    heroImg: img("vail-hero", 1600, 1000),
-    cardImg: img("vail-card", 900, 1100),
-    coords: { top: "39.9%", left: "18.4%" },
+    heroImg: "assets/uploads/vail-hero.jpg",
+    cardImg: "assets/uploads/vail-card.jpg",
+    coords: { top: "28.0%", left: "20.5%" },
     quickFacts: [
       { label: "Best time to go", value: "Dec – Mar" },
       { label: "Currency", value: "US Dollar" },
@@ -1332,7 +1332,7 @@ const DESTINATIONS = [
       "Layer up — Vail's cold is a real, frequent topic of conversation among visitors",
       "Check the weather for Dec – Mar before locking in dates"
     ],
-    gallery: [img("vail-g1", 900, 700), img("vail-g2", 700, 900), img("vail-g3", 900, 650)],
+    gallery: ["assets/uploads/vail-g1.jpg", "assets/uploads/vail-g2.jpg", "assets/uploads/vail-g3.jpg", "assets/uploads/vail-g4.jpg", "assets/uploads/vail-g5.jpg", "assets/uploads/vail-g6.jpg"],
     rating: 9,
     wouldReturn: "Yes — even after the $9k price tag and the cold.",
     relatedAdventure: null
@@ -1343,9 +1343,9 @@ const DESTINATIONS = [
     country: "USA",
     year: 2023,
     tag: "Colorado City Break",
-    heroImg: img("boulder-hero", 1600, 1000),
-    cardImg: img("boulder-card", 900, 1100),
-    coords: { top: "39.6%", left: "19.1%" },
+    heroImg: "assets/uploads/boulder-hero.jpg",
+    cardImg: "assets/uploads/boulder-card.jpg",
+    coords: { top: "27.8%", left: "20.8%" },
     quickFacts: [
       { label: "Best time to go", value: "Apr – Jun" },
       { label: "Currency", value: "US Dollar" },
@@ -1375,7 +1375,7 @@ const DESTINATIONS = [
       "Boulder and Denver are close enough to combine easily in one trip",
       "Check the weather for Apr – Jun before locking in dates"
     ],
-    gallery: [img("boulder-g1", 900, 700), img("boulder-g2", 700, 900)],
+    gallery: ["assets/uploads/boulder-g1.jpg", "assets/uploads/boulder-g2.jpg", "assets/uploads/boulder-g3.jpg", "assets/uploads/boulder-g4.jpg", "assets/uploads/boulder-g5.jpg", "assets/uploads/boulder-g6.jpg"],
     rating: 8,
     wouldReturn: "Yes — the lattes alone are worth it.",
     relatedAdventure: null
@@ -2082,7 +2082,7 @@ const DESTINATIONS = [
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i12.jpg?w=900",
-    coords: { top: "31.5%", left: "50.5%" },
+    coords: { top: "25.7%", left: "52.9%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
       { label: "Currency", value: `Euro` },
@@ -2124,7 +2124,7 @@ const DESTINATIONS = [
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i10.jpg?w=900",
-    coords: { top: "45%", left: "51%" },
+    coords: { top: "27.3%", left: "54.0%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
       { label: "Currency", value: `Euro` },
@@ -2162,7 +2162,7 @@ const DESTINATIONS = [
     tag: `Italy 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=900",
-    coords: { top: "46%", left: "51.5%" },
+    coords: { top: "27.4%", left: "54.1%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
       { label: "Currency", value: `Euro` },
@@ -2857,16 +2857,16 @@ const MISADVENTURES = [
     body: "Egg coffee was a letdown — we'd hyped ourselves up over how strange it sounded online, paid extra for it, and it just tasted like regular coffee. Social media got us again. The real win of that stop was upstairs: a tiny staircase nobody wanted to climb except me. I went up alone and found a tiny, air-conditioned attic overlooking the whole café. While the rest of the group sat downstairs sweating in front of a fan that barely moved air, I had a cool little balcony entirely to myself."
   },
   {
-    icon: "⛴️",
-    title: "Seasick on the Star Ferry",
+    icon: "🍵",
+    title: "The Tea That Wasn't for Drinking",
     location: "Hong Kong",
-    body: "A ten-minute harbor crossing should not have been a problem. It became a problem. Lesson learned: check the forecast before promising your family the 'calmest boat ride of the whole trip.'"
+    body: "A few of us went out for dim sum, not realizing Hong Kong dim sum isn't the cart-rolling-through-the-restaurant kind we knew from the States — here you order at a window and they bring your plates out when ready, which made sense once we saw how small and old the place was. Small and old also meant the dishwashing wasn't exactly top-tier. One of us ordered hot tea with the meal, and when a kettle of plain hot water showed up, we assumed it was for the tea — until we noticed the tables around us using it to rinse off their own dishes before eating. They absolutely knew we were tourists."
   },
   {
-    icon: "🐚",
-    title: "The Tide Came In",
+    icon: "🐘",
+    title: "Grandpa and the Elephants",
     location: "Koh Samui, Thailand",
-    body: "We built an elaborate sandcastle kingdom, forgot entirely about tide tables, and watched the whole thing disappear in under an hour. The kids treated it as a natural disaster movie. We treated it as a lesson in checking tide tables."
+    body: "We booked an elephant sanctuary visit, and grandpa — old-school about what that meant — assumed we were going to watch elephants perform tricks. He didn't realize until we arrived that the whole point of the place is rescuing elephants from exactly that kind of exploitation. He was visibly embarrassed once it clicked, and ended up moping on the sidelines instead of joining in. Meanwhile the kids got the show of their lives anyway, watching one of the elephants produce an absolutely massive pile of poop, mouths hanging open the entire time."
   },
   {
     icon: "💸",
