@@ -2122,8 +2122,8 @@ const DESTINATIONS = [
     country: `Italy`,
     year: 2022,
     tag: `Italy 2022 Stop`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i10.jpg?w=900",
+        heroImg: "assets/uploads/naples-hero.jpg",
+        cardImg: "assets/uploads/naples-card.jpg",
     coords: { top: "27.3%", left: "54.0%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -2149,7 +2149,7 @@ const DESTINATIONS = [
 `Check the weather for Apr – Jun before locking in dates`,
 `Pompeii takes a half to full day — plan accordingly`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i10.jpg?w=1000"],
+        gallery: ["assets/uploads/naples-hero.jpg", "assets/uploads/naples-card.jpg", "assets/uploads/naples-g1.jpg", "assets/uploads/naples-g2.jpg", "assets/uploads/naples-g3.jpg", "assets/uploads/naples-g4.jpg", "assets/uploads/naples-g5.jpg", "assets/uploads/naples-g6.jpg"],
     rating: 8,
     wouldReturn: `Yes — mainly for the pizza.`,
     relatedAdventure: "italy-2022"
@@ -2160,8 +2160,8 @@ const DESTINATIONS = [
     country: `Italy`,
     year: 2022,
     tag: `Italy 2022 Stop`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=900",
+        heroImg: "assets/uploads/amalfi-hero.jpg",
+        cardImg: "assets/uploads/amalfi-card.jpg",
     coords: { top: "27.4%", left: "54.1%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2188,7 +2188,7 @@ const DESTINATIONS = [
 `Check the weather for May – Sep before locking in dates`,
 `The coastal roads are narrow and slow — build in extra travel time`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=1000"],
+        gallery: ["assets/uploads/amalfi-hero.jpg", "assets/uploads/amalfi-card.jpg", "assets/uploads/amalfi-g1.jpg", "assets/uploads/amalfi-g2.jpg", "assets/uploads/amalfi-g3.jpg"],
     rating: 9,
     wouldReturn: `Yes — this was one of the most beautiful drives of the whole trip.`,
     relatedAdventure: "italy-2022"
@@ -2330,8 +2330,8 @@ const DESTINATIONS = [
     country: `Japan`,
     year: 2019,
     tag: `Japan 2019 Stop`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j8.jpg?w=900",
+        heroImg: "assets/uploads/fuji-hero.jpg",
+        cardImg: "assets/uploads/fuji-card.jpg",
     coords: { top: "22%", left: "80.5%" },
     quickFacts: [
       { label: "Best time to go", value: `Jun – Sep` },
@@ -2360,7 +2360,7 @@ const DESTINATIONS = [
 `Fuji is famously shy — check forecasts and go early for the best chance of clear skies`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j8.jpg?w=1000"],
+        gallery: ["assets/uploads/fuji-hero.jpg", "assets/uploads/fuji-card.jpg", "assets/uploads/fuji-g1.jpg", "assets/uploads/fuji-g2.jpg", "assets/uploads/fuji-g3.jpg", "assets/uploads/fuji-g4.jpg", "assets/uploads/fuji-g5.jpg", "assets/uploads/fuji-g6.jpg"],
     rating: 9,
     wouldReturn: `Yes — worth a second try if the mountain hid behind clouds the first time.`,
     relatedAdventure: "japan-2019"
