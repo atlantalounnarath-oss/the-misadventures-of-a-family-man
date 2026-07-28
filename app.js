@@ -266,6 +266,7 @@ function afterRender(path) {
   }
   bindGalleryFilters();
   bindCountryFilters();
+  bindMisadventureFilters();
 }
 
 window.addEventListener("hashchange", router);
@@ -818,6 +819,28 @@ function renderDestinationDetail(d) {
     </div>
   </section>
 
+  ${(() => {
+    const stories = getMisadventuresForDestination(d);
+    if (!stories.length) return "";
+    return `
+  <section class="section section-tight">
+    <div class="container">
+      <span class="eyebrow">Misadventures From This Trip</span>
+      <h2 class="section-title" style="font-size:30px; margin-top:14px;">What went sideways here</h2>
+      <div class="card-grid mt-lg">
+        ${stories.map((m, i) => `
+          <div class="misadventure-card reveal reveal-delay-${(i % 3) + 1}">
+            <span class="misadventure-icon">${m.icon}</span>
+            <h3 class="misadventure-title">${escapeHtml(m.title)}</h3>
+            <span class="misadventure-loc">${escapeHtml(m.location)}</span>
+            <p class="misadventure-body">${escapeHtml(m.body)}</p>
+          </div>`).join("")}
+      </div>
+      <a href="#/misadventures" class="btn btn-ghost mt-lg" style="margin-top:32px;">See All Misadventures</a>
+    </div>
+  </section>`;
+  })()}
+
   <section class="section section-tight section-alt">
     <div class="container">
       <span class="eyebrow">Photo Gallery</span>
@@ -899,26 +922,71 @@ function renderEats() {
    ============================================================ */
 
 function renderMisadventures() {
+  const byLocation = {};
+  MISADVENTURES.forEach(m => {
+    if (!byLocation[m.location]) byLocation[m.location] = [];
+    byLocation[m.location].push(m);
+  });
+  const locations = Object.keys(byLocation).sort((a, b) => a.localeCompare(b));
+
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
       <span class="eyebrow">Misadventures</span>
       <h1 class="section-title" style="margin-top:16px;">Everything that went sideways (and how it turned out fine)</h1>
-      <p class="section-desc" style="margin-top:16px;">The wrong boats, wrong turns, and questionable bets that ended up being the stories we tell the most.</p>
+      <p class="section-desc" style="margin-top:16px;">${MISADVENTURES.length} wrong boats, wrong turns, and questionable bets across ${locations.length} destinations — jump to one below, or scroll through all of them.</p>
 
-      <div class="card-grid mt-lg">
-        ${MISADVENTURES.map((m, i) => `
-          <div class="misadventure-card reveal reveal-delay-${(i % 3) + 1}">
-            <span class="misadventure-icon">${m.icon}</span>
-            <h3 class="misadventure-title">${escapeHtml(m.title)}</h3>
-            <span class="misadventure-loc">${escapeHtml(m.location)}</span>
-            <p class="misadventure-body">${escapeHtml(m.body)}</p>
-          </div>`).join("")}
+      <div class="gallery-filters mt-lg" id="misadventureFilters">
+        <button class="gallery-filter active" data-filter="all">All (${MISADVENTURES.length})</button>
+        ${locations.map(loc => `<button class="gallery-filter" data-filter="${escapeHtml(loc)}">${escapeHtml(loc)} (${byLocation[loc].length})</button>`).join("")}
+      </div>
+
+      <div id="misadventureGroups">
+        ${locations.map(loc => `
+          <div class="dest-group" data-key="${escapeHtml(loc)}">
+            <div class="divider-route"></div>
+            <h2 class="country-heading">${escapeHtml(loc)} <span class="country-count">${byLocation[loc].length} ${byLocation[loc].length === 1 ? "story" : "stories"}</span></h2>
+            <div class="card-grid mt-lg">
+              ${byLocation[loc].map((m, i) => `
+                <div class="misadventure-card reveal reveal-delay-${(i % 3) + 1}">
+                  <span class="misadventure-icon">${m.icon}</span>
+                  <h3 class="misadventure-title">${escapeHtml(m.title)}</h3>
+                  <span class="misadventure-loc">${escapeHtml(m.location)}</span>
+                  <p class="misadventure-body">${escapeHtml(m.body)}</p>
+                </div>`).join("")}
+            </div>
+          </div>
+        `).join("")}
       </div>
     </div>
   </section>
   ${newsletterBlockHTML()}
   `;
+}
+
+function bindMisadventureFilters() {
+  const filterBar = document.getElementById("misadventureFilters");
+  if (!filterBar) return;
+  filterBar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".gallery-filter");
+    if (!btn) return;
+    filterBar.querySelectorAll(".gallery-filter").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const key = btn.getAttribute("data-filter");
+    document.querySelectorAll("#misadventureGroups .dest-group").forEach(g => {
+      const match = key === "all" || g.getAttribute("data-key") === key;
+      g.style.display = match ? "" : "none";
+    });
+  });
+}
+
+// Loose match: does this misadventure's location string belong to this destination?
+function getMisadventuresForDestination(dest) {
+  const name = dest.name.toLowerCase();
+  return MISADVENTURES.filter(m => {
+    const loc = m.location.toLowerCase();
+    return loc.includes(name) || name.includes(loc.split(",")[0].trim());
+  });
 }
 
 /* ============================================================
