@@ -2881,10 +2881,22 @@ const MISADVENTURES = [
     body: "The trip captions tell the whole story without any help from us: \"F— the cold,\" then \"Day 3, I'm tired,\" then finally, staring at the receipts, \"What $9k gets you.\" Ski season is beautiful. Ski season is also expensive and cold, and we said so in real time."
   },
   {
-    icon: "🦀",
-    title: "Naming the Hermit Crabs",
+    icon: "🐢",
+    title: "The Kidnapper Vans and the Baby Sea Turtles",
     location: "Puerto Vallarta, Mexico",
-    body: "Somewhere on the beach we adopted two hermit crabs as temporary mascots. \"They grow up so fast. I named them Tophat and Monocle, Godspeed little buddies,\" reads the original caption — a level of commitment to a bit that only makes sense three margaritas into a family vacation."
+    body: "We found a family sea turtle release online and booked it, and when we met the tour guide, only two unmarked vans showed up. After they verified us, we got in, and the vans started heading off onto unmarked trails deep into the jungle. Eventually we were asked to get out and start walking — across an empty beach that felt like the middle of nowhere, nowhere near civilization. We joked, only half-joking, that this is exactly how kidnappings and murders happen — but with twenty of us in the group, we figured we'd be fine. Turned out completely legitimate: a tiny beach camp dedicated to preserving and saving sea turtles. We got to release baby sea turtles onto the beach ourselves, and we named a couple of them Tophat and Monocle. Still have the video."
+  },
+  {
+    icon: "🍩",
+    title: "The Churro Man",
+    location: "Puerto Vallarta, Mexico",
+    body: "A Yelp review sent us hunting for \"the greatest churros,\" and we didn't realize until we got there that the churro guy runs a push cart — meaning he isn't in the same spot every night. We spent an evening walking the whole town asking, in our best broken Spanish, where to find \"the churro man.\" When we finally tracked him down, we ordered 25 orders on the spot, which promptly made him close up shop and turn away every other customer in line. The locals were not thrilled. The churro man, on the other hand, was thrilled. We hauled it all back to our seaside bnb, ate what we could, and passed out — only to wake up to ants crawling all over the churros we never finished. A sad way for a great night to end."
+  },
+  {
+    icon: "💧",
+    title: "The Hidden Waterfall and an Unexpected Friend",
+    location: "Puerto Vallarta, Mexico",
+    body: "Locals kept talking about a hidden waterfall, so we asked our driver to take us to one — not realizing it meant a long hike through a dried-up riverbed. We just kept walking and walking until I struck up a conversation with a local guy on the trail. We hit it off immediately, and he ended up hiking the rest of the way with us, pointing things out and explaining the area as we went, until we reached a secluded waterfall with cliff diving and a hidden cave. Turned out our new hiking buddy owned the largest seafood restaurant in town. We jokingly tried to set him up with our single sister — he jokingly clarified he was more interested in me, which, fair enough, Puerto Vallarta is known for exactly that, and it explained how fast we'd all become genuine friends that afternoon."
   },
   {
     icon: "✨",
@@ -2927,6 +2939,336 @@ const MISADVENTURES = [
     title: "Becoming Batman at Every Restaurant",
     location: "Washington, D.C.",
     body: "\"When you give up having to explain your name every time you order .... you become Batman every time you order,\" the caption reads — a coping strategy born somewhere between the National Mall and dinner. Our homie Frankie (a statue, not a person) made a cameo appearance in the same photo set and did not comment on the alias."
+  },
+  {
+    icon: "🥵",
+    title: "Blindsided by the Heat",
+    location: "Puerto Rico",
+    body: "One of our very first trips together, and we had no idea what we were in for — we decided to wander off the ship's beaten path and trek up through town, completely unwarned about the heat. By the time we made it back to the ship we were soaked through with sweat. Rookie travelers, rookie mistake."
+  },
+  {
+    icon: "🦜",
+    title: "Living Statue at the Bird Sanctuary",
+    location: "Puerto Rico",
+    body: "At a bird sanctuary, birds landed all over me like I was part of the furniture. I stood there, essentially a human perch, while the rest of the group just watched it happen."
+  },
+  {
+    icon: "🔫",
+    title: "Machine Guns on the Beach",
+    location: "Belize",
+    body: "We had no idea how militarized parts of Belize and Honduras were until we saw men patrolling our beach with machine guns, like danger could break out at any second. It was a real wake-up call to pay more attention to where we actually were."
+  },
+  {
+    icon: "🍗",
+    title: "The $25 Two-Piece KFC",
+    location: "Iceland",
+    body: "Iceland taught us fast food isn't actually fast or cheap everywhere — a two-piece KFC meal ran us $25. We still bring this up."
+  },
+  {
+    icon: "🥡",
+    title: "The Worst \"Chinese Food\" We've Ever Had",
+    location: "Iceland",
+    body: "We found a restaurant claiming to serve Chinese food in Iceland. It did not. It was genuinely one of the worst meals of the entire trip."
+  },
+  {
+    icon: "🪰",
+    title: "The One Week a Year for Flies",
+    location: "Iceland",
+    body: "Locals told us the flies only swarm and mate for one week out of the entire year. We happened to book that exact week."
+  },
+  {
+    icon: "🥚",
+    title: "The Smell We Weren't Warned About",
+    location: "Iceland",
+    body: "Nobody told us the geothermally heated water across Iceland smells like rotten eggs. We found out everywhere, all at once."
+  },
+  {
+    icon: "💦",
+    title: "The Overcrowded Blue Lagoon",
+    location: "Iceland",
+    body: "After all the hype, the Blue Lagoon was a genuine letdown — so crowded it barely felt like the bucket-list moment we expected."
+  },
+  {
+    icon: "🎒",
+    title: "Carrying a Kid Through a Fault Line",
+    location: "Iceland",
+    body: "Walking between the tectonic plates, my youngest gave up walking about halfway through, so I ended up carrying them in a child backpack across an actual fault line in the earth."
+  },
+  {
+    icon: "🌨️",
+    title: "Lost in a Whiteout on a Snowmobile",
+    location: "Iceland",
+    body: "A snowmobile ride near the magnetic north pole turned into total whiteout conditions — we genuinely lost our bearings in the middle of a blizzard."
+  },
+  {
+    icon: "😴",
+    title: "The Eight-Hour Nap",
+    location: "Rome",
+    body: "Jet lag got the better of us on day one — \"quick nap before lunch\" turned into eight hours asleep, and we woke up having missed dinner entirely."
+  },
+  {
+    icon: "🏃",
+    title: "Sprinting Through Rome",
+    location: "Rome",
+    body: "We missed our tour group and ended up flat-out sprinting through downtown Rome to catch up with them at the Colosseum."
+  },
+  {
+    icon: "🧳",
+    title: "Recovering Our Lost Luggage",
+    location: "Rome",
+    body: "Our luggage got lost with a flight out the next morning, so I had to get a special pass to go behind the scenes of the Italian airport just to track our bags down — we had nothing else with us."
+  },
+  {
+    icon: "🍷",
+    title: "The Wine That Never Made It Back",
+    location: "Rome",
+    body: "When we finally recovered our luggage, two of our expensive, rare wine bottles were missing. Never did find out what happened to them."
+  },
+  {
+    icon: "⛲",
+    title: "The Secret Entrance Under the Trevi Fountain",
+    location: "Rome",
+    body: "We ducked down a random alley just to explore, and it turned out to be a secret entrance leading underneath the Trevi Fountain itself."
+  },
+  {
+    icon: "🗣️",
+    title: "Lost in Translation",
+    location: "Japan",
+    body: "Getting lost with zero shared language was its own adventure — equal parts stressful and genuinely memorable."
+  },
+  {
+    icon: "⛰️",
+    title: "The Last 15 Minutes",
+    location: "Japan",
+    body: "Everyone gave up on the mountain climb except me — they stopped just fifteen minutes short of the summit without realizing it. I kept going and got the whole view of Tokyo to myself while they sat on the stairs."
+  },
+  {
+    icon: "🚶",
+    title: "Wandering Off Alone",
+    location: "Japan",
+    body: "Bored one afternoon, I ventured off by myself and learned the obvious lesson: locals always have the best insight into a place."
+  },
+  {
+    icon: "🤖",
+    title: "The Unclaimed Prize",
+    location: "Japan",
+    body: "My shy daughter won at the Robot Cafe and then refused to go claim her prize because she was too embarrassed."
+  },
+  {
+    icon: "♨️",
+    title: "The Onsen Rule Nobody Mentioned",
+    location: "Japan",
+    body: "We showed up to an onsen not realizing clothing wasn't allowed. Lesson learned, quickly."
+  },
+  {
+    icon: "🪑",
+    title: "No Chairs at Tokyo Disney",
+    location: "Japan",
+    body: "We showed up to Tokyo Disney without our own folding chairs, the way every prepared local family does. We were very obviously not locals that day."
+  },
+  {
+    icon: "🗑️",
+    title: "Carrying Our Own Trash All Day",
+    location: "Japan",
+    body: "Japan has almost no public trash cans, so we ended up carrying our garbage around with us for hours until we got back to the hotel."
+  },
+  {
+    icon: "🚪",
+    title: "The Empty Restaurant That Wouldn't Serve Us",
+    location: "Japan",
+    body: "More than once we found a completely empty restaurant that still turned us away, apparently because serving foreigners was considered too difficult."
+  },
+  {
+    icon: "🐛",
+    title: "Showers With the Bugs",
+    location: "Japan",
+    body: "Some showers were fully outdoors, open to nature — and the bugs that came with it. The kids were not fans."
+  },
+  {
+    icon: "🙏",
+    title: "Getting It Wrong, Kindly",
+    location: "Japan",
+    body: "We didn't always understand the local customs and culture, but people were consistently gracious about it and met us with patience instead of frustration."
+  },
+  {
+    icon: "🍽️",
+    title: "The Horrid Bland Food",
+    location: "England",
+    body: "We'd heard the jokes about English food before we ever landed, and somehow the reality still managed to undersell itself. Bland doesn't begin to cover it."
+  },
+  {
+    icon: "🥡",
+    title: "The Disappointing Chinatown",
+    location: "England",
+    body: "We went in with real expectations for London's Chinatown and left disappointed — not the food scene we were hoping to find."
+  },
+  {
+    icon: "👻",
+    title: "The Haunted Tour We Paid to Abandon",
+    location: "England",
+    body: "We paid for a haunted tour through what we're pretty sure was a haunted underground tower/castle experience — the kind with actors and jump scares built in. We made it through the first few parts before the kids were too scared to go any further, so we left the tour early, money spent and unfinished, and then had to figure our way back out from wherever we'd stopped, halfway through, stranded and turned around."
+  },
+  {
+    icon: "🚦",
+    title: "Booked Too Close to the Red Light District",
+    location: "Paris",
+    body: "We didn't realize until we arrived that our hotel sat right at the edge of the red light district — walk the wrong direction after dark and you'd run straight into it. Between that and the near-constant smell of public urination, human and canine both, we got very selective about which route we'd take in or out of the hotel."
+  },
+  {
+    icon: "🥂",
+    title: "Drunk and In Love Under the Eiffel Tower",
+    location: "Paris",
+    body: "We met up with distant relatives for what we thought was just a stop by the Eiffel Tower, not realizing it was actually a full picnic-park scene — wine and champagne flowing, strangers turning into friends over great conversation. Before we knew it, my wife and I were both thoroughly drunk, happy, in love, and watching the tower light up at night surrounded by genuinely wonderful people we'd never met before that afternoon."
+  },
+  {
+    icon: "🗼",
+    title: "The Eiffel Tower Itself Was a Letdown",
+    location: "Paris",
+    body: "After that night in the park, the actual tower visit was almost anticlimactic — long lines, decent history, and a view that was the one part that really delivered."
+  },
+  {
+    icon: "🏰",
+    title: "Versailles, Undefeated",
+    location: "Paris",
+    body: "Versailles was so much bigger than we expected that we didn't come close to finishing it in a single day. We just weren't prepared for the scale of the place."
+  },
+  {
+    icon: "🖼️",
+    title: "The Louvre and the Tiny Mona Lisa",
+    location: "Paris",
+    body: "Same story at the Louvre — we didn't finish, and the Mona Lisa itself turned out to be far smaller in person than anyone expects."
+  },
+  {
+    icon: "🐸",
+    title: "Frog Legs Without a Warning",
+    location: "Paris",
+    body: "Distant family of ours owns a Thai restaurant chain, and the kids ended up eating frog legs without realizing it — I knew exactly what was on their plates and said nothing. They almost got served escargot too, but I drew the line there. Some things I wasn't willing to do to them."
+  },
+  {
+    icon: "🚗",
+    title: "Driving Stick With Uncle",
+    location: "Paris",
+    body: "Riding with my uncle while he drove stick through Paris traffic was its own event — a genuinely scary ride, with a disregard for traffic laws that honestly reminded me more of Thailand than France."
+  },
+  {
+    icon: "🛍️",
+    title: "The Arc de Triomphe Shopping Surprise",
+    location: "Paris",
+    body: "The Arc de Triomphe came with an unplanned shopping trip that hit my wallet a lot harder than expected. The kids, of course, loved every second of it."
+  },
+  {
+    icon: "😱",
+    title: "The Sleepwalking Scare",
+    location: "Paris",
+    body: "Best misadventure of the whole trip: near the end, the kids stayed in on a rainy night to watch a scary movie while we went out. Later that night, while they were asleep, my wife sleepwalked into their room and just stood in the corner, staring at them — exactly like something out of the movie they'd just watched. She scared them half to death. In the morning she had zero memory of it. I'm pretty sure the wine had a little something to do with it."
+  },
+  {
+    icon: "🍫",
+    title: "Melted Chocolate",
+    location: "Bahamas",
+    body: "The chocolate factory tour turned messy in the heat, and by the time we made it back to the bus, our chocolates hadn't survived the walk — melted before we ever got to enjoy them."
+  },
+  {
+    icon: "🏖️",
+    title: "Sand Everywhere, Forever",
+    location: "Bahamas",
+    body: "The private island's sand got into absolutely everything — we ended up rinsing off every ten yards just to keep moving. This trip is the reason the girls still refuse to do beach vacations."
+  },
+  {
+    icon: "🚶",
+    title: "The Long Walk Back",
+    location: "Bahamas",
+    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead."
+  },
+  {
+    icon: "🐦",
+    title: "Eating Outdoors With Company",
+    location: "Bahamas",
+    body: "The food itself was fine, but eating outdoors came with uninvited guests — bugs and birds circling the whole meal. The good food, when we found it, came at a price."
+  },
+  {
+    icon: "🥓",
+    title: "Unlimited Bacon and Fro-Yo, 24/7",
+    location: "Bahamas",
+    body: "This cruise is the one my youngest still talks about — not for any sight or excursion, but because the buffet had unlimited bacon and frozen yogurt, both available around the clock. A star was born."
+  },
+  {
+    icon: "🍷",
+    title: "The Wine Went Missing Again",
+    location: "Greece",
+    body: "Just like Italy, our wine went missing again in Greece. Apparently we just can't be trusted to keep a good bottle in our luggage across an entire trip."
+  },
+  {
+    icon: "🚗",
+    title: "The Parking Brake Incident",
+    location: "Greece",
+    body: "I rented a car and parked at our boutique hotel on a gravel lot, forgetting I'd left the parking brake on — I'm not used to parking brakes since Texas is flat and I never need one. I spun out, shooting gravel across every parked car around me. Here's hoping everyone had the loss damage waiver."
+  },
+  {
+    icon: "🐴",
+    title: "Donkeys, Hills, and the Myth of Driving Everywhere",
+    location: "Greece",
+    body: "Donkeys everywhere, and an unexpected hike up the hill we hadn't planned for — we assumed having a car meant we could drive anywhere. Turns out the car only got us in and out on the main road; nothing else fit."
+  },
+  {
+    icon: "🍾",
+    title: "Drunk on the Yacht",
+    location: "Greece",
+    body: "We ended up genuinely drunk on a yacht trip, having badly underestimated how well Greeks can actually handle their liquor. They were fun and friendly the whole way through, and the view of Oia made up for however rough the morning after was."
+  },
+  {
+    icon: "🦐",
+    title: "Seafood on the Wrong Side of the Island",
+    location: "Greece",
+    body: "We spent almost the entire trip craving seafood while stuck on the wrong side of the island, and only found the good stuff on the last day — fresh seafood on the black sands beach, finally worth the wait."
+  },
+  {
+    icon: "🗺️",
+    title: "The Parthenon Standoff",
+    location: "Greece",
+    body: "My wife and I argued the whole drive about how to get to the Parthenon — I'd been there several times and remembered the route from the hotel, but she insisted on trusting the GPS instead. We kept passing signs pointing the other way, and I kept saying so, and she kept saying she knew how to read a GPS. We finally arrived and looked up to see a shop called Parthenon Corner Store. I looked at her, shook my head, and said, yeah, we passed it a mile ago, exactly like I said. Hilarious in hindsight. Very frustrating in the moment."
+  },
+  {
+    icon: "😴",
+    title: "The Day We Overslept and Didn't Care",
+    location: "Greece",
+    body: "We overslept one day and lost half a day of adventures — but with no set itinerary for that stretch of the trip, nobody actually minded."
+  },
+  {
+    icon: "🚙",
+    title: "Wrong Side of the Road",
+    location: "New Zealand",
+    body: "I drove on the wrong side of the road. More than once. Gave my wife a genuine heart attack a few different times before it finally clicked."
+  },
+  {
+    icon: "🏞️",
+    title: "Better Than Iceland",
+    location: "New Zealand",
+    body: "This trip felt like Iceland minus the flies and the sulfur smell — the food still wasn't great, but the people and the overall vibe were fantastic. Taupo especially got me: a lake view, a quaint little downtown, affordable new housing. If I ever actually retire somewhere, that town is exactly the feeling I'm chasing."
+  },
+  {
+    icon: "🌉",
+    title: "The Sky Walk That Didn't Happen",
+    location: "New Zealand",
+    body: "A miscommunication in the city cost us the sky walk entirely — we just never actually got to do it."
+  },
+  {
+    icon: "🌌",
+    title: "Southern Lights, Finally",
+    location: "New Zealand",
+    body: "This is where I finally saw the aurora — except it turned out to be the Southern Lights instead of the Northern Lights I'd always pictured. Still counts."
+  },
+  {
+    icon: "🗺️",
+    title: "Accidentally in Cuba Town",
+    location: "New Zealand",
+    body: "Getting genuinely lost in the city turned out to be one of the best parts — there was always something worth seeing around the next corner. We wandered without any real plan and ended up in Cuba Street purely by accident."
+  },
+  {
+    icon: "🎬",
+    title: "Hobbiton's Movie Magic",
+    location: "New Zealand",
+    body: "Hobbiton itself was a bit of a letdown in person — smaller and less impressive than the movies make it look. But it made the movie magic even more impressive, knowing how much they were able to do with how little was actually there."
   }
 ];
 
