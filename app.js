@@ -1474,10 +1474,10 @@ function renderAbout() {
         <span class="eyebrow">About</span>
         <h1 class="section-title" style="margin-top:16px;">Just a family man near Dallas, Texas.</h1>
         <p class="section-desc" style="max-width:none; margin-top:22px; font-size:15.5px;">
-          When I'm not enjoying good food or traveling to my next adventure, you can find me working on my next start-up. This site is where the two collide — every trip, every meal, and every wrong turn my family and I have taken since we started keeping track in 2010.
+          When I'm not enjoying good food or working on my next start-up, you can find me traveling to the next adventure. Two adults, two kids, and two decades of frequent flyer miles — when my oldest was two, we handed her a passport and a frequent flyer card, and I promised if I couldn't give her the world, I'd at least show her as much of it as I could. That promise turned into cities across six continents, a running list of restaurants worth flying for, and more misadventures than adventures, if we're being honest.
         </p>
         <p class="section-desc" style="max-width:none; margin-top:18px; font-size:15.5px;">
-          No sponsored perfection here — just honest reviews, real mishaps, and the lessons that only show up after you've already made the mistake once. Earn the life you deserve; no one else will do it for you. That goes for the travel too.
+          We've ventured alone, we've ventured together, and we've raised two daughters who've conquered more cities than most adults ever will. No sponsored perfection here — just honest reviews, real mishaps, and the lessons that only show up after you've already made the mistake once. This isn't a highlight reel — it's the real trip, wrong turns included.
         </p>
         <div class="about-stats">
           <div><div class="about-stat-num">34</div><div class="about-stat-label">Trips documented</div></div>
