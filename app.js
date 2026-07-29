@@ -294,14 +294,10 @@ function destCardHTML(d, delay) {
 
 function foodCardHTML(r, delay) {
   return `
-  <div class="food-card reveal ${delay || ""}">
-    <div class="food-card-img">
-      ${lazyImg(r.img, r.name)}
-      <div class="food-card-rating">★ ${r.rating.toFixed(1)}</div>
-    </div>
+  <div class="food-card food-card-noimg reveal ${delay || ""}">
     <div class="food-card-body">
       <span class="food-card-loc">${escapeHtml(r.location)}${r.destName ? " · " + escapeHtml(r.destName) : ""}</span>
-      <h3 class="food-card-name">${escapeHtml(r.name)}</h3>
+      <h3 class="food-card-name">${escapeHtml(r.name)} <span class="food-card-rating-inline">★ ${r.rating.toFixed(1)}</span></h3>
       <p class="food-card-review">${escapeHtml(r.review)}</p>
       ${r.communityReview ? `
       <div class="community-review">
@@ -311,6 +307,23 @@ function foodCardHTML(r, delay) {
       ${r.destSlug ? `<a href="#/destinations/${r.destSlug}" class="food-card-more">See ${escapeHtml(r.destName || "destination")} →</a>` : ""}
     </div>
   </div>`;
+}
+
+function foodPhotosGalleryHTML(d) {
+  if (d.foodPhotos && d.foodPhotos.length) {
+    return `
+      <div class="foods-strip mt-lg">
+        ${d.foodPhotos.map(f => `
+          <div class="food-pill reveal">
+            ${lazyImg(f.src, f.caption || "A real photo from this trip")}
+            ${f.caption ? `<div class="food-pill-name">${escapeHtml(f.caption)}</div>` : ""}
+          </div>`).join("")}
+      </div>`;
+  }
+  return `
+      <div class="foods-pending reveal" style="margin-top:20px; opacity:0.7; font-style:italic;">
+        In the Kitchen... Searching for Those Pictures, Coming Soon.
+      </div>`;
 }
 
 function newsletterBlockHTML() {
@@ -1197,17 +1210,7 @@ function renderDestinationDetail(d) {
     <div class="container">
       <span class="eyebrow">What We Actually Ate</span>
       <h2 class="section-title" style="font-size:30px; margin-top:14px;">Real photos, real trip</h2>
-      ${(d.foodPhotos && d.foodPhotos.length) ? `
-      <div class="foods-strip mt-lg">
-        ${d.foodPhotos.map(f => `
-          <div class="food-pill reveal">
-            ${lazyImg(f.src, f.caption || "A real photo from this trip")}
-            ${f.caption ? `<div class="food-pill-name">${escapeHtml(f.caption)}</div>` : ""}
-          </div>`).join("")}
-      </div>` : `
-      <div class="foods-pending reveal" style="margin-top:20px; opacity:0.7; font-style:italic;">
-        In the Kitchen... Searching for Those Pictures, Coming Soon.
-      </div>`}
+      ${foodPhotosGalleryHTML(d)}
     </div>
   </section>
 
@@ -1312,7 +1315,7 @@ function renderDestinationDetail(d) {
    ============================================================ */
 
 function renderEats() {
-  const restaurants = getAllRestaurants();
+  const byDest = DESTINATIONS.filter(d => d.restaurants.length);
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
@@ -1320,9 +1323,16 @@ function renderEats() {
       <h1 class="section-title" style="margin-top:16px;">Restaurants I'd fly back for</h1>
       <p class="section-desc" style="margin-top:16px;">Every meal here earned its place through repeat visits, unreasonable cravings back home, or a kid asking for it by name months later.</p>
 
-      <div class="card-grid mt-lg">
-        ${restaurants.map((r, i) => foodCardHTML(r, `reveal-delay-${(i % 3) + 1}`)).join("")}
-      </div>
+      ${byDest.map(d => `
+        <div class="dest-group">
+          <div class="divider-route"></div>
+          <h2 class="country-heading">${escapeHtml(d.name)} <span class="country-count">${d.restaurants.length} ${d.restaurants.length === 1 ? "restaurant" : "restaurants"}</span></h2>
+          <div class="card-grid mt-lg">
+            ${d.restaurants.map((r, i) => foodCardHTML({ ...r, destSlug: d.slug, destName: d.name }, `reveal-delay-${(i % 3) + 1}`)).join("")}
+          </div>
+          <div class="eyebrow" style="margin-top:32px; display:block;">What We Actually Ate</div>
+          ${foodPhotosGalleryHTML(d)}
+        </div>`).join("")}
     </div>
   </section>
   ${newsletterBlockHTML()}
