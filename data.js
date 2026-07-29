@@ -110,6 +110,7 @@ const DESTINATIONS = [
       { name: "BBQ pork buns", img: wpImg(797, 500) },
       { name: "Milk tea", img: wpImg(799, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "The escalators of the Mid-Levels for a free, air-conditioned hillside tour",
       "Cattle Depot Artist Village for a quiet break from the crowds",
@@ -158,6 +159,7 @@ const DESTINATIONS = [
       { name: "Grilled seafood", img: wpImg(812, 500) },
       { name: "Fresh coconut", img: wpImg(803, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "The Secret Buddha Garden hidden up in the jungle hills",
       "Laem Sor Pagoda at low tide, when you can walk right out to it",
@@ -207,6 +209,7 @@ const DESTINATIONS = [
       { name: "Tom Yum Mama noodles", img: wpImg(813, 500) },
       { name: "Mango sticky rice", img: wpImg(804, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "Talat Noi, a maze of street art and old machine shops near the river",
       "The rooftop of Wat Arun at golden hour, before the tour buses arrive",
@@ -255,6 +258,7 @@ const DESTINATIONS = [
       { name: "Southern Vietnamese classics", img: wpImg(819, 500) },
       { name: "Vietnamese iced coffee", img: wpImg(802, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "The rooftop cafes stacked inside unmarked apartment buildings on Nguyen Hue",
       "A tiny com tam stall behind the Ben Thanh night market that locals actually eat at",
@@ -300,6 +304,7 @@ const DESTINATIONS = [
       { name: "Bún cá Châu Đốc", img: wpImg(807, 500) },
       { name: "Palm sugar desserts", img: wpImg(815, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "A family-run boat tour that goes further into the canals than the tour buses reach",
       "The quiet Khmer pagodas of Tri Ton, rarely visited by foreign tourists",
@@ -352,6 +357,7 @@ const DESTINATIONS = [
       { name: "Bánh cuốn", img: wpImg(824, 500) },
       { name: "Sticky rice (xôi)", img: wpImg(806, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "The train street, where a working railway runs inches from café tables",
       "A rooftop over West Lake with almost no other tourists in sight",
@@ -399,6 +405,7 @@ const DESTINATIONS = [
       { name: "Local seafood", img: wpImg(825, 500) },
       { name: "On-board cruise seafood BBQ", img: wpImg(826, 500) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "Lan Ha Bay, the quieter southern cousin with far fewer boats",
       "A sunrise kayak before the day-trip boats arrive from the mainland",
@@ -450,6 +457,7 @@ const DESTINATIONS = [
       { name: `La Mallorquina`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr2.jpg?w=500" },
       { name: `La Estación`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr3.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Puerto Rico`,
@@ -500,6 +508,7 @@ const DESTINATIONS = [
       { name: `RumFish y Vino`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg?w=500" },
       { name: `Pop's Belize Restaurant`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz2.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Belize`,
@@ -542,6 +551,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: "Baleadas", img: img("roatan-food", 500, 400) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "West Bay's quieter north end, away from the cruise-ship crowds",
       "A local sloth sanctuary tucked away from the main resort strip"
@@ -582,6 +592,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: "Cochinita pibil", img: img("cancun-food", 500, 400) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "Isla Mujeres, a short ferry ride away and far quieter than the Hotel Zone",
       "A cenote off the main tourist path near Puerto Morelos"
@@ -630,6 +641,7 @@ const DESTINATIONS = [
       { name: `St. John`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=500" },
       { name: `The Ivy`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of England`,
@@ -680,6 +692,7 @@ const DESTINATIONS = [
       { name: `Cafe Matisse`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg?w=500" },
       { name: `Twin Brothers`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs2.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Bahamas`,
@@ -730,6 +743,7 @@ const DESTINATIONS = [
       { name: `Matur og Drykkur`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=500" },
       { name: `Slippbarinn`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Iceland`,
@@ -780,6 +794,7 @@ const DESTINATIONS = [
       { name: `La Palapa`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=500" },
       { name: `Tintoque`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Puerto Vallarta`,
@@ -830,6 +845,7 @@ const DESTINATIONS = [
       { name: `Se7en Bites`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o1.jpg?w=500" },
       { name: `Morimoto Asia`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o6.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Orlando, Florida (2010)`,
@@ -880,6 +896,7 @@ const DESTINATIONS = [
       { name: `Bahama Bob's Beachside Cafe`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=500" },
       { name: `Fisher's at Orange Beach Marina`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Gulf Shores, Alabama`,
@@ -930,6 +947,7 @@ const DESTINATIONS = [
       { name: `August E's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h4.jpg?w=500" },
       { name: `Coopers Old Time Pit Bar-B-Que`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h3.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Hill Country, Texas`,
@@ -980,6 +998,7 @@ const DESTINATIONS = [
       { name: `Bacchanalia`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a7.jpg?w=500" },
       { name: `Fox Bros. Bar-B-Q`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a5.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Atlanta, Georgia`,
@@ -1030,6 +1049,7 @@ const DESTINATIONS = [
       { name: `Mahogany Ridge Brewery & Grill`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=500" },
       { name: `Salt & Lime`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Steamboat Springs, Colorado`,
@@ -1083,6 +1103,7 @@ const DESTINATIONS = [
       { name: `Shrimp 'N Stuff Downtown`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=500" },
       { name: `The Sunflower Bakery & Café`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Galveston, Texas`,
@@ -1134,6 +1155,7 @@ const DESTINATIONS = [
       { name: `Hogfish Bar & Grill (Stock Island)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k3.jpg?w=500" },
       { name: `Marker 88 (Islamorada)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k4.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of The Florida Keys`,
@@ -1184,6 +1206,7 @@ const DESTINATIONS = [
       { name: `Yardbird Southern Table & Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=500" },
       { name: `Mandolin Aegean Bistro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Miami, Florida`,
@@ -1235,6 +1258,7 @@ const DESTINATIONS = [
       { name: `Raku`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=500" },
       { name: `Lotus of Siam`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Las Vegas, Nevada`,
@@ -1286,6 +1310,7 @@ const DESTINATIONS = [
       { name: `Volario's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w7.jpg?w=500" },
       { name: `The Ditch on 40`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w5.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Winter Park, Colorado`,
@@ -1331,6 +1356,7 @@ const DESTINATIONS = [
       { name: "Elk or venison", img: img("vail-food1", 500, 400) },
       { name: "Green chile", img: img("vail-food2", 500, 400) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "Booth Falls Trail, a quieter hike than the main resort trails",
       "The gondola cabins some restaurants reserve for private fondue dinners in winter"
@@ -1375,6 +1401,7 @@ const DESTINATIONS = [
       { name: "Farm-to-table tasting menu", img: img("boulder-food1", 500, 400) },
       { name: "Artisan hot chocolate", img: img("boulder-food2", 500, 400) }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "The Boulder Creek Path for a quiet walk away from Pearl Street",
       "Smaller neighborhood coffee shops away from the main downtown strip",
@@ -1425,6 +1452,7 @@ const DESTINATIONS = [
       { name: `Merriman's (Kapalua)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=500" },
       { name: `The Mill House (Waikapu)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Maui, Hawaii`,
@@ -1475,6 +1503,7 @@ const DESTINATIONS = [
       { name: `Momofuku Ssäm Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=500" },
       { name: `Katz's Delicatessen`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of New York City`,
@@ -1525,6 +1554,7 @@ const DESTINATIONS = [
       { name: `Vedge`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=500" },
       { name: `Talula's Garden`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Philadelphia, Pennsylvania`,
@@ -1575,6 +1605,7 @@ const DESTINATIONS = [
       { name: `Fiola`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=500" },
       { name: `The Dabney`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Washington, D.C.`,
@@ -1625,6 +1656,7 @@ const DESTINATIONS = [
       { name: `La Giostra`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=500" },
       { name: `Il Santo Bevitore`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Florence`,
@@ -1675,6 +1707,7 @@ const DESTINATIONS = [
       { name: `Kadence`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=500" },
       { name: `Yellow Dog Eats`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Orlando, Florida (2023)`,
@@ -1725,6 +1758,7 @@ const DESTINATIONS = [
       { name: `Loveless Cafe`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394431453_10224811283697613_1664064479663080319_n.jpg?w=500" },
       { name: `Martin's Bar-B-Que Joint`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Nashville, Tennessee`,
@@ -1775,6 +1809,7 @@ const DESTINATIONS = [
       { name: `Emmer & Rye`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=500" },
       { name: `Torchy's Tacos`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Austin & San Antonio`,
@@ -1825,6 +1860,7 @@ const DESTINATIONS = [
       { name: `The Dayton Room`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454731192_10226247522882695_8438940723759965963_n.jpg?w=500" },
       { name: `Casa Sanchez`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454839035_10226247524002723_1749134143176923779_n.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Twin Lakes, Colorado`,
@@ -1875,6 +1911,7 @@ const DESTINATIONS = [
       { name: `Din Tai Fung`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=500" },
       { name: `Tilikum Place Café`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Seattle, Washington`,
@@ -1925,6 +1962,7 @@ const DESTINATIONS = [
       { name: `Giacomo's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=500" },
       { name: `The Black Dog Tavern`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Boston & Martha's Vineyard`,
@@ -1977,6 +2015,7 @@ const DESTINATIONS = [
       { name: `Tadich Grill`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=500" },
       { name: `Tartine Bakery`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of San Francisco, California`,
@@ -2029,6 +2068,7 @@ const DESTINATIONS = [
       { name: `La Pergola`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=500" },
       { name: `La Taverna dei Fori Imperiali`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Rome away from the main sights, worth the wander`,
 `Go early — Rome feels completely different before the crowds arrive`,
@@ -2072,6 +2112,7 @@ const DESTINATIONS = [
       { name: `Trattoria da Tito`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=500" },
       { name: `Trattoria Sostanza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Florence away from the main sights, worth the wander`,
 `Go early — Florence feels completely different before the crowds arrive`,
@@ -2114,6 +2155,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Seafood pasta`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Pisa away from the main sights, worth the wander`,
 `Go early — Piazza dei Miracoli feels completely different before the tour buses arrive`,
@@ -2159,6 +2201,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Neapolitan pizza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `The lesser-visited Herculaneum ruins, smaller and less crowded than Pompeii but remarkably well preserved`,
 `The Naples Underground (Napoli Sotterranea) for a look at the tunnels below the city`
@@ -2203,6 +2246,7 @@ const DESTINATIONS = [
       { name: `Limoncello`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=500" },
       { name: `Coastal pastries`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Path of the Gods, a cliffside hiking trail above the coast with fewer crowds than the beach towns below`,
 `Take the ferry between towns instead of the coastal road to skip the traffic entirely`
@@ -2250,6 +2294,7 @@ const DESTINATIONS = [
       { name: `Kikunoi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=500" },
       { name: `Genki Sushi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Tokyo away from the main sights, worth the wander`,
 `Go early — Tokyo feels completely different before the crowds arrive`,
@@ -2292,6 +2337,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Kyoto away from the main sights, worth the wander`,
 `Go early — Kyoto feels completely different before the crowds arrive`,
@@ -2332,6 +2378,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Dotonbori Street`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Osaka away from the main sights, worth the wander`,
 `Go early — Osaka feels completely different before the crowds arrive`,
@@ -2377,9 +2424,11 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Hoto noodles`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `Still need your input here — restaurant and hidden-gem picks pending your photo/story review`
     ],
+    foodPhotos: [],
     hiddenGems: [
 `The Chureito Pagoda viewpoint near Fujiyoshida for the classic pagoda-and-mountain photo`,
 `The north shore of Lake Kawaguchiko tends to be quieter than the main tourist strip`
@@ -2425,6 +2474,7 @@ const DESTINATIONS = [
       { name: `Kritamon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=500" },
       { name: `Selene`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Athens away from the main sights, worth the wander`,
 `Go early — Athens feels completely different before the crowds arrive`,
@@ -2465,6 +2515,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Santorini away from the main sights, worth the wander`,
 `Go early — Santorini feels completely different before the crowds arrive`,
@@ -2505,6 +2556,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Mykonos away from the main sights, worth the wander`,
 `Go early — Mykonos feels completely different before the crowds arrive`,
@@ -2553,6 +2605,7 @@ const DESTINATIONS = [
       { name: `Fergburger`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz11.jpg?w=500" },
       { name: `Ortega Fish Shack`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz22.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Auckland away from the main sights, worth the wander`,
 `Go early — Auckland feels completely different before the crowds arrive`,
@@ -2595,6 +2648,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Queenstown away from the main sights, worth the wander`,
 `Go early — Queenstown feels completely different before the crowds arrive`,
@@ -2636,6 +2690,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: `Wellington Chocolate Factory`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Wellington away from the main sights, worth the wander`,
 `Go early — Wellington feels completely different before the crowds arrive`,
@@ -2678,6 +2733,7 @@ const DESTINATIONS = [
     mustTryFoods: [
       { name: "Local trout", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz21.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
       "The short walk to the base of Huka Falls, away from the main lookout crowds",
       "Sunrise over the lake before the day-trip buses arrive",
@@ -2728,6 +2784,7 @@ const DESTINATIONS = [
       { name: `Le Grand Véfour`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=500" },
       { name: `L'Ambroisie`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=500" }
     ],
+    foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Paris away from the main sights, worth the wander`,
 `Go early — Paris feels completely different before the crowds arrive`,

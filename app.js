@@ -1195,15 +1195,19 @@ function renderDestinationDetail(d) {
 
   <section class="section section-tight section-alt">
     <div class="container">
-      <span class="eyebrow">Must-Try Foods</span>
-      <h2 class="section-title" style="font-size:30px; margin-top:14px;">Order these first</h2>
+      <span class="eyebrow">What We Actually Ate</span>
+      <h2 class="section-title" style="font-size:30px; margin-top:14px;">Real photos, real trip</h2>
+      ${(d.foodPhotos && d.foodPhotos.length) ? `
       <div class="foods-strip mt-lg">
-        ${d.mustTryFoods.map(f => `
+        ${d.foodPhotos.map(f => `
           <div class="food-pill reveal">
-            ${lazyImg(f.img, f.name)}
-            <div class="food-pill-name">${escapeHtml(f.name)}</div>
+            ${lazyImg(f.src, f.caption || "A real photo from this trip")}
+            ${f.caption ? `<div class="food-pill-name">${escapeHtml(f.caption)}</div>` : ""}
           </div>`).join("")}
-      </div>
+      </div>` : `
+      <div class="foods-pending reveal" style="margin-top:20px; opacity:0.7; font-style:italic;">
+        In the Kitchen... Searching for Those Pictures, Coming Soon.
+      </div>`}
     </div>
   </section>
 
