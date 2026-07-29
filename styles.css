@@ -473,6 +473,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: flex; align-items: center; gap: 5px;
 }
 .food-card-body { padding: 24px; }
+.food-card-noimg .food-card-body { padding: 28px 24px; }
 .food-card-loc {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -480,7 +481,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   text-transform: uppercase;
   color: var(--brass);
 }
-.food-card-name { font-size: 20px; margin-top: 10px; }
+.food-card-name { font-size: 20px; margin-top: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.food-card-rating-inline {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--brass-bright);
+  background: rgba(196, 145, 74, 0.1);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  display: inline-flex; align-items: center; gap: 4px;
+}
 .food-card-review { color: var(--text-dim); font-size: 14px; margin-top: 12px; line-height: 1.65; }
 .food-card-more {
   margin-top: 18px;
@@ -827,6 +838,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 .list-check li::before { content: "—"; color: var(--brass); flex-shrink: 0; }
 
 .foods-strip { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: thin; }
+.foods-pending {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  display: inline-block;
+}
 .food-pill {
   flex-shrink: 0;
   width: 220px;
