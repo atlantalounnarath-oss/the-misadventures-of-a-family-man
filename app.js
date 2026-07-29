@@ -1492,15 +1492,6 @@ function renderAbout() {
     </div>
   </section>
 
-  <section class="section text-center">
-    <div class="container">
-      <div class="badge-frame reveal">
-        ${lazyImg("assets/logo-badge.png", "The Misadventures of a Family Man badge", "badge-img")}
-      </div>
-      <p class="section-desc" style="margin: 24px auto 0; text-align:center;">The paper airplane that started it all.</p>
-    </div>
-  </section>
-
   ${newsletterBlockHTML()}
   `;
 }
