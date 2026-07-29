@@ -83,7 +83,7 @@ const DESTINATIONS = [
     tag: "Neon & Dim Sum",
     heroImg: photoSet("hong-kong").hero,
     cardImg: photoSet("hong-kong").card,
-    coords: { top: "37.6%", left: "81.7%" },
+    coords: { top: "37.58%", left: "81.69%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
       { label: "Currency", value: "HK Dollar" },
@@ -133,7 +133,7 @@ const DESTINATIONS = [
     tag: "Slow Beach Days",
     heroImg: photoSet("koh-samui").hero,
     cardImg: photoSet("koh-samui").card,
-    coords: { top: "44.7%", left: "77.8%" },
+    coords: { top: "44.85%", left: "77.64%" },
     quickFacts: [
       { label: "Best time to go", value: "Dec – Apr" },
       { label: "Currency", value: "Thai Baht" },
@@ -278,7 +278,7 @@ const DESTINATIONS = [
     tag: "Mekong Delta",
     heroImg: photoSet("an-giang").hero,
     cardImg: photoSet("an-giang").card,
-    coords: { top: "44.2%", left: "79.2%" },
+    coords: { top: "44.24%", left: "78.91%" },
     quickFacts: [
       { label: "Best time to go", value: "Nov – Jan" },
       { label: "Currency", value: "Vietnamese Dong" },
@@ -375,7 +375,7 @@ const DESTINATIONS = [
     tag: "Limestone Karsts",
     heroImg: photoSet("ha-long-bay").hero,
     cardImg: photoSet("ha-long-bay").card,
-    coords: { top: "38.4%", left: "79.8%" },
+    coords: { top: "38.34%", left: "79.78%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
       { label: "Currency", value: "Vietnamese Dong" },
@@ -523,7 +523,7 @@ const DESTINATIONS = [
     tag: `Central America 2015 Stop`,
     heroImg: img("roatan-hero", 1600, 1000),
     cardImg: img("roatan-card", 900, 1100),
-    coords: { top: "42%", left: "24.5%" },
+    coords: { top: "42.25%", left: "24.63%" },
     quickFacts: [
       { label: "Best time to go", value: "Mar – Aug" },
       { label: "Currency", value: "Honduran Lempira / US Dollar" },
@@ -651,7 +651,7 @@ const DESTINATIONS = [
     tag: `Turquoise Water`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs2.jpg?w=900",
-    coords: { top: "36.1%", left: "28.5%" },
+    coords: { top: "36.1%", left: "28.49%" },
     quickFacts: [
       { label: "Best time to go", value: `Dec – Apr` },
       { label: "Currency", value: `Bahamian Dollar` },
@@ -751,7 +751,7 @@ const DESTINATIONS = [
     tag: `Pacific Coast`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=900",
-    coords: { top: "38.5%", left: "20.8%" },
+    coords: { top: "39.0%", left: "20.9%" },
     quickFacts: [
       { label: "Best time to go", value: `Nov – Apr` },
       { label: "Currency", value: `Mexican Peso` },
@@ -801,7 +801,7 @@ const DESTINATIONS = [
     tag: `Theme Park Marathon`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o5.jpg?w=900",
-    coords: { top: "34.1%", left: "27.4%" },
+    coords: { top: "34.16%", left: "27.57%" },
     quickFacts: [
       { label: "Best time to go", value: `Sep – Nov` },
       { label: "Currency", value: `US Dollar` },
@@ -1101,7 +1101,7 @@ const DESTINATIONS = [
     tag: `Island Chain`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k2.jpg?w=900",
-    coords: { top: "36.3%", left: "27.5%" },
+    coords: { top: "36.14%", left: "27.61%" },
     quickFacts: [
       { label: "Best time to go", value: `Dec – Apr` },
       { label: "Currency", value: `US Dollar` },
@@ -1151,7 +1151,7 @@ const DESTINATIONS = [
     tag: `Art Deco & Ocean`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=900",
-    coords: { top: "35.7%", left: "27.7%" },
+    coords: { top: "35.93%", left: "27.7%" },
     quickFacts: [
       { label: "Best time to go", value: `Dec – Apr` },
       { label: "Currency", value: `US Dollar` },
@@ -1638,7 +1638,7 @@ const DESTINATIONS = [
     tag: `Back to the Parks`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=900",
-    coords: { top: "34.1%", left: "27.4%" },
+    coords: { top: "34.16%", left: "27.57%" },
     quickFacts: [
       { label: "Best time to go", value: `Sep – Nov` },
       { label: "Currency", value: `US Dollar` },
@@ -1888,7 +1888,7 @@ const DESTINATIONS = [
     tag: `New England`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900",
-    coords: { top: "26.5%", left: "30.3%" },
+    coords: { top: "26.96%", left: "30.39%" },
     quickFacts: [
       { label: "Best time to go", value: `Jun – Sep` },
       { label: "Currency", value: `US Dollar` },
@@ -2137,7 +2137,12 @@ const DESTINATIONS = [
       `Walk the historic center`,
       `Eat pizza where it was invented`
     ],
-    restaurants: [],
+    restaurants: [
+      { name: "L'Antica Pizzeria Da Michele", location: "Naples", rating: 4.5, review: "The most famous pizzeria in Naples, serving only two kinds of pizza since 1870 — Margherita and Marinara — in a no-frills, cramped dining room in the historic center.", img: "assets/uploads/naples-g1.jpg", communityReview: "Featured in Eat, Pray, Love and beloved by locals and tourists alike for over 150 years — reviewers consistently call the simplicity the whole point, with soft, chewy, wood-fired crust that needs nothing more than the two options on the menu. Expect a real line; they don't take reservations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Gino Sorbillo", location: "Naples", rating: 4.4, review: "A Naples pizza dynasty since 1935 — the Sorbillo family has 21 children who all became pizza makers, and grandson Gino has become something of a celebrity chef.", img: "assets/uploads/naples-g2.jpg", communityReview: "Regularly named in the same breath as Da Michele as one of the two best-known pizzerias in the city — reviewers praise the wider topping selection and chewy Neapolitan dough, though it's just as packed with tourists as its famous rival.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Antica Pizzeria Di Matteo", location: "Naples", rating: 4.5, review: "A cheap, unpretentious Naples institution on Via dei Tribunali, known for turning out fantastic pizza without the ceremony of its more famous neighbors.", img: "assets/uploads/naples-g3.jpg", communityReview: "Often called the underdog favorite among Naples pizza spots — reviewers love that it's easy to walk right into compared to the hours-long waits elsewhere, without sacrificing quality.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Antica Friggitoria La Masardona", location: "Naples", rating: 4.3, review: "A Naples specialist in pizza fritta — fried pizza — running since 1945, serving a completely different (and less internationally famous) side of Neapolitan pizza tradition.", img: "assets/uploads/naples-g4.jpg", communityReview: "Reviewers consistently recommend this as the place to try fried pizza specifically, distinct from the wood-fired classics found elsewhere in the city — a genuinely different dish worth seeking out on its own.", communitySource: "Google/Yelp/Tripadvisor" }
+    ],
     mustTryFoods: [
       { name: `Neapolitan pizza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=500" }
     ],
@@ -2175,7 +2180,12 @@ const DESTINATIONS = [
       `Explore the cliffside towns`,
       `Take in the coastal drive`
     ],
-    restaurants: [],
+    restaurants: [
+      { name: "Da Gemma", location: "Amalfi", rating: 4.5, review: "An old-school Amalfi favorite with recipes said to trace back to cookbooks used for the Dukes of Naples — expect fresh fish and old-school, detail-oriented service.", img: "assets/uploads/amalfi-g1.jpg", communityReview: "Reviewers consistently recommend booking ahead for an outdoor table, calling the fritto misto (lightly battered mixed seafood) and the Caprese salad standouts — a reliably excellent, classic Amalfi meal.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Ristorante La Caravella", location: "Amalfi", rating: 4.4, review: "A Michelin-starred restaurant set in a 12th-century palace near Amalfi's old shipyards, blending regional dishes with modern, experimental touches.", img: "assets/uploads/amalfi-g2.jpg", communityReview: "One of the most decorated dining rooms on this stretch of coast — reviewers praise both the historic setting and dishes like squid-ink pasta filled with ricotta and lobster, calling it a genuine special-occasion splurge.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Ristorante il Chiostro", location: "Amalfi", rating: 4.3, review: "A charming spot right by the Amalfi Cathedral, with outdoor seating looking straight onto the piazza.", img: "assets/uploads/amalfi-g3.jpg", communityReview: "Reviewers consistently mention the views of the cathedral square as the highlight, with scratch-made pasta — the lasagna and pesto get particular praise — rounding out a reliably good meal in the heart of town.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sensi Restaurant", location: "Amalfi", rating: 4.5, review: "A Michelin-starred seafood specialist with multi-course tasting menus and a romantic outdoor terrace for sunset dining.", img: "assets/uploads/amalfi-hero.jpg", communityReview: "Reviewers consistently call the terrace dinner one of the highlights of the whole Amalfi Coast, with the zucchini flowers stuffed with ricotta and zucchini linguine getting particular praise — request the terrace table when booking.", communitySource: "Google/Yelp/Tripadvisor" }
+    ],
     mustTryFoods: [
       { name: `Limoncello`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=500" },
       { name: `Coastal pastries`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=500" }
@@ -2345,7 +2355,12 @@ const DESTINATIONS = [
       `Visit a traditional onsen (hot spring) with a view of the mountain`,
       `Photograph the peak from one of the classic viewpoints`
     ],
-    restaurants: [],
+    restaurants: [
+      { name: "Houtou Fudou", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "The area's best-known hoto noodle specialist, with several branches around Lake Kawaguchiko — the main store sits near the Kawaguchiko Museum of Art with views of Mt. Fuji itself.", img: "assets/uploads/fuji-g1.jpg", communityReview: "Reviewers consistently call this the place to try hoto — thick, chewy wheat noodles in a rich miso-pumpkin broth — with the hearty, warming bowl repeatedly described as the perfect antidote to the mountain cold.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Kosaku Hoto Kosaku", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A humble, locally loved noodle shop known for its exceptional hoto noodle soup, tucked into the Mt. Fuji area away from the busier tourist strips.", img: "assets/uploads/fuji-g2.jpg", communityReview: "Reviewers consistently praise the generous portions and rich broth, with the spicy pork hoto and fried oyster getting particular mentions — a genuine local favorite, not just a tourist stop.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Shaw's Sushi Bar & Dining", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "A stylish, modern sushi spot right across from Kawaguchiko Station, with beautifully presented nigiri and rolls.", img: "assets/uploads/fuji-g3.jpg", communityReview: "Reviewers consistently say the quality justifies the higher price tag for the area, with the variety of sushi sets — including a dedicated vegetarian option — earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" }
+    ],
     mustTryFoods: [
       { name: `Hoto noodles`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=500" }
     ],
@@ -2420,7 +2435,7 @@ const DESTINATIONS = [
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=900",
-    coords: { top: "29.8%", left: "57.1%" },
+    coords: { top: "29.56%", left: "57.19%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
       { label: "Currency", value: `Euro` },
@@ -2460,7 +2475,7 @@ const DESTINATIONS = [
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=900",
-    coords: { top: "29.2%", left: "57.0%" },
+    coords: { top: "29.15%", left: "57.0%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
       { label: "Currency", value: `Euro` },
@@ -2590,7 +2605,7 @@ const DESTINATIONS = [
     tag: `New Zealand 2020 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz29.jpg?w=900",
-    coords: { top: "72.9%", left: "98.5%" },
+    coords: { top: "73.0%", left: "98.58%" },
     quickFacts: [
       { label: "Best time to go", value: `Dec – Feb` },
       { label: "Currency", value: `NZ Dollar` },
