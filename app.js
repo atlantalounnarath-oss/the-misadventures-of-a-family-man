@@ -163,14 +163,34 @@ function registerLightboxGroup(name, items) {
 }
 
 /* ---------------- Newsletter forms ---------------- */
+function netlifyEncode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+function submitToNetlify(email, note, form) {
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: netlifyEncode({ "form-name": "newsletter", email })
+  })
+    .then(() => {
+      if (note) note.textContent = `You're in — postcards headed to ${email}.`;
+      form.reset();
+    })
+    .catch(() => {
+      if (note) note.textContent = `Something went wrong — mind trying again?`;
+    });
+}
+
 function bindNewsletterForms() {
   document.querySelectorAll("[data-newsletter-form]").forEach(form => {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const note = form.querySelector("[data-form-note]") || form.parentElement.querySelector("[data-form-note]");
       const input = form.querySelector("input[type=email]");
-      if (note) note.textContent = `You're in — postcards headed to ${input.value}.`;
-      form.reset();
+      submitToNetlify(input.value, note, form);
     });
   });
   const footerForm = document.getElementById("footerNewsletterForm");
@@ -179,8 +199,7 @@ function bindNewsletterForms() {
     footerForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const input = footerForm.querySelector("input[type=email]");
-      footerNote.textContent = `Thanks — you're on the list.`;
-      footerForm.reset();
+      submitToNetlify(input.value, footerNote, footerForm);
     });
   }
 }
@@ -335,7 +354,7 @@ function newsletterBlockHTML() {
         <h2 class="newsletter-title">Get the postcard, whenever there's one worth sending.</h2>
         <p class="newsletter-desc">New destinations, honest restaurant reviews, and whatever went wrong this time — straight to your inbox.</p>
         <form class="newsletter-form" data-newsletter-form>
-          <input type="email" required placeholder="you@somewhere-nice.com" aria-label="Email address">
+          <input type="email" name="email" required placeholder="you@somewhere-nice.com" aria-label="Email address">
           <button class="btn btn-primary" type="submit">Subscribe</button>
         </form>
         <p class="form-note" data-form-note></p>

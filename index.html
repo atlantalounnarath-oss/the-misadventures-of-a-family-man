@@ -70,9 +70,7 @@
       <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M22 2L2 9l9 4z" fill="var(--brass-bright)"/><path d="M22 2L15 22l-4-9z" fill="var(--brass)"/></svg></span>
       <p class="footer-tagline">Traveling the world one wrong turn, unforgettable meal, and family adventure at a time.</p>
       <div class="footer-socials" aria-label="Social links">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="YouTube">YT</a>
-        <a href="#" aria-label="Pinterest">PT</a>
+        <a href="https://www.instagram.com/kp4o4/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
       </div>
     </div>
 
@@ -94,8 +92,10 @@
     <div class="footer-col footer-newsletter">
       <h4>Get the Postcard</h4>
       <p>New stops whenever we travel — no set schedule, just honest updates. Zero spam.</p>
-      <form class="footer-form" id="footerNewsletterForm">
-        <input type="email" required placeholder="you@somewhere-nice.com" aria-label="Email address">
+      <form class="footer-form" id="footerNewsletterForm" name="newsletter" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p class="hidden" hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input type="email" name="email" required placeholder="you@somewhere-nice.com" aria-label="Email address">
         <button type="submit">Join</button>
       </form>
       <p class="footer-form-note" id="footerFormNote" aria-live="polite"></p>
