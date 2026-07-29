@@ -521,8 +521,9 @@ const DESTINATIONS = [
     country: `Honduras`,
     year: 2015,
     tag: `Central America 2015 Stop`,
-    heroImg: img("roatan-hero", 1600, 1000),
-    cardImg: img("roatan-card", 900, 1100),
+    heroImg: "https://images.unsplash.com/photo-1668813610810-3d15364b6af9?w=1600&auto=format&fit=crop&q=80",
+    cardImg: "https://images.unsplash.com/photo-1668813610810-3d15364b6af9?w=900&auto=format&fit=crop&q=80",
+    heroCaption: "Too busy creating memories to capture the moment — here's a generic pic from what I remember. (Stock photo, not our own — no camera made it on this trip.)",
     coords: { top: "42.25%", left: "24.63%" },
     quickFacts: [
       { label: "Best time to go", value: "Mar – Aug" },
@@ -549,7 +550,7 @@ const DESTINATIONS = [
       "Book dive trips a day ahead in high season",
       "Check the weather for Mar – Aug before locking in dates"
     ],
-    gallery: [img("roatan-g1", 900, 700), img("roatan-g2", 700, 900)],
+    gallery: [{ src: "https://images.unsplash.com/photo-1668813610810-3d15364b6af9?w=1200&auto=format&fit=crop&q=80", caption: "Too busy creating memories to capture the moment — here's a generic pic from what I remember." }],
     rating: 9,
     wouldReturn: "Yes — the reef alone is worth the return trip.",
     relatedAdventure: "central-america-2015"
@@ -560,8 +561,9 @@ const DESTINATIONS = [
     country: `Mexico`,
     year: 2015,
     tag: `Central America 2015 Stop`,
-    heroImg: img("cancun-hero", 1600, 1000),
-    cardImg: img("cancun-card", 900, 1100),
+    heroImg: "https://images.unsplash.com/photo-1736648432485-c82f30912ec5?w=1600&auto=format&fit=crop&q=80",
+    cardImg: "https://images.unsplash.com/photo-1736648432485-c82f30912ec5?w=900&auto=format&fit=crop&q=80",
+    heroCaption: "Too busy creating memories to capture the moment — here's a generic pic from what I remember. (Stock photo, not our own — no camera made it on this trip.)",
     coords: { top: "37.5%", left: "22%" },
     quickFacts: [
       { label: "Best time to go", value: "Nov – Apr" },
@@ -588,7 +590,7 @@ const DESTINATIONS = [
       "Book Chichén Itzá as an early-morning trip to beat both the heat and the crowds",
       "Check the weather for Nov – Apr before locking in dates"
     ],
-    gallery: [img("cancun-g1", 900, 700), img("cancun-g2", 700, 900)],
+    gallery: [{ src: "https://images.unsplash.com/photo-1736648432485-c82f30912ec5?w=1200&auto=format&fit=crop&q=80", caption: "Too busy creating memories to capture the moment — here's a generic pic from what I remember." }],
     rating: 8,
     wouldReturn: "Yes — mainly for the day trips out to the ruins.",
     relatedAdventure: "central-america-2015"
@@ -1031,12 +1033,14 @@ const DESTINATIONS = [
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Steamboat Springs, Colorado`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`The local hot springs are split — a warm side and a genuinely freezing pond next door. Taking the plunge into the cold side is a rite of passage`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Steamboat Springs, Colorado fill up`,
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
-`Check the weather for Dec – Mar before locking in dates`
+`Check the weather for Dec – Mar before locking in dates`,
+`Driving up in winter? Don't trust a rental car from a warm-weather state to be ready — bring your own snow chains and all-weather washer fluid`
     ],
     gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s2.jpg?w=1000"],
     rating: 10,
@@ -1064,7 +1068,8 @@ const DESTINATIONS = [
 `Explore The Strand Historic District`,
 `Relax on Galveston's Beaches`,
 `Tour the Moody Mansion`,
-`Discover Galveston's History at the Galveston Island Railroa`
+`Discover Galveston's History at the Galveston Island Railroa`,
+`Stop at NASA's Space Center Houston on the way in — worth the detour`
     ],
     restaurants: [
       { name: "Gaido's Seafood Restaurant", location: "Galveston, Texas", rating: 4.3, review: "A Galveston institution known for its fresh seafood dishes and Gulf Coast flavors.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=900", communityReview: "A Galveston Seawall fixture since 1911, still pulling a 4.5-star average across 5,000+ reviews — the pecan pie and grilled oysters get consistent raves. Reviews genuinely split on service, though, with some calling it the best meal of their trip and others reporting slow, disorganized waitstaff on an off night.", communitySource: "Google/Yelp/Tripadvisor" },
@@ -1081,7 +1086,8 @@ const DESTINATIONS = [
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Galveston, Texas`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`Don't sleep on the Thai food here — surprisingly great for a Gulf Coast town`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Galveston, Texas fill up`,
@@ -1214,7 +1220,8 @@ const DESTINATIONS = [
 `Visit the Casinos`,
 `See a Show`,
 `Experience Fremont Street`,
-`Take a Helicopter Tour`
+`Take a Helicopter Tour`,
+`Ride the indoor canal boats at the Venetian — genuinely worth it`
     ],
     restaurants: [
       { name: `Joel Robuchon`, location: `Las Vegas, Nevada`, rating: 4.3, review: `Located at the MGM Grand, this Michelin three-star restaurant offers an exquisite French dining experience with exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "Widely regarded as one of the finest fine-dining experiences in America, with reviewers consistently calling the multi-course tasting menu (bread, cheese, and dessert carts included) some of the best food of their lives. Worth checking before you go: as of mid-2026 the restaurant is listed as temporarily closed.", communitySource: "Google/Yelp/Tripadvisor" },
@@ -1231,7 +1238,8 @@ const DESTINATIONS = [
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Las Vegas, Nevada`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`Book a spa massage — one of the most memorable, transcendent massages we've ever had was here`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Las Vegas, Nevada fill up`,
@@ -1369,7 +1377,9 @@ const DESTINATIONS = [
     ],
     hiddenGems: [
       "The Boulder Creek Path for a quiet walk away from Pearl Street",
-      "Smaller neighborhood coffee shops away from the main downtown strip"
+      "Smaller neighborhood coffee shops away from the main downtown strip",
+      "One cafe was worth a 25-minute walk from our hotel every single morning — the weather cooperated every time",
+      "If you're not on a tight schedule, just drive — we headed out with no agenda beyond one school visit and ended up spotting sheep and moose almost all the way to Wyoming"
     ],
     travelTips: [
       "Boulder and Denver are close enough to combine easily in one trip",
@@ -1918,7 +1928,9 @@ const DESTINATIONS = [
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Boston & Martha's Vineyard`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`If your trip lands around July 4th, a harbor-view room gets you the fireworks without fighting the crowds`,
+`The best food and neighborhoods weren't near the main sights — they were just a few blocks away the whole time`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Boston & Martha's Vineyard fill up`,
@@ -1968,7 +1980,8 @@ const DESTINATIONS = [
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of San Francisco, California`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`Our redwood forest driver turned into an unofficial tour guide for the whole hour-long ride — a local who grew up there and pointed out everything, historical and otherwise, with genuine love for his city`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in San Francisco, California fill up`,
@@ -2914,6 +2927,186 @@ const MISADVENTURES = [
     body: "Locals kept talking about a hidden waterfall, so we asked our driver to take us to one — not realizing it meant a long hike through a dried-up riverbed. We just kept walking and walking until I struck up a conversation with a local guy on the trail. We hit it off immediately, and he ended up hiking the rest of the way with us, pointing things out and explaining the area as we went, until we reached a secluded waterfall with cliff diving and a hidden cave. Turned out our new hiking buddy owned the largest seafood restaurant in town. We jokingly tried to set him up with our single sister — he jokingly clarified he was more interested in me, which, fair enough, Puerto Vallarta is known for exactly that, and it explained how fast we'd all become genuine friends that afternoon."
   },
   {
+    icon: "✈️",
+    title: "Three Strikes Before We Even Landed",
+    location: "Miami, Florida",
+    body: "An unannounced, last-minute bachelor party for my brother — and since I was out of PTO, I had to book separately from the rest of the guys. Mistake one: last-minute Spirit Airlines seats that didn't recline, didn't cushion, and didn't apologize for either. Mistake two: a quickly-booked BnB I figured I'd barely use anyway — until the host started throwing parties every night. Got a refund and lucked into an empty room at the actual party house when one of the guys bailed early. Mistake three, courtesy of whoever was actually running point on this thing (not the best man): the trip landed right in the middle of Pride Week. So the single guys expecting a standard bachelor-party lineup got a very different Miami than advertised. What happened the rest of the weekend stays under Bro Code — some misadventures just aren't meant for the blog."
+  },
+  {
+    icon: "🧋",
+    title: "The Best Boba in Town",
+    location: "Atlanta, Georgia",
+    body: "Visited for a funeral — and visiting family is its own kind of chaos even without the occasion. The food overall was a letdown, but nothing summed it up like the boba. Boba was still new to Atlanta at the time, and locals swore by one spot as the best in town. We waited an hour for it. What arrived was uncooked, unsweetened, and — having owned a cafe and made boba drinks myself — I'm not convinced it was made for human consumption. Might've been snobbery. Might've just been bad boba. On the way out of town, we got pulled over at a random sobriety checkpoint, a new experience entirely — didn't realize Georgia still legally did those."
+  },
+  {
+    icon: "🕰️",
+    title: "You Can't Go Home Again",
+    location: "Atlanta, Georgia",
+    body: "Grew up here, so revisiting as an adult came with its own quiet letdown — the places that meant something as a kid either don't exist anymore or don't look anything like memory insists they should. Haven't been back since. Maybe it's easier to leave childhood exactly where it lives in your head than risk finding out what else has changed."
+  },
+  {
+    icon: "☕",
+    title: "The Coffee De-Icer",
+    location: "Steamboat Springs, Colorado",
+    body: "First family ski trip — my wife's sister, being frugal, rented a 9-passenger SUV for the 12-hour drive up an ice-covered mountain, scheduled for the worst possible week to attempt it: between Christmas and New Year's. Texas rental cars are not built for Colorado winter — no snow tires, no chains, and critically, no all-weather washer fluid. Trying to clear mud off the windshield just left it frozen solid and filthier. In a panic, I opened the sunroof, grabbed someone's hot coffee, and poured it straight onto the windshield. It worked. First chance I got, I bought an actual gallon of de-icing fluid. When the weather kept worsening, we dropped the rental and just bought plane tickets home rather than attempt that drive again."
+  },
+  {
+    icon: "🔥",
+    title: "Floor Warmers, Who Knew",
+    location: "Steamboat Springs, Colorado",
+    body: "Our BnB was great except for one mystery: we couldn't figure out why our feet were always freezing indoors. Texans don't grow up with floor warmers — that's not a thing where we're from. It wasn't until a local mentioned it that we went back and found the switch, sitting there the whole time, that turned on floor heating in every room."
+  },
+  {
+    icon: "🌿",
+    title: "The Friendliest Festival",
+    location: "Steamboat Springs, Colorado",
+    body: "Didn't realize we'd booked our trip during an annual music festival with a distinctly 420 flavor. The locals lived up to the reputation — we were offered free marijuana pretty much everywhere we went. Honestly, I think most of them were just trying to talk to my wife's sister."
+  },
+  {
+    icon: "⛷️",
+    title: "Out of Bounds",
+    location: "Steamboat Springs, Colorado",
+    body: "My wife's first time skiing, mid-lesson, ended with her skidding straight past the orange caution tape into out-of-bounds terrain. Luckily she landed in a shallow pit instead of anything worse. Those caution nets could stand to be a little sturdier."
+  },
+  {
+    icon: "🧊",
+    title: "The Polar Bear Challenge",
+    location: "Steamboat Springs, Colorado",
+    body: "Booked a hot spring to recover from sore ski days — didn't clock in advance that it was clothing-optional with co-ed changing rooms. Worked out fine, I look good naked. The real twist: the spring sat right next to a genuinely freezing pond, so naturally I had to swim through the ice water to reach the hot side. Refreshing doesn't begin to cover it."
+  },
+  {
+    icon: "🎡",
+    title: "The Not-Quite-Year-Round Boardwalk",
+    location: "Galveston, Texas",
+    body: "A quick overnight before boarding a cruise ship — stopped at NASA on the way in, found surprisingly great Thai food once we got there, and figured we'd close out the night at Galveston's boardwalk, Ferris wheel and all. Turns out \"year-round\" boardwalk doesn't necessarily mean everything on it runs year-round — the Ferris wheel was closed. A quiet correction to an assumption we didn't know we were making."
+  },
+  {
+    icon: "🎰",
+    title: "All Night, Every Time",
+    location: "Las Vegas, Nevada",
+    body: "Kids' first trip to Sin City, and the trip we found out my wife can gamble all night — and I mean all night, as in still at the tables when I woke up the next morning. Her siblings had warned me with stories I assumed were exaggerated. They were not. Turns out she parties harder than I do, which might explain why we work so well together. At least she's consistently come out a few hundred ahead every time I can remember."
+  },
+  {
+    icon: "🏜️",
+    title: "Nothing Out Here But Desert",
+    location: "Las Vegas, Nevada",
+    body: "Ran into friends from Texas who'd coincidentally picked the same weekend, and met up in \"Chinatown\" — using that term loosely. Also learned there's genuinely nothing in Vegas outside the Strip; it's desert, then more desert. And somehow, despite the Strip being one single road where you can only go one direction or the other, we got lost. Multiple times. Cutting through casinos didn't help. My wife's sense of direction strikes again."
+  },
+  {
+    icon: "🐾",
+    title: "First Snow, First Dogs",
+    location: "Winter Park, Colorado",
+    body: "First snow trip with the dogs — and first challenge was the AC dying on the drive up, which is its own special kind of bad with a wet, smelly mutt trapped in the car. Once we arrived, walking the dogs through actual snow for the first time was new for all of us, though nowhere near unbearable. Otherwise, a quiet trip — the food just wasn't good. Winter Park didn't leave much of a mark either way."
+  },
+  {
+    icon: "📦",
+    title: "The Cardboard Box Conspiracy",
+    location: "Maui, Hawaii",
+    body: "Rented an apartment with a strict no-cardboard-boxes policy, which confused us enough to ask why. Turns out cardboard attracts roaches, so local buildings just ban it outright — any box from groceries or deliveries has to go straight out to the recycling, no exceptions. A completely reasonable rule we'd never once had to think about before."
+  },
+  {
+    icon: "🚗",
+    title: "Maui Traffic, Thailand Rules",
+    location: "Maui, Hawaii",
+    body: "Rented a car and immediately regretted it — traffic here somehow operates like Thailand, minus the excuse of Thailand's actual traffic laws, which only made it slower. Genuinely gave us new appreciation for why driving works the way it does over there."
+  },
+  {
+    icon: "🍜",
+    title: "Underbooked and Overcrowded",
+    location: "Maui, Hawaii",
+    body: "Visited not long after COVID died down, right as tourists were flooding back — locals were split on it, and both sides of that were true: things were more crowded and more expensive, but plenty of businesses were also just glad to see life return to the local economy. We underestimated the crowds and didn't book enough ahead of time, so we ended up eating way more street food and fast food than we'd planned, just trying to find anywhere with an open table."
+  },
+  {
+    icon: "🏈",
+    title: "The Coach Prime Effect",
+    location: "Boulder & Denver, Colorado",
+    body: "Another school-scouting trip, and we happened to visit right as Deion Sanders took over as head coach — overnight, this quiet college town turned into a boomtown. Crowds and zero parking became the running theme everywhere we went, whatever we were actually trying to do that day."
+  },
+  {
+    icon: "⛺",
+    title: "A Different Kind of Lesson",
+    location: "Boulder & Denver, Colorado",
+    body: "This was also the first time our kids saw homeless tent cities up close, on our daily 25-minute walk to a cafe we'd fallen hard for. Beautiful weather every morning, genuinely great coffee — and a conversation with the kids we hadn't planned on having, but needed to."
+  },
+  {
+    icon: "🤠",
+    title: "Texas Sarcasm Doesn't Translate",
+    location: "Nashville, Tennessee",
+    body: "A work trip, mostly uneventful — except for how many people I apparently offended without meaning to. Turns out Texas sarcasm doesn't land the same in Nashville, and a handful of strangers took things completely at face value that were never meant to be taken seriously. No hard feelings on my end. Theirs, maybe."
+  },
+  {
+    icon: "🔑",
+    title: "The Locks That Wouldn't Cooperate",
+    location: "Twin Lakes, Colorado",
+    body: "A just-because trip — one last hooray with our dog, who had cancer, and pure, uninterrupted family bonding time. Anything that went sideways barely registered against everything else the trip actually was; we were too busy trying to make every moment count to care much. If there's a misadventure at all, it's the string of times we got locked out, completely defeated by the new-fangled smart door handles none of us could figure out. Everything else about that trip is just ours."
+  },
+  {
+    icon: "📋",
+    title: "The Itinerary Nobody Followed",
+    location: "San Francisco, California",
+    body: "I'll admit it upfront: I hate California, and everyone who knows me knows it. So for this trip I planned everything — day by day, hour by hour, backup plans included, at the family's own request. They didn't stick to a single bit of it."
+  },
+  {
+    icon: "🩹",
+    title: "Three Miles, One Scraped Knee",
+    location: "San Francisco, California",
+    body: "We agreed on a 1-mile loop through the redwoods. My wife had other ideas, and \"let's go up and this way\" turned into a 3-mile hike with no turning back. We were nearly at the end, completely injury-free, when my eldest fell and scraped her knee. Injury-free no more. A mile back to the car, jeans rolled up, bleeding the whole way. She's a trooper."
+  },
+  {
+    icon: "🍽️",
+    title: "Room for the Next Spot",
+    location: "San Francisco, California",
+    body: "The food here is genuinely great — best Chinese food we've had, easily. Which made it worse when my wife kept \"saving room for the next spot\" at every meal, leaving plates half-finished across more restaurants than I could keep track of. A lot of good food left the table uneaten in the name of what might be coming next."
+  },
+  {
+    icon: "🚶",
+    title: "The City That Goes Nowhere",
+    location: "San Francisco, California",
+    body: "Traffic that never made sense — jammed roads with seemingly no one actually going anywhere. A pier walk that felt endless. The whole trip distilled down to one feeling: San Francisco is a city where you see everything and somehow do nothing. People, next to people, following people, going nowhere."
+  },
+  {
+    icon: "🏰",
+    title: "One Last Disney, Just in Case",
+    location: "Orlando, Florida (2023)",
+    body: "A birthday trip — the girls are born a week apart, different years, and this one felt like it might be the last big Disney trip before my eldest moved out. So we went all in: dinner in the castle with the princesses, the works. A completely uneventful, perfectly executed, typical Disney day. Sometimes the whole point is that nothing goes wrong."
+  },
+  {
+    icon: "🤷",
+    title: "Misadventures Pending .... Let Me Know if You Have Any",
+    location: "Gulf Shores, Alabama",
+    body: "Won this trip free at the State Fair — every day was easy, sunny, and mercifully uneventful. Which is great for a vacation, less great for this section. If you were there and remember something we don't, let us know."
+  },
+  {
+    icon: "🤷",
+    title: "Misadventures Pending .... Let Me Know if You Have Any",
+    location: "Hill Country, Texas",
+    body: "Another free win from the State Fair, and just a genuinely relaxing day and weekend trip through Hill Country. Nothing went wrong, which almost feels suspicious in hindsight. Still waiting on a misadventure to file here."
+  },
+  {
+    icon: "🧭",
+    title: "The GPS Knows Best (She Didn't)",
+    location: "Boston, Massachusetts",
+    body: "On the way to tour MIT, my wife and her GPS decided they knew the way better than any of us — and since none of us had actually looked up directions ourselves, we blindly followed. A few trains and buses later, we arrived exactly where her GPS told her to go: the wrong main street, in the wrong town. Another 25 minutes and a few more trains and buses got us back to the right Boston street — 15 minutes after our tour group had already left. We got a refund, a self-guided map, and free rein of the campus, which was a mistake on MIT's part, since I'm notorious for opening restricted doors and wandering into \"closed\" rooms."
+  },
+  {
+    icon: "🚿",
+    title: "Martha's Vineyard, Unplumbed",
+    location: "Martha's Vineyard, Massachusetts",
+    body: "Overrated and expensive — the ferry ride alone nearly gave me an aneurysm. We landed to rain, mud, and a BnB a few miles off, saved only by the ocean breeze on the walk over. The place itself was quaint, sure — quaint for \"not pest-controlled\" and \"plumbing system stuck in another decade.\" Hot water was a coin flip, and on the rare win, the steam never let up, fogging the entire tiny house solid. An experience, if nothing else."
+  },
+  {
+    icon: "🎭",
+    title: "The Salem Sweatbox",
+    location: "Salem, Massachusetts",
+    body: "Booked a tour to learn about the witch trials, got an awkward wraparound theater where you had to crane your neck 360 degrees just to catch the show — which turned out to be an overgrown puppet performance, Chuck E. Cheese-tier. No ocean breeze here either: just an old, un-air-conditioned building packed wall to wall, everyone sweating through the whole thing. That was the real horror of Salem."
+  },
+  {
+    icon: "🚗",
+    title: "The Uber Driver Who Knew Too Much (Incorrectly)",
+    location: "Boston, Massachusetts",
+    body: "Our Uber driver spent the entire ride lecturing us on everything — confidently, at length, and almost entirely wrong. We sat there quietly plotting an escape plan and begging him internally to stop taking the scenic route. The trip wasn't a total loss, though: we lucked into a harbor-view suite upgrade in time to watch the 4th of July fireworks over Boston from our own window — nothing says America like that. What the view didn't mention was that it also came with a front-row seat to the Northeast sunrise, wide awake and blazing at 4am. Thank god for blackout curtains. We only discovered the best neighborhoods and food in town during our last week, just a few blocks from where we'd been the whole time."
+  },
+  {
     icon: "✨",
     title: "All That Glitters",
     location: "New York City, New York",
@@ -3290,7 +3483,11 @@ const MISADVENTURES = [
 const GALLERY_TAGS = ["all", ...DESTINATIONS.map(d => d.slug)];
 
 const GALLERY = DESTINATIONS.flatMap(d =>
-  d.gallery.map((src) => ({ src, tag: d.slug, label: d.name }))
+  d.gallery.map((entry) => {
+    const src = typeof entry === "string" ? entry : entry.src;
+    const label = typeof entry === "string" ? d.name : (entry.caption || d.name);
+    return { src, tag: d.slug, label };
+  })
 );
 
 function getDestination(slug) {

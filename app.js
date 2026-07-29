@@ -259,7 +259,11 @@ function afterRender(path) {
   const destMatch = path.match(/^\/destinations\/([a-z0-9-]+)$/);
   if (destMatch) {
     const d = getDestination(destMatch[1]);
-    if (d) registerLightboxGroup(`dest-${d.slug}`, d.gallery.map(src => ({ src, label: d.name })));
+    if (d) registerLightboxGroup(`dest-${d.slug}`, d.gallery.map(entry => {
+      const src = typeof entry === "string" ? entry : entry.src;
+      const label = typeof entry === "string" ? d.name : (entry.caption || d.name);
+      return { src, label };
+    }));
   }
   if (path === "/gallery") {
     registerLightboxGroup("full-gallery", GALLERY.map(g => ({ src: g.src, label: g.label })));
@@ -1146,6 +1150,7 @@ function renderDestinationDetail(d) {
         <span>◆ ${escapeHtml(d.country)}</span>
         <span>◆ ${escapeHtml(d.tag)}</span>
       </div>
+      ${d.heroCaption ? `<p class="page-hero-caption" style="margin-top:10px; font-size:13px; font-style:italic; opacity:0.75;">${escapeHtml(d.heroCaption)}</p>` : ""}
     </div>
   </section>
 
@@ -1245,7 +1250,10 @@ function renderDestinationDetail(d) {
     <div class="container">
       <span class="eyebrow">Photo Gallery</span>
       <div class="masonry mt-lg" style="margin-top:32px;">
-        ${d.gallery.map((src, i) => `<div class="masonry-item reveal" data-lightbox-group="dest-${d.slug}" data-lightbox-index="${i}">${lazyImg(src, d.name)}</div>`).join("")}
+        ${d.gallery.map((entry, i) => {
+          const src = typeof entry === "string" ? entry : entry.src;
+          return `<div class="masonry-item reveal" data-lightbox-group="dest-${d.slug}" data-lightbox-index="${i}">${lazyImg(src, d.name)}</div>`;
+        }).join("")}
       </div>
     </div>
   </section>
