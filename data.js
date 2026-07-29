@@ -104,12 +104,6 @@ const DESTINATIONS = [
       { name: "Yat Lok", location: "Hong Kong", rating: 4.4, review: "Legendary roast goose — the kind of place locals queue for without a second thought.", img: wpImg(799, 900), communityReview: "A Michelin-starred roast goose institution (and a stop on Anthony Bourdain's Hong Kong episode) — reviews are notably split: many call the goose some of the best in the city, while a recurring complaint is brusque, rushed service.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Australia Dairy Company", location: "Hong Kong", rating: 4.2, review: "A classic Hong Kong breakfast institution, brisk service included at no extra charge.", img: wpImg(798, 900), communityReview: "A no-frills cha chaan teng famous for silky scrambled eggs and steamed milk pudding — reviewers consistently rave about the food while warning about famously brusque, fast-paced service and cash-only, shared-table seating.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: "Dim sum", img: wpImg(805, 500) },
-      { name: "Roast goose", img: wpImg(800, 500) },
-      { name: "BBQ pork buns", img: wpImg(797, 500) },
-      { name: "Milk tea", img: wpImg(799, 500) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "The escalators of the Mid-Levels for a free, air-conditioned hillside tour",
@@ -152,12 +146,6 @@ const DESTINATIONS = [
       { name: "Coco Tam's", location: "Koh Samui", rating: 4.7, review: "Beachfront dining with the famous fire show — the kids still bring this up unprompted.", img: wpImg(800, 900), communityReview: "Known island-wide for its beachfront fire shows and sunset views. Reviews are notably split: many call it a must-visit highlight of Samui nightlife, while others find it overpriced and overhyped for the food quality.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "The Jungle Club", location: "Koh Samui", rating: 4.5, review: "Incredible hilltop views over the island; go for sunset if you can time it.", img: wpImg(812, 900), communityReview: "Reviewers consistently rave about the sunset views over Chaweng Bay — widely called one of the most breathtaking spots on the island — though the steep drive up and inconsistent service on busy nights draw occasional complaints.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Tree Tops Signature Dining", location: "Koh Samui", rating: 4.6, review: "A romantic, special-occasion meal worth booking ahead for.", img: wpImg(803, 900), communityReview: "A treehouse fine-dining experience frequently booked for honeymoons and anniversaries — reviewers consistently praise the setting and attentive service; the main criticism is steep pricing for the portion sizes.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: "Mango sticky rice", img: wpImg(820, 500) },
-      { name: "Tom yum goong", img: wpImg(800, 500) },
-      { name: "Grilled seafood", img: wpImg(812, 500) },
-      { name: "Fresh coconut", img: wpImg(803, 500) }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -203,12 +191,6 @@ const DESTINATIONS = [
       { name: "Jeh O Chula", location: "Bangkok", rating: 4.4, review: "Tom Yum Mama noodles turned into a full-contact food event.", img: wpImg(813, 900), communityReview: "A Michelin Bib Gourmand institution famous for its Tom Yum Mama noodles — most reviewers say it's every bit worth the notoriously long queue, though a vocal minority calls it overrated instant noodles riding a social-media wave.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Sorn", location: "Bangkok", rating: 4.8, review: "One of Thailand's premier fine-dining restaurants — southern Thai cuisine done at the highest level.", img: wpImg(804, 900), communityReview: "Thailand's first three-Michelin-starred restaurant, celebrated for its bold, intensely spiced tour of Southern Thai cuisine. Reservations are famously difficult to land, and reviewers near-universally call it one of the best meals of their trip.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: "Crab omelet", img: wpImg(811, 500) },
-      { name: "Pad Thai", img: wpImg(809, 500) },
-      { name: "Tom Yum Mama noodles", img: wpImg(813, 500) },
-      { name: "Mango sticky rice", img: wpImg(804, 500) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "Talat Noi, a maze of street art and old machine shops near the river",
@@ -252,12 +234,6 @@ const DESTINATIONS = [
       { name: "Bánh Mì Huỳnh Hoa", location: "Ho Chi Minh City", rating: 4.7, review: "Often called the city's best bánh mì, and stuffed enough to make a believer out of anyone.", img: wpImg(808, 900), communityReview: "Famous for the biggest, priciest bánh mì in Saigon — reviewers are split between calling it the best in the city and finding it overstuffed and overpriced next to cheaper local spots, but the queue rarely lets up either way.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Cục Gạch Quán", location: "Ho Chi Minh City", rating: 4.5, review: "Traditional southern Vietnamese cuisine in a garden setting that slows the whole meal down.", img: wpImg(819, 900), communityReview: "A longtime favorite for home-style southern Vietnamese cooking in a quiet, plant-filled setting — reviewers consistently praise the atmosphere and traditional dishes as a welcome break from Saigon's street-level chaos.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: "Bánh mì", img: wpImg(814, 500) },
-      { name: "Phở", img: wpImg(808, 500) },
-      { name: "Southern Vietnamese classics", img: wpImg(819, 500) },
-      { name: "Vietnamese iced coffee", img: wpImg(802, 500) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "The rooftop cafes stacked inside unmarked apartment buildings on Nguyen Hue",
@@ -298,11 +274,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Local eateries around Châu Đốc", location: "An Giang", rating: 4.3, review: "This region is better known for local eateries than famous restaurants — and that's the charm of it.", img: wpImg(815, 900) },
       { name: "Riverside food stalls", location: "An Giang", rating: 4.2, review: "Simple, fresh, and eaten on plastic stools with a view of the river.", img: wpImg(810, 900) }
-    ],
-    mustTryFoods: [
-      { name: "Cá lóc nướng (grilled snakehead fish)", img: wpImg(816, 500) },
-      { name: "Bún cá Châu Đốc", img: wpImg(807, 500) },
-      { name: "Palm sugar desserts", img: wpImg(815, 500) }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -349,14 +320,6 @@ const DESTINATIONS = [
       { name: "Chả Cá Thăng Long", location: "Hanoi", rating: 4.5, review: "Hanoi's iconic turmeric fish with dill, cooked tableside.", img: wpImg(823, 900), communityReview: "A go-to spot for Hanoi's signature turmeric-and-dill fish dish, cooked tableside — reviewers consistently praise the tableside sizzle and flavor as a memorable, distinctly Hanoi experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Cafe Giảng", location: "Hanoi", rating: 4.8, review: "The birthplace of Vietnamese egg coffee — whipped into something between dessert and caffeine delivery system.", img: wpImg(822, 900), communityReview: "The original home of Vietnamese egg coffee, now run by the second generation of the family that invented it — reviewers near-universally call it a must-try, tucked down a narrow alley with a distinctly old-Hanoi atmosphere.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: "Pho", img: wpImg(806, 500) },
-      { name: "Bún chả", img: wpImg(817, 500) },
-      { name: "Chả cá", img: wpImg(823, 500) },
-      { name: "Egg coffee", img: wpImg(822, 500) },
-      { name: "Bánh cuốn", img: wpImg(824, 500) },
-      { name: "Sticky rice (xôi)", img: wpImg(806, 500) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "The train street, where a working railway runs inches from café tables",
@@ -399,11 +362,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", img: wpImg(825, 900), communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset.", img: wpImg(826, 900) }
-    ],
-    mustTryFoods: [
-      { name: "Fresh-caught squid", img: wpImg(821, 500) },
-      { name: "Local seafood", img: wpImg(825, 500) },
-      { name: "On-board cruise seafood BBQ", img: wpImg(826, 500) }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -451,12 +409,6 @@ const DESTINATIONS = [
       { name: "La Mallorquina", location: "Puerto Rico", rating: 4.6, review: "La Mallorquina, located in Old San Juan, is a classic Puerto Rican bakery and cafe that has been serving traditional \"pan sobao\" (Puerto Rican bread) and pastries for decades. Try the \"quesitos\" (pastry filled with cheese) or \"mallorca\" (sweet and fluffy pastry).", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr2.jpg?w=900", communityReview: "Puerto Rico's oldest restaurant (since 1848), prized for its old-world atmosphere and asopao — but reviews are genuinely all over the map, ranging from \"a piece of culinary history\" to complaints about slow service and tourist-trap pricing. Worth going for the history; keep expectations moderate on the food.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "La Estación", location: "Puerto Rico", rating: 4.3, review: "La Estación is a farm-to-table restaurant located in Fajardo, on the eastern coast of the island. Their menu features locally sourced ingredients and creative dishes, like the plantain-crusted fish and duck confit empanadillas.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr3.jpg?w=900", communityReview: "A local favorite for wood-fired Nuyorican BBQ and Caribbean fare near Fajardo — reviewers consistently call it a pleasant surprise, with several naming it the best barbecue they had on the island.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Casa Lola`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr2010.jpg?w=500" },
-      { name: `Pikayo`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr8.jpg?w=500" },
-      { name: `La Mallorquina`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr2.jpg?w=500" },
-      { name: `La Estación`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr3.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -502,12 +454,6 @@ const DESTINATIONS = [
       { name: "RumFish y Vino", location: "Belize", rating: 4.6, review: "Offering international dishes with Caribbean influences, RumFish y Vino is a top-rated restaurant in Placencia. Try their fresh ceviche, grilled meats or seafood, and delicious cocktails.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg?w=900", communityReview: "Widely considered Placencia's top upscale dining spot, praised for handcrafted fruit-infusion cocktails and fresh seafood — reviewers call it the best meal of their Belize trip, though a few note it's pricier than most of the village.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Pop's Belize Restaurant", location: "Belize", rating: 4.3, review: "Pop's Belize Restaurant, located in San Ignacio, serves traditional Belizean dishes like stewed chicken, rice and beans, and tamales, in a cozy setting.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz2.jpg?w=900", communityReview: "A tiny, six-booth San Ignacio institution reviewers call the town's best-kept breakfast secret — the omelets and bottomless coffee are the main draw, with prompt service and a genuinely local crowd.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `The Smuggler's Den`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg?w=500" },
-      { name: `The Arepa Lady`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz2.jpg?w=500" },
-      { name: `RumFish y Vino`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg?w=500" },
-      { name: `Pop's Belize Restaurant`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz2.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -548,9 +494,6 @@ const DESTINATIONS = [
       "Zipline through the island's jungle canopy"
     ],
     restaurants: [],
-    mustTryFoods: [
-      { name: "Baleadas", img: img("roatan-food", 500, 400) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "West Bay's quieter north end, away from the cruise-ship crowds",
@@ -589,9 +532,6 @@ const DESTINATIONS = [
       "Explore the Mayan ruins at Tulum"
     ],
     restaurants: [],
-    mustTryFoods: [
-      { name: "Cochinita pibil", img: img("cancun-food", 500, 400) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "Isla Mujeres, a short ferry ride away and far quieter than the Hotel Zone",
@@ -634,12 +574,6 @@ const DESTINATIONS = [
       { name: "The Ledbury", location: "England", rating: 4.5, review: "The Ledbury, located in Notting Hill, London, is a Michelin-starred restaurant that offers contemporary European cuisine featuring seasonal and locally-sourced ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=900", communityReview: "Regularly ranked among London's very best restaurants — reviewers consistently praise chef Brett Graham's seasonal tasting menus and the notably warm, unstuffy service for a two-Michelin-starred room.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "St. John", location: "England", rating: 4.6, review: "St. John in London's Clerkenwell district is known for its traditional British cuisine with a modern twist, including nose-to-tail dishes like bone marrow on toast and roast pork belly.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=900", communityReview: "A genuine London institution for nose-to-tail cooking — the bone marrow and Eccles cake with cheese are near-universally recommended, though a handful of reviewers feel the famously spare, no-frills plating and pricing haven't aged as well as the reputation.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "The Ivy", location: "England", rating: 4.3, review: "The Ivy, located in the heart of London's West End, is a beautiful art deco restaurant that serves classic British cuisine, including their famous shepherd's pie.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=900", communityReview: "A century-old London fixture prized more for the glamorous Art Deco room and reliably good service than groundbreaking food — reviewers call the shepherd's pie and classic British menu comforting rather than exciting, with a few flagging steep drink prices.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `The Fat Duck`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg?w=500" },
-      { name: `The Ledbury`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=500" },
-      { name: `St. John`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=500" },
-      { name: `The Ivy`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -686,12 +620,6 @@ const DESTINATIONS = [
       { name: "Cafe Matisse", location: "Bahamas", rating: 4.6, review: "Located in Paradise Island, this Italian restaurant is known for its excellent service and cozy atmosphere. They offer a wide selection of homemade pasta dishes and wines.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg?w=900", communityReview: "A charming Italian spot in a 19th-century mansion, praised for its intimate courtyard and attentive service — reviewers describe it as a longtime favorite, though a handful of recent reviews note inconsistency since a change in ownership.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Twin Brothers", location: "Bahamas", rating: 4.3, review: "This local hotspot in Nassau is famous for its conch salad and fried fish. They have been serving up traditional Bahamian dishes for over 50 years.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs2.jpg?w=900", communityReview: "A Fish Fry favorite known for cracked conch and sky juice — reviews are mixed but mostly positive, with the fresh conch salad as the standout and occasional complaints about slow, \"Bahama time\" service.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Graycliff`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg?w=500" },
-      { name: `The Poop Deck`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs2.jpg?w=500" },
-      { name: `Cafe Matisse`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg?w=500" },
-      { name: `Twin Brothers`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs2.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -736,12 +664,6 @@ const DESTINATIONS = [
       { name: "Kopar", location: "Iceland", rating: 4.5, review: "This seafood restaurant located in Reykjavik has stunning views of the harbor and specializes in fresh Icelandic seafood with a modern twist.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=900", communityReview: "A harborside seafood favorite reviewers consistently praise for the fresh cod and langoustine dishes, warm service, and views of the docking boats — the multi-course \"Kopar adventure\" tasting menu gets frequent recommendations.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Matur og Drykkur", location: "Iceland", rating: 4.6, review: "Located in Reykjavik's Grandi harbour area, this restaurant features traditional Icelandic dishes made with locally-sourced ingredients. Don't miss the fermented shark!", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=900", communityReview: "A Michelin-recognized spot reinterpreting old Icelandic recipes (including cod heads and horse tartare) in a relaxed, unpretentious setting — reviewers consistently call the food a genuine highlight of their Iceland trip, with the horse tartare and halibut soup among the most-recommended dishes.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Slippbarinn", location: "Iceland", rating: 4.3, review: "This hip bar in Reykjavik's trendy 101 district serves creative cocktails and small plates made with local and organic ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=900", communityReview: "A lively harborside cocktail bar reviewers praise for inventive, seasonally-driven drinks and a welcoming vibe — a popular pick for an after-dinner nightcap rather than a full meal.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Dill`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=500" },
-      { name: `Kopar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=500" },
-      { name: `Matur og Drykkur`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=500" },
-      { name: `Slippbarinn`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -788,12 +710,6 @@ const DESTINATIONS = [
       { name: "La Palapa", location: "Puerto Vallarta", rating: 4.6, review: "Located on the beach, La Palapa is the perfect spot for a romantic dinner. The menu offers a mix of international and Mexican dishes, along with fresh seafood options.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=900", communityReview: "Puerto Vallarta's original beach restaurant, running since 1959 — reviewers love the on-the-sand setting and sunset ambiance, though some longtime visitors feel the food doesn't quite match the view and prefer nearby Tintoque for the meal itself.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Tintoque", location: "Puerto Vallarta", rating: 4.3, review: "A relatively new addition to Puerto Vallarta's food scene, Tintoque quickly gained popularity among locals and tourists alike. The menu features contemporary Mexican cuisine using fresh, locally-sourced ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=900", communityReview: "Widely cited as Puerto Vallarta's most ambitious fine-dining restaurant, with reviewers frequently ranking it above the more famous, longer-established spots in town — the tasting menu is the move, though a rare reviewer finds it overpriced for the portions.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `El Arrayán`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=500" },
-      { name: `Café des Artistes`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=500" },
-      { name: `La Palapa`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=500" },
-      { name: `Tintoque`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -838,12 +754,6 @@ const DESTINATIONS = [
       { name: "The Ravenous Pig", location: "Orlando, Florida (2010)", rating: 4.5, review: "This gastropub in Winter Park serves up elevated pub fare like pork belly sliders, fish and chips, and burgers, along with a great selection of craft beer and cocktails.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o5.jpg?w=900", communityReview: "A Michelin Bib Gourmand gastropub with a devoted local following — reviewers consistently praise the farm-to-table cooking (the Iberian pork and pork belly starter get repeat mentions) and reasonable pricing for the quality.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Se7en Bites", location: "Orlando, Florida (2010)", rating: 4.6, review: "If you're looking for breakfast or brunch, Se7en Bites is a must-try. This bakery and cafe serves up delicious Southern-style comfort food like biscuits and gravy, shrimp and grits, and chicken and waffles.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o1.jpg?w=900", communityReview: "A beloved off-the-tourist-track brunch spot — reviewers rave about the Minnie Pearl sandwich and cheddar chive grits, frequently calling it worth the drive out from the parks.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Morimoto Asia", location: "Orlando, Florida (2010)", rating: 4.3, review: "Iron Chef Masaharu Morimoto's Asian fusion restaurant at Disney Springs is a feast for the senses. The menu includes sushi, dim sum, and other Asian-inspired dishes, and the decor is stunning.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o6.jpg?w=900", communityReview: "One of Disney Springs' most upscale options, with reviewers frequently praising the Morimoto spare ribs and sushi — opinion varies more than most Disney restaurants, though, with a vocal minority calling the food bland or inconsistent for the price.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Victoria & Albert's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o3.jpg?w=500" },
-      { name: `The Ravenous Pig`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o5.jpg?w=500" },
-      { name: `Se7en Bites`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o1.jpg?w=500" },
-      { name: `Morimoto Asia`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o6.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -890,12 +800,6 @@ const DESTINATIONS = [
       { name: "Bahama Bob's Beachside Cafe", location: "Gulf Shores, Alabama", rating: 4.3, review: "This casual beachfront restaurant is known for its fresh seafood, including shrimp, crab, and fish tacos. They also have a variety of salads, sandwiches, and burgers.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=900", communityReview: "A beloved beachside spot reviewers praise for the gumbo, coconut shrimp, and key lime pie, with a steps-from-the-sand setting that's a big part of the appeal — service and consistency get occasional mixed marks, but most calls are positive.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Fisher's at Orange Beach Marina", location: "Gulf Shores, Alabama", rating: 4.3, review: "This upscale restaurant offers stunning views of the marina and serves seafood, steaks, and sushi. They have a great wine list and a creative cocktail menu.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=900", communityReview: "Split across two experiences in one building — an upstairs fine-dining room with marina views and a more casual downstairs option — reviewers generally recommend the upstairs for a special-occasion dinner and note it's one of the more polished, upscale options in the Orange Beach area.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `The Hangout`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=500" },
-      { name: `LuLu's Gulf Shores`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=500" },
-      { name: `Bahama Bob's Beachside Cafe`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=500" },
-      { name: `Fisher's at Orange Beach Marina`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -940,12 +844,6 @@ const DESTINATIONS = [
       { name: "The Leaning Pear", location: "Hill Country, Texas", rating: 4.5, review: "This farm-to-table restaurant in Wimberley, Texas, serves contemporary American cuisine with a focus on locally sourced ingredients. The menu changes seasonally, and the restaurant has an extensive wine list.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h1.jpg?w=900", communityReview: "A genuine Wimberley institution reviewers consistently praise for the wood-fired pizza, Brussels sprouts, and treehouse-like outdoor seating — a longtime local favorite, though a handful of reviews mention inconsistent service on busy weekends.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "August E's", location: "Hill Country, Texas", rating: 4.6, review: "This modern Asian fusion restaurant in Fredericksburg, Texas, offers a unique dining experience with a creative menu featuring dishes like Korean-style fried chicken and beef pho.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h4.jpg?w=900", communityReview: "Regularly named one of Fredericksburg's top restaurants, praised for bringing genuinely inventive Asian-fusion small plates to Texas Hill Country wine country — a reservation-recommended splurge rather than a casual stop.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Coopers Old Time Pit Bar-B-Que", location: "Hill Country, Texas", rating: 4.3, review: "This iconic BBQ joint in Llano, Texas, is known for its tender and smoky brisket and sausage. The restaurant offers a casual dining experience with a family-friendly atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h3.jpg?w=900", communityReview: "A beloved old-school pit stop reviewers praise for the pork ribs and old-fashioned cafeteria-style ordering — long a favorite on Hill Country barbecue road trips, though a few recent reviews note quality has grown inconsistent compared to years past.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Salt Lick BBQ`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1.jpg?w=500" },
-      { name: `The Leaning Pear`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h1.jpg?w=500" },
-      { name: `August E's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h4.jpg?w=500" },
-      { name: `Coopers Old Time Pit Bar-B-Que`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h3.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -992,12 +890,6 @@ const DESTINATIONS = [
       { name: "Bacchanalia", location: "Atlanta, Georgia", rating: 4.6, review: "This upscale restaurant is known for its innovative, contemporary American cuisine and a extensive wine selection.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a7.jpg?w=900", communityReview: "A Michelin-starred, James Beard Award-winning restaurant reviewers regularly call Atlanta's top special-occasion dinner — the four-course prix fixe menu draws consistent praise, with most reviews recommending booking two to three weeks ahead.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Fox Bros. Bar-B-Q", location: "Atlanta, Georgia", rating: 4.3, review: "A favorite among locals and visitors alike, this restaurant is known for its delicious BBQ meats and sides.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a5.jpg?w=900", communityReview: "A near-legendary Atlanta BBQ spot with a devoted following — reviewers consistently praise the brisket, burnt ends, and mac and cheese, though a small handful report an inconsistent off night with dry meat. Go early; ribs sell out.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `The Optimist`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a3.jpg?w=500" },
-      { name: `Staplehouse`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a1.jpg?w=500" },
-      { name: `Bacchanalia`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a7.jpg?w=500" },
-      { name: `Fox Bros. Bar-B-Q`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a5.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1042,12 +934,6 @@ const DESTINATIONS = [
       { name: "Rex's American Grill & Bar", location: "Steamboat Springs, Colorado", rating: 4.5, review: "This classic American restaurant offers a wide range of dishes, including burgers, sandwiches, steaks, and seafood.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=900", communityReview: "A 16-year neighborhood favorite that reviewers fondly remember for its 'shroom bucket appetizer and friendly service, though a few later reviews noted declining consistency in its final years. Worth noting: Rex's permanently closed its doors on January 3, 2023.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Mahogany Ridge Brewery & Grill", location: "Steamboat Springs, Colorado", rating: 4.6, review: "This brewery and restaurant offers a fantastic selection of craft beers and a menu featuring creative, locally sourced dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=900", communityReview: "Long regarded as one of the best brewpubs in the Rockies, with reviewers consistently praising the elk shepherd's pie and bison steak (beer opinions were more mixed over the years). Worth noting: Mahogany Ridge has permanently closed.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Salt & Lime", location: "Steamboat Springs, Colorado", rating: 4.3, review: "This vibrant Mexican restaurant serves up fresh and flavorful dishes, including tacos, burritos, and margaritas.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=900", communityReview: "A well-reviewed Southwestern spot in the local Rex's Family of Restaurants group — reviewers consistently praise the fresh, elevated take on Mexican and Latin American dishes, with margaritas a frequent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Laundry Kitchen & Cocktails`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=500" },
-      { name: `Rex's American Grill & Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=500" },
-      { name: `Mahogany Ridge Brewery & Grill`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=500" },
-      { name: `Salt & Lime`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1097,12 +983,6 @@ const DESTINATIONS = [
       { name: "Shrimp 'N Stuff Downtown", location: "Galveston, Texas", rating: 4.6, review: "Casual eatery serving up delicious fried shrimp, oysters, and other seafood specialties.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=900", communityReview: "A no-frills local institution since 1976, beloved for generous portions and honest prices — reviewers consistently call it the place they return to on every Galveston trip, with the stuffed shrimp and gumbo as top picks.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "The Sunflower Bakery & Café", location: "Galveston, Texas", rating: 4.3, review: "Quaint café offering homemade baked goods, sandwiches, and a cozy atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=900", communityReview: "A beloved East End neighborhood breakfast spot reviewers call a Galveston tradition — the Grilled Cinnamon Roll and Oysters Benedict come up again and again, with the from-scratch bakery a consistent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Gaido's Seafood Restaurant`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=500" },
-      { name: `Rudy & Paco Restaurant & Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g1-1.jpg?w=500" },
-      { name: `Shrimp 'N Stuff Downtown`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=500" },
-      { name: `The Sunflower Bakery & Café`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1149,12 +1029,6 @@ const DESTINATIONS = [
       { name: "Hogfish Bar & Grill (Stock Island)", location: "The Florida Keys", rating: 4.6, review: "Known for its casual vibe and fresh seafood, Hogfish is a local favorite. Don't miss their signature hogfish sandwich!", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k3.jpg?w=900", communityReview: "A short drive off the main drag and near-universally loved for it — reviewers consistently call the Killer Hogfish Sandwich and lobster bisque some of the best they've had in the Keys, in a working-harbor setting locals actually recommend over the touristier Key West spots.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Marker 88 (Islamorada)", location: "The Florida Keys", rating: 4.3, review: "This waterfront restaurant offers a picturesque dining experience and a menu featuring seafood, steaks, and Caribbean-inspired dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k4.jpg?w=900", communityReview: "Running since 1967 and famous for sunset views over Florida Bay — reviewers consistently praise the setting and key lime pie, though a recurring complaint is long waits (sometimes over two hours) and food that can be inconsistent for the price.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Blue Heaven (Key West)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg?w=500" },
-      { name: `Latitudes (Key West)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k2.jpg?w=500" },
-      { name: `Hogfish Bar & Grill (Stock Island)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k3.jpg?w=500" },
-      { name: `Marker 88 (Islamorada)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k4.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1199,12 +1073,6 @@ const DESTINATIONS = [
       { name: "Versailles Restaurant", location: "Miami, Florida", rating: 4.5, review: "A legendary Cuban eatery serving authentic Cuban cuisine, including delicious Cuban sandwiches and pastries.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=900", communityReview: "Little Havana's most famous restaurant and a genuine Miami cultural landmark — reviewers love the ventanita cafecito window and old-school Cuban classics, though some note it's more about the history and people-watching than the most refined Cuban food in the city.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Yardbird Southern Table & Bar", location: "Miami, Florida", rating: 4.6, review: "Offers Southern comfort food with a modern twist, including their famous fried chicken and bourbon cocktails.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=900", communityReview: "The fried chicken and waffles are the clear standout, and reviewers consistently recommend it for brunch — a few note it leans touristy on South Beach's Lincoln Road strip and can feel more polished chain than local secret, but the food itself delivers.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Mandolin Aegean Bistro", location: "Miami, Florida", rating: 4.3, review: "A charming Mediterranean restaurant with a cozy courtyard, serving delicious Greek and Turkish dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900", communityReview: "A Michelin Bib Gourmand pick reviewers consistently praise for the grilled octopus, lamb chops, and one of Miami's most charming courtyard settings — the Design District favorite books out weeks in advance for a reason.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Joe's Stone Crab`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=500" },
-      { name: `Versailles Restaurant`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=500" },
-      { name: `Yardbird Southern Table & Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=500" },
-      { name: `Mandolin Aegean Bistro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1252,12 +1120,6 @@ const DESTINATIONS = [
       { name: `Raku`, location: `Las Vegas, Nevada`, rating: 4.6, review: `This off-Strip Japanese restaurant is beloved by locals and visitors alike. It serves authentic and delicious dishes such as skewered meats, sashimi, and robata-grilled items.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=900", communityReview: "Tucked into an unassuming Chinatown strip mall, Raku is regularly called one of the best Japanese restaurants in the country — reviewers rave about the housemade tofu and robata-grilled skewers, with local chefs and hospitality workers famously eating here late after their own shifts end.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Lotus of Siam`, location: `Las Vegas, Nevada`, rating: 4.3, review: `A Las Vegas institution for Thai cuisine, Lotus of Siam features a diverse menu with flavorful dishes like pad Thai, crispy duck, and spicy curries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "A James Beard Award-winning strip-mall institution that reviewers consistently call a Las Vegas must — the northern Thai dishes and crispy garlic prawns are the most-recommended orders, with the standing local advice being to skip the pad Thai and order what the chef is actually known for.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Joel Robuchon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=500" },
-      { name: `Guy Savoy`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l2.jpg?w=500" },
-      { name: `Raku`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=500" },
-      { name: `Lotus of Siam`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1304,12 +1166,6 @@ const DESTINATIONS = [
       { name: `Volario's`, location: `Winter Park, Colorado`, rating: 4.6, review: `Located at the Vasquez Creek Inn, Volario's serves up authentic Italian cuisine in a charming setting. The menu features homemade pasta, wood-fired pizza, and a variety of Italian specialties.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w7.jpg?w=900", communityReview: "Widely considered the most upscale option in Winter Park, with reviewers praising the homemade pasta and creekside patio — reviews are genuinely mixed on consistency, with some visits described as exceptional and others marked by slow service, so it may be worth checking current hours before visiting (it closes seasonally).", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Ditch on 40`, location: `Winter Park, Colorado`, rating: 4.3, review: `This casual restaurant offers a vibrant atmosphere and an extensive menu of American comfort food. Whether you're in the mood for a juicy burger, hearty sandwich, or flavorful salad, The Ditch on 40 has you covered.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w5.jpg?w=900", communityReview: "A self-described locals' dive bar that tolerates ski tourists — reviewers rave about the Ditch Burger and green chile on everything, though service reports are notably inconsistent from visit to visit.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Deno's Mountain Bistro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w8.jpg?w=500" },
-      { name: `Hernando's Pizza Pub`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w2.jpg?w=500" },
-      { name: `Volario's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w7.jpg?w=500" },
-      { name: `The Ditch on 40`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w5.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1352,10 +1208,6 @@ const DESTINATIONS = [
       { name: "Sweet Basil", location: "Vail", rating: 4.6, review: "A Vail Village institution since 1977, known for creative seasonal dishes overlooking Gore Creek.", img: img("vail-r1", 900, 650), communityReview: "One of Vail's most enduring restaurants, still evolving after nearly 50 years — reviewers consistently praise the lobster-topped dishes and creek-side setting, though reservations book out weeks ahead in peak season.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Mountain Standard", location: "Vail", rating: 4.5, review: "A game-forward American restaurant known for elk, trout, and mountain-driven cooking.", img: img("vail-r2", 900, 650), communityReview: "Praised for its wild-game-forward menu and mountain-modern atmosphere — reviewers frequently call the trout and elk dishes standouts, with the lively bar scene a common highlight for après-ski.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: "Elk or venison", img: img("vail-food1", 500, 400) },
-      { name: "Green chile", img: img("vail-food2", 500, 400) }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "Booth Falls Trail, a quieter hike than the main resort trails",
@@ -1396,10 +1248,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Frasca Food and Wine", location: "Boulder", rating: 4.7, review: "A Michelin-starred, James Beard Award-winning restaurant celebrating the food and wine of Friuli-Venezia Giulia, Italy.", img: img("boulder-r1", 900, 650), communityReview: "Widely regarded as one of Colorado's best restaurants — reviewers consistently praise the refined Friulian cooking, deep wine list, and warm, unpretentious service for a Michelin-starred room.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Black Cat Farmstead", location: "Boulder", rating: 4.6, review: "A farm-to-table restaurant with a rotating chef's tasting menu built around ingredients grown on its own historic farmstead.", img: img("boulder-r2", 900, 650), communityReview: "Diners consistently highlight the hyper-local, farm-driven tasting menu and unique private garden cabana seating as a standout Boulder-area experience.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: "Farm-to-table tasting menu", img: img("boulder-food1", 500, 400) },
-      { name: "Artisan hot chocolate", img: img("boulder-food2", 500, 400) }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1446,12 +1294,6 @@ const DESTINATIONS = [
       { name: `Merriman's (Kapalua)`, location: `Maui, Hawaii`, rating: 4.6, review: `Located in the picturesque Kapalua resort area, Merriman's offers farm-to-table cuisine using locally sourced ingredients. The menu highlights the flavors of Hawaii and the Pacific Rim.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=900", communityReview: "Frequently named as the answer in the ongoing \"Merriman's vs. Mama's\" Maui debate — many locals and repeat visitors prefer it for the Kapalua Bay sunset views and consistent farm-to-table cooking, with happy hour on the patio a favorite recommendation.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Mill House (Waikapu)`, location: `Maui, Hawaii`, rating: 4.3, review: `Situated in a beautiful plantation-era building, The Mill House serves creative dishes crafted with ingredients grown on their own farm. It offers a unique farm-to-table experience with stunning views of the Maui Tropical Plantation.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=900", communityReview: "A genuinely farm-to-table spot reviewers appreciate for being a step off the resort circuit — the plantation setting and produce grown on-site get consistent praise, with sunset views over the valley as a frequent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Mama's Fish House (Paia)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=500" },
-      { name: `Lahaina Grill (Lahaina)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=500" },
-      { name: `Merriman's (Kapalua)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=500" },
-      { name: `The Mill House (Waikapu)`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1496,12 +1338,6 @@ const DESTINATIONS = [
       { name: `Peter Luger Steak House`, location: `New York City`, rating: 4.5, review: `A classic steakhouse in Brooklyn, famous for its dry-aged steaks and old-world charm. Make sure to try their iconic porterhouse steak.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900", communityReview: "A genuinely documented decline: Peter Luger lost its Michelin star in 2022 after a famously scathing zero-star New York Times review in 2019 that criticized inconsistent, underwhelming steak and brusque service. It still has passionate defenders who call the burger and the 138-year history worth it regardless — but go in knowing the food no longer has universal acclaim.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Momofuku Ssäm Bar`, location: `New York City`, rating: 4.6, review: `This trendy spot in the East Village offers innovative Asian-inspired dishes, such as their famous pork buns and bo ssäm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=900", communityReview: "Momofuku Ssäm Bar has closed — both its original East Village spot and its 2021 relocation to South Street Seaport now show as permanently closed. David Chang's Momofuku Noodle Bar, the sister restaurant that started it all, is still open and thriving in the East Village if you want the brand experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900", communityReview: "New York's most famous deli since 1888, and reviewers overwhelmingly say it earns the hype — the hand-carved pastrami and old-school counter chaos are consistently called a must-do. One fun bit of contrarian history: a 1979 New York Times ranking of the city's best Jewish delis actually rated Katz's pastrami the weakest of the top tier, calling it \"tough\" and \"barely edible\" — a reminder that even legends have critics.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Le Bernardin`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=500" },
-      { name: `Peter Luger Steak House`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=500" },
-      { name: `Momofuku Ssäm Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=500" },
-      { name: `Katz's Delicatessen`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1548,12 +1384,6 @@ const DESTINATIONS = [
       { name: `Vedge`, location: `Philadelphia, Pennsylvania`, rating: 4.6, review: `A popular choice for vegetarians and vegans, Vedge serves inventive plant-based dishes with bold flavors. Try their signature dishes like the rutabaga fondue, eggplant braciole, and the wood-roasted carrot.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=900", communityReview: "Michelin-recommended and James Beard-nominated, often called one of the best vegan restaurants in the country — reviewers rave about the rutabaga fondue, though a few mention smaller portions and higher prices than expected for a plant-based menu.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Talula's Garden`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `Located in Washington Square, this charming farm-to-table restaurant offers a delightful menu highlighting local and sustainable ingredients. The butternut squash ravioli, mushroom toast, and roasted chicken are crowd favorites.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=900", communityReview: "A garden-patio favorite reviewers consistently call magical for a special occasion, with the lamb bolognese and brunch fried chicken and waffle earning particular praise — Taylor Swift and Travis Kelce were even spotted there for a family Mother's Day brunch.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Zahav`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=500" },
-      { name: `Vernick Food & Drink`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=500" },
-      { name: `Vedge`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=500" },
-      { name: `Talula's Garden`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1598,12 +1428,6 @@ const DESTINATIONS = [
       { name: `Little Serow`, location: `Washington, D.C.`, rating: 4.5, review: `If you're a fan of Thai cuisine, Little Serow is a must-visit. This small and intimate restaurant serves up authentic and spicy Northern Thai dishes in a prix-fixe format. Reservations are highly recommended.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=900", communityReview: "Frequently mentioned in the same breath as Rose's Luxury and Komi as DC's top tier of no-reservation fine dining — reviewers love the family-style Northern Thai prix fixe and warm, high-energy service, though the no-reservations policy means a real wait during peak hours.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Fiola`, location: `Washington, D.C.`, rating: 4.6, review: `Fiola is a fine dining establishment that specializes in Italian cuisine. The menu features exquisite dishes made with high-quality ingredients, and the service is impeccable.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=900", communityReview: "A Michelin-starred, James Beard-winning Italian tasting menu widely called one of DC's best restaurants — most reviews are glowing, though a notable minority report uneven service and steep pricing (one detailed a $1,000+ tab with service they called disappointing), so it's not universally flawless despite the accolades.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Dabney`, location: `Washington, D.C.`, rating: 4.3, review: `Located in a historic row house, The Dabney focuses on showcasing the Mid-Atlantic region's local ingredients. The menu changes frequently to highlight seasonal offerings, and the open kitchen adds to the restaurant's charm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=900", communityReview: "A Michelin-starred Mid-Atlantic wood-hearth kitchen named Washingtonian's #1 restaurant in 2023 — reviewers consistently call it one of the best meals in the city, with a couple noting the Blagden Alley location is easy to miss on a first visit.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Rose's Luxury`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=500" },
-      { name: `Little Serow`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=500" },
-      { name: `Fiola`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=500" },
-      { name: `The Dabney`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1650,12 +1474,6 @@ const DESTINATIONS = [
       { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=900", communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Il Santo Bevitore`, location: `Florence`, rating: 4.3, review: `This cozy and rustic restaurant focuses on seasonal ingredients and traditional Tuscan flavors. The menu is varied, and the dishes are beautifully presented. Don't miss their handmade pasta and the selection of local wines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=900", communityReview: "A Michelin-recognized favorite with locals as much as tourists — reviewers consistently praise the seasonal Tuscan menu and lively atmosphere, though portions run smaller than expected and reservations are essential, as it fills up fast even on weeknights.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Osteria All'Antico Vinaio`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=500" },
-      { name: `Trattoria Mario`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=500" },
-      { name: `La Giostra`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=500" },
-      { name: `Il Santo Bevitore`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1700,12 +1518,6 @@ const DESTINATIONS = [
       { name: `The Ravenous Pig`, location: `Orlando, Florida (2023)`, rating: 4.5, review: `A popular gastropub featuring a creative menu with a focus on locally sourced ingredients. It offers a mix of innovative dishes and classic pub fare.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=900", communityReview: "A Michelin Bib Gourmand gastropub with a devoted local following — reviewers consistently praise the farm-to-table cooking (the Iberian pork and pork belly starter get repeat mentions) and reasonable pricing for the quality.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Kadence`, location: `Orlando, Florida (2023)`, rating: 4.6, review: `A unique omakase-style sushi experience where the chefs prepare and serve a curated selection of dishes right in front of you. Reservations are recommended well in advance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=900", communityReview: "A Michelin-starred, nine-seat omakase counter with many glowing reviews calling it one of Orlando's best meals — but worth knowing before booking: multiple independent reviews describe alarming incidents at the counter, including reports of inappropriate jokes and, in one detailed account, a chef brandishing a knife over a guest's comment. Read recent reviews yourself before committing to the $200+ prepaid seating.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Yellow Dog Eats`, location: `Orlando, Florida (2023)`, rating: 4.3, review: `A charming spot known for its creative sandwiches, salads, and quirky atmosphere. It's a local favorite for its delicious comfort food.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=900", communityReview: "A funky, dog-friendly sandwich shop in a historic 1910 house that reviewers consistently call an Orlando hidden gem — the pulled pork sandwiches and homemade desserts draw praise, with roaming chickens and a laid-back backyard patio as part of the charm.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Victoria & Albert's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=500" },
-      { name: `The Ravenous Pig`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=500" },
-      { name: `Kadence`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=500" },
-      { name: `Yellow Dog Eats`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1752,12 +1564,6 @@ const DESTINATIONS = [
       { name: `Loveless Cafe`, location: `Nashville, Tennessee`, rating: 4.6, review: `Famous for its Southern comfort food, Loveless Cafe is renowned for its biscuits, country ham, and homemade preserves. A perfect spot for a traditional Southern breakfast or brunch.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394431453_10224811283697613_1664064479663080319_n.jpg?w=900", communityReview: "A Nashville landmark since 1951, and the biscuits still earn near-universal praise — but reviews on the rest of the menu are more mixed, with some longtime visitors feeling the historic reputation now outpaces the food and portions for the price.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Martin's Bar-B-Que Joint`, location: `Nashville, Tennessee`, rating: 4.3, review: `If you're craving barbecue, Martin's is the place to be. They serve mouthwatering smoked meats, including ribs, brisket, and pulled pork, along with a variety of tasty sauces.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=900", communityReview: "A West Tennessee whole-hog BBQ specialist that reviewers consistently praise for the brisket and pulled pork, with live music at some locations a fun bonus — reviews are mostly strong, though a handful mention inconsistent sides or an off night on the sausage.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Hattie B's Hot Chicken`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=500" },
-      { name: `Prince's Hot Chicken Shack`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394535282_10224807912293330_6820641152032916730_n.jpg?w=500" },
-      { name: `Loveless Cafe`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/394431453_10224811283697613_1664064479663080319_n.jpg?w=500" },
-      { name: `Martin's Bar-B-Que Joint`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1802,12 +1608,6 @@ const DESTINATIONS = [
       { name: `Uchi`, location: `Austin & San Antonio`, rating: 4.5, review: `A renowned spot for Japanese cuisine, offering a creative menu of sushi and sashimi in a stylish setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=900", communityReview: "Widely considered Austin's best sushi, from James Beard Award-winning chef Tyson Cole — reviewers consistently praise the inventive small plates and hot dishes alongside the sushi, though it's a splurge and reservations book out well in advance.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Emmer & Rye`, location: `Austin & San Antonio`, rating: 4.6, review: `Known for its focus on seasonal and local ingredients, this restaurant offers a unique dining experience with dim sum-style service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=900", communityReview: "Praised for its dim-sum-cart-style service and hyper-local, seasonal menu that changes constantly — reviewers call the format genuinely fun and different from typical fine dining, with the homemade pastas a recurring highlight.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900", communityReview: "An Austin institution that's since grown into a regional chain — reviewers consistently praise the Trailer Park (fried chicken) taco and queso, with the caveat that service and cleanliness can vary noticeably between locations.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Franklin Barbecue`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=500" },
-      { name: `Uchi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=500" },
-      { name: `Emmer & Rye`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=500" },
-      { name: `Torchy's Tacos`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1854,12 +1654,6 @@ const DESTINATIONS = [
       { name: `The Dayton Room`, location: `Twin Lakes, Colorado`, rating: 4.6, review: `Located within the Twin Lakes Inn, this restaurant provides a fine dining experience with a menu that features both creative dishes and comforting classics. It's known for its exceptional service and intimate setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454731192_10226247522882695_8438940723759965963_n.jpg?w=900", communityReview: "Reviewers repeatedly call this one of the best surprise meals of their whole Colorado trip — unexpectedly gourmet dishes like wild game meatloaf in a warm, intimate dining room, though at least one review mentions an off night with a curt staff member.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Casa Sanchez`, location: `Twin Lakes, Colorado`, rating: 4.3, review: `Located nearby in Leadville, this Mexican restaurant offers delicious, authentic Mexican cuisine. It's worth the short drive if you're craving something different.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454839035_10226247524002723_1749134143176923779_n.jpg?w=900", communityReview: "A Leadville favorite reviewers consistently praise for generous portions, strong margaritas, and a complimentary tequila shot served as \"Mexican dessert\" — a handful of reviews note inconsistent salsa or an occasional off dish, but the overall verdict is overwhelmingly positive.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `The Twin Lakes Inn & Saloon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454741954_10226247521722666_8320194507133385005_n.jpg?w=500" },
-      { name: `The Twin Lakes General Store`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454773247_10226247522282680_6115943612354302074_n.jpg?w=500" },
-      { name: `The Dayton Room`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454731192_10226247522882695_8438940723759965963_n.jpg?w=500" },
-      { name: `Casa Sanchez`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454839035_10226247524002723_1749134143176923779_n.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1905,12 +1699,6 @@ const DESTINATIONS = [
       { name: `Din Tai Fung`, location: `Seattle, Washington`, rating: 4.6, review: `Famous for soup dumplings and Taiwanese dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=900", communityReview: "A globally acclaimed Taiwanese chain, and reviewers consistently say it earns the hype despite being a chain — the xiao long bao (soup dumplings) draw near-universal praise for consistency, with the dim-sum-style ordering sheet making it easy to over-order.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tilikum Place Café`, location: `Seattle, Washington`, rating: 4.3, review: `Known for its amazing Dutch baby pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=900", communityReview: "A tiny, 12-table neighborhood favorite reviewers call a hidden gem for brunch — the Dutch baby pancakes are the signature order, though the small dining room means real waits and reservations are essential, especially on weekends.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Canlis`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=500" },
-      { name: `The Walrus and the Carpenter`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=500" },
-      { name: `Din Tai Fung`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=500" },
-      { name: `Tilikum Place Café`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1955,12 +1743,6 @@ const DESTINATIONS = [
       { name: `Neptune Oyster`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Tiny, no-reservations spot known for some of the best lobster rolls in the North End.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900", communityReview: "Frequently named the actual best oyster spot in Boston, and locals steer visitors here over Union Oyster House specifically for food quality — no reservations, tiny space, and real waits, but reviewers overwhelmingly say the butter-poached lobster roll is worth it.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Giacomo's`, location: `Boston & Martha's Vineyard`, rating: 4.6, review: `Tiny, loud, cash-only — authentic pasta and seafood; the lobster fra diavolo is legendary.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=900", communityReview: "The original North End location (355 Hanover St) was ranked one of the best Italian restaurants in the U.S. by Tasting Table — reviewers consistently rave about the pumpkin tortellini and seafood, with the line-out-the-door, cash-only, no-reservations routine treated as part of the experience. Note: a separate South End sister location, Casa Giacomo's, has closed — make sure you're headed to the original.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900", communityReview: "An island landmark right by the Vineyard Haven ferry terminal — reviewers openly call it touristy but say it's genuinely fun, with the mussels, chowder, and waterfront fireplace atmosphere earning consistent praise even from visitors who expected a tourist-trap letdown.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Union Oyster House`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=500" },
-      { name: `Neptune Oyster`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=500" },
-      { name: `Giacomo's`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=500" },
-      { name: `The Black Dog Tavern`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2009,12 +1791,6 @@ const DESTINATIONS = [
       { name: `Tadich Grill`, location: `San Francisco, California`, rating: 4.6, review: `Classic historic SF restaurant dating back to the Gold Rush era.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=900", communityReview: "The oldest restaurant in California, dating to 1849 — reviewers call the old-school charm and old-fashioned menu (think petrale sole and lamb chops with mint jelly) a genuine time capsule. Often debated as the more polished alternative to Swan Oyster Depot's counter-and-a-wait experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900", communityReview: "Reviewers overwhelmingly say it lives up to the hype — the croissants and morning buns draw particular praise, and while the line can be long, most say it moves quickly and is worth the wait.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Hog Island Oyster Co.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=500" },
-      { name: `Swan Oyster Depot`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=500" },
-      { name: `Tadich Grill`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=500" },
-      { name: `Tartine Bakery`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -2062,12 +1838,6 @@ const DESTINATIONS = [
       { name: `La Taverna dei Fori Imperiali`, location: `Rome`, rating: 4.3, review: `This cozy restaurant near the Roman Forum is known for its classic Roman dishes and warm atmosphere.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=900", communityReview: `A favorite for travelers near the Colosseum — reviewers highlight the fresh pasta and warm, welcoming service, though a few mention inconsistent food temperatures or tourist-level pricing.`, communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Il Pagliaccio`, location: `Rome`, rating: 4.6, review: `A two-Michelin-starred restaurant known for creative, boundary-pushing Italian cuisine from chef Anthony Genovese.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=900", communityReview: `Reviewers routinely rank this among the best tasting menus they've had anywhere, praising the inventive courses and attentive service — the price tag draws the only real criticism.`, communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Osteria Francescana, Modena`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=500" },
-      { name: `Da Enzo al 29`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=500" },
-      { name: `La Pergola`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=500" },
-      { name: `La Taverna dei Fori Imperiali`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Rome away from the main sights, worth the wander`,
@@ -2108,10 +1878,6 @@ const DESTINATIONS = [
       { name: `Trattoria da Tito`, location: `Florence`, rating: 4.3, review: `This classic Tuscan trattoria is known for its hearty, traditional dishes and friendly service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=900", communityReview: `Known for its graffiti-covered walls and rowdy, singing waiters as much as the Florentine steak — reviewers call it a fun, high-energy spot, though a few mention rushed service during busy hours.`, communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Trattoria Sostanza`, location: `Florence`, rating: 4.5, review: `This small, unassuming restaurant is known for its famous buttered chicken dish, as well as other classic Tuscan dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=900", communityReview: `The butter chicken has a near-legendary reputation online — reviewers repeatedly call it one of the best dishes they've had in Italy, with the communal seating adding to the charm for most diners.`, communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Trattoria da Tito`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=500" },
-      { name: `Trattoria Sostanza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Florence away from the main sights, worth the wander`,
@@ -2151,9 +1917,6 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: `La Torre`, location: `Pisa`, rating: 4.4, review: `A seafood-and-pasta spot just off the walk to the Leaning Tower, popular with both locals and travelers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=900", communityReview: `Reviewers consistently praise the lobster pasta and seafood dishes, with several calling it one of the best meals of their Italy trip — a handful mention it gets busy at peak dinner hours.`, communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Seafood pasta`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2198,9 +1961,6 @@ const DESTINATIONS = [
       { name: "Antica Pizzeria Di Matteo", location: "Naples", rating: 4.5, review: "A cheap, unpretentious Naples institution on Via dei Tribunali, known for turning out fantastic pizza without the ceremony of its more famous neighbors.", img: "assets/uploads/naples-g3.jpg", communityReview: "Often called the underdog favorite among Naples pizza spots — reviewers love that it's easy to walk right into compared to the hours-long waits elsewhere, without sacrificing quality.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Antica Friggitoria La Masardona", location: "Naples", rating: 4.3, review: "A Naples specialist in pizza fritta — fried pizza — running since 1945, serving a completely different (and less internationally famous) side of Neapolitan pizza tradition.", img: "assets/uploads/naples-g4.jpg", communityReview: "Reviewers consistently recommend this as the place to try fried pizza specifically, distinct from the wood-fired classics found elsewhere in the city — a genuinely different dish worth seeking out on its own.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Neapolitan pizza`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i13.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `The lesser-visited Herculaneum ruins, smaller and less crowded than Pompeii but remarkably well preserved`,
@@ -2241,10 +2001,6 @@ const DESTINATIONS = [
       { name: "Ristorante La Caravella", location: "Amalfi", rating: 4.4, review: "A Michelin-starred restaurant set in a 12th-century palace near Amalfi's old shipyards, blending regional dishes with modern, experimental touches.", img: "assets/uploads/amalfi-g2.jpg", communityReview: "One of the most decorated dining rooms on this stretch of coast — reviewers praise both the historic setting and dishes like squid-ink pasta filled with ricotta and lobster, calling it a genuine special-occasion splurge.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Ristorante il Chiostro", location: "Amalfi", rating: 4.3, review: "A charming spot right by the Amalfi Cathedral, with outdoor seating looking straight onto the piazza.", img: "assets/uploads/amalfi-g3.jpg", communityReview: "Reviewers consistently mention the views of the cathedral square as the highlight, with scratch-made pasta — the lasagna and pesto get particular praise — rounding out a reliably good meal in the heart of town.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Sensi Restaurant", location: "Amalfi", rating: 4.5, review: "A Michelin-starred seafood specialist with multi-course tasting menus and a romantic outdoor terrace for sunset dining.", img: "assets/uploads/amalfi-hero.jpg", communityReview: "Reviewers consistently call the terrace dinner one of the highlights of the whole Amalfi Coast, with the zucchini flowers stuffed with ricotta and zucchini linguine getting particular praise — request the terrace table when booking.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Limoncello`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i4.jpg?w=500" },
-      { name: `Coastal pastries`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i11.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2288,12 +2044,6 @@ const DESTINATIONS = [
       { name: `Ichiran Ramen`, location: `Tokyo`, rating: 4.5, review: `This popular ramen chain in Tokyo allows diners to customize their own bowls of ramen in private booths.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=900", communityReview: "Famous for solo dining booths and a fully customizable tonkotsu broth — reviewers consistently enjoy the novelty and quality, though some call it more tourist experience than Kyoto or Tokyo's best ramen.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Genki Sushi`, location: `Tokyo`, rating: 4.3, review: `This conveyor belt sushi chain is a fun and affordable option for sushi lovers in Tokyo and other cities.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=900", communityReview: "A popular, affordable conveyor-belt sushi chain — reviews are mixed, with many enjoying the fun, kid-friendly format while others note inconsistent freshness and slow service at busier locations.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Sukiyabashi Jiro`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=500" },
-      { name: `Ichiran Ramen`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=500" },
-      { name: `Kikunoi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=500" },
-      { name: `Genki Sushi`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Tokyo away from the main sights, worth the wander`,
@@ -2334,9 +2084,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: `Kikunoi`, location: `Kyoto`, rating: 4.6, review: `This three-Michelin-starred restaurant in Kyoto serves traditional kaiseki cuisine, a multi-course meal consisting of beautifully presented dishes made with seasonal ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=900", communityReview: "A three-Michelin-starred kaiseki institution led by chef Yoshihiro Murata — most reviewers call it an unforgettable, exquisitely presented meal, though a few find the pacing slow and the experience doesn't match the price for their taste.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Kyoto away from the main sights, worth the wander`,
@@ -2374,9 +2121,6 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: `Dotonbori Street`, location: `Osaka`, rating: 4.3, review: `Located in Osaka, this vibrant street is home to various street food vendors offering everything from takoyaki to okonomiyaki.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=900", communityReview: "Osaka's best-known food street, lined with neon signs and street stalls — reviewers consistently call it a must-see for takoyaki and okonomiyaki, while noting it's crowded and touristy by evening.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Dotonbori Street`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2420,9 +2164,6 @@ const DESTINATIONS = [
       { name: "Kosaku Hoto Kosaku", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A humble, locally loved noodle shop known for its exceptional hoto noodle soup, tucked into the Mt. Fuji area away from the busier tourist strips.", img: "assets/uploads/fuji-g2.jpg", communityReview: "Reviewers consistently praise the generous portions and rich broth, with the spicy pork hoto and fried oyster getting particular mentions — a genuine local favorite, not just a tourist stop.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Shaw's Sushi Bar & Dining", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "A stylish, modern sushi spot right across from Kawaguchiko Station, with beautifully presented nigiri and rolls.", img: "assets/uploads/fuji-g3.jpg", communityReview: "Reviewers consistently say the quality justifies the higher price tag for the area, with the variety of sushi sets — including a dedicated vegetarian option — earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Hoto noodles`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j17.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2468,12 +2209,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900", communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Nikolas Taverna`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=500" },
-      { name: `To Ouzeri tou Laki`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=500" },
-      { name: `Kritamon`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=500" },
-      { name: `Selene`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Athens away from the main sights, worth the wander`,
@@ -2512,9 +2247,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Selene", location: "Santorini", rating: 4.5, review: "This upscale restaurant in Santorini is known for its gourmet Greek cuisine made with locally sourced ingredients. Try their Santorinian fava, lobster pasta, and smoked pork with eggplant puree.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=900", communityReview: "A destination restaurant set in a converted 18th-century monastery, led by a Michelin-starred chef — reviewers consistently call it one of the best meals on the island, though several flag steep pricing and a slow-paced, hours-long tasting menu.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Santorini away from the main sights, worth the wander`,
@@ -2552,9 +2284,6 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: "Nikolas Taverna", location: "Mykonos", rating: 4.3, review: "This traditional Greek taverna is known for its delicious grilled octopus, freshly caught seafood, and homemade desserts.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=900", communityReview: "A long-running, unpretentious taverna in Mykonos Town — reviewers consistently praise the grilled octopus and fresh seafood as some of the best on the island, with an authentic, low-key atmosphere compared to the island's flashier spots.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2599,12 +2328,6 @@ const DESTINATIONS = [
       { name: "Depot Eatery & Oyster Bar", location: "Auckland", rating: 4.3, review: "This Auckland restaurant is famous for its fresh New Zealand seafood, particularly the oysters.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=900", communityReview: "Chef Al Brown's laid-back oyster bar is regularly called one of Auckland's best — reviewers rave about the fresh oysters and lively atmosphere, though it's a no-reservations spot so expect a wait during peak hours.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "The Grove", location: "Auckland", rating: 4.5, review: "A fine-dining restaurant in Auckland known for its innovative dishes using locally sourced ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=900", communityReview: "A longtime Auckland fine-dining favorite, often booked for anniversaries and celebrations — reviewers consistently praise the outstanding service and thoughtful touches, with the tasting menu earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Depot Eatery & Oyster Bar`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg?w=500" },
-      { name: `The Grove`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz25.jpg?w=500" },
-      { name: `Fergburger`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz11.jpg?w=500" },
-      { name: `Ortega Fish Shack`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz22.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Auckland away from the main sights, worth the wander`,
@@ -2645,9 +2368,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Fergburger", location: "Queenstown", rating: 4.6, review: "A burger joint in Queenstown that is famous for its delicious, oversized burgers and long lines.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz11.jpg?w=900", communityReview: "A Queenstown institution and a rite of passage — reviewers say it's genuinely worth the notoriously long queue (the lamb with blue cheese is the top recommendation), with efficient staff keeping the line moving faster than it looks.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    mustTryFoods: [
-      { name: `Local specialties`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
 `A quiet corner of Queenstown away from the main sights, worth the wander`,
@@ -2686,9 +2406,6 @@ const DESTINATIONS = [
     restaurants: [
       { name: `Wellington Chocolate Factory`, location: `Wellington`, rating: 4.3, review: `A chocolate factory in Wellington that also operates a café offering a variety of chocolate treats.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=900", communityReview: "A bean-to-bar chocolate maker with an attached café — reviewers enjoy the factory tour and tasting flights, calling it a fun, kid-friendly stop that's more experience than sit-down meal.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Ortega Fish Shack", location: "Wellington", rating: 4.7, review: "A seafood restaurant in Wellington that offers a variety of dishes made from fresh, local seafood.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz22.jpg?w=900", communityReview: "Widely called one of Wellington's best restaurants — reviewers consistently praise the fresh seafood and warm service, with several naming it the best meal of their entire New Zealand trip. It's tiny, so book ahead.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Wellington Chocolate Factory`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -2730,9 +2447,6 @@ const DESTINATIONS = [
       "Soak in a natural hot spring"
     ],
     restaurants: [],
-    mustTryFoods: [
-      { name: "Local trout", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz21.jpg?w=500" }
-    ],
     foodPhotos: [],
     hiddenGems: [
       "The short walk to the base of Huka Falls, away from the main lookout crowds",
@@ -2777,12 +2491,6 @@ const DESTINATIONS = [
       { name: "Le Comptoir du Relais", location: "Paris", rating: 4.5, review: "This lively bistro serves classic French dishes like escargots, beef tartare, and coq au vin. It's popular with locals and tourists alike.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=900", communityReview: "A beloved Saint-Germain bistro that reviewers call quintessentially Parisian — indulgent, authentic plates and warm service, though it's famously tiny, gets crowded, and doesn't take reservations for dinner.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Le Grand Véfour", location: "Paris", rating: 4.6, review: "This elegant restaurant has been a favorite of the city's elite since the 18th century. It serves classic French dishes in a stunning historic setting.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=900", communityReview: "One of Paris's oldest restaurants, dating to 1784, with a jaw-dropping 18th-century dining room — reviewers consistently praise the refined cooking and history (Napoleon and Victor Hugo both dined here), though a few call the prices steep relative to the food.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "L'Ambroisie", location: "Paris", rating: 4.3, review: "This three-Michelin-starred restaurant is known for its elegant and refined French cuisine, utilizing only the freshest ingredients. It's a perfect date restaurant with its romantic ambiance.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=900", communityReview: "A three-Michelin-starred institution on Place des Vosges — opinion is genuinely split, with many calling it the best meal of their life and others (at these prices) finding the classic, unchanging menu less exciting than more inventive competitors.", communitySource: "Google/Yelp/Tripadvisor" }
-    ],
-    mustTryFoods: [
-      { name: `Le Jules Verne`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=500" },
-      { name: `Le Comptoir du Relais`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=500" },
-      { name: `Le Grand Véfour`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=500" },
-      { name: `L'Ambroisie`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=500" }
     ],
     foodPhotos: [],
     hiddenGems: [
