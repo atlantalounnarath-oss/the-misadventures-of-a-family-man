@@ -147,7 +147,9 @@ const DESTINATIONS = [
       { name: "The Jungle Club", location: "Koh Samui", rating: 4.5, review: "Incredible hilltop views over the island; go for sunset if you can time it.", img: wpImg(812, 900), communityReview: "Reviewers consistently rave about the sunset views over Chaweng Bay — widely called one of the most breathtaking spots on the island — though the steep drive up and inconsistent service on busy nights draw occasional complaints.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Tree Tops Signature Dining", location: "Koh Samui", rating: 4.6, review: "A romantic, special-occasion meal worth booking ahead for.", img: wpImg(803, 900), communityReview: "A treehouse fine-dining experience frequently booked for honeymoons and anniversaries — reviewers consistently praise the setting and attentive service; the main criticism is steep pricing for the portion sizes.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734685124_10234321371443863_2297942505490832443_n.jpg?w=1000", caption: "A fresh coconut, Koh Samui" }
+    ],
     hiddenGems: [
       "The Secret Buddha Garden hidden up in the jungle hills",
       "Laem Sor Pagoda at low tide, when you can walk right out to it",
@@ -191,7 +193,9 @@ const DESTINATIONS = [
       { name: "Jeh O Chula", location: "Bangkok", rating: 4.4, review: "Tom Yum Mama noodles turned into a full-contact food event.", img: wpImg(813, 900), communityReview: "A Michelin Bib Gourmand institution famous for its Tom Yum Mama noodles — most reviewers say it's every bit worth the notoriously long queue, though a vocal minority calls it overrated instant noodles riding a social-media wave.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Sorn", location: "Bangkok", rating: 4.8, review: "One of Thailand's premier fine-dining restaurants — southern Thai cuisine done at the highest level.", img: wpImg(804, 900), communityReview: "Thailand's first three-Michelin-starred restaurant, celebrated for its bold, intensely spiced tour of Southern Thai cuisine. Reservations are famously difficult to land, and reviewers near-universally call it one of the best meals of their trip.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734797722_10234321373163906_8417483070272532601_n.jpg?w=1000", caption: "$0.75 boba from a street cart, Bangkok" }
+    ],
     hiddenGems: [
       "Talat Noi, a maze of street art and old machine shops near the river",
       "The rooftop of Wat Arun at golden hour, before the tour buses arrive",
@@ -320,7 +324,10 @@ const DESTINATIONS = [
       { name: "Chả Cá Thăng Long", location: "Hanoi", rating: 4.5, review: "Hanoi's iconic turmeric fish with dill, cooked tableside.", img: wpImg(823, 900), communityReview: "A go-to spot for Hanoi's signature turmeric-and-dill fish dish, cooked tableside — reviewers consistently praise the tableside sizzle and flavor as a memorable, distinctly Hanoi experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Cafe Giảng", location: "Hanoi", rating: 4.8, review: "The birthplace of Vietnamese egg coffee — whipped into something between dessert and caffeine delivery system.", img: wpImg(822, 900), communityReview: "The original home of Vietnamese egg coffee, now run by the second generation of the family that invented it — reviewers near-universally call it a must-try, tucked down a narrow alley with a distinctly old-Hanoi atmosphere.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734733254_10234321424205182_6067649309802778866_n.jpg?w=1000", caption: "A cafe right on the famous Train Street, Hanoi" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/731834741_10234321412204882_4177174544736822969_n.jpg?w=1000", caption: "The street food vendor at Bún Chả Hương Liên, the 'Obama Bun Cha' spot, Hanoi" }
+    ],
     hiddenGems: [
       "The train street, where a working railway runs inches from café tables",
       "A rooftop over West Lake with almost no other tourists in sight",
@@ -1609,7 +1616,19 @@ const DESTINATIONS = [
       { name: `Emmer & Rye`, location: `Austin & San Antonio`, rating: 4.6, review: `Known for its focus on seasonal and local ingredients, this restaurant offers a unique dining experience with dim sum-style service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=900", communityReview: "Praised for its dim-sum-cart-style service and hyper-local, seasonal menu that changes constantly — reviewers call the format genuinely fun and different from typical fine dining, with the homemade pastas a recurring highlight.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900", communityReview: "An Austin institution that's since grown into a regional chain — reviewers consistently praise the Trailer Park (fried chicken) taco and queso, with the caveat that service and cleanliness can vary noticeably between locations.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451699713_10226040354903625_4185247209944190523_n-1.jpg?w=1000", caption: "A cold one under Pinthouse Pizza's skull-and-crossbones glass, Austin" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451750108_10226040402304810_612688038839754066_n-1.jpg?w=1000", caption: "Half cheese, half pepperoni at Pinthouse Pizza, Austin" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451441931_10226040402664819_835888219598738478_n-1.jpg?w=1000", caption: "Margherita pizza and spinach artichoke dip, Pinthouse Pizza, Austin" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451582081_10226042215030127_2779555559285831816_n-1.jpg?w=1000", caption: "An iced churro drink from Churro Co., Austin" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808062_10226042215430137_4537621598256951060_n-1.jpg?w=1000", caption: "The churro dessert plate at Churro Co., Austin — ice cream, caramel, the works" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451656754_10226046488896971_8164069952077370195_n-1.jpg?w=1000", caption: "A Brazilian Guaraná soda, grabbed from a San Antonio corner store" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451749315_10226040373704095_8536477694278770296_n-1.jpg?w=1000", caption: "Nachos and good company at Hops and Hounds, San Antonio" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451803830_10226050966968920_2991322089243005392_n-1.jpg?w=1000", caption: "A mint-topped cocktail at Bliss, San Antonio" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n-1.jpg?w=1000", caption: "An iced matcha, also from Bliss, San Antonio" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n-1.jpg?w=1000", caption: "A cucumber-garnished cocktail, Bliss, San Antonio" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452079076_10226051023250327_6674203015847509601_n-1.jpg?w=1000", caption: "Eggs Benedict at Magnolia Table — the Waco lunch-and-gas rest stop that turned into an actual meal" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Austin & San Antonio`,
@@ -1744,7 +1763,9 @@ const DESTINATIONS = [
       { name: `Giacomo's`, location: `Boston & Martha's Vineyard`, rating: 4.6, review: `Tiny, loud, cash-only — authentic pasta and seafood; the lobster fra diavolo is legendary.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=900", communityReview: "The original North End location (355 Hanover St) was ranked one of the best Italian restaurants in the U.S. by Tasting Table — reviewers consistently rave about the pumpkin tortellini and seafood, with the line-out-the-door, cash-only, no-reservations routine treated as part of the experience. Note: a separate South End sister location, Casa Giacomo's, has closed — make sure you're headed to the original.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900", communityReview: "An island landmark right by the Vineyard Haven ferry terminal — reviewers openly call it touristy but say it's genuinely fun, with the mussels, chowder, and waterfront fireplace atmosphere earning consistent praise even from visitors who expected a tourist-trap letdown.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/516319416_10230016521665309_4224937201174103943_n.jpg?w=1000", caption: "A box of assorted cannoli from Mike's Pastry, North End" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Boston & Martha's Vineyard`,
@@ -1791,7 +1812,15 @@ const DESTINATIONS = [
       { name: `Tadich Grill`, location: `San Francisco, California`, rating: 4.6, review: `Classic historic SF restaurant dating back to the Gold Rush era.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=900", communityReview: "The oldest restaurant in California, dating to 1849 — reviewers call the old-school charm and old-fashioned menu (think petrale sole and lamb chops with mint jelly) a genuine time capsule. Often debated as the more polished alternative to Swan Oyster Depot's counter-and-a-wait experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900", communityReview: "Reviewers overwhelmingly say it lives up to the hype — the croissants and morning buns draw particular praise, and while the line can be long, most say it moves quickly and is worth the wait.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705374252_10233915930068082_9081015203643334507_n.jpg?w=1000", caption: "Fresh oysters at Hog Island Oyster Co." },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233915928388040_8731399652189066962_n.jpg?w=1000", caption: "Clam chowder at Hog Island Oyster Co." },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707532214_10233915824105433_3304175684508296793_n-1.jpg?w=1000", caption: "Grilled cheese with oysters, Hog Island Oyster Co. — very Northern California" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707414983_10233920717587767_7228427882513538694_n.jpg?w=1000", caption: "Part of the tasting spread at Nari, one of the best modern Thai restaurants in the country" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705861116_10233920565223958_6245413779064549346_n.jpg?w=1000", caption: "More from Nari's tasting menu" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/703342876_10233920564383937_9118660443004331987_n.jpg?w=1000", caption: "Another course at Nari" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/706918803_10233921191879624_8403528640698133458_n.jpg?w=1000", caption: "Nari, San Francisco" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of San Francisco, California`,
