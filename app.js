@@ -215,7 +215,8 @@ const routes = {
   "/eats": renderEats,
   "/misadventures": renderMisadventures,
   "/gallery": renderGallery,
-  "/about": renderAbout
+  "/about": renderAbout,
+  "/herstories": renderHerStoriesList
 };
 
 function parseHash() {
@@ -231,6 +232,7 @@ function router() {
   let html = "";
   const destMatch = path.match(/^\/destinations\/([a-z0-9-]+)$/);
   const advMatch = path.match(/^\/adventures\/([a-z0-9-]+)$/);
+  const herMatch = path.match(/^\/herstories\/([a-z0-9-]+)$/);
 
   if (routes[path]) {
     html = routes[path]();
@@ -238,6 +240,8 @@ function router() {
     html = renderDestinationDetail(getDestination(destMatch[1]));
   } else if (advMatch && getAdventure(advMatch[1])) {
     html = renderAdventureDetail(getAdventure(advMatch[1]));
+  } else if (herMatch && getHerStory(herMatch[1])) {
+    html = renderHerStoryDetail(getHerStory(herMatch[1]));
   } else {
     html = render404();
   }
@@ -255,7 +259,9 @@ function pageTitle(path) {
   if (destMatch) { const d = getDestination(destMatch[1]); if (d) return `${d.name} — ${base}`; }
   const advMatch = path.match(/^\/adventures\/([a-z0-9-]+)$/);
   if (advMatch) { const a = getAdventure(advMatch[1]); if (a) return `${a.title} — ${base}`; }
-  const map = { "/adventures": "Adventures", "/destinations": "Destinations", "/eats": "Eats Worth the Flight", "/misadventures": "Misadventures", "/gallery": "Gallery", "/about": "About" };
+  const herMatch = path.match(/^\/herstories\/([a-z0-9-]+)$/);
+  if (herMatch) { const t = getHerStory(herMatch[1]); if (t) return `${t.name} · HerStories — ${base}`; }
+  const map = { "/adventures": "Adventures", "/destinations": "Destinations", "/eats": "Eats Worth the Flight", "/misadventures": "Misadventures", "/gallery": "Gallery", "/about": "About", "/herstories": "HerStories" };
   return `${map[path] || "Not Found"} — ${base}`;
 }
 
@@ -283,6 +289,11 @@ function afterRender(path) {
       const label = typeof entry === "string" ? d.name : (entry.caption || d.name);
       return { src, label };
     }));
+  }
+  const herMatch = path.match(/^\/herstories\/([a-z0-9-]+)$/);
+  if (herMatch) {
+    const t = getHerStory(herMatch[1]);
+    if (t && t.foodPhotos) registerLightboxGroup(`her-${t.slug}`, t.foodPhotos.map(f => ({ src: f.src, label: f.caption || t.name })));
   }
   if (path === "/gallery") {
     registerLightboxGroup("full-gallery", GALLERY.map(g => ({ src: g.src, label: g.label })));
@@ -316,7 +327,7 @@ function foodCardHTML(r, delay) {
   <div class="food-card food-card-noimg reveal ${delay || ""}">
     <div class="food-card-body">
       <span class="food-card-loc">${escapeHtml(r.location)}${r.destName ? " · " + escapeHtml(r.destName) : ""}</span>
-      <h3 class="food-card-name">${escapeHtml(r.name)} <span class="food-card-rating-inline">★ ${r.rating.toFixed(1)}</span></h3>
+      <h3 class="food-card-name">${escapeHtml(r.name)}${r.rating ? ` <span class="food-card-rating-inline">★ ${r.rating.toFixed(1)}</span>` : ""}</h3>
       <p class="food-card-review">${escapeHtml(r.review)}</p>
       ${r.communityReview ? `
       <div class="community-review">
@@ -931,14 +942,15 @@ function renderHome() {
   <section class="section section-alt">
     <div class="container">
       <span class="eyebrow">A Note From the Road, Sort Of</span>
-      <div class="misadventure-card reveal mt-lg" style="max-width: 720px; display:grid; grid-template-columns: 140px 1fr; gap: 24px; align-items:center;">
-        <div style="border-radius:12px; overflow:hidden;">${lazyImg(HER_STORIES_TEASER.photo, "A dish from Lima Taverna")}</div>
+      <a href="#/herstories/lima-peru" class="misadventure-card reveal mt-lg" style="max-width: 720px; display:grid; grid-template-columns: 140px 1fr; gap: 24px; align-items:center; text-decoration:none; color:inherit;">
+        <div style="border-radius:12px; overflow:hidden;">${lazyImg(HER_STORIES[0].cardImg, "A dish from " + HER_STORIES[0].name)}</div>
         <div>
-          <h3 class="misadventure-title">HerStories: Coming Eventually</h3>
-          <span class="misadventure-loc">${escapeHtml(HER_STORIES_TEASER.restaurant)}</span>
-          <p class="misadventure-body">${escapeHtml(HER_STORIES_TEASER.blurb)}</p>
+          <h3 class="misadventure-title">HerStories: ${escapeHtml(HER_STORIES[0].name)}</h3>
+          <span class="misadventure-loc">A trip she took without the rest of us</span>
+          <p class="misadventure-body">${escapeHtml(HER_STORIES[0].intro)}</p>
+          <span class="food-card-more" style="margin-top:14px; display:inline-block;">Read HerStories →</span>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -1352,6 +1364,103 @@ function renderDestinationDetail(d) {
       </div>
     </div>
   </section>` : ""}
+
+  ${newsletterBlockHTML()}
+  `;
+}
+
+/* ============================================================
+   HERSTORIES — her solo trips, kept separate from the family's
+   ============================================================ */
+
+function herStoryCardHTML(t, delay) {
+  return `
+  <a href="#/herstories/${t.slug}" class="dest-card reveal ${delay || ""}">
+    ${lazyImg(t.cardImg, t.name)}
+    <div class="dest-card-body">
+      <span class="dest-card-tag">${escapeHtml(t.tripType)}</span>
+      <h3 class="dest-card-title">${escapeHtml(t.name)}</h3>
+      <p class="dest-card-sub">${escapeHtml(t.country)}</p>
+    </div>
+  </a>`;
+}
+
+function renderHerStoriesList() {
+  return `
+  <section class="page-hero" style="background-image:url('${HER_STORIES[0].heroImg}')">
+    <div class="page-hero-content">
+      <div class="breadcrumb"><span>HerStories</span></div>
+      <h1 class="page-hero-title">HerStories</h1>
+      <p class="page-hero-caption" style="margin-top:10px; font-size:15px; max-width:640px;">The trips she took without the rest of us — solo and work travel, told (eventually) in her own words. Consider this section a work in progress.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        ${HER_STORIES.map((t, i) => herStoryCardHTML(t, `reveal-delay-${i + 1}`)).join("")}
+      </div>
+    </div>
+  </section>
+
+  ${newsletterBlockHTML()}
+  `;
+}
+
+function renderHerStoryDetail(t) {
+  return `
+  <section class="page-hero" style="background-image:url('${t.heroImg}')">
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="#/herstories">HerStories</a><span>/</span><span>${escapeHtml(t.name)}</span></div>
+      <h1 class="page-hero-title">${escapeHtml(t.name)}</h1>
+      <div class="page-hero-meta">
+        <span>◆ ${escapeHtml(t.country)}</span>
+        <span>◆ ${escapeHtml(t.tripType)}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <span class="eyebrow">The Short Version</span>
+      <p class="section-desc" style="max-width:none; margin-top:18px; font-size:15px;">${escapeHtml(t.intro)}</p>
+    </div>
+  </section>
+
+  ${t.restaurants.length ? `
+  <section class="section section-tight section-alt">
+    <div class="container">
+      <span class="eyebrow">Restaurants</span>
+      <h2 class="section-title" style="font-size:30px; margin-top:14px;">Where she ate</h2>
+      <div class="card-grid cols-2 mt-lg">
+        ${t.restaurants.map((r, i) => foodCardHTML({ ...r }, `reveal-delay-${i + 1}`)).join("")}
+      </div>
+    </div>
+  </section>` : ""}
+
+  <section class="section section-tight">
+    <div class="container">
+      <span class="eyebrow">What She Actually Ate</span>
+      <h2 class="section-title" style="font-size:30px; margin-top:14px;">Real photos, real trip</h2>
+      ${foodPhotosGalleryHTML(t)}
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="misadventure-card reveal" style="max-width:720px;">
+        <span class="misadventure-icon">🗂️</span>
+        <h3 class="misadventure-title">The Story: Still Searching the Rolodex</h3>
+        <p class="misadventure-body">The actual play-by-play of this trip — how it went, what went sideways, what was worth it — hasn't been tracked down yet. That part's pending an interview with the traveler herself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <a href="#/herstories" class="btn btn-ghost">← All HerStories</a>
+    </div>
+  </section>
 
   ${newsletterBlockHTML()}
   `;

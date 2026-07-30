@@ -1282,9 +1282,18 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: "Frasca Food and Wine", location: "Boulder", rating: 4.7, review: "A Michelin-starred, James Beard Award-winning restaurant celebrating the food and wine of Friuli-Venezia Giulia, Italy.", img: img("boulder-r1", 900, 650), communityReview: "Widely regarded as one of Colorado's best restaurants — reviewers consistently praise the refined Friulian cooking, deep wine list, and warm, unpretentious service for a Michelin-starred room.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Black Cat Farmstead", location: "Boulder", rating: 4.6, review: "A farm-to-table restaurant with a rotating chef's tasting menu built around ingredients grown on its own historic farmstead.", img: img("boulder-r2", 900, 650), communityReview: "Diners consistently highlight the hyper-local, farm-driven tasting menu and unique private garden cabana seating as a standout Boulder-area experience.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Black Cat Farmstead", location: "Boulder", rating: 4.6, review: "A farm-to-table restaurant with a rotating chef's tasting menu built around ingredients grown on its own historic farmstead.", img: img("boulder-r2", 900, 650), communityReview: "Diners consistently highlight the hyper-local, farm-driven tasting menu and unique private garden cabana seating as a standout Boulder-area experience.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Little Man Ice Cream", location: "Denver", rating: 4.5, review: "A Denver institution and Colorado must-visit — handcrafted, small-batch ice cream with rotating seasonal flavors.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "Widely called one of Denver's most beloved travel-guide stops, with its iconic giant milk-can storefront in Lower Highlands — reviewers consistently praise the handcrafted, small-batch flavors and vegan/gluten-free options, though a handful note long lines and occasional inconsistency between locations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Kuluka Boba & Sweets", location: "Denver", rating: 4.8, review: "A family-owned boba and mochi-donut shop next door to Little Man — go for the ube milk tea and a rotating-flavor mochi donut.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "A small, family-owned Westminster shop reviewers rave about for its fresh boba (never watered down) and inventive mochi donuts — praised for a bright, cozy boho interior and consistently friendly, fast service.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/506898347_10229529560891594_1878140097006799914_n.jpg", caption: "Bison bites and a whiskey flight on a misty patio near Rocky Mountain National Park" },
+      { src: "assets/506108846_10229529520810592_5996901956296534486_n.jpg", caption: "A bottle of DownSlope Straight Rye Whiskey, Colorado Craft Spirits" },
+      { src: "assets/506337455_10229529523130650_1920408555553337138_n.jpg", caption: "Fresh peaches from the Boulder Farmers Market" },
+      { src: "assets/506050953_10229529119320555_8958016516747642670_n.jpg", caption: "A festival bite at the Boulder Farmers Market" },
+      { src: "assets/506204953_10229529121000597_899615473264437947_n.jpg", caption: "Shaved ice and iced coffee at the Boulder Farmers Market" },
+      { src: "assets/506044781_10229529004517685_4421291974863926150_n.jpg", caption: "Iced coffees on a Boulder patio" }
+    ],
     hiddenGems: [
       "The Boulder Creek Path for a quiet walk away from Pearl Street",
       "Smaller neighborhood coffee shops away from the main downtown strip",
@@ -1295,7 +1304,7 @@ const DESTINATIONS = [
       "Boulder and Denver are close enough to combine easily in one trip",
       "Check the weather for Apr – Jun before locking in dates"
     ],
-    gallery: ["assets/uploads/boulder-g1.jpg", "assets/uploads/boulder-g2.jpg", "assets/uploads/boulder-g3.jpg", "assets/uploads/boulder-g4.jpg", "assets/uploads/boulder-g5.jpg", "assets/uploads/boulder-g6.jpg"],
+    gallery: ["assets/uploads/boulder-g1.jpg", "assets/uploads/boulder-g2.jpg", "assets/uploads/boulder-g3.jpg", "assets/uploads/boulder-g4.jpg", "assets/uploads/boulder-g5.jpg", "assets/uploads/boulder-g6.jpg", { src: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", caption: "Little Man Ice Cream and Kuluka Boba & Sweets, next-door neighbors" }],
     rating: 8,
     wouldReturn: "Yes — the lattes alone are worth it.",
     relatedAdventure: null
@@ -1642,7 +1651,9 @@ const DESTINATIONS = [
       { name: `Franklin Barbecue`, location: `Austin & San Antonio`, rating: 4.3, review: `Famous for its mouth-watering brisket and long lines, this spot is a must for barbecue lovers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=900", communityReview: "Anthony Bourdain called it the finest brisket he'd ever had, and reviewers overwhelmingly agree it's worth the notorious 2-5 hour line — bring a chair, arrive before dawn, and expect them to sell out by early afternoon most days.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Uchi`, location: `Austin & San Antonio`, rating: 4.5, review: `A renowned spot for Japanese cuisine, offering a creative menu of sushi and sashimi in a stylish setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=900", communityReview: "Widely considered Austin's best sushi, from James Beard Award-winning chef Tyson Cole — reviewers consistently praise the inventive small plates and hot dishes alongside the sushi, though it's a splurge and reservations book out well in advance.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Emmer & Rye`, location: `Austin & San Antonio`, rating: 4.6, review: `Known for its focus on seasonal and local ingredients, this restaurant offers a unique dining experience with dim sum-style service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=900", communityReview: "Praised for its dim-sum-cart-style service and hyper-local, seasonal menu that changes constantly — reviewers call the format genuinely fun and different from typical fine dining, with the homemade pastas a recurring highlight.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900", communityReview: "An Austin institution that's since grown into a regional chain — reviewers consistently praise the Trailer Park (fried chicken) taco and queso, with the caveat that service and cleanliness can vary noticeably between locations.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900", communityReview: "An Austin institution that's since grown into a regional chain — reviewers consistently praise the Trailer Park (fried chicken) taco and queso, with the caveat that service and cleanliness can vary noticeably between locations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Kiki's Coffee`, location: `Austin & San Antonio`, rating: 4.6, review: `A dog-friendly downtown San Antonio coffee bar across from Maverick Park — design-forward space, barista-crafted drinks, and cocktails after dark.`, img: "assets/506050942_10229522526675743_4393089252648138176_n.jpg", communityReview: "A well-loved downtown San Antonio coffee-and-cocktail spot reviewers call a hidden gem — praised for its chic, design-forward interior, friendly baristas, and genuinely dog-friendly vibe right by Maverick Park.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Box Street Social`, location: `Austin & San Antonio`, rating: 4.5, review: `Brunch "all day" on a shaded patio near Hemisfair Park — coffee, morning cocktails, and city views.`, img: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", communityReview: "A San Antonio brunch favorite (also known as Box St. All Day) that grew out of a popular food truck and catering company — reviewers rave about the chilaquiles, the patio views near the Tower of the Americas, and a reliably great happy hour.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451699713_10226040354903625_4185247209944190523_n-1.jpg?w=1000", caption: "A cold one under Pinthouse Pizza's skull-and-crossbones glass, Austin" },
@@ -1655,6 +1666,7 @@ const DESTINATIONS = [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451803830_10226050966968920_2991322089243005392_n-1.jpg?w=1000", caption: "A mint-topped cocktail at Bliss, San Antonio" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n-1.jpg?w=1000", caption: "An iced matcha, also from Bliss, San Antonio" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n-1.jpg?w=1000", caption: "A cucumber-garnished cocktail, Bliss, San Antonio" },
+      { src: "assets/506050942_10229522526675743_4393089252648138176_n.jpg", caption: "An afternoon hangout (with a very good dog) at Kiki's Coffee, San Antonio" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452079076_10226051023250327_6674203015847509601_n-1.jpg?w=1000", caption: "Eggs Benedict at Magnolia Table — the Waco lunch-and-gas rest stop that turned into an actual meal" }
     ],
     hiddenGems: [
@@ -1667,7 +1679,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1744,9 +1756,23 @@ const DESTINATIONS = [
       { name: `Canlis`, location: `Seattle, Washington`, rating: 4.3, review: `Iconic fine dining with a stunning view and innovative Northwest cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=900", communityReview: "Seattle's fine-dining institution since 1950, and Food & Wine ranked it the #2 best restaurant in America in 2025 — yet a growing chorus of local critics (including the Seattle Times) argue it's lost some of its edge, citing soggy fries and an overpriced, occasionally underwhelming tasting menu relative to newer competitors. Still worth the view at least once.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Walrus and the Carpenter`, location: `Seattle, Washington`, rating: 4.5, review: `Famous for oysters and small seafood plates.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=900", communityReview: "A Ballard institution that's landed on national best-restaurant lists, with reviewers consistently raving about the fresh, sustainably-sourced oysters — no reservations means real waits at peak times, and a handful of recent reviews flag slower, less attentive service than the restaurant's reputation suggests.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Din Tai Fung`, location: `Seattle, Washington`, rating: 4.6, review: `Famous for soup dumplings and Taiwanese dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=900", communityReview: "A globally acclaimed Taiwanese chain, and reviewers consistently say it earns the hype despite being a chain — the xiao long bao (soup dumplings) draw near-universal praise for consistency, with the dim-sum-style ordering sheet making it easy to over-order.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Tilikum Place Café`, location: `Seattle, Washington`, rating: 4.3, review: `Known for its amazing Dutch baby pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=900", communityReview: "A tiny, 12-table neighborhood favorite reviewers call a hidden gem for brunch — the Dutch baby pancakes are the signature order, though the small dining room means real waits and reservations are essential, especially on weekends.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Tilikum Place Café`, location: `Seattle, Washington`, rating: 4.3, review: `Known for its amazing Dutch baby pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=900", communityReview: "A tiny, 12-table neighborhood favorite reviewers call a hidden gem for brunch — the Dutch baby pancakes are the signature order, though the small dining room means real waits and reservations are essential, especially on weekends.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Dog in the Park`, location: `Seattle, Washington`, rating: 4.5, review: `A hot dog stand right by the Space Needle and home of the original Seattle Dog — cream cheese and grilled veggies included.`, img: "assets/485906606_10228541560632205_2254609729655052402_n.jpg", communityReview: "A beloved food-stand institution since 2005 that pioneered the Seattle Dog (topped with cream cheese and grilled onions) — reviewers consistently praise the friendly, one-man-show service and call it a must-try quick bite near the Space Needle and MoPOP, even for people who don't usually go for hot dogs.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Le Panier`, location: `Seattle, Washington`, rating: 4.6, review: `A classic French bakery inside Pike Place Market since 1983 — go for the almond croissant and expect a line out the door.`, img: "assets/485622086_10228528515426083_5536956193988437121_n.jpg", communityReview: "A Pike Place Market institution since 1983, frequently named among Seattle's best bakeries — reviewers rave about the croissants, pistachio eclairs, and lattes, and say the long lines (sometimes 30-40 minutes) move fast and are worth the wait.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `FUTUREBEAN`, location: `Seattle, Washington`, rating: 4.4, review: `A sleek downtown coffee shop from the team behind Storyville Coffee — housemade flavored lattes and a cozy spot to sit for a minute.`, img: "assets/485153478_10228528029893945_1792492066681067602_n.jpg", communityReview: "A newer offshoot of the well-established Storyville Coffee, praised for its cozy downtown atmosphere and creative housemade syrups like vanilla and salted caramel.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Blackbird Bakery`, location: `Seattle, Washington`, rating: 4.5, review: `A cozy, cake-and-coffee bakery a short walk from the Bainbridge ferry dock — go for the scones and stay for the toast.`, img: "assets/486083285_10228551488240389_1353761795080900839_n.jpg", communityReview: "A Bainbridge Island go-to since 1999, praised for its scones, croissants, and famously good toast — reviewers say it gets a genuine local line at the ferry-adjacent counter, and it's popular for wedding cakes too.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Seattle Bagel Bakery`, location: `Seattle, Washington`, rating: 4.3, review: `Kettle-boiled bagels inside Pike Place Market — the base for some of the best loaded breakfast sandwiches in the market.`, img: "assets/486001861_10228539617143619_4826799406726553910_n.jpg", communityReview: "The bagel maker behind several Pike Place Market breakfast-sandwich stalls, known for kettle-boiled bagels made from locally sourced grains — reviewers single out the salmon lox bagel as a market highlight.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Biscuit Bitch`, location: `Seattle, Washington`, rating: 4.4, review: `Southern-style biscuits and gravy with a lot of attitude — "Trailer Park to Table," kickass coffee, breakfast only.`, img: "assets/485029497_10228528229698940_8743368416418800191_n.jpg", communityReview: "A Seattle breakfast institution known as much for its irreverent, foul-mouthed menu as its biscuits and gravy — reviewers consistently praise the Bitchwich and locally roasted coffee, with several locations having a devoted, loyal following.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/486083285_10228551488240389_1353761795080900839_n.jpg", caption: "A coffee and scone break at Blackbird Bakery, Bainbridge Island" },
+      { src: "assets/485795562_10228543350356947_7223299643225859183_n.jpg", caption: "A bowl of pho on a Seattle night out" },
+      { src: "assets/485906606_10228541560632205_2254609729655052402_n.jpg", caption: "A Seattle Dog at Dog in the Park, right under the Space Needle" },
+      { src: "assets/486001861_10228539617143619_4826799406726553910_n.jpg", caption: "A loaded breakfast bagel sandwich from Seattle Bagel Bakery, Pike Place Market" },
+      { src: "assets/485622086_10228528515426083_5536956193988437121_n.jpg", caption: "An almond croissant from Le Panier, Pike Place Market" },
+      { src: "assets/485029497_10228528229698940_8743368416418800191_n.jpg", caption: "A rainy afternoon at Biscuit Bitch" },
+      { src: "assets/485153478_10228528029893945_1792492066681067602_n.jpg", caption: "Coffee at FUTUREBEAN downtown" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Seattle, Washington`,
@@ -1789,10 +1815,20 @@ const DESTINATIONS = [
       { name: `Union Oyster House`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Oldest continuously operating restaurant in the U.S. — go for clam chowder, oysters, baked stuffed lobster.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=900", communityReview: "Running since 1826, and the honest local consensus (including a Boston Globe piece literally titled \"Tourist trap or living history?\") is that you're paying for history and atmosphere, not a great meal — sit at the raw bar where oysters are shucked fresh in front of you rather than pre-shucked, and go in for the JFK booth and 200 years of history, not a culinary highlight.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Neptune Oyster`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Tiny, no-reservations spot known for some of the best lobster rolls in the North End.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900", communityReview: "Frequently named the actual best oyster spot in Boston, and locals steer visitors here over Union Oyster House specifically for food quality — no reservations, tiny space, and real waits, but reviewers overwhelmingly say the butter-poached lobster roll is worth it.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Giacomo's`, location: `Boston & Martha's Vineyard`, rating: 4.6, review: `Tiny, loud, cash-only — authentic pasta and seafood; the lobster fra diavolo is legendary.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=900", communityReview: "The original North End location (355 Hanover St) was ranked one of the best Italian restaurants in the U.S. by Tasting Table — reviewers consistently rave about the pumpkin tortellini and seafood, with the line-out-the-door, cash-only, no-reservations routine treated as part of the experience. Note: a separate South End sister location, Casa Giacomo's, has closed — make sure you're headed to the original.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900", communityReview: "An island landmark right by the Vineyard Haven ferry terminal — reviewers openly call it touristy but say it's genuinely fun, with the mussels, chowder, and waterfront fireplace atmosphere earning consistent praise even from visitors who expected a tourist-trap letdown.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900", communityReview: "An island landmark right by the Vineyard Haven ferry terminal — reviewers openly call it touristy but say it's genuinely fun, with the mussels, chowder, and waterfront fireplace atmosphere earning consistent praise even from visitors who expected a tourist-trap letdown.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `James Hook & Co`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `A no-frills waterfront lobster shack with the tank right on site — order at the counter, grab a picnic table, and dig in.`, img: "assets/515632146_10229930412312629_4339536811586982006_n.jpg", communityReview: "A century-old, family-run seafood shack on Boston's downtown waterfront frequently named among the city's best lobster rolls — reviewers highlight the on-site lobster tanks, casual self-serve setup, and fair prices, with the clam chowder and crab cakes also getting steady praise.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Bittersweet Shoppe on Newbury`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Back Bay's cutest little cafe — old-fashioned soda fountain charm, grilled cheese, and fresh-squeezed lemonade on a sunny Newbury Street patio.`, img: "assets/527100813_10230511056308366_76587454234458818_n.jpg", communityReview: "A woman-owned Newbury Street cafe reviewers call one of Back Bay's best-kept secrets — known for creative iced coffees, legendary grilled cheese, and a bright, cozy patio, with consistently warm service.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Charlie's Sandwich Shoppe`, location: `Boston & Martha's Vineyard`, rating: 4.4, review: `A 1927 South End institution and Boston landmark — walls covered in celebrity photos, famous for turkey hash and old-school diner charm.`, img: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", communityReview: "A James Beard Award-winning diner and Boston landmark dating to 1927, historically a haven for Black musicians and travelers during segregation — reviewers consistently praise the turkey hash, classic breakfast fare, and the walls of history, calling it equal parts diner and museum.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/516319416_10230016521665309_4224937201174103943_n.jpg?w=1000", caption: "A box of assorted cannoli from Mike's Pastry, North End" }
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/516319416_10230016521665309_4224937201174103943_n.jpg?w=1000", caption: "A box of assorted cannoli from Mike's Pastry, North End" },
+      { src: "assets/527100813_10230511056308366_76587454234458818_n.jpg", caption: "Grilled cheese, waffles, and iced coffee on the patio at The Bittersweet Shoppe on Newbury" },
+      { src: "assets/515681199_10230011208852492_7259710044534615444_n.jpg", caption: "Iced coffees and lemonade at The Bittersweet Shoppe on Newbury" },
+      { src: "assets/514683462_10229930412832642_1334032555165691460_n.jpg", caption: "Drinks on the waterfront patio at James Hook & Co" },
+      { src: "assets/515632146_10229930412312629_4339536811586982006_n.jpg", caption: "The lobster tank at James Hook & Co" },
+      { src: "assets/514348487_10229965237423235_5749138178254262709_n.jpg", caption: "A flight of iced coffee cocktails at a Boston breakfast spot" },
+      { src: "assets/527310202_10230510678298916_2172703979508124808_n.jpg", caption: "An espresso martini in Boston" },
+      { src: "assets/514408196_10229929684734440_7837948299753586126_n.jpg", caption: "A snack break at Quincy Market" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1806,7 +1842,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n-1.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n-1.jpg?w=1000", { src: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", caption: "Out front of Charlie's Sandwich Shoppe" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -3416,10 +3452,51 @@ function getAdventure(slug) {
   return ADVENTURES.find(a => a.slug === slug);
 }
 
-// A quiet teaser for a future page — my wife's solo Peru trip.
-// Full HerStories page (destination writeup, more photos/stories) is a later project.
-const HER_STORIES_TEASER = {
-  restaurant: `Lima Taverna`,
-  photo: "assets/684691291_10233650431470783_6474378245618826087_n.jpg",
-  blurb: `While the rest of us were home, my wife came back from a trip raving about a Peruvian meal that might be worth its own detour someday: fresh ceviche with choclo and cancha, a pisco sour, an ice-cold Cusqueña, and alfajores with her name piped onto the plate in berry sauce. A full HerStories page is coming eventually — for now, consider this the trailer.`
-};
+// HerStories — my wife's solo trips, separate from the family Destinations/Eats/Misadventures lists.
+// Full stories (the actual narrative for each trip) are still pending — she needs to fill those in.
+const HER_STORIES = [
+  {
+    slug: "lima-peru",
+    name: "Lima, Peru",
+    country: "Peru",
+    tripType: "Work trip",
+    heroImg: "assets/504415623_10229422830823409_4993078943813997833_n.jpg",
+    cardImg: "assets/684691291_10233650431470783_6474378245618826087_n.jpg",
+    intro: `A work trip to Lima that turned up two very good meals — a casual Peruvian spot for ceviche and pisco sours, and a much fancier Nikkei tasting menu she still can't stop talking about. The full story of how the trip actually went is still TBD — pending an interview with the traveler herself.`,
+    restaurants: [
+      { name: `Lima Taverna`, location: `Lima, Peru`, rating: 4.5, review: `A Peruvian spot for ceviche, pisco sours, and Cusqueña — the casual half of the trip. Full write-up and community reviews still pending.` },
+      { name: `Searching the Rolodex`, location: `Lima, Peru`, review: `An upscale Nikkei (Peruvian-Japanese) tasting menu — course after course of sashimi, tartare, crab, and a dessert trio. Restaurant name is still TBD — need to ask her.` }
+    ],
+    foodPhotos: [
+      { src: "assets/684691291_10233650431470783_6474378245618826087_n.jpg", caption: "A pisco sour at Lima Taverna" },
+      { src: "assets/684683411_10233650432430807_8660451631551255436_n.jpg", caption: "Fresh ceviche with choclo, cancha, and sweet potato at Lima Taverna" },
+      { src: "assets/687786431_10233650362669063_4350656868893273907_n.jpg", caption: "A Cusqueña Dorada at Lima Taverna" },
+      { src: "assets/686943070_10233650757158925_620864847656273121_n.jpg", caption: "Heart-shaped alfajores, with her name piped on in berry sauce, at Lima Taverna" },
+      { src: "assets/504397982_10229423012027939_4334389467347098108_n.jpg", caption: "A blue cocktail served over crushed ice" },
+      { src: "assets/504420732_10229423011947937_7464687504225865997_n.jpg", caption: "A cotton-candy-topped cocktail in a tiki mug" },
+      { src: "assets/504342536_10229423011067915_7603664753301744673_n.jpg", caption: "Ceviche with white fish and corn" },
+      { src: "assets/504833177_10229423011867935_3419539207056851860_n.jpg", caption: "Hamachi sashimi with wasabi and a carnation garnish" },
+      { src: "assets/504791733_10229423012467950_7699418574002788458_n.jpg", caption: "A grilled seafood and mushroom skewer dish" },
+      { src: "assets/504903278_10229423011827934_6422032913981353769_n.jpg", caption: "A trio of bite-sized desserts on a wooden board" },
+      { src: "assets/504834551_10229423011107916_6652942632218153588_n.jpg", caption: "A mango, strawberry, and passionfruit sorbet trio" },
+      { src: "assets/504430843_10229423011467925_5711206911560365653_n.jpg", caption: "Tuna tartare with roe, stacked over avocado and rice" },
+      { src: "assets/504461986_10229423013267970_3188768359008975119_n.jpg", caption: "A nigiri platter — uni, toro, and torched salmon with yuzu kosho" },
+      { src: "assets/504400466_10229423011387923_47759232029933963_n.jpg", caption: "A banana-leaf-wrapped grilled dish with pickled vegetables" },
+      { src: "assets/504384020_10229423011667930_3850769831967324907_n.jpg", caption: "A shrimp and egg rice bowl" },
+      { src: "assets/504328215_10229423011427924_5637403627734189747_n.jpg", caption: "Glazed short rib with crispy garlic and scallion" },
+      { src: "assets/504711255_10229423012267945_1840762476312946146_n.jpg", caption: "House-made pasta topped with caviar" },
+      { src: "assets/504782510_10229422923465725_1967606223932155803_n.jpg", caption: "A skull-shaped platter with jamón, cheese, and fried croquettes" },
+      { src: "assets/504500467_10229422923385723_5956687463559027674_n.jpg", caption: "A round platter of salmon and hamachi sashimi" },
+      { src: "assets/504382952_10229422923345722_7319627796124910702_n.jpg", caption: "A salmon carpaccio plated like a flower" },
+      { src: "assets/504956386_10229422827423324_3059526477392560102_n.jpg", caption: "Grilled scallop and shrimp skewers over crispy rice" },
+      { src: "assets/504931509_10229422826463300_8650702964496504300_n.jpg", caption: "Tuna and beef tartare bites" },
+      { src: "assets/504711245_10229422831743432_6445267734075001151_n.jpg", caption: "A chocolate mousse and a curry-spiced mousse, side by side" },
+      { src: "assets/504719388_10229422830743407_690937516191513261_n.jpg", caption: "A platter of spiced whole crab legs" },
+      { src: "assets/504494407_10229422826703306_2685883340715249245_n.jpg", caption: "Scallops on the half shell with crispy leeks" }
+    ]
+  }
+];
+
+function getHerStory(slug) {
+  return HER_STORIES.find(t => t.slug === slug);
+}
