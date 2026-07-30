@@ -2709,6 +2709,18 @@ const MISADVENTURES = [
     body: "The trip captions tell the whole story without any help from us: \"F— the cold,\" then \"Day 3, I'm tired,\" then finally, staring at the receipts, \"What $9k gets you.\" Ski season is beautiful. Ski season is also expensive and cold, and we said so in real time."
   },
   {
+    icon: "🚗",
+    title: "You Didn't Invite Chris, Did You?",
+    location: "Vail, Colorado",
+    body: "Extended family trip, boutique hotel, whole top floor rented out for privacy. My wife's sister mentioned to a surgeon she knew from work that she was heading to Vail to ski — he said something about being an expert skier, and somehow that turned into him just showing up in Vail during our family trip. We were polite about it — invited him to dinner once — but he never took the hint and never left. He tagged along everywhere, to the point where he ended up sleeping in his car in the hotel parking garage rather than take it as a sign to go home. Not so subtle hints from me did nothing to move him. Sometimes being blunt is the right call, especially where your family's safety is concerned. To this day, before any snow trip, someone asks my wife's sister: \"You didn't invite Chris, did you?\""
+  },
+  {
+    icon: "🔋",
+    title: "The Rental Van That Almost Wasn't",
+    location: "Vail, Colorado",
+    body: "The same frugal sister rented a van from a sketchy online site — picking it up meant hunting for it in regular airport parking instead of the rental lot, tires low, fluids running on empty. It got worse after dark: driving into town for dinner, the headlights barely worked, lighting maybe 20 feet ahead. Unclear if it was dying bulbs or a dying battery. Either way, not a great way to navigate a mountain town at night."
+  },
+  {
     icon: "🐢",
     title: "The Kidnapper Vans and the Baby Sea Turtles",
     location: "Puerto Vallarta, Mexico",
@@ -2953,6 +2965,18 @@ const MISADVENTURES = [
     title: "The Big Fish Photo",
     location: "Seattle, Washington",
     body: "Pike Place Market's flying fish are a rite of passage, and someone in the family insisted on a photo with one of the genuinely enormous ones on ice. \"Unsure why she wanted a pic with a big fish,\" the caption shrugs. We still don't know either. We still have the photo."
+  },
+  {
+    icon: "🧳",
+    title: "Suitcases at Dawn",
+    location: "Seattle, Washington",
+    body: "Walking through Chinatown, a homeless couple's argument escalated fast — suitcases flying, voices raised. We did the smart thing: avoided eye contact, crossed the street, and kept walking. Sometimes the best move is just not being part of the story."
+  },
+  {
+    icon: "🏃",
+    title: "Wrong Turn, Right Instinct",
+    location: "Seattle, Washington",
+    body: "Heading back from Chinatown at night, we tried to route around a tent encampment to avoid trouble — and walked straight into it instead. A man carrying a case of beer locked eyes with my daughters and started screaming. They bolted downhill, my wife right behind them, while I stood my ground between him and them until he lost interest. Everyone made it back safe. The real misadventure, in hindsight: don't let anyone book a hotel based on how \"pretty\" it looks online. Trust your gut and book in the neighborhood you actually know is safe."
   },
   {
     icon: "🤿",
