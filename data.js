@@ -148,7 +148,12 @@ const DESTINATIONS = [
       { name: "Tree Tops Signature Dining", location: "Koh Samui", rating: 4.6, review: "A romantic, special-occasion meal worth booking ahead for.", img: wpImg(803, 900), communityReview: "A treehouse fine-dining experience frequently booked for honeymoons and anniversaries — reviewers consistently praise the setting and attentive service; the main criticism is steep pricing for the portion sizes.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734685124_10234321371443863_2297942505490832443_n.jpg?w=1000", caption: "A fresh coconut, Koh Samui" }
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734685124_10234321371443863_2297942505490832443_n.jpg?w=1000", caption: "A fresh coconut, Koh Samui" },
+      { src: "assets/726908530_10234219799864637_5241656378082016804_n.jpg", caption: "A cold beer at Mr. Kai Kitchen Thai Cuisine, Koh Samui" },
+      { src: "assets/725649310_10234219800944664_1556447570665327623_n.jpg", caption: "A seafood salad at Mr. Kai Kitchen Thai Cuisine, Koh Samui" },
+      { src: "assets/727161348_10234219802624706_4779048030282930902_n.jpg", caption: "A poolside beer from The Brewing Project, Koh Samui" },
+      { src: "assets/726839125_10234219810144894_8508194891693224213_n.jpg", caption: "A live lobster in the tank, waiting to become dinner, Koh Samui" },
+      { src: "assets/726977775_10234219810704908_3191997744510600489_n.jpg", caption: "Oysters, tom yum, and fried bites — a proper seafood spread, Koh Samui" }
     ],
     hiddenGems: [
       "The Secret Buddha Garden hidden up in the jungle hills",
@@ -238,7 +243,18 @@ const DESTINATIONS = [
       { name: "Bánh Mì Huỳnh Hoa", location: "Ho Chi Minh City", rating: 4.7, review: "Often called the city's best bánh mì, and stuffed enough to make a believer out of anyone.", img: wpImg(808, 900), communityReview: "Famous for the biggest, priciest bánh mì in Saigon — reviewers are split between calling it the best in the city and finding it overstuffed and overpriced next to cheaper local spots, but the queue rarely lets up either way.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Cục Gạch Quán", location: "Ho Chi Minh City", rating: 4.5, review: "Traditional southern Vietnamese cuisine in a garden setting that slows the whole meal down.", img: wpImg(819, 900), communityReview: "A longtime favorite for home-style southern Vietnamese cooking in a quiet, plant-filled setting — reviewers consistently praise the atmosphere and traditional dishes as a welcome break from Saigon's street-level chaos.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/729729946_10234245424345233_2307885935761941686_n.jpg", caption: "An energy drink with sizzling bánh xèo art on the can — 'Mê Bánh Xèo,' Ho Chi Minh City" },
+      { src: "assets/727928159_10234248187414308_7670461466920781264_n.jpg", caption: "Huda beer at Malaysian Street Vietnam, Ho Chi Minh City" },
+      { src: "assets/727287389_10234249288441833_3239818228744868057_n.jpg", caption: "A stir-fried pork and vegetable plate at Malaysian Street Vietnam, Ho Chi Minh City" },
+      { src: "assets/730015541_10234255214549982_8873971161025225484_n.jpg", caption: "A noodle bowl with fresh coconut at Hủ Tiếu Nam Vang Minh Anh, Ho Chi Minh City" },
+      { src: "assets/729717167_10234257029395352_3599007945174445637_n.jpg", caption: "A chicken plate with gizzards and preserved eggs at Hủ Tiếu Minh Châu, Ho Chi Minh City" },
+      { src: "assets/727322937_10234257030715385_7202155223795529185_n.jpg", caption: "Tiger beer at Hủ Tiếu Minh Châu, Ho Chi Minh City" },
+      { src: "assets/730259056_10234267358533574_3754891522483453025_n.jpg", caption: "A Thai-style Red Bull (Kratingdaeng), Ho Chi Minh City" },
+      { src: "assets/731479821_10234267379574100_3353194501821545571_n.jpg", caption: "Chicken pho with lime wedges, Ho Chi Minh City" },
+      { src: "assets/731328609_10234268531202890_4204540512462307704_n.jpg", caption: "Fried chicken and fries from Chixmax, Ho Chi Minh City" },
+      { src: "assets/730259065_10234268749848356_7829707389728340375_n.jpg", caption: "Cheesecake and a 4Ps beer at Pizza 4P's, Ho Chi Minh City" }
+    ],
     hiddenGems: [
       "The rooftop cafes stacked inside unmarked apartment buildings on Nguyen Hue",
       "A tiny com tam stall behind the Ben Thanh night market that locals actually eat at",
@@ -279,7 +295,10 @@ const DESTINATIONS = [
       { name: "Local eateries around Châu Đốc", location: "An Giang", rating: 4.3, review: "This region is better known for local eateries than famous restaurants — and that's the charm of it.", img: wpImg(815, 900) },
       { name: "Riverside food stalls", location: "An Giang", rating: 4.2, review: "Simple, fresh, and eaten on plastic stools with a view of the river.", img: wpImg(810, 900) }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/730016309_10234244292196930_3226198866620561139_n.jpg", caption: "A Mirinda soda, one of the snacks grabbed between family visits, An Giang" },
+      { src: "assets/727847798_10234244292876947_2207519777920350791_n.jpg", caption: "A quick snack while visiting distant relatives, An Giang — mostly family time, not restaurant time" }
+    ],
     hiddenGems: [
       "A family-run boat tour that goes further into the canals than the tour buses reach",
       "The quiet Khmer pagodas of Tri Ton, rarely visited by foreign tourists",
@@ -326,7 +345,12 @@ const DESTINATIONS = [
     ],
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734733254_10234321424205182_6067649309802778866_n.jpg?w=1000", caption: "A cafe right on the famous Train Street, Hanoi" },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/731834741_10234321412204882_4177174544736822969_n.jpg?w=1000", caption: "The street food vendor at Bún Chả Hương Liên, the 'Obama Bun Cha' spot, Hanoi" }
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/731834741_10234321412204882_4177174544736822969_n.jpg?w=1000", caption: "The street food vendor at Bún Chả Hương Liên, the 'Obama Bun Cha' spot, Hanoi" },
+      { src: "assets/731423395_10234303714522451_1575235187158676679_n.jpg", caption: "Bánh xèo (Vietnamese sizzling crepe) with a mountain of fresh herbs — wherever they took us, Hanoi" },
+      { src: "assets/731823926_10234310761898631_8404870599121834746_n.jpg", caption: "A bowl of noodle soup at Hủ Tiếu Minh Châu, Hanoi" },
+      { src: "assets/731442625_10234310762658650_6428412735738124114_n.jpg", caption: "A rice plate with roast pork and char siu at Hủ Tiếu Minh Châu, Hanoi" },
+      { src: "assets/734684973_10234311544878205_7793019265570335898_n.jpg", caption: "Back at the same Train Street cafe for round two — an iced matcha this time, Hanoi" },
+      { src: "assets/731787280_10234303142148142_2588111245136424546_n.jpg", caption: "Iced egg coffee from Egg Coffee & More, 39 Bát Sứ, Hanoi" }
     ],
     hiddenGems: [
       "The train street, where a working railway runs inches from café tables",
@@ -370,7 +394,11 @@ const DESTINATIONS = [
       { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", img: wpImg(825, 900), communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset.", img: wpImg(826, 900) }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/731443813_10234280477301535_2663361984624580910_n.jpg", caption: "Sunset cocktails with a Ha Long Bay karst view from the cruise deck" },
+      { src: "assets/731653302_10234280818070054_915450970668348977_n.jpg", caption: "A lineup of Vietnamese beers — Bia Saigon, Bia Hà Nội, and 333 — during dinner on the cruise" },
+      { src: "assets/731418180_10234290411909894_4899317556468078655_n.jpg", caption: "Another artfully poured cocktail from the Ha Long Bay cruise" }
+    ],
     hiddenGems: [
       "Lan Ha Bay, the quieter southern cousin with far fewer boats",
       "A sunrise kayak before the day-trip boats arrive from the mainland",
@@ -1807,19 +1835,49 @@ const DESTINATIONS = [
 `Lombard Street`
     ],
     restaurants: [
-      { name: `Hog Island Oyster Co.`, location: `San Francisco, California`, rating: 4.3, review: `Fresh oysters, clam chowder, and grilled cheese with oysters — very Northern California.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=900", communityReview: "A Ferry Building fixture that sources its own oysters from Tomales Bay — reviewers consistently call it a rare exception among touristy waterfront spots, saying the seafood and Bay Bridge views both genuinely deliver rather than one propping up the other.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Hog Island Oyster Co.`, location: `San Francisco, California`, rating: 4.3, review: `Fresh oysters, a hearty seafood stew, tacos, and a grilled cheese — very Northern California.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=900", communityReview: "A Ferry Building fixture that sources its own oysters from Tomales Bay — reviewers consistently call it a rare exception among touristy waterfront spots, saying the seafood and Bay Bridge views both genuinely deliver rather than one propping up the other.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Swan Oyster Depot`, location: `San Francisco, California`, rating: 4.5, review: `Legendary tiny seafood counter. Expect a line.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=900", communityReview: "Family-run since 1912, and genuinely beloved by food-world insiders — Anthony Bourdain filmed here, and Bon Appétit's restaurant editor called it \"maybe my favorite restaurant on the planet.\" Cash only, no reservations, counter seating only, and waits can run over an hour — locals say it's worth timing your visit right at opening.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tadich Grill`, location: `San Francisco, California`, rating: 4.6, review: `Classic historic SF restaurant dating back to the Gold Rush era.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=900", communityReview: "The oldest restaurant in California, dating to 1849 — reviewers call the old-school charm and old-fashioned menu (think petrale sole and lamb chops with mint jelly) a genuine time capsule. Often debated as the more polished alternative to Swan Oyster Depot's counter-and-a-wait experience.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900", communityReview: "Reviewers overwhelmingly say it lives up to the hype — the croissants and morning buns draw particular praise, and while the line can be long, most say it moves quickly and is worth the wait.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900", communityReview: "Reviewers overwhelmingly say it lives up to the hype — the croissants and morning buns draw particular praise, and while the line can be long, most say it moves quickly and is worth the wait.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Dumpling Story`, location: `San Francisco, California`, rating: 4.4, review: `A dumpling spot with a modern, minimalist vibe — the kind of spread that keeps the whole family reaching for one more bite.`, img: "assets/706971243_10233928831750616_8701326482885401634_n.jpg", communityReview: "A Fillmore Street/Pacific Heights favorite known for its xiao long bao and scallion pancakes — reviewers frequently praise the fresh, high-quality food and elevated modern decor, with regulars naming it a go-to dumpling spot in the city.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Fashion China Teashop`, location: `San Francisco, California`, rating: 4.2, review: `A boba stop that turned into a "buy me boba" moment.`, img: "assets/707377701_10233929189039548_8196365367692735979_n.jpg", communityReview: "A Chinatown tea shop reviewers describe as a solid, no-frills boba stop with a wide drink menu — nothing fancy, just a reliably good cup.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Origin Lab Coffee & Matcha`, location: `San Francisco, California`, rating: 4.5, review: `A cozy coffee and matcha spot with a moon mural on the wall.`, img: "assets/707426843_10233907830785605_1251592585252902227_n.jpg", communityReview: "A newer neighborhood cafe reviewers praise for its quality matcha and coffee alongside a genuinely photogenic interior — the kind of place that shows up in a lot of visitors' photos.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Scoma's Sausalito`, location: `Sausalito, California`, rating: 4.5, review: `Waterfront seafood right on Sausalito's harbor — oysters, seafood pasta, cocktails, and a bay view that does most of the talking.`, img: "assets/703633170_10233906224785456_288104961075728601_n.jpg", communityReview: "A Sausalito institution known for its waterfront views of Angel Island and the SF skyline — reviewers consistently praise the fresh seafood (whole crab, calamari, seafood pasta) and warm, attentive service, calling it a favorite spot for special occasions. The sourdough bread and cocktails get frequent shoutouts too.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705374252_10233915930068082_9081015203643334507_n.jpg?w=1000", caption: "Fresh oysters at Hog Island Oyster Co." },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233915928388040_8731399652189066962_n.jpg?w=1000", caption: "Clam chowder at Hog Island Oyster Co." },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707532214_10233915824105433_3304175684508296793_n-1.jpg?w=1000", caption: "Grilled cheese with oysters, Hog Island Oyster Co. — very Northern California" },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707414983_10233920717587767_7228427882513538694_n.jpg?w=1000", caption: "Part of the tasting spread at Nari, one of the best modern Thai restaurants in the country" },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705861116_10233920565223958_6245413779064549346_n.jpg?w=1000", caption: "More from Nari's tasting menu" },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/703342876_10233920564383937_9118660443004331987_n.jpg?w=1000", caption: "Another course at Nari" },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/706918803_10233921191879624_8403528640698133458_n.jpg?w=1000", caption: "Nari, San Francisco" }
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705374252_10233915930068082_9081015203643334507_n.jpg?w=1000", caption: "A seafood stew with fries and grilled bread at Hog Island Oyster Co." },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233915928388040_8731399652189066962_n.jpg?w=1000", caption: "A salmon and avocado taco at Hog Island Oyster Co." },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707532214_10233915824105433_3304175684508296793_n-1.jpg?w=1000", caption: "Fresh oysters with a Golden Gate Bridge view, Hog Island Oyster Co." },
+      { src: "assets/706819025_10233915929268062_8005770152984876718_n.jpg", caption: "A grilled cheese with pickled vegetables at Hog Island Oyster Co." },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/706918803_10233921191879624_8403528640698133458_n.jpg?w=1000", caption: "A birthday dessert with a lit candle at Nari" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/704991124_10233920996674744_2678883251058316371_n.jpg?w=1000", caption: "Crispy eggplant curry at Nari" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/706912362_10233920890472089_2238220105674813210_n.jpg?w=1000", caption: "Grilled squid skewers with peanuts at Nari" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705789647_10233920794069679_6509229577484731890_n.jpg?w=1000", caption: "A spiced meat lettuce wrap at Nari" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705861119_10233920740548341_2624464606981500988_n.jpg?w=1000", caption: "Croquettes at Nari" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707414983_10233920717587767_7228427882513538694_n.jpg?w=1000", caption: "Cocktails and iced coffee at Nari" },
+      { src: "assets/706971243_10233928831750616_8701326482885401634_n.jpg", caption: "Family dim sum spread at Dumpling Story" },
+      { src: "assets/703481316_10233895422075395_6387034741754077097_n.jpg", caption: "Scallion pancake, fried dumplings, and steamed buns at Dumpling Story" },
+      { src: "assets/703600944_10233895421635384_7817395005088730901_n.jpg", caption: "Soup dumplings at Dumpling Story" },
+      { src: "assets/703097718_10233895420435354_2250608557105546636_n.jpg", caption: "Sesame chicken and fried wontons at Dumpling Story" },
+      { src: "assets/703076639_10233895419595333_5537011050822192297_n.jpg", caption: "A cucumber salad at Dumpling Story" },
+      { src: "assets/703001569_10233895418915316_2140629364121151965_n.jpg", caption: "Dan dan noodles at Dumpling Story" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705410906_10233918085881976_6771201188323011436_n.jpg?w=1000", caption: "Ice cream cones at Pier 39" },
+      { src: "assets/707377701_10233929189039548_8196365367692735979_n.jpg", caption: "\"Buy me boba\" — a stop at Fashion China Teashop" },
+      { src: "assets/707426843_10233907830785605_1251592585252902227_n.jpg", caption: "Coffee and matcha at Origin Lab Coffee & Matcha" },
+      { src: "assets/707007477_10233929257761266_687065406581483097_n.jpg", caption: "A candied fruit skewer, San Francisco" },
+      { src: "assets/704914385_10233906740358345_630893563698200362_n.jpg", caption: "An espresso martini with cinnamon and orange at Scoma's Sausalito" },
+      { src: "assets/703601139_10233906223745430_4818691989765327643_n.jpg", caption: "Arancini over tomato sauce and basil oil at Scoma's Sausalito" },
+      { src: "assets/703633170_10233906224785456_288104961075728601_n.jpg", caption: "Oysters on the half shell at Scoma's Sausalito" },
+      { src: "assets/704653083_10233906228225542_4573867873569198286_n.jpg", caption: "An Old Fashioned with a giant ice sphere at Scoma's Sausalito" },
+      { src: "assets/705440089_10233906229585576_3733298516478159665_n.jpg", caption: "Another round of espresso martinis alongside the oyster plate at Scoma's Sausalito" },
+      { src: "assets/705662277_10233906231305619_2761939154157063595_n.jpg", caption: "Pan-seared fish with asparagus, mashed potatoes, and caper butter sauce at Scoma's Sausalito" },
+      { src: "assets/705861121_10233906244905959_1773543308381307803_n.jpg", caption: "Chicken parmesan at Scoma's Sausalito" },
+      { src: "assets/706900754_10233906247466023_3914055852153278943_n.jpg", caption: "A side of grilled asparagus at Scoma's Sausalito" },
+      { src: "assets/702982851_10233906249466073_6836779147635262966_n.jpg", caption: "Wild mushroom pappardelle with peas and spinach at Scoma's Sausalito" },
+      { src: "assets/703890682_10233906250986111_499208734481461669_n.jpg", caption: "Seafood linguine with mussels and shrimp at Scoma's Sausalito" },
+      { src: "assets/703890682_10233906382949410_2780671048596314775_n.jpg", caption: "Chocolate cake with whipped cream and berry compote for dessert at Scoma's Sausalito" },
+      { src: "assets/705277182_10233906391109614_9024927112404485290_n.jpg", caption: "One more espresso martini at Scoma's Sausalito" },
+      { src: "assets/702781373_10233905404844958_8632903729661646454_n.jpg", caption: "A KSA kölsch-style ale near Muir Woods Redwood Forest" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
