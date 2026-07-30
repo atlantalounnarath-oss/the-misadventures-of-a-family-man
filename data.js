@@ -3415,3 +3415,11 @@ function getAllRestaurants() {
 function getAdventure(slug) {
   return ADVENTURES.find(a => a.slug === slug);
 }
+
+// A quiet teaser for a future page — my wife's solo Peru trip.
+// Full HerStories page (destination writeup, more photos/stories) is a later project.
+const HER_STORIES_TEASER = {
+  restaurant: `Lima Taverna`,
+  photo: "assets/684691291_10233650431470783_6474378245618826087_n.jpg",
+  blurb: `While the rest of us were home, my wife came back from a trip raving about a Peruvian meal that might be worth its own detour someday: fresh ceviche with choclo and cancha, a pisco sour, an ice-cold Cusqueña, and alfajores with her name piped onto the plate in berry sauce. A full HerStories page is coming eventually — for now, consider this the trailer.`
+};

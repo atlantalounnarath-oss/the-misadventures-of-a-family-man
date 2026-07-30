@@ -928,6 +928,20 @@ function renderHome() {
     </div>
   </section>
 
+  <section class="section section-alt">
+    <div class="container">
+      <span class="eyebrow">A Note From the Road, Sort Of</span>
+      <div class="misadventure-card reveal mt-lg" style="max-width: 720px; display:grid; grid-template-columns: 140px 1fr; gap: 24px; align-items:center;">
+        <div style="border-radius:12px; overflow:hidden;">${lazyImg(HER_STORIES_TEASER.photo, "A dish from Lima Taverna")}</div>
+        <div>
+          <h3 class="misadventure-title">HerStories: Coming Eventually</h3>
+          <span class="misadventure-loc">${escapeHtml(HER_STORIES_TEASER.restaurant)}</span>
+          <p class="misadventure-body">${escapeHtml(HER_STORIES_TEASER.blurb)}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   ${newsletterBlockHTML()}
   `;
 }
