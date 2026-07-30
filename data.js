@@ -1243,7 +1243,9 @@ const DESTINATIONS = [
       { name: "Sweet Basil", location: "Vail", rating: 4.6, review: "A Vail Village institution since 1977, known for creative seasonal dishes overlooking Gore Creek.", img: img("vail-r1", 900, 650), communityReview: "One of Vail's most enduring restaurants, still evolving after nearly 50 years — reviewers consistently praise the lobster-topped dishes and creek-side setting, though reservations book out weeks ahead in peak season.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Mountain Standard", location: "Vail", rating: 4.5, review: "A game-forward American restaurant known for elk, trout, and mountain-driven cooking.", img: img("vail-r2", 900, 650), communityReview: "Praised for its wild-game-forward menu and mountain-modern atmosphere — reviewers frequently call the trout and elk dishes standouts, with the lively bar scene a common highlight for après-ski.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/495276857_10229018550636657_2628968493062502312_n.jpg", caption: "A festive group dinner with bread, appetizers, and drinks near Lionshead — restaurant name lost to time" }
+    ],
     hiddenGems: [
       "Booth Falls Trail, a quieter hike than the main resort trails",
       "The gondola cabins some restaurants reserve for private fondue dinners in winter"
@@ -1284,7 +1286,9 @@ const DESTINATIONS = [
       { name: "Frasca Food and Wine", location: "Boulder", rating: 4.7, review: "A Michelin-starred, James Beard Award-winning restaurant celebrating the food and wine of Friuli-Venezia Giulia, Italy.", img: img("boulder-r1", 900, 650), communityReview: "Widely regarded as one of Colorado's best restaurants — reviewers consistently praise the refined Friulian cooking, deep wine list, and warm, unpretentious service for a Michelin-starred room.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Black Cat Farmstead", location: "Boulder", rating: 4.6, review: "A farm-to-table restaurant with a rotating chef's tasting menu built around ingredients grown on its own historic farmstead.", img: img("boulder-r2", 900, 650), communityReview: "Diners consistently highlight the hyper-local, farm-driven tasting menu and unique private garden cabana seating as a standout Boulder-area experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Little Man Ice Cream", location: "Denver", rating: 4.5, review: "A Denver institution and Colorado must-visit — handcrafted, small-batch ice cream with rotating seasonal flavors.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "Widely called one of Denver's most beloved travel-guide stops, with its iconic giant milk-can storefront in Lower Highlands — reviewers consistently praise the handcrafted, small-batch flavors and vegan/gluten-free options, though a handful note long lines and occasional inconsistency between locations.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Kuluka Boba & Sweets", location: "Denver", rating: 4.8, review: "A family-owned boba and mochi-donut shop next door to Little Man — go for the ube milk tea and a rotating-flavor mochi donut.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "A small, family-owned Westminster shop reviewers rave about for its fresh boba (never watered down) and inventive mochi donuts — praised for a bright, cozy boho interior and consistently friendly, fast service.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Kuluka Boba & Sweets", location: "Denver", rating: 4.8, review: "A family-owned boba and mochi-donut shop next door to Little Man — go for the ube milk tea and a rotating-flavor mochi donut.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "A small, family-owned Westminster shop reviewers rave about for its fresh boba (never watered down) and inventive mochi donuts — praised for a bright, cozy boho interior and consistently friendly, fast service.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Boulder Book Store", location: "Boulder", rating: 4.7, review: "Boulder's largest independent bookstore on Pearl Street Mall — three floors, 100,000+ titles, and a coffee counter worth lingering over.", communityReview: "A Pearl Street institution reviewers consistently call one of the best independent bookstores they've visited, praising the multiple floors, knowledgeable staff, and easy-to-get-lost-in atmosphere.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Rocky Mountain Chocolate Factory", location: "Denver", rating: 4.2, review: "A Denver chocolatier in Writer's Square known for handmade truffles, fudge, and gourmet caramel apples.", communityReview: "Reviewers praise the freshness of the chocolate and caramel apples and consistently friendly staff, though a few note it can feel more grab-and-go than sit-down.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "assets/506898347_10229529560891594_1878140097006799914_n.jpg", caption: "Bison bites and a whiskey flight on a misty patio near Rocky Mountain National Park" },
@@ -1292,7 +1296,9 @@ const DESTINATIONS = [
       { src: "assets/506337455_10229529523130650_1920408555553337138_n.jpg", caption: "Fresh peaches from the Boulder Farmers Market" },
       { src: "assets/506050953_10229529119320555_8958016516747642670_n.jpg", caption: "A festival bite at the Boulder Farmers Market" },
       { src: "assets/506204953_10229529121000597_899615473264437947_n.jpg", caption: "Shaved ice and iced coffee at the Boulder Farmers Market" },
-      { src: "assets/506044781_10229529004517685_4421291974863926150_n.jpg", caption: "Iced coffees on a Boulder patio" }
+      { src: "assets/506044781_10229529004517685_4421291974863926150_n.jpg", caption: "Iced coffees on a Boulder patio" },
+      { src: "assets/497614893_10229172406122948_959108040238049718_n.jpg", caption: "A coffee break at Boulder Book Store" },
+      { src: "assets/497522992_10229172407602985_4975420321164049360_n.jpg", caption: "Sharing a cup of cookies-and-cream at Rocky Mountain Chocolate Factory, Denver" }
     ],
     hiddenGems: [
       "The Boulder Creek Path for a quiet walk away from Pearl Street",
@@ -1304,7 +1310,7 @@ const DESTINATIONS = [
       "Boulder and Denver are close enough to combine easily in one trip",
       "Check the weather for Apr – Jun before locking in dates"
     ],
-    gallery: ["assets/uploads/boulder-g1.jpg", "assets/uploads/boulder-g2.jpg", "assets/uploads/boulder-g3.jpg", "assets/uploads/boulder-g4.jpg", "assets/uploads/boulder-g5.jpg", "assets/uploads/boulder-g6.jpg", { src: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", caption: "Little Man Ice Cream and Kuluka Boba & Sweets, next-door neighbors" }],
+    gallery: ["assets/uploads/boulder-g1.jpg", "assets/uploads/boulder-g2.jpg", "assets/uploads/boulder-g3.jpg", "assets/uploads/boulder-g4.jpg", "assets/uploads/boulder-g5.jpg", "assets/uploads/boulder-g6.jpg", { src: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", caption: "Little Man Ice Cream and Kuluka Boba & Sweets, next-door neighbors" }, { src: "assets/497580608_10229172404122898_8555339170528257827_n.jpg", caption: "Outside Rocky Mountain Chocolate Factory, Denver" }],
     rating: 8,
     wouldReturn: "Yes — the lattes alone are worth it.",
     relatedAdventure: null
@@ -1960,12 +1966,23 @@ const DESTINATIONS = [
       { name: `La Pergola`, location: `Rome`, rating: 4.6, review: `Located on the top floor of the Rome Cavalieri hotel, this three-Michelin-starred restaurant offers stunning views of the city along with exquisite cuisine.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=900", communityReview: `Reviewers frequently cite the view over Rome as reason enough to visit on its own, with the tasting menu and attentive staff earning consistent praise — some note it's a splurge best saved for a special occasion.`, communitySource: "Google/Yelp/Tripadvisor" },
       { name: `La Taverna dei Fori Imperiali`, location: `Rome`, rating: 4.3, review: `This cozy restaurant near the Roman Forum is known for its classic Roman dishes and warm atmosphere.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=900", communityReview: `A favorite for travelers near the Colosseum — reviewers highlight the fresh pasta and warm, welcoming service, though a few mention inconsistent food temperatures or tourist-level pricing.`, communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Il Pagliaccio`, location: `Rome`, rating: 4.6, review: `A two-Michelin-starred restaurant known for creative, boundary-pushing Italian cuisine from chef Anthony Genovese.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=900", communityReview: `Reviewers routinely rank this among the best tasting menus they've had anywhere, praising the inventive courses and attentive service — the price tag draws the only real criticism.`, communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Tempio di Bacco`, location: `Rome`, rating: 4.3, review: `A historic trattoria near Via Veneto, open since 1911 — classic Roman pasta (carbonara, amatriciana, cacio e pepe) in a semi-rustic dining room.`, communityReview: "A century-old Rome institution reviewers praise for warm service and a charming outdoor patio, with a deep wine list by the glass — a reliable, classic Roman meal near Via Veneto.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Tempio di Bacco`, location: `Rome`, rating: 4.3, review: `A historic trattoria near Via Veneto, open since 1911 — classic Roman pasta (carbonara, amatriciana, cacio e pepe) in a semi-rustic dining room.`, communityReview: "A century-old Rome institution reviewers praise for warm service and a charming outdoor patio, with a deep wine list by the glass — a reliable, classic Roman meal near Via Veneto.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Osteria Da Fortunata`, location: `Rome`, rating: 4.6, review: `A bustling handmade-pasta spot near Campo de' Fiori — watch the pasta being rolled out in the window on your way in, then order the gnocchi alla Sorrentina or cacio e pepe.`, communityReview: "Reviewers consistently rave about the fresh, hand-made pasta — carbonara, cacio e pepe, and gnocchi all draw praise — with a lively atmosphere and friendly staff; the tradeoff is a long line since they don't take reservations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Tè Amo`, location: `Rome`, rating: 4.5, review: `A bubble tea shop just steps from the Pantheon — a legit boba fix in the middle of Rome, with milk teas, fruit teas, and specialty flavors like matcha coconut.`, communityReview: "Reviewers consistently call it some of the best bubble tea in Rome, praising the fresh fruit and generous tapioca pearls — a favorite quick stop for anyone craving boba right by the Pantheon.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `L'Insalata Ricca`, location: `Rome`, rating: 4.5, review: `A long-running Roman chain (since 1983) known for its huge menu of salads alongside classic Roman pasta, pizza, and steaks.`, communityReview: "A local favorite reviewers keep coming back to trip after trip, praising the generous portions, fair prices, and reliably good pasta and salads — some note it can feel touristy given its size, but the food consistently delivers.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "assets/501796319_10229346945286318_1934124203843649557_n.jpg", caption: "A Nutella-filled donut, a pistachio pastry bar, a rum and coke, and a Heineken — a Rome street-side snack break" },
       { src: "assets/502699258_10229338108865413_1882781844461050754_n.jpg", caption: "Lunch with a view at Tempio di Bacco, Rome" },
-      { src: "assets/502520801_10229338108665408_8910796706237424039_n.jpg", caption: "A Peronis on the patio at Tempio di Bacco, Rome" }
+      { src: "assets/502520801_10229338108665408_8910796706237424039_n.jpg", caption: "A Peronis on the patio at Tempio di Bacco, Rome" },
+      { src: "assets/502378377_10229338080904714_7757656078015166181_n.jpg", caption: "A Sapporo and an Asahi pour near the Vatican, Rome — restaurant name lost to time" },
+      { src: "assets/490378879_10228759709645794_4365510874899517837_n.jpg", caption: "A fried antipasti sampler at Osteria Da Fortunata, Rome" },
+      { src: "assets/489947331_10228759710005803_2142461622440903625_n.jpg", caption: "Sparkling water and a Birra Moretti at Osteria Da Fortunata, Rome" },
+      { src: "assets/489820724_10228759709605793_5954951482464525220_n.jpg", caption: "Gnocchi alla Sorrentina at Osteria Da Fortunata, Rome" },
+      { src: "assets/489919939_10228759709885800_4641403304600225616_n.jpg", caption: "A closer look at the gnocchi alla Sorrentina at Osteria Da Fortunata, Rome" },
+      { src: "assets/490186889_10228759572122356_5416124292685608134_n.jpg", caption: "Milk tea and a large fruit tea from Tè Amo, near the Pantheon in Rome" },
+      { src: "assets/489827886_10228759563282135_8025398252904655414_n.jpg", caption: "A Peroni and water at an outdoor table in Trastevere, Rome — restaurant name lost to time" },
+      { src: "assets/490590942_10228757865839700_4906075326335259947_n.jpg", caption: "A Birra Moretti and a Peroni Gran Riserva at L'Insalata Ricca, Rome" }
     ],
     hiddenGems: [
 `A quiet corner of Rome away from the main sights, worth the wander`,
@@ -2362,7 +2379,14 @@ const DESTINATIONS = [
     restaurants: [
       { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900", communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/489173504_10228749728956283_7083420681290084372_n.jpg", caption: "A hazelnut and cream dessert near the Acropolis, Athens — restaurant name lost to time" },
+      { src: "assets/489450526_10228749726276216_4176068603656769503_n.jpg", caption: "A greens and cheese salad near the Acropolis, Athens" },
+      { src: "assets/489446403_10228749726556223_947766054591346168_n.jpg", caption: "Creamy chicken penne near the Acropolis, Athens" },
+      { src: "assets/489436913_10228749727916257_1269803508640154464_n.jpg", caption: "A Heineken and a Fischer pilsner near the Acropolis, Athens" },
+      { src: "assets/489557505_10228749727836255_6456962449726596482_n.jpg", caption: "A bottle of Kanenas Syrah-Mavroudi, a Greek red, near the Acropolis, Athens" },
+      { src: "assets/490377070_10228749506990734_4372839175562057834_n.jpg", caption: "A Mythos lager near the Acropolis, Athens — restaurant name lost to time" }
+    ],
     hiddenGems: [
 `A quiet corner of Athens away from the main sights, worth the wander`,
 `Go early — Athens feels completely different before the crowds arrive`,
@@ -2373,7 +2397,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2400,7 +2424,10 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Selene", location: "Santorini", rating: 4.5, review: "This upscale restaurant in Santorini is known for its gourmet Greek cuisine made with locally sourced ingredients. Try their Santorinian fava, lobster pasta, and smoked pork with eggplant puree.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=900", communityReview: "A destination restaurant set in a converted 18th-century monastery, led by a Michelin-starred chef — reviewers consistently call it one of the best meals on the island, though several flag steep pricing and a slow-paced, hours-long tasting menu.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/489969578_10228751542521621_2755098204194973161_n.jpg", caption: "A bottle of 2021 Santorini Assyrtiko, the island's signature white wine — restaurant name lost to time" },
+      { src: "assets/489437302_10228751542601623_142822739827153484_n.jpg", caption: "A bottle of Estate Argyros Vinsanto from Santorini" }
+    ],
     hiddenGems: [
 `A quiet corner of Santorini away from the main sights, worth the wander`,
 `Go early — Santorini feels completely different before the crowds arrive`,
