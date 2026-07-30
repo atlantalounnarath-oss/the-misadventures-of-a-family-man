@@ -2697,6 +2697,12 @@ const MISADVENTURES = [
     body: "\"When you forget your wallet and run out on the check. Should have told the kids our plans\" — the actual caption from that night. To make it worse, we then lost track of the girls in the same outing. \"Lost the girls again. Bad at the chaperone thing,\" the next photo admits. Philly humbled us twice before dinner was even paid for."
   },
   {
+    icon: "🏚️",
+    title: "Should've Left It in the Past",
+    location: "Philadelphia, Pennsylvania",
+    body: "Made the mistake of suggesting we swing by my old college neighborhood, expecting the same chill vibe and easygoing student energy I remembered. Instead: violent screaming and people using every stoop as their own personal drug den. Some places are better left exactly as memory has them."
+  },
+  {
     icon: "🥶",
     title: "Day 3, I'm Tired",
     location: "Vail, Colorado",
@@ -2907,6 +2913,30 @@ const MISADVENTURES = [
     body: "Times Square, at last, in person, in all its neon glory. Our verdict, captured in real time: \"All that glitters is not gold .... other words .... meh.\" Some landmarks are worth the hype. This was, allegedly, not one of them."
   },
   {
+    icon: "🐀",
+    title: "Welcome to New York",
+    location: "New York City, New York",
+    body: "Walking to the hotel, a scattering of sewer rats crossed our path like it was nothing — just Tuesday for everyone else around us. Add in dodging dog droppings on seemingly every block, and it's a crash course in \"this is just how the city is\" within the first ten minutes."
+  },
+  {
+    icon: "🥯",
+    title: "Rain Means Everyone Wants a Bagel",
+    location: "New York City, New York",
+    body: "A downpour sent half the neighborhood into the same bagel shop at once — packed wall to wall, line out the door, everyone with the same idea to wait out the rain over a bagel and coffee."
+  },
+  {
+    icon: "🚗",
+    title: "Painted Lines Are More of a Suggestion",
+    location: "New York City, New York",
+    body: "New York drivers treat lane markings as optional at best. Crosswalks, lanes, turn signals — all more theoretical than actual rules of the road."
+  },
+  {
+    icon: "🌿",
+    title: "Wrong Turn Into NYU's 420 Festival",
+    location: "New York City, New York",
+    body: "Ended up walking straight into an NYU 420 festival completely by accident — one of those only-in-New-York moments where you turn a corner and suddenly you're in the middle of something you had no idea was happening."
+  },
+  {
     icon: "🐕",
     title: "The Dog Café Detour, Storm Included",
     location: "Austin & San Antonio, Texas",
@@ -2941,6 +2971,12 @@ const MISADVENTURES = [
     title: "Becoming Batman at Every Restaurant",
     location: "Washington, D.C.",
     body: "\"When you give up having to explain your name every time you order .... you become Batman every time you order,\" the caption reads — a coping strategy born somewhere between the National Mall and dinner. Our homie Frankie (a statue, not a person) made a cameo appearance in the same photo set and did not comment on the alias."
+  },
+  {
+    icon: "👕",
+    title: "Somehow Shirtless",
+    location: "Washington, D.C.",
+    body: "Met up with old friends, and when they're the ones buying, apparently my limits get generously underestimated. Don't fully remember the details of the night, but I do remember arriving back at the hotel shirtless with no explanation for where the shirt went. Some questions are better left unanswered."
   },
   {
     icon: "🥵",

@@ -809,11 +809,20 @@ const HERO_SLIDES = [
   { img: wpImg(797, 1920), eyebrow: "Where it started — Hong Kong" }
 ];
 
+function sampleRandom(arr, n) {
+  const copy = arr.slice();
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, n);
+}
+
 function renderHome() {
-  const featured = getAdventure("southeast-asia-2026");
-  const featuredDests = DESTINATIONS.slice(0, 3);
-  const topRestaurants = getAllRestaurants().slice(0, 3);
-  const misadventureOfMonth = MISADVENTURES[2];
+  const featured = ADVENTURES[Math.floor(Math.random() * ADVENTURES.length)];
+  const featuredDests = sampleRandom(DESTINATIONS, 3);
+  const topRestaurants = sampleRandom(getAllRestaurants(), 3);
+  const mysteryMisadventure = MISADVENTURES[Math.floor(Math.random() * MISADVENTURES.length)];
 
   return `
   <section class="hero-slider" id="heroSlider">
@@ -837,7 +846,7 @@ function renderHome() {
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Featured Adventure</span>
+          <span class="eyebrow">Where the Pin Drops</span>
           <h2 class="section-title">${escapeHtml(featured.title)}</h2>
           <p class="section-desc">${escapeHtml(featured.subtitle)}</p>
         </div>
@@ -859,8 +868,8 @@ function renderHome() {
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Latest Destinations</span>
-          <h2 class="section-title">Where the passport's been stamped lately</h2>
+          <span class="eyebrow">Flip the Passport Pages</span>
+          <h2 class="section-title">Check out this spot</h2>
         </div>
         <a href="#/destinations" class="btn btn-ghost">All Destinations</a>
       </div>
@@ -874,8 +883,8 @@ function renderHome() {
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Eats Worth the Flight</span>
-          <h2 class="section-title">Restaurants I'd fly back for</h2>
+          <span class="eyebrow">Your Next Reservation</span>
+          <h2 class="section-title">Restaurants worth the flight</h2>
         </div>
         <a href="#/eats" class="btn btn-ghost">See All Restaurants</a>
       </div>
@@ -908,12 +917,12 @@ function renderHome() {
 
   <section class="section section-alt">
     <div class="container">
-      <span class="eyebrow">Misadventure of the Month</span>
+      <span class="eyebrow">The Mishap You Might've Missed</span>
       <div class="misadventure-card reveal mt-lg" style="max-width: 720px;">
-        <span class="misadventure-icon">${misadventureOfMonth.icon}</span>
-        <h3 class="misadventure-title">${escapeHtml(misadventureOfMonth.title)}</h3>
-        <span class="misadventure-loc">${escapeHtml(misadventureOfMonth.location)}</span>
-        <p class="misadventure-body">${escapeHtml(misadventureOfMonth.body)}</p>
+        <span class="misadventure-icon">${mysteryMisadventure.icon}</span>
+        <h3 class="misadventure-title">${escapeHtml(mysteryMisadventure.title)}</h3>
+        <span class="misadventure-loc">${escapeHtml(mysteryMisadventure.location)}</span>
+        <p class="misadventure-body">${escapeHtml(mysteryMisadventure.body)}</p>
         <a href="#/misadventures" class="food-card-more" style="margin-top:22px;">Read more misadventures →</a>
       </div>
     </div>
@@ -1077,23 +1086,27 @@ function renderDestinationsList() {
   const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
   years.forEach(y => byYear[y].sort((a, b) => a.name.localeCompare(b.name)));
 
-  const countryGroupsHTML = countries.map(c => `
-    <div class="dest-group" data-view="country" data-key="${escapeHtml(c)}">
-      <div class="divider-route"></div>
-      <h2 class="country-heading">${escapeHtml(c)} <span class="country-count">${byCountry[c].length} ${byCountry[c].length === 1 ? "stop" : "stops"}</span></h2>
+  const countryGroupsHTML = countries.map((c, gi) => `
+    <details class="dest-group" data-view="country" data-key="${escapeHtml(c)}" ${gi === 0 ? "open" : ""}>
+      <summary class="dest-group-summary">
+        <div class="divider-route"></div>
+        <h2 class="country-heading">${escapeHtml(c)} <span class="country-count">${byCountry[c].length} ${byCountry[c].length === 1 ? "stop" : "stops"}</span></h2>
+      </summary>
       <div class="card-grid mt-lg">
         ${byCountry[c].map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
       </div>
-    </div>`).join("");
+    </details>`).join("");
 
-  const yearGroupsHTML = years.map(y => `
-    <div class="dest-group" data-view="year" data-key="${escapeHtml(y)}" style="display:none;">
-      <div class="divider-route"></div>
-      <h2 class="country-heading">${escapeHtml(y)} <span class="country-count">${byYear[y].length} ${byYear[y].length === 1 ? "stop" : "stops"}</span></h2>
+  const yearGroupsHTML = years.map((y, gi) => `
+    <details class="dest-group" data-view="year" data-key="${escapeHtml(y)}" style="display:none;" ${gi === 0 ? "open" : ""}>
+      <summary class="dest-group-summary">
+        <div class="divider-route"></div>
+        <h2 class="country-heading">${escapeHtml(y)} <span class="country-count">${byYear[y].length} ${byYear[y].length === 1 ? "stop" : "stops"}</span></h2>
+      </summary>
       <div class="card-grid mt-lg">
         ${byYear[y].map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
       </div>
-    </div>`).join("");
+    </details>`).join("");
 
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
@@ -1167,6 +1180,7 @@ function bindCountryFilters() {
     document.querySelectorAll(`#destGroups .dest-group[data-view="${currentMode}"]`).forEach(g => {
       const match = key === "all" || g.getAttribute("data-key") === key;
       g.style.display = match ? "" : "none";
+      if (match && key !== "all") g.open = true;
     });
   });
 }
@@ -1342,16 +1356,18 @@ function renderEats() {
       <h1 class="section-title" style="margin-top:16px;">Restaurants I'd fly back for</h1>
       <p class="section-desc" style="margin-top:16px;">Every meal here earned its place through repeat visits, unreasonable cravings back home, or a kid asking for it by name months later.</p>
 
-      ${byDest.map(d => `
-        <div class="dest-group">
-          <div class="divider-route"></div>
-          <h2 class="country-heading">${escapeHtml(d.name)} <span class="country-count">${d.restaurants.length} ${d.restaurants.length === 1 ? "restaurant" : "restaurants"}</span></h2>
+      ${byDest.map((d, gi) => `
+        <details class="dest-group" ${gi === 0 ? "open" : ""}>
+          <summary class="dest-group-summary">
+            <div class="divider-route"></div>
+            <h2 class="country-heading">${escapeHtml(d.name)} <span class="country-count">${d.restaurants.length} ${d.restaurants.length === 1 ? "restaurant" : "restaurants"}</span></h2>
+          </summary>
           <div class="card-grid mt-lg">
             ${d.restaurants.map((r, i) => foodCardHTML({ ...r, destSlug: d.slug, destName: d.name }, `reveal-delay-${(i % 3) + 1}`)).join("")}
           </div>
           <div class="eyebrow" style="margin-top:32px; display:block;">What We Actually Ate</div>
           ${foodPhotosGalleryHTML(d)}
-        </div>`).join("")}
+        </details>`).join("")}
     </div>
   </section>
   ${newsletterBlockHTML()}
@@ -1383,10 +1399,12 @@ function renderMisadventures() {
       </div>
 
       <div id="misadventureGroups">
-        ${locations.map(loc => `
-          <div class="dest-group" data-key="${escapeHtml(loc)}">
-            <div class="divider-route"></div>
-            <h2 class="country-heading">${escapeHtml(loc)} <span class="country-count">${byLocation[loc].length} ${byLocation[loc].length === 1 ? "story" : "stories"}</span></h2>
+        ${locations.map((loc, gi) => `
+          <details class="dest-group" data-key="${escapeHtml(loc)}" ${gi === 0 ? "open" : ""}>
+            <summary class="dest-group-summary">
+              <div class="divider-route"></div>
+              <h2 class="country-heading">${escapeHtml(loc)} <span class="country-count">${byLocation[loc].length} ${byLocation[loc].length === 1 ? "story" : "stories"}</span></h2>
+            </summary>
             <div class="card-grid mt-lg">
               ${byLocation[loc].map((m, i) => `
                 <div class="misadventure-card reveal reveal-delay-${(i % 3) + 1}">
@@ -1396,7 +1414,7 @@ function renderMisadventures() {
                   <p class="misadventure-body">${escapeHtml(m.body)}</p>
                 </div>`).join("")}
             </div>
-          </div>
+          </details>
         `).join("")}
       </div>
     </div>
@@ -1417,6 +1435,7 @@ function bindMisadventureFilters() {
     document.querySelectorAll("#misadventureGroups .dest-group").forEach(g => {
       const match = key === "all" || g.getAttribute("data-key") === key;
       g.style.display = match ? "" : "none";
+      if (match && key !== "all") g.open = true;
     });
   });
 }
