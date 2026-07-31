@@ -806,9 +806,11 @@ function worldMapHTML() {
         ${DESTINATIONS.map(d => `<a href="#/destinations/${d.slug}" class="map-pin" data-label="${escapeHtml(d.name)}" style="top:${d.coords.top}; left:${d.coords.left};"></a>`).join("")}
         <a href="#/herstories" class="map-egg" style="top:${HER_STORIES[0].coords.top}; left:${HER_STORIES[0].coords.left};" aria-label="A quiet corner of the map">
           <svg viewBox="0 0 100 100" aria-hidden="true">
-            <path d="M50 18 C36 27,26 42,21 62 C31 54,41 51,50 56 C59 51,69 54,79 62 C74 42,64 27,50 18 Z" fill="var(--brass-bright)"/>
-            <path d="M50 55 C45 66,45 79,50 90 C55 79,55 66,50 55 Z" fill="var(--brass)"/>
-            <path d="M28 84 Q50 76 72 84" fill="none" stroke="var(--brass)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+            <path d="M58 58 C40 62,20 68,8 88 C26 82,42 76,56 74 C50 82,48 90,52 98 C62 88,68 76,66 64 Z" fill="var(--brass)"/>
+            <path d="M60 46 C46 24,26 10,6 8 C20 20,28 30,30 42 C42 34,54 36,62 46 Z" fill="var(--brass-bright)"/>
+            <ellipse cx="58" cy="56" rx="17" ry="15" fill="var(--brass-bright)"/>
+            <circle cx="78" cy="38" r="12" fill="var(--brass-bright)"/>
+            <path d="M88 33 L100 39 L88 45 Z" fill="var(--brass-bright)"/>
           </svg>
         </a>
         <span class="map-caption">${DESTINATIONS.length} stamps and counting — tap a pin</span>
