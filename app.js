@@ -356,6 +356,20 @@ function foodPhotosGalleryHTML(d) {
       </div>`;
 }
 
+function misadventurePhotosHTML(m) {
+  if (m.photos && m.photos.length) {
+    return `
+      <div class="foods-strip mt-lg">
+        ${m.photos.map(p => `
+          <div class="food-pill reveal">
+            ${lazyImg(p.src, p.caption || m.title)}
+            ${p.caption ? `<div class="food-pill-name">${escapeHtml(p.caption)}</div>` : ""}
+          </div>`).join("")}
+      </div>`;
+  }
+  return "";
+}
+
 function newsletterBlockHTML() {
   return `
   <section class="section">
@@ -943,6 +957,7 @@ function renderHome() {
         <h3 class="misadventure-title">${escapeHtml(mysteryMisadventure.title)}</h3>
         <span class="misadventure-loc">${escapeHtml(mysteryMisadventure.location)}</span>
         <p class="misadventure-body">${escapeHtml(mysteryMisadventure.body)}</p>
+        ${misadventurePhotosHTML(mysteryMisadventure)}
         <a href="#/misadventures" class="food-card-more" style="margin-top:22px;">Read more misadventures →</a>
       </div>
     </div>
@@ -1299,6 +1314,7 @@ function renderDestinationDetail(d) {
             <h3 class="misadventure-title">${escapeHtml(m.title)}</h3>
             <span class="misadventure-loc">${escapeHtml(m.location)}</span>
             <p class="misadventure-body">${escapeHtml(m.body)}</p>
+            ${misadventurePhotosHTML(m)}
           </div>`).join("")}
       </div>
       <a href="#/misadventures" class="btn btn-ghost mt-lg" style="margin-top:32px;">See All Misadventures</a>
@@ -1529,6 +1545,7 @@ function renderMisadventures() {
                   <h3 class="misadventure-title">${escapeHtml(m.title)}</h3>
                   <span class="misadventure-loc">${escapeHtml(m.location)}</span>
                   <p class="misadventure-body">${escapeHtml(m.body)}</p>
+                  ${misadventurePhotosHTML(m)}
                 </div>`).join("")}
             </div>
           </details>

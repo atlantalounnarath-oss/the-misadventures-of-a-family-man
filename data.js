@@ -1342,9 +1342,21 @@ const DESTINATIONS = [
       { name: `Mama's Fish House (Paia)`, location: `Maui, Hawaii`, rating: 4.3, review: `A legendary restaurant known for its fresh seafood, stunning ocean views, and Polynesian-inspired cuisine. It's a popular spot, so make sure to make a reservation in advance.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=900", communityReview: "One of Maui's most debated restaurants — the beachfront setting and daily-changing fresh fish menu draw genuine devotion from many diners, while others (including some longtime residents) call it overpriced tourist theater you can beat elsewhere on the island for less. Book three to six months out either way.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Lahaina Grill (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `This award-winning restaurant offers a sophisticated dining experience with a menu featuring a fusion of Hawaiian and contemporary flavors. The atmosphere is elegant, and the service is exceptional.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=900", communityReview: "Lahaina Grill was lost in the August 2023 wildfire that destroyed most of historic Front Street — it no longer exists. Longtime visitors still remember it fondly as one of the best restaurants on the island; if you're headed to West Maui, consider supporting one of the businesses that reopened as part of the town's ongoing recovery.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Merriman's (Kapalua)`, location: `Maui, Hawaii`, rating: 4.6, review: `Located in the picturesque Kapalua resort area, Merriman's offers farm-to-table cuisine using locally sourced ingredients. The menu highlights the flavors of Hawaii and the Pacific Rim.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=900", communityReview: "Frequently named as the answer in the ongoing \"Merriman's vs. Mama's\" Maui debate — many locals and repeat visitors prefer it for the Kapalua Bay sunset views and consistent farm-to-table cooking, with happy hour on the patio a favorite recommendation.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `The Mill House (Waikapu)`, location: `Maui, Hawaii`, rating: 4.3, review: `Situated in a beautiful plantation-era building, The Mill House serves creative dishes crafted with ingredients grown on their own farm. It offers a unique farm-to-table experience with stunning views of the Maui Tropical Plantation.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=900", communityReview: "A genuinely farm-to-table spot reviewers appreciate for being a step off the resort circuit — the plantation setting and produce grown on-site get consistent praise, with sunset views over the valley as a frequent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `The Mill House (Waikapu)`, location: `Maui, Hawaii`, rating: 4.3, review: `Situated in a beautiful plantation-era building, The Mill House serves creative dishes crafted with ingredients grown on their own farm. It offers a unique farm-to-table experience with stunning views of the Maui Tropical Plantation.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=900", communityReview: "A genuinely farm-to-table spot reviewers appreciate for being a step off the resort circuit — the plantation setting and produce grown on-site get consistent praise, with sunset views over the valley as a frequent highlight.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Taverna (Kapalua)`, location: `Maui, Hawaii`, rating: 4.1, review: `An Italian spot at the Kapalua Golf Course with house-made pasta, wood-fired pizzas, and open-air seating looking out over the West Maui mountains. The crispy brussels sprouts and clam pasta were standouts.`, img: "assets/469781369_10227834028744350_4124340005845274160_n.jpg", communityReview: "Reviewers consistently praise the house-made pasta, calling dishes like the lasagna and manicotti some of the best they've had. The open-air patio overlooking the golf course and West Maui mountains is a regular highlight, though a few call it pricier than a typical lunch spot and note the dining room can get noisy on busy nights.", communitySource: "Yelp/Tripadvisor/The Infatuation" },
+      { name: `Duke's Beach House (Ka'anapali)`, location: `Maui, Hawaii`, rating: 4.3, review: `An oceanfront spot at the Honua Kai Resort on Ka'anapali's North Beach, with island-inspired cocktails, Hawaii Regional Cuisine, and the famously indulgent Hula Pie for dessert.`, img: "assets/469943835_10227833971822927_8757561996067566150_n.jpg", communityReview: "Reviewers consistently highlight the oceanfront setting, sunset views, and happy hour, with the Hula Pie coming up again and again as a must-order. Opinions on the food itself are more mixed — some call the fish and steaks excellent, while others find dishes overpriced or inconsistent for what's essentially a resort restaurant.", communitySource: "Tripadvisor" },
+      { name: `Honu (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `A laid-back oceanfront seafood-and-pizza spot on Front Street, known for its brick-oven pizzas, fresh catch, and turtle sightings from the patio.`, img: "assets/469130866_10227806005403784_4981938933684768242_n.jpg", communityReview: "The original Honu Seafood & Pizza was destroyed in the August 2023 Lahaina wildfire, but it reopened nearby as Honu Oceanside and reviewers say it's just as good if not better — praising the fresh seafood, cocktails, and oceanfront sunset views. If you visit today, you'll be eating at the rebuilt version.", communitySource: "Yelp/Tripadvisor" },
+      { name: `Maui Thai Bistro (Kihei)`, location: `Maui, Hawaii`, rating: 4.5, review: `A contemporary, kitsch-free Thai spot in South Maui, known for bold flavors, generous portions, and dishes like drunken noodles, larb, and pad thai loaded with fresh vegetables.`, img: "assets/468963138_10227802116106554_6882603753813864523_n.jpg", communityReview: "A consistent local and visitor favorite, with reviewers praising the bold, authentic flavors, generous portions, and customizable spice levels — the pad thai and drunken noodles come up again and again as standouts. Some travelers call it the best Thai food they've had in Maui.", communitySource: "Yelp/Tripadvisor/OpenTable" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/469781369_10227834028744350_4124340005845274160_n.jpg", caption: "Crispy brussels sprouts and braised short rib at Taverna" },
+      { src: "assets/468963138_10227802116106554_6882603753813864523_n.jpg", caption: "Pad see ew with tofu and vegetables at Maui Thai Bistro" },
+      { src: "assets/469039345_10227802115826547_8872122186570149088_n.jpg", caption: "Larb with mint, red onion, and lettuce at Maui Thai Bistro" },
+      { src: "assets/469005762_10227802116826572_228668205226127657_n.jpg", caption: "Pad thai with bean sprouts at Maui Thai Bistro" },
+      { src: "assets/469943838_10227834028784351_4564830485447482684_n.jpg", caption: "Clam pasta at Taverna" },
+      { src: "assets/469943835_10227833971822927_8757561996067566150_n.jpg", caption: "A tropical cocktail at Duke's Beach House" },
+      { src: "assets/469130866_10227806005403784_4981938933684768242_n.jpg", caption: "A beer and a mango cocktail at Honu" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Maui, Hawaii`,
@@ -1387,7 +1399,9 @@ const DESTINATIONS = [
       { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=900", communityReview: "One of the few NYC restaurants that reviewers describe as living up to decades of hype — the seafood-focused tasting menu and dining room service are consistently called flawless, and unlike some legacy institutions, its reputation hasn't slipped.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Peter Luger Steak House`, location: `New York City`, rating: 4.5, review: `A classic steakhouse in Brooklyn, famous for its dry-aged steaks and old-world charm. Make sure to try their iconic porterhouse steak.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900", communityReview: "A genuinely documented decline: Peter Luger lost its Michelin star in 2022 after a famously scathing zero-star New York Times review in 2019 that criticized inconsistent, underwhelming steak and brusque service. It still has passionate defenders who call the burger and the 138-year history worth it regardless — but go in knowing the food no longer has universal acclaim.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Momofuku Ssäm Bar`, location: `New York City`, rating: 4.6, review: `This trendy spot in the East Village offers innovative Asian-inspired dishes, such as their famous pork buns and bo ssäm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=900", communityReview: "Momofuku Ssäm Bar has closed — both its original East Village spot and its 2021 relocation to South Street Seaport now show as permanently closed. David Chang's Momofuku Noodle Bar, the sister restaurant that started it all, is still open and thriving in the East Village if you want the brand experience.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900", communityReview: "New York's most famous deli since 1888, and reviewers overwhelmingly say it earns the hype — the hand-carved pastrami and old-school counter chaos are consistently called a must-do. One fun bit of contrarian history: a 1979 New York Times ranking of the city's best Jewish delis actually rated Katz's pastrami the weakest of the top tier, calling it \"tough\" and \"barely edible\" — a reminder that even legends have critics.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900", communityReview: "New York's most famous deli since 1888, and reviewers overwhelmingly say it earns the hype — the hand-carved pastrami and old-school counter chaos are consistently called a must-do. One fun bit of contrarian history: a 1979 New York Times ranking of the city's best Jewish delis actually rated Katz's pastrami the weakest of the top tier, calling it \"tough\" and \"barely edible\" — a reminder that even legends have critics.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Teppen Ramen`, location: `New York City`, rating: 4.2, review: `A small, cozy Midtown East ramen shop known for rich pork-and-chicken broth — the Teppen Shio and Teppen Shoyu are the standouts, alongside a daily-limited specialty bowl.`, img: "assets/487936243_10228640208698345_3554697523571178734_n.jpg", communityReview: "Reviewers consistently praise the full-bodied, flavorful broth and springy noodles, especially the shio and shoyu ramen. A few mention it's on the pricier side for the portion size and seating is limited, but it's a well-liked neighborhood find.", communitySource: "Yelp/Tripadvisor" },
+      { name: `Remi Flower & Coffee`, location: `New York City`, rating: 4.6, review: `Part florist, part café — order a lavender or rose latte and it comes out with a tiny matching floral arrangement, all inside a lush, greenhouse-like space.`, img: "assets/487723952_10228642162187181_4364512291647615115_n.jpg", communityReview: "Widely loved for its garden-like atmosphere surrounded by fresh flowers, with reviewers raving about the lavender and rose lattes and calling it one of the most photogenic coffee shops in the city. A few mention limited seating and NYC-typical prices, but the ambiance keeps people coming back.", communitySource: "Yelp/Tripadvisor/The Infatuation" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1400,7 +1414,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Nov before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1000", { src: "assets/487936243_10228640208698345_3554697523571178734_n.jpg", caption: "At Teppen Ramen" }, { src: "assets/487723952_10228642162187181_4364512291647615115_n.jpg", caption: "Coffee at Remi Flower & Coffee, in their greenhouse seating" }, { src: "assets/488006726_10228642200188131_8722694913706547997_n.jpg", caption: "Walking through Chinatown" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1432,9 +1446,17 @@ const DESTINATIONS = [
       { name: `Zahav`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `This renowned Israeli restaurant offers a modern take on Middle Eastern cuisine, serving dishes like hummus, lamb shoulder, and grilled duck hearts. Don't miss the salatim and the incredible tasting menu.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=900", communityReview: "A James Beard Award winner for Outstanding Restaurant and widely called the best restaurant in Philadelphia — reviewers consistently rave about the mezze, pomegranate lamb shoulder, and warm laffa bread. Reservations release on the first Tuesday of the month for the following month, so plan ahead.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Vernick Food & Drink`, location: `Philadelphia, Pennsylvania`, rating: 4.5, review: `Chef Greg Vernick's restaurant focuses on seasonal American cuisine with global influences. The menu features beautifully executed dishes like roasted sea bream, wood-grilled duck, and homemade pastas.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=900", communityReview: "Regularly named among Philadelphia's best restaurants, with reviewers praising the signature \"toasts,\" wood-fired whole chicken, and polished-but-unstuffy Rittenhouse Square atmosphere — some travelers rank it above comparable meals they've had in Paris.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Vedge`, location: `Philadelphia, Pennsylvania`, rating: 4.6, review: `A popular choice for vegetarians and vegans, Vedge serves inventive plant-based dishes with bold flavors. Try their signature dishes like the rutabaga fondue, eggplant braciole, and the wood-roasted carrot.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=900", communityReview: "Michelin-recommended and James Beard-nominated, often called one of the best vegan restaurants in the country — reviewers rave about the rutabaga fondue, though a few mention smaller portions and higher prices than expected for a plant-based menu.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Talula's Garden`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `Located in Washington Square, this charming farm-to-table restaurant offers a delightful menu highlighting local and sustainable ingredients. The butternut squash ravioli, mushroom toast, and roasted chicken are crowd favorites.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=900", communityReview: "A garden-patio favorite reviewers consistently call magical for a special occasion, with the lamb bolognese and brunch fried chicken and waffle earning particular praise — Taylor Swift and Travis Kelce were even spotted there for a family Mother's Day brunch.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Talula's Garden`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `Located in Washington Square, this charming farm-to-table restaurant offers a delightful menu highlighting local and sustainable ingredients. The butternut squash ravioli, mushroom toast, and roasted chicken are crowd favorites.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=900", communityReview: "A garden-patio favorite reviewers consistently call magical for a special occasion, with the lamb bolognese and brunch fried chicken and waffle earning particular praise — Taylor Swift and Travis Kelce were even spotted there for a family Mother's Day brunch.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `1914`, location: `Philadelphia, Pennsylvania`, review: `A cozy brick-walled spot that turned out garlic fried chicken over mashed potatoes, crispy egg rolls with a raw egg-yolk dip, fried dough with the same yolk dip, a shredded chicken rice bowl, and a clean, herb-loaded chicken pho.`, img: "assets/02_chicken_mashed_potato_bowl.jpg" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/02_chicken_mashed_potato_bowl.jpg", caption: "Garlic fried chicken over mashed potatoes at 1914" },
+      { src: "assets/03_fried_pastry_roll_egg_yolk.jpg", caption: "Crispy fried egg rolls with a raw egg-yolk dip at 1914" },
+      { src: "assets/04_fried_dough_egg_yolk.jpg", caption: "Fried dough with the same egg-yolk dip at 1914" },
+      { src: "assets/05_shredded_chicken_rice_bowl.jpg", caption: "Shredded chicken rice bowl with a side of broth at 1914" },
+      { src: "assets/06_egg_pickled_veg_meat_plate.jpg", caption: "Fried egg over rice cake with pickled vegetables and caramelized pork at 1914" },
+      { src: "assets/07_chicken_pho.jpg", caption: "Chicken pho at 1914" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Philadelphia, Pennsylvania`,
@@ -1445,7 +1467,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p6.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p6.jpg?w=1000", { src: "assets/01_masks_1914_sign.jpg", caption: "At 1914, under the sign" }, { src: "assets/08_flower_stand.jpg", caption: "A dried-flower stand near 1914" }, { src: "assets/487829417_10228644261479662_2296156485622047994_n.jpg", caption: "Walking through Reading Terminal Market, past Mueller Chocolate Co." }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -2815,13 +2837,19 @@ const MISADVENTURES = [
     icon: "🌶️",
     title: "The First-Day Spice Miscalculation",
     location: "Bangkok, Thailand",
-    body: "Day one, big group, nobody could agree on where to eat, so we just walked into the heat and humidity until we hit the first place we saw — outdoor seating, no air conditioning, fans barely moving air. Nobody in our group had registered exactly how hot Thai spice levels run, so \"level 1\" turned out to be too much for most of us, and we had to order chilled or frozen drinks to cope — which melted almost as fast as they arrived in that heat. Turns out a lot of the kids couldn't handle the \"exotic\" dishes the grandparents had picked for the table either. The one saving grace was the beer — cold, refreshing, and cheap. Oh, and the flies and mosquitoes were abundant the entire meal."
+    body: "Day one, big group, nobody could agree on where to eat, so we just walked into the heat and humidity until we hit the first place we saw — outdoor seating, no air conditioning, fans barely moving air. Nobody in our group had registered exactly how hot Thai spice levels run, so \"level 1\" turned out to be too much for most of us, and we had to order chilled or frozen drinks to cope — which melted almost as fast as they arrived in that heat. Turns out a lot of the kids couldn't handle the \"exotic\" dishes the grandparents had picked for the table either. The one saving grace was the beer — cold, refreshing, and cheap. Oh, and the flies and mosquitoes were abundant the entire meal.",
+    photos: [
+      { src: "assets/725649310_10234219800944664_1556447570665327623_n.jpg", caption: "The spicy seafood salad that started it all" }
+    ]
   },
   {
     icon: "🥣",
     title: "The Van That Got Away",
     location: "An Giang, Vietnam",
-    body: "An Giang is where we met distant relatives for the first time — grandpa wanted to show everyone his hometown and feed us the traditional foods he grew up on, bird's nest soup included. Once people heard how it's actually made, half the table quietly spat their spoonfuls into napkins when no one was looking. Meanwhile, one of our two vans ran out of gas on the way there, stranding half the family at a rest stop for hours. They missed the reunion meal entirely — but also missed the soup, eating whatever the rest stop had instead. To this day nobody's settled which van actually won: the one that made it and had to eat bird's nest soup with the family, or the one that broke down and just got regular food."
+    body: "An Giang is where we met distant relatives for the first time — grandpa wanted to show everyone his hometown and feed us the traditional foods he grew up on, bird's nest soup included. Once people heard how it's actually made, half the table quietly spat their spoonfuls into napkins when no one was looking. Meanwhile, one of our two vans ran out of gas on the way there, stranding half the family at a rest stop for hours. They missed the reunion meal entirely — but also missed the soup, eating whatever the rest stop had instead. To this day nobody's settled which van actually won: the one that made it and had to eat bird's nest soup with the family, or the one that broke down and just got regular food.",
+    photos: [
+      { src: "assets/730382036_10234244475361509_219229668076375249_n.jpg", caption: "The street near the relatives' house — the van that made it" }
+    ]
   },
   {
     icon: "☕",
@@ -2839,7 +2867,13 @@ const MISADVENTURES = [
     icon: "🐘",
     title: "Grandpa and the Elephants",
     location: "Koh Samui, Thailand",
-    body: "We booked an elephant sanctuary visit, and grandpa — old-school about what that meant — assumed we were going to watch elephants perform tricks. He didn't realize until we arrived that the whole point of the place is rescuing elephants from exactly that kind of exploitation. He was visibly embarrassed once it clicked, and ended up moping on the sidelines instead of joining in. Meanwhile the kids got the show of their lives anyway, watching one of the elephants produce an absolutely massive pile of poop, mouths hanging open the entire time."
+    body: "We booked an elephant sanctuary visit, and grandpa — old-school about what that meant — assumed we were going to watch elephants perform tricks. He didn't realize until we arrived that the whole point of the place is rescuing elephants from exactly that kind of exploitation. He was visibly embarrassed once it clicked, and ended up moping on the sidelines instead of joining in. Meanwhile the kids got the show of their lives anyway, watching one of the elephants produce an absolutely massive pile of poop, mouths hanging open the entire time.",
+    photos: [
+      { src: "assets/726815085_10234219805304773_350180301596123241_n.jpg", caption: "Feeding time at the sanctuary" },
+      { src: "assets/726937955_10234219804824761_3791555837304412408_n.jpg", caption: "An elephant reaching for its plate" },
+      { src: "assets/726900512_10234219804344749_4880148500870335688_n.jpg", caption: "A snack straight from the trunk" },
+      { src: "assets/726892264_10234219803544729_2943775928902597002_n.jpg", caption: "Watermelon, delivered by trunk" }
+    ]
   },
   {
     icon: "💸",
@@ -2875,7 +2909,10 @@ const MISADVENTURES = [
     icon: "🐢",
     title: "The Kidnapper Vans and the Baby Sea Turtles",
     location: "Puerto Vallarta, Mexico",
-    body: "We found a family sea turtle release online and booked it, and when we met the tour guide, only two unmarked vans showed up. After they verified us, we got in, and the vans started heading off onto unmarked trails deep into the jungle. Eventually we were asked to get out and start walking — across an empty beach that felt like the middle of nowhere, nowhere near civilization. We joked, only half-joking, that this is exactly how kidnappings and murders happen — but with twenty of us in the group, we figured we'd be fine. Turned out completely legitimate: a tiny beach camp dedicated to preserving and saving sea turtles. We got to release baby sea turtles onto the beach ourselves, and we named a couple of them Tophat and Monocle. Still have the video."
+    body: "We found a family sea turtle release online and booked it, and when we met the tour guide, only two unmarked vans showed up. After they verified us, we got in, and the vans started heading off onto unmarked trails deep into the jungle. Eventually we were asked to get out and start walking — across an empty beach that felt like the middle of nowhere, nowhere near civilization. We joked, only half-joking, that this is exactly how kidnappings and murders happen — but with twenty of us in the group, we figured we'd be fine. Turned out completely legitimate: a tiny beach camp dedicated to preserving and saving sea turtles. We got to release baby sea turtles onto the beach ourselves, and we named a couple of them Tophat and Monocle. Still have the video.",
+    photos: [
+      { src: "assets/517650691_10230224957956086_1448456980895589996_n.jpg", caption: "Tophat and Monocle, making their way to the water" }
+    ]
   },
   {
     icon: "🍩",
@@ -2887,7 +2924,12 @@ const MISADVENTURES = [
     icon: "💧",
     title: "The Hidden Waterfall and an Unexpected Friend",
     location: "Puerto Vallarta, Mexico",
-    body: "Locals kept talking about a hidden waterfall, so we asked our driver to take us to one — not realizing it meant a long hike through a dried-up riverbed. We just kept walking and walking until I struck up a conversation with a local guy on the trail. We hit it off immediately, and he ended up hiking the rest of the way with us, pointing things out and explaining the area as we went, until we reached a secluded waterfall with cliff diving and a hidden cave. Turned out our new hiking buddy owned the largest seafood restaurant in town. We jokingly tried to set him up with our single sister — he jokingly clarified he was more interested in me, which, fair enough, Puerto Vallarta is known for exactly that, and it explained how fast we'd all become genuine friends that afternoon."
+    body: "Locals kept talking about a hidden waterfall, so we asked our driver to take us to one — not realizing it meant a long hike through a dried-up riverbed. We just kept walking and walking until I struck up a conversation with a local guy on the trail. We hit it off immediately, and he ended up hiking the rest of the way with us, pointing things out and explaining the area as we went, until we reached a secluded waterfall with cliff diving and a hidden cave. Turned out our new hiking buddy owned the largest seafood restaurant in town. We jokingly tried to set him up with our single sister — he jokingly clarified he was more interested in me, which, fair enough, Puerto Vallarta is known for exactly that, and it explained how fast we'd all become genuine friends that afternoon.",
+    photos: [
+      { src: "assets/191906373_10220021880925537_7166161925040619628_n.jpg", caption: "The swimming hole at the hidden waterfall" },
+      { src: "assets/192349733_10220021880965538_7375027543854073716_n.jpg", caption: "On the trail with our new hiking buddy" },
+      { src: "assets/194600895_10220021880765533_1540509783234101840_n.jpg", caption: "The hidden cave behind the waterfall" }
+    ]
   },
   {
     icon: "✈️",
@@ -3013,7 +3055,12 @@ const MISADVENTURES = [
     icon: "🩹",
     title: "Three Miles, One Scraped Knee",
     location: "San Francisco, California",
-    body: "We agreed on a 1-mile loop through the redwoods. My wife had other ideas, and \"let's go up and this way\" turned into a 3-mile hike with no turning back. We were nearly at the end, completely injury-free, when my eldest fell and scraped her knee. Injury-free no more. A mile back to the car, jeans rolled up, bleeding the whole way. She's a trooper."
+    body: "We agreed on a 1-mile loop through the redwoods. My wife had other ideas, and \"let's go up and this way\" turned into a 3-mile hike with no turning back. We were nearly at the end, completely injury-free, when my eldest fell and scraped her knee. Injury-free no more. A mile back to the car, jeans rolled up, bleeding the whole way. She's a trooper.",
+    photos: [
+      { src: "assets/704120835_10233908192954659_6160879857245031695_n.jpg", caption: "On the trail through the redwoods" },
+      { src: "assets/705771745_10233908192434646_880802019577432087_n.jpg", caption: "Inside a hollowed-out redwood" },
+      { src: "assets/705830361_10233905404244943_4200515705616946896_n.jpg", caption: "On the boardwalk, before the scraped knee" }
+    ]
   },
   {
     icon: "🍽️",
@@ -3025,7 +3072,10 @@ const MISADVENTURES = [
     icon: "🚶",
     title: "The City That Goes Nowhere",
     location: "San Francisco, California",
-    body: "Traffic that never made sense — jammed roads with seemingly no one actually going anywhere. A pier walk that felt endless. The whole trip distilled down to one feeling: San Francisco is a city where you see everything and somehow do nothing. People, next to people, following people, going nowhere."
+    body: "Traffic that never made sense — jammed roads with seemingly no one actually going anywhere. A pier walk that felt endless. The whole trip distilled down to one feeling: San Francisco is a city where you see everything and somehow do nothing. People, next to people, following people, going nowhere.",
+    photos: [
+      { src: "assets/705647655_10233929879576811_8061040375308441661_n.jpg", caption: "Lombard Street, crowded as ever" }
+    ]
   },
   {
     icon: "🏰",
@@ -3163,7 +3213,10 @@ const MISADVENTURES = [
     icon: "🦜",
     title: "Living Statue at the Bird Sanctuary",
     location: "Puerto Rico",
-    body: "At a bird sanctuary, birds landed all over me like I was part of the furniture. I stood there, essentially a human perch, while the rest of the group just watched it happen."
+    body: "At a bird sanctuary, birds landed all over me like I was part of the furniture. I stood there, essentially a human perch, while the rest of the group just watched it happen.",
+    photos: [
+      { src: "assets/508146734_10229560296299960_7400076326579912259_n.jpg", caption: "Human perch at the bird sanctuary" }
+    ]
   },
   {
     icon: "🔫",
