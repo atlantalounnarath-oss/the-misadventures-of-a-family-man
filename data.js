@@ -3513,7 +3513,7 @@ function getAdventure(slug) {
 // Full stories (the actual narrative for each trip) are still pending — she needs to fill those in.
 const HER_STORIES = [
   {
-    coords: { top: "58%", left: "27%" },
+    coords: { top: "58%", left: "29.5%" },
     slug: "lima-peru",
     name: "Lima, Peru",
     country: "Peru",

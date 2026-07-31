@@ -805,7 +805,11 @@ function worldMapHTML() {
         ${worldLandmassSVG()}
         ${DESTINATIONS.map(d => `<a href="#/destinations/${d.slug}" class="map-pin" data-label="${escapeHtml(d.name)}" style="top:${d.coords.top}; left:${d.coords.left};"></a>`).join("")}
         <a href="#/herstories" class="map-egg" style="top:${HER_STORIES[0].coords.top}; left:${HER_STORIES[0].coords.left};" aria-label="A quiet corner of the map">
-          <img src="assets/emberjade-phoenix.png" alt="" aria-hidden="true">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 18 C36 27,26 42,21 62 C31 54,41 51,50 56 C59 51,69 54,79 62 C74 42,64 27,50 18 Z" fill="var(--brass-bright)"/>
+            <path d="M50 55 C45 66,45 79,50 90 C55 79,55 66,50 55 Z" fill="var(--brass)"/>
+            <path d="M28 84 Q50 76 72 84" fill="none" stroke="var(--brass)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+          </svg>
         </a>
         <span class="map-caption">${DESTINATIONS.length} stamps and counting — tap a pin</span>
       </div>
