@@ -939,21 +939,6 @@ function renderHome() {
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container">
-      <span class="eyebrow">A Note From the Road, Sort Of</span>
-      <a href="#/herstories/lima-peru" class="misadventure-card reveal mt-lg" style="max-width: 720px; display:grid; grid-template-columns: 140px 1fr; gap: 24px; align-items:center; text-decoration:none; color:inherit;">
-        <div style="border-radius:12px; overflow:hidden;">${lazyImg(HER_STORIES[0].cardImg, "A dish from " + HER_STORIES[0].name)}</div>
-        <div>
-          <h3 class="misadventure-title">HerStories: ${escapeHtml(HER_STORIES[0].name)}</h3>
-          <span class="misadventure-loc">A trip she took without the rest of us</span>
-          <p class="misadventure-body">${escapeHtml(HER_STORIES[0].intro)}</p>
-          <span class="food-card-more" style="margin-top:14px; display:inline-block;">Read HerStories →</span>
-        </div>
-      </a>
-    </div>
-  </section>
-
   ${newsletterBlockHTML()}
   `;
 }
