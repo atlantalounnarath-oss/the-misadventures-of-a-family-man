@@ -95,7 +95,7 @@ function initLazyImages() {
   document.querySelectorAll("img[data-src]").forEach(el => lazyObserver.observe(el));
 }
 function lazyImg(src, alt, cls) {
-  return `<img class="lazy-img ${cls || ""}" data-src="${src}" alt="${escapeHtml(alt)}" loading="lazy">`;
+  return `<img class="lazy-img ${cls || ""} loaded" src="${src}" alt="${escapeHtml(alt)}" loading="lazy">`;
 }
 
 /* ---------------- Lightbox ---------------- */
