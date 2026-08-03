@@ -166,7 +166,7 @@ const DESTINATIONS = [
       "Bring reef-safe sunscreen; several beaches now require it"
     ],
     gallery: [
-      ...photoSet("koh-samui").gallery,
+      ...photoSet("koh-samui").gallery.filter(src => !src.includes("734685124_10234321371443863")),
       { src: "assets/726768184_10234219811424926_5834929716715620637_n.jpg", caption: "Paddling out on the water, Koh Samui, with a distant island on the horizon" },
       { src: "assets/726949340_10234219806344799_8941385992213557937_n.jpg", caption: "Sunset over the infinity pool, Koh Samui" }
     ],
@@ -215,7 +215,7 @@ const DESTINATIONS = [
       "Cross streets with a local; Bangkok traffic follows its own physics",
       "Carry small bills for street food, and always ask for 'mai phet' if spice-averse"
     ],
-    gallery: photoSet("bangkok").gallery,
+    gallery: photoSet("bangkok").gallery.filter(src => !src.includes("734797722_10234321373163906")),
     rating: 8,
     wouldReturn: "Absolutely, though next time with a stricter afternoon nap schedule.",
     relatedAdventure: "southeast-asia-2026"
@@ -369,7 +369,7 @@ const DESTINATIONS = [
       "Try the egg coffee once even if it sounds strange; it always wins people over",
       "Book the overnight train in advance during peak season"
     ],
-    gallery: ["assets/uploads/hanoi-1.jpg", "assets/uploads/hanoi-2.jpg", ...photoSet("hanoi").gallery],
+    gallery: ["assets/uploads/hanoi-1.jpg", "assets/uploads/hanoi-2.jpg", ...photoSet("hanoi").gallery.filter(src => !src.includes("731834741_10234321412204882") && !src.includes("734733254_10234321424205182"))],
     rating: 9,
     wouldReturn: "Every time we're in the region — it's become a tradition, not a stop.",
     relatedAdventure: "southeast-asia-2026"
@@ -1175,7 +1175,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Dec – Apr before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=1000", { src: "assets/56400374_10214279829737846_7350020259979460608_n.jpg", caption: "The crew at Lock and Load Miami's Machine Gun Experience" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=1000", { src: "assets/56400374_10214279829737846_7350020259979460608_n.jpg", caption: "The crew at Lock and Load Miami's Machine Gun Experience" }],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: null
@@ -1933,7 +1933,6 @@ const DESTINATIONS = [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=1000", group: "Boston" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=1000", group: "Boston" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=1000", group: "Boston" },
-      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n-1.jpg?w=1000", group: "Boston" },
       { src: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", caption: "Out front of Charlie's Sandwich Shoppe", group: "Boston" },
       { src: "assets/526788815_10230511021627499_8194973482409344085_n.jpg", caption: "Swan boats gliding across the lagoon at Boston Public Garden", group: "Boston" },
       { src: "assets/515268998_10229981047378474_5128006516121554005_n.jpg", caption: "A selfie from a Boston skyline viewing deck", group: "Boston" },
