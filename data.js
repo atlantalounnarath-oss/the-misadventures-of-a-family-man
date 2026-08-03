@@ -511,9 +511,9 @@ const DESTINATIONS = [
     country: `Honduras`,
     year: 2015,
     tag: `Central America 2015 Stop`,
-    heroImg: "https://images.unsplash.com/photo-1668813610810-3d15364b6af9?w=1600&auto=format&fit=crop&q=80",
-    cardImg: "https://images.unsplash.com/photo-1668813610810-3d15364b6af9?w=900&auto=format&fit=crop&q=80",
-    heroCaption: "Too busy creating memories to capture the moment — here's a generic pic from what I remember. (Stock photo, not our own — no camera made it on this trip.)",
+    heroImg: "assets/515929606_10229977792777111_8978908118727086565_n.jpg",
+    cardImg: "assets/515929606_10229977792777111_8978908118727086565_n.jpg",
+    heroCaption: "Mahogany Bay, Roatán, as the sun came up",
     coords: { top: "42.25%", left: "24.63%" },
     quickFacts: [
       { label: "Best time to go", value: "Mar – Aug" },
@@ -529,7 +529,9 @@ const DESTINATIONS = [
       "Zipline through the island's jungle canopy"
     ],
     restaurants: [],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/515516073_10229977800017292_3960487124854172279_n.jpg", caption: "Mimosas for breakfast at Mahogany Bay, Roatán" }
+    ],
     hiddenGems: [
       "West Bay's quieter north end, away from the cruise-ship crowds",
       "A local sloth sanctuary tucked away from the main resort strip"
@@ -538,7 +540,7 @@ const DESTINATIONS = [
       "Book dive trips a day ahead in high season",
       "Check the weather for Mar – Aug before locking in dates"
     ],
-    gallery: [{ src: "https://images.unsplash.com/photo-1668813610810-3d15364b6af9?w=1200&auto=format&fit=crop&q=80", caption: "Too busy creating memories to capture the moment — here's a generic pic from what I remember." }],
+    gallery: [{ src: "assets/515929606_10229977792777111_8978908118727086565_n.jpg", caption: "Mahogany Bay, Roatán, as the sun came up" }, { src: "assets/515516073_10229977800017292_3960487124854172279_n.jpg", caption: "The girls goofing around on the ship's deck" }],
     rating: 9,
     wouldReturn: "Yes — the reef alone is worth the return trip.",
     relatedAdventure: "central-america-2015"
@@ -610,7 +612,11 @@ const DESTINATIONS = [
       { name: "St. John", location: "England", rating: 4.6, review: "St. John in London's Clerkenwell district is known for its traditional British cuisine with a modern twist, including nose-to-tail dishes like bone marrow on toast and roast pork belly.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=900", communityReview: "A genuine London institution for nose-to-tail cooking — the bone marrow and Eccles cake with cheese are near-universally recommended, though a handful of reviewers feel the famously spare, no-frills plating and pricing haven't aged as well as the reputation.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "The Ivy", location: "England", rating: 4.3, review: "The Ivy, located in the heart of London's West End, is a beautiful art deco restaurant that serves classic British cuisine, including their famous shepherd's pie.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=900", communityReview: "A century-old London fixture prized more for the glamorous Art Deco room and reliably good service than groundbreaking food — reviewers call the shepherd's pie and classic British menu comforting rather than exciting, with a few flagging steep drink prices.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/517210330_10230170218787641_3787990984141268640_n.jpg", caption: "A smoked salmon galette with lime, England — spot lost to time" },
+      { src: "assets/516996216_10230170216707589_8247237402905925126_n.jpg", caption: "A casual cafe lunch, England — spot lost to time" },
+      { src: "assets/516941813_10230170016742590_5662636884802729395_n.jpg", caption: "Croissants and hot chocolate at a cafe, England — spot lost to time" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of England`,
@@ -698,9 +704,14 @@ const DESTINATIONS = [
       { name: "Dill", location: "Iceland", rating: 4.3, review: "This restaurant in Reykjavik received a Michelin star in 2019 and is known for its innovative, modern take on Icelandic cuisine. The tasting menus feature seasonal and locally-sourced ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=900", communityReview: "Iceland's first Michelin-starred restaurant, and reviewers routinely call it one of the best meals of their lives — the immersive, story-driven tasting menu and warm, personal service earn near-universal praise. Book well ahead; it's open only a few nights a week.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Kopar", location: "Iceland", rating: 4.5, review: "This seafood restaurant located in Reykjavik has stunning views of the harbor and specializes in fresh Icelandic seafood with a modern twist.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=900", communityReview: "A harborside seafood favorite reviewers consistently praise for the fresh cod and langoustine dishes, warm service, and views of the docking boats — the multi-course \"Kopar adventure\" tasting menu gets frequent recommendations.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Matur og Drykkur", location: "Iceland", rating: 4.6, review: "Located in Reykjavik's Grandi harbour area, this restaurant features traditional Icelandic dishes made with locally-sourced ingredients. Don't miss the fermented shark!", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=900", communityReview: "A Michelin-recognized spot reinterpreting old Icelandic recipes (including cod heads and horse tartare) in a relaxed, unpretentious setting — reviewers consistently call the food a genuine highlight of their Iceland trip, with the horse tartare and halibut soup among the most-recommended dishes.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Slippbarinn", location: "Iceland", rating: 4.3, review: "This hip bar in Reykjavik's trendy 101 district serves creative cocktails and small plates made with local and organic ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=900", communityReview: "A lively harborside cocktail bar reviewers praise for inventive, seasonally-driven drinks and a welcoming vibe — a popular pick for an after-dinner nightcap rather than a full meal.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Slippbarinn", location: "Iceland", rating: 4.3, review: "This hip bar in Reykjavik's trendy 101 district serves creative cocktails and small plates made with local and organic ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=900", communityReview: "A lively harborside cocktail bar reviewers praise for inventive, seasonally-driven drinks and a welcoming vibe — a popular pick for an after-dinner nightcap rather than a full meal.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Icelandic Street Food", location: "Reykjavik", rating: 4.7, review: "A cozy, no-frills spot serving traditional lamb soup and shellfish soup in hollowed-out bread bowls, with free refills and a friendly, homey feel.", img: "assets/37027414_10212544570117440_9023059301949767680_n.jpg", communityReview: "One of Reykjavik's most beloved budget eats — reviewers rave about the lamb soup bread bowl, the free refills, and owner Unnar's warm hospitality, with the fisherman's favorite (mashed fish and potato with rye bread) also getting frequent praise.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/37043084_10212544570437448_3759870922752786432_n.jpg", caption: "A dark, malty Icelandic beer alongside the bread bowl soup, Icelandic Street Food, Reykjavik" },
+      { src: "assets/37036448_10212544569637428_3574301839912337408_n.jpg", caption: "The fisherman's favorite — mashed fish and potato with rye bread, and a hardfiskur-style dark rye alongside, Icelandic Street Food, Reykjavik" },
+      { src: "assets/37042052_10212544568997412_8245932725479931904_n.jpg", caption: "The sandwich board menu outside Icelandic Street Food, Reykjavik" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Iceland`,
@@ -745,8 +756,13 @@ const DESTINATIONS = [
       { name: "La Palapa", location: "Puerto Vallarta", rating: 4.6, review: "Located on the beach, La Palapa is the perfect spot for a romantic dinner. The menu offers a mix of international and Mexican dishes, along with fresh seafood options.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=900", communityReview: "Puerto Vallarta's original beach restaurant, running since 1959 — reviewers love the on-the-sand setting and sunset ambiance, though some longtime visitors feel the food doesn't quite match the view and prefer nearby Tintoque for the meal itself.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Tintoque", location: "Puerto Vallarta", rating: 4.3, review: "A relatively new addition to Puerto Vallarta's food scene, Tintoque quickly gained popularity among locals and tourists alike. The menu features contemporary Mexican cuisine using fresh, locally-sourced ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=900", communityReview: "Widely cited as Puerto Vallarta's most ambitious fine-dining restaurant, with reviewers frequently ranking it above the more famous, longer-established spots in town — the tasting menu is the move, though a rare reviewer finds it overpriced for the portions.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/53720696_10214122648728419_3106605701246484480_n.jpg", caption: "A Heineken at sunset on the beach, Puerto Vallarta" },
+      { src: "assets/53693994_10214122248198406_9036206162483085312_n.jpg", caption: "Huevos rancheros with bacon and hash browns, made by the personal chef we hired for the week, Puerto Vallarta" },
+      { src: "assets/53581972_10214119014637569_6629059928617123840_n.jpg", caption: "The whole family at a beachside lunch table, likely a meal from the personal chef we hired for the week, Puerto Vallarta" }
+    ],
     hiddenGems: [
+`Hiring a personal chef for the week — cheaper and easier than it sounds, and they'll do the grocery shopping for you too`,
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Puerto Vallarta`,
 `The neighborhood just past the obvious tourist center, worth a wander`
@@ -880,7 +896,9 @@ const DESTINATIONS = [
       { name: "August E's", location: "Hill Country, Texas", rating: 4.6, review: "This modern Asian fusion restaurant in Fredericksburg, Texas, offers a unique dining experience with a creative menu featuring dishes like Korean-style fried chicken and beef pho.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h4.jpg?w=900", communityReview: "Regularly named one of Fredericksburg's top restaurants, praised for bringing genuinely inventive Asian-fusion small plates to Texas Hill Country wine country — a reservation-recommended splurge rather than a casual stop.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Coopers Old Time Pit Bar-B-Que", location: "Hill Country, Texas", rating: 4.3, review: "This iconic BBQ joint in Llano, Texas, is known for its tender and smoky brisket and sausage. The restaurant offers a casual dining experience with a family-friendly atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h3.jpg?w=900", communityReview: "A beloved old-school pit stop reviewers praise for the pork ribs and old-fashioned cafeteria-style ordering — long a favorite on Hill Country barbecue road trips, though a few recent reviews note quality has grown inconsistent compared to years past.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/513940244_10229798718220359_1507300034350181599_n.jpg", caption: "A Corona out on the lake, Hill Country" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Hill Country, Texas`,
@@ -923,9 +941,13 @@ const DESTINATIONS = [
       { name: "The Optimist", location: "Atlanta, Georgia", rating: 4.3, review: "This seafood restaurant is located in the heart of Atlanta and offers a selection of fresh seafood and oysters.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a3.jpg?w=900", communityReview: "Widely considered one of Atlanta's best seafood spots, with reviewers consistently praising the lobster roll and hush puppies and calling out the excellent service — a rare complaint flags the advertised happy-hour oyster price as slightly misleading in the fine print.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Staplehouse", location: "Atlanta, Georgia", rating: 4.5, review: "This restaurant serves up modern American cuisine using seasonal and locally-sourced ingredients. It's also a non-profit, with all proceeds going to support the Giving Kitchen, which helps restaurant workers in need.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a1.jpg?w=900", communityReview: "One of Atlanta's most talked-about tasting-menu restaurants, with reviewers consistently calling the seasonal, farm-driven courses outstanding — the nonprofit model supporting the Giving Kitchen charity adds a layer most diners mention appreciating.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Bacchanalia", location: "Atlanta, Georgia", rating: 4.6, review: "This upscale restaurant is known for its innovative, contemporary American cuisine and a extensive wine selection.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a7.jpg?w=900", communityReview: "A Michelin-starred, James Beard Award-winning restaurant reviewers regularly call Atlanta's top special-occasion dinner — the four-course prix fixe menu draws consistent praise, with most reviews recommending booking two to three weeks ahead.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Fox Bros. Bar-B-Q", location: "Atlanta, Georgia", rating: 4.3, review: "A favorite among locals and visitors alike, this restaurant is known for its delicious BBQ meats and sides.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a5.jpg?w=900", communityReview: "A near-legendary Atlanta BBQ spot with a devoted following — reviewers consistently praise the brisket, burnt ends, and mac and cheese, though a small handful report an inconsistent off night with dry meat. Go early; ribs sell out.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Fox Bros. Bar-B-Q", location: "Atlanta, Georgia", rating: 4.3, review: "A favorite among locals and visitors alike, this restaurant is known for its delicious BBQ meats and sides.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a5.jpg?w=900", communityReview: "A near-legendary Atlanta BBQ spot with a devoted following — reviewers consistently praise the brisket, burnt ends, and mac and cheese, though a small handful report an inconsistent off night with dry meat. Go early; ribs sell out.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Checkers", location: "Atlanta, Georgia", rating: 4.0, review: "A fast-food drive-thru chain known for its seasoned fries and bold burgers — a quick, no-frills stop on the way through town.", img: "assets/51877576_10213954090074558_6144938065484840960_n.jpg", communityReview: "A regional fast-food chain with a devoted fry following — reviewers consistently single out the seasoned fries as the highlight, with the burgers and shakes generally rated as solid, cheap, late-night eats rather than a destination meal.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/51779315_10213954090274563_8761611001826115584_n.jpg", caption: "Grilled short ribs and pad thai, Atlanta — spot lost to time" },
+      { src: "assets/51797988_10213954089994556_2739641075546193920_n.jpg", caption: "A fried dessert with whipped cream and orange, Atlanta — spot lost to time" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Atlanta, Georgia`,
@@ -1016,9 +1038,14 @@ const DESTINATIONS = [
       { name: "Gaido's Seafood Restaurant", location: "Galveston, Texas", rating: 4.3, review: "A Galveston institution known for its fresh seafood dishes and Gulf Coast flavors.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg?w=900", communityReview: "A Galveston Seawall fixture since 1911, still pulling a 4.5-star average across 5,000+ reviews — the pecan pie and grilled oysters get consistent raves. Reviews genuinely split on service, though, with some calling it the best meal of their trip and others reporting slow, disorganized waitstaff on an off night.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Rudy & Paco Restaurant & Bar", location: "Galveston, Texas", rating: 4.7, review: "Offers a blend of South American and Caribbean cuisines, known for its steaks and seafood.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g1-1.jpg?w=900", communityReview: "One of Galveston's most consistently praised upscale restaurants — reviewers repeatedly call it \"first class\" and highlight standout dishes like the Pargo entrees, with attentive service earning near-universal mentions.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Shrimp 'N Stuff Downtown", location: "Galveston, Texas", rating: 4.6, review: "Casual eatery serving up delicious fried shrimp, oysters, and other seafood specialties.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=900", communityReview: "A no-frills local institution since 1976, beloved for generous portions and honest prices — reviewers consistently call it the place they return to on every Galveston trip, with the stuffed shrimp and gumbo as top picks.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "The Sunflower Bakery & Café", location: "Galveston, Texas", rating: 4.3, review: "Quaint café offering homemade baked goods, sandwiches, and a cozy atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=900", communityReview: "A beloved East End neighborhood breakfast spot reviewers call a Galveston tradition — the Grilled Cinnamon Roll and Oysters Benedict come up again and again, with the from-scratch bakery a consistent highlight.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "The Sunflower Bakery & Café", location: "Galveston, Texas", rating: 4.3, review: "Quaint café offering homemade baked goods, sandwiches, and a cozy atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=900", communityReview: "A beloved East End neighborhood breakfast spot reviewers call a Galveston tradition — the Grilled Cinnamon Roll and Oysters Benedict come up again and again, with the from-scratch bakery a consistent highlight.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Aka Sushi House", location: "Houston, Texas (stop en route)", rating: 4.4, review: "A neighborhood sushi bar in Houston's Upper Kirby district, stopped at on the drive in to Galveston — small plates, creative rolls, and a lively happy hour scene.", img: "assets/515440512_10229998958146232_6593207122436081835_n.jpg", communityReview: "A longtime Houston sushi favorite reviewers praise for consistently fresh fish and creative specialty rolls like the Sexy Roll — the happy hour and reverse happy hour deals get frequent mentions as some of the best sushi value in the city.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sweet Paris Crêperie & Café", location: "Houston, Texas (Rice Village, stop en route)", rating: 4.2, review: "A cozy French-inspired crêperie in Rice Village, another stop on the way in to Galveston — sweet and savory crêpes made fresh to order, including a torched s'mores crêpe stuffed with Nutella.", img: "assets/515014299_10229998782461840_2194956913837795926_n.jpg", communityReview: "A Rice Village original since 2012 that's since expanded across Texas — reviewers consistently praise the wide crêpe selection and cozy cafe feel, with the sweet crêpes and espresso bar the most-recommended order.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/515440512_10229998958146232_6593207122436081835_n.jpg", caption: "Sushi at Aka Sushi House, Houston, on the way in to Galveston" },
+      { src: "assets/515014299_10229998782461840_2194956913837795926_n.jpg", caption: "A s'mores crêpe at Sweet Paris, Rice Village, Houston, on the way in to Galveston" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Galveston, Texas`,
@@ -1109,8 +1136,12 @@ const DESTINATIONS = [
       { name: "Yardbird Southern Table & Bar", location: "Miami, Florida", rating: 4.6, review: "Offers Southern comfort food with a modern twist, including their famous fried chicken and bourbon cocktails.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=900", communityReview: "The fried chicken and waffles are the clear standout, and reviewers consistently recommend it for brunch — a few note it leans touristy on South Beach's Lincoln Road strip and can feel more polished chain than local secret, but the food itself delivers.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Mandolin Aegean Bistro", location: "Miami, Florida", rating: 4.3, review: "A charming Mediterranean restaurant with a cozy courtyard, serving delicious Greek and Turkish dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900", communityReview: "A Michelin Bib Gourmand pick reviewers consistently praise for the grilled octopus, lamb chops, and one of Miami's most charming courtyard settings — the Design District favorite books out weeks in advance for a reason.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/56652783_10214274591286888_7209962982774669312_n.jpg", caption: "Hot sauce and chips at an outdoor patio table, Miami — spot lost to time" },
+      { src: "assets/56360523_10214273275573996_8146468584348975104_n.jpg", caption: "An iced cocktail and a frozen daiquiri in a garden patio, Miami — spot lost to time" }
+    ],
     hiddenGems: [
+`Lock and Load Miami — a machine gun experience excursion, if you're looking for something a little different from the beach`,
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Miami, Florida`,
 `The neighborhood just past the obvious tourist center, worth a wander`
@@ -1120,7 +1151,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Dec – Apr before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=1000", { src: "assets/56400374_10214279829737846_7350020259979460608_n.jpg", caption: "The crew at Lock and Load Miami's Machine Gun Experience" }],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: null
@@ -2370,7 +2401,7 @@ const DESTINATIONS = [
       { name: "Kosaku Hoto Kosaku", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A humble, locally loved noodle shop known for its exceptional hoto noodle soup, tucked into the Mt. Fuji area away from the busier tourist strips.", img: "assets/uploads/fuji-g2.jpg", communityReview: "Reviewers consistently praise the generous portions and rich broth, with the spicy pork hoto and fried oyster getting particular mentions — a genuine local favorite, not just a tourist stop.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Shaw's Sushi Bar & Dining", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "A stylish, modern sushi spot right across from Kawaguchiko Station, with beautifully presented nigiri and rolls.", img: "assets/uploads/fuji-g3.jpg", communityReview: "Reviewers consistently say the quality justifies the higher price tag for the area, with the variety of sushi sets — including a dedicated vegetarian option — earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Yamagishi Ryokan", location: "Mt. Fuji (Kawaguchiko)", rating: 4.0, review: "A traditional lakeside ryokan right on Lake Kawaguchiko, where dinner and breakfast come as a full multi-course Japanese spread served right at the inn.", img: "assets/61583878_10214624978006337_1527689591962730496_n.jpg", communityReview: "Reviewers consistently praise the lakeside location, the free onsen, and the sheer volume of the traditional dinner and breakfast sets — though a handful of Japanese-language reviews call the food underwhelming for the price, so expectations vary.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Yamagishi Ryokan", location: "Mt. Fuji (Kawaguchiko)", rating: 3.5, review: "A traditional lakeside ryokan right on Lake Kawaguchiko. The location was the real win here — the onsen was just okay, and the dinner and breakfast spread fell short of what the presentation promised.", img: "assets/61583878_10214624978006337_1527689591962730496_n.jpg", communityReview: "Reviewers consistently praise the lakeside location, the free onsen, and the sheer volume of the traditional dinner and breakfast sets — though a handful of Japanese-language reviews call the food underwhelming for the price, so expectations vary.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "assets/61637316_10214620472773709_7935913675292934144_n.jpg", caption: "Sake service at dinner, Yamagishi Ryokan, Lake Kawaguchiko" },
@@ -3000,10 +3031,22 @@ const MISADVENTURES = [
     body: "My wife's first time skiing, mid-lesson, ended with her skidding straight past the orange caution tape into out-of-bounds terrain. Luckily she landed in a shallow pit instead of anything worse. Those caution nets could stand to be a little sturdier."
   },
   {
+    icon: "🏂",
+    title: "Accidental Black Diamond",
+    location: "Steamboat Springs, Colorado",
+    body: "Took a wrong turn and ended up on a Black Diamond trail — after not having snowboarded in over a decade, I was in no shape to challenge myself like that. Made it down mostly by braking the whole way, but I survived.",
+    photos: [
+      { src: "assets/514420984_10229935744005918_5793708837860611446_n.jpg", caption: "The view partway down the Black Diamond, no going back now" }
+    ]
+  },
+  {
     icon: "🧊",
     title: "The Polar Bear Challenge",
     location: "Steamboat Springs, Colorado",
-    body: "Booked a hot spring to recover from sore ski days — didn't clock in advance that it was clothing-optional with co-ed changing rooms. Worked out fine, I look good naked. The real twist: the spring sat right next to a genuinely freezing pond, so naturally I had to swim through the ice water to reach the hot side. Refreshing doesn't begin to cover it."
+    body: "Booked a hot spring to recover from sore ski days — didn't clock in advance that it was clothing-optional with co-ed changing rooms. Worked out fine, I look good naked. The real twist: the spring sat right next to a genuinely freezing pond, so naturally I had to swim through the ice water to reach the hot side. Refreshing doesn't begin to cover it.",
+    photos: [
+      { src: "assets/514329741_10229935954451179_928203243019916953_n.jpg", caption: "The hot spring, steam rising against the snow" }
+    ]
   },
   {
     icon: "🎡",
@@ -3232,13 +3275,21 @@ const MISADVENTURES = [
     icon: "🤿",
     title: "We're Snuba-ing",
     location: "The Florida Keys",
-    body: "\"On our way to snorkeling and scuba .... we're snuba-ing,\" reads the caption, coining a word for a hybrid activity none of us can properly explain to this day. We followed it up with, in the same person's words, \"Nerd Goals .... visited Ernest Hemingway's Home\" — proof the Keys can humble you and educate you in the same afternoon."
+    body: "\"On our way to snorkeling and scuba .... we're snuba-ing,\" reads the caption, coining a word for a hybrid activity none of us can properly explain to this day. We followed it up with, in the same person's words, \"Nerd Goals .... visited Ernest Hemingway's Home\" — proof the Keys can humble you and educate you in the same afternoon.",
+    photos: [
+      { src: "assets/516522133_10230102698779683_665639374019869543_n.jpg", caption: "On the boat, on our way to go \"snuba-ing\"" }
+    ]
   },
   {
     icon: "🎠",
     title: "It's Bibbidi Bobbidi Humiddi",
-    location: "Orlando, Florida",
-    body: "Florida heat does not care about your Disney magic. \"My neck fan battery died .... it's hott,\" one caption reads, followed shortly by the line that ended up as this story's title. Some trips give you a castle. This one also gave us a weather-related crisis every single afternoon."
+    location: "Orlando, Florida (2010)",
+    body: "Florida humidity does not care about your Disney magic — it turned her hair into a full fro before we'd even made it to the Bibbidi Bobbidi Boutique. The boutique fixed it beautifully, styling it up into a sparkly tiara updo, but the price tag left us with a second joke to go with the first: Humid on the way in, Ho-Hum on the receipt.",
+    photos: [
+      { src: "assets/509395928_10229622611257795_5449142114639065478_n.jpg", caption: "Getting the royal treatment at the Bibbidi Bobbidi Boutique" },
+      { src: "assets/508778420_10229622624298121_332868089535341972_n.jpg", caption: "The finished look — tiara updo, humidity defeated" },
+      { src: "assets/509426598_10229622622538077_1470587193437429107_n.jpg", caption: "Sporting the tiara and birthday sash around the park" }
+    ]
   },
   {
     icon: "🦇",
@@ -3301,7 +3352,14 @@ const MISADVENTURES = [
     icon: "💦",
     title: "The Overcrowded Blue Lagoon",
     location: "Iceland",
-    body: "After all the hype, the Blue Lagoon was a genuine letdown — so crowded it barely felt like the bucket-list moment we expected."
+    body: "After all the hype, the Blue Lagoon was a genuine letdown — so crowded it barely felt like the bucket-list moment we expected.",
+    photos: [
+      { src: "assets/37194414_10212566117256105_8464551165051273216_n.jpg", caption: "The crowds soaking in the milky blue water" },
+      { src: "assets/37335574_10212566116536087_170871073393344512_n.jpg", caption: "Floating drinks in hand, packed in with everyone else" },
+      { src: "assets/37315329_10212566116016074_9017356641942634496_n.jpg", caption: "Armbands on, making the most of the crowd" },
+      { src: "assets/37240726_10212566115496061_8867464108673335296_n.jpg", caption: "A rare quiet moment in the water" },
+      { src: "assets/37245564_10212566114336032_7627274718357225472_n.jpg", caption: "The silica mud mask, gift shop edition" }
+    ]
   },
   {
     icon: "🎒",
@@ -3316,10 +3374,21 @@ const MISADVENTURES = [
     icon: "🌨️",
     title: "Lost in a Whiteout on a Snowmobile",
     location: "Iceland",
-    body: "A snowmobile ride near the magnetic north pole turned into total whiteout conditions — we genuinely lost our bearings in the middle of a blizzard.",
+    body: "We took snowmobiles out to reach a glacier and its ice caves near the magnetic north pole — and partway there, the ride turned into total whiteout conditions. We genuinely lost our bearings in the middle of a blizzard before finally reaching the ice caves.",
     photos: [
       { src: "assets/503463029_10229364207037851_3708454514669062662_n.jpg", caption: "Before the whiteout — geared up for the snowmobiles" },
-      { src: "assets/503477224_10229364201797720_1160012565254401984_n.jpg", caption: "Helmeted up — the snowmobiles were how we got to the glacier" }
+      { src: "assets/503477224_10229364201797720_1160012565254401984_n.jpg", caption: "Helmeted up — the snowmobiles were how we got to the glacier" },
+      { src: "assets/37268901_10212562894535539_2349181479793197056_n.jpg", caption: "Kid on board for the snowmobile ride across the glacier" },
+      { src: "assets/36990658_10212562890975450_4270533162628546560_n.jpg", caption: "The kids, helmeted up and ready, before conditions turned" },
+      { src: "assets/37210379_10212562890375435_4580468224730071040_n.jpg", caption: "A helmet selfie on the glacier, before the whiteout hit" },
+      { src: "assets/37167507_10212562896495588_2055633831049822208_n.jpg", caption: "Icicles inside the glacier ice cave" },
+      { src: "assets/37178574_10212562896175580_6042598735806988288_n.jpg", caption: "Lit up in blue, deep inside the ice tunnel" },
+      { src: "assets/37177610_10212562893815521_1464520896600342528_n.jpg", caption: "Made it — posing inside the ice cave" },
+      { src: "assets/37192058_10212562893335509_1697714183136608256_n.jpg", caption: "The ice bar carved right into the glacier" },
+      { src: "assets/37204434_10212562892975500_6037585886202298368_n.jpg", caption: "A narrow crevasse glowing blue, deep in the ice" },
+      { src: "assets/37322703_10212562892135479_4692146479756738560_n.jpg", caption: "A selfie inside the glowing blue ice tunnel" },
+      { src: "assets/37211165_10212562891735469_8262664535085678592_n.jpg", caption: "A meltwater pool inside the glacier" },
+      { src: "assets/37201598_10212562891455462_8570913689379536896_n.jpg", caption: "Deeper inside the ice cave, icicles hanging overhead" }
     ]
   },
   {
@@ -3463,7 +3532,11 @@ const MISADVENTURES = [
     icon: "🥂",
     title: "Drunk and In Love Under the Eiffel Tower",
     location: "Paris",
-    body: "We met up with distant relatives for what we thought was just a stop by the Eiffel Tower, not realizing it was actually a full picnic-park scene — wine and champagne flowing, strangers turning into friends over great conversation. Before we knew it, my wife and I were both thoroughly drunk, happy, in love, and watching the tower light up at night surrounded by genuinely wonderful people we'd never met before that afternoon."
+    body: "We met up with distant relatives for what we thought was just a stop by the Eiffel Tower, not realizing it was actually a full picnic-park scene — wine and champagne flowing, strangers turning into friends over great conversation. Before we knew it, my wife and I were both thoroughly drunk, happy, in love, and watching the tower light up at night surrounded by genuinely wonderful people we'd never met before that afternoon.",
+    photos: [
+      { src: "assets/516766756_10230169320445183_2970899837213753375_n.jpg", caption: "The tower lit up gold as evening set in" },
+      { src: "assets/517390641_10230169320165176_627755298649751026_n.jpg", caption: "A selfie in the park, Eiffel Tower behind us" }
+    ]
   },
   {
     icon: "🗼",
@@ -3481,7 +3554,11 @@ const MISADVENTURES = [
     icon: "🖼️",
     title: "The Louvre and the Tiny Mona Lisa",
     location: "Paris",
-    body: "Same story at the Louvre — we didn't finish, and the Mona Lisa itself turned out to be far smaller in person than anyone expects."
+    body: "Same story at the Louvre — we didn't finish, and the Mona Lisa itself turned out to be far smaller in person than anyone expects.",
+    photos: [
+      { src: "assets/518202081_10230170371551460_6465721618724752434_n.jpg", caption: "The famously small Mona Lisa, up close" },
+      { src: "assets/517219083_10230170388191876_8651137391623211666_n.jpg", caption: "The kids outside the Louvre, pyramid in the background" }
+    ]
   },
   {
     icon: "🐸",
@@ -3499,7 +3576,12 @@ const MISADVENTURES = [
     icon: "🛍️",
     title: "The Arc de Triomphe Shopping Surprise",
     location: "Paris",
-    body: "The Arc de Triomphe came with an unplanned shopping trip that hit my wallet a lot harder than expected. The kids, of course, loved every second of it."
+    body: "The Arc de Triomphe came with an unplanned shopping trip that hit my wallet a lot harder than expected. The kids, of course, loved every second of it.",
+    photos: [
+      { src: "assets/517478035_10230169574211527_5498467812766278024_n.jpg", caption: "The family in front of the Arc de Triomphe" },
+      { src: "assets/516642020_10230169517290104_6380081532656146481_n.jpg", caption: "Shopping bags in hand outside Louis Vuitton on the Champs-Élysées" },
+      { src: "assets/516547642_10230169494649538_7454233219314627311_n.jpg", caption: "Checking out a showroom along the Champs-Élysées" }
+    ]
   },
   {
     icon: "😱",
