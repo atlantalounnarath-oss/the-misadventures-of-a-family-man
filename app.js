@@ -220,9 +220,20 @@ const routes = {
 };
 
 function parseHash() {
-  let hash = location.hash.replace(/^#/, "") || "/";
-  if (!hash.startsWith("/")) hash = "/" + hash;
-  return hash;
+  let path = location.pathname || "/";
+  if (!path.startsWith("/")) path = "/" + path;
+  // Normalize trailing slash (except root) so "/destinations/tokyo/" matches "/destinations/tokyo"
+  if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
+  return path;
+}
+
+function navigate(path, { replace = false } = {}) {
+  if (replace) {
+    history.replaceState({ path }, "", path);
+  } else {
+    history.pushState({ path }, "", path);
+  }
+  router();
 }
 
 function router() {
@@ -303,8 +314,47 @@ function afterRender(path) {
   bindMisadventureFilters();
 }
 
-window.addEventListener("hashchange", router);
+// Legacy support: anyone with an old bookmarked or shared "#/..." link
+// lands on "/" with that fragment attached (fragments never reach the
+// server), so convert it to the new path format on load, once.
+function redirectLegacyHash() {
+  const legacy = location.hash.replace(/^#/, "");
+  if (legacy.startsWith("/")) {
+    history.replaceState({ path: legacy }, "", legacy);
+  }
+}
+redirectLegacyHash();
+
+window.addEventListener("popstate", router);
 window.addEventListener("DOMContentLoaded", router);
+
+// Intercept clicks on same-origin internal links so navigation happens
+// via the History API instead of a full page reload — this is what makes
+// pushState-based routing actually feel like a single-page app.
+document.addEventListener("click", (e) => {
+  // Only plain left-clicks with no modifier keys
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+  const link = e.target.closest("a[href]");
+  if (!link) return;
+
+  // Skip links explicitly opting out, external links, downloads, mailto/tel, and hash-only anchors
+  if (link.target && link.target !== "_self") return;
+  if (link.hasAttribute("download")) return;
+  const href = link.getAttribute("href");
+  if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) return;
+
+  let url;
+  try {
+    url = new URL(href, location.href);
+  } catch {
+    return;
+  }
+  if (url.origin !== location.origin) return;
+
+  e.preventDefault();
+  navigate(url.pathname + url.search);
+});
 
 /* ============================================================
    SHARED PARTIALS
@@ -312,7 +362,7 @@ window.addEventListener("DOMContentLoaded", router);
 
 function destCardHTML(d, delay) {
   return `
-  <a href="#/destinations/${d.slug}" class="dest-card reveal ${delay || ""}">
+  <a href="/destinations/${d.slug}" class="dest-card reveal ${delay || ""}">
     ${lazyImg(d.cardImg, d.name)}
     <div class="dest-card-body">
       <span class="dest-card-tag">${escapeHtml(d.tag)}</span>
@@ -334,7 +384,7 @@ function foodCardHTML(r, delay) {
         <span class="community-review-label">Community says <em>(via ${escapeHtml(r.communitySource || "Google/Yelp")} — visited)</em></span>
         <p>${escapeHtml(r.communityReview)}</p>
       </div>` : ""}
-      ${r.destSlug ? `<a href="#/destinations/${r.destSlug}" class="food-card-more">See ${escapeHtml(r.destName || "destination")} →</a>` : ""}
+      ${r.destSlug ? `<a href="/destinations/${r.destSlug}" class="food-card-more">See ${escapeHtml(r.destName || "destination")} →</a>` : ""}
     </div>
   </div>`;
 }
@@ -813,12 +863,12 @@ function worldMapHTML() {
           <span class="eyebrow">Where we've been</span>
           <h2 class="section-title">The route so far</h2>
         </div>
-        <a href="#/destinations" class="btn btn-ghost">View all destinations</a>
+        <a href="/destinations" class="btn btn-ghost">View all destinations</a>
       </div>
       <div class="map-block reveal">
         ${worldLandmassSVG()}
-        ${DESTINATIONS.map(d => `<a href="#/destinations/${d.slug}" class="map-pin" data-label="${escapeHtml(d.name)}" style="top:${d.coords.top}; left:${d.coords.left};"></a>`).join("")}
-        <a href="#/herstories" class="map-egg" style="top:${HER_STORIES[0].coords.top}; left:${HER_STORIES[0].coords.left};" aria-label="A quiet corner of the map">
+        ${DESTINATIONS.map(d => `<a href="/destinations/${d.slug}" class="map-pin" data-label="${escapeHtml(d.name)}" style="top:${d.coords.top}; left:${d.coords.left};"></a>`).join("")}
+        <a href="/herstories" class="map-egg" style="top:${HER_STORIES[0].coords.top}; left:${HER_STORIES[0].coords.left};" aria-label="A quiet corner of the map">
           <svg viewBox="0 0 100 100" aria-hidden="true">
             <path d="M58 58 C40 62,20 68,8 88 C26 82,42 76,56 74 C50 82,48 90,52 98 C62 88,68 76,66 64 Z" fill="var(--brass)"/>
             <path d="M60 46 C46 24,26 10,6 8 C20 20,28 30,30 42 C42 34,54 36,62 46 Z" fill="var(--brass-bright)"/>
@@ -866,8 +916,8 @@ function renderHome() {
       <h1 class="hero-title">The Misadventures <em>of a Family Man</em></h1>
       <p class="hero-subtitle">Traveling the world one wrong turn, unforgettable meal, and family adventure at a time.</p>
       <div class="hero-actions">
-        <a href="#/adventures/southeast-asia-2026" class="btn btn-primary">Start the Adventure</a>
-        <a href="#/destinations" class="btn btn-ghost">Browse Destinations</a>
+        <a href="/adventures/southeast-asia-2026" class="btn btn-primary">Start the Adventure</a>
+        <a href="/destinations" class="btn btn-ghost">Browse Destinations</a>
       </div>
     </div>
     <div class="hero-dots" id="heroDots">
@@ -884,7 +934,7 @@ function renderHome() {
           <h2 class="section-title">${escapeHtml(featured.title)}</h2>
           <p class="section-desc">${escapeHtml(featured.subtitle)}</p>
         </div>
-        <a href="#/adventures/${featured.slug}" class="btn btn-primary">View the Full Trip</a>
+        <a href="/adventures/${featured.slug}" class="btn btn-primary">View the Full Trip</a>
       </div>
       <div class="timeline-card reveal" style="grid-template-columns: 1.3fr 1fr;">
         ${lazyImg(featured.heroImg, featured.title)}
@@ -892,7 +942,7 @@ function renderHome() {
           <span class="timeline-loc">${featured.stops.length} stops · ${escapeHtml(featured.duration)}</span>
           <h3 class="timeline-title">${escapeHtml(featured.subtitle)}</h3>
           <p class="timeline-desc">${escapeHtml(featured.intro)}</p>
-          <a href="#/adventures/${featured.slug}" class="timeline-link">Follow the route →</a>
+          <a href="/adventures/${featured.slug}" class="timeline-link">Follow the route →</a>
         </div>
       </div>
     </div>
@@ -905,7 +955,7 @@ function renderHome() {
           <span class="eyebrow">Flip the Passport Pages</span>
           <h2 class="section-title">Check out this spot</h2>
         </div>
-        <a href="#/destinations" class="btn btn-ghost">All Destinations</a>
+        <a href="/destinations" class="btn btn-ghost">All Destinations</a>
       </div>
       <div class="card-grid">
         ${featuredDests.map((d, i) => destCardHTML(d, `reveal-delay-${i + 1}`)).join("")}
@@ -920,7 +970,7 @@ function renderHome() {
           <span class="eyebrow">Your Next Reservation</span>
           <h2 class="section-title">Restaurants worth the flight</h2>
         </div>
-        <a href="#/eats" class="btn btn-ghost">See All Restaurants</a>
+        <a href="/eats" class="btn btn-ghost">See All Restaurants</a>
       </div>
       <div class="card-grid">
         ${topRestaurants.map((r, i) => foodCardHTML(r, `reveal-delay-${i + 1}`)).join("")}
@@ -937,7 +987,7 @@ function renderHome() {
           <span class="eyebrow">Featured Photography</span>
           <h2 class="section-title">A few frames from the road</h2>
         </div>
-        <a href="#/gallery" class="btn btn-ghost">Open Full Gallery</a>
+        <a href="/gallery" class="btn btn-ghost">Open Full Gallery</a>
       </div>
       <div class="masonry">
         ${GALLERY.slice(0, 8).map((g, i) => `
@@ -958,7 +1008,7 @@ function renderHome() {
         <span class="misadventure-loc">${escapeHtml(mysteryMisadventure.location)}</span>
         <p class="misadventure-body">${escapeHtml(mysteryMisadventure.body)}</p>
         ${misadventurePhotosHTML(mysteryMisadventure)}
-        <a href="#/misadventures" class="food-card-more" style="margin-top:22px;">Read more misadventures →</a>
+        <a href="/misadventures" class="food-card-more" style="margin-top:22px;">Read more misadventures →</a>
       </div>
     </div>
   </section>
@@ -1009,7 +1059,7 @@ function renderAdventuresList() {
 
       <div class="card-grid cols-2 mt-lg">
         ${ADVENTURES.map(a => `
-          <a href="#/adventures/${a.slug}" class="dest-card reveal" style="aspect-ratio: 16/11;">
+          <a href="/adventures/${a.slug}" class="dest-card reveal" style="aspect-ratio: 16/11;">
             ${lazyImg(a.heroImg, a.title)}
             <div class="dest-card-body">
               <span class="dest-card-tag">${a.stops.length} Stops · ${escapeHtml(a.duration)}</span>
@@ -1029,7 +1079,7 @@ function renderAdventureDetail(a) {
   return `
   <section class="page-hero" style="background-image:url('${a.heroImg}')">
     <div class="page-hero-content">
-      <div class="breadcrumb"><a href="#/adventures">Adventures</a><span>/</span><span>${escapeHtml(a.title)}</span></div>
+      <div class="breadcrumb"><a href="/adventures">Adventures</a><span>/</span><span>${escapeHtml(a.title)}</span></div>
       <h1 class="page-hero-title">${escapeHtml(a.title)}</h1>
       <div class="page-hero-meta">
         <span>◆ ${a.stops.length} stops</span>
@@ -1054,7 +1104,7 @@ function renderAdventureDetail(a) {
                 <span class="timeline-loc">${escapeHtml(d.country)}</span>
                 <h3 class="timeline-title">${escapeHtml(d.name)}</h3>
                 <p class="timeline-desc">${escapeHtml(d.whyVisit)}</p>
-                <a href="#/destinations/${d.slug}" class="timeline-link">Explore ${escapeHtml(d.name)} →</a>
+                <a href="/destinations/${d.slug}" class="timeline-link">Explore ${escapeHtml(d.name)} →</a>
               </div>
             </div>
           </div>
@@ -1225,7 +1275,7 @@ function renderDestinationDetail(d) {
   return `
   <section class="page-hero" style="background-image:url('${d.heroImg}')">
     <div class="page-hero-content">
-      <div class="breadcrumb"><a href="#/destinations">Destinations</a><span>/</span><span>${escapeHtml(d.name)}</span></div>
+      <div class="breadcrumb"><a href="/destinations">Destinations</a><span>/</span><span>${escapeHtml(d.name)}</span></div>
       <h1 class="page-hero-title">${escapeHtml(d.name)}</h1>
       <div class="page-hero-meta">
         <span>◆ ${escapeHtml(d.country)}</span>
@@ -1317,7 +1367,7 @@ function renderDestinationDetail(d) {
             ${misadventurePhotosHTML(m)}
           </div>`).join("")}
       </div>
-      <a href="#/misadventures" class="btn btn-ghost mt-lg" style="margin-top:32px;">See All Misadventures</a>
+      <a href="/misadventures" class="btn btn-ghost mt-lg" style="margin-top:32px;">See All Misadventures</a>
     </div>
   </section>`;
   })()}
@@ -1385,7 +1435,7 @@ function renderDestinationDetail(d) {
 
 function herStoryCardHTML(t, delay) {
   return `
-  <a href="#/herstories/${t.slug}" class="dest-card reveal ${delay || ""}">
+  <a href="/herstories/${t.slug}" class="dest-card reveal ${delay || ""}">
     ${lazyImg(t.cardImg, t.name)}
     <div class="dest-card-body">
       <span class="dest-card-tag">${escapeHtml(t.tripType)}</span>
@@ -1421,7 +1471,7 @@ function renderHerStoryDetail(t) {
   return `
   <section class="page-hero" style="background-image:url('${t.heroImg}')">
     <div class="page-hero-content">
-      <div class="breadcrumb"><a href="#/herstories">HerStories</a><span>/</span><span>${escapeHtml(t.name)}</span></div>
+      <div class="breadcrumb"><a href="/herstories">HerStories</a><span>/</span><span>${escapeHtml(t.name)}</span></div>
       <h1 class="page-hero-title">${escapeHtml(t.name)}</h1>
       <div class="page-hero-meta">
         <span>◆ ${escapeHtml(t.country)}</span>
@@ -1468,7 +1518,7 @@ function renderHerStoryDetail(t) {
 
   <section class="section" style="padding-top:0;">
     <div class="container">
-      <a href="#/herstories" class="btn btn-ghost">← All HerStories</a>
+      <a href="/herstories" class="btn btn-ghost">← All HerStories</a>
     </div>
   </section>
 
@@ -1657,8 +1707,8 @@ function renderAbout() {
           <div><div class="about-stat-num">∞</div><div class="about-stat-label">Wrong turns</div></div>
         </div>
         <div class="hero-actions" style="margin-top:40px;">
-          <a href="#/adventures/southeast-asia-2026" class="btn btn-primary">Read the Latest Trip</a>
-          <a href="#/misadventures" class="btn btn-ghost">See the Misadventures</a>
+          <a href="/adventures/southeast-asia-2026" class="btn btn-primary">Read the Latest Trip</a>
+          <a href="/misadventures" class="btn btn-ghost">See the Misadventures</a>
         </div>
       </div>
     </div>
@@ -1701,7 +1751,7 @@ function render404() {
       <span class="eyebrow" style="justify-content:center;">Wrong Turn</span>
       <h1 class="section-title" style="margin: 16px auto 0;">This page took a detour we didn't plan for.</h1>
       <p class="section-desc" style="margin: 16px auto 0;">Even we can't find this one — and we've gotten lost on three continents.</p>
-      <a href="#/" class="btn btn-primary" style="margin-top:32px;">Back to Home</a>
+      <a href="/" class="btn btn-primary" style="margin-top:32px;">Back to Home</a>
     </div>
   </section>`;
 }
