@@ -1454,12 +1454,24 @@ function renderDestinationDetail(d) {
   <section class="section section-tight section-alt">
     <div class="container">
       <span class="eyebrow">Photo Gallery</span>
-      <div class="masonry mt-lg" style="margin-top:32px;">
-        ${d.gallery.map((entry, i) => {
-          const src = typeof entry === "string" ? entry : entry.src;
-          return `<div class="masonry-item reveal" data-lightbox-group="dest-${d.slug}" data-lightbox-index="${i}">${lazyImg(src, d.name)}</div>`;
-        }).join("")}
-      </div>
+      ${(() => {
+        const entries = d.gallery.map((entry, i) => ({
+          i,
+          src: typeof entry === "string" ? entry : entry.src,
+          group: typeof entry === "object" && entry.group ? entry.group : null
+        }));
+        const groups = [...new Set(entries.map(e => e.group).filter(Boolean))];
+        const renderGrid = (list) => `<div class="masonry mt-lg" style="margin-top:16px;">
+          ${list.map(e => `<div class="masonry-item reveal" data-lightbox-group="dest-${d.slug}" data-lightbox-index="${e.i}">${lazyImg(e.src, d.name)}</div>`).join("")}
+        </div>`;
+        if (groups.length > 1) {
+          return groups.map(g => `
+            <h3 class="gallery-subheading">${escapeHtml(g)}</h3>
+            ${renderGrid(entries.filter(e => e.group === g))}
+          `).join("");
+        }
+        return renderGrid(entries);
+      })()}
     </div>
   </section>
 

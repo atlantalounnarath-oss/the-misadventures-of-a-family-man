@@ -361,6 +361,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .section-desc { color: var(--text-dim); max-width: 44ch; font-size: 15px; margin-top: 14px; }
 
+.gallery-subheading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text);
+  margin: 32px 0 4px;
+}
+.gallery-subheading:first-child { margin-top: 0; }
+
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
 .reveal.in-view { opacity: 1; transform: translateY(0); }
 .reveal-delay-1 { transition-delay: 0.08s; }

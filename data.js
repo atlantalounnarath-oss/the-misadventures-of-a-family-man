@@ -56,13 +56,13 @@ function wpImg(id, w) {
 
 // Chronological slices of the 30-photo gallery, one per stop on the trip
 const PHOTO_SETS = {
-  "hong-kong": [797, 801, 799, 798, 805],
-  "koh-samui": [800, 812, 803, 820],
-  "bangkok": [811, 809, 813, 804],
+  "hong-kong": [797, 799, 798],
+  "koh-samui": [800, 801, 812, 803, 820],
+  "bangkok": [811, 813, 804, 805],
   "ho-chi-minh-city": [814, 808, 819, 802],
-  "an-giang": [815, 810, 816, 807],
-  "hanoi": [806, 817, 823, 822, 824],
-  "ha-long-bay": [825, 826, 821, 818]
+  "an-giang": [],
+  "hanoi": [806, 817, 823, 822, 824, 818, 825, 826, 821, 810],
+  "ha-long-bay": []
 };
 
 function photoSet(slug) {
@@ -165,7 +165,11 @@ const DESTINATIONS = [
       "Book beachfront dinners early during high season — tables go fast at sunset",
       "Bring reef-safe sunscreen; several beaches now require it"
     ],
-    gallery: photoSet("koh-samui").gallery,
+    gallery: [
+      ...photoSet("koh-samui").gallery,
+      { src: "assets/726768184_10234219811424926_5834929716715620637_n.jpg", caption: "Paddling out on the water, Koh Samui, with a distant island on the horizon" },
+      { src: "assets/726949340_10234219806344799_8941385992213557937_n.jpg", caption: "Sunset over the infinity pool, Koh Samui" }
+    ],
     rating: 9,
     wouldReturn: "Yes — this is the one we talk about when we say we need a vacation from our vacation.",
     relatedAdventure: "southeast-asia-2026"
@@ -276,8 +280,8 @@ const DESTINATIONS = [
     country: "Vietnam",
     year: 2026,
     tag: "Mekong Delta",
-    heroImg: photoSet("an-giang").hero,
-    cardImg: photoSet("an-giang").card,
+    heroImg: "assets/729716392_10234244293436961_8665344624661886448_n.jpg",
+    cardImg: "assets/729705979_10234244291756919_8628753213251772256_n.jpg",
     coords: { top: "44.24%", left: "78.91%" },
     quickFacts: [
       { label: "Best time to go", value: "Nov – Jan" },
@@ -309,7 +313,10 @@ const DESTINATIONS = [
       "Bring cash — cards are not reliably accepted outside the town centers",
       "Go at first light for the floating markets; they wind down by mid-morning"
     ],
-    gallery: photoSet("an-giang").gallery,
+    gallery: [
+      { src: "assets/729716392_10234244293436961_8665344624661886448_n.jpg", caption: "A shopfront-lined street in An Giang" },
+      { src: "assets/729705979_10234244291756919_8628753213251772256_n.jpg", caption: "Roosters loose in a yard between houses, An Giang" }
+    ],
     rating: 9,
     wouldReturn: "Without question — this was the trip's quiet, unexpected favorite.",
     relatedAdventure: "southeast-asia-2026"
@@ -373,8 +380,8 @@ const DESTINATIONS = [
     country: "Vietnam",
     year: 2026,
     tag: "Limestone Karsts",
-    heroImg: photoSet("ha-long-bay").hero,
-    cardImg: photoSet("ha-long-bay").card,
+    heroImg: "assets/731443813_10234280477301535_2663361984624580910_n.jpg",
+    cardImg: "assets/731653302_10234280818070054_915450970668348977_n.jpg",
     coords: { top: "38.34%", left: "79.78%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
@@ -391,8 +398,8 @@ const DESTINATIONS = [
       "Squid fishing at night"
     ],
     restaurants: [
-      { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", img: wpImg(825, 900), communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset.", img: wpImg(826, 900) }
+      { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset." }
     ],
     foodPhotos: [
       { src: "assets/731443813_10234280477301535_2663361984624580910_n.jpg", caption: "Sunset cocktails with a Ha Long Bay karst view from the cruise deck" },
@@ -409,7 +416,24 @@ const DESTINATIONS = [
       "Book a boat with a real safety record; check recent reviews closely",
       "Pack light, breathable layers — it's humid on the water even in cooler months"
     ],
-    gallery: photoSet("ha-long-bay").gallery,
+    gallery: [
+      { src: "assets/731462278_10234280330017853_6494262680817066985_n.jpg", caption: "The ferry crossing to Ha Long Bay, passing Ha Long City's Bãi Cháy Bridge and Sun Wheel" },
+      { src: "assets/731442627_10234298103302174_456363928322432437_n.jpg", caption: "The view from the cruise cabin balcony during the Cat Ba excursion" },
+      { src: "assets/731350627_10234288980714115_3876926281289961523_n.jpg", caption: "A thatched-roof terrace overlooking the water on Cat Ba" },
+      { src: "assets/731253220_10234288979594087_3370571925910982938_n.jpg", caption: "The garden courtyard view from the room on Cat Ba" },
+      { src: "assets/731357237_10234288572103900_1460906854748287637_n.jpg", caption: "A stone pool inside a cave on the Cat Ba excursion" },
+      { src: "assets/731462274_10234288568303805_2869660195470228643_n.jpg", caption: "Smiling inside the cave opening, Cat Ba" },
+      { src: "assets/731339064_10234288566023748_8457926529781139519_n.jpg", caption: "Looking out through a cave opening to the jungle beyond, Cat Ba" },
+      { src: "assets/731344401_10234288564343706_3859608978360670243_n.jpg", caption: "Deep inside the cave, stalactites lit up along the passage" },
+      { src: "assets/731380556_10234288562023648_1749717823617109440_n.jpg", caption: "The stairway leading into the cave, Cat Ba" },
+      { src: "assets/731357277_10234288554823468_8451648677442561080_n.jpg", caption: "A family selfie on Cat Ba, karst mountains behind" },
+      { src: "assets/731808121_10234288551023373_8318975215006906580_n.jpg", caption: "The entrance sign for Trung Trang Cave, Cat Ba Island" },
+      { src: "assets/731334943_10234288025690240_8817777232877131120_n.jpg", caption: "A floating fishing village tucked beneath the karst cliffs" },
+      { src: "assets/731761520_10234288025010223_4530947701035154892_n.jpg", caption: "Boats moored below the limestone cliffs in the mist" },
+      { src: "assets/731253021_10234286532452910_1632683376558443697_n.jpg", caption: "Sunset over Ha Long Bay's karst islands" },
+      { src: "assets/731423088_10234280696907025_2300768935372453071_n.jpg", caption: "The sky glowing pink and orange over the bay at dusk" },
+      { src: "assets/730244976_10234280331857899_6789896394839212795_n.jpg", caption: "A vendor rowing her boat alongside the cruise ship, selling snacks and drinks" }
+    ],
     rating: 10,
     wouldReturn: "Yes — this was the single most beautiful evening of the whole trip.",
     relatedAdventure: "southeast-asia-2026"
@@ -1904,7 +1928,29 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n-1.jpg?w=1000", { src: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", caption: "Out front of Charlie's Sandwich Shoppe" }],
+    gallery: [
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg?w=1000", group: "Boston" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=1000", group: "Boston" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=1000", group: "Boston" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=1000", group: "Boston" },
+      { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n-1.jpg?w=1000", group: "Boston" },
+      { src: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", caption: "Out front of Charlie's Sandwich Shoppe", group: "Boston" },
+      { src: "assets/526788815_10230511021627499_8194973482409344085_n.jpg", caption: "Swan boats gliding across the lagoon at Boston Public Garden", group: "Boston" },
+      { src: "assets/515268998_10229981047378474_5128006516121554005_n.jpg", caption: "A selfie from a Boston skyline viewing deck", group: "Boston" },
+      { src: "assets/515446090_10229980727570479_4030612828816857920_n.jpg", caption: "Fenway Park, seen from above", group: "Boston" },
+      { src: "assets/514267529_10229967740565812_4748147002681675308_n.jpg", caption: "The family in front of MIT's Great Dome", group: "Boston" },
+      { src: "assets/516456624_10230112660908730_4614911518181125764_n.jpg", caption: "A family photo under the pergola on Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/517603358_10230112646468369_872291317705899349_n.jpg", caption: "In the garden on Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/517700292_10230106386631877_2015187038254117919_n.jpg", caption: "Boats docked in the harbor, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/528233773_10230532215677337_5589584179425161138_n.jpg", caption: "A sunny moment on the dock, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/516543754_10230102793622054_7308814104262917559_n.jpg", caption: "Browsing an eclectic bookshop, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/516452838_10230099802507278_5957256129628992515_n.jpg", caption: "A family selfie by the harbor, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/515775480_10230099790106968_8317328884895623026_n.jpg", caption: "At Edgartown Lighthouse, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/516913044_10230099777106643_1901342084084088485_n.jpg", caption: "Checking out a bronze sculpture in town, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/517703543_10230090952806041_1040002769913659974_n.jpg", caption: "On the ferry to Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/515654129_10230060987096917_9057872140729029602_n.jpg", caption: "A historic white house behind the hedges, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "assets/516445278_10230052979016720_7717237002061259125_n.jpg", caption: "The Waterboat Duck House, a floating duck shelter in the marina, Martha's Vineyard", group: "Martha's Vineyard" }
+    ],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1988,7 +2034,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Oct before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233944377259244_7653893899704773306_n.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233944377259244_7653893899704773306_n.jpg?w=1000", { src: "assets/707138338_10233930938323279_5351691657475358558_n.jpg", caption: "A family selfie at the Golden Gate Bridge" }, { src: "assets/705647655_10233929879576811_8061040375308441661_n.jpg", caption: "Lombard Street's famous switchbacks in bloom" }, { src: "assets/705717882_10233929434725690_1078030760900021849_n.jpg", caption: "The Chinatown Gate on Grant Avenue" }, { src: "assets/706766729_10233929197639763_5918844125032106857_n.jpg", caption: "Looking down a bustling Chinatown street" }, { src: "assets/704570508_10233918421130357_734214169438546134_n.jpg", caption: "Sea lions lounging on the docks at Pier 39" }, { src: "assets/703589121_10233918356848750_8441354275749821653_n.jpg", caption: "Alcatraz Island, seen from the bay" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -2101,8 +2147,8 @@ const DESTINATIONS = [
     country: `Italy`,
     year: 2022,
     tag: `Italy 2022 Stop`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i12.jpg?w=900",
+    heroImg: "assets/502859980_10229343887049864_7142588008757122538_n.jpg",
+    cardImg: "assets/502859980_10229343887049864_7142588008757122538_n.jpg",
     coords: { top: "25.7%", left: "52.9%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -2117,7 +2163,7 @@ const DESTINATIONS = [
       `Wander the Duomo and Baptistery grounds`
     ],
     restaurants: [
-      { name: `La Torre`, location: `Pisa`, rating: 4.4, review: `A seafood-and-pasta spot just off the walk to the Leaning Tower, popular with both locals and travelers.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=900", communityReview: `Reviewers consistently praise the lobster pasta and seafood dishes, with several calling it one of the best meals of their Italy trip — a handful mention it gets busy at peak dinner hours.`, communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `La Torre`, location: `Pisa`, rating: 4.4, review: `A seafood-and-pasta spot just off the walk to the Leaning Tower, popular with both locals and travelers.`, communityReview: `Reviewers consistently praise the lobster pasta and seafood dishes, with several calling it one of the best meals of their Italy trip — a handful mention it gets busy at peak dinner hours.`, communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "assets/502549258_10229343876769607_6884720507215050516_n.jpg", caption: "A Nutella crepe with fresh fruit at a restaurant near the Leaning Tower of Pisa" },
@@ -2134,7 +2180,18 @@ const DESTINATIONS = [
 `Pisa works well as a half-day stop rather than a full destination`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i12.jpg?w=1000"],
+    gallery: [
+      { src: "assets/502859980_10229343887049864_7142588008757122538_n.jpg", caption: "The family in front of the Leaning Tower of Pisa" },
+      { src: "assets/502405906_10229343887889885_7621501395862929926_n.jpg", caption: "Looking down on the Duomo's domes from the top of the tower" },
+      { src: "assets/502631275_10229343880249694_3081542993488465946_n.jpg", caption: "Inside the Pisa Cathedral, looking up at the painted ceiling" },
+      { src: "assets/502619183_10229343886609853_4191748687884861030_n.jpg", caption: "The Camposanto Monumentale, Pisa's monumental cemetery" },
+      { src: "assets/502582265_10229343886569852_3037291481386762584_n.jpg", caption: "Looking straight up the leaning face of the tower" },
+      { src: "assets/502433697_10229343887609878_3089580705963608582_n.jpg", caption: "Looking up through the hollow center of the tower" },
+      { src: "assets/502509143_10229343886889860_5936972585658398225_n.jpg", caption: "At the top of the tower, overlooking Pisa" },
+      { src: "assets/502627415_10229343886049839_6442003743386319285_n.jpg", caption: "Next to the tower's bell at the very top" },
+      { src: "assets/502482851_10229343885849834_5558188512576085044_n.jpg", caption: "Pisa spread out below, mountains in the distance" },
+      { src: "assets/502467791_10229343885929836_7660133385297112126_n.jpg", caption: "Straight up through the top of the tower, flag waving overhead" }
+    ],
     rating: 8,
     wouldReturn: `Yes, though half a day was about right.`,
     relatedAdventure: "italy-2022"
@@ -2288,7 +2345,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000", { src: "assets/60940962_10214598837192833_7106611681492467712_n.jpg", caption: "Day one in Tokyo, posing with a classic vending machine" }, { src: "assets/61626444_10214606115574788_1160055857602363392_n.jpg", caption: "A seafood stand somewhere between Niiza and Shibuya, Tokyo" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000", { src: "assets/60940962_10214598837192833_7106611681492467712_n.jpg", caption: "Day one in Tokyo, posing with a classic vending machine" }, { src: "assets/61626444_10214606115574788_1160055857602363392_n.jpg", caption: "A seafood stand somewhere between Niiza and Shibuya, Tokyo" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "japan-2019"
@@ -2300,7 +2357,7 @@ const DESTINATIONS = [
     year: 2019,
     tag: `Japan 2019 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j19.jpg?w=900",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=900",
     coords: { top: "30.5%", left: "87.7%" },
     quickFacts: [
       { label: "Best time to go", value: `Mar – May` },
@@ -2330,7 +2387,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j13.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j13.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "japan-2019"
@@ -2752,7 +2809,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=1000", { src: "assets/494696944_10229003960871922_49618793195950022_n.jpg", caption: "The Eiffel Tower lit up gold as evening set in" }, { src: "assets/494556999_10229003956311808_5012065644476853441_n.jpg", caption: "The family at the Arc de Triomphe" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
