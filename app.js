@@ -290,6 +290,11 @@ function afterRender(path) {
       return { src, label };
     }));
   }
+  const advMatch = path.match(/^\/adventures\/([a-z0-9-]+)$/);
+  if (advMatch) {
+    const a = getAdventure(advMatch[1]);
+    if (a) initAdventureRouteMap(a);
+  }
   const herMatch = path.match(/^\/herstories\/([a-z0-9-]+)$/);
   if (herMatch) {
     const t = getHerStory(herMatch[1]);
@@ -999,6 +1004,85 @@ function initHeroSlider() {
    ADVENTURES (list + detail)
    ============================================================ */
 
+function initAdventureRouteMap(a) {
+  const stage = document.getElementById("advRouteMap");
+  if (!stage) return;
+  const pins = Array.from(stage.querySelectorAll(".adv-pin"));
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const STEP_MS = 420;
+
+  function keepCardOnscreen(p) {
+    const card = p.querySelector(".adv-pin-card");
+    p.style.setProperty("--sx", "0px");
+    p.style.setProperty("--sy", "0px");
+    requestAnimationFrame(() => {
+      const stageRect = stage.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const margin = 10;
+      let sx = 0, sy = 0;
+      if (cardRect.left < stageRect.left + margin) sx = (stageRect.left + margin) - cardRect.left;
+      else if (cardRect.right > stageRect.right - margin) sx = (stageRect.right - margin) - cardRect.right;
+      if (cardRect.top < stageRect.top + margin) sy = (stageRect.top + margin) - cardRect.top;
+      p.style.setProperty("--sx", sx + "px");
+      p.style.setProperty("--sy", sy + "px");
+    });
+  }
+
+  function visitPin(p) {
+    p.classList.add("visited", "peek");
+    keepCardOnscreen(p);
+    setTimeout(() => p.classList.remove("peek"), 1400);
+  }
+
+  function playSequence() {
+    stage.classList.remove("zoomed");
+    pins.forEach(p => { p.classList.remove("visited", "peek", "active"); p.style.removeProperty("--sx"); p.style.removeProperty("--sy"); });
+
+    if (reduced) {
+      stage.classList.add("zoomed");
+      pins.forEach(p => { p.classList.add("visited"); keepCardOnscreen(p); });
+      return;
+    }
+    void stage.offsetWidth; // force reflow before re-animating
+    setTimeout(() => stage.classList.add("zoomed"), 250);
+    const zoomSettleDelay = 250 + 1300 + 250;
+    pins.forEach((p, i) => setTimeout(() => visitPin(p), zoomSettleDelay + i * STEP_MS));
+  }
+
+  pins.forEach(p => {
+    const dot = p.querySelector(".adv-pin-dot");
+    dot.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (!p.classList.contains("visited")) return;
+      const wasActive = p.classList.contains("active");
+      pins.forEach(other => other.classList.remove("active"));
+      if (!wasActive) { p.classList.add("active"); keepCardOnscreen(p); }
+    });
+  });
+  stage.addEventListener("click", () => pins.forEach(p => p.classList.remove("active")));
+
+  stage.querySelectorAll("[data-jump-slug]").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const target = document.getElementById("stop-" + btn.getAttribute("data-jump-slug"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.classList.add("flash-highlight");
+        setTimeout(() => target.classList.remove("flash-highlight"), 1400);
+      }
+    });
+  });
+
+  // Use an observer so the sequence only plays once the map actually
+  // scrolls into view, rather than firing immediately on page load while
+  // it's still offscreen (it sits right under the hero, so this mostly
+  // just means "right after the page paints," but it's a safe guard).
+  const io = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) { playSequence(); io.disconnect(); }
+  }, { threshold: 0.3 });
+  io.observe(stage);
+}
+
 function renderAdventuresList() {
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
@@ -1024,6 +1108,50 @@ function renderAdventuresList() {
   `;
 }
 
+// Zoom into the region a trip's stops fall in, then reveal each stop's dot
+// glowing from dim teal to lit brass gold in visit order. Coordinates and
+// map artwork are the exact same ones used on the homepage world map, so
+// pins line up with real geography — works for any multi-stop Adventure,
+// not just one specific trip.
+function adventureRouteMapHTML(a, stopDests) {
+  const pins = stopDests.map((d, i) => {
+    const top = parseFloat(d.coords.top);
+    const left = parseFloat(d.coords.left);
+    return { slug: d.slug, name: d.name, top, left, n: String(i + 1).padStart(2, "0") };
+  });
+
+  const lefts = pins.map(p => p.left), tops = pins.map(p => p.top);
+  const centerLeft = (Math.min(...lefts) + Math.max(...lefts)) / 2;
+  const centerTop = (Math.min(...tops) + Math.max(...tops)) / 2;
+
+  // Scale so the furthest stop from center still lands within a safe
+  // margin of the frame edge (45% of the way out, leaving breathing room).
+  const maxDeltaX = Math.max(...pins.map(p => Math.abs(p.left - centerLeft)), 0.5);
+  const maxDeltaY = Math.max(...pins.map(p => Math.abs(p.top - centerTop)), 0.5);
+  const scale = Math.min(45 / maxDeltaX, 45 / maxDeltaY, 14); // cap so a single-stop trip doesn't zoom absurdly far
+  const tx = 50 - centerLeft;
+  const ty = 50 - centerTop;
+
+  return `
+  <div class="adv-route-map" id="advRouteMap" style="--adv-scale:${scale.toFixed(2)}; --adv-tx:${tx.toFixed(2)}%; --adv-ty:${ty.toFixed(2)}%;">
+    <span class="adv-route-region-label">${escapeHtml(a.title)}</span>
+    <div class="adv-route-world">
+      ${worldLandmassSVG()}
+      ${pins.map((p, i) => `
+        <div class="adv-pin" id="advPin-${i}" data-slug="${p.slug}" style="top:${p.top}%; left:${p.left}%;">
+          <div class="adv-pin-dot"></div>
+          <div class="adv-pin-card">
+            <span class="adv-pin-n">${p.n}</span>
+            <p class="adv-pin-name">${escapeHtml(p.name)}</p>
+            <button data-jump-slug="${p.slug}">Jump to stop →</button>
+          </div>
+        </div>
+      `).join("")}
+    </div>
+    <span class="adv-route-caption">${pins.length} stops — tap a pin</span>
+  </div>`;
+}
+
 function renderAdventureDetail(a) {
   const stopDests = a.stops.map(getDestination);
   return `
@@ -1041,12 +1169,13 @@ function renderAdventureDetail(a) {
 
   <section class="section">
     <div class="container">
+      ${adventureRouteMapHTML(a, stopDests)}
       <p class="section-desc" style="max-width:70ch; font-size:16px;">${escapeHtml(a.intro)}</p>
 
       <div class="timeline">
         <div class="timeline-line"></div>
         ${stopDests.map((d, i) => `
-          <div class="timeline-item reveal">
+          <div class="timeline-item reveal" id="stop-${d.slug}">
             <div class="timeline-marker">${String(i + 1).padStart(2, "0")}</div>
             <div class="timeline-card">
               ${lazyImg(d.cardImg, d.name)}
