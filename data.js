@@ -1153,9 +1153,12 @@ const DESTINATIONS = [
       { name: `Joel Robuchon`, location: `Las Vegas, Nevada`, rating: 4.3, review: `Located at the MGM Grand, this Michelin three-star restaurant offers an exquisite French dining experience with exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "Widely regarded as one of the finest fine-dining experiences in America, with reviewers consistently calling the multi-course tasting menu (bread, cheese, and dessert carts included) some of the best food of their lives. Worth checking before you go: as of mid-2026 the restaurant is listed as temporarily closed.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Guy Savoy`, location: `Las Vegas, Nevada`, rating: 4.5, review: `Situated at Caesars Palace, Guy Savoy is another Michelin three-star restaurant known for its elegant French cuisine, including signature dishes like artichoke and black truffle soup.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l2.jpg?w=900", communityReview: "Frequently compared to Joel Robuchon by regulars who dine at both — reviewers describe Guy Savoy's style as more restrained and minimalist by comparison, with the artichoke and black truffle soup and colors-of-caviar dish drawing consistent praise.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Raku`, location: `Las Vegas, Nevada`, rating: 4.6, review: `This off-Strip Japanese restaurant is beloved by locals and visitors alike. It serves authentic and delicious dishes such as skewered meats, sashimi, and robata-grilled items.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=900", communityReview: "Tucked into an unassuming Chinatown strip mall, Raku is regularly called one of the best Japanese restaurants in the country — reviewers rave about the housemade tofu and robata-grilled skewers, with local chefs and hospitality workers famously eating here late after their own shifts end.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Lotus of Siam`, location: `Las Vegas, Nevada`, rating: 4.3, review: `A Las Vegas institution for Thai cuisine, Lotus of Siam features a diverse menu with flavorful dishes like pad Thai, crispy duck, and spicy curries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "A James Beard Award-winning strip-mall institution that reviewers consistently call a Las Vegas must — the northern Thai dishes and crispy garlic prawns are the most-recommended orders, with the standing local advice being to skip the pad Thai and order what the chef is actually known for.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Lotus of Siam`, location: `Las Vegas, Nevada`, rating: 4.3, review: `A Las Vegas institution for Thai cuisine, Lotus of Siam features a diverse menu with flavorful dishes like pad Thai, crispy duck, and spicy curries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "A James Beard Award-winning strip-mall institution that reviewers consistently call a Las Vegas must — the northern Thai dishes and crispy garlic prawns are the most-recommended orders, with the standing local advice being to skip the pad Thai and order what the chef is actually known for.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Hong Kong Garden Seafood & Dim Sum Cafe`, location: `Las Vegas, Nevada`, rating: 4.8, review: `A Spring Mountain Road Cantonese spot with authentic dim sum and seafood — good enough to bring old friends back together for a meal, even a coincidental Vegas reunion.`, img: "assets/80529702_10216139524109043_8019683396038950912_n.jpg", communityReview: "Reviewers consistently call this some of the most authentic, freshly-made dim sum in Las Vegas, with standout dishes like the beef tripe, shrimp har gow, and congee coming up again and again. A few mention service can lag during busy weekend rushes, but the food quality keeps people coming back.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/80529702_10216139524109043_8019683396038950912_n.jpg", caption: "Reunited with old friends near Hong Kong Garden Seafood & Dim Sum Cafe" }
+    ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Las Vegas, Nevada`,
@@ -2234,9 +2237,16 @@ const DESTINATIONS = [
     restaurants: [
       { name: `Sukiyabashi Jiro`, location: `Tokyo`, rating: 4.3, review: `If you're a sushi lover, this is a must-visit restaurant in Tokyo featured in the famous documentary "Jiro Dreams of Sushi".`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=900", communityReview: "Made famous by 'Jiro Dreams of Sushi' and a presidential visit — reviews run to extremes. Many call it the best sushi of their life; others find the famously brisk, no-frills 20-minute service cold and not worth the steep price.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Ichiran Ramen`, location: `Tokyo`, rating: 4.5, review: `This popular ramen chain in Tokyo allows diners to customize their own bowls of ramen in private booths.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=900", communityReview: "Famous for solo dining booths and a fully customizable tonkotsu broth — reviewers consistently enjoy the novelty and quality, though some call it more tourist experience than Kyoto or Tokyo's best ramen.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Genki Sushi`, location: `Tokyo`, rating: 4.3, review: `This conveyor belt sushi chain is a fun and affordable option for sushi lovers in Tokyo and other cities.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=900", communityReview: "A popular, affordable conveyor-belt sushi chain — reviews are mixed, with many enjoying the fun, kid-friendly format while others note inconsistent freshness and slow service at busier locations.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Genki Sushi`, location: `Tokyo`, rating: 4.3, review: `This conveyor belt sushi chain is a fun and affordable option for sushi lovers in Tokyo and other cities.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=900", communityReview: "A popular, affordable conveyor-belt sushi chain — reviews are mixed, with many enjoying the fun, kid-friendly format while others note inconsistent freshness and slow service at busier locations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Pokémon Cafe`, location: `Tokyo`, rating: 3.9, review: `A reservation-only, character-themed cafe in Nihonbashi, where every dish arrives shaped or plated like a Pokémon and a life-size Pikachu makes the rounds on the hour.`, img: "assets/471291266_10227888015773992_6759292506791357956_n.jpg", communityReview: "Famously hard to book, and reviewers are split — plenty call it a magical must-do with adorable plating and a Pikachu meet-and-greet, while others find the food itself basic and overpriced for what's essentially kid-sized portions.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/61013299_10214602656608316_7296782443833458688_n.jpg", caption: "Tonkotsu ramen in a private booth, Ichiran Ramen, Tokyo" },
+      { src: "assets/60962700_10214602650768170_7914548674011594752_n.jpg", caption: "Squeezed into the booth at Ichiran Ramen, Tokyo" },
+      { src: "assets/471291266_10227888015773992_6759292506791357956_n.jpg", caption: "The Eevee plate at Pokémon Cafe, Tokyo" },
+      { src: "assets/62146506_10214675622632421_4724162428701507584_n.jpg", caption: "Detective Pikachu mac and cheese with waffle fries, Pokémon Cafe, Tokyo" },
+      { src: "assets/61251202_10214607135200278_7303868521396568064_n.jpg", caption: "A celebratory strawberry drink at a cafe between Shibuya and Harajuku, Tokyo — shop name lost to time" }
+    ],
     hiddenGems: [
 `A quiet corner of Tokyo away from the main sights, worth the wander`,
 `Go early — Tokyo feels completely different before the crowds arrive`,
@@ -2247,7 +2257,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000", { src: "assets/60940962_10214598837192833_7106611681492467712_n.jpg", caption: "Day one in Tokyo, posing with a classic vending machine" }, { src: "assets/61626444_10214606115574788_1160055857602363392_n.jpg", caption: "A seafood stand somewhere between Niiza and Shibuya, Tokyo" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "japan-2019"
@@ -2276,7 +2286,9 @@ const DESTINATIONS = [
     restaurants: [
       { name: `Kikunoi`, location: `Kyoto`, rating: 4.6, review: `This three-Michelin-starred restaurant in Kyoto serves traditional kaiseki cuisine, a multi-course meal consisting of beautifully presented dishes made with seasonal ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=900", communityReview: "A three-Michelin-starred kaiseki institution led by chef Yoshihiro Murata — most reviewers call it an unforgettable, exquisitely presented meal, though a few find the pacing slow and the experience doesn't match the price for their taste.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/61816342_10214647641212903_6424565252775477248_n.jpg", caption: "A vivid green matcha beer near Nijo Castle, Kyoto — vendor lost to time" }
+    ],
     hiddenGems: [
 `A quiet corner of Kyoto away from the main sights, worth the wander`,
 `Go early — Kyoto feels completely different before the crowds arrive`,
@@ -2314,7 +2326,9 @@ const DESTINATIONS = [
     restaurants: [
       { name: `Dotonbori Street`, location: `Osaka`, rating: 4.3, review: `Located in Osaka, this vibrant street is home to various street food vendors offering everything from takoyaki to okonomiyaki.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=900", communityReview: "Osaka's best-known food street, lined with neon signs and street stalls — reviewers consistently call it a must-see for takoyaki and okonomiyaki, while noting it's crowded and touristy by evening.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
+    foodPhotos: [
+      { src: "assets/61693158_10214648847603062_98563679762513920_n.jpg", caption: "A takoyaki order piled high with bonito flakes, Dotonbori Street, Osaka" }
+    ],
     hiddenGems: [
 `A quiet corner of Osaka away from the main sights, worth the wander`,
 `Go early — Osaka feels completely different before the crowds arrive`,
@@ -2345,7 +2359,7 @@ const DESTINATIONS = [
       { label: "Language", value: `Japanese` },
       { label: "Kid-chaos level", value: `Low` }
     ],
-    whyVisit: `A day trip out of Tokyo into the mountains — Japan's most iconic peak, at its best on a clear morning from one of the lakes at its base. We stayed and dined right at the resort spa here, so no outside restaurant picks from this stop.`,
+    whyVisit: `A day trip out of Tokyo into the mountains — Japan's most iconic peak, at its best on a clear morning from one of the lakes at its base. We stayed and dined right at Yamagishi Ryokan on Lake Kawaguchiko.`,
     thingsToDo: [
       `View Mt. Fuji from Lake Kawaguchiko or Hakone`,
       `Visit a traditional onsen (hot spring) with a view of the mountain`,
@@ -2355,13 +2369,15 @@ const DESTINATIONS = [
       { name: "Houtou Fudou", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "The area's best-known hoto noodle specialist, with several branches around Lake Kawaguchiko — the main store sits near the Kawaguchiko Museum of Art with views of Mt. Fuji itself.", img: "assets/uploads/fuji-g1.jpg", communityReview: "Reviewers consistently call this the place to try hoto — thick, chewy wheat noodles in a rich miso-pumpkin broth — with the hearty, warming bowl repeatedly described as the perfect antidote to the mountain cold.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Kosaku Hoto Kosaku", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A humble, locally loved noodle shop known for its exceptional hoto noodle soup, tucked into the Mt. Fuji area away from the busier tourist strips.", img: "assets/uploads/fuji-g2.jpg", communityReview: "Reviewers consistently praise the generous portions and rich broth, with the spicy pork hoto and fried oyster getting particular mentions — a genuine local favorite, not just a tourist stop.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Shaw's Sushi Bar & Dining", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "A stylish, modern sushi spot right across from Kawaguchiko Station, with beautifully presented nigiri and rolls.", img: "assets/uploads/fuji-g3.jpg", communityReview: "Reviewers consistently say the quality justifies the higher price tag for the area, with the variety of sushi sets — including a dedicated vegetarian option — earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Yamagishi Ryokan", location: "Mt. Fuji (Kawaguchiko)", rating: 4.0, review: "A traditional lakeside ryokan right on Lake Kawaguchiko, where dinner and breakfast come as a full multi-course Japanese spread served right at the inn.", img: "assets/61583878_10214624978006337_1527689591962730496_n.jpg", communityReview: "Reviewers consistently praise the lakeside location, the free onsen, and the sheer volume of the traditional dinner and breakfast sets — though a handful of Japanese-language reviews call the food underwhelming for the price, so expectations vary.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
-    foodPhotos: [],
-    hiddenGems: [
-`Still need your input here — restaurant and hidden-gem picks pending your photo/story review`
+    foodPhotos: [
+      { src: "assets/61637316_10214620472773709_7935913675292934144_n.jpg", caption: "Sake service at dinner, Yamagishi Ryokan, Lake Kawaguchiko" },
+      { src: "assets/61583878_10214624978006337_1527689591962730496_n.jpg", caption: "The full kaiseki-style spread at Yamagishi Ryokan, Lake Kawaguchiko" },
+      { src: "assets/61368473_10214620470933663_3575821631269896192_n.jpg", caption: "Fujiyama Cookie, a Mt. Fuji-shaped souvenir cookie, Kawaguchiko" },
+      { src: "assets/61303381_10214620471413675_8444632030150393856_n.jpg", caption: "A closer look at the Fujiyama Cookie boxes, Kawaguchiko" }
     ],
-    foodPhotos: [],
     hiddenGems: [
 `The Chureito Pagoda viewpoint near Fujiyoshida for the classic pagoda-and-mountain photo`,
 `The north shore of Lake Kawaguchiko tends to be quieter than the main tourist strip`
@@ -2891,13 +2907,23 @@ const MISADVENTURES = [
     icon: "🥶",
     title: "Day 3, I'm Tired",
     location: "Vail, Colorado",
-    body: "The trip captions tell the whole story without any help from us: \"F— the cold,\" then \"Day 3, I'm tired,\" then finally, staring at the receipts, \"What $9k gets you.\" Ski season is beautiful. Ski season is also expensive and cold, and we said so in real time."
+    body: "The trip captions tell the whole story without any help from us: \"F— the cold,\" then \"Day 3, I'm tired,\" then finally, staring at the receipts, \"What $9k gets you.\" Ski season is beautiful. Ski season is also expensive and cold, and we said so in real time.",
+    photos: [
+      { src: "assets/494705398_10229018757081818_9039649942325793074_n.jpg", caption: "Day 3, giving up mid-run" }
+    ]
   },
   {
     icon: "🚗",
     title: "You Didn't Invite Chris, Did You?",
     location: "Vail, Colorado",
-    body: "Extended family trip, boutique hotel, whole top floor rented out for privacy. My wife's sister mentioned to a surgeon she knew from work that she was heading to Vail to ski — he said something about being an expert skier, and somehow that turned into him just showing up in Vail during our family trip. We were polite about it — invited him to dinner once — but he never took the hint and never left. He tagged along everywhere, to the point where he ended up sleeping in his car in the hotel parking garage rather than take it as a sign to go home. Not so subtle hints from me did nothing to move him. Sometimes being blunt is the right call, especially where your family's safety is concerned. To this day, before any snow trip, someone asks my wife's sister: \"You didn't invite Chris, did you?\""
+    body: "Extended family trip, boutique hotel, whole top floor rented out for privacy. My wife's sister mentioned to a surgeon she knew from work that she was heading to Vail to ski — he said something about being an expert skier, and somehow that turned into him just showing up in Vail during our family trip. We were polite about it — invited him to dinner once — but he never took the hint and never left. He tagged along everywhere, to the point where he ended up sleeping in his car in the hotel parking garage rather than take it as a sign to go home. Not so subtle hints from me did nothing to move him. Sometimes being blunt is the right call, especially where your family's safety is concerned. To this day, before any snow trip, someone asks my wife's sister: \"You didn't invite Chris, did you?\"",
+    photos: [
+      { src: "assets/495276857_10229018550636657_2628968493062502312_n.jpg", caption: "Dinner with the whole extended family, Vail" },
+      { src: "assets/495187478_10229018552916714_2102089718307948246_n.jpg", caption: "Geared up at the gondola" },
+      { src: "assets/494373578_10229018783042467_1034077309238880956_n.jpg", caption: "Warming up in the hot tub after a day on the mountain" },
+      { src: "assets/494524173_10229019265334524_6910673678734421072_n.jpg", caption: "A family hug in Vail Village at night" },
+      { src: "assets/494693467_10229019265534529_6831009078748547833_n.jpg", caption: "Under the lights of the Vail Village Christmas tree" }
+    ]
   },
   {
     icon: "🔋",
@@ -2995,7 +3021,10 @@ const MISADVENTURES = [
     icon: "🏜️",
     title: "Nothing Out Here But Desert",
     location: "Las Vegas, Nevada",
-    body: "Ran into friends from Texas who'd coincidentally picked the same weekend, and met up in \"Chinatown\" — using that term loosely. Also learned there's genuinely nothing in Vegas outside the Strip; it's desert, then more desert. And somehow, despite the Strip being one single road where you can only go one direction or the other, we got lost. Multiple times. Cutting through casinos didn't help. My wife's sense of direction strikes again."
+    body: "Ran into friends from Texas who'd coincidentally picked the same weekend, and met up in \"Chinatown\" — using that term loosely. Also learned there's genuinely nothing in Vegas outside the Strip; it's desert, then more desert. And somehow, despite the Strip being one single road where you can only go one direction or the other, we got lost. Multiple times. Cutting through casinos didn't help. My wife's sense of direction strikes again.",
+    photos: [
+      { src: "assets/80529702_10216139524109043_8019683396038950912_n.jpg", caption: "Reunited with old friends outside a Vegas Chinatown shoe shop" }
+    ]
   },
   {
     icon: "🐾",
@@ -3081,7 +3110,17 @@ const MISADVENTURES = [
     icon: "🏰",
     title: "One Last Disney, Just in Case",
     location: "Orlando, Florida (2023)",
-    body: "A birthday trip — the girls are born a week apart, different years, and this one felt like it might be the last big Disney trip before my eldest moved out. So we went all in: dinner in the castle with the princesses, the works. A completely uneventful, perfectly executed, typical Disney day. Sometimes the whole point is that nothing goes wrong."
+    body: "A birthday trip — the girls are born a week apart, different years, and this one felt like it might be the last big Disney trip before my eldest moved out. So we went all in: dinner in the castle with the princesses, the works. A completely uneventful, perfectly executed, typical Disney day. Sometimes the whole point is that nothing goes wrong.",
+    photos: [
+      { src: "assets/503648205_10229372768491882_6001641570007522170_n.jpg", caption: "Dinner in the castle with Ariel" },
+      { src: "assets/503587302_10229372767851866_4265110487340606511_n.jpg", caption: "With Snow White" },
+      { src: "assets/503345965_10229372768251876_7204391941647717682_n.jpg", caption: "With Rapunzel" },
+      { src: "assets/503651625_10229372764411780_5525600314535364197_n.jpg", caption: "With Aurora" },
+      { src: "assets/503608678_10229372762891742_1718267397114382016_n.jpg", caption: "With Tiana" },
+      { src: "assets/503647644_10229372765611810_5314526016170117554_n.jpg", caption: "With Cinderella" },
+      { src: "assets/503769376_10229373823158248_8672375764140424201_n.jpg", caption: "With Winnie the Pooh and Tigger" },
+      { src: "assets/503499770_10229372796612585_8729495123031740364_n.jpg", caption: "One last night at the castle" }
+    ]
   },
   {
     icon: "🤷",
@@ -3153,19 +3192,29 @@ const MISADVENTURES = [
     icon: "🐕",
     title: "The Dog Café Detour, Storm Included",
     location: "Austin & San Antonio, Texas",
-    body: "We found a \"rare bar and cafe establishment that let dogs inside\" and treated it like a national landmark. The next morning's caption was less celebratory: \"Good Morning. Heading into the Storm!\" Texas road trips will do that to you — perfect coffee one hour, driving into weather the next."
+    body: "We found a \"rare bar and cafe establishment that let dogs inside\" and treated it like a national landmark. The next morning's caption was less celebratory: \"Good Morning. Heading into the Storm!\" Texas road trips will do that to you — perfect coffee one hour, driving into weather the next.",
+    photos: [
+      { src: "assets/506050942_10229522526675743_4393089252648138176_n.jpg", caption: "The dog café, treated like a national landmark" },
+      { src: "assets/505383437_10229521605612717_9166438535357025219_n.jpg", caption: "Heading into the storm the next morning" }
+    ]
   },
   {
     icon: "🤖",
     title: "Being Robots at the Robot Restaurant",
     location: "Japan",
-    body: "\"On our way to Robot Restaurant,\" then, minutes later, \"Anna and I being robots.\" No further context was provided in the original caption, and none was needed. Some Tokyo experiences just have to be seen — or reenacted at the table — to be believed."
+    body: "\"On our way to Robot Restaurant,\" then, minutes later, \"Anna and I being robots.\" No further context was provided in the original caption, and none was needed. Some Tokyo experiences just have to be seen — or reenacted at the table — to be believed.",
+    photos: [
+      { src: "assets/62020307_10214676244327963_2364796134045515776_n.jpg", caption: "Being robots at the Robot Restaurant" }
+    ]
   },
   {
     icon: "🐟",
     title: "The Big Fish Photo",
     location: "Seattle, Washington",
-    body: "Pike Place Market's flying fish are a rite of passage, and someone in the family insisted on a photo with one of the genuinely enormous ones on ice. \"Unsure why she wanted a pic with a big fish,\" the caption shrugs. We still don't know either. We still have the photo."
+    body: "Pike Place Market's flying fish are a rite of passage, and someone in the family insisted on a photo with one of the genuinely enormous ones on ice. \"Unsure why she wanted a pic with a big fish,\" the caption shrugs. We still don't know either. We still have the photo.",
+    photos: [
+      { src: "assets/485792390_10228528149176927_1144406435073597934_n.jpg", caption: "The big fish photo, Pike Place Market" }
+    ]
   },
   {
     icon: "🧳",
@@ -3258,13 +3307,20 @@ const MISADVENTURES = [
     icon: "🎒",
     title: "Carrying a Kid Through a Fault Line",
     location: "Iceland",
-    body: "Walking between the tectonic plates, my youngest gave up walking about halfway through, so I ended up carrying them in a child backpack across an actual fault line in the earth."
+    body: "Walking between the tectonic plates, my youngest gave up walking about halfway through, so I ended up carrying them in a child backpack across an actual fault line in the earth.",
+    photos: [
+      { src: "assets/503644850_10229364177717118_8800151483513206644_n.jpg", caption: "Carrying a kid through the fault line" }
+    ]
   },
   {
     icon: "🌨️",
     title: "Lost in a Whiteout on a Snowmobile",
     location: "Iceland",
-    body: "A snowmobile ride near the magnetic north pole turned into total whiteout conditions — we genuinely lost our bearings in the middle of a blizzard."
+    body: "A snowmobile ride near the magnetic north pole turned into total whiteout conditions — we genuinely lost our bearings in the middle of a blizzard.",
+    photos: [
+      { src: "assets/503463029_10229364207037851_3708454514669062662_n.jpg", caption: "Before the whiteout — geared up for the snowmobiles" },
+      { src: "assets/503477224_10229364201797720_1160012565254401984_n.jpg", caption: "Helmeted up — the snowmobiles were how we got to the glacier" }
+    ]
   },
   {
     icon: "😴",
@@ -3276,7 +3332,10 @@ const MISADVENTURES = [
     icon: "🏃",
     title: "Sprinting Through Rome",
     location: "Rome",
-    body: "We missed our tour group and ended up flat-out sprinting through downtown Rome to catch up with them at the Colosseum."
+    body: "We missed our tour group and ended up flat-out sprinting through downtown Rome to catch up with them at the Colosseum.",
+    photos: [
+      { src: "assets/506528871_10229506988887308_3025677673394570092_n.jpg", caption: "The route: Pantheon to Colosseum, at a dead sprint" }
+    ]
   },
   {
     icon: "🧳",
@@ -3294,7 +3353,12 @@ const MISADVENTURES = [
     icon: "⛲",
     title: "The Secret Entrance Under the Trevi Fountain",
     location: "Rome",
-    body: "We ducked down a random alley just to explore, and it turned out to be a secret entrance leading underneath the Trevi Fountain itself."
+    body: "We ducked down a random alley just to explore, and it turned out to be a secret entrance leading underneath the Trevi Fountain itself.",
+    photos: [
+      { src: "assets/490157527_10228759686645219_439195885503061710_n.jpg", caption: "The ancient ruins under the Trevi Fountain" },
+      { src: "assets/490270893_10228759687165232_7666602139497937471_n.jpg", caption: "Walkways over the excavated site below the fountain" },
+      { src: "assets/489915798_10228759687125231_3948597588607398902_n.jpg", caption: "Back above ground, at the Trevi Fountain" }
+    ]
   },
   {
     icon: "🗣️",
@@ -3306,19 +3370,34 @@ const MISADVENTURES = [
     icon: "⛰️",
     title: "The Last 15 Minutes",
     location: "Japan",
-    body: "Everyone gave up on the mountain climb except me — they stopped just fifteen minutes short of the summit without realizing it. I kept going and got the whole view of Tokyo to myself while they sat on the stairs."
+    body: "Everyone gave up on the mountain climb except me — they stopped just fifteen minutes short of the summit without realizing it. I kept going and got the whole view of Tokyo to myself while they sat on the stairs.",
+    photos: [
+      { src: "assets/61855196_10214634718769850_315324253920559104_n.jpg", caption: "Station 14 — the summit marker" },
+      { src: "assets/61944417_10214634711649672_3073158411500650496_n.jpg", caption: "\"Mountain Top 5 minutes\" — so close" },
+      { src: "assets/61895610_10214634678128834_8230458044211789824_n.jpg", caption: "The view earned by those last 15 minutes" },
+      { src: "assets/61440231_10214634677768825_2426227347632947200_n.jpg", caption: "The city laid out below, all to myself" }
+    ]
   },
   {
     icon: "🚶",
     title: "Wandering Off Alone",
     location: "Japan",
-    body: "Bored one afternoon, I ventured off by myself and learned the obvious lesson: locals always have the best insight into a place."
+    body: "Bored one afternoon, I ventured off by myself and learned the obvious lesson: locals always have the best insight into a place.",
+    photos: [
+      { src: "assets/61873864_10214648848283079_6208847475202064384_n.jpg", caption: "Neon signs over a packed Osaka street" },
+      { src: "assets/61883625_10214648847323055_710655077026627584_n.jpg", caption: "Wandering the crowd alone" },
+      { src: "assets/61986828_10214633844067983_6970266969723371520_n.jpg", caption: "Nishiki Market, Kyoto" }
+    ]
   },
   {
     icon: "🤖",
     title: "The Unclaimed Prize",
     location: "Japan",
-    body: "My shy daughter won at the Robot Cafe and then refused to go claim her prize because she was too embarrassed."
+    body: "My shy daughter won at the Robot Cafe and then refused to go claim her prize because she was too embarrassed.",
+    photos: [
+      { src: "assets/62008207_10214677109589594_924268677107286016_n.jpg", caption: "Glow sticks and the Robot Restaurant sign" },
+      { src: "assets/62048201_10214677109309587_3347264113389600768_n.jpg", caption: "The winning smile, prize still unclaimed" }
+    ]
   },
   {
     icon: "♨️",
@@ -3432,7 +3511,11 @@ const MISADVENTURES = [
     icon: "🍫",
     title: "Melted Chocolate",
     location: "Bahamas",
-    body: "The chocolate factory tour turned messy in the heat, and by the time we made it back to the bus, our chocolates hadn't survived the walk — melted before we ever got to enjoy them."
+    body: "The chocolate factory tour turned messy in the heat, and by the time we made it back to the bus, our chocolates hadn't survived the walk — melted before we ever got to enjoy them.",
+    photos: [
+      { src: "assets/502581534_10229373407787864_6373001869681850639_n.jpg", caption: "Suited up for the chocolate factory tour" },
+      { src: "assets/502613634_10229373403507757_850572977685193680_n.jpg", caption: "Learning where the chocolate comes from" }
+    ]
   },
   {
     icon: "🏖️",
@@ -3462,7 +3545,13 @@ const MISADVENTURES = [
     icon: "🍷",
     title: "The Wine Went Missing Again",
     location: "Greece",
-    body: "Just like Italy, our wine went missing again in Greece. Apparently we just can't be trusted to keep a good bottle in our luggage across an entire trip."
+    body: "Just like Italy, our wine went missing again in Greece. Apparently we just can't be trusted to keep a good bottle in our luggage across an entire trip.",
+    photos: [
+      { src: "assets/489437302_10228751542601623_142822739827153484_n.jpg", caption: "Estate Argyros 2014, Santorini" },
+      { src: "assets/489969578_10228751542521621_2755098204194973161_n.jpg", caption: "A 2021 Assyrtiko, Santorini" },
+      { src: "assets/490382990_10228751541761602_2357890389919626283_n.jpg", caption: "Nykteri 2018, Santorini" },
+      { src: "assets/489956825_10228751542681625_4102012860785104723_n.jpg", caption: "Estate Argyros Cuvée Monsignori 2017, Santorini" }
+    ]
   },
   {
     icon: "🚗",
@@ -3480,13 +3569,28 @@ const MISADVENTURES = [
     icon: "🍾",
     title: "Drunk on the Yacht",
     location: "Greece",
-    body: "We ended up genuinely drunk on a yacht trip, having badly underestimated how well Greeks can actually handle their liquor. They were fun and friendly the whole way through, and the view of Oia made up for however rough the morning after was."
+    body: "We ended up genuinely drunk on a yacht trip, having badly underestimated how well Greeks can actually handle their liquor. They were fun and friendly the whole way through, and the view of Oia made up for however rough the morning after was.",
+    photos: [
+      { src: "assets/490268078_10228756336961479_3097074711729278704_n.jpg", caption: "Oia lit up at night, from the water" },
+      { src: "assets/490470703_10228756319761049_3134648586841873723_n.jpg", caption: "The yacht anchored below Oia at dusk" },
+      { src: "assets/490130505_10228756319841051_7509708731946892535_n.jpg", caption: "Peace signs, Oia glowing behind us" },
+      { src: "assets/489824289_10228756319681047_7369490620978930532_n.jpg", caption: "Watching the sunset from the bow" },
+      { src: "assets/489767432_10228756324281162_1758354711461265817_n.jpg", caption: "Oia's cliffside village from the water" },
+      { src: "assets/490380166_10228756321881102_1474093824336021377_n.jpg", caption: "Santorini's caldera cliffs at golden hour" },
+      { src: "assets/490179517_10228756310280812_3505153944658451620_n.jpg", caption: "Sunset selfie on deck" },
+      { src: "assets/489926345_10228756310920828_3483480463463382842_n.jpg", caption: "A quieter harbor stop along the way" },
+      { src: "assets/490299515_10228756310440816_4131957871461001657_n.jpg", caption: "Golden hour on the yacht" }
+    ]
   },
   {
     icon: "🦐",
     title: "Seafood on the Wrong Side of the Island",
     location: "Greece",
-    body: "We spent almost the entire trip craving seafood while stuck on the wrong side of the island, and only found the good stuff on the last day — fresh seafood on the black sands beach, finally worth the wait."
+    body: "We spent almost the entire trip craving seafood while stuck on the wrong side of the island, and only found the good stuff on the last day — fresh seafood on the black sands beach, finally worth the wait.",
+    photos: [
+      { src: "assets/489781581_10228756463844651_6436143312640333907_n.jpg", caption: "Finally, the beachside seafood spot" },
+      { src: "assets/490131990_10228756466884727_5620483280395831153_n.jpg", caption: "Santorini's black sand beach" }
+    ]
   },
   {
     icon: "🗺️",
@@ -3504,7 +3608,10 @@ const MISADVENTURES = [
     icon: "🚙",
     title: "Wrong Side of the Road",
     location: "New Zealand",
-    body: "I drove on the wrong side of the road. More than once. Gave my wife a genuine heart attack a few different times before it finally clicked."
+    body: "I drove on the wrong side of the road. More than once. Gave my wife a genuine heart attack a few different times before it finally clicked.",
+    photos: [
+      { src: "assets/89295756_10216697471617382_1095565879975870464_n.jpg", caption: "The right-hand-drive rental that caused all the trouble" }
+    ]
   },
   {
     icon: "🏞️",
@@ -3522,19 +3629,31 @@ const MISADVENTURES = [
     icon: "🌌",
     title: "Southern Lights, Finally",
     location: "New Zealand",
-    body: "This is where I finally saw the aurora — except it turned out to be the Southern Lights instead of the Northern Lights I'd always pictured. Still counts."
+    body: "This is where I finally saw the aurora — except it turned out to be the Southern Lights instead of the Northern Lights I'd always pictured. Still counts.",
+    photos: [
+      { src: "assets/89381714_10216731421986120_9093511858119245824_n.jpg", caption: "The sky that finally delivered — New Zealand" }
+    ]
   },
   {
     icon: "🗺️",
     title: "Accidentally in Cuba Town",
     location: "New Zealand",
-    body: "Getting genuinely lost in the city turned out to be one of the best parts — there was always something worth seeing around the next corner. We wandered without any real plan and ended up in Cuba Street purely by accident."
+    body: "Getting genuinely lost in the city turned out to be one of the best parts — there was always something worth seeing around the next corner. We wandered without any real plan and ended up in Cuba Street purely by accident.",
+    photos: [
+      { src: "assets/89737875_10216723292302883_7518078829873594368_n.jpg", caption: "Under the Cuba Street sign, Wellington" },
+      { src: "assets/89358341_10216723291262857_8203940508104392704_n.jpg", caption: "Wellington's rainbow crossing, right by Cuba Street" },
+      { src: "assets/89706496_10216723277342509_2670139330646769664_n.jpg", caption: "Still lost, still smiling, Cuba Street" }
+    ]
   },
   {
     icon: "🎬",
     title: "Hobbiton's Movie Magic",
     location: "New Zealand",
-    body: "Hobbiton itself was a bit of a letdown in person — smaller and less impressive than the movies make it look. But it made the movie magic even more impressive, knowing how much they were able to do with how little was actually there."
+    body: "Hobbiton itself was a bit of a letdown in person — smaller and less impressive than the movies make it look. But it made the movie magic even more impressive, knowing how much they were able to do with how little was actually there.",
+    photos: [
+      { src: "assets/89377637_10216706850491848_6143461404188868608_n.jpg", caption: "The family at a hobbit hole doorway" },
+      { src: "assets/89259532_10216706848131789_5513119909200003072_n.jpg", caption: "The famous round green door, Hobbiton" }
+    ]
   }
 ];
 
