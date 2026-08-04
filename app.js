@@ -1180,6 +1180,54 @@ function adventureRouteMapHTML(a, stopDests) {
   </div>`;
 }
 
+// A compact strip of real, computed stats for a multi-stop trip — stops,
+// countries, misadventures survived, restaurants tried, real photos
+// captured, and the average kid-chaos level across its stops. Reuses the
+// same CHAOS_LEVELS/destChaosLevel helpers as the itinerary builder so the
+// "chaos" math stays consistent sitewide.
+function tripDnaHTML(a, stopDests) {
+  const countries = new Set(stopDests.map(d => d.country)).size;
+  const restaurants = stopDests.reduce((s, d) => s + d.restaurants.length, 0);
+  const photos = stopDests.reduce((s, d) => s + d.gallery.length + (d.foodPhotos ? d.foodPhotos.length : 0), 0);
+
+  const misadventureTitles = new Set();
+  stopDests.forEach(d => getMisadventuresForDestination(d).forEach(m => misadventureTitles.add(m.title)));
+  // Also catch trip-wide misadventures tagged at the country level (e.g.
+  // "wandered off" across multiple Japan cities, not any one specific stop)
+  // — these never match a single stop's name, so pick them up separately
+  // via each stop's country instead.
+  const stopCountries = new Set(stopDests.map(d => d.country.toLowerCase()));
+  MISADVENTURES.forEach(m => {
+    if (stopCountries.has(m.location.toLowerCase())) misadventureTitles.add(m.title);
+  });
+  const misadventures = misadventureTitles.size;
+
+  let avgChaosIdx = 0;
+  stopDests.forEach(d => avgChaosIdx += CHAOS_LEVELS.indexOf(destChaosLevel(d)));
+  const avgChaos = stopDests.length ? CHAOS_LEVELS[Math.round(avgChaosIdx / stopDests.length)] : "—";
+
+  const strands = [
+    { n: stopDests.length, label: stopDests.length === 1 ? "Stop" : "Stops" },
+    { n: countries, label: countries === 1 ? "Country" : "Countries" },
+    { n: misadventures, label: misadventures === 1 ? "Misadventure" : "Misadventures" },
+    { n: restaurants, label: restaurants === 1 ? "Restaurant" : "Restaurants" },
+    { n: photos, label: "Real Photos" },
+    { n: avgChaos, label: "Avg. Kid-Chaos" }
+  ];
+
+  return `
+  <div class="trip-dna reveal">
+    <span class="trip-dna-label">Trip DNA</span>
+    <div class="trip-dna-strip">
+      ${strands.map(s => `
+        <div class="trip-dna-strand">
+          <span class="trip-dna-num">${escapeHtml(String(s.n))}</span>
+          <span class="trip-dna-tag">${escapeHtml(s.label)}</span>
+        </div>`).join("")}
+    </div>
+  </div>`;
+}
+
 function renderAdventureDetail(a) {
   const stopDests = a.stops.map(getDestination);
   return `
@@ -1198,6 +1246,7 @@ function renderAdventureDetail(a) {
   <section class="section">
     <div class="container">
       ${adventureRouteMapHTML(a, stopDests)}
+      ${tripDnaHTML(a, stopDests)}
       <p class="section-desc" style="max-width:70ch; font-size:16px;">${escapeHtml(a.intro)}</p>
 
       <div class="timeline">
