@@ -1272,8 +1272,8 @@ function renderDestinationsList() {
       </div>
     </details>`).join("");
 
-  const teaserDest = DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
   const teaserDests = sampleRandom(DESTINATIONS, 3);
+  const teaserDest = teaserDests[0];
 
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
@@ -1686,7 +1686,7 @@ function renderMisadventures() {
       </div>
 
       <div id="misadventureTeaser">
-        <span class="eyebrow" style="display:block; margin-top:8px;">Arrived at ${escapeHtml(teaserMisadventure.location)}</span>
+        <span class="eyebrow" style="display:block; margin-top:8px;">GPS Loading...</span>
         <div class="misadventure-card reveal mt-lg" style="max-width: 720px;">
           <span class="misadventure-icon">${teaserMisadventure.icon}</span>
           <h3 class="misadventure-title">${escapeHtml(teaserMisadventure.title)}</h3>
@@ -1773,7 +1773,7 @@ function renderGallery() {
       </div>
 
       <div id="galleryContent">
-        ${galleryFramesHTML(teaserDest.name, teaserFrames)}
+        ${galleryFramesHTML(teaserFrames, "Moment Reloading...")}
       </div>
     </div>
   </section>
@@ -1781,9 +1781,9 @@ function renderGallery() {
   `;
 }
 
-function galleryFramesHTML(destName, frames) {
+function galleryFramesHTML(frames, label) {
   return `
-    <span class="eyebrow" style="display:block; margin-top:8px;">Arrived at ${escapeHtml(destName)}</span>
+    ${label ? `<span class="eyebrow" style="display:block; margin-top:8px;">${escapeHtml(label)}</span>` : ""}
     <div class="masonry mt-lg" id="galleryMasonry">
       ${frames.map((g) => `
         <div class="masonry-item reveal" data-lightbox-group="full-gallery" data-lightbox-index="${GALLERY.indexOf(g)}">
@@ -1806,7 +1806,7 @@ function bindGalleryFilters() {
     const dest = getDestination(tag);
     if (!dest) return;
     const frames = GALLERY.filter(g => g.tag === tag);
-    content.innerHTML = galleryFramesHTML(dest.name, frames);
+    content.innerHTML = galleryFramesHTML(frames);
     initReveal();
   });
 }
