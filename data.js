@@ -1608,7 +1608,8 @@ const DESTINATIONS = [
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Florence`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`Look for the "wine holes" (buchette del vino) — small medieval wine windows built into building walls, still used today to hand out a quick glass of wine`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Florence fill up`,
@@ -2128,7 +2129,8 @@ const DESTINATIONS = [
     hiddenGems: [
 `A quiet corner of Florence away from the main sights, worth the wander`,
 `Go early — Florence feels completely different before the crowds arrive`,
-`Ask a local for their favorite spot; it's usually the best one`
+`Ask a local for their favorite spot; it's usually the best one`,
+`Look for the "wine holes" (buchette del vino) — small medieval wine windows built into building walls, still used today to hand out a quick glass of wine`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best tables in Florence fill up`,
@@ -2866,7 +2868,14 @@ const ADVENTURES = [
     stops: ["rome-2022", "florence-2022", "pisa-2022", "naples-2022", "amalfi-2022"],
     intro: `A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Italy here"
+      "Some hotels are older with no elevator, or one too small for full-size suitcases — check ahead or be ready to carry heavy bags up several flights of stairs",
+      "Pack an outlet converter",
+      "Jet lag is real — don't plan reservations for at least the first day",
+      "Just pay the bus fare instead of risking it — fare dodging gets checked often and it's cheaper to just pay",
+      "In Naples, travel during the day and keep valuables in a hotel safe or front pockets — petty crime is a real risk there",
+      "Italian towns are walkable and almost any restaurant you stumble into will be good, but if there's a specific place you really want to eat or visit, book it ahead of time",
+      "For medical attention, go to a pharmacy first — pharmacists act as doctors for minor issues, rather than searching for a hospital",
+      "Don't try to carry wine home in your luggage — ship it instead, it saves a lot of trouble while traveling"
     ]
   },
   {
@@ -2878,8 +2887,22 @@ const ADVENTURES = [
     distance: "",
     stops: ["tokyo-2019", "kyoto-2019", "osaka-2019", "mt-fuji-2019"],
     intro: `A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.`,
+    topExperiences: [
+      "2am ramen at any 24-hour ramen spot — it hits completely differently at that hour, kind of like Waffle House or Jack in the Box after the clubs back in America"
+    ],
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Japan here"
+      "Respect and manners go a long way — you're a visitor in their country, so play by their rules",
+      "Google Translate goes a long way — travel would've been even easier with how advanced it is now compared to back then",
+      "Tattoos aren't allowed in most onsens — bring skin-colored bandages to cover them up if you plan on going, or you may be turned away",
+      "Smaller local restaurants, especially outside Tokyo, often don't speak English and may turn foreigners away — it's not rudeness, it's just more difficult for a small business to serve someone they can't communicate with",
+      "Subways get crowded and are generally quiet, except in Osaka, which felt more relaxed and \"Americanized\"",
+      "If you're traveling as a woman, use the female-only train cars when available — there's an unfortunate reason Japan has them",
+      "Don't take pictures of women in kimono without asking — they're just going about their day, not there for tourists to photograph",
+      "7-Eleven is a lifeline — good food, good coffee, everywhere",
+      "Refreshing wipes are useful to carry with you",
+      "If you go to Tokyo Disney, bring a portable chair or mat for watching the parade",
+      "Public trash cans are nearly nonexistent — be mindful of how much you're carrying/consuming, or bring a small trash bag so you're not stuck holding your trash all day",
+      "Visit the smaller towns — they have a lot to offer beyond the big cities"
     ]
   },
   {
@@ -2892,7 +2915,13 @@ const ADVENTURES = [
     stops: ["athens-2022", "santorini-2022", "mykonos-2022"],
     intro: `A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Greece here"
+      "People are incredibly friendly — be prepared to step out of your comfort zone, because you'll feel like family to everyone at a restaurant by the end of your meal",
+      "Bring a portable fan — the way the cities are built, air doesn't flow well, but the sun definitely gets through",
+      "Pack sun shirts, sun hats, and lots of sunscreen — just expect hot, it's the Mediterranean after all",
+      "Lots of concrete and walking, so dress comfortable and cool",
+      "You can get lost easily, so bring a battery pack — you'll be relying on GPS a lot",
+      "Nightlife is great, so pack for that too, not just beach or casual wear",
+      "If you make it to Santorini, expect long waits at the popular photo spots — the southern part of the island is less crowded, more family-oriented, and has better seafood"
     ]
   },
   {
@@ -2905,7 +2934,9 @@ const ADVENTURES = [
     stops: ["auckland-2020", "taupo-2020", "queenstown-2020", "wellington-2020"],
     intro: `A trip through Auckland, Taupo, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for New Zealand here"
+      "They drive on the left, and there are a lot of loose rocks on the roads — get the LDW (loss damage waiver) when renting a car, since broken windshields are common",
+      "It's a long, narrow country with slower speed limits, so expect to spend a lot more time driving than you'd plan for",
+      "Otherwise New Zealand is great, everyone speaks English, and the culture feels fairly American — just don't come in expecting great food, it's not really on par with the rest of the trip"
     ]
   },
   {
@@ -2918,7 +2949,11 @@ const ADVENTURES = [
     stops: ["belize-2015", "roatan-2015", "cancun-2015"],
     intro: `A trip through Belize, Roatán, and Cancún — Mayan ruins, the Mesoamerican Barrier Reef, and a stretch of turquoise coastline spanning three countries.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Central America here"
+      "Be wary of your surroundings and try to stay in tourist areas — there's really no need to go off on your own",
+      "Group tours and guides are well worth the money",
+      "Pack for hell — the temperatures and humidity are probably a little worse than hell itself",
+      "Bring a portable fan and an extra battery pack — whether it's the beach or just shopping, you'll be in the heat constantly, so fluids and a fan are a must",
+      "It gets hot, so go with comfortable sandals over comfortable shoes"
     ]
   }
 ];
