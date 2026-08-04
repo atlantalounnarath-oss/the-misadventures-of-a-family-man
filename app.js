@@ -216,7 +216,8 @@ const routes = {
   "/misadventures": renderMisadventures,
   "/gallery": renderGallery,
   "/about": renderAbout,
-  "/herstories": renderHerStoriesList
+  "/herstories": renderHerStoriesList,
+  "/quiz": renderQuiz
 };
 
 function parseHash() {
@@ -261,7 +262,7 @@ function pageTitle(path) {
   if (advMatch) { const a = getAdventure(advMatch[1]); if (a) return `${a.title} — ${base}`; }
   const herMatch = path.match(/^\/herstories\/([a-z0-9-]+)$/);
   if (herMatch) { const t = getHerStory(herMatch[1]); if (t) return `${t.name} · HerStories — ${base}`; }
-  const map = { "/adventures": "Adventures", "/destinations": "Destinations", "/eats": "Eats Worth the Flight", "/misadventures": "Misadventures", "/gallery": "Gallery", "/about": "About", "/herstories": "HerStories" };
+  const map = { "/adventures": "Adventures", "/destinations": "Destinations", "/eats": "Eats Worth the Flight", "/misadventures": "Misadventures", "/gallery": "Gallery", "/about": "About", "/herstories": "HerStories", "/quiz": "What's Your Travel Style?" };
   return `${map[path] || "Not Found"} — ${base}`;
 }
 
@@ -302,6 +303,9 @@ function afterRender(path) {
   }
   if (path === "/gallery") {
     registerLightboxGroup("full-gallery", GALLERY.map(g => ({ src: g.src, label: g.label })));
+  }
+  if (path === "/quiz") {
+    initQuiz();
   }
   bindGalleryFilters();
   bindCountryFilters();
@@ -1808,6 +1812,168 @@ function bindGalleryFilters() {
     const frames = GALLERY.filter(g => g.tag === tag);
     content.innerHTML = galleryFramesHTML(frames);
     initReveal();
+  });
+}
+
+/* ============================================================
+   QUIZ — "What's Your Travel Style?"
+   ============================================================ */
+
+const QUIZ_QUESTIONS = [
+  {
+    id: "pace",
+    question: "How does your crew like to travel?",
+    options: [
+      { label: "Slow and easy — we like to wander", keywords: ["relax", "slow", "wander", "chill", "spa", "easy", "calm", "quiet"] },
+      { label: "Packed itinerary — see everything", keywords: ["museum", "tour", "explore", "monument", "temple", "sightsee", "history"] },
+      { label: "Adrenaline and adventure", keywords: ["hike", "ski", "dive", "adventure", "glacier", "volcano", "snorkel", "snowmobile", "surf", "climb"] }
+    ]
+  },
+  {
+    id: "setting",
+    question: "What's your ideal setting?",
+    options: [
+      { label: "Beach & islands", keywords: ["beach", "island", "coast", "turquoise", "tropical", "reef", "sand", "lagoon"] },
+      { label: "Mountains & outdoors", keywords: ["mountain", "ski", "snow", "alpine", "glacier", "lake", "peak", "trail"] },
+      { label: "City & culture", keywords: ["city", "museum", "monument", "temple", "old quarter", "castle", "cathedral", "downtown"] },
+      { label: "Countryside & nature", keywords: ["countryside", "national park", "volcanic", "waterfall", "farm", "vineyard", "nature"] }
+    ]
+  },
+  {
+    id: "chaos",
+    question: "How much chaos can your travel crew handle?",
+    options: [
+      { label: "Low-key — naps and easy days", value: "Low" },
+      { label: "Medium — a busy day here and there", value: "Medium" },
+      { label: "Bring it on — full send every day", value: "High" }
+    ]
+  },
+  {
+    id: "food",
+    question: "What matters most at the table?",
+    options: [
+      { label: "Michelin-star splurges", keywords: ["michelin", "tasting menu", "fine dining", "chef"] },
+      { label: "Street food & hole-in-the-wall spots", keywords: ["street food", "market", "hole-in-the-wall", "stall", "casual", "local favorite", "no-frills"] },
+      { label: "Doesn't matter, we'll eat whatever's good", keywords: [] }
+    ]
+  }
+];
+
+function quizDestBlob(d) {
+  return [d.tag, d.whyVisit, (d.thingsToDo || []).join(" "), (d.hiddenGems || []).join(" ")].join(" ").toLowerCase();
+}
+function quizFoodBlob(d) {
+  return (d.restaurants || []).map(r => `${r.review || ""} ${r.communityReview || ""}`).join(" ").toLowerCase();
+}
+
+function scoreDestinationsForQuiz(answers) {
+  const chaosLevels = ["Low", "Medium", "High"];
+  const scores = {};
+  DESTINATIONS.forEach(d => {
+    let score = 0;
+    const blob = quizDestBlob(d);
+    const foodBlob = quizFoodBlob(d);
+
+    const paceOpt = QUIZ_QUESTIONS[0].options[answers.pace];
+    if (paceOpt) paceOpt.keywords.forEach(k => { if (blob.includes(k)) score += 2; });
+
+    const settingOpt = QUIZ_QUESTIONS[1].options[answers.setting];
+    if (settingOpt) settingOpt.keywords.forEach(k => { if (blob.includes(k)) score += 2; });
+
+    const chaosField = d.quickFacts.find(q => q.label === "Kid-chaos level");
+    const chaosVal = chaosField ? chaosField.value : "Medium";
+    const diff = Math.abs(chaosLevels.indexOf(chaosVal) - chaosLevels.indexOf(answers.chaos));
+    score += diff === 0 ? 3 : diff === 1 ? 1 : 0;
+
+    const foodOpt = QUIZ_QUESTIONS[3].options[answers.food];
+    if (foodOpt && foodOpt.keywords.length) {
+      foodOpt.keywords.forEach(k => { if (foodBlob.includes(k)) score += 2; });
+    } else {
+      score += Math.min(d.restaurants.length, 5) * 0.3;
+    }
+
+    score += (d.rating || 0) * 0.1;
+    scores[d.slug] = score;
+  });
+  return scores;
+}
+
+function getQuizResults(answers, n) {
+  const scores = scoreDestinationsForQuiz(answers);
+  return DESTINATIONS.slice()
+    .sort((a, b) => (scores[b.slug] - scores[a.slug]) || (Math.random() - 0.5))
+    .slice(0, n);
+}
+
+let quizState = { step: 0, answers: {} };
+
+function renderQuiz() {
+  quizState = { step: 0, answers: {} };
+  return `
+  <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
+    <div class="container" style="max-width: 720px;">
+      <span class="eyebrow">Find Your Trip</span>
+      <h1 class="section-title" style="margin-top:16px;">What's Your Travel Style?</h1>
+      <p class="section-desc" style="margin-top:16px;">Answer a few questions and we'll match you to real stops from our trips — not a generic list, actual places we've been.</p>
+      <div id="quizStage" class="mt-lg"></div>
+    </div>
+  </section>
+  ${newsletterBlockHTML()}
+  `;
+}
+
+function quizQuestionHTML(step) {
+  const q = QUIZ_QUESTIONS[step];
+  return `
+    <div class="reveal">
+      <span class="eyebrow" style="display:block; margin-bottom:10px;">Question ${step + 1} of ${QUIZ_QUESTIONS.length}</span>
+      <h2 class="section-title" style="font-size:24px;">${escapeHtml(q.question)}</h2>
+      <div class="quiz-options mt-lg">
+        ${q.options.map((o, i) => `
+          <button class="quiz-option" data-index="${i}">${escapeHtml(o.label)}</button>`).join("")}
+      </div>
+    </div>`;
+}
+
+function quizResultsHTML(answers) {
+  const results = getQuizResults(answers, 3);
+  return `
+    <div class="reveal">
+      <span class="eyebrow" style="display:block; margin-bottom:10px;">Your Matches</span>
+      <h2 class="section-title" style="font-size:24px;">Where you should go next</h2>
+      <div class="card-grid mt-lg">
+        ${results.map((d, i) => destCardHTML(d, `reveal-delay-${i + 1}`)).join("")}
+      </div>
+      <button class="btn btn-ghost" id="quizRetake" style="margin-top:28px;">Retake the Quiz</button>
+    </div>`;
+}
+
+function initQuiz() {
+  const stage = document.getElementById("quizStage");
+  if (!stage) return;
+  quizState = { step: 0, answers: {} };
+  stage.innerHTML = quizQuestionHTML(0);
+  initReveal();
+
+  stage.addEventListener("click", (e) => {
+    const optBtn = e.target.closest(".quiz-option");
+    if (optBtn) {
+      const q = QUIZ_QUESTIONS[quizState.step];
+      const idx = parseInt(optBtn.getAttribute("data-index"), 10);
+      const opt = q.options[idx];
+      quizState.answers[q.id] = q.id === "chaos" ? opt.value : idx;
+      quizState.step++;
+      stage.innerHTML = quizState.step < QUIZ_QUESTIONS.length
+        ? quizQuestionHTML(quizState.step)
+        : quizResultsHTML(quizState.answers);
+      initReveal();
+      return;
+    }
+    if (e.target.closest("#quizRetake")) {
+      quizState = { step: 0, answers: {} };
+      stage.innerHTML = quizQuestionHTML(0);
+      initReveal();
+    }
   });
 }
 

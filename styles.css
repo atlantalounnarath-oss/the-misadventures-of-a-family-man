@@ -871,6 +871,30 @@ ul { margin: 0; padding: 0; list-style: none; }
 .gallery-filter:hover { color: var(--text); border-color: var(--brass); }
 .gallery-filter.active { background: var(--brass); border-color: var(--brass); color: #0b0c0a; }
 
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.quiz-option {
+  text-align: left;
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  font-size: 15.5px;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), background 0.3s var(--ease);
+}
+.quiz-option:hover {
+  border-color: var(--brass);
+  background: var(--card-bg-hover, var(--card-bg));
+  transform: translateX(4px);
+  color: var(--brass-bright);
+}
+
 /* ============================================================
    Newsletter block
    ============================================================ */
