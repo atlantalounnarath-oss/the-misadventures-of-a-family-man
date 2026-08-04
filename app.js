@@ -1250,8 +1250,8 @@ function renderDestinationsList() {
   const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
   years.forEach(y => byYear[y].sort((a, b) => a.name.localeCompare(b.name)));
 
-  const countryGroupsHTML = countries.map((c, gi) => `
-    <details class="dest-group" data-view="country" data-key="${escapeHtml(c)}" ${gi === 0 ? "open" : ""}>
+  const countryGroupsHTML = countries.map((c) => `
+    <details class="dest-group" data-view="country" data-key="${escapeHtml(c)}" style="display:none;">
       <summary class="dest-group-summary">
         <div class="divider-route"></div>
         <h2 class="country-heading">${escapeHtml(c)} <span class="country-count">${byCountry[c].length} ${byCountry[c].length === 1 ? "stop" : "stops"}</span></h2>
@@ -1261,8 +1261,8 @@ function renderDestinationsList() {
       </div>
     </details>`).join("");
 
-  const yearGroupsHTML = years.map((y, gi) => `
-    <details class="dest-group" data-view="year" data-key="${escapeHtml(y)}" style="display:none;" ${gi === 0 ? "open" : ""}>
+  const yearGroupsHTML = years.map((y) => `
+    <details class="dest-group" data-view="year" data-key="${escapeHtml(y)}" style="display:none;">
       <summary class="dest-group-summary">
         <div class="divider-route"></div>
         <h2 class="country-heading">${escapeHtml(y)} <span class="country-count">${byYear[y].length} ${byYear[y].length === 1 ? "stop" : "stops"}</span></h2>
@@ -1271,6 +1271,9 @@ function renderDestinationsList() {
         ${byYear[y].map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
       </div>
     </details>`).join("");
+
+  const teaserDest = DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
+  const teaserDests = sampleRandom(DESTINATIONS, 3);
 
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
@@ -1286,8 +1289,14 @@ function renderDestinationsList() {
       </div>
 
       <div class="gallery-filters" id="countryFilters">
-        <button class="gallery-filter active" data-filter="all">All (${DESTINATIONS.length})</button>
         ${countries.map(c => `<button class="gallery-filter" data-filter="${escapeHtml(c)}">${escapeHtml(c)} (${byCountry[c].length})</button>`).join("")}
+      </div>
+
+      <div id="destTeaser">
+        <span class="eyebrow" style="display:block; margin-top:8px;">Arrived at ${escapeHtml(teaserDest.name)}</span>
+        <div class="card-grid mt-lg">
+          ${teaserDests.map((d, i) => destCardHTML(d, `reveal-delay-${i + 1}`)).join("")}
+        </div>
       </div>
 
       <div id="destGroups">
@@ -1304,13 +1313,14 @@ function renderDestinationsList() {
 function bindCountryFilters() {
   const toggle = document.getElementById("viewToggle");
   const filterBar = document.getElementById("countryFilters");
+  const teaser = document.getElementById("destTeaser");
   if (!toggle || !filterBar) return;
 
   let currentMode = "country";
 
   function renderFilterPills() {
     const groups = document.querySelectorAll(`#destGroups .dest-group[data-view="${currentMode}"]`);
-    const pills = [`<button class="gallery-filter active" data-filter="all">All</button>`];
+    const pills = [];
     groups.forEach(g => {
       const key = g.getAttribute("data-key");
       const count = g.querySelectorAll(".dest-card").length;
@@ -1322,8 +1332,9 @@ function bindCountryFilters() {
   function applyMode(mode) {
     currentMode = mode;
     document.querySelectorAll("#destGroups .dest-group").forEach(g => {
-      g.style.display = g.getAttribute("data-view") === mode ? "" : "none";
+      g.style.display = "none";
     });
+    if (teaser) teaser.style.display = "";
     renderFilterPills();
   }
 
@@ -1341,10 +1352,11 @@ function bindCountryFilters() {
     filterBar.querySelectorAll(".gallery-filter").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     const key = btn.getAttribute("data-filter");
+    if (teaser) teaser.style.display = "none";
     document.querySelectorAll(`#destGroups .dest-group[data-view="${currentMode}"]`).forEach(g => {
-      const match = key === "all" || g.getAttribute("data-key") === key;
+      const match = g.getAttribute("data-key") === key;
       g.style.display = match ? "" : "none";
-      if (match && key !== "all") g.open = true;
+      if (match) g.open = true;
     });
   });
 }
@@ -1660,21 +1672,33 @@ function renderMisadventures() {
   });
   const locations = Object.keys(byLocation).sort((a, b) => a.localeCompare(b));
 
+  const teaserMisadventure = MISADVENTURES[Math.floor(Math.random() * MISADVENTURES.length)];
+
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
       <span class="eyebrow">Misadventures</span>
       <h1 class="section-title" style="margin-top:16px;">Everything that went sideways (and how it turned out fine)</h1>
-      <p class="section-desc" style="margin-top:16px;">${MISADVENTURES.length} wrong boats, wrong turns, and questionable bets across ${locations.length} destinations — jump to one below, or scroll through all of them.</p>
+      <p class="section-desc" style="margin-top:16px;">${MISADVENTURES.length} wrong boats, wrong turns, and questionable bets across ${locations.length} destinations — jump to one below.</p>
 
       <div class="gallery-filters mt-lg" id="misadventureFilters">
-        <button class="gallery-filter active" data-filter="all">All (${MISADVENTURES.length})</button>
         ${locations.map(loc => `<button class="gallery-filter" data-filter="${escapeHtml(loc)}">${escapeHtml(loc)} (${byLocation[loc].length})</button>`).join("")}
       </div>
 
+      <div id="misadventureTeaser">
+        <span class="eyebrow" style="display:block; margin-top:8px;">Arrived at ${escapeHtml(teaserMisadventure.location)}</span>
+        <div class="misadventure-card reveal mt-lg" style="max-width: 720px;">
+          <span class="misadventure-icon">${teaserMisadventure.icon}</span>
+          <h3 class="misadventure-title">${escapeHtml(teaserMisadventure.title)}</h3>
+          <span class="misadventure-loc">${escapeHtml(teaserMisadventure.location)}</span>
+          <p class="misadventure-body">${escapeHtml(teaserMisadventure.body)}</p>
+          ${misadventurePhotosHTML(teaserMisadventure)}
+        </div>
+      </div>
+
       <div id="misadventureGroups">
-        ${locations.map((loc, gi) => `
-          <details class="dest-group" data-key="${escapeHtml(loc)}" ${gi === 0 ? "open" : ""}>
+        ${locations.map((loc) => `
+          <details class="dest-group" data-key="${escapeHtml(loc)}" style="display:none;">
             <summary class="dest-group-summary">
               <div class="divider-route"></div>
               <h2 class="country-heading">${escapeHtml(loc)} <span class="country-count">${byLocation[loc].length} ${byLocation[loc].length === 1 ? "story" : "stories"}</span></h2>
@@ -1700,6 +1724,7 @@ function renderMisadventures() {
 
 function bindMisadventureFilters() {
   const filterBar = document.getElementById("misadventureFilters");
+  const teaser = document.getElementById("misadventureTeaser");
   if (!filterBar) return;
   filterBar.addEventListener("click", (e) => {
     const btn = e.target.closest(".gallery-filter");
@@ -1707,10 +1732,11 @@ function bindMisadventureFilters() {
     filterBar.querySelectorAll(".gallery-filter").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     const key = btn.getAttribute("data-filter");
+    if (teaser) teaser.style.display = "none";
     document.querySelectorAll("#misadventureGroups .dest-group").forEach(g => {
-      const match = key === "all" || g.getAttribute("data-key") === key;
+      const match = g.getAttribute("data-key") === key;
       g.style.display = match ? "" : "none";
-      if (match && key !== "all") g.open = true;
+      if (match) g.open = true;
     });
   });
 }
@@ -1729,26 +1755,25 @@ function getMisadventuresForDestination(dest) {
    ============================================================ */
 
 function renderGallery() {
+  const eligibleDests = DESTINATIONS.filter(d => d.gallery.length);
+  const teaserDest = eligibleDests[Math.floor(Math.random() * eligibleDests.length)];
+  const teaserPool = GALLERY.filter(g => g.tag === teaserDest.slug);
+  const teaserFrames = sampleRandom(teaserPool, Math.min(8, teaserPool.length));
+
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
     <div class="container">
       <span class="eyebrow">Gallery</span>
       <h1 class="section-title" style="margin-top:16px;">Frames from the road</h1>
-      <p class="section-desc" style="margin-top:16px;">Filter by destination, or scroll the whole trip at once.</p>
+      <p class="section-desc" style="margin-top:16px;">Filter by destination to dive into a full trip.</p>
 
       <div class="gallery-filters mt-lg" id="galleryFilters">
-        ${GALLERY_TAGS.map(tag => `
-          <button class="gallery-filter ${tag === "all" ? "active" : ""}" data-tag="${tag}">
-            ${tag === "all" ? "All" : escapeHtml(getDestination(tag)?.name || tag)}
-          </button>`).join("")}
+        ${eligibleDests.map(d => `
+          <button class="gallery-filter" data-tag="${d.slug}">${escapeHtml(d.name)}</button>`).join("")}
       </div>
 
-      <div class="masonry" id="galleryMasonry">
-        ${GALLERY.map((g, i) => `
-          <div class="masonry-item reveal" data-tag="${g.tag}" data-lightbox-group="full-gallery" data-lightbox-index="${i}">
-            ${lazyImg(g.src, g.label)}
-            <span class="masonry-tag">${escapeHtml(g.label)}</span>
-          </div>`).join("")}
+      <div id="galleryContent">
+        ${galleryFramesHTML(teaserDest.name, teaserFrames)}
       </div>
     </div>
   </section>
@@ -1756,19 +1781,33 @@ function renderGallery() {
   `;
 }
 
+function galleryFramesHTML(destName, frames) {
+  return `
+    <span class="eyebrow" style="display:block; margin-top:8px;">Arrived at ${escapeHtml(destName)}</span>
+    <div class="masonry mt-lg" id="galleryMasonry">
+      ${frames.map((g) => `
+        <div class="masonry-item reveal" data-lightbox-group="full-gallery" data-lightbox-index="${GALLERY.indexOf(g)}">
+          ${lazyImg(g.src, g.label)}
+          <span class="masonry-tag">${escapeHtml(g.label)}</span>
+        </div>`).join("")}
+    </div>`;
+}
+
 function bindGalleryFilters() {
   const filterBar = document.getElementById("galleryFilters");
-  if (!filterBar) return;
+  const content = document.getElementById("galleryContent");
+  if (!filterBar || !content) return;
   filterBar.addEventListener("click", (e) => {
     const btn = e.target.closest(".gallery-filter");
     if (!btn) return;
     filterBar.querySelectorAll(".gallery-filter").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     const tag = btn.getAttribute("data-tag");
-    document.querySelectorAll("#galleryMasonry .masonry-item").forEach(item => {
-      const match = tag === "all" || item.getAttribute("data-tag") === tag;
-      item.style.display = match ? "" : "none";
-    });
+    const dest = getDestination(tag);
+    if (!dest) return;
+    const frames = GALLERY.filter(g => g.tag === tag);
+    content.innerHTML = galleryFramesHTML(dest.name, frames);
+    initReveal();
   });
 }
 
