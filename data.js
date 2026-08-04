@@ -1313,7 +1313,7 @@ const DESTINATIONS = [
       "Layer up — Vail's cold is a real, frequent topic of conversation among visitors",
       "Check the weather for Dec – Mar before locking in dates"
     ],
-    gallery: ["assets/uploads/vail-g1.jpg", "assets/uploads/vail-g2.jpg", "assets/uploads/vail-g3.jpg", "assets/uploads/vail-g4.jpg", "assets/uploads/vail-g5.jpg", "assets/uploads/vail-g6.jpg"],
+    gallery: ["assets/uploads/vail-g1.jpg", "assets/uploads/vail-g2.jpg", "assets/uploads/vail-g3.jpg", "assets/uploads/vail-g4.jpg", "assets/uploads/vail-g5.jpg", "assets/uploads/vail-g6.jpg", { src: "assets/494724111_10229016668349601_3387473562695863425_n.jpg", caption: "A selfie by the lit-up trees at night, Vail" }, { src: "assets/495599250_10229019361536929_8666814075176203833_n.jpg", caption: "A snowy creek winding through the trees, Vail" }, { src: "assets/495187478_10229018552916714_2102089718307948246_n.jpg", caption: "The group, geared up for a day on the slopes, Vail" }],
     rating: 9,
     wouldReturn: "Yes — even after the $9k price tag and the cold.",
     relatedAdventure: null
@@ -1425,7 +1425,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Oct before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h15.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h15.jpg?w=1000", { src: "assets/502617688_10229378524395776_2058535497150557649_n.jpg", caption: "Standing at the base of a rainbow eucalyptus tree along the Road to Hana" }, { src: "assets/502582290_10229378524635782_6383422959828900633_n.jpg", caption: "A view of the coastline along the Road to Hana" }, { src: "assets/502612465_10229378524195771_2694238368822074773_n.jpg", caption: "By the crashing waves at the Ke'anae Peninsula" }, { src: "assets/502617750_10229378524715784_5766529539292463122_n.jpg", caption: "Overlooking Waianapanapa's black lava coastline" }, { src: "assets/502586821_10229378524075768_2349931465129008585_n.jpg", caption: "A selfie at a lu'au dinner, leis and all" }, { src: "assets/503503664_10229378522635732_5040527791670106737_n.jpg", caption: "A family selfie on a sunny Maui afternoon" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1582,7 +1582,7 @@ const DESTINATIONS = [
     year: 2023,
     tag: `Renaissance City`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900",
+    cardImg: "assets/502962828_10229343222393248_3836694949845685415_n.jpg",
     coords: { top: "25.7%", left: "53.1%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -1600,8 +1600,8 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: `Osteria All'Antico Vinaio`, location: `Florence`, rating: 4.3, review: `This small sandwich shop is a local favorite and serves delicious traditional Tuscan panini. The sandwiches are made with high-quality ingredients, and the flavors are incredible.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=900", communityReview: "One of Florence's most famous sandwich shops, with reviewers consistently praising the schiacciata bread and fresh fillings — the line is long but efficiently managed, though a few reviewers note occasional inconsistency in how generously they're filled.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900", communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=900", communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Il Santo Bevitore`, location: `Florence`, rating: 4.3, review: `This cozy and rustic restaurant focuses on seasonal ingredients and traditional Tuscan flavors. The menu is varied, and the dishes are beautifully presented. Don't miss their handmade pasta and the selection of local wines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=900", communityReview: "A Michelin-recognized favorite with locals as much as tourists — reviewers consistently praise the seasonal Tuscan menu and lively atmosphere, though portions run smaller than expected and reservations are essential, as it fills up fast even on weeknights.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [],
@@ -1615,7 +1615,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f12.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f12.jpg?w=1000", { src: "assets/502552519_10229343249393923_3942735577555193060_n.jpg", caption: "Overlooking Florence and the Duomo from Piazzale Michelangelo" }, { src: "assets/502606362_10229343233713531_8753407229848884559_n.jpg", caption: "A Baroque ceiling fresco inside Palazzo Pitti" }, { src: "assets/502924370_10229343236153592_6503917525811253195_n.jpg", caption: "The Fountain of Neptune in Piazza della Signoria" }, { src: "assets/502962828_10229343222393248_3836694949845685415_n.jpg", caption: "Looking up at the Duomo's dome" }, { src: "assets/502467959_10229343556841609_1016000992004932226_n.jpg", caption: "The bell inside the Duomo's bell tower" }, { src: "assets/502921812_10229343556281595_7020110919789439966_n.jpg", caption: "In front of the Baptistery's bronze doors" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1660,7 +1660,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Nov before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/6.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/6.jpg?w=1000", { src: "assets/503895754_10229372737291102_2237682656170337210_n.jpg", caption: "Meeting Winnie the Pooh and Tigger" }, { src: "assets/503647630_10229372838133623_5265720530159398374_n.jpg", caption: "Posing in the Queen of Hearts' throne" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1765,7 +1765,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }, { src: "assets/505835834_10229521604292684_5826710301899321535_n.jpg", caption: "A walk across a trestle bridge, dog in tow" }, { src: "assets/505889090_10229522497515014_1667215305439118353_n.jpg", caption: "Riding the old gondola cab at Hemisfair Park, San Antonio" }, { src: "assets/506001754_10229522470914349_2319771200970681314_n.jpg", caption: "Driving into a Texas sunset" }, { src: "assets/506423861_10229522473594416_3071173804423667102_n.jpg", caption: "A food truck stop with the dog" }, { src: "assets/506226908_10229522444233682_5988836370232704255_n.jpg", caption: "In front of the Texas State Capitol, Austin" }, { src: "assets/506448243_10229521605972726_7325649158673738963_n.jpg", caption: "An evening by the water" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1869,7 +1869,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_12113786682444404878339.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_12113786682444404878339.jpg?w=1000", { src: "assets/486020578_10228543847609378_7017320676570150548_n.jpg", caption: "Looking down through the Space Needle's glass floor" }, { src: "assets/487686374_10228671423558697_2280257733505537174_n.jpg", caption: "A family photo with the Din Tai Fung mascot statue" }, { src: "assets/487476552_10228671424638724_1822311430470671882_n.jpg", caption: "On the ferry to Bainbridge Island" }, { src: "assets/487737886_10228671425118736_4359228041515404769_n.jpg", caption: "Outside the Museum of Pop Culture (MoPOP)" }, { src: "assets/487499233_10228671425558747_1379546566167039271_n.jpg", caption: "Taking a seat at Post Alley, under Gum Wall art" }, { src: "assets/487547475_10228671426438769_7999989775782867191_n.jpg", caption: "Exploring the famous Gum Wall in Post Alley" }, { src: "assets/488709508_10228671427678800_2421387643417033913_n.jpg", caption: "A coffee stop downtown" }, { src: "assets/488000912_10228671428278815_7888045516469883555_n.jpg", caption: "Browsing the stalls at Pike Place Market" }, { src: "assets/518313034_10230239348675845_2194707104914971558_n.jpg", caption: "Cherry blossoms on the University of Washington campus" }, { src: "assets/485892800_10228561301965726_3318074433703070583_n.jpg", caption: "A rainy walk through the Washington Park Arboretum" }, { src: "assets/485146957_10228552947156861_2886778548208739590_n.jpg", caption: "The Seattle skyline from the water" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -2095,7 +2095,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000", { src: "assets/502864635_10229337731535980_3726979693360777457_n.jpg", caption: "A family selfie at the Trevi Fountain, lit up at night" }],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: "italy-2022"
@@ -2135,7 +2135,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i5.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "italy-2022"
@@ -2247,7 +2247,7 @@ const DESTINATIONS = [
 `Check the weather for Apr – Jun before locking in dates`,
 `Pompeii takes a half to full day — plan accordingly`
     ],
-        gallery: ["assets/uploads/naples-hero.jpg", "assets/uploads/naples-card.jpg", "assets/uploads/naples-g1.jpg", "assets/uploads/naples-g2.jpg", "assets/uploads/naples-g3.jpg", "assets/uploads/naples-g4.jpg", "assets/uploads/naples-g5.jpg", "assets/uploads/naples-g6.jpg"],
+        gallery: ["assets/uploads/naples-hero.jpg", "assets/uploads/naples-card.jpg", "assets/uploads/naples-g1.jpg", "assets/uploads/naples-g2.jpg", "assets/uploads/naples-g3.jpg", "assets/uploads/naples-g4.jpg", "assets/uploads/naples-g5.jpg", "assets/uploads/naples-g6.jpg", { src: "assets/502629031_10229342774622054_6565444853033875479_n.jpg", caption: "The plaster casts of Pompeii's victims" }, { src: "assets/502486323_10229342774182043_6350374919185361503_n.jpg", caption: "The Temple of Jupiter ruins, Pompeii" }],
     rating: 8,
     wouldReturn: `Yes — mainly for the pizza.`,
     relatedAdventure: "italy-2022"
@@ -2484,8 +2484,8 @@ const DESTINATIONS = [
     country: `Greece`,
     year: 2022,
     tag: `Greece 2022 Stop`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900",
+    heroImg: "assets/489847328_10228749503670651_1113937253264547800_n.jpg",
+    cardImg: "assets/489901709_10228749495750453_253301688433922928_n.jpg",
     coords: { top: "28.9%", left: "56.6%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2502,7 +2502,7 @@ const DESTINATIONS = [
 `Experience the nightlife`
     ],
     restaurants: [
-      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900", communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "assets/489173504_10228749728956283_7083420681290084372_n.jpg", caption: "A hazelnut and cream dessert near the Acropolis, Athens — restaurant name lost to time" },
@@ -2522,7 +2522,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2563,7 +2563,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000", { src: "assets/499382385_10229191610083035_7048787824098504096_n.jpg", caption: "Watching the sunset over the caldera together" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -3665,7 +3665,10 @@ const MISADVENTURES = [
     icon: "🚶",
     title: "The Long Walk Back",
     location: "Bahamas",
-    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead."
+    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead.",
+    photos: [
+      { src: "assets/503570249_10229373767836865_1983218260112877081_n.jpg", caption: "A selfie with the ship in the background, mid walk back" }
+    ]
   },
   {
     icon: "🐦",
