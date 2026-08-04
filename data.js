@@ -2441,7 +2441,7 @@ const DESTINATIONS = [
     tag: `Japan 2019 Stop`,
         heroImg: "assets/uploads/fuji-hero.jpg",
         cardImg: "assets/uploads/fuji-card.jpg",
-    coords: { top: "22%", left: "80.5%" },
+    coords: { top: "30.6%", left: "88.5%" },
     quickFacts: [
       { label: "Best time to go", value: `Jun – Sep` },
       { label: "Currency", value: `Japanese Yen` },
