@@ -217,11 +217,12 @@ const routes = {
   "/gallery": renderGallery,
   "/about": renderAbout,
   "/herstories": renderHerStoriesList,
-  "/quiz": renderQuiz
+  "/plan": renderPlan
 };
 
 function parseHash() {
   let hash = location.hash.replace(/^#/, "") || "/";
+  hash = hash.split("?")[0];
   if (!hash.startsWith("/")) hash = "/" + hash;
   return hash;
 }
@@ -262,7 +263,7 @@ function pageTitle(path) {
   if (advMatch) { const a = getAdventure(advMatch[1]); if (a) return `${a.title} — ${base}`; }
   const herMatch = path.match(/^\/herstories\/([a-z0-9-]+)$/);
   if (herMatch) { const t = getHerStory(herMatch[1]); if (t) return `${t.name} · HerStories — ${base}`; }
-  const map = { "/adventures": "Adventures", "/destinations": "Destinations", "/eats": "Eats Worth the Flight", "/misadventures": "Misadventures", "/gallery": "Gallery", "/about": "About", "/herstories": "HerStories", "/quiz": "What's Your Travel Style?" };
+  const map = { "/adventures": "Adventures", "/destinations": "Destinations", "/eats": "Eats Worth the Flight", "/misadventures": "Misadventures", "/gallery": "Gallery", "/about": "About", "/herstories": "HerStories", "/plan": "Plan Your Misadventure" };
   return `${map[path] || "Not Found"} — ${base}`;
 }
 
@@ -304,8 +305,8 @@ function afterRender(path) {
   if (path === "/gallery") {
     registerLightboxGroup("full-gallery", GALLERY.map(g => ({ src: g.src, label: g.label })));
   }
-  if (path === "/quiz") {
-    initQuiz();
+  if (path === "/plan") {
+    initPlan();
   }
   bindGalleryFilters();
   bindCountryFilters();
@@ -315,14 +316,37 @@ function afterRender(path) {
 window.addEventListener("hashchange", router);
 window.addEventListener("DOMContentLoaded", router);
 
+// Delegated, bound once at load — works on every "+ Add to Itinerary"
+// button sitewide (dest cards on Home, Destinations, quiz results, related
+// destinations, etc.) without needing to rebind after each route render.
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".itinerary-toggle");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const slug = btn.getAttribute("data-slug");
+  const picks = toggleItineraryPick(slug);
+  const isIn = picks.includes(slug);
+  document.querySelectorAll(`.itinerary-toggle[data-slug="${slug}"]`).forEach(b => {
+    b.classList.toggle("active", isIn);
+    b.textContent = isIn ? "✓" : "+";
+    const label = isIn ? "Remove from itinerary" : "Add to itinerary";
+    b.setAttribute("aria-label", label);
+    b.title = label;
+  });
+  refreshItineraryStage();
+});
+
 /* ============================================================
    SHARED PARTIALS
    ============================================================ */
 
 function destCardHTML(d, delay) {
+  const inItinerary = getItinerary().includes(d.slug);
   return `
   <a href="#/destinations/${d.slug}" class="dest-card reveal ${delay || ""}">
     ${lazyImg(d.cardImg, d.name)}
+    <button class="itinerary-toggle ${inItinerary ? "active" : ""}" data-slug="${d.slug}" aria-label="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}" title="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}">${inItinerary ? "✓" : "+"}</button>
     <div class="dest-card-body">
       <span class="dest-card-tag">${escapeHtml(d.tag)}</span>
       <h3 class="dest-card-title">${escapeHtml(d.name)}</h3>
@@ -1907,21 +1931,6 @@ function getQuizResults(answers, n) {
 
 let quizState = { step: 0, answers: {} };
 
-function renderQuiz() {
-  quizState = { step: 0, answers: {} };
-  return `
-  <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
-    <div class="container" style="max-width: 720px;">
-      <span class="eyebrow">Find Your Trip</span>
-      <h1 class="section-title" style="margin-top:16px;">What's Your Travel Style?</h1>
-      <p class="section-desc" style="margin-top:16px;">Answer a few questions and we'll match you to real stops from our trips — not a generic list, actual places we've been.</p>
-      <div id="quizStage" class="mt-lg"></div>
-    </div>
-  </section>
-  ${newsletterBlockHTML()}
-  `;
-}
-
 function quizQuestionHTML(step) {
   const q = QUIZ_QUESTIONS[step];
   return `
@@ -1975,6 +1984,231 @@ function initQuiz() {
       initReveal();
     }
   });
+}
+
+/* ============================================================
+   ITINERARY BUILDER
+   ============================================================ */
+
+const ITINERARY_KEY = "misadventures_itinerary_picks";
+
+function getItinerary() {
+  try {
+    const raw = localStorage.getItem(ITINERARY_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr.filter(slug => !!getDestination(slug)) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function setItinerary(slugs) {
+  try { localStorage.setItem(ITINERARY_KEY, JSON.stringify(slugs)); } catch (e) { /* storage unavailable — fail quietly */ }
+}
+
+function toggleItineraryPick(slug) {
+  const picks = getItinerary();
+  const idx = picks.indexOf(slug);
+  if (idx === -1) picks.push(slug); else picks.splice(idx, 1);
+  setItinerary(picks);
+  return picks;
+}
+
+const CHAOS_LEVELS = ["Low", "Medium", "High"];
+function destChaosLevel(d) {
+  const f = d.quickFacts.find(q => q.label === "Kid-chaos level");
+  return f ? f.value : "Medium";
+}
+
+// Parse a "Best time to go" range like "Nov – Apr" into the set of month
+// indices (0-11) it covers, handling ranges that wrap across the year end.
+const MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+function parseMonthRange(rangeStr) {
+  if (!rangeStr) return new Set();
+  const parts = rangeStr.split(/[–-]/).map(s => s.trim());
+  if (parts.length !== 2) return new Set();
+  const start = MONTH_NAMES.indexOf(parts[0]);
+  const end = MONTH_NAMES.indexOf(parts[1]);
+  if (start === -1 || end === -1) return new Set();
+  const months = new Set();
+  let i = start;
+  while (true) {
+    months.add(i);
+    if (i === end) break;
+    i = (i + 1) % 12;
+  }
+  return months;
+}
+
+function itinerarySummary(dests) {
+  const countries = new Set(dests.map(d => d.country));
+  let avgChaosIdx = 0;
+  dests.forEach(d => avgChaosIdx += CHAOS_LEVELS.indexOf(destChaosLevel(d)));
+  const avgChaos = dests.length ? CHAOS_LEVELS[Math.round(avgChaosIdx / dests.length)] : "—";
+
+  const monthSets = dests
+    .map(d => parseMonthRange((d.quickFacts.find(q => q.label === "Best time to go") || {}).value))
+    .filter(s => s.size > 0);
+
+  let overlapText = "";
+  if (monthSets.length > 1) {
+    const counts = new Array(12).fill(0);
+    monthSets.forEach(s => s.forEach(m => counts[m]++));
+    const maxCount = Math.max(...counts);
+    const bestMonths = MONTH_NAMES.filter((_, i) => counts[i] === maxCount);
+    overlapText = maxCount === monthSets.length
+      ? `Everyone agrees: ${bestMonths.join(", ")} works for the whole trip`
+      : `No single month works for every stop — ${bestMonths.join(", ")} covers the most (${maxCount} of ${dests.length})`;
+  }
+
+  return { countries: countries.size, avgChaos, overlapText };
+}
+
+function itineraryBuilderHTML() {
+  const slugs = getItinerary();
+  const dests = slugs.map(getDestination).filter(Boolean);
+
+  if (!dests.length) {
+    return `
+    <div id="itineraryRoot" class="reveal">
+      <p class="section-desc" style="margin-top:8px;">Nothing added yet. Browse <a href="#/destinations" class="food-card-more" style="display:inline-flex;">Destinations</a> and tap the + on any spot to start building your trip.</p>
+    </div>`;
+  }
+
+  const summary = itinerarySummary(dests);
+  const mapHTML = dests.length > 1 ? adventureRouteMapHTML({ title: "Your Itinerary" }, dests) : "";
+  const shareUrl = `${location.origin}${location.pathname}#/plan?trip=${slugs.join(",")}`;
+
+  return `
+  <div id="itineraryRoot" class="reveal">
+    <div class="about-stats" style="margin-top:32px;">
+      <div><div class="about-stat-num">${dests.length}</div><div class="about-stat-label">${dests.length === 1 ? "Stop" : "Stops"}</div></div>
+      <div><div class="about-stat-num">${summary.countries}</div><div class="about-stat-label">${summary.countries === 1 ? "Country" : "Countries"}</div></div>
+      <div><div class="about-stat-num">${escapeHtml(summary.avgChaos)}</div><div class="about-stat-label">Avg. Kid-Chaos Level</div></div>
+    </div>
+    ${summary.overlapText ? `<p class="section-desc" style="margin-top:16px; font-size:13.5px;">◆ ${escapeHtml(summary.overlapText)}</p>` : ""}
+
+    ${mapHTML ? `<div class="mt-lg">${mapHTML}</div>` : ""}
+
+    <div class="itinerary-list mt-lg">
+      ${dests.map(d => {
+        const topRest = d.restaurants && d.restaurants.length ? d.restaurants.slice().sort((a, b) => b.rating - a.rating)[0] : null;
+        return `
+        <div class="itinerary-row" id="stop-${d.slug}">
+          <a href="#/destinations/${d.slug}" class="itinerary-row-img">${lazyImg(d.cardImg, d.name)}</a>
+          <div class="itinerary-row-body">
+            <span class="dest-card-tag">${escapeHtml(d.tag)}</span>
+            <h3 class="itinerary-row-title"><a href="#/destinations/${d.slug}">${escapeHtml(d.name)}</a></h3>
+            <p class="dest-card-sub">${escapeHtml(d.country)} · ${escapeHtml(destChaosLevel(d))} chaos</p>
+            ${topRest ? `<p class="itinerary-row-food">◆ Try: ${escapeHtml(topRest.name)}</p>` : ""}
+          </div>
+          <button class="itinerary-remove" data-slug="${d.slug}" aria-label="Remove ${escapeHtml(d.name)} from itinerary">✕</button>
+        </div>`;
+      }).join("")}
+    </div>
+
+    <div class="hero-actions" style="margin-top:32px;">
+      <button class="btn btn-primary" id="itineraryShare" data-url="${escapeHtml(shareUrl)}">Copy Shareable Link</button>
+      <button class="btn btn-ghost" id="itineraryClear">Clear Itinerary</button>
+    </div>
+    <p class="footer-form-note" id="itineraryShareNote" aria-live="polite" style="margin-top:10px;"></p>
+  </div>`;
+}
+
+function refreshItineraryStage() {
+  const stage = document.getElementById("planStage");
+  if (!stage || !document.getElementById("itineraryRoot")) return;
+  stage.innerHTML = itineraryBuilderHTML();
+  initItineraryStage();
+  initReveal();
+}
+
+function initItineraryStage() {
+  const root = document.getElementById("itineraryRoot");
+  if (!root) return;
+  initAdventureRouteMap();
+
+  root.addEventListener("click", (e) => {
+    const removeBtn = e.target.closest(".itinerary-remove");
+    if (removeBtn) {
+      toggleItineraryPick(removeBtn.getAttribute("data-slug"));
+      refreshItineraryStage();
+      return;
+    }
+    if (e.target.closest("#itineraryClear")) {
+      setItinerary([]);
+      refreshItineraryStage();
+      return;
+    }
+    const shareBtn = e.target.closest("#itineraryShare");
+    if (shareBtn) {
+      const url = shareBtn.getAttribute("data-url");
+      const note = document.getElementById("itineraryShareNote");
+      const showCopied = () => { if (note) { note.textContent = "Link copied!"; setTimeout(() => { if (note) note.textContent = ""; }, 2500); } };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(showCopied).catch(() => { window.prompt("Copy this link:", url); });
+      } else {
+        window.prompt("Copy this link:", url);
+      }
+    }
+  });
+}
+
+function renderPlan() {
+  return `
+  <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
+    <div class="container">
+      <span class="eyebrow">Plan Your Misadventure</span>
+      <h1 class="section-title" style="margin-top:16px;">Where should you go next?</h1>
+      <p class="section-desc" style="margin-top:16px;">Build your own itinerary from real stops we've been to, or take the quiz for a quick match.</p>
+
+      <div class="view-toggle mt-lg" id="planToggle">
+        <span class="view-toggle-label">Tool:</span>
+        <button class="view-toggle-btn active" data-mode="itinerary">Build Your Itinerary</button>
+        <button class="view-toggle-btn" data-mode="quiz">Take the Quiz</button>
+      </div>
+
+      <div id="planStage" class="mt-lg"></div>
+    </div>
+  </section>
+  ${newsletterBlockHTML()}
+  `;
+}
+
+function initPlan() {
+  const toggle = document.getElementById("planToggle");
+  const stage = document.getElementById("planStage");
+  if (!toggle || !stage) return;
+
+  // Hydrate a shared itinerary from the URL, if present: #/plan?trip=a,b,c
+  const query = location.hash.split("?")[1];
+  if (query) {
+    const tripParam = new URLSearchParams(query).get("trip");
+    if (tripParam) {
+      const slugs = tripParam.split(",").map(s => s.trim()).filter(s => getDestination(s));
+      if (slugs.length) setItinerary(slugs);
+    }
+  }
+
+  function showTab(mode) {
+    toggle.querySelectorAll(".view-toggle-btn").forEach(b => b.classList.toggle("active", b.getAttribute("data-mode") === mode));
+    if (mode === "quiz") {
+      stage.innerHTML = `<div style="max-width:640px;"><div id="quizStage"></div></div>`;
+      initQuiz();
+    } else {
+      stage.innerHTML = itineraryBuilderHTML();
+      initItineraryStage();
+    }
+    initReveal();
+  }
+
+  toggle.addEventListener("click", (e) => {
+    const btn = e.target.closest(".view-toggle-btn");
+    if (!btn) return;
+    showTab(btn.getAttribute("data-mode"));
+  });
+
+  showTab("itinerary");
 }
 
 /* ============================================================
