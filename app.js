@@ -1816,6 +1816,10 @@ function bindGalleryFilters() {
    ============================================================ */
 
 function renderAbout() {
+  const totalRestaurantsCatalogued = DESTINATIONS.reduce((s, d) => s + d.restaurants.length, 0)
+    + (typeof HER_STORIES !== "undefined" ? HER_STORIES.reduce((s, t) => s + (t.restaurants ? t.restaurants.length : 0), 0) : 0);
+  const totalPhotosCatalogued = DESTINATIONS.reduce((s, d) => s + d.gallery.length + (d.foodPhotos ? d.foodPhotos.length : 0), 0);
+  const totalExperiences = totalRestaurantsCatalogued + totalPhotosCatalogued + MISADVENTURES.length;
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 80px);">
     <div class="container about-hero">
@@ -1832,8 +1836,8 @@ function renderAbout() {
           We've ventured alone, we've ventured together, and we've raised two daughters who've conquered more cities than most adults ever will. No sponsored perfection here — just honest reviews, real mishaps, and the lessons that only show up after you've already made the mistake once. This isn't a highlight reel — it's the real trip, wrong turns included.
         </p>
         <div class="about-stats">
-          <div><div class="about-stat-num">34</div><div class="about-stat-label">Trips documented</div></div>
-          <div><div class="about-stat-num">700+</div><div class="about-stat-label">Restaurants & experiences catalogued</div></div>
+          <div><div class="about-stat-num">${DESTINATIONS.length}</div><div class="about-stat-label">Trips documented</div></div>
+          <div><div class="about-stat-num">${totalExperiences}+</div><div class="about-stat-label">Restaurants & experiences catalogued</div></div>
           <div><div class="about-stat-num">∞</div><div class="about-stat-label">Wrong turns</div></div>
         </div>
         <div class="hero-actions" style="margin-top:40px;">
