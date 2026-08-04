@@ -2203,6 +2203,50 @@ function initItineraryStage() {
   });
 }
 
+function spinGlobeHTML() {
+  return `
+  <div class="spin-globe reveal">
+    <p class="section-desc" style="margin-top:8px; max-width:52ch;">Lost? Spin the globe to help decide your next misadventure.</p>
+    <div class="spin-display" id="spinDisplay">
+      <span id="spinName">Tap to spin</span>
+    </div>
+    <button class="btn btn-primary" id="spinBtn">Spin the Globe</button>
+  </div>`;
+}
+
+function initSpinGlobe() {
+  const btn = document.getElementById("spinBtn");
+  const display = document.getElementById("spinDisplay");
+  const nameEl = document.getElementById("spinName");
+  if (!btn || !display || !nameEl) return;
+
+  let spinning = false;
+  btn.addEventListener("click", () => {
+    if (spinning) return;
+    spinning = true;
+    btn.disabled = true;
+    display.classList.remove("landed");
+
+    const finalDest = DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
+    const totalTicks = 22;
+    let tick = 0;
+
+    function step() {
+      tick++;
+      const landed = tick >= totalTicks;
+      const d = landed ? finalDest : DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
+      nameEl.textContent = d.name;
+      if (landed) {
+        display.classList.add("landed");
+        setTimeout(() => { location.hash = `#/destinations/${finalDest.slug}`; }, 900);
+        return;
+      }
+      setTimeout(step, 40 + (tick / totalTicks) * 180);
+    }
+    step();
+  });
+}
+
 function renderPlan() {
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
@@ -2215,6 +2259,7 @@ function renderPlan() {
         <span class="view-toggle-label">Tool:</span>
         <button class="view-toggle-btn active" data-mode="itinerary">Build Your Itinerary</button>
         <button class="view-toggle-btn" data-mode="quiz">Take the Quiz</button>
+        <button class="view-toggle-btn" data-mode="spin">Feeling Lost?</button>
       </div>
 
       <div id="planStage" class="mt-lg"></div>
@@ -2244,6 +2289,9 @@ function initPlan() {
     if (mode === "quiz") {
       stage.innerHTML = `<div style="max-width:640px;"><div id="quizStage"></div></div>`;
       initQuiz();
+    } else if (mode === "spin") {
+      stage.innerHTML = spinGlobeHTML();
+      initSpinGlobe();
     } else {
       stage.innerHTML = itineraryBuilderHTML();
       initItineraryStage();
