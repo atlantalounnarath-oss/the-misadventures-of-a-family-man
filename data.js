@@ -2095,7 +2095,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000", { src: "assets/502864635_10229337731535980_3726979693360777457_n.jpg", caption: "A family selfie at the Trevi Fountain, lit up at night" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000", { src: "assets/502864635_10229337731535980_3726979693360777457_n.jpg", caption: "A family selfie at the Trevi Fountain, lit up at night" }, { src: "assets/490076682_10228757823318637_5668562338496503376_n.jpg", caption: "A selfie in front of the Pantheon" }, { src: "assets/490158150_10228759564282160_5770251864776474051_n.jpg", caption: "Lunch at an outdoor cafe, Trastevere" }, { src: "assets/490410839_10228757865159683_495742218650406325_n.jpg", caption: "A sunny afternoon in Trastevere" }, { src: "assets/490358200_10228757820438565_2140200656458850051_n.jpg", caption: "Street art wrapping a building facade, Rome" }, { src: "assets/490456478_10228757824278661_2443822025315786721_n.jpg", caption: "A selfie at the Spanish Steps" }],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: "italy-2022"
@@ -2522,7 +2522,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2563,7 +2563,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000", { src: "assets/499382385_10229191610083035_7048787824098504096_n.jpg", caption: "Watching the sunset over the caldera together" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000", { src: "assets/499382385_10229191610083035_7048787824098504096_n.jpg", caption: "Watching the sunset over the caldera together" }, { src: "assets/489626066_10228751458199513_7845878058680692911_n.jpg", caption: "In front of the Panagia Platsani church in Oia" }, { src: "assets/489758408_10228751540761577_1724381751260380756_n.jpg", caption: "A sunset group photo overlooking the caldera" }, { src: "assets/490267806_10228751537681500_4546673587912182183_n.jpg", caption: "Another sunset selfie over the water" }, { src: "assets/489427266_10228751462679625_8993695084556056010_n.jpg", caption: "On a terrace overlooking the caldera" }, { src: "assets/489385039_10228751460999583_369590522256604622_n.jpg", caption: "A selfie above the whitewashed streets of Oia" }, { src: "assets/489729061_10228751537561497_1954314271728871914_n.jpg", caption: "The caldera and volcanic island at sunset, Oia" }, { src: "assets/489848133_10228751463039634_8545604638506720237_n.jpg", caption: "A selfie overlooking the caldera cliffs" }, { src: "assets/489922712_10228751458359517_3443636960487478706_n.jpg", caption: "Looking out over Oia's whitewashed buildings and the caldera" }, { src: "assets/490263402_10228751463199638_4447002567464947202_n.jpg", caption: "Walking the narrow streets of Oia" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2575,7 +2575,7 @@ const DESTINATIONS = [
     year: 2022,
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=900",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=900",
     coords: { top: "29.15%", left: "57.0%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2601,7 +2601,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
