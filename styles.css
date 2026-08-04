@@ -625,7 +625,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .adv-pin { position: absolute; width: 0; height: 0; z-index: 4; transform: translate(-50%, -50%); }
 .adv-pin-dot {
-  width: clamp(7px, 2cqw, 10px); height: clamp(7px, 2cqw, 10px); border-radius: 50%;
+  width: calc(clamp(7px, 2cqw, 10px) / var(--adv-scale, 6));
+  height: calc(clamp(7px, 2cqw, 10px) / var(--adv-scale, 6));
+  border-radius: 50%;
   background: var(--teal-bright);
   box-shadow: 0 0 0 0 rgba(47,96,88,0);
   transform: scale(0); opacity: 0; cursor: pointer;
@@ -638,12 +640,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 .adv-route-map.zoomed .adv-pin-dot { transform: scale(1); opacity: 1; }
 .adv-pin.visited .adv-pin-dot {
   background: var(--brass-bright);
-  box-shadow: 0 0 10px 1px rgba(224,172,99,0.55);
+  box-shadow: 0 0 calc(10px / var(--adv-scale, 6)) calc(1px / var(--adv-scale, 6)) rgba(224,172,99,0.55);
   animation: adv-glow-pulse 1.3s ease-out 1;
 }
 @keyframes adv-glow-pulse {
   0%   { box-shadow: 0 0 0 0 rgba(224,172,99,0.65); }
-  60%  { box-shadow: 0 0 0 14px rgba(224,172,99,0); }
+  60%  { box-shadow: 0 0 0 calc(14px / var(--adv-scale, 6)) rgba(224,172,99,0); }
   100% { box-shadow: 0 0 0 0 rgba(224,172,99,0); }
 }
 .adv-pin-card {
