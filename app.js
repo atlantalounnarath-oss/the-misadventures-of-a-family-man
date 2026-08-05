@@ -2203,85 +2203,150 @@ function initItineraryStage() {
   });
 }
 
-function dropGlobeHTML() {
+const PLINKO_CATEGORIES = [
+  { name: "US South & Gulf", slugs: ["puerto-rico-2010", "orlando-fl-2010", "gulf-shores-al-2012", "atlanta-ga-2013", "florida-keys-2017", "miami-fl-2019", "orlando-fl-2023", "nashville-tn-2023"] },
+  { name: "US Heartland & Mountains", slugs: ["hill-country-tx-2012", "steamboat-springs-co-2014", "galveston-tx-2015", "las-vegas-nv-2020", "winter-park-co-2021", "vail-2023", "boulder-denver-2023", "twin-lakes-co-2024"] },
+  { name: "US Coasts & Cities", slugs: ["austin-san-antonio-2024", "maui-hi-2022", "new-york-city-ny-2022", "philadelphia-pa-2022", "washington-dc-2022", "seattle-wa-2025", "boston-mv-2025", "san-francisco-2026"] },
+  { name: "Southeast Asia", slugs: ["hong-kong", "koh-samui", "bangkok", "ho-chi-minh-city", "an-giang", "hanoi", "ha-long-bay"] },
+  { name: "Italy & Greece", slugs: ["rome-2022", "florence-2022", "florence-italy-2023", "pisa-2022", "naples-2022", "amalfi-2022", "athens-2022", "santorini-2022", "mykonos-2022"] },
+  { name: "Island Nations", slugs: ["tokyo-2019", "kyoto-2019", "osaka-2019", "mt-fuji-2019", "auckland-2020", "queenstown-2020", "wellington-2020", "taupo-2020"] },
+  { name: "Classic Misadventures", slugs: ["belize-2015", "roatan-2015", "cancun-2015", "puerto-vallarta-2019", "bahamas-2018", "england-2017", "iceland-2018", "paris-2017"] }
+];
+
+function plinkoIntroHTML() {
   return `
-  <div class="drop-globe reveal">
-    <p class="section-desc" style="margin-top:8px; max-width:52ch;">Lost? Drop the globe and see where it settles — your next misadventure.</p>
-    <div class="drop-globe-box" id="dropBox">
-      <div class="drop-globe-ball" id="dropBall"></div>
-      <div class="drop-globe-reveal" id="dropReveal"><span id="dropName"></span></div>
+  <div class="plinko-wrap reveal" id="plinkoIntro">
+    <p class="section-desc" style="margin-top:8px; max-width:56ch;">Lost? Pick a region, then drop the ball — plinko-style — to find your next misadventure.</p>
+    <div class="plinko-categories mt-lg">
+      ${PLINKO_CATEGORIES.map((c, i) => `
+        <button class="quiz-option plinko-category-btn" data-cat="${i}">
+          ${escapeHtml(c.name)}
+          <span class="plinko-cat-count">${c.slugs.length}</span>
+        </button>`).join("")}
     </div>
-    <button class="btn btn-primary" id="dropBtn">Drop the Globe</button>
   </div>`;
 }
 
-function initDropGlobe() {
-  const btn = document.getElementById("dropBtn");
-  const box = document.getElementById("dropBox");
-  const ball = document.getElementById("dropBall");
-  const revealEl = document.getElementById("dropReveal");
-  const nameEl = document.getElementById("dropName");
-  if (!btn || !box || !ball || !revealEl || !nameEl) return;
+function plinkoBoardHTML(category) {
+  return `
+  <div class="plinko-wrap reveal" id="plinkoBoardWrap">
+    <button class="plinko-back" id="plinkoBack">‹ Choose a different region</button>
+    <h3 class="plinko-cat-title">${escapeHtml(category.name)}</h3>
+    <div class="plinko-scroll">
+      <div class="plinko-board" id="plinkoBoard">
+        <div class="plinko-ball" id="plinkoBall"></div>
+      </div>
+      <div class="plinko-slots" id="plinkoSlots" style="grid-template-columns: repeat(${category.slugs.length}, 1fr);">
+        ${category.slugs.map(slug => {
+          const d = getDestination(slug);
+          return `<div class="plinko-slot" data-slug="${slug}"><span>${escapeHtml(d ? d.name : slug)}</span></div>`;
+        }).join("")}
+      </div>
+    </div>
+    <button class="btn btn-primary mt-lg" id="plinkoDropBtn">Drop the Ball</button>
+  </div>`;
+}
+
+function initPlinkoCategoryPicker(onPick) {
+  const intro = document.getElementById("plinkoIntro");
+  if (!intro) return;
+  intro.addEventListener("click", (e) => {
+    const btn = e.target.closest(".plinko-category-btn");
+    if (!btn) return;
+    onPick(PLINKO_CATEGORIES[parseInt(btn.getAttribute("data-cat"), 10)]);
+  });
+}
+
+function initPlinkoBoard(category, onBack) {
+  const board = document.getElementById("plinkoBoard");
+  const ball = document.getElementById("plinkoBall");
+  const slotsWrap = document.getElementById("plinkoSlots");
+  const dropBtn = document.getElementById("plinkoDropBtn");
+  const backBtn = document.getElementById("plinkoBack");
+  if (!board || !ball || !slotsWrap || !dropBtn) return;
+
+  backBtn.addEventListener("click", onBack);
+
+  const numSlots = category.slugs.length;
+  const rows = numSlots - 1;
+  const boardWidth = board.clientWidth;
+  const boardHeight = board.clientHeight;
+  const rowHeight = boardHeight / (rows + 1);
+  const maxSpread = boardWidth * 0.84;
+  const center = boardWidth / 2;
+
+  function xForRow(r, pos) {
+    const spread = maxSpread * ((r + 1) / (rows + 1));
+    const t = r === 0 ? 0.5 : pos / r;
+    return center + (t - 0.5) * spread;
+  }
+
+  // Decorative peg lattice — purely visual, same triangular funnel math
+  // the ball's own path follows, so the pegs it "passes" line up with it.
+  board.querySelectorAll(".plinko-peg").forEach(p => p.remove());
+  for (let r = 1; r < rows; r++) {
+    for (let pos = 0; pos <= r; pos++) {
+      const peg = document.createElement("div");
+      peg.className = "plinko-peg";
+      peg.style.left = `${xForRow(r, pos)}px`;
+      peg.style.top = `${(r + 0.5) * rowHeight}px`;
+      board.appendChild(peg);
+    }
+  }
 
   let dropping = false;
-
-  btn.addEventListener("click", () => {
+  dropBtn.addEventListener("click", () => {
     if (dropping) return;
     dropping = true;
-    btn.disabled = true;
-    revealEl.classList.remove("show");
+    dropBtn.disabled = true;
+    slotsWrap.querySelectorAll(".plinko-slot").forEach(s => s.classList.remove("landed"));
+    ball.style.transition = "none";
+    ball.style.transform = `translate(${center - 10}px, -10px)`;
 
-    const finalDest = DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
-    const boxRect = box.getBoundingClientRect();
-    const ballSize = ball.offsetWidth;
-    const floorY = boxRect.height - ballSize;
-    const rightX = boxRect.width - ballSize;
+    // Classic Galton-board random walk: one coin flip per row, so after
+    // `rows` flips the ball has landed in exactly one of `numSlots` bins —
+    // genuinely unpredictable, no destination pre-selected in advance.
+    let pos = 0;
+    let r = 0;
 
-    let x = Math.random() * rightX;
-    let y = 0;
-    let vx = (Math.random() - 0.5) * 6;
-    let vy = 0;
-
-    const gravity = 0.55;
-    const restitution = 0.62;
-    const floorFriction = 0.985;
-    const stopThreshold = 0.35;
-
-    function frame() {
-      vy += gravity;
-      x += vx;
-      y += vy;
-
-      if (x <= 0) { x = 0; vx = -vx * restitution; }
-      if (x >= rightX) { x = rightX; vx = -vx * restitution; }
-
-      let touchedFloor = false;
-      if (y >= floorY) {
-        y = floorY;
-        vy = -vy * restitution;
-        vx *= floorFriction;
-        touchedFloor = true;
-        if (Math.abs(vy) < stopThreshold) vy = 0;
-      }
-
-      ball.style.transform = `translate(${x}px, ${y}px)`;
-
-      const atRest = touchedFloor && vy === 0 && Math.abs(vx) < stopThreshold;
-      if (atRest) {
-        ball.style.transform = `translate(${x}px, ${floorY}px)`;
-        nameEl.textContent = finalDest.name;
-        revealEl.classList.add("show");
+    function nextRow() {
+      if (r >= rows) {
+        const finalDest = getDestination(category.slugs[pos]);
+        const slotEl = slotsWrap.children[pos];
+        if (slotEl) slotEl.classList.add("landed");
         setTimeout(() => {
           dropping = false;
-          btn.disabled = false;
+          dropBtn.disabled = false;
           location.hash = `#/destinations/${finalDest.slug}`;
-        }, 1100);
+        }, 1000);
         return;
       }
-      requestAnimationFrame(frame);
+      r++;
+      pos = pos + (Math.random() < 0.5 ? 0 : 1);
+      const x = xForRow(r, pos) - 10;
+      const y = (r + 0.5) * rowHeight - 10;
+      requestAnimationFrame(() => {
+        ball.style.transition = "transform 0.26s cubic-bezier(.36,.66,.4,1)";
+        ball.style.transform = `translate(${x}px, ${y}px)`;
+      });
+      setTimeout(nextRow, 240);
     }
-    requestAnimationFrame(frame);
+    requestAnimationFrame(() => setTimeout(nextRow, 200));
   });
+}
+
+function renderPlinkoTab(stage) {
+  function showIntro() {
+    stage.innerHTML = plinkoIntroHTML();
+    initPlinkoCategoryPicker(showBoard);
+    initReveal();
+  }
+  function showBoard(category) {
+    stage.innerHTML = plinkoBoardHTML(category);
+    initPlinkoBoard(category, showIntro);
+    initReveal();
+  }
+  showIntro();
 }
 
 function renderPlan() {
@@ -2327,8 +2392,8 @@ function initPlan() {
       stage.innerHTML = `<div style="max-width:640px;"><div id="quizStage"></div></div>`;
       initQuiz();
     } else if (mode === "spin") {
-      stage.innerHTML = dropGlobeHTML();
-      initDropGlobe();
+      renderPlinkoTab(stage);
+      return;
     } else {
       stage.innerHTML = itineraryBuilderHTML();
       initItineraryStage();
