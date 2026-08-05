@@ -329,7 +329,9 @@ document.addEventListener("click", (e) => {
   const isIn = picks.includes(slug);
   document.querySelectorAll(`.itinerary-toggle[data-slug="${slug}"]`).forEach(b => {
     b.classList.toggle("active", isIn);
-    b.textContent = isIn ? "✓" : "+";
+    b.textContent = b.classList.contains("itinerary-toggle-inline")
+      ? (isIn ? "✓ In Your Itinerary" : "+ Add to Itinerary")
+      : (isIn ? "✓" : "+");
     const label = isIn ? "Remove from itinerary" : "Add to itinerary";
     b.setAttribute("aria-label", label);
     b.title = label;
@@ -1440,6 +1442,7 @@ function bindCountryFilters() {
 
 function renderDestinationDetail(d) {
   const related = DESTINATIONS.filter(x => x.slug !== d.slug && x.relatedAdventure === d.relatedAdventure).slice(0, 3);
+  const inItinerary = getItinerary().includes(d.slug);
   return `
   <section class="page-hero" style="background-image:url('${d.heroImg}')">
     <div class="page-hero-content">
@@ -1450,6 +1453,7 @@ function renderDestinationDetail(d) {
         <span>◆ ${escapeHtml(d.tag)}</span>
       </div>
       ${d.heroCaption ? `<p class="page-hero-caption" style="margin-top:10px; font-size:13px; font-style:italic; opacity:0.75;">${escapeHtml(d.heroCaption)}</p>` : ""}
+      <button class="itinerary-toggle itinerary-toggle-inline ${inItinerary ? "active" : ""}" data-slug="${d.slug}" aria-label="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}" title="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}">${inItinerary ? "✓ In Your Itinerary" : "+ Add to Itinerary"}</button>
     </div>
   </section>
 
@@ -2281,57 +2285,101 @@ function initPlinkoBoard(category, onBack) {
     return center + (t - 0.5) * spread;
   }
 
-  // Decorative peg lattice — purely visual, same triangular funnel math
-  // the ball's own path follows, so the pegs it "passes" line up with it.
+  // Decorative peg lattice — same triangular funnel math the ball's own
+  // path follows, so the pegs it visually "hits" line up with it. Keep
+  // references so each hit can flash the exact peg it lands on.
   board.querySelectorAll(".plinko-peg").forEach(p => p.remove());
+  const pegRefs = {};
   for (let r = 1; r < rows; r++) {
+    pegRefs[r] = {};
     for (let pos = 0; pos <= r; pos++) {
       const peg = document.createElement("div");
       peg.className = "plinko-peg";
       peg.style.left = `${xForRow(r, pos)}px`;
       peg.style.top = `${(r + 0.5) * rowHeight}px`;
       board.appendChild(peg);
+      pegRefs[r][pos] = peg;
     }
   }
 
+  // A single downward "hop" between two pegs: falls with gravity-like
+  // acceleration (not a straight linear glide), then a small rebound
+  // squash right as it lands, instead of just interpolating in a line.
+  function animateHop(fromX, fromY, toX, toY, duration) {
+    return new Promise(resolve => {
+      const start = performance.now();
+      function tick(now) {
+        const t = Math.min(1, (now - start) / duration);
+        const x = fromX + (toX - fromX) * t;
+        let y;
+        if (t < 0.8) {
+          const ft = t / 0.8;
+          y = fromY + (toY - fromY) * (ft * ft); // ease-in fall, gravity-like
+        } else {
+          const bt = (t - 0.8) / 0.2;
+          const overshoot = Math.sin(bt * Math.PI) * 5;
+          y = toY - overshoot; // brief rebound right as it "lands"
+        }
+        ball.style.transform = `translate(${x - 10}px, ${y - 10}px)`;
+        if (t < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          ball.style.transform = `translate(${toX - 10}px, ${toY - 10}px)`;
+          resolve();
+        }
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+
   let dropping = false;
-  dropBtn.addEventListener("click", () => {
+  dropBtn.addEventListener("click", async () => {
     if (dropping) return;
     dropping = true;
     dropBtn.disabled = true;
     slotsWrap.querySelectorAll(".plinko-slot").forEach(s => s.classList.remove("landed"));
-    ball.style.transition = "none";
     ball.style.transform = `translate(${center - 10}px, -10px)`;
+    ball.classList.remove("impact");
 
     // Classic Galton-board random walk: one coin flip per row, so after
     // `rows` flips the ball has landed in exactly one of `numSlots` bins —
     // genuinely unpredictable, no destination pre-selected in advance.
     let pos = 0;
-    let r = 0;
+    let prevX = center;
+    let prevY = -10;
 
-    function nextRow() {
-      if (r >= rows) {
-        const finalDest = getDestination(category.slugs[pos]);
-        const slotEl = slotsWrap.children[pos];
-        if (slotEl) slotEl.classList.add("landed");
-        setTimeout(() => {
-          dropping = false;
-          dropBtn.disabled = false;
-          location.hash = `#/destinations/${finalDest.slug}`;
-        }, 1000);
-        return;
-      }
-      r++;
+    for (let r = 1; r <= rows; r++) {
       pos = pos + (Math.random() < 0.5 ? 0 : 1);
-      const x = xForRow(r, pos) - 10;
-      const y = (r + 0.5) * rowHeight - 10;
-      requestAnimationFrame(() => {
-        ball.style.transition = "transform 0.26s cubic-bezier(.36,.66,.4,1)";
-        ball.style.transform = `translate(${x}px, ${y}px)`;
-      });
-      setTimeout(nextRow, 240);
+      const x = xForRow(r, pos);
+      const y = (r + 0.5) * rowHeight;
+      const duration = 210 + Math.random() * 70;
+      await animateHop(prevX, prevY, x, y, duration);
+
+      // Impact feedback — brief squash pulse on the ball, brief flash on
+      // the peg it just landed on (no peg exists at the final row, r === rows).
+      ball.classList.add("impact");
+      setTimeout(() => ball.classList.remove("impact"), 160);
+      if (r < rows) {
+        const peg = pegRefs[r][pos];
+        if (peg) {
+          peg.classList.add("hit");
+          setTimeout(() => peg.classList.remove("hit"), 220);
+        }
+      }
+
+      prevX = x;
+      prevY = y;
+      await new Promise(res => setTimeout(res, 40));
     }
-    requestAnimationFrame(() => setTimeout(nextRow, 200));
+
+    const finalDest = getDestination(category.slugs[pos]);
+    const slotEl = slotsWrap.children[pos];
+    if (slotEl) slotEl.classList.add("landed");
+    setTimeout(() => {
+      dropping = false;
+      dropBtn.disabled = false;
+      location.hash = `#/destinations/${finalDest.slug}`;
+    }, 1000);
   });
 }
 
