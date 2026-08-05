@@ -2302,24 +2302,18 @@ function initPlinkoBoard(category, onBack) {
     }
   }
 
-  // A single downward "hop" between two pegs: falls with gravity-like
-  // acceleration (not a straight linear glide), then a small rebound
-  // squash right as it lands, instead of just interpolating in a line.
+  // A single "hop" between two pegs, as a real parabolic bounce arc — rises
+  // away from the peg it just left, then falls to the next one — instead of
+  // just easing toward the target (which read as sliding, not bouncing).
   function animateHop(fromX, fromY, toX, toY, duration) {
+    const arcHeight = 20 + Math.random() * 12;
     return new Promise(resolve => {
       const start = performance.now();
       function tick(now) {
         const t = Math.min(1, (now - start) / duration);
         const x = fromX + (toX - fromX) * t;
-        let y;
-        if (t < 0.8) {
-          const ft = t / 0.8;
-          y = fromY + (toY - fromY) * (ft * ft); // ease-in fall, gravity-like
-        } else {
-          const bt = (t - 0.8) / 0.2;
-          const overshoot = Math.sin(bt * Math.PI) * 5;
-          y = toY - overshoot; // brief rebound right as it "lands"
-        }
+        const linY = fromY + (toY - fromY) * t;
+        const y = linY - arcHeight * 4 * t * (1 - t); // parabolic lift, zero at both ends
         ball.style.transform = `translate(${x - 10}px, ${y - 10}px)`;
         if (t < 1) {
           requestAnimationFrame(tick);
@@ -2332,6 +2326,21 @@ function initPlinkoBoard(category, onBack) {
     });
   }
 
+  // Build a step sequence (rows of 0/1 = left/right) that's guaranteed to
+  // land on `finalPos` after all rows — shuffled into a random order each
+  // time, so the bounce path still looks different every drop. Unlike a
+  // real Galton board's independent 50/50-per-row walk (which is naturally
+  // bell-curved and heavily favors the center slots), this keeps every
+  // destination in the category equally likely to be picked.
+  function buildBalancedPath(totalRows, finalPos) {
+    const steps = Array.from({ length: totalRows }, (_, i) => i < finalPos ? 1 : 0);
+    for (let i = steps.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [steps[i], steps[j]] = [steps[j], steps[i]];
+    }
+    return steps;
+  }
+
   let dropping = false;
   dropBtn.addEventListener("click", async () => {
     if (dropping) return;
@@ -2341,15 +2350,17 @@ function initPlinkoBoard(category, onBack) {
     ball.style.transform = `translate(${center - 10}px, -10px)`;
     ball.classList.remove("impact");
 
-    // Classic Galton-board random walk: one coin flip per row, so after
-    // `rows` flips the ball has landed in exactly one of `numSlots` bins —
-    // genuinely unpredictable, no destination pre-selected in advance.
+    // Every destination in the category is equally likely — picked first,
+    // then a random-looking (but guaranteed) path is built to reach it.
+    const finalPos = Math.floor(Math.random() * numSlots);
+    const path = buildBalancedPath(rows, finalPos);
+
     let pos = 0;
     let prevX = center;
     let prevY = -10;
 
     for (let r = 1; r <= rows; r++) {
-      pos = pos + (Math.random() < 0.5 ? 0 : 1);
+      pos = pos + path[r - 1];
       const x = xForRow(r, pos);
       const y = (r + 0.5) * rowHeight;
       const duration = 210 + Math.random() * 70;
