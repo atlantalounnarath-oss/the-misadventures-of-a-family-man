@@ -1456,36 +1456,38 @@ const BUDGET_CATEGORIES = [
 function budgetPanelHTML(d) {
   const currencyFact = d.quickFacts.find(f => f.label === "Currency");
   return `
-  <section class="section section-tight" id="budgetPanel" style="display:none;">
-    <div class="container" style="max-width:640px;">
-      <div class="budget-panel-inner">
+  <div class="budget-panel" id="budgetPanel" style="display:none;">
+    <div class="budget-panel-header">
+      <div>
         <span class="eyebrow">What to Budget For</span>
-        <h2 class="section-title" style="font-size:22px; margin-top:10px;">${escapeHtml(d.name)}</h2>
-        ${currencyFact ? `<p class="section-desc" style="font-size:13px; margin-top:6px;">Local currency: ${escapeHtml(currencyFact.value)} — check current exchange rates before you go.</p>` : ""}
-        <p class="section-desc" style="font-size:13px; margin-top:6px;">Fill in your own estimates for each category as you research — we don't have real pricing data, just the categories worth pricing out.</p>
+        <h2 class="section-title" style="font-size:19px; margin-top:6px;">${escapeHtml(d.name)}</h2>
+      </div>
+      <button class="budget-close" id="budgetClose" aria-label="Close budget panel">✕</button>
+    </div>
+    <div class="budget-panel-body">
+      ${currencyFact ? `<p class="section-desc" style="font-size:12.5px; margin-top:4px;">Local currency: ${escapeHtml(currencyFact.value)} — check current exchange rates before you go.</p>` : ""}
+      <p class="section-desc" style="font-size:12.5px; margin-top:6px;">Scroll the page behind this panel to see restaurants, gallery, and hidden gems while you fill in your own estimates below.</p>
 
-        <div class="budget-rows mt-lg">
-          ${BUDGET_CATEGORIES.map(c => `
-            <div class="budget-row">
-              <label for="budget-${c.key}">${escapeHtml(c.label)}</label>
-              <input type="number" min="0" step="1" id="budget-${c.key}" data-key="${c.key}" placeholder="$0">
-            </div>`).join("")}
-        </div>
-
-        <div class="budget-total">Estimated total: <span id="budgetTotal">$0</span></div>
-
-        <div class="hero-actions" style="margin-top:22px;">
-          <button class="btn btn-primary" id="budgetShareBtn">Share This Budget</button>
-        </div>
-        <p class="footer-form-note" id="budgetShareNote" aria-live="polite" style="margin-top:10px;"></p>
+      <div class="budget-rows mt-lg">
+        ${BUDGET_CATEGORIES.map(c => `
+          <div class="budget-row">
+            <label for="budget-${c.key}">${escapeHtml(c.label)}</label>
+            <input type="number" min="0" step="1" id="budget-${c.key}" data-key="${c.key}" placeholder="$0">
+          </div>`).join("")}
       </div>
     </div>
-  </section>`;
+    <div class="budget-panel-footer">
+      <div class="budget-total">Estimated total: <span id="budgetTotal">$0</span></div>
+      <button class="btn btn-primary" id="budgetShareBtn">Share This Budget</button>
+      <p class="footer-form-note" id="budgetShareNote" aria-live="polite" style="margin-top:8px;"></p>
+    </div>
+  </div>`;
 }
 
 function initBudgetPanel(d) {
   const toggleBtn = document.getElementById("budgetToggle");
   const panel = document.getElementById("budgetPanel");
+  const closeBtn = document.getElementById("budgetClose");
   const totalEl = document.getElementById("budgetTotal");
   const shareBtn = document.getElementById("budgetShareBtn");
   const shareNote = document.getElementById("budgetShareNote");
@@ -1520,8 +1522,11 @@ function initBudgetPanel(d) {
   toggleBtn.addEventListener("click", () => {
     const showing = panel.style.display !== "none";
     panel.style.display = showing ? "none" : "";
-    if (!showing) panel.scrollIntoView({ behavior: "smooth", block: "start" });
   });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => { panel.style.display = "none"; });
+  }
 
   shareBtn.addEventListener("click", () => {
     const parts = BUDGET_CATEGORIES
