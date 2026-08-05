@@ -399,7 +399,7 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset." }
+      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 1, review: "Beautifully plated, but the food itself didn't live up to how it looked. Service was genuinely top-tier — attentive, gracious, hard to fault — but the dining hall was open-air the whole time, so it was hot and humid through every meal." }
     ],
     foodPhotos: [
       { src: "assets/731443813_10234280477301535_2663361984624580910_n.jpg", caption: "Sunset cocktails with a Ha Long Bay karst view from the cruise deck" },
