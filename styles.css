@@ -548,11 +548,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .map-landmass polygon {
   fill: var(--teal-bright);
-  opacity: 0.38;
+  stroke: var(--teal-bright);
+  stroke-width: 0.15;
+  opacity: 0.58;
 }
 [data-theme="light"] .map-landmass polygon {
   fill: var(--stone);
-  opacity: 0.28;
+  stroke: var(--stone);
+  stroke-width: 0.15;
+  opacity: 0.42;
 }
 .map-pin {
   position: absolute;
