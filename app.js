@@ -2203,47 +2203,84 @@ function initItineraryStage() {
   });
 }
 
-function spinGlobeHTML() {
+function dropGlobeHTML() {
   return `
-  <div class="spin-globe reveal">
-    <p class="section-desc" style="margin-top:8px; max-width:52ch;">Lost? Spin the globe to help decide your next misadventure.</p>
-    <div class="spin-display" id="spinDisplay">
-      <span id="spinName">Tap to spin</span>
+  <div class="drop-globe reveal">
+    <p class="section-desc" style="margin-top:8px; max-width:52ch;">Lost? Drop the globe and see where it settles — your next misadventure.</p>
+    <div class="drop-globe-box" id="dropBox">
+      <div class="drop-globe-ball" id="dropBall"></div>
+      <div class="drop-globe-reveal" id="dropReveal"><span id="dropName"></span></div>
     </div>
-    <button class="btn btn-primary" id="spinBtn">Spin the Globe</button>
+    <button class="btn btn-primary" id="dropBtn">Drop the Globe</button>
   </div>`;
 }
 
-function initSpinGlobe() {
-  const btn = document.getElementById("spinBtn");
-  const display = document.getElementById("spinDisplay");
-  const nameEl = document.getElementById("spinName");
-  if (!btn || !display || !nameEl) return;
+function initDropGlobe() {
+  const btn = document.getElementById("dropBtn");
+  const box = document.getElementById("dropBox");
+  const ball = document.getElementById("dropBall");
+  const revealEl = document.getElementById("dropReveal");
+  const nameEl = document.getElementById("dropName");
+  if (!btn || !box || !ball || !revealEl || !nameEl) return;
 
-  let spinning = false;
+  let dropping = false;
+
   btn.addEventListener("click", () => {
-    if (spinning) return;
-    spinning = true;
+    if (dropping) return;
+    dropping = true;
     btn.disabled = true;
-    display.classList.remove("landed");
+    revealEl.classList.remove("show");
 
     const finalDest = DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
-    const totalTicks = 22;
-    let tick = 0;
+    const boxRect = box.getBoundingClientRect();
+    const ballSize = ball.offsetWidth;
+    const floorY = boxRect.height - ballSize;
+    const rightX = boxRect.width - ballSize;
 
-    function step() {
-      tick++;
-      const landed = tick >= totalTicks;
-      const d = landed ? finalDest : DESTINATIONS[Math.floor(Math.random() * DESTINATIONS.length)];
-      nameEl.textContent = d.name;
-      if (landed) {
-        display.classList.add("landed");
-        setTimeout(() => { location.hash = `#/destinations/${finalDest.slug}`; }, 900);
+    let x = Math.random() * rightX;
+    let y = 0;
+    let vx = (Math.random() - 0.5) * 6;
+    let vy = 0;
+
+    const gravity = 0.55;
+    const restitution = 0.62;
+    const floorFriction = 0.985;
+    const stopThreshold = 0.35;
+
+    function frame() {
+      vy += gravity;
+      x += vx;
+      y += vy;
+
+      if (x <= 0) { x = 0; vx = -vx * restitution; }
+      if (x >= rightX) { x = rightX; vx = -vx * restitution; }
+
+      let touchedFloor = false;
+      if (y >= floorY) {
+        y = floorY;
+        vy = -vy * restitution;
+        vx *= floorFriction;
+        touchedFloor = true;
+        if (Math.abs(vy) < stopThreshold) vy = 0;
+      }
+
+      ball.style.transform = `translate(${x}px, ${y}px)`;
+
+      const atRest = touchedFloor && vy === 0 && Math.abs(vx) < stopThreshold;
+      if (atRest) {
+        ball.style.transform = `translate(${x}px, ${floorY}px)`;
+        nameEl.textContent = finalDest.name;
+        revealEl.classList.add("show");
+        setTimeout(() => {
+          dropping = false;
+          btn.disabled = false;
+          location.hash = `#/destinations/${finalDest.slug}`;
+        }, 1100);
         return;
       }
-      setTimeout(step, 40 + (tick / totalTicks) * 180);
+      requestAnimationFrame(frame);
     }
-    step();
+    requestAnimationFrame(frame);
   });
 }
 
@@ -2290,8 +2327,8 @@ function initPlan() {
       stage.innerHTML = `<div style="max-width:640px;"><div id="quizStage"></div></div>`;
       initQuiz();
     } else if (mode === "spin") {
-      stage.innerHTML = spinGlobeHTML();
-      initSpinGlobe();
+      stage.innerHTML = dropGlobeHTML();
+      initDropGlobe();
     } else {
       stage.innerHTML = itineraryBuilderHTML();
       initItineraryStage();

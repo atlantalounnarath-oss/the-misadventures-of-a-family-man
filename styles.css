@@ -988,33 +988,59 @@ ul { margin: 0; padding: 0; list-style: none; }
   .trip-dna-strand:nth-child(3n) { border-right: none; }
 }
 
-/* ---------------- Spin the Globe ---------------- */
-.spin-globe { max-width: 520px; text-align: center; }
-.spin-display {
+/* ---------------- Drop the Globe ---------------- */
+.drop-globe { max-width: 560px; text-align: center; }
+.drop-globe-box {
+  position: relative;
   margin: 32px auto;
-  width: 220px; height: 220px;
+  width: 100%;
+  max-width: 420px;
+  height: 260px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  overflow: hidden;
+}
+.drop-globe-ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  border: 2px dashed var(--line-strong);
+  background: radial-gradient(circle at 32% 28%, var(--teal-bright), var(--teal) 72%);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(237, 228, 211, 0.15);
+}
+.drop-globe-ball::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 6px, rgba(237, 228, 211, 0.18) 6px 7px),
+    repeating-linear-gradient(0deg, transparent 0 6px, rgba(237, 228, 211, 0.10) 6px 7px);
+  mix-blend-mode: overlay;
+}
+.drop-globe-reveal {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--card-bg);
-  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease), background 0.4s var(--ease);
+  background: rgba(6, 7, 5, 0.82);
+  opacity: 0;
+  transform: scale(0.92);
+  pointer-events: none;
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
 }
-.spin-display #spinName {
+.drop-globe-reveal.show { opacity: 1; transform: scale(1); }
+.drop-globe-reveal span {
   font-family: var(--font-display);
-  font-size: 21px;
-  color: var(--text);
-  padding: 0 24px;
-  transition: color 0.3s var(--ease);
+  font-size: 24px;
+  color: var(--brass-bright);
+  padding: 0 20px;
+  text-align: center;
 }
-.spin-display.landed {
-  border-style: solid;
-  border-color: var(--brass);
-  background: rgba(196, 145, 74, 0.08);
-  transform: scale(1.06);
-}
-.spin-display.landed #spinName { color: var(--brass-bright); }
 
 /* ============================================================
    Newsletter block
