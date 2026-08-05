@@ -2229,6 +2229,24 @@ const CASINO_GAMES = [
     name: "Slot Reel",
     tagline: "Spin the reel and see where it stops",
     icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="10" width="36" height="28" rx="5"/><line x1="18" y1="10" x2="18" y2="38"/><line x1="30" y1="10" x2="30" y2="38"/></svg>`
+  },
+  {
+    id: "wheel",
+    name: "Roulette Wheel",
+    tagline: "Spin the wheel and see where it lands",
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="17"/><line x1="24" y1="7" x2="24" y2="24"/><line x1="24" y1="24" x2="35.5" y2="30.5"/><line x1="24" y1="24" x2="12.5" y2="30.5"/><circle cx="24" cy="24" r="2.6" fill="currentColor" stroke="none"/></svg>`
+  },
+  {
+    id: "cards",
+    name: "Card Flip",
+    tagline: "Pick a card, any card",
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="8" width="18" height="26" rx="3" transform="rotate(-8 18 21)"/><rect x="21" y="10" width="18" height="26" rx="3"/></svg>`
+  },
+  {
+    id: "compass",
+    name: "Compass Spin",
+    tagline: "Let the needle point the way",
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="17"/><path d="M24 12 L28 24 L24 36 L20 24 Z" fill="currentColor" stroke="none"/><circle cx="24" cy="24" r="2" fill="var(--card-bg, #14150f)" stroke="none"/></svg>`
   }
 ];
 
@@ -2568,6 +2586,209 @@ function initSlotReel(category, onBack) {
   });
 }
 
+function wheelHTML(category) {
+  return `
+  <div class="casino-wrap reveal" id="wheelWrap">
+    <button class="casino-back" id="wheelBack">‹ Choose a different region</button>
+    <h3 class="casino-cat-title">${escapeHtml(category.name)}</h3>
+    <div class="wheel-stage mt-lg">
+      <div class="wheel-pointer"></div>
+      <div class="wheel-disc" id="wheelDisc"></div>
+    </div>
+    <button class="btn btn-primary mt-lg" id="wheelSpinBtn">Spin the Wheel</button>
+    ${casinoResultHTML("Spin Again")}
+  </div>`;
+}
+
+function initRouletteWheel(category, onBack) {
+  const disc = document.getElementById("wheelDisc");
+  const spinBtn = document.getElementById("wheelSpinBtn");
+  const backBtn = document.getElementById("wheelBack");
+  if (!disc || !spinBtn) return;
+
+  backBtn.addEventListener("click", onBack);
+
+  const items = category.slugs.map(getDestination);
+  const numSlots = items.length;
+  const wedgeAngle = 360 / numSlots;
+  const radius = disc.clientWidth ? disc.clientWidth / 2 : 130;
+
+  function buildDisc() {
+    const stops = [];
+    for (let i = 0; i < numSlots; i++) {
+      const color = i % 2 === 0 ? "rgba(196,145,74,0.14)" : "rgba(237,228,211,0.04)";
+      stops.push(`${color} ${(i / numSlots) * 100}% ${((i + 1) / numSlots) * 100}%`);
+    }
+    disc.style.background = `conic-gradient(${stops.join(",")})`;
+    disc.querySelectorAll(".wheel-label").forEach(l => l.remove());
+    items.forEach((d, i) => {
+      const centerAngle = i * wedgeAngle + wedgeAngle / 2;
+      const label = document.createElement("span");
+      label.className = "wheel-label";
+      label.textContent = d.name;
+      label.style.transform = `rotate(${centerAngle}deg) translate(0, -${radius * 0.72}px) rotate(${-centerAngle}deg)`;
+      disc.appendChild(label);
+    });
+    disc.style.transition = "none";
+    disc.style.transform = "rotate(0deg)";
+  }
+  buildDisc();
+
+  let totalRotation = 0;
+  let spinning = false;
+  spinBtn.addEventListener("click", () => {
+    if (spinning) return;
+    spinning = true;
+    spinBtn.disabled = true;
+
+    // Uniform pick, then figure out how far to rotate so that wedge's
+    // center lands under the fixed top pointer, always spinning forward
+    // (never snapping backward) from wherever the wheel currently sits.
+    const finalIndex = Math.floor(Math.random() * numSlots);
+    const targetCenterAngle = finalIndex * wedgeAngle + wedgeAngle / 2;
+    const desiredMod = (360 - targetCenterAngle + 360) % 360;
+    const currentMod = ((totalRotation % 360) + 360) % 360;
+    let delta = desiredMod - currentMod;
+    if (delta <= 0) delta += 360;
+    totalRotation += delta + 5 * 360;
+
+    disc.style.transition = "transform 3.4s cubic-bezier(.13,.62,.15,1)";
+    disc.style.transform = `rotate(${totalRotation}deg)`;
+
+    setTimeout(() => {
+      spinning = false;
+      const finalDest = items[finalIndex];
+      showCasinoResult(spinBtn, finalDest, () => {});
+    }, 3450);
+  });
+}
+
+function cardsHTML(category) {
+  return `
+  <div class="casino-wrap reveal" id="cardsWrap">
+    <button class="casino-back" id="cardsBack">‹ Choose a different region</button>
+    <h3 class="casino-cat-title">${escapeHtml(category.name)}</h3>
+    <p class="section-desc" style="margin-top:6px; max-width:52ch;">Pick any card face-down — you won't know which destination it is until you flip it.</p>
+    <div class="mystery-grid mt-lg" id="mysteryGrid"></div>
+    ${casinoResultHTML("Draw Again")}
+  </div>`;
+}
+
+function initCardFlip(category, onBack) {
+  const grid = document.getElementById("mysteryGrid");
+  const backBtn = document.getElementById("cardsBack");
+  if (!grid) return;
+
+  backBtn.addEventListener("click", onBack);
+
+  function shuffledSlugs() {
+    const arr = category.slugs.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  let picked = false;
+  function buildGrid() {
+    picked = false;
+    grid.innerHTML = "";
+    const order = shuffledSlugs();
+    order.forEach((slug) => {
+      const d = getDestination(slug);
+      const card = document.createElement("div");
+      card.className = "mystery-card dealing";
+      card.innerHTML = `
+        <div class="casino-card-face casino-card-back"></div>
+        <div class="casino-card-face casino-card-front"><h3>${escapeHtml(d.name)}</h3></div>`;
+      card.dataset.slug = slug;
+      grid.appendChild(card);
+    });
+    requestAnimationFrame(() => {
+      grid.querySelectorAll(".mystery-card").forEach((c, i) => {
+        setTimeout(() => c.classList.remove("dealing"), i * 60);
+      });
+    });
+  }
+  buildGrid();
+
+  grid.addEventListener("click", (e) => {
+    if (picked) return;
+    const card = e.target.closest(".mystery-card");
+    if (!card) return;
+    picked = true;
+    card.classList.add("flipped");
+    const finalDest = getDestination(card.dataset.slug);
+    setTimeout(() => {
+      showCasinoResult(grid, finalDest, () => buildGrid());
+    }, 700);
+  });
+}
+
+function compassHTML(category) {
+  return `
+  <div class="casino-wrap reveal" id="compassWrap">
+    <button class="casino-back" id="compassBack">‹ Choose a different region</button>
+    <h3 class="casino-cat-title">${escapeHtml(category.name)}</h3>
+    <div class="wheel-stage mt-lg" id="compassStage">
+      <div class="compass-face"></div>
+      <div class="compass-needle" id="compassNeedle"></div>
+    </div>
+    <button class="btn btn-primary mt-lg" id="compassSpinBtn">Let It Point</button>
+    ${casinoResultHTML("Spin Again")}
+  </div>`;
+}
+
+function initCompassSpin(category, onBack) {
+  const stage = document.getElementById("compassStage");
+  const needle = document.getElementById("compassNeedle");
+  const spinBtn = document.getElementById("compassSpinBtn");
+  const backBtn = document.getElementById("compassBack");
+  if (!stage || !needle || !spinBtn) return;
+
+  backBtn.addEventListener("click", onBack);
+
+  const items = category.slugs.map(getDestination);
+  const numSlots = items.length;
+  const wedgeAngle = 360 / numSlots;
+  const radius = stage.clientWidth ? stage.clientWidth / 2 : 130;
+
+  stage.querySelectorAll(".compass-label").forEach(l => l.remove());
+  items.forEach((d, i) => {
+    const angle = i * wedgeAngle;
+    const label = document.createElement("span");
+    label.className = "compass-label";
+    label.textContent = d.name;
+    label.style.transform = `rotate(${angle}deg) translate(0, -${radius * 0.82}px) rotate(${-angle}deg)`;
+    stage.appendChild(label);
+  });
+
+  let totalRotation = 0;
+  let spinning = false;
+  spinBtn.addEventListener("click", () => {
+    if (spinning) return;
+    spinning = true;
+    spinBtn.disabled = true;
+
+    const finalIndex = Math.floor(Math.random() * numSlots);
+    const targetAngle = finalIndex * wedgeAngle;
+    const currentMod = ((totalRotation % 360) + 360) % 360;
+    let delta = targetAngle - currentMod;
+    if (delta <= 0) delta += 360;
+    totalRotation += delta + 5 * 360;
+
+    needle.style.transition = "transform 3.2s cubic-bezier(.13,.62,.15,1)";
+    needle.style.transform = `rotate(${totalRotation}deg)`;
+
+    setTimeout(() => {
+      spinning = false;
+      const finalDest = items[finalIndex];
+      showCasinoResult(spinBtn, finalDest, () => {});
+    }, 3250);
+  });
+}
+
 function renderCasinoTab(stage) {
   function showMenu() {
     stage.innerHTML = casinoMenuHTML();
@@ -2577,7 +2798,10 @@ function renderCasinoTab(stage) {
   function showCategoryPicker(game) {
     const prompts = {
       plinko: "Pick a region, then drop the ball — plinko-style — to find your next misadventure.",
-      reel: "Pick a region, then spin the reel to find your next misadventure."
+      reel: "Pick a region, then spin the reel to find your next misadventure.",
+      wheel: "Pick a region, then spin the wheel to find your next misadventure.",
+      cards: "Pick a region, then draw a mystery card to find your next misadventure.",
+      compass: "Pick a region, then let the compass needle point the way."
     };
     stage.innerHTML = categoryPickerHTML(prompts[game] || "Pick a region to get started.");
     initCategoryPicker((category) => showGame(game, category), showMenu);
@@ -2587,9 +2811,18 @@ function renderCasinoTab(stage) {
     if (game === "plinko") {
       stage.innerHTML = plinkoBoardHTML(category);
       initPlinkoBoard(category, () => showCategoryPicker("plinko"));
-    } else {
+    } else if (game === "reel") {
       stage.innerHTML = reelHTML(category);
       initSlotReel(category, () => showCategoryPicker("reel"));
+    } else if (game === "wheel") {
+      stage.innerHTML = wheelHTML(category);
+      initRouletteWheel(category, () => showCategoryPicker("wheel"));
+    } else if (game === "cards") {
+      stage.innerHTML = cardsHTML(category);
+      initCardFlip(category, () => showCategoryPicker("cards"));
+    } else if (game === "compass") {
+      stage.innerHTML = compassHTML(category);
+      initCompassSpin(category, () => showCategoryPicker("compass"));
     }
     initReveal();
   }

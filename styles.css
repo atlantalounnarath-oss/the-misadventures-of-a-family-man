@@ -1222,6 +1222,113 @@ ul { margin: 0; padding: 0; list-style: none; }
   text-align: center;
 }
 
+/* ---------------- Roulette Wheel & Compass (shared circular stage) ---------------- */
+.wheel-stage {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+}
+.wheel-pointer {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 14px solid var(--brass-bright);
+  z-index: 3;
+}
+.wheel-disc {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  position: relative;
+  box-shadow: inset 0 0 0 1px var(--glass-border);
+}
+.wheel-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  width: 74px;
+  margin-left: -37px;
+  text-align: center;
+  line-height: 1.25;
+  pointer-events: none;
+}
+
+.compass-face {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+.compass-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  width: 74px;
+  margin-left: -37px;
+  text-align: center;
+  line-height: 1.25;
+  pointer-events: none;
+}
+.compass-needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 42%;
+  margin-left: -2px;
+  margin-top: -42%;
+  transform-origin: 50% 100%;
+  background: linear-gradient(var(--brass-bright), var(--brass));
+  border-radius: 3px 3px 0 0;
+  z-index: 2;
+}
+.compass-needle::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ink-2);
+  border: 2px solid var(--brass);
+}
+
+/* ---------------- Card Flip ---------------- */
+.mystery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 12px;
+  max-width: 560px;
+}
+.mystery-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  transform-style: preserve-3d;
+  transition: transform 0.55s var(--ease), opacity 0.35s var(--ease), scale 0.35s var(--ease);
+  cursor: pointer;
+}
+.mystery-card.dealing { opacity: 0; scale: 0.7; }
+.mystery-card.flipped { transform: rotateY(180deg); cursor: default; }
+.mystery-card .casino-card-front h3 { font-family: var(--font-display); font-size: 14px; color: var(--text); }
+
 /* ============================================================
    Newsletter block
    ============================================================ */
