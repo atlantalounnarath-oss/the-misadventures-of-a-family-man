@@ -120,6 +120,19 @@
   </div>
 </footer>
 
+<!-- Hidden static form so Netlify's build-time bot detects this form's schema —
+     the real, visible form is rendered dynamically on the Misadventures page,
+     but Netlify Forms can only auto-discover forms present in the raw HTML. -->
+<form name="misadventure-submission" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="misadventure-submission">
+  <input name="bot-field">
+  <input type="text" name="name">
+  <input type="text" name="location">
+  <textarea name="story"></textarea>
+  <input type="url" name="photo-link">
+  <input type="email" name="email">
+</form>
+
 <script src="data.js"></script>
 <script src="app.js"></script>
 </body>

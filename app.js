@@ -184,6 +184,37 @@ function submitToNetlify(email, note, form) {
     });
 }
 
+function initMisadventureSubmission() {
+  const form = document.getElementById("misadventureSubmitForm");
+  const note = document.getElementById("misadventureSubmitNote");
+  if (!form) return;
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const botField = form.querySelector("[name='bot-field']");
+    if (botField && botField.value) return; // honeypot tripped, silently drop
+    const fields = {
+      "form-name": "misadventure-submission",
+      name: form.querySelector("[name='name']").value,
+      location: form.querySelector("[name='location']").value,
+      story: form.querySelector("[name='story']").value,
+      "photo-link": form.querySelector("[name='photo-link']").value,
+      email: form.querySelector("[name='email']").value
+    };
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: netlifyEncode(fields)
+    })
+      .then(() => {
+        if (note) note.textContent = "Got it — thanks for sharing! We read every one, even if we can't feature them all.";
+        form.reset();
+      })
+      .catch(() => {
+        if (note) note.textContent = "Something went wrong — mind trying again?";
+      });
+  });
+}
+
 function bindNewsletterForms() {
   document.querySelectorAll("[data-newsletter-form]").forEach(form => {
     form.addEventListener("submit", (e) => {
@@ -312,6 +343,7 @@ function afterRender(path) {
   bindGalleryFilters();
   bindCountryFilters();
   bindMisadventureFilters();
+  initMisadventureSubmission();
 }
 
 window.addEventListener("hashchange", router);
@@ -1914,8 +1946,34 @@ function renderMisadventures() {
       </div>
     </div>
   </section>
+
+  ${misadventureSubmitHTML()}
   ${newsletterBlockHTML()}
   `;
+}
+
+function misadventureSubmitHTML() {
+  return `
+  <section class="section section-tight">
+    <div class="container" style="max-width:640px;">
+      <div class="submit-panel">
+        <span class="eyebrow">Got One of Your Own?</span>
+        <h2 class="section-title" style="font-size:22px; margin-top:10px;">Tell Us Your Misadventure</h2>
+        <p class="section-desc" style="font-size:13.5px; margin-top:8px;">Wrong turns, near-misses, questionable bets of your own — send it over. We read every submission ourselves before anything goes up, so nothing posts automatically.</p>
+
+        <form id="misadventureSubmitForm" class="submit-form mt-lg">
+          <input type="text" name="name" placeholder="Your name (optional)">
+          <input type="text" name="location" placeholder="Where did it happen?" required>
+          <textarea name="story" rows="5" placeholder="What happened?" required></textarea>
+          <input type="url" name="photo-link" placeholder="Link to a photo, if you have one (optional)">
+          <input type="email" name="email" placeholder="Your email, if you'd like a reply (optional)">
+          <p class="hidden" hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+          <button type="submit" class="btn btn-primary">Submit Your Misadventure</button>
+        </form>
+        <p class="footer-form-note" id="misadventureSubmitNote" aria-live="polite" style="margin-top:10px;"></p>
+      </div>
+    </div>
+  </section>`;
 }
 
 function bindMisadventureFilters() {
