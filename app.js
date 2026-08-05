@@ -291,6 +291,7 @@ function afterRender(path) {
       const label = typeof entry === "string" ? d.name : (entry.caption || d.name);
       return { src, label };
     }));
+    if (d) initBudgetPanel(d);
   }
   const advMatch = path.match(/^\/adventures\/([a-z0-9-]+)$/);
   if (advMatch) {
@@ -1440,6 +1441,110 @@ function bindCountryFilters() {
   });
 }
 
+const BUDGET_CATEGORIES = [
+  { key: "flights", label: "Flights" },
+  { key: "lodging", label: "Lodging" },
+  { key: "food", label: "Food & Dining" },
+  { key: "transport", label: "Local Transportation" },
+  { key: "activities", label: "Activities & Excursions" },
+  { key: "insurance", label: "Travel Insurance" },
+  { key: "fx", label: "Currency Exchange / ATM Fees" },
+  { key: "souvenirs", label: "Souvenirs & Incidentals" },
+  { key: "buffer", label: "Emergency Buffer" }
+];
+
+function budgetPanelHTML(d) {
+  const currencyFact = d.quickFacts.find(f => f.label === "Currency");
+  return `
+  <section class="section section-tight" id="budgetPanel" style="display:none;">
+    <div class="container" style="max-width:640px;">
+      <div class="budget-panel-inner">
+        <span class="eyebrow">What to Budget For</span>
+        <h2 class="section-title" style="font-size:22px; margin-top:10px;">${escapeHtml(d.name)}</h2>
+        ${currencyFact ? `<p class="section-desc" style="font-size:13px; margin-top:6px;">Local currency: ${escapeHtml(currencyFact.value)} — check current exchange rates before you go.</p>` : ""}
+        <p class="section-desc" style="font-size:13px; margin-top:6px;">Fill in your own estimates for each category as you research — we don't have real pricing data, just the categories worth pricing out.</p>
+
+        <div class="budget-rows mt-lg">
+          ${BUDGET_CATEGORIES.map(c => `
+            <div class="budget-row">
+              <label for="budget-${c.key}">${escapeHtml(c.label)}</label>
+              <input type="number" min="0" step="1" id="budget-${c.key}" data-key="${c.key}" placeholder="$0">
+            </div>`).join("")}
+        </div>
+
+        <div class="budget-total">Estimated total: <span id="budgetTotal">$0</span></div>
+
+        <div class="hero-actions" style="margin-top:22px;">
+          <button class="btn btn-primary" id="budgetShareBtn">Share This Budget</button>
+        </div>
+        <p class="footer-form-note" id="budgetShareNote" aria-live="polite" style="margin-top:10px;"></p>
+      </div>
+    </div>
+  </section>`;
+}
+
+function initBudgetPanel(d) {
+  const toggleBtn = document.getElementById("budgetToggle");
+  const panel = document.getElementById("budgetPanel");
+  const totalEl = document.getElementById("budgetTotal");
+  const shareBtn = document.getElementById("budgetShareBtn");
+  const shareNote = document.getElementById("budgetShareNote");
+  if (!toggleBtn || !panel) return;
+
+  const inputs = BUDGET_CATEGORIES.map(c => document.getElementById(`budget-${c.key}`));
+
+  function recalcTotal() {
+    const total = inputs.reduce((sum, el) => sum + (parseFloat(el.value) || 0), 0);
+    totalEl.textContent = `$${total.toLocaleString()}`;
+  }
+  inputs.forEach(el => el.addEventListener("input", recalcTotal));
+
+  // Hydrate from a shared link: #/destinations/slug?budget=flights-1200_lodging-800
+  const query = location.hash.split("?")[1];
+  let hasSharedValues = false;
+  if (query) {
+    const budgetParam = new URLSearchParams(query).get("budget");
+    if (budgetParam) {
+      budgetParam.split("_").forEach(pair => {
+        const [key, val] = pair.split("-");
+        const input = document.getElementById(`budget-${key}`);
+        if (input && val) { input.value = val; hasSharedValues = true; }
+      });
+    }
+  }
+  if (hasSharedValues) {
+    panel.style.display = "";
+    recalcTotal();
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const showing = panel.style.display !== "none";
+    panel.style.display = showing ? "none" : "";
+    if (!showing) panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  shareBtn.addEventListener("click", () => {
+    const parts = BUDGET_CATEGORIES
+      .map(c => ({ key: c.key, val: document.getElementById(`budget-${c.key}`).value }))
+      .filter(p => p.val)
+      .map(p => `${p.key}-${p.val}`);
+    const total = totalEl.textContent;
+    const url = `${location.origin}${location.pathname}#/destinations/${d.slug}${parts.length ? `?budget=${parts.join("_")}` : ""}`;
+    const shareText = `Budgeting a trip to ${d.name} — estimated total: ${total}. Take a look:`;
+
+    if (navigator.share) {
+      navigator.share({ title: `Budget for ${d.name}`, text: shareText, url }).catch(() => {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(() => {
+        shareNote.textContent = "Link copied!";
+        setTimeout(() => { if (shareNote) shareNote.textContent = ""; }, 2500);
+      }).catch(() => { window.prompt("Copy this link:", url); });
+    } else {
+      window.prompt("Copy this link:", url);
+    }
+  });
+}
+
 function renderDestinationDetail(d) {
   const related = DESTINATIONS.filter(x => x.slug !== d.slug && x.relatedAdventure === d.relatedAdventure).slice(0, 3);
   const inItinerary = getItinerary().includes(d.slug);
@@ -1453,9 +1558,14 @@ function renderDestinationDetail(d) {
         <span>◆ ${escapeHtml(d.tag)}</span>
       </div>
       ${d.heroCaption ? `<p class="page-hero-caption" style="margin-top:10px; font-size:13px; font-style:italic; opacity:0.75;">${escapeHtml(d.heroCaption)}</p>` : ""}
-      <button class="itinerary-toggle itinerary-toggle-inline ${inItinerary ? "active" : ""}" data-slug="${d.slug}" aria-label="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}" title="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}">${inItinerary ? "✓ In Your Itinerary" : "+ Add to Itinerary"}</button>
+      <div class="hero-actions" style="margin-top:20px;">
+        <button class="itinerary-toggle itinerary-toggle-inline ${inItinerary ? "active" : ""}" data-slug="${d.slug}" aria-label="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}" title="${inItinerary ? "Remove from itinerary" : "Add to itinerary"}">${inItinerary ? "✓ In Your Itinerary" : "+ Add to Itinerary"}</button>
+        <button class="budget-toggle" id="budgetToggle" aria-label="What to budget for" title="What to budget for">$ Budget This Trip</button>
+      </div>
     </div>
   </section>
+
+  ${budgetPanelHTML(d)}
 
   <section class="section section-tight">
     <div class="container">
@@ -2829,6 +2939,133 @@ function renderCasinoTab(stage) {
   showMenu();
 }
 
+/* ============================================================
+   BUILD MY TRIP — direct filter/search tool
+   ============================================================ */
+
+const BUILD_TRIP_FOOD_KEYWORDS = {
+  italian: ["italian", "pasta", "pizza", "trattoria", "osteria"],
+  asian: ["asian", "ramen", "sushi", "noodle", "thai", "vietnamese", "japanese", "dim sum"],
+  seafood: ["seafood", "oyster", "crab", "lobster", "fish", "shrimp"],
+  street: ["street food", "market", "stall", "hole-in-the-wall", "casual", "food truck"],
+  finedining: ["michelin", "tasting menu", "fine dining", "chef's table"]
+};
+
+const BUILD_TRIP_VIBE_KEYWORDS = {
+  walkable: ["walkable", "walk", "stroll", "pedestrian", "on foot", "wander"],
+  beach: ["beach", "coast", "island", "tropical", "reef", "surf", "sand", "lagoon"],
+  nightlife: ["nightlife", "bar", "club", "rooftop", "late-night", "late night", "cocktail"],
+  arts: ["museum", "history", "historic", "ancient", "temple", "monument", "castle", "cathedral", "art", "gallery"],
+  outdoors: ["hike", "hiking", "ski", "mountain", "trail", "national park", "glacier", "snorkel", "outdoor", "adventure", "climb", "kayak", "waterfall", "volcano"],
+  offbeat: ["hidden", "secret", "tucked away", "off the beaten", "quiet", "local favorite", "less crowded", "away from the", "non-touristy"]
+};
+
+function buildTripHTML() {
+  return `
+  <div class="build-trip reveal">
+    <p class="section-desc" style="margin-top:8px; max-width:56ch;">Tell us what you're after, and we'll pull real stops from our trips to match.</p>
+    <div class="build-trip-form mt-lg">
+      <div class="build-trip-field">
+        <label for="btStops">Number of stops</label>
+        <input type="number" id="btStops" min="1" max="10" value="3">
+      </div>
+      <div class="build-trip-field">
+        <label for="btWeeks">Weeks of travel</label>
+        <input type="number" id="btWeeks" min="1" max="12" value="2">
+      </div>
+      <div class="build-trip-field">
+        <label for="btChaos">Kid-chaos level</label>
+        <select id="btChaos">
+          <option value="any">Any</option>
+          <option value="Low">Low-key</option>
+          <option value="Medium">Medium</option>
+          <option value="High">Full send</option>
+        </select>
+      </div>
+      <div class="build-trip-field">
+        <label for="btFood">Food type</label>
+        <select id="btFood">
+          <option value="any">Doesn't matter</option>
+          <option value="italian">Italian</option>
+          <option value="asian">Asian</option>
+          <option value="seafood">Seafood</option>
+          <option value="street">Street food</option>
+          <option value="finedining">Fine dining</option>
+        </select>
+      </div>
+      <div class="build-trip-field build-trip-checkbox">
+        <label><input type="checkbox" id="btEnglish"> English-friendly only</label>
+      </div>
+      <div class="build-trip-field build-trip-vibe">
+        <span class="build-trip-vibe-label">Vibe — pick any</span>
+        <div class="build-trip-vibe-options">
+          <label><input type="checkbox" value="walkable"> Walkable City</label>
+          <label><input type="checkbox" value="beach"> Beach Culture</label>
+          <label><input type="checkbox" value="nightlife"> Nightlife</label>
+          <label><input type="checkbox" value="arts"> Arts & History</label>
+          <label><input type="checkbox" value="outdoors"> Outdoors & Adventure</label>
+          <label><input type="checkbox" value="offbeat"> Off the Beaten Path</label>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary mt-lg" id="btSubmit">Build My Trip</button>
+    <div id="btResults" class="mt-lg"></div>
+  </div>`;
+}
+
+function initBuildTrip() {
+  const submitBtn = document.getElementById("btSubmit");
+  const resultsEl = document.getElementById("btResults");
+  if (!submitBtn || !resultsEl) return;
+
+  submitBtn.addEventListener("click", () => {
+    const numStops = Math.max(1, Math.min(10, parseInt(document.getElementById("btStops").value, 10) || 3));
+    const numWeeks = Math.max(1, parseInt(document.getElementById("btWeeks").value, 10) || 2);
+    const chaosPref = document.getElementById("btChaos").value;
+    const foodPref = document.getElementById("btFood").value;
+    const englishOnly = document.getElementById("btEnglish").checked;
+    const vibes = Array.from(document.querySelectorAll(".build-trip-vibe-options input:checked")).map(el => el.value);
+
+    let pool = DESTINATIONS.slice();
+    if (englishOnly) {
+      pool = pool.filter(d => {
+        const f = d.quickFacts.find(q => q.label === "Language");
+        return f && f.value.toLowerCase().includes("english");
+      });
+    }
+
+    const scored = pool.map(d => {
+      let score = 0;
+      if (chaosPref !== "any") {
+        const diff = Math.abs(CHAOS_LEVELS.indexOf(destChaosLevel(d)) - CHAOS_LEVELS.indexOf(chaosPref));
+        score += diff === 0 ? 3 : diff === 1 ? 1 : 0;
+      }
+      if (foodPref !== "any") {
+        const foodBlob = quizFoodBlob(d);
+        (BUILD_TRIP_FOOD_KEYWORDS[foodPref] || []).forEach(k => { if (foodBlob.includes(k)) score += 2; });
+      }
+      if (vibes.length) {
+        const blob = quizDestBlob(d);
+        vibes.forEach(v => {
+          (BUILD_TRIP_VIBE_KEYWORDS[v] || []).forEach(k => { if (blob.includes(k)) score += 2; });
+        });
+      }
+      score += (d.rating || 0) * 0.1 + Math.random() * 0.5;
+      return { d, score };
+    });
+
+    const results = scored.sort((a, b) => b.score - a.score).slice(0, numStops).map(s => s.d);
+
+    resultsEl.innerHTML = `
+      <p class="section-desc" style="font-size:13.5px; margin-bottom:8px;">Here's a ${numStops}-stop starting point for a ${numWeeks}-week trip:</p>
+      <div class="card-grid">
+        ${results.map((d, i) => destCardHTML(d, `reveal-delay-${(i % 3) + 1}`)).join("")}
+      </div>`;
+    initReveal();
+  });
+}
+
+
 function renderPlan() {
   return `
   <section class="section" style="padding-top: calc(var(--nav-h) + 60px);">
@@ -2841,6 +3078,7 @@ function renderPlan() {
         <span class="view-toggle-label">Tool:</span>
         <button class="view-toggle-btn active" data-mode="itinerary">Build Your Itinerary</button>
         <button class="view-toggle-btn" data-mode="quiz">Take the Quiz</button>
+        <button class="view-toggle-btn" data-mode="build">Build My Trip</button>
         <button class="view-toggle-btn" data-mode="spin">Feeling Lost?</button>
       </div>
 
@@ -2874,6 +3112,9 @@ function initPlan() {
     } else if (mode === "spin") {
       renderCasinoTab(stage);
       return;
+    } else if (mode === "build") {
+      stage.innerHTML = buildTripHTML();
+      initBuildTrip();
     } else {
       stage.innerHTML = itineraryBuilderHTML();
       initItineraryStage();
