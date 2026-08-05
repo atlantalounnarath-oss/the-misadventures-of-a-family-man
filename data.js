@@ -434,8 +434,8 @@ const DESTINATIONS = [
       { src: "assets/731423088_10234280696907025_2300768935372453071_n.jpg", caption: "The sky glowing pink and orange over the bay at dusk" },
       { src: "assets/730244976_10234280331857899_6789896394839212795_n.jpg", caption: "A vendor rowing her boat alongside the cruise ship, selling snacks and drinks" }
     ],
-    rating: 10,
-    wouldReturn: "Yes — this was the single most beautiful evening of the whole trip.",
+    rating: 6.5,
+    wouldReturn: "Yes — but not with extended family.",
     relatedAdventure: "southeast-asia-2026"
   }
 ,
