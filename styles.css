@@ -988,11 +988,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   .trip-dna-strand:nth-child(3n) { border-right: none; }
 }
 
-/* ---------------- Plinko ---------------- */
-.plinko-wrap { max-width: 640px; }
-.plinko-categories { display: flex; flex-direction: column; gap: 12px; }
-.plinko-category-btn { display: flex; align-items: center; justify-content: space-between; }
-.plinko-cat-count {
+/* ---------------- Misadventure Casino ---------------- */
+.casino-wrap { max-width: 640px; }
+.casino-menu { max-width: 640px; }
+.casino-menu-title { font-size: 26px; margin-top: 6px; }
+
+.casino-categories { display: flex; flex-direction: column; gap: 12px; }
+.category-btn { display: flex; align-items: center; justify-content: space-between; }
+.category-count {
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--text-dim);
@@ -1003,7 +1006,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-left: 12px;
 }
 
-.plinko-back {
+.casino-back {
   background: none;
   border: none;
   color: var(--text-dim);
@@ -1014,10 +1017,85 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-bottom: 14px;
   transition: color 0.25s var(--ease);
 }
-.plinko-back:hover { color: var(--brass-bright); }
+.casino-back:hover { color: var(--brass-bright); }
 
-.plinko-cat-title { font-size: 21px; margin-bottom: 4px; }
+.casino-cat-title { font-size: 21px; margin-bottom: 4px; }
 
+/* Dealer-shuffle game-select cards */
+.casino-deck {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  perspective: 1200px;
+}
+.casino-deck.shuffling { animation: casinoShuffle 0.48s ease-in-out; }
+@keyframes casinoShuffle {
+  0%, 100% { transform: translateX(0) rotate(0); }
+  20% { transform: translateX(-6px) rotate(-1deg); }
+  40% { transform: translateX(6px) rotate(1deg); }
+  60% { transform: translateX(-4px) rotate(-0.6deg); }
+  80% { transform: translateX(4px) rotate(0.6deg); }
+}
+.casino-card-slot {
+  width: 190px;
+  height: 250px;
+  transition: transform 0.55s var(--ease), opacity 0.4s var(--ease);
+}
+.casino-card-slot.dealing {
+  transform: translateX(var(--deal-offset, 0)) scale(0.62);
+  opacity: 0;
+}
+.casino-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s var(--ease);
+}
+.casino-card.flipped { transform: rotateY(180deg); cursor: pointer; }
+.casino-card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 22px;
+}
+.casino-card-back {
+  background: linear-gradient(135deg, var(--teal), var(--ink-2));
+  border: 1px solid var(--glass-border);
+}
+.casino-card-back::after {
+  content: "";
+  width: 68%;
+  height: 68%;
+  border: 1px solid rgba(237, 228, 211, 0.22);
+  border-radius: 12px;
+}
+.casino-card-front {
+  background: var(--card-bg);
+  border: 1px solid var(--brass);
+  transform: rotateY(180deg);
+}
+.casino-card-icon { color: var(--brass-bright); display: block; }
+.casino-card-icon svg { width: 42px; height: 42px; }
+.casino-card-front h3 { font-family: var(--font-display); font-size: 19px; margin-top: 14px; color: var(--text); }
+.casino-card-front p { font-size: 12px; color: var(--text-dim); margin-top: 8px; line-height: 1.4; }
+
+.casino-result { margin-top: 20px; text-align: center; }
+.casino-result-text {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--brass-bright);
+  margin-bottom: 18px;
+}
+
+/* ---------------- Plinko ---------------- */
 .plinko-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -1044,6 +1122,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   border-radius: 50%;
   background: var(--line-strong);
   transform: translate(-50%, -50%);
+  transition: background 0.22s var(--ease), transform 0.22s var(--ease);
+}
+.plinko-peg.hit {
+  background: var(--brass-bright);
+  transform: translate(-50%, -50%) scale(1.8);
 }
 .plinko-ball {
   position: absolute;
@@ -1059,12 +1142,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .plinko-ball.impact {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35), 0 0 0 6px rgba(224, 172, 99, 0.35);
-}
-
-.plinko-peg { transition: background 0.22s var(--ease), transform 0.22s var(--ease); }
-.plinko-peg.hit {
-  background: var(--brass-bright);
-  transform: translate(-50%, -50%) scale(1.8);
 }
 
 .itinerary-toggle-inline {
@@ -1110,6 +1187,40 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .plinko-slot.landed { background: rgba(196, 145, 74, 0.16); }
 .plinko-slot.landed span { color: var(--brass-bright); }
+
+/* ---------------- Slot Reel ---------------- */
+.reel-window {
+  position: relative;
+  height: 64px;
+  max-width: 420px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+.reel-window::before, .reel-window::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  pointer-events: none;
+  z-index: 2;
+}
+.reel-window::before { top: 0; background: linear-gradient(var(--bg), transparent); }
+.reel-window::after { bottom: 0; background: linear-gradient(transparent, var(--bg)); }
+.reel-item {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--text);
+  border-bottom: 1px solid var(--card-border);
+  padding: 0 12px;
+  text-align: center;
+}
 
 /* ============================================================
    Newsletter block

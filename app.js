@@ -2207,7 +2207,7 @@ function initItineraryStage() {
   });
 }
 
-const PLINKO_CATEGORIES = [
+const CASINO_CATEGORIES = [
   { name: "US South & Gulf", slugs: ["puerto-rico-2010", "orlando-fl-2010", "gulf-shores-al-2012", "atlanta-ga-2013", "florida-keys-2017", "miami-fl-2019", "orlando-fl-2023", "nashville-tn-2023"] },
   { name: "US Heartland & Mountains", slugs: ["hill-country-tx-2012", "steamboat-springs-co-2014", "galveston-tx-2015", "las-vegas-nv-2020", "winter-park-co-2021", "vail-2023", "boulder-denver-2023", "twin-lakes-co-2024"] },
   { name: "US Coasts & Cities", slugs: ["austin-san-antonio-2024", "maui-hi-2022", "new-york-city-ny-2022", "philadelphia-pa-2022", "washington-dc-2022", "seattle-wa-2025", "boston-mv-2025", "san-francisco-2026"] },
@@ -2217,25 +2217,137 @@ const PLINKO_CATEGORIES = [
   { name: "Classic Misadventures", slugs: ["belize-2015", "roatan-2015", "cancun-2015", "puerto-vallarta-2019", "bahamas-2018", "england-2017", "iceland-2018", "paris-2017"] }
 ];
 
-function plinkoIntroHTML() {
+const CASINO_GAMES = [
+  {
+    id: "plinko",
+    name: "Plinko",
+    tagline: "Drop the ball and watch it bounce",
+    icon: `<svg viewBox="0 0 48 48" fill="currentColor"><circle cx="24" cy="9" r="2.4"/><circle cx="16.5" cy="19" r="2.4"/><circle cx="31.5" cy="19" r="2.4"/><circle cx="9" cy="29" r="2.4"/><circle cx="24" cy="29" r="2.4"/><circle cx="39" cy="29" r="2.4"/><circle cx="24" cy="40" r="3.6" opacity="0.55"/></svg>`
+  },
+  {
+    id: "reel",
+    name: "Slot Reel",
+    tagline: "Spin the reel and see where it stops",
+    icon: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="6" y="10" width="36" height="28" rx="5"/><line x1="18" y1="10" x2="18" y2="38"/><line x1="30" y1="10" x2="30" y2="38"/></svg>`
+  }
+];
+
+function casinoMenuHTML() {
   return `
-  <div class="plinko-wrap reveal" id="plinkoIntro">
-    <p class="section-desc" style="margin-top:8px; max-width:56ch;">Lost? Pick a region, then drop the ball — plinko-style — to find your next misadventure.</p>
-    <div class="plinko-categories mt-lg">
-      ${PLINKO_CATEGORIES.map((c, i) => `
-        <button class="quiz-option plinko-category-btn" data-cat="${i}">
+  <div class="casino-menu reveal" id="casinoMenu">
+    <span class="eyebrow">Misadventure Casino</span>
+    <h2 class="casino-menu-title">Welcome to the Misadventure Casino</h2>
+    <p class="section-desc" style="margin-top:8px; max-width:56ch;">Undecided? Let your luck help you decide your next destination — pick your game.</p>
+    <div class="casino-deck" id="casinoDeck">
+      ${CASINO_GAMES.map(g => `
+        <div class="casino-card-slot" data-game="${g.id}">
+          <div class="casino-card">
+            <div class="casino-card-face casino-card-back"></div>
+            <div class="casino-card-face casino-card-front">
+              <span class="casino-card-icon">${g.icon}</span>
+              <h3>${escapeHtml(g.name)}</h3>
+              <p>${escapeHtml(g.tagline)}</p>
+            </div>
+          </div>
+        </div>`).join("")}
+    </div>
+  </div>`;
+}
+
+function initCasinoMenu(onPickGame) {
+  const deck = document.getElementById("casinoDeck");
+  if (!deck) return;
+  const slots = Array.from(deck.querySelectorAll(".casino-card-slot"));
+  const mid = (slots.length - 1) / 2;
+  slots.forEach((s, i) => {
+    s.style.setProperty("--deal-offset", `${(i - mid) * -140}px`);
+    s.classList.add("dealing");
+  });
+
+  deck.classList.add("shuffling");
+  setTimeout(() => {
+    deck.classList.remove("shuffling");
+    slots.forEach((s, i) => {
+      setTimeout(() => {
+        s.classList.remove("dealing");
+        setTimeout(() => {
+          s.querySelector(".casino-card").classList.add("flipped");
+        }, 320);
+      }, i * 180);
+    });
+  }, 480);
+
+  deck.addEventListener("click", (e) => {
+    const slot = e.target.closest(".casino-card-slot");
+    if (!slot) return;
+    if (!slot.querySelector(".casino-card").classList.contains("flipped")) return;
+    onPickGame(slot.getAttribute("data-game"));
+  });
+}
+
+function categoryPickerHTML(promptText) {
+  return `
+  <div class="casino-wrap reveal" id="casinoCategoryPicker">
+    <button class="casino-back" id="casinoCategoryBack">‹ Back to Casino</button>
+    <p class="section-desc" style="margin-top:8px; max-width:56ch;">${escapeHtml(promptText)}</p>
+    <div class="casino-categories mt-lg">
+      ${CASINO_CATEGORIES.map((c, i) => `
+        <button class="quiz-option category-btn" data-cat="${i}">
           ${escapeHtml(c.name)}
-          <span class="plinko-cat-count">${c.slugs.length}</span>
+          <span class="category-count">${c.slugs.length}</span>
         </button>`).join("")}
     </div>
   </div>`;
 }
 
+function initCategoryPicker(onPick, onBack) {
+  const wrap = document.getElementById("casinoCategoryPicker");
+  if (!wrap) return;
+  const backBtn = document.getElementById("casinoCategoryBack");
+  if (backBtn) backBtn.addEventListener("click", onBack);
+  wrap.addEventListener("click", (e) => {
+    const btn = e.target.closest(".category-btn");
+    if (!btn) return;
+    onPick(CASINO_CATEGORIES[parseInt(btn.getAttribute("data-cat"), 10)]);
+  });
+}
+
+function casinoResultHTML(againLabel) {
+  return `
+  <div class="casino-result" id="casinoResult" style="display:none;">
+    <p class="casino-result-text" id="casinoResultText"></p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="casinoGoBtn">Take Me There →</button>
+      <button class="btn btn-ghost" id="casinoAgainBtn">${escapeHtml(againLabel)}</button>
+    </div>
+  </div>`;
+}
+
+// Shared by every casino game once it lands on a destination — shows the
+// reveal + explicit "Take Me There" choice instead of auto-navigating, so
+// nothing whisks the user away before they've actually decided.
+function showCasinoResult(actionBtn, finalDest, onAgain) {
+  actionBtn.style.display = "none";
+  const resultEl = document.getElementById("casinoResult");
+  const resultText = document.getElementById("casinoResultText");
+  const goBtn = document.getElementById("casinoGoBtn");
+  const againBtn = document.getElementById("casinoAgainBtn");
+  resultText.textContent = `You landed on ${finalDest.name}!`;
+  resultEl.style.display = "";
+  goBtn.onclick = () => { location.hash = `#/destinations/${finalDest.slug}`; };
+  againBtn.onclick = () => {
+    resultEl.style.display = "none";
+    actionBtn.style.display = "";
+    actionBtn.disabled = false;
+    onAgain();
+  };
+}
+
 function plinkoBoardHTML(category) {
   return `
-  <div class="plinko-wrap reveal" id="plinkoBoardWrap">
-    <button class="plinko-back" id="plinkoBack">‹ Choose a different region</button>
-    <h3 class="plinko-cat-title">${escapeHtml(category.name)}</h3>
+  <div class="casino-wrap reveal" id="plinkoBoardWrap">
+    <button class="casino-back" id="plinkoBack">‹ Choose a different region</button>
+    <h3 class="casino-cat-title">${escapeHtml(category.name)}</h3>
     <div class="plinko-scroll">
       <div class="plinko-board" id="plinkoBoard">
         <div class="plinko-ball" id="plinkoBall"></div>
@@ -2248,17 +2360,8 @@ function plinkoBoardHTML(category) {
       </div>
     </div>
     <button class="btn btn-primary mt-lg" id="plinkoDropBtn">Drop the Ball</button>
+    ${casinoResultHTML("Drop Again")}
   </div>`;
-}
-
-function initPlinkoCategoryPicker(onPick) {
-  const intro = document.getElementById("plinkoIntro");
-  if (!intro) return;
-  intro.addEventListener("click", (e) => {
-    const btn = e.target.closest(".plinko-category-btn");
-    if (!btn) return;
-    onPick(PLINKO_CATEGORIES[parseInt(btn.getAttribute("data-cat"), 10)]);
-  });
 }
 
 function initPlinkoBoard(category, onBack) {
@@ -2383,29 +2486,114 @@ function initPlinkoBoard(category, onBack) {
       await new Promise(res => setTimeout(res, 40));
     }
 
+    dropping = false;
     const finalDest = getDestination(category.slugs[pos]);
     const slotEl = slotsWrap.children[pos];
     if (slotEl) slotEl.classList.add("landed");
-    setTimeout(() => {
-      dropping = false;
-      dropBtn.disabled = false;
-      location.hash = `#/destinations/${finalDest.slug}`;
-    }, 1000);
+    showCasinoResult(dropBtn, finalDest, () => {
+      slotsWrap.querySelectorAll(".plinko-slot").forEach(s => s.classList.remove("landed"));
+    });
   });
 }
 
-function renderPlinkoTab(stage) {
-  function showIntro() {
-    stage.innerHTML = plinkoIntroHTML();
-    initPlinkoCategoryPicker(showBoard);
+function reelHTML(category) {
+  return `
+  <div class="casino-wrap reveal" id="reelWrap">
+    <button class="casino-back" id="reelBack">‹ Choose a different region</button>
+    <h3 class="casino-cat-title">${escapeHtml(category.name)}</h3>
+    <div class="reel-window mt-lg" id="reelWindow">
+      <div class="reel-strip" id="reelStrip"></div>
+    </div>
+    <button class="btn btn-primary mt-lg" id="reelSpinBtn">Spin the Reel</button>
+    ${casinoResultHTML("Spin Again")}
+  </div>`;
+}
+
+function initSlotReel(category, onBack) {
+  const strip = document.getElementById("reelStrip");
+  const spinBtn = document.getElementById("reelSpinBtn");
+  const backBtn = document.getElementById("reelBack");
+  if (!strip || !spinBtn) return;
+
+  backBtn.addEventListener("click", onBack);
+
+  const items = category.slugs.map(getDestination);
+  const itemHeight = 64;
+  const repeats = 6;
+
+  function buildStrip() {
+    strip.innerHTML = "";
+    for (let lap = 0; lap < repeats; lap++) {
+      items.forEach(d => {
+        const row = document.createElement("div");
+        row.className = "reel-item";
+        row.textContent = d.name;
+        strip.appendChild(row);
+      });
+    }
+    strip.style.transition = "none";
+    strip.style.transform = "translateY(0px)";
+  }
+  buildStrip();
+
+  let spinning = false;
+  spinBtn.addEventListener("click", () => {
+    if (spinning) return;
+    spinning = true;
+    spinBtn.disabled = true;
+
+    // Uniform pick among this category's destinations, then always land
+    // on it during the LAST lap — so every spin travels a consistent,
+    // satisfying distance no matter which destination gets chosen.
+    const finalIndex = Math.floor(Math.random() * items.length);
+    const targetRow = (repeats - 1) * items.length + finalIndex;
+    const targetY = -(targetRow * itemHeight);
+    const duration = 2600 + Math.random() * 400;
+    const start = performance.now();
+
+    function tick(now) {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 3); // fast start, slow finish
+      strip.style.transform = `translateY(${targetY * eased}px)`;
+      if (t < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        strip.style.transform = `translateY(${targetY}px)`;
+        spinning = false;
+        const finalDest = items[finalIndex];
+        showCasinoResult(spinBtn, finalDest, () => buildStrip());
+      }
+    }
+    requestAnimationFrame(tick);
+  });
+}
+
+function renderCasinoTab(stage) {
+  function showMenu() {
+    stage.innerHTML = casinoMenuHTML();
+    initCasinoMenu(showCategoryPicker);
     initReveal();
   }
-  function showBoard(category) {
-    stage.innerHTML = plinkoBoardHTML(category);
-    initPlinkoBoard(category, showIntro);
+  function showCategoryPicker(game) {
+    const prompts = {
+      plinko: "Pick a region, then drop the ball — plinko-style — to find your next misadventure.",
+      reel: "Pick a region, then spin the reel to find your next misadventure."
+    };
+    stage.innerHTML = categoryPickerHTML(prompts[game] || "Pick a region to get started.");
+    initCategoryPicker((category) => showGame(game, category), showMenu);
     initReveal();
   }
-  showIntro();
+  function showGame(game, category) {
+    if (game === "plinko") {
+      stage.innerHTML = plinkoBoardHTML(category);
+      initPlinkoBoard(category, () => showCategoryPicker("plinko"));
+    } else {
+      stage.innerHTML = reelHTML(category);
+      initSlotReel(category, () => showCategoryPicker("reel"));
+    }
+    initReveal();
+  }
+  showMenu();
 }
 
 function renderPlan() {
@@ -2451,7 +2639,7 @@ function initPlan() {
       stage.innerHTML = `<div style="max-width:640px;"><div id="quizStage"></div></div>`;
       initQuiz();
     } else if (mode === "spin") {
-      renderPlinkoTab(stage);
+      renderCasinoTab(stage);
       return;
     } else {
       stage.innerHTML = itineraryBuilderHTML();
