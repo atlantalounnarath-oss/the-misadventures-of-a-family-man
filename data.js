@@ -399,7 +399,7 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 1, review: "Beautifully plated, but the food itself didn't live up to how it looked. Service was genuinely top-tier — attentive, gracious, hard to fault — but the dining hall was open-air the whole time, so it was hot and humid through every meal." }
+      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset." }
     ],
     foodPhotos: [
       { src: "assets/731443813_10234280477301535_2663361984624580910_n.jpg", caption: "Sunset cocktails with a Ha Long Bay karst view from the cruise deck" },
@@ -434,8 +434,8 @@ const DESTINATIONS = [
       { src: "assets/731423088_10234280696907025_2300768935372453071_n.jpg", caption: "The sky glowing pink and orange over the bay at dusk" },
       { src: "assets/730244976_10234280331857899_6789896394839212795_n.jpg", caption: "A vendor rowing her boat alongside the cruise ship, selling snacks and drinks" }
     ],
-    rating: 6.5,
-    wouldReturn: "Yes — but not with extended family.",
+    rating: 10,
+    wouldReturn: "Yes — this was the single most beautiful evening of the whole trip.",
     relatedAdventure: "southeast-asia-2026"
   }
 ,
@@ -651,7 +651,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en5.jpg?w=1000", { src: "assets/515994802_10230170094144525_7267567438112034734_n.jpg", caption: "Platform 9¾ at King's Cross Station" }, { src: "assets/517438700_10230170032342980_7125185404296114390_n.jpg", caption: "Hay's Galleria" }, { src: "assets/517376931_10230170030702939_5754504852650289047_n.jpg", caption: "A City of London boundary marker" }, { src: "assets/517460333_10230169896819592_3899396138696988732_n.jpg", caption: "The National Gallery at Trafalgar Square" }, { src: "assets/516853008_10230169894019522_2275097514825792089_n.jpg", caption: "The Gold State Coach at the Royal Mews" }, { src: "assets/516741647_10230169796817092_8397211656144967946_n.jpg", caption: "A family photo along the Thames, with the London skyline behind" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en5.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -746,7 +746,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Aug before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic27.jpg?w=1000", { src: "assets/37038446_10212544564637303_4556296329176809472_n.jpg", caption: "Taking the Icelandic Pledge at the airport" }, { src: "assets/37574206_10212588119766154_3775003965142335488_n.jpg", caption: "A family photo by a waterfall" }, { src: "assets/37372171_10212572914146023_8407456764626206720_n.jpg", caption: "Sitting on the basalt columns at Reynisfjara black sand beach" }, { src: "assets/37383533_10212572911985969_3686385733125275648_n.jpg", caption: "The Reynisdrangar sea stacks at Reynisfjara black sand beach" }, { src: "assets/37286176_10212572910385929_3740681610169679872_n.jpg", caption: "A small stone cairn along a rocky trail" }, { src: "assets/37324645_10212572909465906_7433136505746358272_n.jpg", caption: "Sheep blocking the road" }, { src: "assets/37328003_10212572906745838_8216195557333401600_n.jpg", caption: "Inside the narrow canyon leading to Gljúfrabúi waterfall" }, { src: "assets/37279741_10212572904025770_8958778356086603776_n.jpg", caption: "Standing behind a waterfall" }, { src: "assets/37267243_10212572899065646_3483325619310166016_n.jpg", caption: "Family photo at Hallgrímskirkja, with the Leif Erikson statue behind" }, { src: "assets/37267232_10212571238224126_2554039097551224832_n.jpg", caption: "Looking up at Gljúfrabúi waterfall from inside the canyon" }, { src: "assets/37335574_10212566116536087_170871073393344512_n.jpg", caption: "Soaking in the Blue Lagoon" }, { src: "assets/37214927_10212562885615316_193020593400971264_n.jpg", caption: "Gearing up for Silfra fissure snorkeling at Þingvellir National Park" }, { src: "assets/37101796_10212552457274614_2592850573816496128_n.jpg", caption: "Willard the Wood-man, a wooden sculpture spotted along the road" }, { src: "assets/37221724_10212552459114660_2378478572705677312_n.jpg", caption: "Kerið volcanic crater lake" }, { src: "assets/37185168_10212557069109907_5230920045088997376_n.jpg", caption: "Snowmobiling out on the glacier" }, { src: "assets/37228322_10212552328351391_7801015633063182336_n.jpg", caption: "Strokkur geyser erupting" }, { src: "assets/37075190_10212552326511345_7458789018260471808_n.jpg", caption: "A flock of geese crossing the road" }, { src: "assets/37161295_10212552316511095_202594092683624448_n.jpg", caption: "Walking through the rift valley at Þingvellir National Park, between the tectonic plates" }, { src: "assets/37053024_10212544567677379_3617870885811126272_n.jpg", caption: "Posing by a historic wooden gazebo in Reykjavik" }, { src: "assets/36996961_10212544566197342_2974530101070266368_n.jpg", caption: "A family selfie in a Reykjavik park" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic27.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -796,7 +796,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Nov – Apr before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv5.jpg?w=1000", { src: "assets/54433360_10214143757736131_8482433905633263616_n.jpg", caption: "Posing by one of the bronze sculptures along the Malecón at night" }, { src: "assets/54436098_10214143758456149_6465513492450377728_n.jpg", caption: "Bodyboarding in the waves" }, { src: "assets/54358269_10214136740680709_1911575405261750272_n.jpg", caption: "Looking out at the ocean in matching Puerto Vallarta pullovers" }, { src: "assets/53853922_10214133980011694_5005937417467723776_n.jpg", caption: "On a boat trip along the coast" }, { src: "assets/54396412_10214124727380384_7658028127305596928_n.jpg", caption: "Sunset over the beach restaurants" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv5.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1029,7 +1029,7 @@ const DESTINATIONS = [
 `Check the weather for Dec – Mar before locking in dates`,
 `Driving up in winter? Don't trust a rental car from a warm-weather state to be ready — bring your own snow chains and all-weather washer fluid`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s2.jpg?w=1000", { src: "assets/515565536_10229935956971242_2480960559571673734_n.jpg", caption: "The girls in the snow near a fenced trail" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s2.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1313,7 +1313,7 @@ const DESTINATIONS = [
       "Layer up — Vail's cold is a real, frequent topic of conversation among visitors",
       "Check the weather for Dec – Mar before locking in dates"
     ],
-    gallery: ["assets/uploads/vail-g1.jpg", "assets/uploads/vail-g2.jpg", "assets/uploads/vail-g3.jpg", "assets/uploads/vail-g4.jpg", "assets/uploads/vail-g5.jpg", "assets/uploads/vail-g6.jpg", { src: "assets/494724111_10229016668349601_3387473562695863425_n.jpg", caption: "A selfie by the lit-up trees at night, Vail" }, { src: "assets/495599250_10229019361536929_8666814075176203833_n.jpg", caption: "A snowy creek winding through the trees, Vail" }, { src: "assets/495187478_10229018552916714_2102089718307948246_n.jpg", caption: "The group, geared up for a day on the slopes, Vail" }],
+    gallery: ["assets/uploads/vail-g1.jpg", "assets/uploads/vail-g2.jpg", "assets/uploads/vail-g3.jpg", "assets/uploads/vail-g4.jpg", "assets/uploads/vail-g5.jpg", "assets/uploads/vail-g6.jpg"],
     rating: 9,
     wouldReturn: "Yes — even after the $9k price tag and the cold.",
     relatedAdventure: null
@@ -1425,7 +1425,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Oct before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h15.jpg?w=1000", { src: "assets/502617688_10229378524395776_2058535497150557649_n.jpg", caption: "Standing at the base of a rainbow eucalyptus tree along the Road to Hana" }, { src: "assets/502582290_10229378524635782_6383422959828900633_n.jpg", caption: "A view of the coastline along the Road to Hana" }, { src: "assets/502612465_10229378524195771_2694238368822074773_n.jpg", caption: "By the crashing waves at the Ke'anae Peninsula" }, { src: "assets/502617750_10229378524715784_5766529539292463122_n.jpg", caption: "Overlooking Waianapanapa's black lava coastline" }, { src: "assets/502586821_10229378524075768_2349931465129008585_n.jpg", caption: "A selfie at a lu'au dinner, leis and all" }, { src: "assets/503503664_10229378522635732_5040527791670106737_n.jpg", caption: "A family selfie on a sunny Maui afternoon" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h15.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1436,7 +1436,7 @@ const DESTINATIONS = [
     country: `USA`,
     year: 2022,
     tag: `The Big Apple`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1600",
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900",
     coords: { top: "27.4%", left: "29.4%" },
     quickFacts: [
@@ -1454,7 +1454,7 @@ const DESTINATIONS = [
 `Visit the Metropolitan Museum of Art`
     ],
     restaurants: [
-      { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, communityReview: "One of the few NYC restaurants that reviewers describe as living up to decades of hype — the seafood-focused tasting menu and dining room service are consistently called flawless, and unlike some legacy institutions, its reputation hasn't slipped.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=900", communityReview: "One of the few NYC restaurants that reviewers describe as living up to decades of hype — the seafood-focused tasting menu and dining room service are consistently called flawless, and unlike some legacy institutions, its reputation hasn't slipped.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Peter Luger Steak House`, location: `New York City`, rating: 4.5, review: `A classic steakhouse in Brooklyn, famous for its dry-aged steaks and old-world charm. Make sure to try their iconic porterhouse steak.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900", communityReview: "A genuinely documented decline: Peter Luger lost its Michelin star in 2022 after a famously scathing zero-star New York Times review in 2019 that criticized inconsistent, underwhelming steak and brusque service. It still has passionate defenders who call the burger and the 138-year history worth it regardless — but go in knowing the food no longer has universal acclaim.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Momofuku Ssäm Bar`, location: `New York City`, rating: 4.6, review: `This trendy spot in the East Village offers innovative Asian-inspired dishes, such as their famous pork buns and bo ssäm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=900", communityReview: "Momofuku Ssäm Bar has closed — both its original East Village spot and its 2021 relocation to South Street Seaport now show as permanently closed. David Chang's Momofuku Noodle Bar, the sister restaurant that started it all, is still open and thriving in the East Village if you want the brand experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900", communityReview: "New York's most famous deli since 1888, and reviewers overwhelmingly say it earns the hype — the hand-carved pastrami and old-school counter chaos are consistently called a must-do. One fun bit of contrarian history: a 1979 New York Times ranking of the city's best Jewish delis actually rated Katz's pastrami the weakest of the top tier, calling it \"tough\" and \"barely edible\" — a reminder that even legends have critics.", communitySource: "Google/Yelp/Tripadvisor" },
@@ -1472,7 +1472,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Nov before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1000", { src: "assets/487936243_10228640208698345_3554697523571178734_n.jpg", caption: "At Teppen Ramen" }, { src: "assets/487723952_10228642162187181_4364512291647615115_n.jpg", caption: "Coffee at Remi Flower & Coffee, in their greenhouse seating" }, { src: "assets/488006726_10228642200188131_8722694913706547997_n.jpg", caption: "Walking through Chinatown" }, { src: "assets/487340074_10228640180617643_3038576765208456312_n.jpg", caption: "Bundled up on the steps of The Metropolitan Museum of Art" }, { src: "assets/487512330_10228640179377612_6242287935831991135_n.jpg", caption: "Standing in front of Monet's water lilies at The Met" }, { src: "assets/488260679_10228640178777597_8769599342023109956_n.jpg", caption: "In front of \"Washington Crossing the Delaware\" at The Met" }, { src: "assets/487849580_10228640168617343_4471486202242904920_n.jpg", caption: "At the Temple of Dendur, inside The Met" }, { src: "assets/487278756_10228639971372412_592932755007787751_n.jpg", caption: "A family selfie in Times Square" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1000", { src: "assets/487936243_10228640208698345_3554697523571178734_n.jpg", caption: "At Teppen Ramen" }, { src: "assets/487723952_10228642162187181_4364512291647615115_n.jpg", caption: "Coffee at Remi Flower & Coffee, in their greenhouse seating" }, { src: "assets/488006726_10228642200188131_8722694913706547997_n.jpg", caption: "Walking through Chinatown" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1525,7 +1525,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=1000", { src: "assets/01_masks_1914_sign.jpg", caption: "At 1914, under the sign" }, { src: "assets/08_flower_stand.jpg", caption: "A dried-flower stand near 1914" }, { src: "assets/487829417_10228644261479662_2296156485622047994_n.jpg", caption: "Walking through Reading Terminal Market, past Mueller Chocolate Co." }, { src: "assets/488021033_10228644242839196_3784442851049440207_n.jpg", caption: "The whole family with the Liberty Bell" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p6.jpg?w=1000", { src: "assets/01_masks_1914_sign.jpg", caption: "At 1914, under the sign" }, { src: "assets/08_flower_stand.jpg", caption: "A dried-flower stand near 1914" }, { src: "assets/487829417_10228644261479662_2296156485622047994_n.jpg", caption: "Walking through Reading Terminal Market, past Mueller Chocolate Co." }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1570,7 +1570,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d10.jpg?w=1000", { src: "assets/487846760_10228644437404060_7740767721095772014_n.jpg", caption: "Sunset selfie along the Georgetown Waterfront, skyline across the Potomac" }, { src: "assets/487676644_10228652817933568_8881079386791564744_n.jpg", caption: "The Main Reading Room at the Library of Congress" }, { src: "assets/488000930_10228652818693587_6922250980436577092_n.jpg", caption: "The U.S. Capitol, viewed from a nearby terrace" }, { src: "assets/488207492_10228644537286557_4970694190830310612_n.jpg", caption: "Family photo at the Jefferson Memorial" }, { src: "assets/487840982_10228644530486387_976337103395671960_n.jpg", caption: "By the Reflecting Pool, Washington Monument in the distance" }, { src: "assets/487780627_10228644528726343_3078636898395614404_n.jpg", caption: "At the Lincoln Memorial" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d10.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1582,7 +1582,7 @@ const DESTINATIONS = [
     year: 2023,
     tag: `Renaissance City`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1600",
-    cardImg: "assets/502962828_10229343222393248_3836694949845685415_n.jpg",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900",
     coords: { top: "25.7%", left: "53.1%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -1600,23 +1600,22 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: `Osteria All'Antico Vinaio`, location: `Florence`, rating: 4.3, review: `This small sandwich shop is a local favorite and serves delicious traditional Tuscan panini. The sandwiches are made with high-quality ingredients, and the flavors are incredible.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=900", communityReview: "One of Florence's most famous sandwich shops, with reviewers consistently praising the schiacciata bread and fresh fillings — the line is long but efficiently managed, though a few reviewers note occasional inconsistency in how generously they're filled.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900", communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=900", communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Il Santo Bevitore`, location: `Florence`, rating: 4.3, review: `This cozy and rustic restaurant focuses on seasonal ingredients and traditional Tuscan flavors. The menu is varied, and the dishes are beautifully presented. Don't miss their handmade pasta and the selection of local wines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=900", communityReview: "A Michelin-recognized favorite with locals as much as tourists — reviewers consistently praise the seasonal Tuscan menu and lively atmosphere, though portions run smaller than expected and reservations are essential, as it fills up fast even on weeknights.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Florence`,
-`The neighborhood just past the obvious tourist center, worth a wander`,
-`Look for the "wine holes" (buchette del vino) — small medieval wine windows built into building walls, still used today to hand out a quick glass of wine`
+`The neighborhood just past the obvious tourist center, worth a wander`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Florence fill up`,
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f12.jpg?w=1000", { src: "assets/502552519_10229343249393923_3942735577555193060_n.jpg", caption: "Overlooking Florence and the Duomo from Piazzale Michelangelo" }, { src: "assets/502606362_10229343233713531_8753407229848884559_n.jpg", caption: "A Baroque ceiling fresco inside Palazzo Pitti" }, { src: "assets/502924370_10229343236153592_6503917525811253195_n.jpg", caption: "The Fountain of Neptune in Piazza della Signoria" }, { src: "assets/502962828_10229343222393248_3836694949845685415_n.jpg", caption: "Looking up at the Duomo's dome" }, { src: "assets/502467959_10229343556841609_1016000992004932226_n.jpg", caption: "The bell inside the Duomo's bell tower" }, { src: "assets/502921812_10229343556281595_7020110919789439966_n.jpg", caption: "In front of the Baptistery's bronze doors" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f12.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1661,7 +1660,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Nov before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/6.jpg?w=1000", { src: "assets/503895754_10229372737291102_2237682656170337210_n.jpg", caption: "Meeting Winnie the Pooh and Tigger" }, { src: "assets/503647630_10229372838133623_5265720530159398374_n.jpg", caption: "Posing in the Queen of Hearts' throne" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/6.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1766,7 +1765,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }, { src: "assets/505835834_10229521604292684_5826710301899321535_n.jpg", caption: "A walk across a trestle bridge, dog in tow" }, { src: "assets/505889090_10229522497515014_1667215305439118353_n.jpg", caption: "Riding the old gondola cab at Hemisfair Park, San Antonio" }, { src: "assets/506001754_10229522470914349_2319771200970681314_n.jpg", caption: "Driving into a Texas sunset" }, { src: "assets/506423861_10229522473594416_3071173804423667102_n.jpg", caption: "A food truck stop with the dog" }, { src: "assets/506226908_10229522444233682_5988836370232704255_n.jpg", caption: "In front of the Texas State Capitol, Austin" }, { src: "assets/506448243_10229521605972726_7325649158673738963_n.jpg", caption: "An evening by the water" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1870,7 +1869,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_12113786682444404878339.jpg?w=1000", { src: "assets/486020578_10228543847609378_7017320676570150548_n.jpg", caption: "Looking down through the Space Needle's glass floor" }, { src: "assets/487686374_10228671423558697_2280257733505537174_n.jpg", caption: "A family photo with the Din Tai Fung mascot statue" }, { src: "assets/487476552_10228671424638724_1822311430470671882_n.jpg", caption: "On the ferry to Bainbridge Island" }, { src: "assets/487737886_10228671425118736_4359228041515404769_n.jpg", caption: "Outside the Museum of Pop Culture (MoPOP)" }, { src: "assets/487499233_10228671425558747_1379546566167039271_n.jpg", caption: "Taking a seat at Post Alley, under Gum Wall art" }, { src: "assets/487547475_10228671426438769_7999989775782867191_n.jpg", caption: "Exploring the famous Gum Wall in Post Alley" }, { src: "assets/488709508_10228671427678800_2421387643417033913_n.jpg", caption: "A coffee stop downtown" }, { src: "assets/488000912_10228671428278815_7888045516469883555_n.jpg", caption: "Browsing the stalls at Pike Place Market" }, { src: "assets/518313034_10230239348675845_2194707104914971558_n.jpg", caption: "Cherry blossoms on the University of Washington campus" }, { src: "assets/485892800_10228561301965726_3318074433703070583_n.jpg", caption: "A rainy walk through the Washington Park Arboretum" }, { src: "assets/485146957_10228552947156861_2886778548208739590_n.jpg", caption: "The Seattle skyline from the water" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_12113786682444404878339.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -2096,7 +2095,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000", { src: "assets/502864635_10229337731535980_3726979693360777457_n.jpg", caption: "A family selfie at the Trevi Fountain, lit up at night" }, { src: "assets/490076682_10228757823318637_5668562338496503376_n.jpg", caption: "A selfie in front of the Pantheon" }, { src: "assets/490158150_10228759564282160_5770251864776474051_n.jpg", caption: "Lunch at an outdoor cafe, Trastevere" }, { src: "assets/490410839_10228757865159683_495742218650406325_n.jpg", caption: "A sunny afternoon in Trastevere" }, { src: "assets/490358200_10228757820438565_2140200656458850051_n.jpg", caption: "Street art wrapping a building facade, Rome" }, { src: "assets/490456478_10228757824278661_2443822025315786721_n.jpg", caption: "A selfie at the Spanish Steps" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000"],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: "italy-2022"
@@ -2129,15 +2128,14 @@ const DESTINATIONS = [
     hiddenGems: [
 `A quiet corner of Florence away from the main sights, worth the wander`,
 `Go early — Florence feels completely different before the crowds arrive`,
-`Ask a local for their favorite spot; it's usually the best one`,
-`Look for the "wine holes" (buchette del vino) — small medieval wine windows built into building walls, still used today to hand out a quick glass of wine`
+`Ask a local for their favorite spot; it's usually the best one`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best tables in Florence fill up`,
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i5.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "italy-2022"
@@ -2249,7 +2247,7 @@ const DESTINATIONS = [
 `Check the weather for Apr – Jun before locking in dates`,
 `Pompeii takes a half to full day — plan accordingly`
     ],
-        gallery: ["assets/uploads/naples-hero.jpg", "assets/uploads/naples-card.jpg", "assets/uploads/naples-g1.jpg", "assets/uploads/naples-g2.jpg", "assets/uploads/naples-g3.jpg", "assets/uploads/naples-g4.jpg", "assets/uploads/naples-g5.jpg", "assets/uploads/naples-g6.jpg", { src: "assets/502629031_10229342774622054_6565444853033875479_n.jpg", caption: "The plaster casts of Pompeii's victims" }, { src: "assets/502486323_10229342774182043_6350374919185361503_n.jpg", caption: "The Temple of Jupiter ruins, Pompeii" }],
+        gallery: ["assets/uploads/naples-hero.jpg", "assets/uploads/naples-card.jpg", "assets/uploads/naples-g1.jpg", "assets/uploads/naples-g2.jpg", "assets/uploads/naples-g3.jpg", "assets/uploads/naples-g4.jpg", "assets/uploads/naples-g5.jpg", "assets/uploads/naples-g6.jpg"],
     rating: 8,
     wouldReturn: `Yes — mainly for the pizza.`,
     relatedAdventure: "italy-2022"
@@ -2441,7 +2439,7 @@ const DESTINATIONS = [
     tag: `Japan 2019 Stop`,
         heroImg: "assets/uploads/fuji-hero.jpg",
         cardImg: "assets/uploads/fuji-card.jpg",
-    coords: { top: "30.6%", left: "88.5%" },
+    coords: { top: "22%", left: "80.5%" },
     quickFacts: [
       { label: "Best time to go", value: `Jun – Sep` },
       { label: "Currency", value: `Japanese Yen` },
@@ -2486,8 +2484,8 @@ const DESTINATIONS = [
     country: `Greece`,
     year: 2022,
     tag: `Greece 2022 Stop`,
-    heroImg: "assets/489847328_10228749503670651_1113937253264547800_n.jpg",
-    cardImg: "assets/489901709_10228749495750453_253301688433922928_n.jpg",
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1600",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900",
     coords: { top: "28.9%", left: "56.6%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2504,7 +2502,7 @@ const DESTINATIONS = [
 `Experience the nightlife`
     ],
     restaurants: [
-      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900", communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "assets/489173504_10228749728956283_7083420681290084372_n.jpg", caption: "A hazelnut and cream dessert near the Acropolis, Athens — restaurant name lost to time" },
@@ -2524,7 +2522,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2565,7 +2563,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000", { src: "assets/499382385_10229191610083035_7048787824098504096_n.jpg", caption: "Watching the sunset over the caldera together" }, { src: "assets/489626066_10228751458199513_7845878058680692911_n.jpg", caption: "In front of the Panagia Platsani church in Oia" }, { src: "assets/489758408_10228751540761577_1724381751260380756_n.jpg", caption: "A sunset group photo overlooking the caldera" }, { src: "assets/490267806_10228751537681500_4546673587912182183_n.jpg", caption: "Another sunset selfie over the water" }, { src: "assets/489427266_10228751462679625_8993695084556056010_n.jpg", caption: "On a terrace overlooking the caldera" }, { src: "assets/489385039_10228751460999583_369590522256604622_n.jpg", caption: "A selfie above the whitewashed streets of Oia" }, { src: "assets/489729061_10228751537561497_1954314271728871914_n.jpg", caption: "The caldera and volcanic island at sunset, Oia" }, { src: "assets/489848133_10228751463039634_8545604638506720237_n.jpg", caption: "A selfie overlooking the caldera cliffs" }, { src: "assets/489922712_10228751458359517_3443636960487478706_n.jpg", caption: "Looking out over Oia's whitewashed buildings and the caldera" }, { src: "assets/490263402_10228751463199638_4447002567464947202_n.jpg", caption: "Walking the narrow streets of Oia" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000"],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2577,7 +2575,7 @@ const DESTINATIONS = [
     year: 2022,
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=900",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=900",
     coords: { top: "29.15%", left: "57.0%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2603,7 +2601,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2868,14 +2866,7 @@ const ADVENTURES = [
     stops: ["rome-2022", "florence-2022", "pisa-2022", "naples-2022", "amalfi-2022"],
     intro: `A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.`,
     packingTips: [
-      "Some hotels are older with no elevator, or one too small for full-size suitcases — check ahead or be ready to carry heavy bags up several flights of stairs",
-      "Pack an outlet converter",
-      "Jet lag is real — don't plan reservations for at least the first day",
-      "Just pay the bus fare instead of risking it — fare dodging gets checked often and it's cheaper to just pay",
-      "In Naples, travel during the day and keep valuables in a hotel safe or front pockets — petty crime is a real risk there",
-      "Italian towns are walkable and almost any restaurant you stumble into will be good, but if there's a specific place you really want to eat or visit, book it ahead of time",
-      "For medical attention, go to a pharmacy first — pharmacists act as doctors for minor issues, rather than searching for a hospital",
-      "Don't try to carry wine home in your luggage — ship it instead, it saves a lot of trouble while traveling"
+      "Placeholder — add your real packing and practical tips for Italy here"
     ]
   },
   {
@@ -2887,22 +2878,8 @@ const ADVENTURES = [
     distance: "",
     stops: ["tokyo-2019", "kyoto-2019", "osaka-2019", "mt-fuji-2019"],
     intro: `A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.`,
-    topExperiences: [
-      "2am ramen at any 24-hour ramen spot — it hits completely differently at that hour, kind of like Waffle House or Jack in the Box after the clubs back in America"
-    ],
     packingTips: [
-      "Respect and manners go a long way — you're a visitor in their country, so play by their rules",
-      "Google Translate goes a long way — travel would've been even easier with how advanced it is now compared to back then",
-      "Tattoos aren't allowed in most onsens — bring skin-colored bandages to cover them up if you plan on going, or you may be turned away",
-      "Smaller local restaurants, especially outside Tokyo, often don't speak English and may turn foreigners away — it's not rudeness, it's just more difficult for a small business to serve someone they can't communicate with",
-      "Subways get crowded and are generally quiet, except in Osaka, which felt more relaxed and \"Americanized\"",
-      "If you're traveling as a woman, use the female-only train cars when available — there's an unfortunate reason Japan has them",
-      "Don't take pictures of women in kimono without asking — they're just going about their day, not there for tourists to photograph",
-      "7-Eleven is a lifeline — good food, good coffee, everywhere",
-      "Refreshing wipes are useful to carry with you",
-      "If you go to Tokyo Disney, bring a portable chair or mat for watching the parade",
-      "Public trash cans are nearly nonexistent — be mindful of how much you're carrying/consuming, or bring a small trash bag so you're not stuck holding your trash all day",
-      "Visit the smaller towns — they have a lot to offer beyond the big cities"
+      "Placeholder — add your real packing and practical tips for Japan here"
     ]
   },
   {
@@ -2915,13 +2892,7 @@ const ADVENTURES = [
     stops: ["athens-2022", "santorini-2022", "mykonos-2022"],
     intro: `A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.`,
     packingTips: [
-      "People are incredibly friendly — be prepared to step out of your comfort zone, because you'll feel like family to everyone at a restaurant by the end of your meal",
-      "Bring a portable fan — the way the cities are built, air doesn't flow well, but the sun definitely gets through",
-      "Pack sun shirts, sun hats, and lots of sunscreen — just expect hot, it's the Mediterranean after all",
-      "Lots of concrete and walking, so dress comfortable and cool",
-      "You can get lost easily, so bring a battery pack — you'll be relying on GPS a lot",
-      "Nightlife is great, so pack for that too, not just beach or casual wear",
-      "If you make it to Santorini, expect long waits at the popular photo spots — the southern part of the island is less crowded, more family-oriented, and has better seafood"
+      "Placeholder — add your real packing and practical tips for Greece here"
     ]
   },
   {
@@ -2934,9 +2905,7 @@ const ADVENTURES = [
     stops: ["auckland-2020", "taupo-2020", "queenstown-2020", "wellington-2020"],
     intro: `A trip through Auckland, Taupo, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.`,
     packingTips: [
-      "They drive on the left, and there are a lot of loose rocks on the roads — get the LDW (loss damage waiver) when renting a car, since broken windshields are common",
-      "It's a long, narrow country with slower speed limits, so expect to spend a lot more time driving than you'd plan for",
-      "Otherwise New Zealand is great, everyone speaks English, and the culture feels fairly American — just don't come in expecting great food, it's not really on par with the rest of the trip"
+      "Placeholder — add your real packing and practical tips for New Zealand here"
     ]
   },
   {
@@ -2949,11 +2918,7 @@ const ADVENTURES = [
     stops: ["belize-2015", "roatan-2015", "cancun-2015"],
     intro: `A trip through Belize, Roatán, and Cancún — Mayan ruins, the Mesoamerican Barrier Reef, and a stretch of turquoise coastline spanning three countries.`,
     packingTips: [
-      "Be wary of your surroundings and try to stay in tourist areas — there's really no need to go off on your own",
-      "Group tours and guides are well worth the money",
-      "Pack for hell — the temperatures and humidity are probably a little worse than hell itself",
-      "Bring a portable fan and an extra battery pack — whether it's the beach or just shopping, you'll be in the heat constantly, so fluids and a fan are a must",
-      "It gets hot, so go with comfortable sandals over comfortable shoes"
+      "Placeholder — add your real packing and practical tips for Central America here"
     ]
   }
 ];
@@ -3700,10 +3665,7 @@ const MISADVENTURES = [
     icon: "🚶",
     title: "The Long Walk Back",
     location: "Bahamas",
-    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead.",
-    photos: [
-      { src: "assets/503570249_10229373767836865_1983218260112877081_n.jpg", caption: "A selfie with the ship in the background, mid walk back" }
-    ]
+    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead."
   },
   {
     icon: "🐦",
