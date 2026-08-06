@@ -215,6 +215,36 @@ function initMisadventureSubmission() {
   });
 }
 
+function initDestinationSuggestion() {
+  const form = document.getElementById("suggestDestinationForm");
+  const note = document.getElementById("suggestDestinationNote");
+  if (!form) return;
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const botField = form.querySelector("[name='bot-field']");
+    if (botField && botField.value) return; // honeypot tripped, silently drop
+    const fields = {
+      "form-name": "destination-suggestion",
+      name: form.querySelector("[name='name']").value,
+      destination: form.querySelector("[name='destination']").value,
+      why: form.querySelector("[name='why']").value,
+      email: form.querySelector("[name='email']").value
+    };
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: netlifyEncode(fields)
+    })
+      .then(() => {
+        if (note) note.textContent = "Thanks — we're always taking notes for the next trip.";
+        form.reset();
+      })
+      .catch(() => {
+        if (note) note.textContent = "Something went wrong — mind trying again?";
+      });
+  });
+}
+
 function bindNewsletterForms() {
   document.querySelectorAll("[data-newsletter-form]").forEach(form => {
     form.addEventListener("submit", (e) => {
@@ -3146,16 +3176,39 @@ function renderPlan() {
       </div>
 
       <div id="planStage" class="mt-lg"></div>
+
+      ${destinationSuggestHTML()}
     </div>
   </section>
   ${newsletterBlockHTML()}
   `;
 }
 
+function destinationSuggestHTML() {
+  return `
+  <div class="submit-panel mt-lg" style="max-width:640px;">
+    <span class="eyebrow">Already Know Where?</span>
+    <h2 class="section-title" style="font-size:20px; margin-top:10px;">Suggest Our Next Destination</h2>
+    <p class="section-desc" style="font-size:13.5px; margin-top:8px;">Skip the tools above and just tell us — where should we go next, and why?</p>
+
+    <form id="suggestDestinationForm" class="submit-form mt-lg">
+      <input type="text" name="name" placeholder="Your name (optional)">
+      <input type="text" name="destination" placeholder="Where should we go?" required>
+      <textarea name="why" rows="4" placeholder="Why there?"></textarea>
+      <input type="email" name="email" placeholder="Your email, if you'd like a reply (optional)">
+      <p class="hidden" hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+      <button type="submit" class="btn btn-primary">Suggest It</button>
+    </form>
+    <p class="footer-form-note" id="suggestDestinationNote" aria-live="polite" style="margin-top:10px;"></p>
+  </div>`;
+}
+
 function initPlan() {
   const toggle = document.getElementById("planToggle");
   const stage = document.getElementById("planStage");
   if (!toggle || !stage) return;
+
+  initDestinationSuggestion();
 
   // Hydrate a shared itinerary from the URL, if present: #/plan?trip=a,b,c
   const query = location.hash.split("?")[1];
