@@ -374,6 +374,7 @@ function afterRender(path) {
   bindCountryFilters();
   bindMisadventureFilters();
   initMisadventureSubmission();
+  initDestinationSuggestion();
 }
 
 window.addEventListener("hashchange", router);
@@ -1977,30 +1978,34 @@ function renderMisadventures() {
     </div>
   </section>
 
-  ${misadventureSubmitHTML()}
+  ${submitPanelsHTML()}
   ${newsletterBlockHTML()}
   `;
 }
 
-function misadventureSubmitHTML() {
+function submitPanelsHTML() {
   return `
   <section class="section section-tight">
-    <div class="container" style="max-width:640px;">
-      <div class="submit-panel">
-        <span class="eyebrow">Got One of Your Own?</span>
-        <h2 class="section-title" style="font-size:22px; margin-top:10px;">Tell Us Your Misadventure</h2>
-        <p class="section-desc" style="font-size:13.5px; margin-top:8px;">Wrong turns, near-misses, questionable bets of your own — send it over. We read every submission ourselves before anything goes up, so nothing posts automatically.</p>
+    <div class="container" style="max-width:1000px;">
+      <div class="submit-panel-row">
+        <div class="submit-panel">
+          <span class="eyebrow">Got One of Your Own?</span>
+          <h2 class="section-title" style="font-size:22px; margin-top:10px;">Tell Us Your Misadventure</h2>
+          <p class="section-desc" style="font-size:13.5px; margin-top:8px;">Wrong turns, near-misses, questionable bets of your own — send it over. We read every submission ourselves before anything goes up, so nothing posts automatically.</p>
 
-        <form id="misadventureSubmitForm" class="submit-form mt-lg">
-          <input type="text" name="name" placeholder="Your name (optional)">
-          <input type="text" name="location" placeholder="Where did it happen?" required>
-          <textarea name="story" rows="5" placeholder="What happened?" required></textarea>
-          <input type="url" name="photo-link" placeholder="Link to a photo, if you have one (optional)">
-          <input type="email" name="email" placeholder="Your email, if you'd like a reply (optional)">
-          <p class="hidden" hidden><label>Don't fill this out: <input name="bot-field"></label></p>
-          <button type="submit" class="btn btn-primary">Submit Your Misadventure</button>
-        </form>
-        <p class="footer-form-note" id="misadventureSubmitNote" aria-live="polite" style="margin-top:10px;"></p>
+          <form id="misadventureSubmitForm" class="submit-form mt-lg">
+            <input type="text" name="name" placeholder="Your name (optional)">
+            <input type="text" name="location" placeholder="Where did it happen?" required>
+            <textarea name="story" rows="5" placeholder="What happened?" required></textarea>
+            <input type="url" name="photo-link" placeholder="Link to a photo, if you have one (optional)">
+            <input type="email" name="email" placeholder="Your email, if you'd like a reply (optional)">
+            <p class="hidden" hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+            <button type="submit" class="btn btn-primary">Submit Your Misadventure</button>
+          </form>
+          <p class="footer-form-note" id="misadventureSubmitNote" aria-live="polite" style="margin-top:10px;"></p>
+        </div>
+
+        ${destinationSuggestHTML()}
       </div>
     </div>
   </section>`;
@@ -3176,8 +3181,6 @@ function renderPlan() {
       </div>
 
       <div id="planStage" class="mt-lg"></div>
-
-      ${destinationSuggestHTML()}
     </div>
   </section>
   ${newsletterBlockHTML()}
@@ -3186,10 +3189,10 @@ function renderPlan() {
 
 function destinationSuggestHTML() {
   return `
-  <div class="submit-panel mt-lg" style="max-width:640px;">
+  <div class="submit-panel">
     <span class="eyebrow">Already Know Where?</span>
     <h2 class="section-title" style="font-size:20px; margin-top:10px;">Suggest Our Next Destination</h2>
-    <p class="section-desc" style="font-size:13.5px; margin-top:8px;">Skip the tools above and just tell us — where should we go next, and why?</p>
+    <p class="section-desc" style="font-size:13.5px; margin-top:8px;">Where should we go next, and why?</p>
 
     <form id="suggestDestinationForm" class="submit-form mt-lg">
       <input type="text" name="name" placeholder="Your name (optional)">
@@ -3207,8 +3210,6 @@ function initPlan() {
   const toggle = document.getElementById("planToggle");
   const stage = document.getElementById("planStage");
   if (!toggle || !stage) return;
-
-  initDestinationSuggestion();
 
   // Hydrate a shared itinerary from the URL, if present: #/plan?trip=a,b,c
   const query = location.hash.split("?")[1];

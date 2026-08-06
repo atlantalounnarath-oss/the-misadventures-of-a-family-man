@@ -1579,6 +1579,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 .footer-form input { flex: 1; min-width: 0; padding: 11px 14px; border-radius: 8px; border: 1px solid var(--line-strong); background: rgba(255,255,255,0.03); color: var(--text); font-size: 13px; }
 .footer-form button { padding: 11px 18px; border-radius: 8px; border: none; background: var(--brass); color: #0b0c0a; font-weight: 600; font-size: 13px; }
 
+.submit-panel-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.submit-panel-row .submit-panel { flex: 1 1 0; min-width: 0; }
+@media (max-width: 760px) {
+  .submit-panel-row { flex-direction: column; }
+}
+
 .submit-panel {
   padding: 32px;
   border-radius: var(--radius-lg);
