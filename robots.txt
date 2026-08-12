@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://misadventures-of-a-family-man.netlify.app/sitemap.xml

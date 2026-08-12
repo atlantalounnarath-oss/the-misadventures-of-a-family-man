@@ -39,6 +39,7 @@ export default async (request, context) => {
 <meta name="description" content="${escapeHtml(meta.description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE_URL}${pagePath}">
+<link rel="canonical" href="${SITE_URL}${pagePath}">
 <meta property="og:site_name" content="The Misadventures of a Family Man">
 <meta property="og:title" content="${escapeHtml(meta.title)}">
 <meta property="og:description" content="${escapeHtml(meta.description)}">
