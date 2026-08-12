@@ -1,0 +1,362 @@
+{
+  "/": {
+    "title": "The Misadventures of a Family Man — Travel Journal",
+    "description": "56 trips, 16 countries, real restaurants, real misadventures — a family travel journal, not a listicle.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/adventures": {
+    "title": "Adventures — The Misadventures of a Family Man",
+    "description": "Multi-stop trips, mapped and told stop by stop — real routes, real stories.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/destinations": {
+    "title": "Destinations — The Misadventures of a Family Man",
+    "description": "56 places across 16 countries — quick facts, food picks, and the honest verdict on whether we would go back.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/eats": {
+    "title": "Eats Worth the Flight — The Misadventures of a Family Man",
+    "description": "Every restaurant we have actually eaten at, with real reviews — no sponsored placements.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/misadventures": {
+    "title": "Misadventures — The Misadventures of a Family Man",
+    "description": "Wrong turns, near-misses, and questionable bets — the honest side of traveling with a family.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/gallery": {
+    "title": "Gallery — The Misadventures of a Family Man",
+    "description": "Real photos from real trips, filterable by destination.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/about": {
+    "title": "About — The Misadventures of a Family Man",
+    "description": "Who we are, why we travel, and why this site exists.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/plan": {
+    "title": "Plan Your Misadventure — The Misadventures of a Family Man",
+    "description": "Build an itinerary, take the quiz, or spin your way to your next destination — all from real trips we have taken.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/herstories": {
+    "title": "HerStories — The Misadventures of a Family Man",
+    "description": "Solo and work trips, told from her side of the passport.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/490299515_10228756310440816_4131957871461001657_n.jpg"
+  },
+  "/destinations/hong-kong": {
+    "title": "Hong Kong — The Misadventures of a Family Man",
+    "description": "Hong Kong is what happens when you drop a mountain range into a trading port and let it grow vertically for a hundred years. We came for the skyline, stay…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734797723_10234321370203832_7699803050170614722_n.jpg"
+  },
+  "/destinations/koh-samui": {
+    "title": "Koh Samui — The Misadventures of a Family Man",
+    "description": "Samui is the exhale after Hong Kong's inhale. Palm-lined beaches, warm water shallow enough for the kids, and a pace of life that made our family group ch…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/731808889_10234321373763921_3715836440244580765_n.jpg"
+  },
+  "/destinations/bangkok": {
+    "title": "Bangkok — The Misadventures of a Family Man",
+    "description": "Bangkok is loud, hot, and completely unbothered by your jet lag — and that's exactly why it works. It's the city that taught our kids that dinner can happ…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/731823921_10234321387484264_6991753109682677852_n.jpg"
+  },
+  "/destinations/ho-chi-minh-city": {
+    "title": "Ho Chi Minh City — The Misadventures of a Family Man",
+    "description": "Nine million motorbikes and not a single traffic light that seems to matter — Ho Chi Minh City is a full sensory reset. Crossing the street as a family be…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734685345_10234321395924475_8042695893444786957_n.jpg"
+  },
+  "/destinations/an-giang": {
+    "title": "An Giang — The Misadventures of a Family Man",
+    "description": "An Giang is the Mekong Delta at its most unhurried — this region is better known for local eateries than famous restaurants, and that turned out to be exa…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/729716392_10234244293436961_8665344624661886448_n.jpg"
+  },
+  "/destinations/hanoi": {
+    "title": "Hanoi — The Misadventures of a Family Man",
+    "description": "Hanoi's Old Quarter is thirty-six streets of honking scooters, hanging lanterns, and plastic stools set up around whatever's cooking that day. It's chaoti…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/uploads/hanoi-1.jpg"
+  },
+  "/destinations/ha-long-bay": {
+    "title": "Ha Long Bay — The Misadventures of a Family Man",
+    "description": "Nearly two thousand limestone islands rising out of jade-green water — Ha Long Bay looks unreal in photos and somehow looks even more unreal in person. An…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/731443813_10234280477301535_2663361984624580910_n.jpg"
+  },
+  "/destinations/puerto-rico-2010": {
+    "title": "Puerto Rico — The Misadventures of a Family Man",
+    "description": "Puerto Rico earned its spot on the map for island getaway — visit old san juan was the highlight, and the food list only got longer the longer we stayed.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pr2010.jpg"
+  },
+  "/destinations/belize-2015": {
+    "title": "Belize — The Misadventures of a Family Man",
+    "description": "Belize earned its spot on the map for reef & jungle — visit mayan ruins was the highlight, and the food list only got longer the longer we stayed.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg"
+  },
+  "/destinations/roatan-2015": {
+    "title": "Roatán — The Misadventures of a Family Man",
+    "description": "Part of the same Central America trip as Belize — Roatán sits on the second-largest barrier reef in the world, and the diving and beach time here were the…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/515929606_10229977792777111_8978908118727086565_n.jpg"
+  },
+  "/destinations/cancun-2015": {
+    "title": "Cancún — The Misadventures of a Family Man",
+    "description": "The last stop on the same trip as Belize and Roatán — turquoise water, all-inclusive ease, and an easy jumping-off point for day trips into the Yucatán's…",
+    "image": "https://images.unsplash.com/photo-1736648432485-c82f30912ec5"
+  },
+  "/destinations/england-2017": {
+    "title": "England — The Misadventures of a Family Man",
+    "description": "England earned its spot on the map for castles & countryside — visit london was the highlight, and the food list only got longer the longer we stayed.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg"
+  },
+  "/destinations/bahamas-2018": {
+    "title": "Bahamas — The Misadventures of a Family Man",
+    "description": "Bahamas earned its spot on the map for turquoise water — relax on the beaches was the highlight, and the food list only got longer the longer we stayed.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bs1.jpg"
+  },
+  "/destinations/iceland-2018": {
+    "title": "Iceland — The Misadventures of a Family Man",
+    "description": "Iceland earned its spot on the map for fire & ice — visit the blue lagoon was the highlight, and the food list only got longer the longer we stayed.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg"
+  },
+  "/destinations/puerto-vallarta-2019": {
+    "title": "Puerto Vallarta — The Misadventures of a Family Man",
+    "description": "Puerto Vallarta earned its spot on the map for pacific coast. One caption from the trip says it better than any guidebook could: “Candid moments make the…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg"
+  },
+  "/destinations/orlando-fl-2010": {
+    "title": "Orlando, Florida (2010) — The Misadventures of a Family Man",
+    "description": "Orlando, Florida (2010) earned its spot on the map for theme park marathon. One caption from the trip says it better than any guidebook could: “Ariel aka…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/o3.jpg"
+  },
+  "/destinations/gulf-shores-al-2012": {
+    "title": "Gulf Shores, Alabama — The Misadventures of a Family Man",
+    "description": "Gulf Shores, Alabama earned its spot on the map for beach week — relax on the beach was the highlight, and the food list only got longer the longer we sta…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/gs1.jpg"
+  },
+  "/destinations/hill-country-tx-2012": {
+    "title": "Hill Country, Texas — The Misadventures of a Family Man",
+    "description": "Hill Country, Texas earned its spot on the map for lake house weekends — visit wineries and breweries was the highlight, and the food list only got longer…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1.jpg"
+  },
+  "/destinations/atlanta-ga-2013": {
+    "title": "Atlanta, Georgia — The Misadventures of a Family Man",
+    "description": "Atlanta, Georgia earned its spot on the map for southern city break — visit the georgia aquarium was the highlight, and the food list only got longer the…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a3.jpg"
+  },
+  "/destinations/steamboat-springs-co-2014": {
+    "title": "Steamboat Springs, Colorado — The Misadventures of a Family Man",
+    "description": "Steamboat Springs, Colorado earned its spot on the map for mountain town — skiing and snowboarding was the highlight, and the food list only got longer th…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg"
+  },
+  "/destinations/galveston-tx-2015": {
+    "title": "Galveston, Texas — The Misadventures of a Family Man",
+    "description": "Galveston, Texas earned its spot on the map for gulf coast. One caption from the trip says it better than any guidebook could: “Sigh, already miss them” —…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g3-1.jpg"
+  },
+  "/destinations/florida-keys-2017": {
+    "title": "The Florida Keys — The Misadventures of a Family Man",
+    "description": "The Florida Keys earned its spot on the map for island chain. One caption from the trip says it better than any guidebook could: “On our way to snorkeling…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/k1.jpg"
+  },
+  "/destinations/miami-fl-2019": {
+    "title": "Miami, Florida — The Misadventures of a Family Man",
+    "description": "Miami, Florida earned its spot on the map for art deco & ocean. One caption from the trip says it better than any guidebook could: “#fatboiproblems Takos,…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg"
+  },
+  "/destinations/las-vegas-nv-2020": {
+    "title": "Las Vegas, Nevada — The Misadventures of a Family Man",
+    "description": "Las Vegas, Nevada earned its spot on the map for neon desert. One caption from the trip says it better than any guidebook could: “Dim Sum w/Old Skool Brot…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg"
+  },
+  "/destinations/winter-park-co-2021": {
+    "title": "Winter Park, Colorado — The Misadventures of a Family Man",
+    "description": "Winter Park, Colorado earned its spot on the map for snow season. One caption from the trip says it better than any guidebook could: “It's getting hot” —…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/w8.jpg"
+  },
+  "/destinations/vail-2023": {
+    "title": "Vail — The Misadventures of a Family Man",
+    "description": "A January ski trip that lived up to the price tag and the cold in equal measure — Vail's slopes and European-style village are the real deal, even when da…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/uploads/vail-hero.jpg"
+  },
+  "/destinations/boulder-denver-2023": {
+    "title": "Boulder & Denver — The Misadventures of a Family Man",
+    "description": "A spring trip pairing Boulder's laid-back, foodie-college-town energy with Denver's bigger-city pace — daddy-daughter latte dates and a chocolate factory…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/uploads/boulder-hero.jpg"
+  },
+  "/destinations/maui-hi-2022": {
+    "title": "Maui, Hawaii — The Misadventures of a Family Man",
+    "description": "Maui, Hawaii earned its spot on the map for volcanic paradise. One caption from the trip says it better than any guidebook could: “¤ï¸ they treated Anna…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg"
+  },
+  "/destinations/new-york-city-ny-2022": {
+    "title": "New York City — The Misadventures of a Family Man",
+    "description": "New York City earned its spot on the map for the big apple. One caption from the trip says it better than any guidebook could: “Anna and her fatgurl probl…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg"
+  },
+  "/destinations/philadelphia-pa-2022": {
+    "title": "Philadelphia, Pennsylvania — The Misadventures of a Family Man",
+    "description": "Philadelphia, Pennsylvania earned its spot on the map for brotherly love. One caption from the trip says it better than any guidebook could: “When you for…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg"
+  },
+  "/destinations/washington-dc-2022": {
+    "title": "Washington, D.C. — The Misadventures of a Family Man",
+    "description": "Washington, D.C. earned its spot on the map for monuments & museums. One caption from the trip says it better than any guidebook could: “James Bond origin…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg"
+  },
+  "/destinations/florence-italy-2023": {
+    "title": "Florence — The Misadventures of a Family Man",
+    "description": "Florence earned its spot on the map for renaissance city. One caption from the trip says it better than any guidebook could: “Drinking Dante tonight, only…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg"
+  },
+  "/destinations/orlando-fl-2023": {
+    "title": "Orlando, Florida (2023) — The Misadventures of a Family Man",
+    "description": "Orlando, Florida (2023) earned its spot on the map for back to the parks — walt disney world was the highlight, and the food list only got longer the long…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg"
+  },
+  "/destinations/nashville-tn-2023": {
+    "title": "Nashville, Tennessee — The Misadventures of a Family Man",
+    "description": "Nashville, Tennessee earned its spot on the map for music city — visit the country music hall of fame and museum was the highlight, and the food list only…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/11/393349720_10224807722688590_8153504040082434340_n.jpg"
+  },
+  "/destinations/austin-san-antonio-2024": {
+    "title": "Austin & San Antonio — The Misadventures of a Family Man",
+    "description": "Austin & San Antonio earned its spot on the map for texas road trip. One caption from the trip says it better than any guidebook could: “Rare bar and cafe…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg"
+  },
+  "/destinations/twin-lakes-co-2024": {
+    "title": "Twin Lakes, Colorado — The Misadventures of a Family Man",
+    "description": "Twin Lakes, Colorado earned its spot on the map for alpine lakes. One caption from the trip says it better than any guidebook could: “Much needed fluid re…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/08/454741954_10226247521722666_8320194507133385005_n.jpg"
+  },
+  "/destinations/seattle-wa-2025": {
+    "title": "Seattle, Washington — The Misadventures of a Family Man",
+    "description": "Seattle, Washington earned its spot on the map for pacific northwest. One caption from the trip says it better than any guidebook could: “Ferry ´ï¸ time…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg"
+  },
+  "/destinations/boston-mv-2025": {
+    "title": "Boston & Martha's Vineyard — The Misadventures of a Family Man",
+    "description": "Boston & Martha's Vineyard earned its spot on the map for new england. One caption from the trip says it better than any guidebook could: “They choose the…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514514037_10229925389667066_6430556743000150894_n.jpg"
+  },
+  "/destinations/san-francisco-2026": {
+    "title": "San Francisco, California — The Misadventures of a Family Man",
+    "description": "San Francisco, California earned its spot on the map for bay views. One caption from the trip says it better than any guidebook could: “Shopping and explo…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg"
+  },
+  "/destinations/rome-2022": {
+    "title": "Rome — The Misadventures of a Family Man",
+    "description": "Rome was one stop on our Italy trip, and it earned its place — visit the colosseum and roman forum in rome.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg"
+  },
+  "/destinations/florence-2022": {
+    "title": "Florence — The Misadventures of a Family Man",
+    "description": "Florence was one stop on our Italy trip, and it earned its place — see michelangelo's david in florence.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg"
+  },
+  "/destinations/pisa-2022": {
+    "title": "Pisa — The Misadventures of a Family Man",
+    "description": "A quick stop mostly built around one very famous, very leaning tower — Pisa is small enough to see in an afternoon but worth the detour on the way between…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/502859980_10229343887049864_7142588008757122538_n.jpg"
+  },
+  "/destinations/naples-2022": {
+    "title": "Naples — The Misadventures of a Family Man",
+    "description": "Naples is chaotic, loud, and the birthplace of pizza — the launch point for Pompeii and the Amalfi Coast, and a real change of pace from the Renaissance c…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/uploads/naples-hero.jpg"
+  },
+  "/destinations/amalfi-2022": {
+    "title": "Amalfi Coast — The Misadventures of a Family Man",
+    "description": "Cliffside towns, impossibly blue water, and a coastal road that's an experience in itself — the Amalfi Coast is the slow, scenic exhale after Naples. We m…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/uploads/amalfi-hero.jpg"
+  },
+  "/destinations/tokyo-2019": {
+    "title": "Tokyo — The Misadventures of a Family Man",
+    "description": "Tokyo was one stop on our Japan trip, and it earned its place — visit tokyo tower or the tokyo skytree for a panoramic view .",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg"
+  },
+  "/destinations/kyoto-2019": {
+    "title": "Kyoto — The Misadventures of a Family Man",
+    "description": "Kyoto was one stop on our Japan trip, and it earned its place — take a walk through kyoto's gion district to see traditional.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j20.jpg"
+  },
+  "/destinations/osaka-2019": {
+    "title": "Osaka — The Misadventures of a Family Man",
+    "description": "Osaka was one stop on our Japan trip, and it earned its place — explore osaka.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg"
+  },
+  "/destinations/mt-fuji-2019": {
+    "title": "Mt. Fuji — The Misadventures of a Family Man",
+    "description": "A day trip out of Tokyo into the mountains — Japan's most iconic peak, at its best on a clear morning from one of the lakes at its base. We stayed and din…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/uploads/fuji-hero.jpg"
+  },
+  "/destinations/athens-2022": {
+    "title": "Athens — The Misadventures of a Family Man",
+    "description": "Athens was one stop on our Greece trip, and it earned its place — visit the acropolis.",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/489847328_10228749503670651_1113937253264547800_n.jpg"
+  },
+  "/destinations/santorini-2022": {
+    "title": "Santorini — The Misadventures of a Family Man",
+    "description": "Santorini was one stop on our Greece trip, and it earned its place — explore santorini.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg"
+  },
+  "/destinations/mykonos-2022": {
+    "title": "Mykonos — The Misadventures of a Family Man",
+    "description": "Mykonos was one stop on our Greece trip, and it earned its place — explore mykonos.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg"
+  },
+  "/destinations/auckland-2020": {
+    "title": "Auckland — The Misadventures of a Family Man",
+    "description": "Auckland was one stop on our New Zealand trip, and it earned its place — take a scenic drive along one of new zealand's many beautifu.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg"
+  },
+  "/destinations/queenstown-2020": {
+    "title": "Queenstown — The Misadventures of a Family Man",
+    "description": "Queenstown was one stop on our New Zealand trip, and it earned its place — visit fiordland national park to see fjords, mountains, wate.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz19.jpg"
+  },
+  "/destinations/wellington-2020": {
+    "title": "Wellington — The Misadventures of a Family Man",
+    "description": "Wellington was one stop on our New Zealand trip, and it earned its place — explore wellington.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz14.jpg"
+  },
+  "/destinations/taupo-2020": {
+    "title": "Taupo — The Misadventures of a Family Man",
+    "description": "Taupo centers on New Zealand's largest lake — a volcanic crater filled with impossibly blue water — with some of the country's best geothermal activity, w…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz24.jpg"
+  },
+  "/destinations/paris-2017": {
+    "title": "Paris — The Misadventures of a Family Man",
+    "description": "Paris was one stop on our France trip, and it earned its place — visit the eiffel tower.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg"
+  },
+  "/adventures/southeast-asia-2026": {
+    "title": "Southeast Asia 2026 — The Misadventures of a Family Man",
+    "description": "This was the trip we'd been circling for three years — a slow arc from Hong Kong's vertical density down into Thailand's beaches, then north through Vietn…",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734797723_10234321370203832_7699803050170614722_n.jpg"
+  },
+  "/adventures/italy-2022": {
+    "title": "Italy 2022 — The Misadventures of a Family Man",
+    "description": "A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg"
+  },
+  "/adventures/japan-2019": {
+    "title": "Japan 2019 — The Misadventures of a Family Man",
+    "description": "A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg"
+  },
+  "/adventures/greece-2022": {
+    "title": "Greece 2022 — The Misadventures of a Family Man",
+    "description": "A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg"
+  },
+  "/adventures/new-zealand-2020": {
+    "title": "New Zealand 2020 — The Misadventures of a Family Man",
+    "description": "A trip through Auckland, Taupo, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/nz12.jpg"
+  },
+  "/adventures/central-america-2015": {
+    "title": "Central America 2015 — The Misadventures of a Family Man",
+    "description": "A trip through Belize, Roatán, and Cancún — Mayan ruins, the Mesoamerican Barrier Reef, and a stretch of turquoise coastline spanning three countries.",
+    "image": "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/bz1.jpg"
+  },
+  "/herstories/lima-peru": {
+    "title": "Lima, Peru · HerStories — The Misadventures of a Family Man",
+    "description": "A work trip to Lima that turned up two very good meals — a casual Peruvian spot for ceviche and pisco sours, and a much fancier Nikkei tasting menu she st…",
+    "image": "https://misadventures-of-a-family-man.netlify.app/assets/504415623_10229422830823409_4993078943813997833_n.jpg"
+  }
+}
