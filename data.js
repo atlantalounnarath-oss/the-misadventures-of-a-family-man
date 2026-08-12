@@ -149,11 +149,11 @@ const DESTINATIONS = [
     ],
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734685124_10234321371443863_2297942505490832443_n.jpg?w=1000", caption: "A fresh coconut, Koh Samui" },
-      { src: "assets/726908530_10234219799864637_5241656378082016804_n.jpg", caption: "A cold beer at Mr. Kai Kitchen Thai Cuisine, Koh Samui" },
-      { src: "assets/725649310_10234219800944664_1556447570665327623_n.jpg", caption: "A seafood salad at Mr. Kai Kitchen Thai Cuisine, Koh Samui" },
-      { src: "assets/727161348_10234219802624706_4779048030282930902_n.jpg", caption: "A poolside beer from The Brewing Project, Koh Samui" },
-      { src: "assets/726839125_10234219810144894_8508194891693224213_n.jpg", caption: "A live lobster in the tank, waiting to become dinner, Koh Samui" },
-      { src: "assets/726977775_10234219810704908_3191997744510600489_n.jpg", caption: "Oysters, tom yum, and fried bites — a proper seafood spread, Koh Samui" }
+      { src: "/assets/726908530_10234219799864637_5241656378082016804_n.jpg", caption: "A cold beer at Mr. Kai Kitchen Thai Cuisine, Koh Samui" },
+      { src: "/assets/725649310_10234219800944664_1556447570665327623_n.jpg", caption: "A seafood salad at Mr. Kai Kitchen Thai Cuisine, Koh Samui" },
+      { src: "/assets/727161348_10234219802624706_4779048030282930902_n.jpg", caption: "A poolside beer from The Brewing Project, Koh Samui" },
+      { src: "/assets/726839125_10234219810144894_8508194891693224213_n.jpg", caption: "A live lobster in the tank, waiting to become dinner, Koh Samui" },
+      { src: "/assets/726977775_10234219810704908_3191997744510600489_n.jpg", caption: "Oysters, tom yum, and fried bites — a proper seafood spread, Koh Samui" }
     ],
     hiddenGems: [
       "The Secret Buddha Garden hidden up in the jungle hills",
@@ -167,8 +167,8 @@ const DESTINATIONS = [
     ],
     gallery: [
       ...photoSet("koh-samui").gallery.filter(src => !src.includes("734685124_10234321371443863")),
-      { src: "assets/726768184_10234219811424926_5834929716715620637_n.jpg", caption: "Paddling out on the water, Koh Samui, with a distant island on the horizon" },
-      { src: "assets/726949340_10234219806344799_8941385992213557937_n.jpg", caption: "Sunset over the infinity pool, Koh Samui" }
+      { src: "/assets/726768184_10234219811424926_5834929716715620637_n.jpg", caption: "Paddling out on the water, Koh Samui, with a distant island on the horizon" },
+      { src: "/assets/726949340_10234219806344799_8941385992213557937_n.jpg", caption: "Sunset over the infinity pool, Koh Samui" }
     ],
     rating: 9,
     wouldReturn: "Yes — this is the one we talk about when we say we need a vacation from our vacation.",
@@ -248,16 +248,16 @@ const DESTINATIONS = [
       { name: "Cục Gạch Quán", location: "Ho Chi Minh City", rating: 4.5, review: "Traditional southern Vietnamese cuisine in a garden setting that slows the whole meal down.", img: wpImg(819, 900), communityReview: "A longtime favorite for home-style southern Vietnamese cooking in a quiet, plant-filled setting — reviewers consistently praise the atmosphere and traditional dishes as a welcome break from Saigon's street-level chaos.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/729729946_10234245424345233_2307885935761941686_n.jpg", caption: "An energy drink with sizzling bánh xèo art on the can — 'Mê Bánh Xèo,' Ho Chi Minh City" },
-      { src: "assets/727928159_10234248187414308_7670461466920781264_n.jpg", caption: "Huda beer at Malaysian Street Vietnam, Ho Chi Minh City" },
-      { src: "assets/727287389_10234249288441833_3239818228744868057_n.jpg", caption: "A stir-fried pork and vegetable plate at Malaysian Street Vietnam, Ho Chi Minh City" },
-      { src: "assets/730015541_10234255214549982_8873971161025225484_n.jpg", caption: "A noodle bowl with fresh coconut at Hủ Tiếu Nam Vang Minh Anh, Ho Chi Minh City" },
-      { src: "assets/729717167_10234257029395352_3599007945174445637_n.jpg", caption: "A chicken plate with gizzards and preserved eggs at Hủ Tiếu Minh Châu, Ho Chi Minh City" },
-      { src: "assets/727322937_10234257030715385_7202155223795529185_n.jpg", caption: "Tiger beer at Hủ Tiếu Minh Châu, Ho Chi Minh City" },
-      { src: "assets/730259056_10234267358533574_3754891522483453025_n.jpg", caption: "A Thai-style Red Bull (Kratingdaeng), Ho Chi Minh City" },
-      { src: "assets/731479821_10234267379574100_3353194501821545571_n.jpg", caption: "Chicken pho with lime wedges, Ho Chi Minh City" },
-      { src: "assets/731328609_10234268531202890_4204540512462307704_n.jpg", caption: "Fried chicken and fries from Chixmax, Ho Chi Minh City" },
-      { src: "assets/730259065_10234268749848356_7829707389728340375_n.jpg", caption: "Cheesecake and a 4Ps beer at Pizza 4P's, Ho Chi Minh City" }
+      { src: "/assets/729729946_10234245424345233_2307885935761941686_n.jpg", caption: "An energy drink with sizzling bánh xèo art on the can — 'Mê Bánh Xèo,' Ho Chi Minh City" },
+      { src: "/assets/727928159_10234248187414308_7670461466920781264_n.jpg", caption: "Huda beer at Malaysian Street Vietnam, Ho Chi Minh City" },
+      { src: "/assets/727287389_10234249288441833_3239818228744868057_n.jpg", caption: "A stir-fried pork and vegetable plate at Malaysian Street Vietnam, Ho Chi Minh City" },
+      { src: "/assets/730015541_10234255214549982_8873971161025225484_n.jpg", caption: "A noodle bowl with fresh coconut at Hủ Tiếu Nam Vang Minh Anh, Ho Chi Minh City" },
+      { src: "/assets/729717167_10234257029395352_3599007945174445637_n.jpg", caption: "A chicken plate with gizzards and preserved eggs at Hủ Tiếu Minh Châu, Ho Chi Minh City" },
+      { src: "/assets/727322937_10234257030715385_7202155223795529185_n.jpg", caption: "Tiger beer at Hủ Tiếu Minh Châu, Ho Chi Minh City" },
+      { src: "/assets/730259056_10234267358533574_3754891522483453025_n.jpg", caption: "A Thai-style Red Bull (Kratingdaeng), Ho Chi Minh City" },
+      { src: "/assets/731479821_10234267379574100_3353194501821545571_n.jpg", caption: "Chicken pho with lime wedges, Ho Chi Minh City" },
+      { src: "/assets/731328609_10234268531202890_4204540512462307704_n.jpg", caption: "Fried chicken and fries from Chixmax, Ho Chi Minh City" },
+      { src: "/assets/730259065_10234268749848356_7829707389728340375_n.jpg", caption: "Cheesecake and a 4Ps beer at Pizza 4P's, Ho Chi Minh City" }
     ],
     hiddenGems: [
       "The rooftop cafes stacked inside unmarked apartment buildings on Nguyen Hue",
@@ -280,8 +280,8 @@ const DESTINATIONS = [
     country: "Vietnam",
     year: 2026,
     tag: "Mekong Delta",
-    heroImg: "assets/729716392_10234244293436961_8665344624661886448_n.jpg",
-    cardImg: "assets/729705979_10234244291756919_8628753213251772256_n.jpg",
+    heroImg: "/assets/729716392_10234244293436961_8665344624661886448_n.jpg",
+    cardImg: "/assets/729705979_10234244291756919_8628753213251772256_n.jpg",
     coords: { top: "44.24%", left: "78.91%" },
     quickFacts: [
       { label: "Best time to go", value: "Nov – Jan" },
@@ -300,8 +300,8 @@ const DESTINATIONS = [
       { name: "Riverside food stalls", location: "An Giang", rating: 4.2, review: "Simple, fresh, and eaten on plastic stools with a view of the river.", img: wpImg(810, 900) }
     ],
     foodPhotos: [
-      { src: "assets/730016309_10234244292196930_3226198866620561139_n.jpg", caption: "A Mirinda soda, one of the snacks grabbed between family visits, An Giang" },
-      { src: "assets/727847798_10234244292876947_2207519777920350791_n.jpg", caption: "A quick snack while visiting distant relatives, An Giang — mostly family time, not restaurant time" }
+      { src: "/assets/730016309_10234244292196930_3226198866620561139_n.jpg", caption: "A Mirinda soda, one of the snacks grabbed between family visits, An Giang" },
+      { src: "/assets/727847798_10234244292876947_2207519777920350791_n.jpg", caption: "A quick snack while visiting distant relatives, An Giang — mostly family time, not restaurant time" }
     ],
     hiddenGems: [
       "A family-run boat tour that goes further into the canals than the tour buses reach",
@@ -314,8 +314,8 @@ const DESTINATIONS = [
       "Go at first light for the floating markets; they wind down by mid-morning"
     ],
     gallery: [
-      { src: "assets/729716392_10234244293436961_8665344624661886448_n.jpg", caption: "A shopfront-lined street in An Giang" },
-      { src: "assets/729705979_10234244291756919_8628753213251772256_n.jpg", caption: "Roosters loose in a yard between houses, An Giang" }
+      { src: "/assets/729716392_10234244293436961_8665344624661886448_n.jpg", caption: "A shopfront-lined street in An Giang" },
+      { src: "/assets/729705979_10234244291756919_8628753213251772256_n.jpg", caption: "Roosters loose in a yard between houses, An Giang" }
     ],
     rating: 9,
     wouldReturn: "Without question — this was the trip's quiet, unexpected favorite.",
@@ -327,8 +327,8 @@ const DESTINATIONS = [
     country: "Vietnam",
     year: 2026,
     tag: "Old Quarter & Egg Coffee",
-    heroImg: "assets/uploads/hanoi-1.jpg",
-    cardImg: "assets/uploads/hanoi-2.jpg",
+    heroImg: "/assets/uploads/hanoi-1.jpg",
+    cardImg: "/assets/uploads/hanoi-2.jpg",
     coords: { top: "38.3%", left: "79.4%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
@@ -353,11 +353,11 @@ const DESTINATIONS = [
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/734733254_10234321424205182_6067649309802778866_n.jpg?w=1000", caption: "A cafe right on the famous Train Street, Hanoi" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/07/731834741_10234321412204882_4177174544736822969_n.jpg?w=1000", caption: "The street food vendor at Bún Chả Hương Liên, the 'Obama Bun Cha' spot, Hanoi" },
-      { src: "assets/731423395_10234303714522451_1575235187158676679_n.jpg", caption: "Bánh xèo (Vietnamese sizzling crepe) with a mountain of fresh herbs — wherever they took us, Hanoi" },
-      { src: "assets/731823926_10234310761898631_8404870599121834746_n.jpg", caption: "A bowl of noodle soup at Hủ Tiếu Minh Châu, Hanoi" },
-      { src: "assets/731442625_10234310762658650_6428412735738124114_n.jpg", caption: "A rice plate with roast pork and char siu at Hủ Tiếu Minh Châu, Hanoi" },
-      { src: "assets/734684973_10234311544878205_7793019265570335898_n.jpg", caption: "Back at the same Train Street cafe for round two — an iced matcha this time, Hanoi" },
-      { src: "assets/731787280_10234303142148142_2588111245136424546_n.jpg", caption: "Iced egg coffee from Egg Coffee & More, 39 Bát Sứ, Hanoi" }
+      { src: "/assets/731423395_10234303714522451_1575235187158676679_n.jpg", caption: "Bánh xèo (Vietnamese sizzling crepe) with a mountain of fresh herbs — wherever they took us, Hanoi" },
+      { src: "/assets/731823926_10234310761898631_8404870599121834746_n.jpg", caption: "A bowl of noodle soup at Hủ Tiếu Minh Châu, Hanoi" },
+      { src: "/assets/731442625_10234310762658650_6428412735738124114_n.jpg", caption: "A rice plate with roast pork and char siu at Hủ Tiếu Minh Châu, Hanoi" },
+      { src: "/assets/734684973_10234311544878205_7793019265570335898_n.jpg", caption: "Back at the same Train Street cafe for round two — an iced matcha this time, Hanoi" },
+      { src: "/assets/731787280_10234303142148142_2588111245136424546_n.jpg", caption: "Iced egg coffee from Egg Coffee & More, 39 Bát Sứ, Hanoi" }
     ],
     hiddenGems: [
       "The train street, where a working railway runs inches from café tables",
@@ -369,7 +369,7 @@ const DESTINATIONS = [
       "Try the egg coffee once even if it sounds strange; it always wins people over",
       "Book the overnight train in advance during peak season"
     ],
-    gallery: ["assets/uploads/hanoi-1.jpg", "assets/uploads/hanoi-2.jpg", ...photoSet("hanoi").gallery.filter(src => !src.includes("731834741_10234321412204882") && !src.includes("734733254_10234321424205182"))],
+    gallery: ["/assets/uploads/hanoi-1.jpg", "/assets/uploads/hanoi-2.jpg", ...photoSet("hanoi").gallery.filter(src => !src.includes("731834741_10234321412204882") && !src.includes("734733254_10234321424205182"))],
     rating: 9,
     wouldReturn: "Every time we're in the region — it's become a tradition, not a stop.",
     relatedAdventure: "southeast-asia-2026"
@@ -380,8 +380,8 @@ const DESTINATIONS = [
     country: "Vietnam",
     year: 2026,
     tag: "Limestone Karsts",
-    heroImg: "assets/731443813_10234280477301535_2663361984624580910_n.jpg",
-    cardImg: "assets/731653302_10234280818070054_915450970668348977_n.jpg",
+    heroImg: "/assets/731443813_10234280477301535_2663361984624580910_n.jpg",
+    cardImg: "/assets/731653302_10234280818070054_915450970668348977_n.jpg",
     coords: { top: "38.34%", left: "79.78%" },
     quickFacts: [
       { label: "Best time to go", value: "Oct – Dec" },
@@ -399,12 +399,12 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: "Cua Vàng Restaurant", location: "Ha Long Bay", rating: 4.5, review: "Fresh local seafood, right where you'd want it.", communityReview: "A large, well-known seafood spot near the pier known for its live tanks and crab hotpot — reviews run hot and cold, with many praising the fresh seafood and harbor views while a vocal minority flags it as a tourist-priced trap.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 4.6, review: "A quality overnight cruise is often the best dining experience in the bay — squid pulled that morning, grilled on deck at sunset." }
+      { name: "On-board cruise dining", location: "Ha Long Bay", rating: 1, review: "Beautifully plated, but the food itself didn't live up to how it looked. Service was genuinely top-tier — attentive, gracious, hard to fault — but the dining hall was open-air the whole time, so it was hot and humid through every meal." }
     ],
     foodPhotos: [
-      { src: "assets/731443813_10234280477301535_2663361984624580910_n.jpg", caption: "Sunset cocktails with a Ha Long Bay karst view from the cruise deck" },
-      { src: "assets/731653302_10234280818070054_915450970668348977_n.jpg", caption: "A lineup of Vietnamese beers — Bia Saigon, Bia Hà Nội, and 333 — during dinner on the cruise" },
-      { src: "assets/731418180_10234290411909894_4899317556468078655_n.jpg", caption: "Another artfully poured cocktail from the Ha Long Bay cruise" }
+      { src: "/assets/731443813_10234280477301535_2663361984624580910_n.jpg", caption: "Sunset cocktails with a Ha Long Bay karst view from the cruise deck" },
+      { src: "/assets/731653302_10234280818070054_915450970668348977_n.jpg", caption: "A lineup of Vietnamese beers — Bia Saigon, Bia Hà Nội, and 333 — during dinner on the cruise" },
+      { src: "/assets/731418180_10234290411909894_4899317556468078655_n.jpg", caption: "Another artfully poured cocktail from the Ha Long Bay cruise" }
     ],
     hiddenGems: [
       "Lan Ha Bay, the quieter southern cousin with far fewer boats",
@@ -417,25 +417,25 @@ const DESTINATIONS = [
       "Pack light, breathable layers — it's humid on the water even in cooler months"
     ],
     gallery: [
-      { src: "assets/731462278_10234280330017853_6494262680817066985_n.jpg", caption: "The ferry crossing to Ha Long Bay, passing Ha Long City's Bãi Cháy Bridge and Sun Wheel" },
-      { src: "assets/731442627_10234298103302174_456363928322432437_n.jpg", caption: "The view from the cruise cabin balcony during the Cat Ba excursion" },
-      { src: "assets/731350627_10234288980714115_3876926281289961523_n.jpg", caption: "A thatched-roof terrace overlooking the water on Cat Ba" },
-      { src: "assets/731253220_10234288979594087_3370571925910982938_n.jpg", caption: "The garden courtyard view from the room on Cat Ba" },
-      { src: "assets/731357237_10234288572103900_1460906854748287637_n.jpg", caption: "A stone pool inside a cave on the Cat Ba excursion" },
-      { src: "assets/731462274_10234288568303805_2869660195470228643_n.jpg", caption: "Smiling inside the cave opening, Cat Ba" },
-      { src: "assets/731339064_10234288566023748_8457926529781139519_n.jpg", caption: "Looking out through a cave opening to the jungle beyond, Cat Ba" },
-      { src: "assets/731344401_10234288564343706_3859608978360670243_n.jpg", caption: "Deep inside the cave, stalactites lit up along the passage" },
-      { src: "assets/731380556_10234288562023648_1749717823617109440_n.jpg", caption: "The stairway leading into the cave, Cat Ba" },
-      { src: "assets/731357277_10234288554823468_8451648677442561080_n.jpg", caption: "A family selfie on Cat Ba, karst mountains behind" },
-      { src: "assets/731808121_10234288551023373_8318975215006906580_n.jpg", caption: "The entrance sign for Trung Trang Cave, Cat Ba Island" },
-      { src: "assets/731334943_10234288025690240_8817777232877131120_n.jpg", caption: "A floating fishing village tucked beneath the karst cliffs" },
-      { src: "assets/731761520_10234288025010223_4530947701035154892_n.jpg", caption: "Boats moored below the limestone cliffs in the mist" },
-      { src: "assets/731253021_10234286532452910_1632683376558443697_n.jpg", caption: "Sunset over Ha Long Bay's karst islands" },
-      { src: "assets/731423088_10234280696907025_2300768935372453071_n.jpg", caption: "The sky glowing pink and orange over the bay at dusk" },
-      { src: "assets/730244976_10234280331857899_6789896394839212795_n.jpg", caption: "A vendor rowing her boat alongside the cruise ship, selling snacks and drinks" }
+      { src: "/assets/731462278_10234280330017853_6494262680817066985_n.jpg", caption: "The ferry crossing to Ha Long Bay, passing Ha Long City's Bãi Cháy Bridge and Sun Wheel" },
+      { src: "/assets/731442627_10234298103302174_456363928322432437_n.jpg", caption: "The view from the cruise cabin balcony during the Cat Ba excursion" },
+      { src: "/assets/731350627_10234288980714115_3876926281289961523_n.jpg", caption: "A thatched-roof terrace overlooking the water on Cat Ba" },
+      { src: "/assets/731253220_10234288979594087_3370571925910982938_n.jpg", caption: "The garden courtyard view from the room on Cat Ba" },
+      { src: "/assets/731357237_10234288572103900_1460906854748287637_n.jpg", caption: "A stone pool inside a cave on the Cat Ba excursion" },
+      { src: "/assets/731462274_10234288568303805_2869660195470228643_n.jpg", caption: "Smiling inside the cave opening, Cat Ba" },
+      { src: "/assets/731339064_10234288566023748_8457926529781139519_n.jpg", caption: "Looking out through a cave opening to the jungle beyond, Cat Ba" },
+      { src: "/assets/731344401_10234288564343706_3859608978360670243_n.jpg", caption: "Deep inside the cave, stalactites lit up along the passage" },
+      { src: "/assets/731380556_10234288562023648_1749717823617109440_n.jpg", caption: "The stairway leading into the cave, Cat Ba" },
+      { src: "/assets/731357277_10234288554823468_8451648677442561080_n.jpg", caption: "A family selfie on Cat Ba, karst mountains behind" },
+      { src: "/assets/731808121_10234288551023373_8318975215006906580_n.jpg", caption: "The entrance sign for Trung Trang Cave, Cat Ba Island" },
+      { src: "/assets/731334943_10234288025690240_8817777232877131120_n.jpg", caption: "A floating fishing village tucked beneath the karst cliffs" },
+      { src: "/assets/731761520_10234288025010223_4530947701035154892_n.jpg", caption: "Boats moored below the limestone cliffs in the mist" },
+      { src: "/assets/731253021_10234286532452910_1632683376558443697_n.jpg", caption: "Sunset over Ha Long Bay's karst islands" },
+      { src: "/assets/731423088_10234280696907025_2300768935372453071_n.jpg", caption: "The sky glowing pink and orange over the bay at dusk" },
+      { src: "/assets/730244976_10234280331857899_6789896394839212795_n.jpg", caption: "A vendor rowing her boat alongside the cruise ship, selling snacks and drinks" }
     ],
-    rating: 10,
-    wouldReturn: "Yes — this was the single most beautiful evening of the whole trip.",
+    rating: 6.5,
+    wouldReturn: "Yes — but not with extended family.",
     relatedAdventure: "southeast-asia-2026"
   }
 ,
@@ -535,8 +535,8 @@ const DESTINATIONS = [
     country: `Honduras`,
     year: 2015,
     tag: `Central America 2015 Stop`,
-    heroImg: "assets/515929606_10229977792777111_8978908118727086565_n.jpg",
-    cardImg: "assets/515929606_10229977792777111_8978908118727086565_n.jpg",
+    heroImg: "/assets/515929606_10229977792777111_8978908118727086565_n.jpg",
+    cardImg: "/assets/515929606_10229977792777111_8978908118727086565_n.jpg",
     heroCaption: "Mahogany Bay, Roatán, as the sun came up",
     coords: { top: "42.25%", left: "24.63%" },
     quickFacts: [
@@ -554,7 +554,7 @@ const DESTINATIONS = [
     ],
     restaurants: [],
     foodPhotos: [
-      { src: "assets/515516073_10229977800017292_3960487124854172279_n.jpg", caption: "Mimosas for breakfast at Mahogany Bay, Roatán" }
+      { src: "/assets/515516073_10229977800017292_3960487124854172279_n.jpg", caption: "Mimosas for breakfast at Mahogany Bay, Roatán" }
     ],
     hiddenGems: [
       "West Bay's quieter north end, away from the cruise-ship crowds",
@@ -564,7 +564,7 @@ const DESTINATIONS = [
       "Book dive trips a day ahead in high season",
       "Check the weather for Mar – Aug before locking in dates"
     ],
-    gallery: [{ src: "assets/515929606_10229977792777111_8978908118727086565_n.jpg", caption: "Mahogany Bay, Roatán, as the sun came up" }, { src: "assets/515516073_10229977800017292_3960487124854172279_n.jpg", caption: "The girls goofing around on the ship's deck" }],
+    gallery: [{ src: "/assets/515929606_10229977792777111_8978908118727086565_n.jpg", caption: "Mahogany Bay, Roatán, as the sun came up" }, { src: "/assets/515516073_10229977800017292_3960487124854172279_n.jpg", caption: "The girls goofing around on the ship's deck" }],
     rating: 9,
     wouldReturn: "Yes — the reef alone is worth the return trip.",
     relatedAdventure: "central-america-2015"
@@ -637,9 +637,9 @@ const DESTINATIONS = [
       { name: "The Ivy", location: "England", rating: 4.3, review: "The Ivy, located in the heart of London's West End, is a beautiful art deco restaurant that serves classic British cuisine, including their famous shepherd's pie.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=900", communityReview: "A century-old London fixture prized more for the glamorous Art Deco room and reliably good service than groundbreaking food — reviewers call the shepherd's pie and classic British menu comforting rather than exciting, with a few flagging steep drink prices.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/517210330_10230170218787641_3787990984141268640_n.jpg", caption: "A smoked salmon galette with lime, England — spot lost to time" },
-      { src: "assets/516996216_10230170216707589_8247237402905925126_n.jpg", caption: "A casual cafe lunch, England — spot lost to time" },
-      { src: "assets/516941813_10230170016742590_5662636884802729395_n.jpg", caption: "Croissants and hot chocolate at a cafe, England — spot lost to time" }
+      { src: "/assets/517210330_10230170218787641_3787990984141268640_n.jpg", caption: "A smoked salmon galette with lime, England — spot lost to time" },
+      { src: "/assets/516996216_10230170216707589_8247237402905925126_n.jpg", caption: "A casual cafe lunch, England — spot lost to time" },
+      { src: "/assets/516941813_10230170016742590_5662636884802729395_n.jpg", caption: "Croissants and hot chocolate at a cafe, England — spot lost to time" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -651,7 +651,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en5.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/en5.jpg?w=1000", { src: "/assets/515994802_10230170094144525_7267567438112034734_n.jpg", caption: "Platform 9¾ at King's Cross Station" }, { src: "/assets/517438700_10230170032342980_7125185404296114390_n.jpg", caption: "Hay's Galleria" }, { src: "/assets/517376931_10230170030702939_5754504852650289047_n.jpg", caption: "A City of London boundary marker" }, { src: "/assets/517460333_10230169896819592_3899396138696988732_n.jpg", caption: "The National Gallery at Trafalgar Square" }, { src: "/assets/516853008_10230169894019522_2275097514825792089_n.jpg", caption: "The Gold State Coach at the Royal Mews" }, { src: "/assets/516741647_10230169796817092_8397211656144967946_n.jpg", caption: "A family photo along the Thames, with the London skyline behind" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -729,12 +729,12 @@ const DESTINATIONS = [
       { name: "Kopar", location: "Iceland", rating: 4.5, review: "This seafood restaurant located in Reykjavik has stunning views of the harbor and specializes in fresh Icelandic seafood with a modern twist.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=900", communityReview: "A harborside seafood favorite reviewers consistently praise for the fresh cod and langoustine dishes, warm service, and views of the docking boats — the multi-course \"Kopar adventure\" tasting menu gets frequent recommendations.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Matur og Drykkur", location: "Iceland", rating: 4.6, review: "Located in Reykjavik's Grandi harbour area, this restaurant features traditional Icelandic dishes made with locally-sourced ingredients. Don't miss the fermented shark!", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=900", communityReview: "A Michelin-recognized spot reinterpreting old Icelandic recipes (including cod heads and horse tartare) in a relaxed, unpretentious setting — reviewers consistently call the food a genuine highlight of their Iceland trip, with the horse tartare and halibut soup among the most-recommended dishes.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Slippbarinn", location: "Iceland", rating: 4.3, review: "This hip bar in Reykjavik's trendy 101 district serves creative cocktails and small plates made with local and organic ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=900", communityReview: "A lively harborside cocktail bar reviewers praise for inventive, seasonally-driven drinks and a welcoming vibe — a popular pick for an after-dinner nightcap rather than a full meal.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Icelandic Street Food", location: "Reykjavik", rating: 4.7, review: "A cozy, no-frills spot serving traditional lamb soup and shellfish soup in hollowed-out bread bowls, with free refills and a friendly, homey feel.", img: "assets/37027414_10212544570117440_9023059301949767680_n.jpg", communityReview: "One of Reykjavik's most beloved budget eats — reviewers rave about the lamb soup bread bowl, the free refills, and owner Unnar's warm hospitality, with the fisherman's favorite (mashed fish and potato with rye bread) also getting frequent praise.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Icelandic Street Food", location: "Reykjavik", rating: 4.7, review: "A cozy, no-frills spot serving traditional lamb soup and shellfish soup in hollowed-out bread bowls, with free refills and a friendly, homey feel.", img: "/assets/37027414_10212544570117440_9023059301949767680_n.jpg", communityReview: "One of Reykjavik's most beloved budget eats — reviewers rave about the lamb soup bread bowl, the free refills, and owner Unnar's warm hospitality, with the fisherman's favorite (mashed fish and potato with rye bread) also getting frequent praise.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/37043084_10212544570437448_3759870922752786432_n.jpg", caption: "A dark, malty Icelandic beer alongside the bread bowl soup, Icelandic Street Food, Reykjavik" },
-      { src: "assets/37036448_10212544569637428_3574301839912337408_n.jpg", caption: "The fisherman's favorite — mashed fish and potato with rye bread, and a hardfiskur-style dark rye alongside, Icelandic Street Food, Reykjavik" },
-      { src: "assets/37042052_10212544568997412_8245932725479931904_n.jpg", caption: "The sandwich board menu outside Icelandic Street Food, Reykjavik" }
+      { src: "/assets/37043084_10212544570437448_3759870922752786432_n.jpg", caption: "A dark, malty Icelandic beer alongside the bread bowl soup, Icelandic Street Food, Reykjavik" },
+      { src: "/assets/37036448_10212544569637428_3574301839912337408_n.jpg", caption: "The fisherman's favorite — mashed fish and potato with rye bread, and a hardfiskur-style dark rye alongside, Icelandic Street Food, Reykjavik" },
+      { src: "/assets/37042052_10212544568997412_8245932725479931904_n.jpg", caption: "The sandwich board menu outside Icelandic Street Food, Reykjavik" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -746,7 +746,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Aug before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic27.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic28.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/ic27.jpg?w=1000", { src: "/assets/37038446_10212544564637303_4556296329176809472_n.jpg", caption: "Taking the Icelandic Pledge at the airport" }, { src: "/assets/37574206_10212588119766154_3775003965142335488_n.jpg", caption: "A family photo by a waterfall" }, { src: "/assets/37372171_10212572914146023_8407456764626206720_n.jpg", caption: "Sitting on the basalt columns at Reynisfjara black sand beach" }, { src: "/assets/37383533_10212572911985969_3686385733125275648_n.jpg", caption: "The Reynisdrangar sea stacks at Reynisfjara black sand beach" }, { src: "/assets/37286176_10212572910385929_3740681610169679872_n.jpg", caption: "A small stone cairn along a rocky trail" }, { src: "/assets/37324645_10212572909465906_7433136505746358272_n.jpg", caption: "Sheep blocking the road" }, { src: "/assets/37328003_10212572906745838_8216195557333401600_n.jpg", caption: "Inside the narrow canyon leading to Gljúfrabúi waterfall" }, { src: "/assets/37279741_10212572904025770_8958778356086603776_n.jpg", caption: "Standing behind a waterfall" }, { src: "/assets/37267243_10212572899065646_3483325619310166016_n.jpg", caption: "Family photo at Hallgrímskirkja, with the Leif Erikson statue behind" }, { src: "/assets/37267232_10212571238224126_2554039097551224832_n.jpg", caption: "Looking up at Gljúfrabúi waterfall from inside the canyon" }, { src: "/assets/37335574_10212566116536087_170871073393344512_n.jpg", caption: "Soaking in the Blue Lagoon" }, { src: "/assets/37214927_10212562885615316_193020593400971264_n.jpg", caption: "Gearing up for Silfra fissure snorkeling at Þingvellir National Park" }, { src: "/assets/37101796_10212552457274614_2592850573816496128_n.jpg", caption: "Willard the Wood-man, a wooden sculpture spotted along the road" }, { src: "/assets/37221724_10212552459114660_2378478572705677312_n.jpg", caption: "Kerið volcanic crater lake" }, { src: "/assets/37185168_10212557069109907_5230920045088997376_n.jpg", caption: "Snowmobiling out on the glacier" }, { src: "/assets/37228322_10212552328351391_7801015633063182336_n.jpg", caption: "Strokkur geyser erupting" }, { src: "/assets/37075190_10212552326511345_7458789018260471808_n.jpg", caption: "A flock of geese crossing the road" }, { src: "/assets/37161295_10212552316511095_202594092683624448_n.jpg", caption: "Walking through the rift valley at Þingvellir National Park, between the tectonic plates" }, { src: "/assets/37053024_10212544567677379_3617870885811126272_n.jpg", caption: "Posing by a historic wooden gazebo in Reykjavik" }, { src: "/assets/36996961_10212544566197342_2974530101070266368_n.jpg", caption: "A family selfie in a Reykjavik park" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -781,9 +781,9 @@ const DESTINATIONS = [
       { name: "Tintoque", location: "Puerto Vallarta", rating: 4.3, review: "A relatively new addition to Puerto Vallarta's food scene, Tintoque quickly gained popularity among locals and tourists alike. The menu features contemporary Mexican cuisine using fresh, locally-sourced ingredients.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=900", communityReview: "Widely cited as Puerto Vallarta's most ambitious fine-dining restaurant, with reviewers frequently ranking it above the more famous, longer-established spots in town — the tasting menu is the move, though a rare reviewer finds it overpriced for the portions.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/53720696_10214122648728419_3106605701246484480_n.jpg", caption: "A Heineken at sunset on the beach, Puerto Vallarta" },
-      { src: "assets/53693994_10214122248198406_9036206162483085312_n.jpg", caption: "Huevos rancheros with bacon and hash browns, made by the personal chef we hired for the week, Puerto Vallarta" },
-      { src: "assets/53581972_10214119014637569_6629059928617123840_n.jpg", caption: "The whole family at a beachside lunch table, likely a meal from the personal chef we hired for the week, Puerto Vallarta" }
+      { src: "/assets/53720696_10214122648728419_3106605701246484480_n.jpg", caption: "A Heineken at sunset on the beach, Puerto Vallarta" },
+      { src: "/assets/53693994_10214122248198406_9036206162483085312_n.jpg", caption: "Huevos rancheros with bacon and hash browns, made by the personal chef we hired for the week, Puerto Vallarta" },
+      { src: "/assets/53581972_10214119014637569_6629059928617123840_n.jpg", caption: "The whole family at a beachside lunch table, likely a meal from the personal chef we hired for the week, Puerto Vallarta" }
     ],
     hiddenGems: [
 `Hiring a personal chef for the week — cheaper and easier than it sounds, and they'll do the grocery shopping for you too`,
@@ -796,7 +796,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Nov – Apr before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv5.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/pv5.jpg?w=1000", { src: "/assets/54433360_10214143757736131_8482433905633263616_n.jpg", caption: "Posing by one of the bronze sculptures along the Malecón at night" }, { src: "/assets/54436098_10214143758456149_6465513492450377728_n.jpg", caption: "Bodyboarding in the waves" }, { src: "/assets/54358269_10214136740680709_1911575405261750272_n.jpg", caption: "Looking out at the ocean in matching Puerto Vallarta pullovers" }, { src: "/assets/53853922_10214133980011694_5005937417467723776_n.jpg", caption: "On a boat trip along the coast" }, { src: "/assets/54396412_10214124727380384_7658028127305596928_n.jpg", caption: "Sunset over the beach restaurants" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -921,7 +921,7 @@ const DESTINATIONS = [
       { name: "Coopers Old Time Pit Bar-B-Que", location: "Hill Country, Texas", rating: 4.3, review: "This iconic BBQ joint in Llano, Texas, is known for its tender and smoky brisket and sausage. The restaurant offers a casual dining experience with a family-friendly atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h3.jpg?w=900", communityReview: "A beloved old-school pit stop reviewers praise for the pork ribs and old-fashioned cafeteria-style ordering — long a favorite on Hill Country barbecue road trips, though a few recent reviews note quality has grown inconsistent compared to years past.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/513940244_10229798718220359_1507300034350181599_n.jpg", caption: "A Corona out on the lake, Hill Country" }
+      { src: "/assets/513940244_10229798718220359_1507300034350181599_n.jpg", caption: "A Corona out on the lake, Hill Country" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -966,11 +966,11 @@ const DESTINATIONS = [
       { name: "Staplehouse", location: "Atlanta, Georgia", rating: 4.5, review: "This restaurant serves up modern American cuisine using seasonal and locally-sourced ingredients. It's also a non-profit, with all proceeds going to support the Giving Kitchen, which helps restaurant workers in need.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a1.jpg?w=900", communityReview: "One of Atlanta's most talked-about tasting-menu restaurants, with reviewers consistently calling the seasonal, farm-driven courses outstanding — the nonprofit model supporting the Giving Kitchen charity adds a layer most diners mention appreciating.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Bacchanalia", location: "Atlanta, Georgia", rating: 4.6, review: "This upscale restaurant is known for its innovative, contemporary American cuisine and a extensive wine selection.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a7.jpg?w=900", communityReview: "A Michelin-starred, James Beard Award-winning restaurant reviewers regularly call Atlanta's top special-occasion dinner — the four-course prix fixe menu draws consistent praise, with most reviews recommending booking two to three weeks ahead.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Fox Bros. Bar-B-Q", location: "Atlanta, Georgia", rating: 4.3, review: "A favorite among locals and visitors alike, this restaurant is known for its delicious BBQ meats and sides.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/a5.jpg?w=900", communityReview: "A near-legendary Atlanta BBQ spot with a devoted following — reviewers consistently praise the brisket, burnt ends, and mac and cheese, though a small handful report an inconsistent off night with dry meat. Go early; ribs sell out.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Checkers", location: "Atlanta, Georgia", rating: 4.0, review: "A fast-food drive-thru chain known for its seasoned fries and bold burgers — a quick, no-frills stop on the way through town.", img: "assets/51877576_10213954090074558_6144938065484840960_n.jpg", communityReview: "A regional fast-food chain with a devoted fry following — reviewers consistently single out the seasoned fries as the highlight, with the burgers and shakes generally rated as solid, cheap, late-night eats rather than a destination meal.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Checkers", location: "Atlanta, Georgia", rating: 4.0, review: "A fast-food drive-thru chain known for its seasoned fries and bold burgers — a quick, no-frills stop on the way through town.", img: "/assets/51877576_10213954090074558_6144938065484840960_n.jpg", communityReview: "A regional fast-food chain with a devoted fry following — reviewers consistently single out the seasoned fries as the highlight, with the burgers and shakes generally rated as solid, cheap, late-night eats rather than a destination meal.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/51779315_10213954090274563_8761611001826115584_n.jpg", caption: "Grilled short ribs and pad thai, Atlanta — spot lost to time" },
-      { src: "assets/51797988_10213954089994556_2739641075546193920_n.jpg", caption: "A fried dessert with whipped cream and orange, Atlanta — spot lost to time" }
+      { src: "/assets/51779315_10213954090274563_8761611001826115584_n.jpg", caption: "Grilled short ribs and pad thai, Atlanta — spot lost to time" },
+      { src: "/assets/51797988_10213954089994556_2739641075546193920_n.jpg", caption: "A fried dessert with whipped cream and orange, Atlanta — spot lost to time" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1029,7 +1029,7 @@ const DESTINATIONS = [
 `Check the weather for Dec – Mar before locking in dates`,
 `Driving up in winter? Don't trust a rental car from a warm-weather state to be ready — bring your own snow chains and all-weather washer fluid`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s2.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/s2.jpg?w=1000", { src: "/assets/515565536_10229935956971242_2480960559571673734_n.jpg", caption: "The girls in the snow near a fenced trail" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1063,12 +1063,12 @@ const DESTINATIONS = [
       { name: "Rudy & Paco Restaurant & Bar", location: "Galveston, Texas", rating: 4.7, review: "Offers a blend of South American and Caribbean cuisines, known for its steaks and seafood.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g1-1.jpg?w=900", communityReview: "One of Galveston's most consistently praised upscale restaurants — reviewers repeatedly call it \"first class\" and highlight standout dishes like the Pargo entrees, with attentive service earning near-universal mentions.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Shrimp 'N Stuff Downtown", location: "Galveston, Texas", rating: 4.6, review: "Casual eatery serving up delicious fried shrimp, oysters, and other seafood specialties.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4-1.jpg?w=900", communityReview: "A no-frills local institution since 1976, beloved for generous portions and honest prices — reviewers consistently call it the place they return to on every Galveston trip, with the stuffed shrimp and gumbo as top picks.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "The Sunflower Bakery & Café", location: "Galveston, Texas", rating: 4.3, review: "Quaint café offering homemade baked goods, sandwiches, and a cozy atmosphere.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8-1.jpg?w=900", communityReview: "A beloved East End neighborhood breakfast spot reviewers call a Galveston tradition — the Grilled Cinnamon Roll and Oysters Benedict come up again and again, with the from-scratch bakery a consistent highlight.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Aka Sushi House", location: "Houston, Texas (stop en route)", rating: 4.4, review: "A neighborhood sushi bar in Houston's Upper Kirby district, stopped at on the drive in to Galveston — small plates, creative rolls, and a lively happy hour scene.", img: "assets/515440512_10229998958146232_6593207122436081835_n.jpg", communityReview: "A longtime Houston sushi favorite reviewers praise for consistently fresh fish and creative specialty rolls like the Sexy Roll — the happy hour and reverse happy hour deals get frequent mentions as some of the best sushi value in the city.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Sweet Paris Crêperie & Café", location: "Houston, Texas (Rice Village, stop en route)", rating: 4.2, review: "A cozy French-inspired crêperie in Rice Village, another stop on the way in to Galveston — sweet and savory crêpes made fresh to order, including a torched s'mores crêpe stuffed with Nutella.", img: "assets/515014299_10229998782461840_2194956913837795926_n.jpg", communityReview: "A Rice Village original since 2012 that's since expanded across Texas — reviewers consistently praise the wide crêpe selection and cozy cafe feel, with the sweet crêpes and espresso bar the most-recommended order.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Aka Sushi House", location: "Houston, Texas (stop en route)", rating: 4.4, review: "A neighborhood sushi bar in Houston's Upper Kirby district, stopped at on the drive in to Galveston — small plates, creative rolls, and a lively happy hour scene.", img: "/assets/515440512_10229998958146232_6593207122436081835_n.jpg", communityReview: "A longtime Houston sushi favorite reviewers praise for consistently fresh fish and creative specialty rolls like the Sexy Roll — the happy hour and reverse happy hour deals get frequent mentions as some of the best sushi value in the city.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sweet Paris Crêperie & Café", location: "Houston, Texas (Rice Village, stop en route)", rating: 4.2, review: "A cozy French-inspired crêperie in Rice Village, another stop on the way in to Galveston — sweet and savory crêpes made fresh to order, including a torched s'mores crêpe stuffed with Nutella.", img: "/assets/515014299_10229998782461840_2194956913837795926_n.jpg", communityReview: "A Rice Village original since 2012 that's since expanded across Texas — reviewers consistently praise the wide crêpe selection and cozy cafe feel, with the sweet crêpes and espresso bar the most-recommended order.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/515440512_10229998958146232_6593207122436081835_n.jpg", caption: "Sushi at Aka Sushi House, Houston, on the way in to Galveston" },
-      { src: "assets/515014299_10229998782461840_2194956913837795926_n.jpg", caption: "A s'mores crêpe at Sweet Paris, Rice Village, Houston, on the way in to Galveston" }
+      { src: "/assets/515440512_10229998958146232_6593207122436081835_n.jpg", caption: "Sushi at Aka Sushi House, Houston, on the way in to Galveston" },
+      { src: "/assets/515014299_10229998782461840_2194956913837795926_n.jpg", caption: "A s'mores crêpe at Sweet Paris, Rice Village, Houston, on the way in to Galveston" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1161,8 +1161,8 @@ const DESTINATIONS = [
       { name: "Mandolin Aegean Bistro", location: "Miami, Florida", rating: 4.3, review: "A charming Mediterranean restaurant with a cozy courtyard, serving delicious Greek and Turkish dishes.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m3.jpg?w=900", communityReview: "A Michelin Bib Gourmand pick reviewers consistently praise for the grilled octopus, lamb chops, and one of Miami's most charming courtyard settings — the Design District favorite books out weeks in advance for a reason.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/56652783_10214274591286888_7209962982774669312_n.jpg", caption: "Hot sauce and chips at an outdoor patio table, Miami — spot lost to time" },
-      { src: "assets/56360523_10214273275573996_8146468584348975104_n.jpg", caption: "An iced cocktail and a frozen daiquiri in a garden patio, Miami — spot lost to time" }
+      { src: "/assets/56652783_10214274591286888_7209962982774669312_n.jpg", caption: "Hot sauce and chips at an outdoor patio table, Miami — spot lost to time" },
+      { src: "/assets/56360523_10214273275573996_8146468584348975104_n.jpg", caption: "An iced cocktail and a frozen daiquiri in a garden patio, Miami — spot lost to time" }
     ],
     hiddenGems: [
 `Lock and Load Miami — a machine gun experience excursion, if you're looking for something a little different from the beach`,
@@ -1175,7 +1175,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Dec – Apr before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=1000", { src: "assets/56400374_10214279829737846_7350020259979460608_n.jpg", caption: "The crew at Lock and Load Miami's Machine Gun Experience" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/m1-1.jpg?w=1000", { src: "/assets/56400374_10214279829737846_7350020259979460608_n.jpg", caption: "The crew at Lock and Load Miami's Machine Gun Experience" }],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: null
@@ -1209,10 +1209,10 @@ const DESTINATIONS = [
       { name: `Guy Savoy`, location: `Las Vegas, Nevada`, rating: 4.5, review: `Situated at Caesars Palace, Guy Savoy is another Michelin three-star restaurant known for its elegant French cuisine, including signature dishes like artichoke and black truffle soup.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l2.jpg?w=900", communityReview: "Frequently compared to Joel Robuchon by regulars who dine at both — reviewers describe Guy Savoy's style as more restrained and minimalist by comparison, with the artichoke and black truffle soup and colors-of-caviar dish drawing consistent praise.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Raku`, location: `Las Vegas, Nevada`, rating: 4.6, review: `This off-Strip Japanese restaurant is beloved by locals and visitors alike. It serves authentic and delicious dishes such as skewered meats, sashimi, and robata-grilled items.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l1.jpg?w=900", communityReview: "Tucked into an unassuming Chinatown strip mall, Raku is regularly called one of the best Japanese restaurants in the country — reviewers rave about the housemade tofu and robata-grilled skewers, with local chefs and hospitality workers famously eating here late after their own shifts end.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Lotus of Siam`, location: `Las Vegas, Nevada`, rating: 4.3, review: `A Las Vegas institution for Thai cuisine, Lotus of Siam features a diverse menu with flavorful dishes like pad Thai, crispy duck, and spicy curries.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/l3.jpg?w=900", communityReview: "A James Beard Award-winning strip-mall institution that reviewers consistently call a Las Vegas must — the northern Thai dishes and crispy garlic prawns are the most-recommended orders, with the standing local advice being to skip the pad Thai and order what the chef is actually known for.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Hong Kong Garden Seafood & Dim Sum Cafe`, location: `Las Vegas, Nevada`, rating: 4.8, review: `A Spring Mountain Road Cantonese spot with authentic dim sum and seafood — good enough to bring old friends back together for a meal, even a coincidental Vegas reunion.`, img: "assets/80529702_10216139524109043_8019683396038950912_n.jpg", communityReview: "Reviewers consistently call this some of the most authentic, freshly-made dim sum in Las Vegas, with standout dishes like the beef tripe, shrimp har gow, and congee coming up again and again. A few mention service can lag during busy weekend rushes, but the food quality keeps people coming back.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Hong Kong Garden Seafood & Dim Sum Cafe`, location: `Las Vegas, Nevada`, rating: 4.8, review: `A Spring Mountain Road Cantonese spot with authentic dim sum and seafood — good enough to bring old friends back together for a meal, even a coincidental Vegas reunion.`, img: "/assets/80529702_10216139524109043_8019683396038950912_n.jpg", communityReview: "Reviewers consistently call this some of the most authentic, freshly-made dim sum in Las Vegas, with standout dishes like the beef tripe, shrimp har gow, and congee coming up again and again. A few mention service can lag during busy weekend rushes, but the food quality keeps people coming back.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/80529702_10216139524109043_8019683396038950912_n.jpg", caption: "Reunited with old friends near Hong Kong Garden Seafood & Dim Sum Cafe" }
+      { src: "/assets/80529702_10216139524109043_8019683396038950912_n.jpg", caption: "Reunited with old friends near Hong Kong Garden Seafood & Dim Sum Cafe" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1281,8 +1281,8 @@ const DESTINATIONS = [
     country: "USA",
     year: 2023,
     tag: "Ski Trip",
-    heroImg: "assets/uploads/vail-hero.jpg",
-    cardImg: "assets/uploads/vail-card.jpg",
+    heroImg: "/assets/uploads/vail-hero.jpg",
+    cardImg: "/assets/uploads/vail-card.jpg",
     coords: { top: "28.0%", left: "20.5%" },
     quickFacts: [
       { label: "Best time to go", value: "Dec – Mar" },
@@ -1302,7 +1302,7 @@ const DESTINATIONS = [
       { name: "Mountain Standard", location: "Vail", rating: 4.5, review: "A game-forward American restaurant known for elk, trout, and mountain-driven cooking.", img: img("vail-r2", 900, 650), communityReview: "Praised for its wild-game-forward menu and mountain-modern atmosphere — reviewers frequently call the trout and elk dishes standouts, with the lively bar scene a common highlight for après-ski.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/495276857_10229018550636657_2628968493062502312_n.jpg", caption: "A festive group dinner with bread, appetizers, and drinks near Lionshead — restaurant name lost to time" }
+      { src: "/assets/495276857_10229018550636657_2628968493062502312_n.jpg", caption: "A festive group dinner with bread, appetizers, and drinks near Lionshead — restaurant name lost to time" }
     ],
     hiddenGems: [
       "Booth Falls Trail, a quieter hike than the main resort trails",
@@ -1313,7 +1313,7 @@ const DESTINATIONS = [
       "Layer up — Vail's cold is a real, frequent topic of conversation among visitors",
       "Check the weather for Dec – Mar before locking in dates"
     ],
-    gallery: ["assets/uploads/vail-g1.jpg", "assets/uploads/vail-g2.jpg", "assets/uploads/vail-g3.jpg", "assets/uploads/vail-g4.jpg", "assets/uploads/vail-g5.jpg", "assets/uploads/vail-g6.jpg"],
+    gallery: ["/assets/uploads/vail-g1.jpg", "/assets/uploads/vail-g2.jpg", "/assets/uploads/vail-g3.jpg", "/assets/uploads/vail-g4.jpg", "/assets/uploads/vail-g5.jpg", "/assets/uploads/vail-g6.jpg", { src: "/assets/494724111_10229016668349601_3387473562695863425_n.jpg", caption: "A selfie by the lit-up trees at night, Vail" }, { src: "/assets/495599250_10229019361536929_8666814075176203833_n.jpg", caption: "A snowy creek winding through the trees, Vail" }, { src: "/assets/495187478_10229018552916714_2102089718307948246_n.jpg", caption: "The group, geared up for a day on the slopes, Vail" }],
     rating: 9,
     wouldReturn: "Yes — even after the $9k price tag and the cold.",
     relatedAdventure: null
@@ -1324,8 +1324,8 @@ const DESTINATIONS = [
     country: "USA",
     year: 2023,
     tag: "Colorado City Break",
-    heroImg: "assets/uploads/boulder-hero.jpg",
-    cardImg: "assets/uploads/boulder-card.jpg",
+    heroImg: "/assets/uploads/boulder-hero.jpg",
+    cardImg: "/assets/uploads/boulder-card.jpg",
     coords: { top: "27.8%", left: "20.8%" },
     quickFacts: [
       { label: "Best time to go", value: "Apr – Jun" },
@@ -1343,20 +1343,20 @@ const DESTINATIONS = [
     restaurants: [
       { name: "Frasca Food and Wine", location: "Boulder", rating: 4.7, review: "A Michelin-starred, James Beard Award-winning restaurant celebrating the food and wine of Friuli-Venezia Giulia, Italy.", img: img("boulder-r1", 900, 650), communityReview: "Widely regarded as one of Colorado's best restaurants — reviewers consistently praise the refined Friulian cooking, deep wine list, and warm, unpretentious service for a Michelin-starred room.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Black Cat Farmstead", location: "Boulder", rating: 4.6, review: "A farm-to-table restaurant with a rotating chef's tasting menu built around ingredients grown on its own historic farmstead.", img: img("boulder-r2", 900, 650), communityReview: "Diners consistently highlight the hyper-local, farm-driven tasting menu and unique private garden cabana seating as a standout Boulder-area experience.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Little Man Ice Cream", location: "Denver", rating: 4.5, review: "A Denver institution and Colorado must-visit — handcrafted, small-batch ice cream with rotating seasonal flavors.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "Widely called one of Denver's most beloved travel-guide stops, with its iconic giant milk-can storefront in Lower Highlands — reviewers consistently praise the handcrafted, small-batch flavors and vegan/gluten-free options, though a handful note long lines and occasional inconsistency between locations.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Kuluka Boba & Sweets", location: "Denver", rating: 4.8, review: "A family-owned boba and mochi-donut shop next door to Little Man — go for the ube milk tea and a rotating-flavor mochi donut.", img: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "A small, family-owned Westminster shop reviewers rave about for its fresh boba (never watered down) and inventive mochi donuts — praised for a bright, cozy boho interior and consistently friendly, fast service.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Little Man Ice Cream", location: "Denver", rating: 4.5, review: "A Denver institution and Colorado must-visit — handcrafted, small-batch ice cream with rotating seasonal flavors.", img: "/assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "Widely called one of Denver's most beloved travel-guide stops, with its iconic giant milk-can storefront in Lower Highlands — reviewers consistently praise the handcrafted, small-batch flavors and vegan/gluten-free options, though a handful note long lines and occasional inconsistency between locations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Kuluka Boba & Sweets", location: "Denver", rating: 4.8, review: "A family-owned boba and mochi-donut shop next door to Little Man — go for the ube milk tea and a rotating-flavor mochi donut.", img: "/assets/506401581_10229529063479159_2301455914477793530_n.jpg", communityReview: "A small, family-owned Westminster shop reviewers rave about for its fresh boba (never watered down) and inventive mochi donuts — praised for a bright, cozy boho interior and consistently friendly, fast service.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Boulder Book Store", location: "Boulder", rating: 4.7, review: "Boulder's largest independent bookstore on Pearl Street Mall — three floors, 100,000+ titles, and a coffee counter worth lingering over.", communityReview: "A Pearl Street institution reviewers consistently call one of the best independent bookstores they've visited, praising the multiple floors, knowledgeable staff, and easy-to-get-lost-in atmosphere.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Rocky Mountain Chocolate Factory", location: "Denver", rating: 4.2, review: "A Denver chocolatier in Writer's Square known for handmade truffles, fudge, and gourmet caramel apples.", communityReview: "Reviewers praise the freshness of the chocolate and caramel apples and consistently friendly staff, though a few note it can feel more grab-and-go than sit-down.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/506898347_10229529560891594_1878140097006799914_n.jpg", caption: "Bison bites and a whiskey flight on a misty patio near Rocky Mountain National Park" },
-      { src: "assets/506108846_10229529520810592_5996901956296534486_n.jpg", caption: "A bottle of DownSlope Straight Rye Whiskey, Colorado Craft Spirits" },
-      { src: "assets/506337455_10229529523130650_1920408555553337138_n.jpg", caption: "Fresh peaches from the Boulder Farmers Market" },
-      { src: "assets/506050953_10229529119320555_8958016516747642670_n.jpg", caption: "A festival bite at the Boulder Farmers Market" },
-      { src: "assets/506204953_10229529121000597_899615473264437947_n.jpg", caption: "Shaved ice and iced coffee at the Boulder Farmers Market" },
-      { src: "assets/506044781_10229529004517685_4421291974863926150_n.jpg", caption: "Iced coffees on a Boulder patio" },
-      { src: "assets/497614893_10229172406122948_959108040238049718_n.jpg", caption: "A coffee break at Boulder Book Store" },
-      { src: "assets/497522992_10229172407602985_4975420321164049360_n.jpg", caption: "Sharing a cup of cookies-and-cream at Rocky Mountain Chocolate Factory, Denver" }
+      { src: "/assets/506898347_10229529560891594_1878140097006799914_n.jpg", caption: "Bison bites and a whiskey flight on a misty patio near Rocky Mountain National Park" },
+      { src: "/assets/506108846_10229529520810592_5996901956296534486_n.jpg", caption: "A bottle of DownSlope Straight Rye Whiskey, Colorado Craft Spirits" },
+      { src: "/assets/506337455_10229529523130650_1920408555553337138_n.jpg", caption: "Fresh peaches from the Boulder Farmers Market" },
+      { src: "/assets/506050953_10229529119320555_8958016516747642670_n.jpg", caption: "A festival bite at the Boulder Farmers Market" },
+      { src: "/assets/506204953_10229529121000597_899615473264437947_n.jpg", caption: "Shaved ice and iced coffee at the Boulder Farmers Market" },
+      { src: "/assets/506044781_10229529004517685_4421291974863926150_n.jpg", caption: "Iced coffees on a Boulder patio" },
+      { src: "/assets/497614893_10229172406122948_959108040238049718_n.jpg", caption: "A coffee break at Boulder Book Store" },
+      { src: "/assets/497522992_10229172407602985_4975420321164049360_n.jpg", caption: "Sharing a cup of cookies-and-cream at Rocky Mountain Chocolate Factory, Denver" }
     ],
     hiddenGems: [
       "The Boulder Creek Path for a quiet walk away from Pearl Street",
@@ -1368,7 +1368,7 @@ const DESTINATIONS = [
       "Boulder and Denver are close enough to combine easily in one trip",
       "Check the weather for Apr – Jun before locking in dates"
     ],
-    gallery: ["assets/uploads/boulder-g1.jpg", "assets/uploads/boulder-g2.jpg", "assets/uploads/boulder-g3.jpg", "assets/uploads/boulder-g4.jpg", "assets/uploads/boulder-g5.jpg", "assets/uploads/boulder-g6.jpg", { src: "assets/506401581_10229529063479159_2301455914477793530_n.jpg", caption: "Little Man Ice Cream and Kuluka Boba & Sweets, next-door neighbors" }, { src: "assets/497580608_10229172404122898_8555339170528257827_n.jpg", caption: "Outside Rocky Mountain Chocolate Factory, Denver" }],
+    gallery: ["/assets/uploads/boulder-g1.jpg", "/assets/uploads/boulder-g2.jpg", "/assets/uploads/boulder-g3.jpg", "/assets/uploads/boulder-g4.jpg", "/assets/uploads/boulder-g5.jpg", "/assets/uploads/boulder-g6.jpg", { src: "/assets/506401581_10229529063479159_2301455914477793530_n.jpg", caption: "Little Man Ice Cream and Kuluka Boba & Sweets, next-door neighbors" }, { src: "/assets/497580608_10229172404122898_8555339170528257827_n.jpg", caption: "Outside Rocky Mountain Chocolate Factory, Denver" }],
     rating: 8,
     wouldReturn: "Yes — the lattes alone are worth it.",
     relatedAdventure: null
@@ -1401,19 +1401,19 @@ const DESTINATIONS = [
       { name: `Lahaina Grill (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `This award-winning restaurant offers a sophisticated dining experience with a menu featuring a fusion of Hawaiian and contemporary flavors. The atmosphere is elegant, and the service is exceptional.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=900", communityReview: "Lahaina Grill was lost in the August 2023 wildfire that destroyed most of historic Front Street — it no longer exists. Longtime visitors still remember it fondly as one of the best restaurants on the island; if you're headed to West Maui, consider supporting one of the businesses that reopened as part of the town's ongoing recovery.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Merriman's (Kapalua)`, location: `Maui, Hawaii`, rating: 4.6, review: `Located in the picturesque Kapalua resort area, Merriman's offers farm-to-table cuisine using locally sourced ingredients. The menu highlights the flavors of Hawaii and the Pacific Rim.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=900", communityReview: "Frequently named as the answer in the ongoing \"Merriman's vs. Mama's\" Maui debate — many locals and repeat visitors prefer it for the Kapalua Bay sunset views and consistent farm-to-table cooking, with happy hour on the patio a favorite recommendation.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Mill House (Waikapu)`, location: `Maui, Hawaii`, rating: 4.3, review: `Situated in a beautiful plantation-era building, The Mill House serves creative dishes crafted with ingredients grown on their own farm. It offers a unique farm-to-table experience with stunning views of the Maui Tropical Plantation.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=900", communityReview: "A genuinely farm-to-table spot reviewers appreciate for being a step off the resort circuit — the plantation setting and produce grown on-site get consistent praise, with sunset views over the valley as a frequent highlight.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Taverna (Kapalua)`, location: `Maui, Hawaii`, rating: 4.1, review: `An Italian spot at the Kapalua Golf Course with house-made pasta, wood-fired pizzas, and open-air seating looking out over the West Maui mountains. The crispy brussels sprouts and clam pasta were standouts.`, img: "assets/469781369_10227834028744350_4124340005845274160_n.jpg", communityReview: "Reviewers consistently praise the house-made pasta, calling dishes like the lasagna and manicotti some of the best they've had. The open-air patio overlooking the golf course and West Maui mountains is a regular highlight, though a few call it pricier than a typical lunch spot and note the dining room can get noisy on busy nights.", communitySource: "Yelp/Tripadvisor/The Infatuation" },
-      { name: `Duke's Beach House (Ka'anapali)`, location: `Maui, Hawaii`, rating: 4.3, review: `An oceanfront spot at the Honua Kai Resort on Ka'anapali's North Beach, with island-inspired cocktails, Hawaii Regional Cuisine, and the famously indulgent Hula Pie for dessert.`, img: "assets/469943835_10227833971822927_8757561996067566150_n.jpg", communityReview: "Reviewers consistently highlight the oceanfront setting, sunset views, and happy hour, with the Hula Pie coming up again and again as a must-order. Opinions on the food itself are more mixed — some call the fish and steaks excellent, while others find dishes overpriced or inconsistent for what's essentially a resort restaurant.", communitySource: "Tripadvisor" },
-      { name: `Honu (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `A laid-back oceanfront seafood-and-pizza spot on Front Street, known for its brick-oven pizzas, fresh catch, and turtle sightings from the patio.`, img: "assets/469130866_10227806005403784_4981938933684768242_n.jpg", communityReview: "The original Honu Seafood & Pizza was destroyed in the August 2023 Lahaina wildfire, but it reopened nearby as Honu Oceanside and reviewers say it's just as good if not better — praising the fresh seafood, cocktails, and oceanfront sunset views. If you visit today, you'll be eating at the rebuilt version.", communitySource: "Yelp/Tripadvisor" },
-      { name: `Maui Thai Bistro (Kihei)`, location: `Maui, Hawaii`, rating: 4.5, review: `A contemporary, kitsch-free Thai spot in South Maui, known for bold flavors, generous portions, and dishes like drunken noodles, larb, and pad thai loaded with fresh vegetables.`, img: "assets/468963138_10227802116106554_6882603753813864523_n.jpg", communityReview: "A consistent local and visitor favorite, with reviewers praising the bold, authentic flavors, generous portions, and customizable spice levels — the pad thai and drunken noodles come up again and again as standouts. Some travelers call it the best Thai food they've had in Maui.", communitySource: "Yelp/Tripadvisor/OpenTable" }
+      { name: `Taverna (Kapalua)`, location: `Maui, Hawaii`, rating: 4.1, review: `An Italian spot at the Kapalua Golf Course with house-made pasta, wood-fired pizzas, and open-air seating looking out over the West Maui mountains. The crispy brussels sprouts and clam pasta were standouts.`, img: "/assets/469781369_10227834028744350_4124340005845274160_n.jpg", communityReview: "Reviewers consistently praise the house-made pasta, calling dishes like the lasagna and manicotti some of the best they've had. The open-air patio overlooking the golf course and West Maui mountains is a regular highlight, though a few call it pricier than a typical lunch spot and note the dining room can get noisy on busy nights.", communitySource: "Yelp/Tripadvisor/The Infatuation" },
+      { name: `Duke's Beach House (Ka'anapali)`, location: `Maui, Hawaii`, rating: 4.3, review: `An oceanfront spot at the Honua Kai Resort on Ka'anapali's North Beach, with island-inspired cocktails, Hawaii Regional Cuisine, and the famously indulgent Hula Pie for dessert.`, img: "/assets/469943835_10227833971822927_8757561996067566150_n.jpg", communityReview: "Reviewers consistently highlight the oceanfront setting, sunset views, and happy hour, with the Hula Pie coming up again and again as a must-order. Opinions on the food itself are more mixed — some call the fish and steaks excellent, while others find dishes overpriced or inconsistent for what's essentially a resort restaurant.", communitySource: "Tripadvisor" },
+      { name: `Honu (Lahaina)`, location: `Maui, Hawaii`, rating: 4.5, review: `A laid-back oceanfront seafood-and-pizza spot on Front Street, known for its brick-oven pizzas, fresh catch, and turtle sightings from the patio.`, img: "/assets/469130866_10227806005403784_4981938933684768242_n.jpg", communityReview: "The original Honu Seafood & Pizza was destroyed in the August 2023 Lahaina wildfire, but it reopened nearby as Honu Oceanside and reviewers say it's just as good if not better — praising the fresh seafood, cocktails, and oceanfront sunset views. If you visit today, you'll be eating at the rebuilt version.", communitySource: "Yelp/Tripadvisor" },
+      { name: `Maui Thai Bistro (Kihei)`, location: `Maui, Hawaii`, rating: 4.5, review: `A contemporary, kitsch-free Thai spot in South Maui, known for bold flavors, generous portions, and dishes like drunken noodles, larb, and pad thai loaded with fresh vegetables.`, img: "/assets/468963138_10227802116106554_6882603753813864523_n.jpg", communityReview: "A consistent local and visitor favorite, with reviewers praising the bold, authentic flavors, generous portions, and customizable spice levels — the pad thai and drunken noodles come up again and again as standouts. Some travelers call it the best Thai food they've had in Maui.", communitySource: "Yelp/Tripadvisor/OpenTable" }
     ],
     foodPhotos: [
-      { src: "assets/469781369_10227834028744350_4124340005845274160_n.jpg", caption: "Crispy brussels sprouts and braised short rib at Taverna" },
-      { src: "assets/468963138_10227802116106554_6882603753813864523_n.jpg", caption: "Pad see ew with tofu and vegetables at Maui Thai Bistro" },
-      { src: "assets/469039345_10227802115826547_8872122186570149088_n.jpg", caption: "Larb with mint, red onion, and lettuce at Maui Thai Bistro" },
-      { src: "assets/469005762_10227802116826572_228668205226127657_n.jpg", caption: "Pad thai with bean sprouts at Maui Thai Bistro" },
-      { src: "assets/469943838_10227834028784351_4564830485447482684_n.jpg", caption: "Clam pasta at Taverna" },
-      { src: "assets/469943835_10227833971822927_8757561996067566150_n.jpg", caption: "A tropical cocktail at Duke's Beach House" },
-      { src: "assets/469130866_10227806005403784_4981938933684768242_n.jpg", caption: "A beer and a mango cocktail at Honu" }
+      { src: "/assets/469781369_10227834028744350_4124340005845274160_n.jpg", caption: "Crispy brussels sprouts and braised short rib at Taverna" },
+      { src: "/assets/468963138_10227802116106554_6882603753813864523_n.jpg", caption: "Pad see ew with tofu and vegetables at Maui Thai Bistro" },
+      { src: "/assets/469039345_10227802115826547_8872122186570149088_n.jpg", caption: "Larb with mint, red onion, and lettuce at Maui Thai Bistro" },
+      { src: "/assets/469005762_10227802116826572_228668205226127657_n.jpg", caption: "Pad thai with bean sprouts at Maui Thai Bistro" },
+      { src: "/assets/469943838_10227834028784351_4564830485447482684_n.jpg", caption: "Clam pasta at Taverna" },
+      { src: "/assets/469943835_10227833971822927_8757561996067566150_n.jpg", caption: "A tropical cocktail at Duke's Beach House" },
+      { src: "/assets/469130866_10227806005403784_4981938933684768242_n.jpg", caption: "A beer and a mango cocktail at Honu" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1425,7 +1425,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Oct before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h15.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/h15.jpg?w=1000", { src: "/assets/502617688_10229378524395776_2058535497150557649_n.jpg", caption: "Standing at the base of a rainbow eucalyptus tree along the Road to Hana" }, { src: "/assets/502582290_10229378524635782_6383422959828900633_n.jpg", caption: "A view of the coastline along the Road to Hana" }, { src: "/assets/502612465_10229378524195771_2694238368822074773_n.jpg", caption: "By the crashing waves at the Ke'anae Peninsula" }, { src: "/assets/502617750_10229378524715784_5766529539292463122_n.jpg", caption: "Overlooking Waianapanapa's black lava coastline" }, { src: "/assets/502586821_10229378524075768_2349931465129008585_n.jpg", caption: "A selfie at a lu'au dinner, leis and all" }, { src: "/assets/503503664_10229378522635732_5040527791670106737_n.jpg", caption: "A family selfie on a sunny Maui afternoon" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1436,7 +1436,7 @@ const DESTINATIONS = [
     country: `USA`,
     year: 2022,
     tag: `The Big Apple`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1600",
+    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1600",
     cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900",
     coords: { top: "27.4%", left: "29.4%" },
     quickFacts: [
@@ -1454,12 +1454,12 @@ const DESTINATIONS = [
 `Visit the Metropolitan Museum of Art`
     ],
     restaurants: [
-      { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=900", communityReview: "One of the few NYC restaurants that reviewers describe as living up to decades of hype — the seafood-focused tasting menu and dining room service are consistently called flawless, and unlike some legacy institutions, its reputation hasn't slipped.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Le Bernardin`, location: `New York City`, rating: 4.3, review: `A renowned seafood restaurant with three Michelin stars, known for its exquisite French cuisine and exceptional service.`, communityReview: "One of the few NYC restaurants that reviewers describe as living up to decades of hype — the seafood-focused tasting menu and dining room service are consistently called flawless, and unlike some legacy institutions, its reputation hasn't slipped.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Peter Luger Steak House`, location: `New York City`, rating: 4.5, review: `A classic steakhouse in Brooklyn, famous for its dry-aged steaks and old-world charm. Make sure to try their iconic porterhouse steak.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=900", communityReview: "A genuinely documented decline: Peter Luger lost its Michelin star in 2022 after a famously scathing zero-star New York Times review in 2019 that criticized inconsistent, underwhelming steak and brusque service. It still has passionate defenders who call the burger and the 138-year history worth it regardless — but go in knowing the food no longer has universal acclaim.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Momofuku Ssäm Bar`, location: `New York City`, rating: 4.6, review: `This trendy spot in the East Village offers innovative Asian-inspired dishes, such as their famous pork buns and bo ssäm.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=900", communityReview: "Momofuku Ssäm Bar has closed — both its original East Village spot and its 2021 relocation to South Street Seaport now show as permanently closed. David Chang's Momofuku Noodle Bar, the sister restaurant that started it all, is still open and thriving in the East Village if you want the brand experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Katz's Delicatessen`, location: `New York City`, rating: 4.3, review: `A legendary Jewish deli on the Lower East Side, serving up delicious pastrami and corned beef sandwiches. Don't forget to grab a ticket and try their "sendwich" experience.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=900", communityReview: "New York's most famous deli since 1888, and reviewers overwhelmingly say it earns the hype — the hand-carved pastrami and old-school counter chaos are consistently called a must-do. One fun bit of contrarian history: a 1979 New York Times ranking of the city's best Jewish delis actually rated Katz's pastrami the weakest of the top tier, calling it \"tough\" and \"barely edible\" — a reminder that even legends have critics.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Teppen Ramen`, location: `New York City`, rating: 4.2, review: `A small, cozy Midtown East ramen shop known for rich pork-and-chicken broth — the Teppen Shio and Teppen Shoyu are the standouts, alongside a daily-limited specialty bowl.`, img: "assets/487936243_10228640208698345_3554697523571178734_n.jpg", communityReview: "Reviewers consistently praise the full-bodied, flavorful broth and springy noodles, especially the shio and shoyu ramen. A few mention it's on the pricier side for the portion size and seating is limited, but it's a well-liked neighborhood find.", communitySource: "Yelp/Tripadvisor" },
-      { name: `Remi Flower & Coffee`, location: `New York City`, rating: 4.6, review: `Part florist, part café — order a lavender or rose latte and it comes out with a tiny matching floral arrangement, all inside a lush, greenhouse-like space.`, img: "assets/487723952_10228642162187181_4364512291647615115_n.jpg", communityReview: "Widely loved for its garden-like atmosphere surrounded by fresh flowers, with reviewers raving about the lavender and rose lattes and calling it one of the most photogenic coffee shops in the city. A few mention limited seating and NYC-typical prices, but the ambiance keeps people coming back.", communitySource: "Yelp/Tripadvisor/The Infatuation" }
+      { name: `Teppen Ramen`, location: `New York City`, rating: 4.2, review: `A small, cozy Midtown East ramen shop known for rich pork-and-chicken broth — the Teppen Shio and Teppen Shoyu are the standouts, alongside a daily-limited specialty bowl.`, img: "/assets/487936243_10228640208698345_3554697523571178734_n.jpg", communityReview: "Reviewers consistently praise the full-bodied, flavorful broth and springy noodles, especially the shio and shoyu ramen. A few mention it's on the pricier side for the portion size and seating is limited, but it's a well-liked neighborhood find.", communitySource: "Yelp/Tripadvisor" },
+      { name: `Remi Flower & Coffee`, location: `New York City`, rating: 4.6, review: `Part florist, part café — order a lavender or rose latte and it comes out with a tiny matching floral arrangement, all inside a lush, greenhouse-like space.`, img: "/assets/487723952_10228642162187181_4364512291647615115_n.jpg", communityReview: "Widely loved for its garden-like atmosphere surrounded by fresh flowers, with reviewers raving about the lavender and rose lattes and calling it one of the most photogenic coffee shops in the city. A few mention limited seating and NYC-typical prices, but the ambiance keeps people coming back.", communitySource: "Yelp/Tripadvisor/The Infatuation" }
     ],
     foodPhotos: [],
     hiddenGems: [
@@ -1472,7 +1472,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Nov before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1000", { src: "assets/487936243_10228640208698345_3554697523571178734_n.jpg", caption: "At Teppen Ramen" }, { src: "assets/487723952_10228642162187181_4364512291647615115_n.jpg", caption: "Coffee at Remi Flower & Coffee, in their greenhouse seating" }, { src: "assets/488006726_10228642200188131_8722694913706547997_n.jpg", caption: "Walking through Chinatown" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/n1.jpg?w=1000", { src: "/assets/487936243_10228640208698345_3554697523571178734_n.jpg", caption: "At Teppen Ramen" }, { src: "/assets/487723952_10228642162187181_4364512291647615115_n.jpg", caption: "Coffee at Remi Flower & Coffee, in their greenhouse seating" }, { src: "/assets/488006726_10228642200188131_8722694913706547997_n.jpg", caption: "Walking through Chinatown" }, { src: "/assets/487340074_10228640180617643_3038576765208456312_n.jpg", caption: "Bundled up on the steps of The Metropolitan Museum of Art" }, { src: "/assets/487512330_10228640179377612_6242287935831991135_n.jpg", caption: "Standing in front of Monet's water lilies at The Met" }, { src: "/assets/488260679_10228640178777597_8769599342023109956_n.jpg", caption: "In front of \"Washington Crossing the Delaware\" at The Met" }, { src: "/assets/487849580_10228640168617343_4471486202242904920_n.jpg", caption: "At the Temple of Dendur, inside The Met" }, { src: "/assets/487278756_10228639971372412_592932755007787751_n.jpg", caption: "A family selfie in Times Square" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1505,15 +1505,15 @@ const DESTINATIONS = [
       { name: `Vernick Food & Drink`, location: `Philadelphia, Pennsylvania`, rating: 4.5, review: `Chef Greg Vernick's restaurant focuses on seasonal American cuisine with global influences. The menu features beautifully executed dishes like roasted sea bream, wood-grilled duck, and homemade pastas.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=900", communityReview: "Regularly named among Philadelphia's best restaurants, with reviewers praising the signature \"toasts,\" wood-fired whole chicken, and polished-but-unstuffy Rittenhouse Square atmosphere — some travelers rank it above comparable meals they've had in Paris.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Vedge`, location: `Philadelphia, Pennsylvania`, rating: 4.6, review: `A popular choice for vegetarians and vegans, Vedge serves inventive plant-based dishes with bold flavors. Try their signature dishes like the rutabaga fondue, eggplant braciole, and the wood-roasted carrot.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=900", communityReview: "Michelin-recommended and James Beard-nominated, often called one of the best vegan restaurants in the country — reviewers rave about the rutabaga fondue, though a few mention smaller portions and higher prices than expected for a plant-based menu.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Talula's Garden`, location: `Philadelphia, Pennsylvania`, rating: 4.3, review: `Located in Washington Square, this charming farm-to-table restaurant offers a delightful menu highlighting local and sustainable ingredients. The butternut squash ravioli, mushroom toast, and roasted chicken are crowd favorites.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=900", communityReview: "A garden-patio favorite reviewers consistently call magical for a special occasion, with the lamb bolognese and brunch fried chicken and waffle earning particular praise — Taylor Swift and Travis Kelce were even spotted there for a family Mother's Day brunch.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `1914`, location: `Philadelphia, Pennsylvania`, review: `A cozy brick-walled spot that turned out garlic fried chicken over mashed potatoes, crispy egg rolls with a raw egg-yolk dip, fried dough with the same yolk dip, a shredded chicken rice bowl, and a clean, herb-loaded chicken pho.`, img: "assets/02_chicken_mashed_potato_bowl.jpg" }
+      { name: `1914`, location: `Philadelphia, Pennsylvania`, review: `A cozy brick-walled spot that turned out garlic fried chicken over mashed potatoes, crispy egg rolls with a raw egg-yolk dip, fried dough with the same yolk dip, a shredded chicken rice bowl, and a clean, herb-loaded chicken pho.`, img: "/assets/02_chicken_mashed_potato_bowl.jpg" }
     ],
     foodPhotos: [
-      { src: "assets/02_chicken_mashed_potato_bowl.jpg", caption: "Garlic fried chicken over mashed potatoes at 1914" },
-      { src: "assets/03_fried_pastry_roll_egg_yolk.jpg", caption: "Crispy fried egg rolls with a raw egg-yolk dip at 1914" },
-      { src: "assets/04_fried_dough_egg_yolk.jpg", caption: "Fried dough with the same egg-yolk dip at 1914" },
-      { src: "assets/05_shredded_chicken_rice_bowl.jpg", caption: "Shredded chicken rice bowl with a side of broth at 1914" },
-      { src: "assets/06_egg_pickled_veg_meat_plate.jpg", caption: "Fried egg over rice cake with pickled vegetables and caramelized pork at 1914" },
-      { src: "assets/07_chicken_pho.jpg", caption: "Chicken pho at 1914" }
+      { src: "/assets/02_chicken_mashed_potato_bowl.jpg", caption: "Garlic fried chicken over mashed potatoes at 1914" },
+      { src: "/assets/03_fried_pastry_roll_egg_yolk.jpg", caption: "Crispy fried egg rolls with a raw egg-yolk dip at 1914" },
+      { src: "/assets/04_fried_dough_egg_yolk.jpg", caption: "Fried dough with the same egg-yolk dip at 1914" },
+      { src: "/assets/05_shredded_chicken_rice_bowl.jpg", caption: "Shredded chicken rice bowl with a side of broth at 1914" },
+      { src: "/assets/06_egg_pickled_veg_meat_plate.jpg", caption: "Fried egg over rice cake with pickled vegetables and caramelized pork at 1914" },
+      { src: "/assets/07_chicken_pho.jpg", caption: "Chicken pho at 1914" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1525,7 +1525,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p6.jpg?w=1000", { src: "assets/01_masks_1914_sign.jpg", caption: "At 1914, under the sign" }, { src: "assets/08_flower_stand.jpg", caption: "A dried-flower stand near 1914" }, { src: "assets/487829417_10228644261479662_2296156485622047994_n.jpg", caption: "Walking through Reading Terminal Market, past Mueller Chocolate Co." }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/p8.jpg?w=1000", { src: "/assets/01_masks_1914_sign.jpg", caption: "At 1914, under the sign" }, { src: "/assets/08_flower_stand.jpg", caption: "A dried-flower stand near 1914" }, { src: "/assets/487829417_10228644261479662_2296156485622047994_n.jpg", caption: "Walking through Reading Terminal Market, past Mueller Chocolate Co." }, { src: "/assets/488021033_10228644242839196_3784442851049440207_n.jpg", caption: "The whole family with the Liberty Bell" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1570,7 +1570,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d10.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d5.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/d10.jpg?w=1000", { src: "/assets/487846760_10228644437404060_7740767721095772014_n.jpg", caption: "Sunset selfie along the Georgetown Waterfront, skyline across the Potomac" }, { src: "/assets/487676644_10228652817933568_8881079386791564744_n.jpg", caption: "The Main Reading Room at the Library of Congress" }, { src: "/assets/488000930_10228652818693587_6922250980436577092_n.jpg", caption: "The U.S. Capitol, viewed from a nearby terrace" }, { src: "/assets/488207492_10228644537286557_4970694190830310612_n.jpg", caption: "Family photo at the Jefferson Memorial" }, { src: "/assets/487840982_10228644530486387_976337103395671960_n.jpg", caption: "By the Reflecting Pool, Washington Monument in the distance" }, { src: "/assets/487780627_10228644528726343_3078636898395614404_n.jpg", caption: "At the Lincoln Memorial" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1582,7 +1582,7 @@ const DESTINATIONS = [
     year: 2023,
     tag: `Renaissance City`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900",
+    cardImg: "/assets/502962828_10229343222393248_3836694949845685415_n.jpg",
     coords: { top: "25.7%", left: "53.1%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -1600,22 +1600,23 @@ const DESTINATIONS = [
     ],
     restaurants: [
       { name: `Osteria All'Antico Vinaio`, location: `Florence`, rating: 4.3, review: `This small sandwich shop is a local favorite and serves delicious traditional Tuscan panini. The sandwiches are made with high-quality ingredients, and the flavors are incredible.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=900", communityReview: "One of Florence's most famous sandwich shops, with reviewers consistently praising the schiacciata bread and fresh fillings — the line is long but efficiently managed, though a few reviewers note occasional inconsistency in how generously they're filled.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=900", communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=900", communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Trattoria Mario`, location: `Florence`, rating: 4.5, review: `Located near the Mercato Centrale, this traditional trattoria offers classic Tuscan dishes. The menu changes daily, but you can expect hearty, home-cooked meals like ribollita, bistecca alla Fiorentina, and handmade pasta.`, communityReview: "A no-reservations, lunch-only, communal-table Florentine institution since 1953 — reviewers overwhelmingly call the bistecca alla Fiorentina one of the best steaks of their trip, though a handful of recent reviews grumble that its viral popularity online has made it feel more like a tourist checklist stop than the hidden gem it once was.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `La Giostra`, location: `Florence`, rating: 4.6, review: `A charming restaurant with a medieval atmosphere, La Giostra offers a mix of Italian and international dishes. The menu features creative options such as pear and pecorino cheese ravioli and wild boar stew.`, communityReview: "Locals in Florence dining forums often describe La Giostra as more touristy and pricier than nearby alternatives like Il Santo Bevitore, though most diners still leave impressed by the atmosphere and pasta — worth booking the main dining room specifically, per repeat visitors.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Il Santo Bevitore`, location: `Florence`, rating: 4.3, review: `This cozy and rustic restaurant focuses on seasonal ingredients and traditional Tuscan flavors. The menu is varied, and the dishes are beautifully presented. Don't miss their handmade pasta and the selection of local wines.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=900", communityReview: "A Michelin-recognized favorite with locals as much as tourists — reviewers consistently praise the seasonal Tuscan menu and lively atmosphere, though portions run smaller than expected and reservations are essential, as it fills up fast even on weeknights.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
 `An early-morning walk before the crowds is the best version of Florence`,
-`The neighborhood just past the obvious tourist center, worth a wander`
+`The neighborhood just past the obvious tourist center, worth a wander`,
+`Look for the "wine holes" (buchette del vino) — small medieval wine windows built into building walls, still used today to hand out a quick glass of wine`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best spots in Florence fill up`,
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f11.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f12.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f2.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/06/f12.jpg?w=1000", { src: "/assets/502552519_10229343249393923_3942735577555193060_n.jpg", caption: "Overlooking Florence and the Duomo from Piazzale Michelangelo" }, { src: "/assets/502606362_10229343233713531_8753407229848884559_n.jpg", caption: "A Baroque ceiling fresco inside Palazzo Pitti" }, { src: "/assets/502924370_10229343236153592_6503917525811253195_n.jpg", caption: "The Fountain of Neptune in Piazza della Signoria" }, { src: "/assets/502962828_10229343222393248_3836694949845685415_n.jpg", caption: "Looking up at the Duomo's dome" }, { src: "/assets/502467959_10229343556841609_1016000992004932226_n.jpg", caption: "The bell inside the Duomo's bell tower" }, { src: "/assets/502921812_10229343556281595_7020110919789439966_n.jpg", caption: "In front of the Baptistery's bronze doors" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1660,7 +1661,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Nov before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/6.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/10.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/08/6.jpg?w=1000", { src: "/assets/503895754_10229372737291102_2237682656170337210_n.jpg", caption: "Meeting Winnie the Pooh and Tigger" }, { src: "/assets/503647630_10229372838133623_5265720530159398374_n.jpg", caption: "Posing in the Queen of Hearts' throne" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1738,8 +1739,8 @@ const DESTINATIONS = [
       { name: `Uchi`, location: `Austin & San Antonio`, rating: 4.5, review: `A renowned spot for Japanese cuisine, offering a creative menu of sushi and sashimi in a stylish setting.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=900", communityReview: "Widely considered Austin's best sushi, from James Beard Award-winning chef Tyson Cole — reviewers consistently praise the inventive small plates and hot dishes alongside the sushi, though it's a splurge and reservations book out well in advance.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Emmer & Rye`, location: `Austin & San Antonio`, rating: 4.6, review: `Known for its focus on seasonal and local ingredients, this restaurant offers a unique dining experience with dim sum-style service.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=900", communityReview: "Praised for its dim-sum-cart-style service and hyper-local, seasonal menu that changes constantly — reviewers call the format genuinely fun and different from typical fine dining, with the homemade pastas a recurring highlight.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Torchy's Tacos`, location: `Austin & San Antonio`, rating: 4.3, review: `A local favorite for innovative and delicious tacos with unique flavor combinations.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=900", communityReview: "An Austin institution that's since grown into a regional chain — reviewers consistently praise the Trailer Park (fried chicken) taco and queso, with the caveat that service and cleanliness can vary noticeably between locations.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Kiki's Coffee`, location: `Austin & San Antonio`, rating: 4.6, review: `A dog-friendly downtown San Antonio coffee bar across from Maverick Park — design-forward space, barista-crafted drinks, and cocktails after dark.`, img: "assets/506050942_10229522526675743_4393089252648138176_n.jpg", communityReview: "A well-loved downtown San Antonio coffee-and-cocktail spot reviewers call a hidden gem — praised for its chic, design-forward interior, friendly baristas, and genuinely dog-friendly vibe right by Maverick Park.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Box Street Social`, location: `Austin & San Antonio`, rating: 4.5, review: `Brunch "all day" on a shaded patio near Hemisfair Park — coffee, morning cocktails, and city views.`, img: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", communityReview: "A San Antonio brunch favorite (also known as Box St. All Day) that grew out of a popular food truck and catering company — reviewers rave about the chilaquiles, the patio views near the Tower of the Americas, and a reliably great happy hour.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Kiki's Coffee`, location: `Austin & San Antonio`, rating: 4.6, review: `A dog-friendly downtown San Antonio coffee bar across from Maverick Park — design-forward space, barista-crafted drinks, and cocktails after dark.`, img: "/assets/506050942_10229522526675743_4393089252648138176_n.jpg", communityReview: "A well-loved downtown San Antonio coffee-and-cocktail spot reviewers call a hidden gem — praised for its chic, design-forward interior, friendly baristas, and genuinely dog-friendly vibe right by Maverick Park.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Box Street Social`, location: `Austin & San Antonio`, rating: 4.5, review: `Brunch "all day" on a shaded patio near Hemisfair Park — coffee, morning cocktails, and city views.`, img: "/assets/506686920_10229522498875048_8376714126762073168_n.jpg", communityReview: "A San Antonio brunch favorite (also known as Box St. All Day) that grew out of a popular food truck and catering company — reviewers rave about the chilaquiles, the patio views near the Tower of the Americas, and a reliably great happy hour.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451699713_10226040354903625_4185247209944190523_n-1.jpg?w=1000", caption: "A cold one under Pinthouse Pizza's skull-and-crossbones glass, Austin" },
@@ -1752,7 +1753,7 @@ const DESTINATIONS = [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451803830_10226050966968920_2991322089243005392_n-1.jpg?w=1000", caption: "A mint-topped cocktail at Bliss, San Antonio" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n-1.jpg?w=1000", caption: "An iced matcha, also from Bliss, San Antonio" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n-1.jpg?w=1000", caption: "A cucumber-garnished cocktail, Bliss, San Antonio" },
-      { src: "assets/506050942_10229522526675743_4393089252648138176_n.jpg", caption: "An afternoon hangout (with a very good dog) at Kiki's Coffee, San Antonio" },
+      { src: "/assets/506050942_10229522526675743_4393089252648138176_n.jpg", caption: "An afternoon hangout (with a very good dog) at Kiki's Coffee, San Antonio" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452079076_10226051023250327_6674203015847509601_n-1.jpg?w=1000", caption: "Eggs Benedict at Magnolia Table — the Waco lunch-and-gas rest stop that turned into an actual meal" }
     ],
     hiddenGems: [
@@ -1765,7 +1766,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451615030_10226039681406788_8818278162153046029_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452156104_10226054326372903_2747347177152676058_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452236550_10226052782414305_457577436554945498_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/451808518_10226052781294277_6148522228529596158_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2024/07/452099883_10226052647650936_809883522010502635_n.jpg?w=1000", { src: "/assets/506686920_10229522498875048_8376714126762073168_n.jpg", caption: "Family brunch at Box Street Social, San Antonio" }, { src: "/assets/505835834_10229521604292684_5826710301899321535_n.jpg", caption: "A walk across a trestle bridge, dog in tow" }, { src: "/assets/505889090_10229522497515014_1667215305439118353_n.jpg", caption: "Riding the old gondola cab at Hemisfair Park, San Antonio" }, { src: "/assets/506001754_10229522470914349_2319771200970681314_n.jpg", caption: "Driving into a Texas sunset" }, { src: "/assets/506423861_10229522473594416_3071173804423667102_n.jpg", caption: "A food truck stop with the dog" }, { src: "/assets/506226908_10229522444233682_5988836370232704255_n.jpg", caption: "In front of the Texas State Capitol, Austin" }, { src: "/assets/506448243_10229521605972726_7325649158673738963_n.jpg", caption: "An evening by the water" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1843,21 +1844,21 @@ const DESTINATIONS = [
       { name: `The Walrus and the Carpenter`, location: `Seattle, Washington`, rating: 4.5, review: `Famous for oysters and small seafood plates.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=900", communityReview: "A Ballard institution that's landed on national best-restaurant lists, with reviewers consistently raving about the fresh, sustainably-sourced oysters — no reservations means real waits at peak times, and a handful of recent reviews flag slower, less attentive service than the restaurant's reputation suggests.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Din Tai Fung`, location: `Seattle, Washington`, rating: 4.6, review: `Famous for soup dumplings and Taiwanese dishes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=900", communityReview: "A globally acclaimed Taiwanese chain, and reviewers consistently say it earns the hype despite being a chain — the xiao long bao (soup dumplings) draw near-universal praise for consistency, with the dim-sum-style ordering sheet making it easy to over-order.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tilikum Place Café`, location: `Seattle, Washington`, rating: 4.3, review: `Known for its amazing Dutch baby pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=900", communityReview: "A tiny, 12-table neighborhood favorite reviewers call a hidden gem for brunch — the Dutch baby pancakes are the signature order, though the small dining room means real waits and reservations are essential, especially on weekends.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Dog in the Park`, location: `Seattle, Washington`, rating: 4.5, review: `A hot dog stand right by the Space Needle and home of the original Seattle Dog — cream cheese and grilled veggies included.`, img: "assets/485906606_10228541560632205_2254609729655052402_n.jpg", communityReview: "A beloved food-stand institution since 2005 that pioneered the Seattle Dog (topped with cream cheese and grilled onions) — reviewers consistently praise the friendly, one-man-show service and call it a must-try quick bite near the Space Needle and MoPOP, even for people who don't usually go for hot dogs.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Le Panier`, location: `Seattle, Washington`, rating: 4.6, review: `A classic French bakery inside Pike Place Market since 1983 — go for the almond croissant and expect a line out the door.`, img: "assets/485622086_10228528515426083_5536956193988437121_n.jpg", communityReview: "A Pike Place Market institution since 1983, frequently named among Seattle's best bakeries — reviewers rave about the croissants, pistachio eclairs, and lattes, and say the long lines (sometimes 30-40 minutes) move fast and are worth the wait.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `FUTUREBEAN`, location: `Seattle, Washington`, rating: 4.4, review: `A sleek downtown coffee shop from the team behind Storyville Coffee — housemade flavored lattes and a cozy spot to sit for a minute.`, img: "assets/485153478_10228528029893945_1792492066681067602_n.jpg", communityReview: "A newer offshoot of the well-established Storyville Coffee, praised for its cozy downtown atmosphere and creative housemade syrups like vanilla and salted caramel.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Blackbird Bakery`, location: `Seattle, Washington`, rating: 4.5, review: `A cozy, cake-and-coffee bakery a short walk from the Bainbridge ferry dock — go for the scones and stay for the toast.`, img: "assets/486083285_10228551488240389_1353761795080900839_n.jpg", communityReview: "A Bainbridge Island go-to since 1999, praised for its scones, croissants, and famously good toast — reviewers say it gets a genuine local line at the ferry-adjacent counter, and it's popular for wedding cakes too.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Seattle Bagel Bakery`, location: `Seattle, Washington`, rating: 4.3, review: `Kettle-boiled bagels inside Pike Place Market — the base for some of the best loaded breakfast sandwiches in the market.`, img: "assets/486001861_10228539617143619_4826799406726553910_n.jpg", communityReview: "The bagel maker behind several Pike Place Market breakfast-sandwich stalls, known for kettle-boiled bagels made from locally sourced grains — reviewers single out the salmon lox bagel as a market highlight.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Biscuit Bitch`, location: `Seattle, Washington`, rating: 4.4, review: `Southern-style biscuits and gravy with a lot of attitude — "Trailer Park to Table," kickass coffee, breakfast only.`, img: "assets/485029497_10228528229698940_8743368416418800191_n.jpg", communityReview: "A Seattle breakfast institution known as much for its irreverent, foul-mouthed menu as its biscuits and gravy — reviewers consistently praise the Bitchwich and locally roasted coffee, with several locations having a devoted, loyal following.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Dog in the Park`, location: `Seattle, Washington`, rating: 4.5, review: `A hot dog stand right by the Space Needle and home of the original Seattle Dog — cream cheese and grilled veggies included.`, img: "/assets/485906606_10228541560632205_2254609729655052402_n.jpg", communityReview: "A beloved food-stand institution since 2005 that pioneered the Seattle Dog (topped with cream cheese and grilled onions) — reviewers consistently praise the friendly, one-man-show service and call it a must-try quick bite near the Space Needle and MoPOP, even for people who don't usually go for hot dogs.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Le Panier`, location: `Seattle, Washington`, rating: 4.6, review: `A classic French bakery inside Pike Place Market since 1983 — go for the almond croissant and expect a line out the door.`, img: "/assets/485622086_10228528515426083_5536956193988437121_n.jpg", communityReview: "A Pike Place Market institution since 1983, frequently named among Seattle's best bakeries — reviewers rave about the croissants, pistachio eclairs, and lattes, and say the long lines (sometimes 30-40 minutes) move fast and are worth the wait.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `FUTUREBEAN`, location: `Seattle, Washington`, rating: 4.4, review: `A sleek downtown coffee shop from the team behind Storyville Coffee — housemade flavored lattes and a cozy spot to sit for a minute.`, img: "/assets/485153478_10228528029893945_1792492066681067602_n.jpg", communityReview: "A newer offshoot of the well-established Storyville Coffee, praised for its cozy downtown atmosphere and creative housemade syrups like vanilla and salted caramel.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Blackbird Bakery`, location: `Seattle, Washington`, rating: 4.5, review: `A cozy, cake-and-coffee bakery a short walk from the Bainbridge ferry dock — go for the scones and stay for the toast.`, img: "/assets/486083285_10228551488240389_1353761795080900839_n.jpg", communityReview: "A Bainbridge Island go-to since 1999, praised for its scones, croissants, and famously good toast — reviewers say it gets a genuine local line at the ferry-adjacent counter, and it's popular for wedding cakes too.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Seattle Bagel Bakery`, location: `Seattle, Washington`, rating: 4.3, review: `Kettle-boiled bagels inside Pike Place Market — the base for some of the best loaded breakfast sandwiches in the market.`, img: "/assets/486001861_10228539617143619_4826799406726553910_n.jpg", communityReview: "The bagel maker behind several Pike Place Market breakfast-sandwich stalls, known for kettle-boiled bagels made from locally sourced grains — reviewers single out the salmon lox bagel as a market highlight.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Biscuit Bitch`, location: `Seattle, Washington`, rating: 4.4, review: `Southern-style biscuits and gravy with a lot of attitude — "Trailer Park to Table," kickass coffee, breakfast only.`, img: "/assets/485029497_10228528229698940_8743368416418800191_n.jpg", communityReview: "A Seattle breakfast institution known as much for its irreverent, foul-mouthed menu as its biscuits and gravy — reviewers consistently praise the Bitchwich and locally roasted coffee, with several locations having a devoted, loyal following.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/486083285_10228551488240389_1353761795080900839_n.jpg", caption: "A coffee and scone break at Blackbird Bakery, Bainbridge Island" },
-      { src: "assets/485795562_10228543350356947_7223299643225859183_n.jpg", caption: "A bowl of pho on a Seattle night out" },
-      { src: "assets/485906606_10228541560632205_2254609729655052402_n.jpg", caption: "A Seattle Dog at Dog in the Park, right under the Space Needle" },
-      { src: "assets/486001861_10228539617143619_4826799406726553910_n.jpg", caption: "A loaded breakfast bagel sandwich from Seattle Bagel Bakery, Pike Place Market" },
-      { src: "assets/485622086_10228528515426083_5536956193988437121_n.jpg", caption: "An almond croissant from Le Panier, Pike Place Market" },
-      { src: "assets/485029497_10228528229698940_8743368416418800191_n.jpg", caption: "A rainy afternoon at Biscuit Bitch" },
-      { src: "assets/485153478_10228528029893945_1792492066681067602_n.jpg", caption: "Coffee at FUTUREBEAN downtown" }
+      { src: "/assets/486083285_10228551488240389_1353761795080900839_n.jpg", caption: "A coffee and scone break at Blackbird Bakery, Bainbridge Island" },
+      { src: "/assets/485795562_10228543350356947_7223299643225859183_n.jpg", caption: "A bowl of pho on a Seattle night out" },
+      { src: "/assets/485906606_10228541560632205_2254609729655052402_n.jpg", caption: "A Seattle Dog at Dog in the Park, right under the Space Needle" },
+      { src: "/assets/486001861_10228539617143619_4826799406726553910_n.jpg", caption: "A loaded breakfast bagel sandwich from Seattle Bagel Bakery, Pike Place Market" },
+      { src: "/assets/485622086_10228528515426083_5536956193988437121_n.jpg", caption: "An almond croissant from Le Panier, Pike Place Market" },
+      { src: "/assets/485029497_10228528229698940_8743368416418800191_n.jpg", caption: "A rainy afternoon at Biscuit Bitch" },
+      { src: "/assets/485153478_10228528029893945_1792492066681067602_n.jpg", caption: "Coffee at FUTUREBEAN downtown" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1869,7 +1870,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_12113786682444404878339.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1040562209185833217451560.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_1211441957187576267787351.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250320_1053527e28838980681902663328.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250323_1116097723142783135128774.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/04/20250322_12113786682444404878339.jpg?w=1000", { src: "/assets/486020578_10228543847609378_7017320676570150548_n.jpg", caption: "Looking down through the Space Needle's glass floor" }, { src: "/assets/487686374_10228671423558697_2280257733505537174_n.jpg", caption: "A family photo with the Din Tai Fung mascot statue" }, { src: "/assets/487476552_10228671424638724_1822311430470671882_n.jpg", caption: "On the ferry to Bainbridge Island" }, { src: "/assets/487737886_10228671425118736_4359228041515404769_n.jpg", caption: "Outside the Museum of Pop Culture (MoPOP)" }, { src: "/assets/487499233_10228671425558747_1379546566167039271_n.jpg", caption: "Taking a seat at Post Alley, under Gum Wall art" }, { src: "/assets/487547475_10228671426438769_7999989775782867191_n.jpg", caption: "Exploring the famous Gum Wall in Post Alley" }, { src: "/assets/488709508_10228671427678800_2421387643417033913_n.jpg", caption: "A coffee stop downtown" }, { src: "/assets/488000912_10228671428278815_7888045516469883555_n.jpg", caption: "Browsing the stalls at Pike Place Market" }, { src: "/assets/518313034_10230239348675845_2194707104914971558_n.jpg", caption: "Cherry blossoms on the University of Washington campus" }, { src: "/assets/485892800_10228561301965726_3318074433703070583_n.jpg", caption: "A rainy walk through the Washington Park Arboretum" }, { src: "/assets/485146957_10228552947156861_2886778548208739590_n.jpg", caption: "The Seattle skyline from the water" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -1902,19 +1903,19 @@ const DESTINATIONS = [
       { name: `Neptune Oyster`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Tiny, no-reservations spot known for some of the best lobster rolls in the North End.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=900", communityReview: "Frequently named the actual best oyster spot in Boston, and locals steer visitors here over Union Oyster House specifically for food quality — no reservations, tiny space, and real waits, but reviewers overwhelmingly say the butter-poached lobster roll is worth it.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Giacomo's`, location: `Boston & Martha's Vineyard`, rating: 4.6, review: `Tiny, loud, cash-only — authentic pasta and seafood; the lobster fra diavolo is legendary.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=900", communityReview: "The original North End location (355 Hanover St) was ranked one of the best Italian restaurants in the U.S. by Tasting Table — reviewers consistently rave about the pumpkin tortellini and seafood, with the line-out-the-door, cash-only, no-reservations routine treated as part of the experience. Note: a separate South End sister location, Casa Giacomo's, has closed — make sure you're headed to the original.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `The Black Dog Tavern`, location: `Boston & Martha's Vineyard`, rating: 4.3, review: `Iconic and family-friendly on Martha's Vineyard — get the clam chowder and blueberry pancakes.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=900", communityReview: "An island landmark right by the Vineyard Haven ferry terminal — reviewers openly call it touristy but say it's genuinely fun, with the mussels, chowder, and waterfront fireplace atmosphere earning consistent praise even from visitors who expected a tourist-trap letdown.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `James Hook & Co`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `A no-frills waterfront lobster shack with the tank right on site — order at the counter, grab a picnic table, and dig in.`, img: "assets/515632146_10229930412312629_4339536811586982006_n.jpg", communityReview: "A century-old, family-run seafood shack on Boston's downtown waterfront frequently named among the city's best lobster rolls — reviewers highlight the on-site lobster tanks, casual self-serve setup, and fair prices, with the clam chowder and crab cakes also getting steady praise.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `The Bittersweet Shoppe on Newbury`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Back Bay's cutest little cafe — old-fashioned soda fountain charm, grilled cheese, and fresh-squeezed lemonade on a sunny Newbury Street patio.`, img: "assets/527100813_10230511056308366_76587454234458818_n.jpg", communityReview: "A woman-owned Newbury Street cafe reviewers call one of Back Bay's best-kept secrets — known for creative iced coffees, legendary grilled cheese, and a bright, cozy patio, with consistently warm service.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Charlie's Sandwich Shoppe`, location: `Boston & Martha's Vineyard`, rating: 4.4, review: `A 1927 South End institution and Boston landmark — walls covered in celebrity photos, famous for turkey hash and old-school diner charm.`, img: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", communityReview: "A James Beard Award-winning diner and Boston landmark dating to 1927, historically a haven for Black musicians and travelers during segregation — reviewers consistently praise the turkey hash, classic breakfast fare, and the walls of history, calling it equal parts diner and museum.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `James Hook & Co`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `A no-frills waterfront lobster shack with the tank right on site — order at the counter, grab a picnic table, and dig in.`, img: "/assets/515632146_10229930412312629_4339536811586982006_n.jpg", communityReview: "A century-old, family-run seafood shack on Boston's downtown waterfront frequently named among the city's best lobster rolls — reviewers highlight the on-site lobster tanks, casual self-serve setup, and fair prices, with the clam chowder and crab cakes also getting steady praise.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `The Bittersweet Shoppe on Newbury`, location: `Boston & Martha's Vineyard`, rating: 4.5, review: `Back Bay's cutest little cafe — old-fashioned soda fountain charm, grilled cheese, and fresh-squeezed lemonade on a sunny Newbury Street patio.`, img: "/assets/527100813_10230511056308366_76587454234458818_n.jpg", communityReview: "A woman-owned Newbury Street cafe reviewers call one of Back Bay's best-kept secrets — known for creative iced coffees, legendary grilled cheese, and a bright, cozy patio, with consistently warm service.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Charlie's Sandwich Shoppe`, location: `Boston & Martha's Vineyard`, rating: 4.4, review: `A 1927 South End institution and Boston landmark — walls covered in celebrity photos, famous for turkey hash and old-school diner charm.`, img: "/assets/514340375_10229908340360844_1232849161016127801_n.jpg", communityReview: "A James Beard Award-winning diner and Boston landmark dating to 1927, historically a haven for Black musicians and travelers during segregation — reviewers consistently praise the turkey hash, classic breakfast fare, and the walls of history, calling it equal parts diner and museum.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/516319416_10230016521665309_4224937201174103943_n.jpg?w=1000", caption: "A box of assorted cannoli from Mike's Pastry, North End" },
-      { src: "assets/527100813_10230511056308366_76587454234458818_n.jpg", caption: "Grilled cheese, waffles, and iced coffee on the patio at The Bittersweet Shoppe on Newbury" },
-      { src: "assets/515681199_10230011208852492_7259710044534615444_n.jpg", caption: "Iced coffees and lemonade at The Bittersweet Shoppe on Newbury" },
-      { src: "assets/514683462_10229930412832642_1334032555165691460_n.jpg", caption: "Drinks on the waterfront patio at James Hook & Co" },
-      { src: "assets/515632146_10229930412312629_4339536811586982006_n.jpg", caption: "The lobster tank at James Hook & Co" },
-      { src: "assets/514348487_10229965237423235_5749138178254262709_n.jpg", caption: "A flight of iced coffee cocktails at a Boston breakfast spot" },
-      { src: "assets/527310202_10230510678298916_2172703979508124808_n.jpg", caption: "An espresso martini in Boston" },
-      { src: "assets/514408196_10229929684734440_7837948299753586126_n.jpg", caption: "A snack break at Quincy Market" }
+      { src: "/assets/527100813_10230511056308366_76587454234458818_n.jpg", caption: "Grilled cheese, waffles, and iced coffee on the patio at The Bittersweet Shoppe on Newbury" },
+      { src: "/assets/515681199_10230011208852492_7259710044534615444_n.jpg", caption: "Iced coffees and lemonade at The Bittersweet Shoppe on Newbury" },
+      { src: "/assets/514683462_10229930412832642_1334032555165691460_n.jpg", caption: "Drinks on the waterfront patio at James Hook & Co" },
+      { src: "/assets/515632146_10229930412312629_4339536811586982006_n.jpg", caption: "The lobster tank at James Hook & Co" },
+      { src: "/assets/514348487_10229965237423235_5749138178254262709_n.jpg", caption: "A flight of iced coffee cocktails at a Boston breakfast spot" },
+      { src: "/assets/527310202_10230510678298916_2172703979508124808_n.jpg", caption: "An espresso martini in Boston" },
+      { src: "/assets/514408196_10229929684734440_7837948299753586126_n.jpg", caption: "A snack break at Quincy Market" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -1933,22 +1934,22 @@ const DESTINATIONS = [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514413063_10230024803592352_7441508285926522327_n.jpg?w=1000", group: "Boston" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/515935363_10230024805032388_5201113540585239684_n.jpg?w=1000", group: "Boston" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2025/07/514272391_10229980722170344_7946737040818197237_n.jpg?w=1000", group: "Boston" },
-      { src: "assets/514340375_10229908340360844_1232849161016127801_n.jpg", caption: "Out front of Charlie's Sandwich Shoppe", group: "Boston" },
-      { src: "assets/526788815_10230511021627499_8194973482409344085_n.jpg", caption: "Swan boats gliding across the lagoon at Boston Public Garden", group: "Boston" },
-      { src: "assets/515268998_10229981047378474_5128006516121554005_n.jpg", caption: "A selfie from a Boston skyline viewing deck", group: "Boston" },
-      { src: "assets/515446090_10229980727570479_4030612828816857920_n.jpg", caption: "Fenway Park, seen from above", group: "Boston" },
-      { src: "assets/514267529_10229967740565812_4748147002681675308_n.jpg", caption: "The family in front of MIT's Great Dome", group: "Boston" },
-      { src: "assets/516456624_10230112660908730_4614911518181125764_n.jpg", caption: "A family photo under the pergola on Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/517603358_10230112646468369_872291317705899349_n.jpg", caption: "In the garden on Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/517700292_10230106386631877_2015187038254117919_n.jpg", caption: "Boats docked in the harbor, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/528233773_10230532215677337_5589584179425161138_n.jpg", caption: "A sunny moment on the dock, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/516543754_10230102793622054_7308814104262917559_n.jpg", caption: "Browsing an eclectic bookshop, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/516452838_10230099802507278_5957256129628992515_n.jpg", caption: "A family selfie by the harbor, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/515775480_10230099790106968_8317328884895623026_n.jpg", caption: "At Edgartown Lighthouse, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/516913044_10230099777106643_1901342084084088485_n.jpg", caption: "Checking out a bronze sculpture in town, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/517703543_10230090952806041_1040002769913659974_n.jpg", caption: "On the ferry to Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/515654129_10230060987096917_9057872140729029602_n.jpg", caption: "A historic white house behind the hedges, Martha's Vineyard", group: "Martha's Vineyard" },
-      { src: "assets/516445278_10230052979016720_7717237002061259125_n.jpg", caption: "The Waterboat Duck House, a floating duck shelter in the marina, Martha's Vineyard", group: "Martha's Vineyard" }
+      { src: "/assets/514340375_10229908340360844_1232849161016127801_n.jpg", caption: "Out front of Charlie's Sandwich Shoppe", group: "Boston" },
+      { src: "/assets/526788815_10230511021627499_8194973482409344085_n.jpg", caption: "Swan boats gliding across the lagoon at Boston Public Garden", group: "Boston" },
+      { src: "/assets/515268998_10229981047378474_5128006516121554005_n.jpg", caption: "A selfie from a Boston skyline viewing deck", group: "Boston" },
+      { src: "/assets/515446090_10229980727570479_4030612828816857920_n.jpg", caption: "Fenway Park, seen from above", group: "Boston" },
+      { src: "/assets/514267529_10229967740565812_4748147002681675308_n.jpg", caption: "The family in front of MIT's Great Dome", group: "Boston" },
+      { src: "/assets/516456624_10230112660908730_4614911518181125764_n.jpg", caption: "A family photo under the pergola on Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/517603358_10230112646468369_872291317705899349_n.jpg", caption: "In the garden on Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/517700292_10230106386631877_2015187038254117919_n.jpg", caption: "Boats docked in the harbor, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/528233773_10230532215677337_5589584179425161138_n.jpg", caption: "A sunny moment on the dock, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/516543754_10230102793622054_7308814104262917559_n.jpg", caption: "Browsing an eclectic bookshop, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/516452838_10230099802507278_5957256129628992515_n.jpg", caption: "A family selfie by the harbor, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/515775480_10230099790106968_8317328884895623026_n.jpg", caption: "At Edgartown Lighthouse, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/516913044_10230099777106643_1901342084084088485_n.jpg", caption: "Checking out a bronze sculpture in town, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/517703543_10230090952806041_1040002769913659974_n.jpg", caption: "On the ferry to Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/515654129_10230060987096917_9057872140729029602_n.jpg", caption: "A historic white house behind the hedges, Martha's Vineyard", group: "Martha's Vineyard" },
+      { src: "/assets/516445278_10230052979016720_7717237002061259125_n.jpg", caption: "The Waterboat Duck House, a floating duck shelter in the marina, Martha's Vineyard", group: "Martha's Vineyard" }
     ],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
@@ -1982,45 +1983,45 @@ const DESTINATIONS = [
       { name: `Swan Oyster Depot`, location: `San Francisco, California`, rating: 4.5, review: `Legendary tiny seafood counter. Expect a line.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=900", communityReview: "Family-run since 1912, and genuinely beloved by food-world insiders — Anthony Bourdain filmed here, and Bon Appétit's restaurant editor called it \"maybe my favorite restaurant on the planet.\" Cash only, no reservations, counter seating only, and waits can run over an hour — locals say it's worth timing your visit right at opening.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tadich Grill`, location: `San Francisco, California`, rating: 4.6, review: `Classic historic SF restaurant dating back to the Gold Rush era.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=900", communityReview: "The oldest restaurant in California, dating to 1849 — reviewers call the old-school charm and old-fashioned menu (think petrale sole and lamb chops with mint jelly) a genuine time capsule. Often debated as the more polished alternative to Swan Oyster Depot's counter-and-a-wait experience.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Tartine Bakery`, location: `San Francisco, California`, rating: 4.3, review: `Probably the city's most famous bakery.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=900", communityReview: "Reviewers overwhelmingly say it lives up to the hype — the croissants and morning buns draw particular praise, and while the line can be long, most say it moves quickly and is worth the wait.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Dumpling Story`, location: `San Francisco, California`, rating: 4.4, review: `A dumpling spot with a modern, minimalist vibe — the kind of spread that keeps the whole family reaching for one more bite.`, img: "assets/706971243_10233928831750616_8701326482885401634_n.jpg", communityReview: "A Fillmore Street/Pacific Heights favorite known for its xiao long bao and scallion pancakes — reviewers frequently praise the fresh, high-quality food and elevated modern decor, with regulars naming it a go-to dumpling spot in the city.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Fashion China Teashop`, location: `San Francisco, California`, rating: 4.2, review: `A boba stop that turned into a "buy me boba" moment.`, img: "assets/707377701_10233929189039548_8196365367692735979_n.jpg", communityReview: "A Chinatown tea shop reviewers describe as a solid, no-frills boba stop with a wide drink menu — nothing fancy, just a reliably good cup.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Origin Lab Coffee & Matcha`, location: `San Francisco, California`, rating: 4.5, review: `A cozy coffee and matcha spot with a moon mural on the wall.`, img: "assets/707426843_10233907830785605_1251592585252902227_n.jpg", communityReview: "A newer neighborhood cafe reviewers praise for its quality matcha and coffee alongside a genuinely photogenic interior — the kind of place that shows up in a lot of visitors' photos.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Scoma's Sausalito`, location: `Sausalito, California`, rating: 4.5, review: `Waterfront seafood right on Sausalito's harbor — oysters, seafood pasta, cocktails, and a bay view that does most of the talking.`, img: "assets/703633170_10233906224785456_288104961075728601_n.jpg", communityReview: "A Sausalito institution known for its waterfront views of Angel Island and the SF skyline — reviewers consistently praise the fresh seafood (whole crab, calamari, seafood pasta) and warm, attentive service, calling it a favorite spot for special occasions. The sourdough bread and cocktails get frequent shoutouts too.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Dumpling Story`, location: `San Francisco, California`, rating: 4.4, review: `A dumpling spot with a modern, minimalist vibe — the kind of spread that keeps the whole family reaching for one more bite.`, img: "/assets/706971243_10233928831750616_8701326482885401634_n.jpg", communityReview: "A Fillmore Street/Pacific Heights favorite known for its xiao long bao and scallion pancakes — reviewers frequently praise the fresh, high-quality food and elevated modern decor, with regulars naming it a go-to dumpling spot in the city.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Fashion China Teashop`, location: `San Francisco, California`, rating: 4.2, review: `A boba stop that turned into a "buy me boba" moment.`, img: "/assets/707377701_10233929189039548_8196365367692735979_n.jpg", communityReview: "A Chinatown tea shop reviewers describe as a solid, no-frills boba stop with a wide drink menu — nothing fancy, just a reliably good cup.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Origin Lab Coffee & Matcha`, location: `San Francisco, California`, rating: 4.5, review: `A cozy coffee and matcha spot with a moon mural on the wall.`, img: "/assets/707426843_10233907830785605_1251592585252902227_n.jpg", communityReview: "A newer neighborhood cafe reviewers praise for its quality matcha and coffee alongside a genuinely photogenic interior — the kind of place that shows up in a lot of visitors' photos.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: `Scoma's Sausalito`, location: `Sausalito, California`, rating: 4.5, review: `Waterfront seafood right on Sausalito's harbor — oysters, seafood pasta, cocktails, and a bay view that does most of the talking.`, img: "/assets/703633170_10233906224785456_288104961075728601_n.jpg", communityReview: "A Sausalito institution known for its waterfront views of Angel Island and the SF skyline — reviewers consistently praise the fresh seafood (whole crab, calamari, seafood pasta) and warm, attentive service, calling it a favorite spot for special occasions. The sourdough bread and cocktails get frequent shoutouts too.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705374252_10233915930068082_9081015203643334507_n.jpg?w=1000", caption: "A seafood stew with fries and grilled bread at Hog Island Oyster Co." },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233915928388040_8731399652189066962_n.jpg?w=1000", caption: "A salmon and avocado taco at Hog Island Oyster Co." },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707532214_10233915824105433_3304175684508296793_n-1.jpg?w=1000", caption: "Fresh oysters with a Golden Gate Bridge view, Hog Island Oyster Co." },
-      { src: "assets/706819025_10233915929268062_8005770152984876718_n.jpg", caption: "A grilled cheese with pickled vegetables at Hog Island Oyster Co." },
+      { src: "/assets/706819025_10233915929268062_8005770152984876718_n.jpg", caption: "A grilled cheese with pickled vegetables at Hog Island Oyster Co." },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/706918803_10233921191879624_8403528640698133458_n.jpg?w=1000", caption: "A birthday dessert with a lit candle at Nari" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/704991124_10233920996674744_2678883251058316371_n.jpg?w=1000", caption: "Crispy eggplant curry at Nari" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/706912362_10233920890472089_2238220105674813210_n.jpg?w=1000", caption: "Grilled squid skewers with peanuts at Nari" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705789647_10233920794069679_6509229577484731890_n.jpg?w=1000", caption: "A spiced meat lettuce wrap at Nari" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705861119_10233920740548341_2624464606981500988_n.jpg?w=1000", caption: "Croquettes at Nari" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707414983_10233920717587767_7228427882513538694_n.jpg?w=1000", caption: "Cocktails and iced coffee at Nari" },
-      { src: "assets/706971243_10233928831750616_8701326482885401634_n.jpg", caption: "Family dim sum spread at Dumpling Story" },
-      { src: "assets/703481316_10233895422075395_6387034741754077097_n.jpg", caption: "Scallion pancake, fried dumplings, and steamed buns at Dumpling Story" },
-      { src: "assets/703600944_10233895421635384_7817395005088730901_n.jpg", caption: "Soup dumplings at Dumpling Story" },
-      { src: "assets/703097718_10233895420435354_2250608557105546636_n.jpg", caption: "Sesame chicken and fried wontons at Dumpling Story" },
-      { src: "assets/703076639_10233895419595333_5537011050822192297_n.jpg", caption: "A cucumber salad at Dumpling Story" },
-      { src: "assets/703001569_10233895418915316_2140629364121151965_n.jpg", caption: "Dan dan noodles at Dumpling Story" },
+      { src: "/assets/706971243_10233928831750616_8701326482885401634_n.jpg", caption: "Family dim sum spread at Dumpling Story" },
+      { src: "/assets/703481316_10233895422075395_6387034741754077097_n.jpg", caption: "Scallion pancake, fried dumplings, and steamed buns at Dumpling Story" },
+      { src: "/assets/703600944_10233895421635384_7817395005088730901_n.jpg", caption: "Soup dumplings at Dumpling Story" },
+      { src: "/assets/703097718_10233895420435354_2250608557105546636_n.jpg", caption: "Sesame chicken and fried wontons at Dumpling Story" },
+      { src: "/assets/703076639_10233895419595333_5537011050822192297_n.jpg", caption: "A cucumber salad at Dumpling Story" },
+      { src: "/assets/703001569_10233895418915316_2140629364121151965_n.jpg", caption: "Dan dan noodles at Dumpling Story" },
       { src: "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705410906_10233918085881976_6771201188323011436_n.jpg?w=1000", caption: "Ice cream cones at Pier 39" },
-      { src: "assets/707377701_10233929189039548_8196365367692735979_n.jpg", caption: "\"Buy me boba\" — a stop at Fashion China Teashop" },
-      { src: "assets/707426843_10233907830785605_1251592585252902227_n.jpg", caption: "Coffee and matcha at Origin Lab Coffee & Matcha" },
-      { src: "assets/707007477_10233929257761266_687065406581483097_n.jpg", caption: "A candied fruit skewer, San Francisco" },
-      { src: "assets/704914385_10233906740358345_630893563698200362_n.jpg", caption: "An espresso martini with cinnamon and orange at Scoma's Sausalito" },
-      { src: "assets/703601139_10233906223745430_4818691989765327643_n.jpg", caption: "Arancini over tomato sauce and basil oil at Scoma's Sausalito" },
-      { src: "assets/703633170_10233906224785456_288104961075728601_n.jpg", caption: "Oysters on the half shell at Scoma's Sausalito" },
-      { src: "assets/704653083_10233906228225542_4573867873569198286_n.jpg", caption: "An Old Fashioned with a giant ice sphere at Scoma's Sausalito" },
-      { src: "assets/705440089_10233906229585576_3733298516478159665_n.jpg", caption: "Another round of espresso martinis alongside the oyster plate at Scoma's Sausalito" },
-      { src: "assets/705662277_10233906231305619_2761939154157063595_n.jpg", caption: "Pan-seared fish with asparagus, mashed potatoes, and caper butter sauce at Scoma's Sausalito" },
-      { src: "assets/705861121_10233906244905959_1773543308381307803_n.jpg", caption: "Chicken parmesan at Scoma's Sausalito" },
-      { src: "assets/706900754_10233906247466023_3914055852153278943_n.jpg", caption: "A side of grilled asparagus at Scoma's Sausalito" },
-      { src: "assets/702982851_10233906249466073_6836779147635262966_n.jpg", caption: "Wild mushroom pappardelle with peas and spinach at Scoma's Sausalito" },
-      { src: "assets/703890682_10233906250986111_499208734481461669_n.jpg", caption: "Seafood linguine with mussels and shrimp at Scoma's Sausalito" },
-      { src: "assets/703890682_10233906382949410_2780671048596314775_n.jpg", caption: "Chocolate cake with whipped cream and berry compote for dessert at Scoma's Sausalito" },
-      { src: "assets/705277182_10233906391109614_9024927112404485290_n.jpg", caption: "One more espresso martini at Scoma's Sausalito" },
-      { src: "assets/702781373_10233905404844958_8632903729661646454_n.jpg", caption: "A KSA kölsch-style ale near Muir Woods Redwood Forest" }
+      { src: "/assets/707377701_10233929189039548_8196365367692735979_n.jpg", caption: "\"Buy me boba\" — a stop at Fashion China Teashop" },
+      { src: "/assets/707426843_10233907830785605_1251592585252902227_n.jpg", caption: "Coffee and matcha at Origin Lab Coffee & Matcha" },
+      { src: "/assets/707007477_10233929257761266_687065406581483097_n.jpg", caption: "A candied fruit skewer, San Francisco" },
+      { src: "/assets/704914385_10233906740358345_630893563698200362_n.jpg", caption: "An espresso martini with cinnamon and orange at Scoma's Sausalito" },
+      { src: "/assets/703601139_10233906223745430_4818691989765327643_n.jpg", caption: "Arancini over tomato sauce and basil oil at Scoma's Sausalito" },
+      { src: "/assets/703633170_10233906224785456_288104961075728601_n.jpg", caption: "Oysters on the half shell at Scoma's Sausalito" },
+      { src: "/assets/704653083_10233906228225542_4573867873569198286_n.jpg", caption: "An Old Fashioned with a giant ice sphere at Scoma's Sausalito" },
+      { src: "/assets/705440089_10233906229585576_3733298516478159665_n.jpg", caption: "Another round of espresso martinis alongside the oyster plate at Scoma's Sausalito" },
+      { src: "/assets/705662277_10233906231305619_2761939154157063595_n.jpg", caption: "Pan-seared fish with asparagus, mashed potatoes, and caper butter sauce at Scoma's Sausalito" },
+      { src: "/assets/705861121_10233906244905959_1773543308381307803_n.jpg", caption: "Chicken parmesan at Scoma's Sausalito" },
+      { src: "/assets/706900754_10233906247466023_3914055852153278943_n.jpg", caption: "A side of grilled asparagus at Scoma's Sausalito" },
+      { src: "/assets/702982851_10233906249466073_6836779147635262966_n.jpg", caption: "Wild mushroom pappardelle with peas and spinach at Scoma's Sausalito" },
+      { src: "/assets/703890682_10233906250986111_499208734481461669_n.jpg", caption: "Seafood linguine with mussels and shrimp at Scoma's Sausalito" },
+      { src: "/assets/703890682_10233906382949410_2780671048596314775_n.jpg", caption: "Chocolate cake with whipped cream and berry compote for dessert at Scoma's Sausalito" },
+      { src: "/assets/705277182_10233906391109614_9024927112404485290_n.jpg", caption: "One more espresso martini at Scoma's Sausalito" },
+      { src: "/assets/702781373_10233905404844958_8632903729661646454_n.jpg", caption: "A KSA kölsch-style ale near Muir Woods Redwood Forest" }
     ],
     hiddenGems: [
 `Ask a local for their favorite spot away from the main strip — it's usually the best one`,
@@ -2033,7 +2034,7 @@ const DESTINATIONS = [
 `Pace the day around one big activity and one slow meal, not back-to-back sightseeing`,
 `Check the weather for Sep – Oct before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233944377259244_7653893899704773306_n.jpg?w=1000", { src: "assets/707138338_10233930938323279_5351691657475358558_n.jpg", caption: "A family selfie at the Golden Gate Bridge" }, { src: "assets/705647655_10233929879576811_8061040375308441661_n.jpg", caption: "Lombard Street's famous switchbacks in bloom" }, { src: "assets/705717882_10233929434725690_1078030760900021849_n.jpg", caption: "The Chinatown Gate on Grant Avenue" }, { src: "assets/706766729_10233929197639763_5918844125032106857_n.jpg", caption: "Looking down a bustling Chinatown street" }, { src: "assets/704570508_10233918421130357_734214169438546134_n.jpg", caption: "Sea lions lounging on the docks at Pier 39" }, { src: "assets/703589121_10233918356848750_8441354275749821653_n.jpg", caption: "Alcatraz Island, seen from the bay" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/705717879_10233905444045938_4159279485583045890_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707580717_10233944377779257_6490851226168534751_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707447081_10233944376619228_3714820704832277364_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/708300398_10233944378699280_8821601808691334938_n.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2026/05/707460703_10233944377259244_7653893899704773306_n.jpg?w=1000", { src: "/assets/707138338_10233930938323279_5351691657475358558_n.jpg", caption: "A family selfie at the Golden Gate Bridge" }, { src: "/assets/705647655_10233929879576811_8061040375308441661_n.jpg", caption: "Lombard Street's famous switchbacks in bloom" }, { src: "/assets/705717882_10233929434725690_1078030760900021849_n.jpg", caption: "The Chinatown Gate on Grant Avenue" }, { src: "/assets/706766729_10233929197639763_5918844125032106857_n.jpg", caption: "Looking down a bustling Chinatown street" }, { src: "/assets/704570508_10233918421130357_734214169438546134_n.jpg", caption: "Sea lions lounging on the docks at Pier 39" }, { src: "/assets/703589121_10233918356848750_8441354275749821653_n.jpg", caption: "Alcatraz Island, seen from the bay" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -2073,17 +2074,17 @@ const DESTINATIONS = [
       { name: `L'Insalata Ricca`, location: `Rome`, rating: 4.5, review: `A long-running Roman chain (since 1983) known for its huge menu of salads alongside classic Roman pasta, pizza, and steaks.`, communityReview: "A local favorite reviewers keep coming back to trip after trip, praising the generous portions, fair prices, and reliably good pasta and salads — some note it can feel touristy given its size, but the food consistently delivers.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/501796319_10229346945286318_1934124203843649557_n.jpg", caption: "A Nutella-filled donut, a pistachio pastry bar, a rum and coke, and a Heineken — a Rome street-side snack break" },
-      { src: "assets/502699258_10229338108865413_1882781844461050754_n.jpg", caption: "Lunch with a view at Tempio di Bacco, Rome" },
-      { src: "assets/502520801_10229338108665408_8910796706237424039_n.jpg", caption: "A Peronis on the patio at Tempio di Bacco, Rome" },
-      { src: "assets/502378377_10229338080904714_7757656078015166181_n.jpg", caption: "A Sapporo and an Asahi pour near the Vatican, Rome — restaurant name lost to time" },
-      { src: "assets/490378879_10228759709645794_4365510874899517837_n.jpg", caption: "A fried antipasti sampler at Osteria Da Fortunata, Rome" },
-      { src: "assets/489947331_10228759710005803_2142461622440903625_n.jpg", caption: "Sparkling water and a Birra Moretti at Osteria Da Fortunata, Rome" },
-      { src: "assets/489820724_10228759709605793_5954951482464525220_n.jpg", caption: "Gnocchi alla Sorrentina at Osteria Da Fortunata, Rome" },
-      { src: "assets/489919939_10228759709885800_4641403304600225616_n.jpg", caption: "A closer look at the gnocchi alla Sorrentina at Osteria Da Fortunata, Rome" },
-      { src: "assets/490186889_10228759572122356_5416124292685608134_n.jpg", caption: "Milk tea and a large fruit tea from Tè Amo, near the Pantheon in Rome" },
-      { src: "assets/489827886_10228759563282135_8025398252904655414_n.jpg", caption: "A Peroni and water at an outdoor table in Trastevere, Rome — restaurant name lost to time" },
-      { src: "assets/490590942_10228757865839700_4906075326335259947_n.jpg", caption: "A Birra Moretti and a Peroni Gran Riserva at L'Insalata Ricca, Rome" }
+      { src: "/assets/501796319_10229346945286318_1934124203843649557_n.jpg", caption: "A Nutella-filled donut, a pistachio pastry bar, a rum and coke, and a Heineken — a Rome street-side snack break" },
+      { src: "/assets/502699258_10229338108865413_1882781844461050754_n.jpg", caption: "Lunch with a view at Tempio di Bacco, Rome" },
+      { src: "/assets/502520801_10229338108665408_8910796706237424039_n.jpg", caption: "A Peronis on the patio at Tempio di Bacco, Rome" },
+      { src: "/assets/502378377_10229338080904714_7757656078015166181_n.jpg", caption: "A Sapporo and an Asahi pour near the Vatican, Rome — restaurant name lost to time" },
+      { src: "/assets/490378879_10228759709645794_4365510874899517837_n.jpg", caption: "A fried antipasti sampler at Osteria Da Fortunata, Rome" },
+      { src: "/assets/489947331_10228759710005803_2142461622440903625_n.jpg", caption: "Sparkling water and a Birra Moretti at Osteria Da Fortunata, Rome" },
+      { src: "/assets/489820724_10228759709605793_5954951482464525220_n.jpg", caption: "Gnocchi alla Sorrentina at Osteria Da Fortunata, Rome" },
+      { src: "/assets/489919939_10228759709885800_4641403304600225616_n.jpg", caption: "A closer look at the gnocchi alla Sorrentina at Osteria Da Fortunata, Rome" },
+      { src: "/assets/490186889_10228759572122356_5416124292685608134_n.jpg", caption: "Milk tea and a large fruit tea from Tè Amo, near the Pantheon in Rome" },
+      { src: "/assets/489827886_10228759563282135_8025398252904655414_n.jpg", caption: "A Peroni and water at an outdoor table in Trastevere, Rome — restaurant name lost to time" },
+      { src: "/assets/490590942_10228757865839700_4906075326335259947_n.jpg", caption: "A Birra Moretti and a Peroni Gran Riserva at L'Insalata Ricca, Rome" }
     ],
     hiddenGems: [
 `A quiet corner of Rome away from the main sights, worth the wander`,
@@ -2095,7 +2096,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i3.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i2.jpg?w=1000", { src: "/assets/502864635_10229337731535980_3726979693360777457_n.jpg", caption: "A family selfie at the Trevi Fountain, lit up at night" }, { src: "/assets/490076682_10228757823318637_5668562338496503376_n.jpg", caption: "A selfie in front of the Pantheon" }, { src: "/assets/490158150_10228759564282160_5770251864776474051_n.jpg", caption: "Lunch at an outdoor cafe, Trastevere" }, { src: "/assets/490410839_10228757865159683_495742218650406325_n.jpg", caption: "A sunny afternoon in Trastevere" }, { src: "/assets/490358200_10228757820438565_2140200656458850051_n.jpg", caption: "Street art wrapping a building facade, Rome" }, { src: "/assets/490456478_10228757824278661_2443822025315786721_n.jpg", caption: "A selfie at the Spanish Steps" }],
     rating: 8,
     wouldReturn: `Yes, with a slightly longer stay next time.`,
     relatedAdventure: "italy-2022"
@@ -2128,14 +2129,15 @@ const DESTINATIONS = [
     hiddenGems: [
 `A quiet corner of Florence away from the main sights, worth the wander`,
 `Go early — Florence feels completely different before the crowds arrive`,
-`Ask a local for their favorite spot; it's usually the best one`
+`Ask a local for their favorite spot; it's usually the best one`,
+`Look for the "wine holes" (buchette del vino) — small medieval wine windows built into building walls, still used today to hand out a quick glass of wine`
     ],
     travelTips: [
 `Book the well-reviewed restaurants ahead — the best tables in Florence fill up`,
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i5.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i8.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i1.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/i14.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "italy-2022"
@@ -2146,8 +2148,8 @@ const DESTINATIONS = [
     country: `Italy`,
     year: 2022,
     tag: `Italy 2022 Stop`,
-    heroImg: "assets/502859980_10229343887049864_7142588008757122538_n.jpg",
-    cardImg: "assets/502859980_10229343887049864_7142588008757122538_n.jpg",
+    heroImg: "/assets/502859980_10229343887049864_7142588008757122538_n.jpg",
+    cardImg: "/assets/502859980_10229343887049864_7142588008757122538_n.jpg",
     coords: { top: "25.7%", left: "52.9%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -2165,9 +2167,9 @@ const DESTINATIONS = [
       { name: `La Torre`, location: `Pisa`, rating: 4.4, review: `A seafood-and-pasta spot just off the walk to the Leaning Tower, popular with both locals and travelers.`, communityReview: `Reviewers consistently praise the lobster pasta and seafood dishes, with several calling it one of the best meals of their Italy trip — a handful mention it gets busy at peak dinner hours.`, communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/502549258_10229343876769607_6884720507215050516_n.jpg", caption: "A Nutella crepe with fresh fruit at a restaurant near the Leaning Tower of Pisa" },
-      { src: "assets/502471655_10229343877729631_2440593891229911225_n.jpg", caption: "Ravioli in tomato sauce with fresh basil and parmesan, near the Leaning Tower of Pisa" },
-      { src: "assets/502523576_10229343878889660_2604180833221578040_n.jpg", caption: "A fruit bowl and tiramisu for dessert, near the Leaning Tower of Pisa" }
+      { src: "/assets/502549258_10229343876769607_6884720507215050516_n.jpg", caption: "A Nutella crepe with fresh fruit at a restaurant near the Leaning Tower of Pisa" },
+      { src: "/assets/502471655_10229343877729631_2440593891229911225_n.jpg", caption: "Ravioli in tomato sauce with fresh basil and parmesan, near the Leaning Tower of Pisa" },
+      { src: "/assets/502523576_10229343878889660_2604180833221578040_n.jpg", caption: "A fruit bowl and tiramisu for dessert, near the Leaning Tower of Pisa" }
     ],
     hiddenGems: [
 `A quiet corner of Pisa away from the main sights, worth the wander`,
@@ -2180,16 +2182,16 @@ const DESTINATIONS = [
 `Check the weather for Apr – Jun before locking in dates`
     ],
     gallery: [
-      { src: "assets/502859980_10229343887049864_7142588008757122538_n.jpg", caption: "The family in front of the Leaning Tower of Pisa" },
-      { src: "assets/502405906_10229343887889885_7621501395862929926_n.jpg", caption: "Looking down on the Duomo's domes from the top of the tower" },
-      { src: "assets/502631275_10229343880249694_3081542993488465946_n.jpg", caption: "Inside the Pisa Cathedral, looking up at the painted ceiling" },
-      { src: "assets/502619183_10229343886609853_4191748687884861030_n.jpg", caption: "The Camposanto Monumentale, Pisa's monumental cemetery" },
-      { src: "assets/502582265_10229343886569852_3037291481386762584_n.jpg", caption: "Looking straight up the leaning face of the tower" },
-      { src: "assets/502433697_10229343887609878_3089580705963608582_n.jpg", caption: "Looking up through the hollow center of the tower" },
-      { src: "assets/502509143_10229343886889860_5936972585658398225_n.jpg", caption: "At the top of the tower, overlooking Pisa" },
-      { src: "assets/502627415_10229343886049839_6442003743386319285_n.jpg", caption: "Next to the tower's bell at the very top" },
-      { src: "assets/502482851_10229343885849834_5558188512576085044_n.jpg", caption: "Pisa spread out below, mountains in the distance" },
-      { src: "assets/502467791_10229343885929836_7660133385297112126_n.jpg", caption: "Straight up through the top of the tower, flag waving overhead" }
+      { src: "/assets/502859980_10229343887049864_7142588008757122538_n.jpg", caption: "The family in front of the Leaning Tower of Pisa" },
+      { src: "/assets/502405906_10229343887889885_7621501395862929926_n.jpg", caption: "Looking down on the Duomo's domes from the top of the tower" },
+      { src: "/assets/502631275_10229343880249694_3081542993488465946_n.jpg", caption: "Inside the Pisa Cathedral, looking up at the painted ceiling" },
+      { src: "/assets/502619183_10229343886609853_4191748687884861030_n.jpg", caption: "The Camposanto Monumentale, Pisa's monumental cemetery" },
+      { src: "/assets/502582265_10229343886569852_3037291481386762584_n.jpg", caption: "Looking straight up the leaning face of the tower" },
+      { src: "/assets/502433697_10229343887609878_3089580705963608582_n.jpg", caption: "Looking up through the hollow center of the tower" },
+      { src: "/assets/502509143_10229343886889860_5936972585658398225_n.jpg", caption: "At the top of the tower, overlooking Pisa" },
+      { src: "/assets/502627415_10229343886049839_6442003743386319285_n.jpg", caption: "Next to the tower's bell at the very top" },
+      { src: "/assets/502482851_10229343885849834_5558188512576085044_n.jpg", caption: "Pisa spread out below, mountains in the distance" },
+      { src: "/assets/502467791_10229343885929836_7660133385297112126_n.jpg", caption: "Straight up through the top of the tower, flag waving overhead" }
     ],
     rating: 8,
     wouldReturn: `Yes, though half a day was about right.`,
@@ -2201,8 +2203,8 @@ const DESTINATIONS = [
     country: `Italy`,
     year: 2022,
     tag: `Italy 2022 Stop`,
-        heroImg: "assets/uploads/naples-hero.jpg",
-        cardImg: "assets/uploads/naples-card.jpg",
+        heroImg: "/assets/uploads/naples-hero.jpg",
+        cardImg: "/assets/uploads/naples-card.jpg",
     coords: { top: "27.3%", left: "54.0%" },
     quickFacts: [
       { label: "Best time to go", value: `Apr – Jun` },
@@ -2217,27 +2219,27 @@ const DESTINATIONS = [
       `Eat pizza where it was invented`
     ],
     restaurants: [
-      { name: "L'Antica Pizzeria Da Michele", location: "Naples", rating: 4.5, review: "The most famous pizzeria in Naples, serving only two kinds of pizza since 1870 — Margherita and Marinara — in a no-frills, cramped dining room in the historic center.", img: "assets/uploads/naples-g1.jpg", communityReview: "Featured in Eat, Pray, Love and beloved by locals and tourists alike for over 150 years — reviewers consistently call the simplicity the whole point, with soft, chewy, wood-fired crust that needs nothing more than the two options on the menu. Expect a real line; they don't take reservations.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Gino Sorbillo", location: "Naples", rating: 4.4, review: "A Naples pizza dynasty since 1935 — the Sorbillo family has 21 children who all became pizza makers, and grandson Gino has become something of a celebrity chef.", img: "assets/uploads/naples-g2.jpg", communityReview: "Regularly named in the same breath as Da Michele as one of the two best-known pizzerias in the city — reviewers praise the wider topping selection and chewy Neapolitan dough, though it's just as packed with tourists as its famous rival.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Antica Pizzeria Di Matteo", location: "Naples", rating: 4.5, review: "A cheap, unpretentious Naples institution on Via dei Tribunali, known for turning out fantastic pizza without the ceremony of its more famous neighbors.", img: "assets/uploads/naples-g3.jpg", communityReview: "Often called the underdog favorite among Naples pizza spots — reviewers love that it's easy to walk right into compared to the hours-long waits elsewhere, without sacrificing quality.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Antica Friggitoria La Masardona", location: "Naples", rating: 4.3, review: "A Naples specialist in pizza fritta — fried pizza — running since 1945, serving a completely different (and less internationally famous) side of Neapolitan pizza tradition.", img: "assets/uploads/naples-g4.jpg", communityReview: "Reviewers consistently recommend this as the place to try fried pizza specifically, distinct from the wood-fired classics found elsewhere in the city — a genuinely different dish worth seeking out on its own.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "L'Antica Pizzeria Da Michele", location: "Naples", rating: 4.5, review: "The most famous pizzeria in Naples, serving only two kinds of pizza since 1870 — Margherita and Marinara — in a no-frills, cramped dining room in the historic center.", img: "/assets/uploads/naples-g1.jpg", communityReview: "Featured in Eat, Pray, Love and beloved by locals and tourists alike for over 150 years — reviewers consistently call the simplicity the whole point, with soft, chewy, wood-fired crust that needs nothing more than the two options on the menu. Expect a real line; they don't take reservations.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Gino Sorbillo", location: "Naples", rating: 4.4, review: "A Naples pizza dynasty since 1935 — the Sorbillo family has 21 children who all became pizza makers, and grandson Gino has become something of a celebrity chef.", img: "/assets/uploads/naples-g2.jpg", communityReview: "Regularly named in the same breath as Da Michele as one of the two best-known pizzerias in the city — reviewers praise the wider topping selection and chewy Neapolitan dough, though it's just as packed with tourists as its famous rival.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Antica Pizzeria Di Matteo", location: "Naples", rating: 4.5, review: "A cheap, unpretentious Naples institution on Via dei Tribunali, known for turning out fantastic pizza without the ceremony of its more famous neighbors.", img: "/assets/uploads/naples-g3.jpg", communityReview: "Often called the underdog favorite among Naples pizza spots — reviewers love that it's easy to walk right into compared to the hours-long waits elsewhere, without sacrificing quality.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Antica Friggitoria La Masardona", location: "Naples", rating: 4.3, review: "A Naples specialist in pizza fritta — fried pizza — running since 1945, serving a completely different (and less internationally famous) side of Neapolitan pizza tradition.", img: "/assets/uploads/naples-g4.jpg", communityReview: "Reviewers consistently recommend this as the place to try fried pizza specifically, distinct from the wood-fired classics found elsewhere in the city — a genuinely different dish worth seeking out on its own.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Eccellenze della Costiera", location: "Naples", rating: 3.6, review: "A gourmet food hall inside Napoli Centrale train station, built around Amalfi Coast and Neapolitan specialties — convenient for a bite before catching the train to Pompeii or Sorrento.", communityReview: "Reviews are mixed for a station food stop — some travelers appreciate the variety of pastries, sandwiches, and regional specialties for a quick bite before a train, while others flag high prices and inconsistent quality for what is, at the end of the day, station food.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "La Torre", location: "Naples", review: "A sit-down spot near Pompeii for pizza (two kinds), a whimsical foil-wrapped tableside dish, and a local craft beer. Not the same La Torre as the one in Pisa — just a shared name." },
       { name: "Mr.Q Bubble Tea", location: "Naples", rating: 4.6, review: "A bubble tea and Chinese snack spot near Gianturco station — boba, fried chicken, and noodles.", communityReview: "A well-loved neighborhood boba spot reviewers call some of the best bubble tea in Naples, with the fried chicken and noodle dishes getting just as much praise as the drinks — friendly staff and a genuinely cozy shop.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/502579014_10229342775422074_224625316066423243_n.jpg", caption: "Pastries and coffee at Eccellenze della Costiera, Napoli Centrale station — a stop on the way to Pompeii" },
-      { src: "assets/502589094_10229338638798661_2944274050840946459_n.jpg", caption: "A classic Margherita pizza, wood-fired and blistered, at La Torre" },
-      { src: "assets/502899608_10229338638918664_4961647366650328902_n.jpg", caption: "A whimsical foil-wrapped dish, tableside at La Torre" },
-      { src: "assets/502606826_10229338635278573_6460835376860026925_n.jpg", caption: "A white pizza with prosciutto, cherry tomatoes, and parmesan at La Torre" },
-      { src: "assets/503243748_10229338637358625_1666889025334230620_n.jpg", caption: "L'Ambrata del Brenta, an Italian craft beer, at La Torre" },
-      { src: "assets/502537777_10229338428353400_4100520548686645012_n.jpg", caption: "A family stop at Mr.Q Bubble Tea, Naples" },
-      { src: "assets/502619248_10229338491834987_4149909567398674603_n.jpg", caption: "Gnocchi in tomato sauce with fresh basil, Piazza Garibaldi" },
-      { src: "assets/502985639_10229338491074968_2277332976577532582_n.jpg", caption: "Seafood risotto with shrimp, mussels, and clams, Piazza Garibaldi" },
-      { src: "assets/502611892_10229338491914989_7562541931394164609_n.jpg", caption: "A Weihenstephaner Hefeweissbier, Piazza Garibaldi" },
-      { src: "assets/502566478_10229338494155045_6530128295877957546_n.jpg", caption: "A pizza with prosciutto, sun-dried tomato, and mozzarella, Piazza Garibaldi" },
-      { src: "assets/502997516_10229338427833387_7843569522837717536_n.jpg", caption: "Posing with a bar stool at Mr.Q Bubble Tea, Naples" },
-      { src: "assets/500770632_10229338428313399_6231269471880385450_n.jpg", caption: "A giant boba-pearl sculpture outside Mr.Q Bubble Tea, Naples" }
+      { src: "/assets/502579014_10229342775422074_224625316066423243_n.jpg", caption: "Pastries and coffee at Eccellenze della Costiera, Napoli Centrale station — a stop on the way to Pompeii" },
+      { src: "/assets/502589094_10229338638798661_2944274050840946459_n.jpg", caption: "A classic Margherita pizza, wood-fired and blistered, at La Torre" },
+      { src: "/assets/502899608_10229338638918664_4961647366650328902_n.jpg", caption: "A whimsical foil-wrapped dish, tableside at La Torre" },
+      { src: "/assets/502606826_10229338635278573_6460835376860026925_n.jpg", caption: "A white pizza with prosciutto, cherry tomatoes, and parmesan at La Torre" },
+      { src: "/assets/503243748_10229338637358625_1666889025334230620_n.jpg", caption: "L'Ambrata del Brenta, an Italian craft beer, at La Torre" },
+      { src: "/assets/502537777_10229338428353400_4100520548686645012_n.jpg", caption: "A family stop at Mr.Q Bubble Tea, Naples" },
+      { src: "/assets/502619248_10229338491834987_4149909567398674603_n.jpg", caption: "Gnocchi in tomato sauce with fresh basil, Piazza Garibaldi" },
+      { src: "/assets/502985639_10229338491074968_2277332976577532582_n.jpg", caption: "Seafood risotto with shrimp, mussels, and clams, Piazza Garibaldi" },
+      { src: "/assets/502611892_10229338491914989_7562541931394164609_n.jpg", caption: "A Weihenstephaner Hefeweissbier, Piazza Garibaldi" },
+      { src: "/assets/502566478_10229338494155045_6530128295877957546_n.jpg", caption: "A pizza with prosciutto, sun-dried tomato, and mozzarella, Piazza Garibaldi" },
+      { src: "/assets/502997516_10229338427833387_7843569522837717536_n.jpg", caption: "Posing with a bar stool at Mr.Q Bubble Tea, Naples" },
+      { src: "/assets/500770632_10229338428313399_6231269471880385450_n.jpg", caption: "A giant boba-pearl sculpture outside Mr.Q Bubble Tea, Naples" }
     ],
     hiddenGems: [
 `The lesser-visited Herculaneum ruins, smaller and less crowded than Pompeii but remarkably well preserved`,
@@ -2247,7 +2249,7 @@ const DESTINATIONS = [
 `Check the weather for Apr – Jun before locking in dates`,
 `Pompeii takes a half to full day — plan accordingly`
     ],
-        gallery: ["assets/uploads/naples-hero.jpg", "assets/uploads/naples-card.jpg", "assets/uploads/naples-g1.jpg", "assets/uploads/naples-g2.jpg", "assets/uploads/naples-g3.jpg", "assets/uploads/naples-g4.jpg", "assets/uploads/naples-g5.jpg", "assets/uploads/naples-g6.jpg"],
+        gallery: ["/assets/uploads/naples-hero.jpg", "/assets/uploads/naples-card.jpg", "/assets/uploads/naples-g1.jpg", "/assets/uploads/naples-g2.jpg", "/assets/uploads/naples-g3.jpg", "/assets/uploads/naples-g4.jpg", "/assets/uploads/naples-g5.jpg", "/assets/uploads/naples-g6.jpg", { src: "/assets/502629031_10229342774622054_6565444853033875479_n.jpg", caption: "The plaster casts of Pompeii's victims" }, { src: "/assets/502486323_10229342774182043_6350374919185361503_n.jpg", caption: "The Temple of Jupiter ruins, Pompeii" }],
     rating: 8,
     wouldReturn: `Yes — mainly for the pizza.`,
     relatedAdventure: "italy-2022"
@@ -2258,8 +2260,8 @@ const DESTINATIONS = [
     country: `Italy`,
     year: 2022,
     tag: `Italy 2022 Stop`,
-        heroImg: "assets/uploads/amalfi-hero.jpg",
-        cardImg: "assets/uploads/amalfi-card.jpg",
+        heroImg: "/assets/uploads/amalfi-hero.jpg",
+        cardImg: "/assets/uploads/amalfi-card.jpg",
     coords: { top: "27.4%", left: "54.1%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2274,16 +2276,16 @@ const DESTINATIONS = [
       `Take in the coastal drive`
     ],
     restaurants: [
-      { name: "Da Gemma", location: "Amalfi", rating: 4.5, review: "An old-school Amalfi favorite with recipes said to trace back to cookbooks used for the Dukes of Naples — expect fresh fish and old-school, detail-oriented service.", img: "assets/uploads/amalfi-g1.jpg", communityReview: "Reviewers consistently recommend booking ahead for an outdoor table, calling the fritto misto (lightly battered mixed seafood) and the Caprese salad standouts — a reliably excellent, classic Amalfi meal.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Ristorante La Caravella", location: "Amalfi", rating: 4.4, review: "A Michelin-starred restaurant set in a 12th-century palace near Amalfi's old shipyards, blending regional dishes with modern, experimental touches.", img: "assets/uploads/amalfi-g2.jpg", communityReview: "One of the most decorated dining rooms on this stretch of coast — reviewers praise both the historic setting and dishes like squid-ink pasta filled with ricotta and lobster, calling it a genuine special-occasion splurge.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Ristorante il Chiostro", location: "Amalfi", rating: 4.3, review: "A charming spot right by the Amalfi Cathedral, with outdoor seating looking straight onto the piazza.", img: "assets/uploads/amalfi-g3.jpg", communityReview: "Reviewers consistently mention the views of the cathedral square as the highlight, with scratch-made pasta — the lasagna and pesto get particular praise — rounding out a reliably good meal in the heart of town.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Sensi Restaurant", location: "Amalfi", rating: 4.5, review: "A Michelin-starred seafood specialist with multi-course tasting menus and a romantic outdoor terrace for sunset dining.", img: "assets/uploads/amalfi-hero.jpg", communityReview: "Reviewers consistently call the terrace dinner one of the highlights of the whole Amalfi Coast, with the zucchini flowers stuffed with ricotta and zucchini linguine getting particular praise — request the terrace table when booking.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Da Gemma", location: "Amalfi", rating: 4.5, review: "An old-school Amalfi favorite with recipes said to trace back to cookbooks used for the Dukes of Naples — expect fresh fish and old-school, detail-oriented service.", img: "/assets/uploads/amalfi-g1.jpg", communityReview: "Reviewers consistently recommend booking ahead for an outdoor table, calling the fritto misto (lightly battered mixed seafood) and the Caprese salad standouts — a reliably excellent, classic Amalfi meal.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Ristorante La Caravella", location: "Amalfi", rating: 4.4, review: "A Michelin-starred restaurant set in a 12th-century palace near Amalfi's old shipyards, blending regional dishes with modern, experimental touches.", img: "/assets/uploads/amalfi-g2.jpg", communityReview: "One of the most decorated dining rooms on this stretch of coast — reviewers praise both the historic setting and dishes like squid-ink pasta filled with ricotta and lobster, calling it a genuine special-occasion splurge.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Ristorante il Chiostro", location: "Amalfi", rating: 4.3, review: "A charming spot right by the Amalfi Cathedral, with outdoor seating looking straight onto the piazza.", img: "/assets/uploads/amalfi-g3.jpg", communityReview: "Reviewers consistently mention the views of the cathedral square as the highlight, with scratch-made pasta — the lasagna and pesto get particular praise — rounding out a reliably good meal in the heart of town.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sensi Restaurant", location: "Amalfi", rating: 4.5, review: "A Michelin-starred seafood specialist with multi-course tasting menus and a romantic outdoor terrace for sunset dining.", img: "/assets/uploads/amalfi-hero.jpg", communityReview: "Reviewers consistently call the terrace dinner one of the highlights of the whole Amalfi Coast, with the zucchini flowers stuffed with ricotta and zucchini linguine getting particular praise — request the terrace table when booking.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: "Amorino", location: "Amalfi", rating: 4.2, review: "The Italian gelato chain known for rose-shaped cones — a sweet, easy stop along the Amalfi coast road.", communityReview: "An international chain (born in Paris, now everywhere), and reviewers generally call the gelato genuinely good despite the tourist-trap prices — the flower-shaped cones are the signature order, with pistachio and tiramisu as recurring favorites.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/502477833_10229338611517979_6987088957386459552_n.jpg", caption: "A lemon granita, served in a whole hollowed-out lemon, along the Amalfi coast road" },
-      { src: "assets/502575344_10229338585597331_6602698004620153639_n.jpg", caption: "Lunch on an oceanview terrace along the Amalfi Coast" },
-      { src: "assets/503162135_10229338584517304_2946633906672191226_n.jpg", caption: "Ordering gelato at Amorino" }
+      { src: "/assets/502477833_10229338611517979_6987088957386459552_n.jpg", caption: "A lemon granita, served in a whole hollowed-out lemon, along the Amalfi coast road" },
+      { src: "/assets/502575344_10229338585597331_6602698004620153639_n.jpg", caption: "Lunch on an oceanview terrace along the Amalfi Coast" },
+      { src: "/assets/503162135_10229338584517304_2946633906672191226_n.jpg", caption: "Ordering gelato at Amorino" }
     ],
     hiddenGems: [
 `Path of the Gods, a cliffside hiking trail above the coast with fewer crowds than the beach towns below`,
@@ -2293,7 +2295,7 @@ const DESTINATIONS = [
 `Check the weather for May – Sep before locking in dates`,
 `The coastal roads are narrow and slow — build in extra travel time`
     ],
-        gallery: ["assets/uploads/amalfi-hero.jpg", "assets/uploads/amalfi-card.jpg", "assets/uploads/amalfi-g1.jpg", "assets/uploads/amalfi-g2.jpg", "assets/uploads/amalfi-g3.jpg"],
+        gallery: ["/assets/uploads/amalfi-hero.jpg", "/assets/uploads/amalfi-card.jpg", "/assets/uploads/amalfi-g1.jpg", "/assets/uploads/amalfi-g2.jpg", "/assets/uploads/amalfi-g3.jpg", { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_450.jpg", caption: "A family selfie overlooking Sorrento's cliffside street and the sea" }, { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_451.jpg", caption: "Wandering the shops of Sorrento" }, { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_452.jpg", caption: "On the coach along the coast" }, { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_445.jpg", caption: "A selfie on the beach in Amalfi town" }, { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_446.jpg", caption: "Posing under a flower-covered heart arch along the coast" }],
     rating: 9,
     wouldReturn: `Yes — this was one of the most beautiful drives of the whole trip.`,
     relatedAdventure: "italy-2022"
@@ -2325,14 +2327,14 @@ const DESTINATIONS = [
       { name: `Sukiyabashi Jiro`, location: `Tokyo`, rating: 4.3, review: `If you're a sushi lover, this is a must-visit restaurant in Tokyo featured in the famous documentary "Jiro Dreams of Sushi".`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=900", communityReview: "Made famous by 'Jiro Dreams of Sushi' and a presidential visit — reviews run to extremes. Many call it the best sushi of their life; others find the famously brisk, no-frills 20-minute service cold and not worth the steep price.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Ichiran Ramen`, location: `Tokyo`, rating: 4.5, review: `This popular ramen chain in Tokyo allows diners to customize their own bowls of ramen in private booths.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=900", communityReview: "Famous for solo dining booths and a fully customizable tonkotsu broth — reviewers consistently enjoy the novelty and quality, though some call it more tourist experience than Kyoto or Tokyo's best ramen.", communitySource: "Google/Yelp/Tripadvisor" },
       { name: `Genki Sushi`, location: `Tokyo`, rating: 4.3, review: `This conveyor belt sushi chain is a fun and affordable option for sushi lovers in Tokyo and other cities.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=900", communityReview: "A popular, affordable conveyor-belt sushi chain — reviews are mixed, with many enjoying the fun, kid-friendly format while others note inconsistent freshness and slow service at busier locations.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: `Pokémon Cafe`, location: `Tokyo`, rating: 3.9, review: `A reservation-only, character-themed cafe in Nihonbashi, where every dish arrives shaped or plated like a Pokémon and a life-size Pikachu makes the rounds on the hour.`, img: "assets/471291266_10227888015773992_6759292506791357956_n.jpg", communityReview: "Famously hard to book, and reviewers are split — plenty call it a magical must-do with adorable plating and a Pikachu meet-and-greet, while others find the food itself basic and overpriced for what's essentially kid-sized portions.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `Pokémon Cafe`, location: `Tokyo`, rating: 3.9, review: `A reservation-only, character-themed cafe in Nihonbashi, where every dish arrives shaped or plated like a Pokémon and a life-size Pikachu makes the rounds on the hour.`, img: "/assets/471291266_10227888015773992_6759292506791357956_n.jpg", communityReview: "Famously hard to book, and reviewers are split — plenty call it a magical must-do with adorable plating and a Pikachu meet-and-greet, while others find the food itself basic and overpriced for what's essentially kid-sized portions.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/61013299_10214602656608316_7296782443833458688_n.jpg", caption: "Tonkotsu ramen in a private booth, Ichiran Ramen, Tokyo" },
-      { src: "assets/60962700_10214602650768170_7914548674011594752_n.jpg", caption: "Squeezed into the booth at Ichiran Ramen, Tokyo" },
-      { src: "assets/471291266_10227888015773992_6759292506791357956_n.jpg", caption: "The Eevee plate at Pokémon Cafe, Tokyo" },
-      { src: "assets/62146506_10214675622632421_4724162428701507584_n.jpg", caption: "Detective Pikachu mac and cheese with waffle fries, Pokémon Cafe, Tokyo" },
-      { src: "assets/61251202_10214607135200278_7303868521396568064_n.jpg", caption: "A celebratory strawberry drink at a cafe between Shibuya and Harajuku, Tokyo — shop name lost to time" }
+      { src: "/assets/61013299_10214602656608316_7296782443833458688_n.jpg", caption: "Tonkotsu ramen in a private booth, Ichiran Ramen, Tokyo" },
+      { src: "/assets/60962700_10214602650768170_7914548674011594752_n.jpg", caption: "Squeezed into the booth at Ichiran Ramen, Tokyo" },
+      { src: "/assets/471291266_10227888015773992_6759292506791357956_n.jpg", caption: "The Eevee plate at Pokémon Cafe, Tokyo" },
+      { src: "/assets/62146506_10214675622632421_4724162428701507584_n.jpg", caption: "Detective Pikachu mac and cheese with waffle fries, Pokémon Cafe, Tokyo" },
+      { src: "/assets/61251202_10214607135200278_7303868521396568064_n.jpg", caption: "A celebratory strawberry drink at a cafe between Shibuya and Harajuku, Tokyo — shop name lost to time" }
     ],
     hiddenGems: [
 `A quiet corner of Tokyo away from the main sights, worth the wander`,
@@ -2344,7 +2346,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Mar – May before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000", { src: "assets/60940962_10214598837192833_7106611681492467712_n.jpg", caption: "Day one in Tokyo, posing with a classic vending machine" }, { src: "assets/61626444_10214606115574788_1160055857602363392_n.jpg", caption: "A seafood stand somewhere between Niiza and Shibuya, Tokyo" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j18.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j14.jpg?w=1000", { src: "/assets/60940962_10214598837192833_7106611681492467712_n.jpg", caption: "Day one in Tokyo, posing with a classic vending machine" }, { src: "/assets/61626444_10214606115574788_1160055857602363392_n.jpg", caption: "A seafood stand somewhere between Niiza and Shibuya, Tokyo" }],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "japan-2019"
@@ -2374,7 +2376,7 @@ const DESTINATIONS = [
       { name: `Kikunoi`, location: `Kyoto`, rating: 4.6, review: `This three-Michelin-starred restaurant in Kyoto serves traditional kaiseki cuisine, a multi-course meal consisting of beautifully presented dishes made with seasonal ingredients.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j2.jpg?w=900", communityReview: "A three-Michelin-starred kaiseki institution led by chef Yoshihiro Murata — most reviewers call it an unforgettable, exquisitely presented meal, though a few find the pacing slow and the experience doesn't match the price for their taste.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/61816342_10214647641212903_6424565252775477248_n.jpg", caption: "A vivid green matcha beer near Nijo Castle, Kyoto — vendor lost to time" }
+      { src: "/assets/61816342_10214647641212903_6424565252775477248_n.jpg", caption: "A vivid green matcha beer near Nijo Castle, Kyoto — vendor lost to time" }
     ],
     hiddenGems: [
 `A quiet corner of Kyoto away from the main sights, worth the wander`,
@@ -2414,7 +2416,7 @@ const DESTINATIONS = [
       { name: `Dotonbori Street`, location: `Osaka`, rating: 4.3, review: `Located in Osaka, this vibrant street is home to various street food vendors offering everything from takoyaki to okonomiyaki.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/j12.jpg?w=900", communityReview: "Osaka's best-known food street, lined with neon signs and street stalls — reviewers consistently call it a must-see for takoyaki and okonomiyaki, while noting it's crowded and touristy by evening.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/61693158_10214648847603062_98563679762513920_n.jpg", caption: "A takoyaki order piled high with bonito flakes, Dotonbori Street, Osaka" }
+      { src: "/assets/61693158_10214648847603062_98563679762513920_n.jpg", caption: "A takoyaki order piled high with bonito flakes, Dotonbori Street, Osaka" }
     ],
     hiddenGems: [
 `A quiet corner of Osaka away from the main sights, worth the wander`,
@@ -2437,9 +2439,9 @@ const DESTINATIONS = [
     country: `Japan`,
     year: 2019,
     tag: `Japan 2019 Stop`,
-        heroImg: "assets/uploads/fuji-hero.jpg",
-        cardImg: "assets/uploads/fuji-card.jpg",
-    coords: { top: "22%", left: "80.5%" },
+        heroImg: "/assets/uploads/fuji-hero.jpg",
+        cardImg: "/assets/uploads/fuji-card.jpg",
+    coords: { top: "30.6%", left: "88.5%" },
     quickFacts: [
       { label: "Best time to go", value: `Jun – Sep` },
       { label: "Currency", value: `Japanese Yen` },
@@ -2453,17 +2455,17 @@ const DESTINATIONS = [
       `Photograph the peak from one of the classic viewpoints`
     ],
     restaurants: [
-      { name: "Houtou Fudou", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "The area's best-known hoto noodle specialist, with several branches around Lake Kawaguchiko — the main store sits near the Kawaguchiko Museum of Art with views of Mt. Fuji itself.", img: "assets/uploads/fuji-g1.jpg", communityReview: "Reviewers consistently call this the place to try hoto — thick, chewy wheat noodles in a rich miso-pumpkin broth — with the hearty, warming bowl repeatedly described as the perfect antidote to the mountain cold.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Kosaku Hoto Kosaku", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A humble, locally loved noodle shop known for its exceptional hoto noodle soup, tucked into the Mt. Fuji area away from the busier tourist strips.", img: "assets/uploads/fuji-g2.jpg", communityReview: "Reviewers consistently praise the generous portions and rich broth, with the spicy pork hoto and fried oyster getting particular mentions — a genuine local favorite, not just a tourist stop.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Shaw's Sushi Bar & Dining", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "A stylish, modern sushi spot right across from Kawaguchiko Station, with beautifully presented nigiri and rolls.", img: "assets/uploads/fuji-g3.jpg", communityReview: "Reviewers consistently say the quality justifies the higher price tag for the area, with the variety of sushi sets — including a dedicated vegetarian option — earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" },
-      { name: "Yamagishi Ryokan", location: "Mt. Fuji (Kawaguchiko)", rating: 3.5, review: "A traditional lakeside ryokan right on Lake Kawaguchiko. The location was the real win here — the onsen was just okay, and the dinner and breakfast spread fell short of what the presentation promised.", img: "assets/61583878_10214624978006337_1527689591962730496_n.jpg", communityReview: "Reviewers consistently praise the lakeside location, the free onsen, and the sheer volume of the traditional dinner and breakfast sets — though a handful of Japanese-language reviews call the food underwhelming for the price, so expectations vary.", communitySource: "Google/Yelp/Tripadvisor" }
+      { name: "Houtou Fudou", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "The area's best-known hoto noodle specialist, with several branches around Lake Kawaguchiko — the main store sits near the Kawaguchiko Museum of Art with views of Mt. Fuji itself.", img: "/assets/uploads/fuji-g1.jpg", communityReview: "Reviewers consistently call this the place to try hoto — thick, chewy wheat noodles in a rich miso-pumpkin broth — with the hearty, warming bowl repeatedly described as the perfect antidote to the mountain cold.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Kosaku Hoto Kosaku", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A humble, locally loved noodle shop known for its exceptional hoto noodle soup, tucked into the Mt. Fuji area away from the busier tourist strips.", img: "/assets/uploads/fuji-g2.jpg", communityReview: "Reviewers consistently praise the generous portions and rich broth, with the spicy pork hoto and fried oyster getting particular mentions — a genuine local favorite, not just a tourist stop.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Shaw's Sushi Bar & Dining", location: "Mt. Fuji (Kawaguchiko)", rating: 4.4, review: "A stylish, modern sushi spot right across from Kawaguchiko Station, with beautifully presented nigiri and rolls.", img: "/assets/uploads/fuji-g3.jpg", communityReview: "Reviewers consistently say the quality justifies the higher price tag for the area, with the variety of sushi sets — including a dedicated vegetarian option — earning particular praise.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Sanrokuen", location: "Mt. Fuji (Kawaguchiko)", rating: 4.3, review: "A traditional barbecue restaurant inside a 150-year-old thatched-roof building, where diners grill their own skewers at the table.", img: "/assets/uploads/fuji-g4.jpg", communityReview: "Reviewers consistently describe the atmosphere as stepping back into old Japan, with the historic building and hands-on grilling experience cited as much as the food itself as the reason to visit.", communitySource: "Google/Yelp/Tripadvisor" },
+      { name: "Yamagishi Ryokan", location: "Mt. Fuji (Kawaguchiko)", rating: 3.5, review: "A traditional lakeside ryokan right on Lake Kawaguchiko. The location was the real win here — the onsen was just okay, and the dinner and breakfast spread fell short of what the presentation promised.", img: "/assets/61583878_10214624978006337_1527689591962730496_n.jpg", communityReview: "Reviewers consistently praise the lakeside location, the free onsen, and the sheer volume of the traditional dinner and breakfast sets — though a handful of Japanese-language reviews call the food underwhelming for the price, so expectations vary.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/61637316_10214620472773709_7935913675292934144_n.jpg", caption: "Sake service at dinner, Yamagishi Ryokan, Lake Kawaguchiko" },
-      { src: "assets/61583878_10214624978006337_1527689591962730496_n.jpg", caption: "The full kaiseki-style spread at Yamagishi Ryokan, Lake Kawaguchiko" },
-      { src: "assets/61368473_10214620470933663_3575821631269896192_n.jpg", caption: "Fujiyama Cookie, a Mt. Fuji-shaped souvenir cookie, Kawaguchiko" },
-      { src: "assets/61303381_10214620471413675_8444632030150393856_n.jpg", caption: "A closer look at the Fujiyama Cookie boxes, Kawaguchiko" }
+      { src: "/assets/61637316_10214620472773709_7935913675292934144_n.jpg", caption: "Sake service at dinner, Yamagishi Ryokan, Lake Kawaguchiko" },
+      { src: "/assets/61583878_10214624978006337_1527689591962730496_n.jpg", caption: "The full kaiseki-style spread at Yamagishi Ryokan, Lake Kawaguchiko" },
+      { src: "/assets/61368473_10214620470933663_3575821631269896192_n.jpg", caption: "Fujiyama Cookie, a Mt. Fuji-shaped souvenir cookie, Kawaguchiko" },
+      { src: "/assets/61303381_10214620471413675_8444632030150393856_n.jpg", caption: "A closer look at the Fujiyama Cookie boxes, Kawaguchiko" }
     ],
     hiddenGems: [
 `The Chureito Pagoda viewpoint near Fujiyoshida for the classic pagoda-and-mountain photo`,
@@ -2473,7 +2475,7 @@ const DESTINATIONS = [
 `Fuji is famously shy — check forecasts and go early for the best chance of clear skies`,
 `Check the weather for Jun – Sep before locking in dates`
     ],
-        gallery: ["assets/uploads/fuji-hero.jpg", "assets/uploads/fuji-card.jpg", "assets/uploads/fuji-g1.jpg", "assets/uploads/fuji-g2.jpg", "assets/uploads/fuji-g3.jpg", "assets/uploads/fuji-g4.jpg", "assets/uploads/fuji-g5.jpg", "assets/uploads/fuji-g6.jpg"],
+        gallery: ["/assets/uploads/fuji-hero.jpg", "/assets/uploads/fuji-card.jpg", "/assets/uploads/fuji-g1.jpg", "/assets/uploads/fuji-g2.jpg", "/assets/uploads/fuji-g3.jpg", "/assets/uploads/fuji-g4.jpg", "/assets/uploads/fuji-g5.jpg", "/assets/uploads/fuji-g6.jpg"],
     rating: 9,
     wouldReturn: `Yes — worth a second try if the mountain hid behind clouds the first time.`,
     relatedAdventure: "japan-2019"
@@ -2484,8 +2486,8 @@ const DESTINATIONS = [
     country: `Greece`,
     year: 2022,
     tag: `Greece 2022 Stop`,
-    heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900",
+    heroImg: "/assets/489847328_10228749503670651_1113937253264547800_n.jpg",
+    cardImg: "/assets/489901709_10228749495750453_253301688433922928_n.jpg",
     coords: { top: "28.9%", left: "56.6%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2502,15 +2504,15 @@ const DESTINATIONS = [
 `Experience the nightlife`
     ],
     restaurants: [
-      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=900", communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
+      { name: `To Ouzeri tou Laki`, location: `Athens`, rating: 4.5, review: `This restaurant in Athens is famous for its ouzo, a Greek liquor, and meze, small plates of traditional Greek dishes like tzatziki, saganaki, and dolmades.`, communityReview: "A classic Athens ouzeri praised by reviewers for its lively, authentic meze spread and generous ouzo pours — a favorite for a long, unhurried Greek meal rather than a quick bite." , communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/489173504_10228749728956283_7083420681290084372_n.jpg", caption: "A hazelnut and cream dessert near the Acropolis, Athens — restaurant name lost to time" },
-      { src: "assets/489450526_10228749726276216_4176068603656769503_n.jpg", caption: "A greens and cheese salad near the Acropolis, Athens" },
-      { src: "assets/489446403_10228749726556223_947766054591346168_n.jpg", caption: "Creamy chicken penne near the Acropolis, Athens" },
-      { src: "assets/489436913_10228749727916257_1269803508640154464_n.jpg", caption: "A Heineken and a Fischer pilsner near the Acropolis, Athens" },
-      { src: "assets/489557505_10228749727836255_6456962449726596482_n.jpg", caption: "A bottle of Kanenas Syrah-Mavroudi, a Greek red, near the Acropolis, Athens" },
-      { src: "assets/490377070_10228749506990734_4372839175562057834_n.jpg", caption: "A Mythos lager near the Acropolis, Athens — restaurant name lost to time" }
+      { src: "/assets/489173504_10228749728956283_7083420681290084372_n.jpg", caption: "A hazelnut and cream dessert near the Acropolis, Athens — restaurant name lost to time" },
+      { src: "/assets/489450526_10228749726276216_4176068603656769503_n.jpg", caption: "A greens and cheese salad near the Acropolis, Athens" },
+      { src: "/assets/489446403_10228749726556223_947766054591346168_n.jpg", caption: "Creamy chicken penne near the Acropolis, Athens" },
+      { src: "/assets/489436913_10228749727916257_1269803508640154464_n.jpg", caption: "A Heineken and a Fischer pilsner near the Acropolis, Athens" },
+      { src: "/assets/489557505_10228749727836255_6456962449726596482_n.jpg", caption: "A bottle of Kanenas Syrah-Mavroudi, a Greek red, near the Acropolis, Athens" },
+      { src: "/assets/490377070_10228749506990734_4372839175562057834_n.jpg", caption: "A Mythos lager near the Acropolis, Athens — restaurant name lost to time" }
     ],
     hiddenGems: [
 `A quiet corner of Athens away from the main sights, worth the wander`,
@@ -2522,7 +2524,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g16.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g13.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g8.jpg?w=1000", { src: "assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g22.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", { src: "/assets/489965186_10228749504430670_7545952562232869573_n.jpg", caption: "Inside Fairytale Athens" }, { src: "/assets/489892538_10228749507870756_8742058688488010291_n.jpg", caption: "A sweet note on the napkin at Fairytale Athens" }, { src: "/assets/489847328_10228749503670651_1113937253264547800_n.jpg", caption: "The whimsical storefront of Fairytale Athens at night" }, { src: "/assets/489901709_10228749495750453_253301688433922928_n.jpg", caption: "Reading the menu at an outdoor table near the Acropolis, Athens" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2550,8 +2552,8 @@ const DESTINATIONS = [
       { name: "Selene", location: "Santorini", rating: 4.5, review: "This upscale restaurant in Santorini is known for its gourmet Greek cuisine made with locally sourced ingredients. Try their Santorinian fava, lobster pasta, and smoked pork with eggplant puree.", img: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g20.jpg?w=900", communityReview: "A destination restaurant set in a converted 18th-century monastery, led by a Michelin-starred chef — reviewers consistently call it one of the best meals on the island, though several flag steep pricing and a slow-paced, hours-long tasting menu.", communitySource: "Google/Yelp/Tripadvisor" }
     ],
     foodPhotos: [
-      { src: "assets/489969578_10228751542521621_2755098204194973161_n.jpg", caption: "A bottle of 2021 Santorini Assyrtiko, the island's signature white wine — restaurant name lost to time" },
-      { src: "assets/489437302_10228751542601623_142822739827153484_n.jpg", caption: "A bottle of Estate Argyros Vinsanto from Santorini" }
+      { src: "/assets/489969578_10228751542521621_2755098204194973161_n.jpg", caption: "A bottle of 2021 Santorini Assyrtiko, the island's signature white wine — restaurant name lost to time" },
+      { src: "/assets/489437302_10228751542601623_142822739827153484_n.jpg", caption: "A bottle of Estate Argyros Vinsanto from Santorini" }
     ],
     hiddenGems: [
 `A quiet corner of Santorini away from the main sights, worth the wander`,
@@ -2563,7 +2565,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g17.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g19.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g12.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g15.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g7.jpg?w=1000", { src: "/assets/499382385_10229191610083035_7048787824098504096_n.jpg", caption: "Watching the sunset over the caldera together" }, { src: "/assets/489626066_10228751458199513_7845878058680692911_n.jpg", caption: "In front of the Panagia Platsani church in Oia" }, { src: "/assets/489758408_10228751540761577_1724381751260380756_n.jpg", caption: "A sunset group photo overlooking the caldera" }, { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_671.jpg", caption: "Watching the sunset from the bow of the yacht" }, { src: "/assets/839a7be5-b43b-4f72-801d-33f16a636817-1_all_670.jpg", caption: "A toast to sunset on the yacht" }, { src: "/assets/490267806_10228751537681500_4546673587912182183_n.jpg", caption: "Another sunset selfie over the water" }, { src: "/assets/489427266_10228751462679625_8993695084556056010_n.jpg", caption: "On a terrace overlooking the caldera" }, { src: "/assets/489385039_10228751460999583_369590522256604622_n.jpg", caption: "A selfie above the whitewashed streets of Oia" }, { src: "/assets/489729061_10228751537561497_1954314271728871914_n.jpg", caption: "The caldera and volcanic island at sunset, Oia" }, { src: "/assets/489848133_10228751463039634_8545604638506720237_n.jpg", caption: "A selfie overlooking the caldera cliffs" }, { src: "/assets/489922712_10228751458359517_3443636960487478706_n.jpg", caption: "Looking out over Oia's whitewashed buildings and the caldera" }, { src: "/assets/490263402_10228751463199638_4447002567464947202_n.jpg", caption: "Walking the narrow streets of Oia" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2575,7 +2577,7 @@ const DESTINATIONS = [
     year: 2022,
     tag: `Greece 2022 Stop`,
     heroImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1600",
-    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=900",
+    cardImg: "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=900",
     coords: { top: "29.15%", left: "57.0%" },
     quickFacts: [
       { label: "Best time to go", value: `May – Sep` },
@@ -2601,7 +2603,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for May – Sep before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g21.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g23.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g9.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g6.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/05/g4.jpg?w=1000"],
     rating: 10,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: "greece-2022"
@@ -2808,7 +2810,7 @@ const DESTINATIONS = [
 `Pace the day around one big sight and one slow meal`,
 `Check the weather for Apr – Jun before locking in dates`
     ],
-    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=1000", { src: "assets/494696944_10229003960871922_49618793195950022_n.jpg", caption: "The Eiffel Tower lit up gold as evening set in" }, { src: "assets/494556999_10229003956311808_5012065644476853441_n.jpg", caption: "The family at the Arc de Triomphe" }],
+    gallery: ["https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr7.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr4.jpg?w=1000", "https://fatboilyfe.wordpress.com/wp-content/uploads/2023/04/fr5.jpg?w=1000", { src: "/assets/494696944_10229003960871922_49618793195950022_n.jpg", caption: "The Eiffel Tower lit up gold as evening set in" }, { src: "/assets/494556999_10229003956311808_5012065644476853441_n.jpg", caption: "The family at the Arc de Triomphe" }],
     rating: 9,
     wouldReturn: `Yes — already looking for an excuse to go back.`,
     relatedAdventure: null
@@ -2866,7 +2868,14 @@ const ADVENTURES = [
     stops: ["rome-2022", "florence-2022", "pisa-2022", "naples-2022", "amalfi-2022"],
     intro: `A trip through Rome, Florence, Pisa, Naples, and the Amalfi Coast — Renaissance cities, a leaning tower, and a coastal road that's an experience in itself.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Italy here"
+      "Some hotels are older with no elevator, or one too small for full-size suitcases — check ahead or be ready to carry heavy bags up several flights of stairs",
+      "Pack an outlet converter",
+      "Jet lag is real — don't plan reservations for at least the first day",
+      "Just pay the bus fare instead of risking it — fare dodging gets checked often and it's cheaper to just pay",
+      "In Naples, travel during the day and keep valuables in a hotel safe or front pockets — petty crime is a real risk there",
+      "Italian towns are walkable and almost any restaurant you stumble into will be good, but if there's a specific place you really want to eat or visit, book it ahead of time",
+      "For medical attention, go to a pharmacy first — pharmacists act as doctors for minor issues, rather than searching for a hospital",
+      "Don't try to carry wine home in your luggage — ship it instead, it saves a lot of trouble while traveling"
     ]
   },
   {
@@ -2878,8 +2887,22 @@ const ADVENTURES = [
     distance: "",
     stops: ["tokyo-2019", "kyoto-2019", "osaka-2019", "mt-fuji-2019"],
     intro: `A trip through Tokyo, Kyoto, Osaka, and Mt. Fuji — temples, trains, and far too much ramen along the way.`,
+    topExperiences: [
+      "2am ramen at any 24-hour ramen spot — it hits completely differently at that hour, kind of like Waffle House or Jack in the Box after the clubs back in America"
+    ],
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Japan here"
+      "Respect and manners go a long way — you're a visitor in their country, so play by their rules",
+      "Google Translate goes a long way — travel would've been even easier with how advanced it is now compared to back then",
+      "Tattoos aren't allowed in most onsens — bring skin-colored bandages to cover them up if you plan on going, or you may be turned away",
+      "Smaller local restaurants, especially outside Tokyo, often don't speak English and may turn foreigners away — it's not rudeness, it's just more difficult for a small business to serve someone they can't communicate with",
+      "Subways get crowded and are generally quiet, except in Osaka, which felt more relaxed and \"Americanized\"",
+      "If you're traveling as a woman, use the female-only train cars when available — there's an unfortunate reason Japan has them",
+      "Don't take pictures of women in kimono without asking — they're just going about their day, not there for tourists to photograph",
+      "7-Eleven is a lifeline — good food, good coffee, everywhere",
+      "Refreshing wipes are useful to carry with you",
+      "If you go to Tokyo Disney, bring a portable chair or mat for watching the parade",
+      "Public trash cans are nearly nonexistent — be mindful of how much you're carrying/consuming, or bring a small trash bag so you're not stuck holding your trash all day",
+      "Visit the smaller towns — they have a lot to offer beyond the big cities"
     ]
   },
   {
@@ -2892,7 +2915,13 @@ const ADVENTURES = [
     stops: ["athens-2022", "santorini-2022", "mykonos-2022"],
     intro: `A trip through Athens, Santorini, and Mykonos — island-hopping through ancient ruins and whitewashed cliffside towns.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Greece here"
+      "People are incredibly friendly — be prepared to step out of your comfort zone, because you'll feel like family to everyone at a restaurant by the end of your meal",
+      "Bring a portable fan — the way the cities are built, air doesn't flow well, but the sun definitely gets through",
+      "Pack sun shirts, sun hats, and lots of sunscreen — just expect hot, it's the Mediterranean after all",
+      "Lots of concrete and walking, so dress comfortable and cool",
+      "You can get lost easily, so bring a battery pack — you'll be relying on GPS a lot",
+      "Nightlife is great, so pack for that too, not just beach or casual wear",
+      "If you make it to Santorini, expect long waits at the popular photo spots — the southern part of the island is less crowded, more family-oriented, and has better seafood"
     ]
   },
   {
@@ -2905,7 +2934,9 @@ const ADVENTURES = [
     stops: ["auckland-2020", "taupo-2020", "queenstown-2020", "wellington-2020"],
     intro: `A trip through Auckland, Taupo, Queenstown, and Wellington — fjords, hobbits, and flat whites across the North and South Islands.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for New Zealand here"
+      "They drive on the left, and there are a lot of loose rocks on the roads — get the LDW (loss damage waiver) when renting a car, since broken windshields are common",
+      "It's a long, narrow country with slower speed limits, so expect to spend a lot more time driving than you'd plan for",
+      "Otherwise New Zealand is great, everyone speaks English, and the culture feels fairly American — just don't come in expecting great food, it's not really on par with the rest of the trip"
     ]
   },
   {
@@ -2918,7 +2949,11 @@ const ADVENTURES = [
     stops: ["belize-2015", "roatan-2015", "cancun-2015"],
     intro: `A trip through Belize, Roatán, and Cancún — Mayan ruins, the Mesoamerican Barrier Reef, and a stretch of turquoise coastline spanning three countries.`,
     packingTips: [
-      "Placeholder — add your real packing and practical tips for Central America here"
+      "Be wary of your surroundings and try to stay in tourist areas — there's really no need to go off on your own",
+      "Group tours and guides are well worth the money",
+      "Pack for hell — the temperatures and humidity are probably a little worse than hell itself",
+      "Bring a portable fan and an extra battery pack — whether it's the beach or just shopping, you'll be in the heat constantly, so fluids and a fan are a must",
+      "It gets hot, so go with comfortable sandals over comfortable shoes"
     ]
   }
 ];
@@ -2942,7 +2977,7 @@ const MISADVENTURES = [
     location: "Bangkok, Thailand",
     body: "Day one, big group, nobody could agree on where to eat, so we just walked into the heat and humidity until we hit the first place we saw — outdoor seating, no air conditioning, fans barely moving air. Nobody in our group had registered exactly how hot Thai spice levels run, so \"level 1\" turned out to be too much for most of us, and we had to order chilled or frozen drinks to cope — which melted almost as fast as they arrived in that heat. Turns out a lot of the kids couldn't handle the \"exotic\" dishes the grandparents had picked for the table either. The one saving grace was the beer — cold, refreshing, and cheap. Oh, and the flies and mosquitoes were abundant the entire meal.",
     photos: [
-      { src: "assets/725649310_10234219800944664_1556447570665327623_n.jpg", caption: "The spicy seafood salad that started it all" }
+      { src: "/assets/725649310_10234219800944664_1556447570665327623_n.jpg", caption: "The spicy seafood salad that started it all" }
     ]
   },
   {
@@ -2951,7 +2986,7 @@ const MISADVENTURES = [
     location: "An Giang, Vietnam",
     body: "An Giang is where we met distant relatives for the first time — grandpa wanted to show everyone his hometown and feed us the traditional foods he grew up on, bird's nest soup included. Once people heard how it's actually made, half the table quietly spat their spoonfuls into napkins when no one was looking. Meanwhile, one of our two vans ran out of gas on the way there, stranding half the family at a rest stop for hours. They missed the reunion meal entirely — but also missed the soup, eating whatever the rest stop had instead. To this day nobody's settled which van actually won: the one that made it and had to eat bird's nest soup with the family, or the one that broke down and just got regular food.",
     photos: [
-      { src: "assets/730382036_10234244475361509_219229668076375249_n.jpg", caption: "The street near the relatives' house — the van that made it" }
+      { src: "/assets/730382036_10234244475361509_219229668076375249_n.jpg", caption: "The street near the relatives' house — the van that made it" }
     ]
   },
   {
@@ -2972,10 +3007,10 @@ const MISADVENTURES = [
     location: "Koh Samui, Thailand",
     body: "We booked an elephant sanctuary visit, and grandpa — old-school about what that meant — assumed we were going to watch elephants perform tricks. He didn't realize until we arrived that the whole point of the place is rescuing elephants from exactly that kind of exploitation. He was visibly embarrassed once it clicked, and ended up moping on the sidelines instead of joining in. Meanwhile the kids got the show of their lives anyway, watching one of the elephants produce an absolutely massive pile of poop, mouths hanging open the entire time.",
     photos: [
-      { src: "assets/726815085_10234219805304773_350180301596123241_n.jpg", caption: "Feeding time at the sanctuary" },
-      { src: "assets/726937955_10234219804824761_3791555837304412408_n.jpg", caption: "An elephant reaching for its plate" },
-      { src: "assets/726900512_10234219804344749_4880148500870335688_n.jpg", caption: "A snack straight from the trunk" },
-      { src: "assets/726892264_10234219803544729_2943775928902597002_n.jpg", caption: "Watermelon, delivered by trunk" }
+      { src: "/assets/726815085_10234219805304773_350180301596123241_n.jpg", caption: "Feeding time at the sanctuary" },
+      { src: "/assets/726937955_10234219804824761_3791555837304412408_n.jpg", caption: "An elephant reaching for its plate" },
+      { src: "/assets/726900512_10234219804344749_4880148500870335688_n.jpg", caption: "A snack straight from the trunk" },
+      { src: "/assets/726892264_10234219803544729_2943775928902597002_n.jpg", caption: "Watermelon, delivered by trunk" }
     ]
   },
   {
@@ -2996,7 +3031,7 @@ const MISADVENTURES = [
     location: "Vail, Colorado",
     body: "The trip captions tell the whole story without any help from us: \"F— the cold,\" then \"Day 3, I'm tired,\" then finally, staring at the receipts, \"What $9k gets you.\" Ski season is beautiful. Ski season is also expensive and cold, and we said so in real time.",
     photos: [
-      { src: "assets/494705398_10229018757081818_9039649942325793074_n.jpg", caption: "Day 3, giving up mid-run" }
+      { src: "/assets/494705398_10229018757081818_9039649942325793074_n.jpg", caption: "Day 3, giving up mid-run" }
     ]
   },
   {
@@ -3005,11 +3040,11 @@ const MISADVENTURES = [
     location: "Vail, Colorado",
     body: "Extended family trip, boutique hotel, whole top floor rented out for privacy. My wife's sister mentioned to a surgeon she knew from work that she was heading to Vail to ski — he said something about being an expert skier, and somehow that turned into him just showing up in Vail during our family trip. We were polite about it — invited him to dinner once — but he never took the hint and never left. He tagged along everywhere, to the point where he ended up sleeping in his car in the hotel parking garage rather than take it as a sign to go home. Not so subtle hints from me did nothing to move him. Sometimes being blunt is the right call, especially where your family's safety is concerned. To this day, before any snow trip, someone asks my wife's sister: \"You didn't invite Chris, did you?\"",
     photos: [
-      { src: "assets/495276857_10229018550636657_2628968493062502312_n.jpg", caption: "Dinner with the whole extended family, Vail" },
-      { src: "assets/495187478_10229018552916714_2102089718307948246_n.jpg", caption: "Geared up at the gondola" },
-      { src: "assets/494373578_10229018783042467_1034077309238880956_n.jpg", caption: "Warming up in the hot tub after a day on the mountain" },
-      { src: "assets/494524173_10229019265334524_6910673678734421072_n.jpg", caption: "A family hug in Vail Village at night" },
-      { src: "assets/494693467_10229019265534529_6831009078748547833_n.jpg", caption: "Under the lights of the Vail Village Christmas tree" }
+      { src: "/assets/495276857_10229018550636657_2628968493062502312_n.jpg", caption: "Dinner with the whole extended family, Vail" },
+      { src: "/assets/495187478_10229018552916714_2102089718307948246_n.jpg", caption: "Geared up at the gondola" },
+      { src: "/assets/494373578_10229018783042467_1034077309238880956_n.jpg", caption: "Warming up in the hot tub after a day on the mountain" },
+      { src: "/assets/494524173_10229019265334524_6910673678734421072_n.jpg", caption: "A family hug in Vail Village at night" },
+      { src: "/assets/494693467_10229019265534529_6831009078748547833_n.jpg", caption: "Under the lights of the Vail Village Christmas tree" }
     ]
   },
   {
@@ -3024,7 +3059,7 @@ const MISADVENTURES = [
     location: "Puerto Vallarta, Mexico",
     body: "We found a family sea turtle release online and booked it, and when we met the tour guide, only two unmarked vans showed up. After they verified us, we got in, and the vans started heading off onto unmarked trails deep into the jungle. Eventually we were asked to get out and start walking — across an empty beach that felt like the middle of nowhere, nowhere near civilization. We joked, only half-joking, that this is exactly how kidnappings and murders happen — but with twenty of us in the group, we figured we'd be fine. Turned out completely legitimate: a tiny beach camp dedicated to preserving and saving sea turtles. We got to release baby sea turtles onto the beach ourselves, and we named a couple of them Tophat and Monocle. Still have the video.",
     photos: [
-      { src: "assets/517650691_10230224957956086_1448456980895589996_n.jpg", caption: "Tophat and Monocle, making their way to the water" }
+      { src: "/assets/517650691_10230224957956086_1448456980895589996_n.jpg", caption: "Tophat and Monocle, making their way to the water" }
     ]
   },
   {
@@ -3039,9 +3074,9 @@ const MISADVENTURES = [
     location: "Puerto Vallarta, Mexico",
     body: "Locals kept talking about a hidden waterfall, so we asked our driver to take us to one — not realizing it meant a long hike through a dried-up riverbed. We just kept walking and walking until I struck up a conversation with a local guy on the trail. We hit it off immediately, and he ended up hiking the rest of the way with us, pointing things out and explaining the area as we went, until we reached a secluded waterfall with cliff diving and a hidden cave. Turned out our new hiking buddy owned the largest seafood restaurant in town. We jokingly tried to set him up with our single sister — he jokingly clarified he was more interested in me, which, fair enough, Puerto Vallarta is known for exactly that, and it explained how fast we'd all become genuine friends that afternoon.",
     photos: [
-      { src: "assets/191906373_10220021880925537_7166161925040619628_n.jpg", caption: "The swimming hole at the hidden waterfall" },
-      { src: "assets/192349733_10220021880965538_7375027543854073716_n.jpg", caption: "On the trail with our new hiking buddy" },
-      { src: "assets/194600895_10220021880765533_1540509783234101840_n.jpg", caption: "The hidden cave behind the waterfall" }
+      { src: "/assets/191906373_10220021880925537_7166161925040619628_n.jpg", caption: "The swimming hole at the hidden waterfall" },
+      { src: "/assets/192349733_10220021880965538_7375027543854073716_n.jpg", caption: "On the trail with our new hiking buddy" },
+      { src: "/assets/194600895_10220021880765533_1540509783234101840_n.jpg", caption: "The hidden cave behind the waterfall" }
     ]
   },
   {
@@ -3092,7 +3127,7 @@ const MISADVENTURES = [
     location: "Steamboat Springs, Colorado",
     body: "Took a wrong turn and ended up on a Black Diamond trail — after not having snowboarded in over a decade, I was in no shape to challenge myself like that. Made it down mostly by braking the whole way, but I survived.",
     photos: [
-      { src: "assets/514420984_10229935744005918_5793708837860611446_n.jpg", caption: "The view partway down the Black Diamond, no going back now" }
+      { src: "/assets/514420984_10229935744005918_5793708837860611446_n.jpg", caption: "The view partway down the Black Diamond, no going back now" }
     ]
   },
   {
@@ -3101,7 +3136,7 @@ const MISADVENTURES = [
     location: "Steamboat Springs, Colorado",
     body: "Booked a hot spring to recover from sore ski days — didn't clock in advance that it was clothing-optional with co-ed changing rooms. Worked out fine, I look good naked. The real twist: the spring sat right next to a genuinely freezing pond, so naturally I had to swim through the ice water to reach the hot side. Refreshing doesn't begin to cover it.",
     photos: [
-      { src: "assets/514329741_10229935954451179_928203243019916953_n.jpg", caption: "The hot spring, steam rising against the snow" }
+      { src: "/assets/514329741_10229935954451179_928203243019916953_n.jpg", caption: "The hot spring, steam rising against the snow" }
     ]
   },
   {
@@ -3122,7 +3157,7 @@ const MISADVENTURES = [
     location: "Las Vegas, Nevada",
     body: "Ran into friends from Texas who'd coincidentally picked the same weekend, and met up in \"Chinatown\" — using that term loosely. Also learned there's genuinely nothing in Vegas outside the Strip; it's desert, then more desert. And somehow, despite the Strip being one single road where you can only go one direction or the other, we got lost. Multiple times. Cutting through casinos didn't help. My wife's sense of direction strikes again.",
     photos: [
-      { src: "assets/80529702_10216139524109043_8019683396038950912_n.jpg", caption: "Reunited with old friends outside a Vegas Chinatown shoe shop" }
+      { src: "/assets/80529702_10216139524109043_8019683396038950912_n.jpg", caption: "Reunited with old friends outside a Vegas Chinatown shoe shop" }
     ]
   },
   {
@@ -3185,9 +3220,9 @@ const MISADVENTURES = [
     location: "San Francisco, California",
     body: "We agreed on a 1-mile loop through the redwoods. My wife had other ideas, and \"let's go up and this way\" turned into a 3-mile hike with no turning back. We were nearly at the end, completely injury-free, when my eldest fell and scraped her knee. Injury-free no more. A mile back to the car, jeans rolled up, bleeding the whole way. She's a trooper.",
     photos: [
-      { src: "assets/704120835_10233908192954659_6160879857245031695_n.jpg", caption: "On the trail through the redwoods" },
-      { src: "assets/705771745_10233908192434646_880802019577432087_n.jpg", caption: "Inside a hollowed-out redwood" },
-      { src: "assets/705830361_10233905404244943_4200515705616946896_n.jpg", caption: "On the boardwalk, before the scraped knee" }
+      { src: "/assets/704120835_10233908192954659_6160879857245031695_n.jpg", caption: "On the trail through the redwoods" },
+      { src: "/assets/705771745_10233908192434646_880802019577432087_n.jpg", caption: "Inside a hollowed-out redwood" },
+      { src: "/assets/705830361_10233905404244943_4200515705616946896_n.jpg", caption: "On the boardwalk, before the scraped knee" }
     ]
   },
   {
@@ -3202,7 +3237,7 @@ const MISADVENTURES = [
     location: "San Francisco, California",
     body: "Traffic that never made sense — jammed roads with seemingly no one actually going anywhere. A pier walk that felt endless. The whole trip distilled down to one feeling: San Francisco is a city where you see everything and somehow do nothing. People, next to people, following people, going nowhere.",
     photos: [
-      { src: "assets/705647655_10233929879576811_8061040375308441661_n.jpg", caption: "Lombard Street, crowded as ever" }
+      { src: "/assets/705647655_10233929879576811_8061040375308441661_n.jpg", caption: "Lombard Street, crowded as ever" }
     ]
   },
   {
@@ -3211,14 +3246,14 @@ const MISADVENTURES = [
     location: "Orlando, Florida (2023)",
     body: "A birthday trip — the girls are born a week apart, different years, and this one felt like it might be the last big Disney trip before my eldest moved out. So we went all in: dinner in the castle with the princesses, the works. A completely uneventful, perfectly executed, typical Disney day. Sometimes the whole point is that nothing goes wrong.",
     photos: [
-      { src: "assets/503648205_10229372768491882_6001641570007522170_n.jpg", caption: "Dinner in the castle with Ariel" },
-      { src: "assets/503587302_10229372767851866_4265110487340606511_n.jpg", caption: "With Snow White" },
-      { src: "assets/503345965_10229372768251876_7204391941647717682_n.jpg", caption: "With Rapunzel" },
-      { src: "assets/503651625_10229372764411780_5525600314535364197_n.jpg", caption: "With Aurora" },
-      { src: "assets/503608678_10229372762891742_1718267397114382016_n.jpg", caption: "With Tiana" },
-      { src: "assets/503647644_10229372765611810_5314526016170117554_n.jpg", caption: "With Cinderella" },
-      { src: "assets/503769376_10229373823158248_8672375764140424201_n.jpg", caption: "With Winnie the Pooh and Tigger" },
-      { src: "assets/503499770_10229372796612585_8729495123031740364_n.jpg", caption: "One last night at the castle" }
+      { src: "/assets/503648205_10229372768491882_6001641570007522170_n.jpg", caption: "Dinner in the castle with Ariel" },
+      { src: "/assets/503587302_10229372767851866_4265110487340606511_n.jpg", caption: "With Snow White" },
+      { src: "/assets/503345965_10229372768251876_7204391941647717682_n.jpg", caption: "With Rapunzel" },
+      { src: "/assets/503651625_10229372764411780_5525600314535364197_n.jpg", caption: "With Aurora" },
+      { src: "/assets/503608678_10229372762891742_1718267397114382016_n.jpg", caption: "With Tiana" },
+      { src: "/assets/503647644_10229372765611810_5314526016170117554_n.jpg", caption: "With Cinderella" },
+      { src: "/assets/503769376_10229373823158248_8672375764140424201_n.jpg", caption: "With Winnie the Pooh and Tigger" },
+      { src: "/assets/503499770_10229372796612585_8729495123031740364_n.jpg", caption: "One last night at the castle" }
     ]
   },
   {
@@ -3293,8 +3328,8 @@ const MISADVENTURES = [
     location: "Austin & San Antonio, Texas",
     body: "We found a \"rare bar and cafe establishment that let dogs inside\" and treated it like a national landmark. The next morning's caption was less celebratory: \"Good Morning. Heading into the Storm!\" Texas road trips will do that to you — perfect coffee one hour, driving into weather the next.",
     photos: [
-      { src: "assets/506050942_10229522526675743_4393089252648138176_n.jpg", caption: "The dog café, treated like a national landmark" },
-      { src: "assets/505383437_10229521605612717_9166438535357025219_n.jpg", caption: "Heading into the storm the next morning" }
+      { src: "/assets/506050942_10229522526675743_4393089252648138176_n.jpg", caption: "The dog café, treated like a national landmark" },
+      { src: "/assets/505383437_10229521605612717_9166438535357025219_n.jpg", caption: "Heading into the storm the next morning" }
     ]
   },
   {
@@ -3303,7 +3338,7 @@ const MISADVENTURES = [
     location: "Japan",
     body: "\"On our way to Robot Restaurant,\" then, minutes later, \"Anna and I being robots.\" No further context was provided in the original caption, and none was needed. Some Tokyo experiences just have to be seen — or reenacted at the table — to be believed.",
     photos: [
-      { src: "assets/62020307_10214676244327963_2364796134045515776_n.jpg", caption: "Being robots at the Robot Restaurant" }
+      { src: "/assets/62020307_10214676244327963_2364796134045515776_n.jpg", caption: "Being robots at the Robot Restaurant" }
     ]
   },
   {
@@ -3312,7 +3347,7 @@ const MISADVENTURES = [
     location: "Seattle, Washington",
     body: "Pike Place Market's flying fish are a rite of passage, and someone in the family insisted on a photo with one of the genuinely enormous ones on ice. \"Unsure why she wanted a pic with a big fish,\" the caption shrugs. We still don't know either. We still have the photo.",
     photos: [
-      { src: "assets/485792390_10228528149176927_1144406435073597934_n.jpg", caption: "The big fish photo, Pike Place Market" }
+      { src: "/assets/485792390_10228528149176927_1144406435073597934_n.jpg", caption: "The big fish photo, Pike Place Market" }
     ]
   },
   {
@@ -3333,7 +3368,7 @@ const MISADVENTURES = [
     location: "The Florida Keys",
     body: "\"On our way to snorkeling and scuba .... we're snuba-ing,\" reads the caption, coining a word for a hybrid activity none of us can properly explain to this day. We followed it up with, in the same person's words, \"Nerd Goals .... visited Ernest Hemingway's Home\" — proof the Keys can humble you and educate you in the same afternoon.",
     photos: [
-      { src: "assets/516522133_10230102698779683_665639374019869543_n.jpg", caption: "On the boat, on our way to go \"snuba-ing\"" }
+      { src: "/assets/516522133_10230102698779683_665639374019869543_n.jpg", caption: "On the boat, on our way to go \"snuba-ing\"" }
     ]
   },
   {
@@ -3342,9 +3377,9 @@ const MISADVENTURES = [
     location: "Orlando, Florida (2010)",
     body: "Florida humidity does not care about your Disney magic — it turned her hair into a full fro before we'd even made it to the Bibbidi Bobbidi Boutique. The boutique fixed it beautifully, styling it up into a sparkly tiara updo, but the price tag left us with a second joke to go with the first: Humid on the way in, Ho-Hum on the receipt.",
     photos: [
-      { src: "assets/509395928_10229622611257795_5449142114639065478_n.jpg", caption: "Getting the royal treatment at the Bibbidi Bobbidi Boutique" },
-      { src: "assets/508778420_10229622624298121_332868089535341972_n.jpg", caption: "The finished look — tiara updo, humidity defeated" },
-      { src: "assets/509426598_10229622622538077_1470587193437429107_n.jpg", caption: "Sporting the tiara and birthday sash around the park" }
+      { src: "/assets/509395928_10229622611257795_5449142114639065478_n.jpg", caption: "Getting the royal treatment at the Bibbidi Bobbidi Boutique" },
+      { src: "/assets/508778420_10229622624298121_332868089535341972_n.jpg", caption: "The finished look — tiara updo, humidity defeated" },
+      { src: "/assets/509426598_10229622622538077_1470587193437429107_n.jpg", caption: "Sporting the tiara and birthday sash around the park" }
     ]
   },
   {
@@ -3371,7 +3406,7 @@ const MISADVENTURES = [
     location: "Puerto Rico",
     body: "At a bird sanctuary, birds landed all over me like I was part of the furniture. I stood there, essentially a human perch, while the rest of the group just watched it happen.",
     photos: [
-      { src: "assets/508146734_10229560296299960_7400076326579912259_n.jpg", caption: "Human perch at the bird sanctuary" }
+      { src: "/assets/508146734_10229560296299960_7400076326579912259_n.jpg", caption: "Human perch at the bird sanctuary" }
     ]
   },
   {
@@ -3410,11 +3445,11 @@ const MISADVENTURES = [
     location: "Iceland",
     body: "After all the hype, the Blue Lagoon was a genuine letdown — so crowded it barely felt like the bucket-list moment we expected.",
     photos: [
-      { src: "assets/37194414_10212566117256105_8464551165051273216_n.jpg", caption: "The crowds soaking in the milky blue water" },
-      { src: "assets/37335574_10212566116536087_170871073393344512_n.jpg", caption: "Floating drinks in hand, packed in with everyone else" },
-      { src: "assets/37315329_10212566116016074_9017356641942634496_n.jpg", caption: "Armbands on, making the most of the crowd" },
-      { src: "assets/37240726_10212566115496061_8867464108673335296_n.jpg", caption: "A rare quiet moment in the water" },
-      { src: "assets/37245564_10212566114336032_7627274718357225472_n.jpg", caption: "The silica mud mask, gift shop edition" }
+      { src: "/assets/37194414_10212566117256105_8464551165051273216_n.jpg", caption: "The crowds soaking in the milky blue water" },
+      { src: "/assets/37335574_10212566116536087_170871073393344512_n.jpg", caption: "Floating drinks in hand, packed in with everyone else" },
+      { src: "/assets/37315329_10212566116016074_9017356641942634496_n.jpg", caption: "Armbands on, making the most of the crowd" },
+      { src: "/assets/37240726_10212566115496061_8867464108673335296_n.jpg", caption: "A rare quiet moment in the water" },
+      { src: "/assets/37245564_10212566114336032_7627274718357225472_n.jpg", caption: "The silica mud mask, gift shop edition" }
     ]
   },
   {
@@ -3423,7 +3458,7 @@ const MISADVENTURES = [
     location: "Iceland",
     body: "Walking between the tectonic plates, my youngest gave up walking about halfway through, so I ended up carrying them in a child backpack across an actual fault line in the earth.",
     photos: [
-      { src: "assets/503644850_10229364177717118_8800151483513206644_n.jpg", caption: "Carrying a kid through the fault line" }
+      { src: "/assets/503644850_10229364177717118_8800151483513206644_n.jpg", caption: "Carrying a kid through the fault line" }
     ]
   },
   {
@@ -3432,19 +3467,19 @@ const MISADVENTURES = [
     location: "Iceland",
     body: "We took snowmobiles out to reach a glacier and its ice caves near the magnetic north pole — and partway there, the ride turned into total whiteout conditions. We genuinely lost our bearings in the middle of a blizzard before finally reaching the ice caves.",
     photos: [
-      { src: "assets/503463029_10229364207037851_3708454514669062662_n.jpg", caption: "Before the whiteout — geared up for the snowmobiles" },
-      { src: "assets/503477224_10229364201797720_1160012565254401984_n.jpg", caption: "Helmeted up — the snowmobiles were how we got to the glacier" },
-      { src: "assets/37268901_10212562894535539_2349181479793197056_n.jpg", caption: "Kid on board for the snowmobile ride across the glacier" },
-      { src: "assets/36990658_10212562890975450_4270533162628546560_n.jpg", caption: "The kids, helmeted up and ready, before conditions turned" },
-      { src: "assets/37210379_10212562890375435_4580468224730071040_n.jpg", caption: "A helmet selfie on the glacier, before the whiteout hit" },
-      { src: "assets/37167507_10212562896495588_2055633831049822208_n.jpg", caption: "Icicles inside the glacier ice cave" },
-      { src: "assets/37178574_10212562896175580_6042598735806988288_n.jpg", caption: "Lit up in blue, deep inside the ice tunnel" },
-      { src: "assets/37177610_10212562893815521_1464520896600342528_n.jpg", caption: "Made it — posing inside the ice cave" },
-      { src: "assets/37192058_10212562893335509_1697714183136608256_n.jpg", caption: "The ice bar carved right into the glacier" },
-      { src: "assets/37204434_10212562892975500_6037585886202298368_n.jpg", caption: "A narrow crevasse glowing blue, deep in the ice" },
-      { src: "assets/37322703_10212562892135479_4692146479756738560_n.jpg", caption: "A selfie inside the glowing blue ice tunnel" },
-      { src: "assets/37211165_10212562891735469_8262664535085678592_n.jpg", caption: "A meltwater pool inside the glacier" },
-      { src: "assets/37201598_10212562891455462_8570913689379536896_n.jpg", caption: "Deeper inside the ice cave, icicles hanging overhead" }
+      { src: "/assets/503463029_10229364207037851_3708454514669062662_n.jpg", caption: "Before the whiteout — geared up for the snowmobiles" },
+      { src: "/assets/503477224_10229364201797720_1160012565254401984_n.jpg", caption: "Helmeted up — the snowmobiles were how we got to the glacier" },
+      { src: "/assets/37268901_10212562894535539_2349181479793197056_n.jpg", caption: "Kid on board for the snowmobile ride across the glacier" },
+      { src: "/assets/36990658_10212562890975450_4270533162628546560_n.jpg", caption: "The kids, helmeted up and ready, before conditions turned" },
+      { src: "/assets/37210379_10212562890375435_4580468224730071040_n.jpg", caption: "A helmet selfie on the glacier, before the whiteout hit" },
+      { src: "/assets/37167507_10212562896495588_2055633831049822208_n.jpg", caption: "Icicles inside the glacier ice cave" },
+      { src: "/assets/37178574_10212562896175580_6042598735806988288_n.jpg", caption: "Lit up in blue, deep inside the ice tunnel" },
+      { src: "/assets/37177610_10212562893815521_1464520896600342528_n.jpg", caption: "Made it — posing inside the ice cave" },
+      { src: "/assets/37192058_10212562893335509_1697714183136608256_n.jpg", caption: "The ice bar carved right into the glacier" },
+      { src: "/assets/37204434_10212562892975500_6037585886202298368_n.jpg", caption: "A narrow crevasse glowing blue, deep in the ice" },
+      { src: "/assets/37322703_10212562892135479_4692146479756738560_n.jpg", caption: "A selfie inside the glowing blue ice tunnel" },
+      { src: "/assets/37211165_10212562891735469_8262664535085678592_n.jpg", caption: "A meltwater pool inside the glacier" },
+      { src: "/assets/37201598_10212562891455462_8570913689379536896_n.jpg", caption: "Deeper inside the ice cave, icicles hanging overhead" }
     ]
   },
   {
@@ -3459,7 +3494,7 @@ const MISADVENTURES = [
     location: "Rome",
     body: "We missed our tour group and ended up flat-out sprinting through downtown Rome to catch up with them at the Colosseum.",
     photos: [
-      { src: "assets/506528871_10229506988887308_3025677673394570092_n.jpg", caption: "The route: Pantheon to Colosseum, at a dead sprint" }
+      { src: "/assets/506528871_10229506988887308_3025677673394570092_n.jpg", caption: "The route: Pantheon to Colosseum, at a dead sprint" }
     ]
   },
   {
@@ -3480,9 +3515,9 @@ const MISADVENTURES = [
     location: "Rome",
     body: "We ducked down a random alley just to explore, and it turned out to be a secret entrance leading underneath the Trevi Fountain itself.",
     photos: [
-      { src: "assets/490157527_10228759686645219_439195885503061710_n.jpg", caption: "The ancient ruins under the Trevi Fountain" },
-      { src: "assets/490270893_10228759687165232_7666602139497937471_n.jpg", caption: "Walkways over the excavated site below the fountain" },
-      { src: "assets/489915798_10228759687125231_3948597588607398902_n.jpg", caption: "Back above ground, at the Trevi Fountain" }
+      { src: "/assets/490157527_10228759686645219_439195885503061710_n.jpg", caption: "The ancient ruins under the Trevi Fountain" },
+      { src: "/assets/490270893_10228759687165232_7666602139497937471_n.jpg", caption: "Walkways over the excavated site below the fountain" },
+      { src: "/assets/489915798_10228759687125231_3948597588607398902_n.jpg", caption: "Back above ground, at the Trevi Fountain" }
     ]
   },
   {
@@ -3497,10 +3532,10 @@ const MISADVENTURES = [
     location: "Japan",
     body: "Everyone gave up on the mountain climb except me — they stopped just fifteen minutes short of the summit without realizing it. I kept going and got the whole view of Tokyo to myself while they sat on the stairs.",
     photos: [
-      { src: "assets/61855196_10214634718769850_315324253920559104_n.jpg", caption: "Station 14 — the summit marker" },
-      { src: "assets/61944417_10214634711649672_3073158411500650496_n.jpg", caption: "\"Mountain Top 5 minutes\" — so close" },
-      { src: "assets/61895610_10214634678128834_8230458044211789824_n.jpg", caption: "The view earned by those last 15 minutes" },
-      { src: "assets/61440231_10214634677768825_2426227347632947200_n.jpg", caption: "The city laid out below, all to myself" }
+      { src: "/assets/61855196_10214634718769850_315324253920559104_n.jpg", caption: "Station 14 — the summit marker" },
+      { src: "/assets/61944417_10214634711649672_3073158411500650496_n.jpg", caption: "\"Mountain Top 5 minutes\" — so close" },
+      { src: "/assets/61895610_10214634678128834_8230458044211789824_n.jpg", caption: "The view earned by those last 15 minutes" },
+      { src: "/assets/61440231_10214634677768825_2426227347632947200_n.jpg", caption: "The city laid out below, all to myself" }
     ]
   },
   {
@@ -3509,9 +3544,9 @@ const MISADVENTURES = [
     location: "Japan",
     body: "Bored one afternoon, I ventured off by myself and learned the obvious lesson: locals always have the best insight into a place.",
     photos: [
-      { src: "assets/61873864_10214648848283079_6208847475202064384_n.jpg", caption: "Neon signs over a packed Osaka street" },
-      { src: "assets/61883625_10214648847323055_710655077026627584_n.jpg", caption: "Wandering the crowd alone" },
-      { src: "assets/61986828_10214633844067983_6970266969723371520_n.jpg", caption: "Nishiki Market, Kyoto" }
+      { src: "/assets/61873864_10214648848283079_6208847475202064384_n.jpg", caption: "Neon signs over a packed Osaka street" },
+      { src: "/assets/61883625_10214648847323055_710655077026627584_n.jpg", caption: "Wandering the crowd alone" },
+      { src: "/assets/61986828_10214633844067983_6970266969723371520_n.jpg", caption: "Nishiki Market, Kyoto" }
     ]
   },
   {
@@ -3520,8 +3555,8 @@ const MISADVENTURES = [
     location: "Japan",
     body: "My shy daughter won at the Robot Cafe and then refused to go claim her prize because she was too embarrassed.",
     photos: [
-      { src: "assets/62008207_10214677109589594_924268677107286016_n.jpg", caption: "Glow sticks and the Robot Restaurant sign" },
-      { src: "assets/62048201_10214677109309587_3347264113389600768_n.jpg", caption: "The winning smile, prize still unclaimed" }
+      { src: "/assets/62008207_10214677109589594_924268677107286016_n.jpg", caption: "Glow sticks and the Robot Restaurant sign" },
+      { src: "/assets/62048201_10214677109309587_3347264113389600768_n.jpg", caption: "The winning smile, prize still unclaimed" }
     ]
   },
   {
@@ -3590,8 +3625,8 @@ const MISADVENTURES = [
     location: "Paris",
     body: "We met up with distant relatives for what we thought was just a stop by the Eiffel Tower, not realizing it was actually a full picnic-park scene — wine and champagne flowing, strangers turning into friends over great conversation. Before we knew it, my wife and I were both thoroughly drunk, happy, in love, and watching the tower light up at night surrounded by genuinely wonderful people we'd never met before that afternoon.",
     photos: [
-      { src: "assets/516766756_10230169320445183_2970899837213753375_n.jpg", caption: "The tower lit up gold as evening set in" },
-      { src: "assets/517390641_10230169320165176_627755298649751026_n.jpg", caption: "A selfie in the park, Eiffel Tower behind us" }
+      { src: "/assets/516766756_10230169320445183_2970899837213753375_n.jpg", caption: "The tower lit up gold as evening set in" },
+      { src: "/assets/517390641_10230169320165176_627755298649751026_n.jpg", caption: "A selfie in the park, Eiffel Tower behind us" }
     ]
   },
   {
@@ -3612,8 +3647,8 @@ const MISADVENTURES = [
     location: "Paris",
     body: "Same story at the Louvre — we didn't finish, and the Mona Lisa itself turned out to be far smaller in person than anyone expects.",
     photos: [
-      { src: "assets/518202081_10230170371551460_6465721618724752434_n.jpg", caption: "The famously small Mona Lisa, up close" },
-      { src: "assets/517219083_10230170388191876_8651137391623211666_n.jpg", caption: "The kids outside the Louvre, pyramid in the background" }
+      { src: "/assets/518202081_10230170371551460_6465721618724752434_n.jpg", caption: "The famously small Mona Lisa, up close" },
+      { src: "/assets/517219083_10230170388191876_8651137391623211666_n.jpg", caption: "The kids outside the Louvre, pyramid in the background" }
     ]
   },
   {
@@ -3634,9 +3669,9 @@ const MISADVENTURES = [
     location: "Paris",
     body: "The Arc de Triomphe came with an unplanned shopping trip that hit my wallet a lot harder than expected. The kids, of course, loved every second of it.",
     photos: [
-      { src: "assets/517478035_10230169574211527_5498467812766278024_n.jpg", caption: "The family in front of the Arc de Triomphe" },
-      { src: "assets/516642020_10230169517290104_6380081532656146481_n.jpg", caption: "Shopping bags in hand outside Louis Vuitton on the Champs-Élysées" },
-      { src: "assets/516547642_10230169494649538_7454233219314627311_n.jpg", caption: "Checking out a showroom along the Champs-Élysées" }
+      { src: "/assets/517478035_10230169574211527_5498467812766278024_n.jpg", caption: "The family in front of the Arc de Triomphe" },
+      { src: "/assets/516642020_10230169517290104_6380081532656146481_n.jpg", caption: "Shopping bags in hand outside Louis Vuitton on the Champs-Élysées" },
+      { src: "/assets/516547642_10230169494649538_7454233219314627311_n.jpg", caption: "Checking out a showroom along the Champs-Élysées" }
     ]
   },
   {
@@ -3651,8 +3686,8 @@ const MISADVENTURES = [
     location: "Bahamas",
     body: "The chocolate factory tour turned messy in the heat, and by the time we made it back to the bus, our chocolates hadn't survived the walk — melted before we ever got to enjoy them.",
     photos: [
-      { src: "assets/502581534_10229373407787864_6373001869681850639_n.jpg", caption: "Suited up for the chocolate factory tour" },
-      { src: "assets/502613634_10229373403507757_850572977685193680_n.jpg", caption: "Learning where the chocolate comes from" }
+      { src: "/assets/502581534_10229373407787864_6373001869681850639_n.jpg", caption: "Suited up for the chocolate factory tour" },
+      { src: "/assets/502613634_10229373403507757_850572977685193680_n.jpg", caption: "Learning where the chocolate comes from" }
     ]
   },
   {
@@ -3665,7 +3700,10 @@ const MISADVENTURES = [
     icon: "🚶",
     title: "The Long Walk Back",
     location: "Bahamas",
-    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead."
+    body: "We misjudged the shuttle timing back from the private beach and ended up on a long, unplanned walk back to the ship instead.",
+    photos: [
+      { src: "/assets/503570249_10229373767836865_1983218260112877081_n.jpg", caption: "A selfie with the ship in the background, mid walk back" }
+    ]
   },
   {
     icon: "🐦",
@@ -3685,10 +3723,10 @@ const MISADVENTURES = [
     location: "Greece",
     body: "Just like Italy, our wine went missing again in Greece. Apparently we just can't be trusted to keep a good bottle in our luggage across an entire trip.",
     photos: [
-      { src: "assets/489437302_10228751542601623_142822739827153484_n.jpg", caption: "Estate Argyros 2014, Santorini" },
-      { src: "assets/489969578_10228751542521621_2755098204194973161_n.jpg", caption: "A 2021 Assyrtiko, Santorini" },
-      { src: "assets/490382990_10228751541761602_2357890389919626283_n.jpg", caption: "Nykteri 2018, Santorini" },
-      { src: "assets/489956825_10228751542681625_4102012860785104723_n.jpg", caption: "Estate Argyros Cuvée Monsignori 2017, Santorini" }
+      { src: "/assets/489437302_10228751542601623_142822739827153484_n.jpg", caption: "Estate Argyros 2014, Santorini" },
+      { src: "/assets/489969578_10228751542521621_2755098204194973161_n.jpg", caption: "A 2021 Assyrtiko, Santorini" },
+      { src: "/assets/490382990_10228751541761602_2357890389919626283_n.jpg", caption: "Nykteri 2018, Santorini" },
+      { src: "/assets/489956825_10228751542681625_4102012860785104723_n.jpg", caption: "Estate Argyros Cuvée Monsignori 2017, Santorini" }
     ]
   },
   {
@@ -3709,15 +3747,15 @@ const MISADVENTURES = [
     location: "Greece",
     body: "We ended up genuinely drunk on a yacht trip, having badly underestimated how well Greeks can actually handle their liquor. They were fun and friendly the whole way through, and the view of Oia made up for however rough the morning after was.",
     photos: [
-      { src: "assets/490268078_10228756336961479_3097074711729278704_n.jpg", caption: "Oia lit up at night, from the water" },
-      { src: "assets/490470703_10228756319761049_3134648586841873723_n.jpg", caption: "The yacht anchored below Oia at dusk" },
-      { src: "assets/490130505_10228756319841051_7509708731946892535_n.jpg", caption: "Peace signs, Oia glowing behind us" },
-      { src: "assets/489824289_10228756319681047_7369490620978930532_n.jpg", caption: "Watching the sunset from the bow" },
-      { src: "assets/489767432_10228756324281162_1758354711461265817_n.jpg", caption: "Oia's cliffside village from the water" },
-      { src: "assets/490380166_10228756321881102_1474093824336021377_n.jpg", caption: "Santorini's caldera cliffs at golden hour" },
-      { src: "assets/490179517_10228756310280812_3505153944658451620_n.jpg", caption: "Sunset selfie on deck" },
-      { src: "assets/489926345_10228756310920828_3483480463463382842_n.jpg", caption: "A quieter harbor stop along the way" },
-      { src: "assets/490299515_10228756310440816_4131957871461001657_n.jpg", caption: "Golden hour on the yacht" }
+      { src: "/assets/490268078_10228756336961479_3097074711729278704_n.jpg", caption: "Oia lit up at night, from the water" },
+      { src: "/assets/490470703_10228756319761049_3134648586841873723_n.jpg", caption: "The yacht anchored below Oia at dusk" },
+      { src: "/assets/490130505_10228756319841051_7509708731946892535_n.jpg", caption: "Peace signs, Oia glowing behind us" },
+      { src: "/assets/489824289_10228756319681047_7369490620978930532_n.jpg", caption: "Watching the sunset from the bow" },
+      { src: "/assets/489767432_10228756324281162_1758354711461265817_n.jpg", caption: "Oia's cliffside village from the water" },
+      { src: "/assets/490380166_10228756321881102_1474093824336021377_n.jpg", caption: "Santorini's caldera cliffs at golden hour" },
+      { src: "/assets/490179517_10228756310280812_3505153944658451620_n.jpg", caption: "Sunset selfie on deck" },
+      { src: "/assets/489926345_10228756310920828_3483480463463382842_n.jpg", caption: "A quieter harbor stop along the way" },
+      { src: "/assets/490299515_10228756310440816_4131957871461001657_n.jpg", caption: "Golden hour on the yacht" }
     ]
   },
   {
@@ -3726,8 +3764,8 @@ const MISADVENTURES = [
     location: "Greece",
     body: "We spent almost the entire trip craving seafood while stuck on the wrong side of the island, and only found the good stuff on the last day — fresh seafood on the black sands beach, finally worth the wait.",
     photos: [
-      { src: "assets/489781581_10228756463844651_6436143312640333907_n.jpg", caption: "Finally, the beachside seafood spot" },
-      { src: "assets/490131990_10228756466884727_5620483280395831153_n.jpg", caption: "Santorini's black sand beach" }
+      { src: "/assets/489781581_10228756463844651_6436143312640333907_n.jpg", caption: "Finally, the beachside seafood spot" },
+      { src: "/assets/490131990_10228756466884727_5620483280395831153_n.jpg", caption: "Santorini's black sand beach" }
     ]
   },
   {
@@ -3748,7 +3786,7 @@ const MISADVENTURES = [
     location: "New Zealand",
     body: "I drove on the wrong side of the road. More than once. Gave my wife a genuine heart attack a few different times before it finally clicked.",
     photos: [
-      { src: "assets/89295756_10216697471617382_1095565879975870464_n.jpg", caption: "The right-hand-drive rental that caused all the trouble" }
+      { src: "/assets/89295756_10216697471617382_1095565879975870464_n.jpg", caption: "The right-hand-drive rental that caused all the trouble" }
     ]
   },
   {
@@ -3769,7 +3807,7 @@ const MISADVENTURES = [
     location: "New Zealand",
     body: "This is where I finally saw the aurora — except it turned out to be the Southern Lights instead of the Northern Lights I'd always pictured. Still counts.",
     photos: [
-      { src: "assets/89381714_10216731421986120_9093511858119245824_n.jpg", caption: "The sky that finally delivered — New Zealand" }
+      { src: "/assets/89381714_10216731421986120_9093511858119245824_n.jpg", caption: "The sky that finally delivered — New Zealand" }
     ]
   },
   {
@@ -3778,9 +3816,9 @@ const MISADVENTURES = [
     location: "New Zealand",
     body: "Getting genuinely lost in the city turned out to be one of the best parts — there was always something worth seeing around the next corner. We wandered without any real plan and ended up in Cuba Street purely by accident.",
     photos: [
-      { src: "assets/89737875_10216723292302883_7518078829873594368_n.jpg", caption: "Under the Cuba Street sign, Wellington" },
-      { src: "assets/89358341_10216723291262857_8203940508104392704_n.jpg", caption: "Wellington's rainbow crossing, right by Cuba Street" },
-      { src: "assets/89706496_10216723277342509_2670139330646769664_n.jpg", caption: "Still lost, still smiling, Cuba Street" }
+      { src: "/assets/89737875_10216723292302883_7518078829873594368_n.jpg", caption: "Under the Cuba Street sign, Wellington" },
+      { src: "/assets/89358341_10216723291262857_8203940508104392704_n.jpg", caption: "Wellington's rainbow crossing, right by Cuba Street" },
+      { src: "/assets/89706496_10216723277342509_2670139330646769664_n.jpg", caption: "Still lost, still smiling, Cuba Street" }
     ]
   },
   {
@@ -3789,8 +3827,8 @@ const MISADVENTURES = [
     location: "New Zealand",
     body: "Hobbiton itself was a bit of a letdown in person — smaller and less impressive than the movies make it look. But it made the movie magic even more impressive, knowing how much they were able to do with how little was actually there.",
     photos: [
-      { src: "assets/89377637_10216706850491848_6143461404188868608_n.jpg", caption: "The family at a hobbit hole doorway" },
-      { src: "assets/89259532_10216706848131789_5513119909200003072_n.jpg", caption: "The famous round green door, Hobbiton" }
+      { src: "/assets/89377637_10216706850491848_6143461404188868608_n.jpg", caption: "The family at a hobbit hole doorway" },
+      { src: "/assets/89259532_10216706848131789_5513119909200003072_n.jpg", caption: "The famous round green door, Hobbiton" }
     ]
   }
 ];
@@ -3828,39 +3866,39 @@ const HER_STORIES = [
     name: "Lima, Peru",
     country: "Peru",
     tripType: "Work trip",
-    heroImg: "assets/504415623_10229422830823409_4993078943813997833_n.jpg",
-    cardImg: "assets/684691291_10233650431470783_6474378245618826087_n.jpg",
+    heroImg: "/assets/504415623_10229422830823409_4993078943813997833_n.jpg",
+    cardImg: "/assets/684691291_10233650431470783_6474378245618826087_n.jpg",
     intro: `A work trip to Lima that turned up two very good meals — a casual Peruvian spot for ceviche and pisco sours, and a much fancier Nikkei tasting menu she still can't stop talking about. The full story of how the trip actually went is still TBD — pending an interview with the traveler herself.`,
     restaurants: [
       { name: `Lima Taverna`, location: `Lima, Peru`, rating: 4.5, review: `A Peruvian spot for ceviche, pisco sours, and Cusqueña — the casual half of the trip. Full write-up and community reviews still pending.` },
       { name: `Searching the Rolodex`, location: `Lima, Peru`, review: `An upscale Nikkei (Peruvian-Japanese) tasting menu — course after course of sashimi, tartare, crab, and a dessert trio. Restaurant name is still TBD — need to ask her.` }
     ],
     foodPhotos: [
-      { src: "assets/684691291_10233650431470783_6474378245618826087_n.jpg", caption: "A pisco sour at Lima Taverna" },
-      { src: "assets/684683411_10233650432430807_8660451631551255436_n.jpg", caption: "Fresh ceviche with choclo, cancha, and sweet potato at Lima Taverna" },
-      { src: "assets/687786431_10233650362669063_4350656868893273907_n.jpg", caption: "A Cusqueña Dorada at Lima Taverna" },
-      { src: "assets/686943070_10233650757158925_620864847656273121_n.jpg", caption: "Heart-shaped alfajores, with her name piped on in berry sauce, at Lima Taverna" },
-      { src: "assets/504397982_10229423012027939_4334389467347098108_n.jpg", caption: "A blue cocktail served over crushed ice" },
-      { src: "assets/504420732_10229423011947937_7464687504225865997_n.jpg", caption: "A cotton-candy-topped cocktail in a tiki mug" },
-      { src: "assets/504342536_10229423011067915_7603664753301744673_n.jpg", caption: "Ceviche with white fish and corn" },
-      { src: "assets/504833177_10229423011867935_3419539207056851860_n.jpg", caption: "Hamachi sashimi with wasabi and a carnation garnish" },
-      { src: "assets/504791733_10229423012467950_7699418574002788458_n.jpg", caption: "A grilled seafood and mushroom skewer dish" },
-      { src: "assets/504903278_10229423011827934_6422032913981353769_n.jpg", caption: "A trio of bite-sized desserts on a wooden board" },
-      { src: "assets/504834551_10229423011107916_6652942632218153588_n.jpg", caption: "A mango, strawberry, and passionfruit sorbet trio" },
-      { src: "assets/504430843_10229423011467925_5711206911560365653_n.jpg", caption: "Tuna tartare with roe, stacked over avocado and rice" },
-      { src: "assets/504461986_10229423013267970_3188768359008975119_n.jpg", caption: "A nigiri platter — uni, toro, and torched salmon with yuzu kosho" },
-      { src: "assets/504400466_10229423011387923_47759232029933963_n.jpg", caption: "A banana-leaf-wrapped grilled dish with pickled vegetables" },
-      { src: "assets/504384020_10229423011667930_3850769831967324907_n.jpg", caption: "A shrimp and egg rice bowl" },
-      { src: "assets/504328215_10229423011427924_5637403627734189747_n.jpg", caption: "Glazed short rib with crispy garlic and scallion" },
-      { src: "assets/504711255_10229423012267945_1840762476312946146_n.jpg", caption: "House-made pasta topped with caviar" },
-      { src: "assets/504782510_10229422923465725_1967606223932155803_n.jpg", caption: "A skull-shaped platter with jamón, cheese, and fried croquettes" },
-      { src: "assets/504500467_10229422923385723_5956687463559027674_n.jpg", caption: "A round platter of salmon and hamachi sashimi" },
-      { src: "assets/504382952_10229422923345722_7319627796124910702_n.jpg", caption: "A salmon carpaccio plated like a flower" },
-      { src: "assets/504956386_10229422827423324_3059526477392560102_n.jpg", caption: "Grilled scallop and shrimp skewers over crispy rice" },
-      { src: "assets/504931509_10229422826463300_8650702964496504300_n.jpg", caption: "Tuna and beef tartare bites" },
-      { src: "assets/504711245_10229422831743432_6445267734075001151_n.jpg", caption: "A chocolate mousse and a curry-spiced mousse, side by side" },
-      { src: "assets/504719388_10229422830743407_690937516191513261_n.jpg", caption: "A platter of spiced whole crab legs" },
-      { src: "assets/504494407_10229422826703306_2685883340715249245_n.jpg", caption: "Scallops on the half shell with crispy leeks" }
+      { src: "/assets/684691291_10233650431470783_6474378245618826087_n.jpg", caption: "A pisco sour at Lima Taverna" },
+      { src: "/assets/684683411_10233650432430807_8660451631551255436_n.jpg", caption: "Fresh ceviche with choclo, cancha, and sweet potato at Lima Taverna" },
+      { src: "/assets/687786431_10233650362669063_4350656868893273907_n.jpg", caption: "A Cusqueña Dorada at Lima Taverna" },
+      { src: "/assets/686943070_10233650757158925_620864847656273121_n.jpg", caption: "Heart-shaped alfajores, with her name piped on in berry sauce, at Lima Taverna" },
+      { src: "/assets/504397982_10229423012027939_4334389467347098108_n.jpg", caption: "A blue cocktail served over crushed ice" },
+      { src: "/assets/504420732_10229423011947937_7464687504225865997_n.jpg", caption: "A cotton-candy-topped cocktail in a tiki mug" },
+      { src: "/assets/504342536_10229423011067915_7603664753301744673_n.jpg", caption: "Ceviche with white fish and corn" },
+      { src: "/assets/504833177_10229423011867935_3419539207056851860_n.jpg", caption: "Hamachi sashimi with wasabi and a carnation garnish" },
+      { src: "/assets/504791733_10229423012467950_7699418574002788458_n.jpg", caption: "A grilled seafood and mushroom skewer dish" },
+      { src: "/assets/504903278_10229423011827934_6422032913981353769_n.jpg", caption: "A trio of bite-sized desserts on a wooden board" },
+      { src: "/assets/504834551_10229423011107916_6652942632218153588_n.jpg", caption: "A mango, strawberry, and passionfruit sorbet trio" },
+      { src: "/assets/504430843_10229423011467925_5711206911560365653_n.jpg", caption: "Tuna tartare with roe, stacked over avocado and rice" },
+      { src: "/assets/504461986_10229423013267970_3188768359008975119_n.jpg", caption: "A nigiri platter — uni, toro, and torched salmon with yuzu kosho" },
+      { src: "/assets/504400466_10229423011387923_47759232029933963_n.jpg", caption: "A banana-leaf-wrapped grilled dish with pickled vegetables" },
+      { src: "/assets/504384020_10229423011667930_3850769831967324907_n.jpg", caption: "A shrimp and egg rice bowl" },
+      { src: "/assets/504328215_10229423011427924_5637403627734189747_n.jpg", caption: "Glazed short rib with crispy garlic and scallion" },
+      { src: "/assets/504711255_10229423012267945_1840762476312946146_n.jpg", caption: "House-made pasta topped with caviar" },
+      { src: "/assets/504782510_10229422923465725_1967606223932155803_n.jpg", caption: "A skull-shaped platter with jamón, cheese, and fried croquettes" },
+      { src: "/assets/504500467_10229422923385723_5956687463559027674_n.jpg", caption: "A round platter of salmon and hamachi sashimi" },
+      { src: "/assets/504382952_10229422923345722_7319627796124910702_n.jpg", caption: "A salmon carpaccio plated like a flower" },
+      { src: "/assets/504956386_10229422827423324_3059526477392560102_n.jpg", caption: "Grilled scallop and shrimp skewers over crispy rice" },
+      { src: "/assets/504931509_10229422826463300_8650702964496504300_n.jpg", caption: "Tuna and beef tartare bites" },
+      { src: "/assets/504711245_10229422831743432_6445267734075001151_n.jpg", caption: "A chocolate mousse and a curry-spiced mousse, side by side" },
+      { src: "/assets/504719388_10229422830743407_690937516191513261_n.jpg", caption: "A platter of spiced whole crab legs" },
+      { src: "/assets/504494407_10229422826703306_2685883340715249245_n.jpg", caption: "Scallops on the half shell with crispy leeks" }
     ]
   }
 ];
